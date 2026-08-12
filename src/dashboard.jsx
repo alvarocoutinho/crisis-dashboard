@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo } from "react";
+import { Link } from "react-router-dom";
 import {
   BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer,
   LineChart, Line, CartesianGrid, Legend
@@ -7,13 +8,15 @@ import {
   AlertTriangle, MapPin, MessageSquare, Video, Users,
   Info, ChevronRight, VolumeX, FileWarning, Beaker,
   Layers, Activity, PlayCircle, ExternalLink,
-  BarChart3, Film, X
+  BarChart3, Film, X, Filter, ArrowLeft
 } from "lucide-react";
 import * as d3 from "d3";
 import {
   getAllEvents,
   getEventById,
   getEventSummaries,
+  getUFsWithEvents,
+  getEventsByUFs,
 } from "./services/eventsRepository";
 
 // Janelas fixas de atualização (frozen framing rule)
@@ -27,7 +30,7 @@ const WINDOWS = [
 // MAPA REAL DO BRASIL (d3-geo + GeoJSON dos estados)
 // =========================================================================
 
-function BrazilMap({ selectedId, onSelect }) {
+function BrazilMap({ selectedId, onSelect, events }) {
   const [geo, setGeo] = useState(null);
   const [status, setStatus] = useState("loading");
 
@@ -40,7 +43,7 @@ function BrazilMap({ selectedId, onSelect }) {
   }, []);
 
   const width = 380, height = 400;
-  const ufsComEventos = useMemo(() => new Set(getAllEvents().map(e => e.uf)), []);
+  const ufsComEventos = useMemo(() => new Set(events.map(e => e.uf)), [events]);
 
   const { pathGen, projection } = useMemo(() => {
     if (!geo) return { pathGen: null, projection: null };
@@ -54,7 +57,7 @@ function BrazilMap({ selectedId, onSelect }) {
         <h2 className="text-sm font-semibold text-stone-800 flex items-center gap-2">
           <MapPin size={16} /> Eventos monitorados
         </h2>
-        <span className="text-xs text-stone-500">{getAllEvents().length} eventos · 6 UFs</span>
+        <span className="text-xs text-stone-500">{events.length} {events.length === 1 ? "evento" : "eventos"} · {ufsComEventos.size} {ufsComEventos.size === 1 ? "UF" : "UFs"}</span>
       </div>
       <div className="relative bg-stone-50 rounded border border-stone-200 overflow-hidden" style={{ height }}>
         {status === "loading" && (
@@ -86,7 +89,7 @@ function BrazilMap({ selectedId, onSelect }) {
               })}
             </g>
             <g>
-              {getAllEvents().map(ev => {
+              {events.map(ev => {
                 const [x, y] = projection([ev.lon, ev.lat]);
                 const isSelected = ev.id === selectedId;
                 return (
@@ -113,7 +116,12 @@ function BrazilMap({ selectedId, onSelect }) {
         )}
       </div>
       <div className="mt-4 space-y-1.5">
-        {getAllEvents().map(ev => {
+        {events.length === 0 && (
+          <div className="px-3 py-4 text-center text-xs text-stone-500 italic border border-dashed border-stone-300 rounded">
+            Nenhum evento com os filtros atuais.
+          </div>
+        )}
+        {events.map(ev => {
           const isSelected = ev.id === selectedId;
           return (
             <button
@@ -619,12 +627,26 @@ function VideoCard({ v }) {
 // COMPARAÇÃO TRANSVERSAL
 // =========================================================================
 
-function ComparisonSection() {
-  // Reshape para gráfico agrupado
-  const cats = getAllEvents()[0].distribution.map(d => ({ key: d.key, label: d.label }));
+function ComparisonSection({ events }) {
+  // Se filtro deixou < 2 eventos, não faz sentido comparar
+  if (events.length < 2) {
+    return (
+      <div className="bg-white rounded-lg border border-stone-300 p-5 mt-4">
+        <h3 className="text-sm font-semibold text-stone-800 mb-1">
+          Comparação transversal entre eventos
+        </h3>
+        <p className="text-xs text-stone-500 italic">
+          Selecione ao menos 2 UFs no filtro para ver a comparação transversal.
+        </p>
+      </div>
+    );
+  }
+
+  // Reshape para gráfico agrupado — categorias vêm do primeiro evento (schema é o mesmo)
+  const cats = events[0].distribution.map(d => ({ key: d.key, label: d.label }));
   const chartData = cats.map(cat => {
     const row = { category: cat.label.split(" / ")[0] };
-    getAllEvents().forEach(ev => {
+    events.forEach(ev => {
       const found = ev.distribution.find(d => d.key === cat.key);
       row[ev.municipio.split(" ")[0]] = found ? found.pct : 0;
     });
@@ -632,6 +654,9 @@ function ComparisonSection() {
   });
 
   const colors = ["#78350f", "#7c2d12", "#065f46", "#1e3a8a", "#4c1d95", "#831843"];
+
+  // Se todos os 6 eventos estão selecionados, exibe o box do achado; se não, oculta
+  const showFinding = events.length === 6;
 
   return (
     <div className="bg-white rounded-lg border border-stone-300 p-5 mt-4">
@@ -641,19 +666,21 @@ function ComparisonSection() {
       <p className="text-xs text-stone-500 mb-3">
         Percentual de comentários com predição positiva BERTimbau em cada categoria, por evento.
         Comparação sujeita à assimetria de regimes: <strong>Pernambuco 2026 é out-of-fold</strong>{" "}
-        (único evento avaliado em regime out-of-fold), os demais 5 eventos são in-sample exploratórios.
+        (único evento avaliado em regime out-of-fold), os demais eventos são in-sample exploratórios.
       </p>
-      <div className="bg-emerald-50 border border-emerald-200 rounded p-3 text-xs text-emerald-900 mb-4 leading-relaxed">
-        <strong>Achado corroborado em predição out-of-fold:</strong> Pernambuco 2026
-        apresenta perfil discursivo estruturalmente distinto — responsabilização/governança em{" "}
-        <strong>35,3%</strong> (o mais alto entre os 6 eventos, vs. 11,3–20,6% nos demais) e
-        solidariedade em apenas <strong>21,8%</strong> (vs. 41,9–59,6%). Este padrão foi
-        detectado inicialmente no dashboard v3 sobre <em>weak labels</em> e é agora corroborado
-        pelas predições do classificador em regime out-of-fold. Duas hipóteses
-        concorrentes seguem em aberto: (a) janela temporal curta (17 dias) capturou apenas
-        fase político-crítica; (b) diferença qualitativa de repertório discursivo mobilizado.
-        Distinguir as duas exige coleta prospectiva contínua.
-      </div>
+      {showFinding && (
+        <div className="bg-emerald-50 border border-emerald-200 rounded p-3 text-xs text-emerald-900 mb-4 leading-relaxed">
+          <strong>Achado corroborado em predição out-of-fold:</strong> Pernambuco 2026
+          apresenta perfil discursivo estruturalmente distinto — responsabilização/governança em{" "}
+          <strong>35,3%</strong> (o mais alto entre os 6 eventos, vs. 11,3–20,6% nos demais) e
+          solidariedade em apenas <strong>21,8%</strong> (vs. 41,9–59,6%). Este padrão foi
+          detectado inicialmente no dashboard v3 sobre <em>weak labels</em> e é agora corroborado
+          pelas predições do classificador em regime out-of-fold. Duas hipóteses
+          concorrentes seguem em aberto: (a) janela temporal curta (17 dias) capturou apenas
+          fase político-crítica; (b) diferença qualitativa de repertório discursivo mobilizado.
+          Distinguir as duas exige coleta prospectiva contínua.
+        </div>
+      )}
       <div style={{ height: 340 }}>
         <ResponsiveContainer>
           <BarChart data={chartData} margin={{ left: 0, right: 10, top: 10, bottom: 60 }}>
@@ -662,8 +689,8 @@ function ComparisonSection() {
             <YAxis tick={{ fontSize: 11, fill: "#57534e" }} label={{ value: "% do corpus", angle: -90, position: "insideLeft", style: { fontSize: 11, fill: "#57534e" } }} />
             <Tooltip contentStyle={{ fontSize: 11, borderRadius: 4 }} />
             <Legend wrapperStyle={{ fontSize: 11 }} />
-            {getAllEvents().map((ev, i) => (
-              <Bar key={ev.id} dataKey={ev.municipio.split(" ")[0]} fill={colors[i]} />
+            {events.map((ev, i) => (
+              <Bar key={ev.id} dataKey={ev.municipio.split(" ")[0]} fill={colors[i % colors.length]} />
             ))}
           </BarChart>
         </ResponsiveContainer>
@@ -680,10 +707,10 @@ function Header() {
   return (
     <header className="border-b border-stone-300 bg-white">
       <div className="max-w-7xl mx-auto px-6 py-5 flex items-start justify-between gap-6">
-        <div className="flex items-center gap-3">
+        <Link to="/" className="flex items-center gap-3 group">
           <div className="w-10 h-10 rounded-md bg-stone-800 text-white flex items-center justify-center text-xs font-semibold">ODRD</div>
           <div>
-            <h1 className="text-xl font-semibold text-stone-900 leading-tight">
+            <h1 className="text-xl font-semibold text-stone-900 leading-tight group-hover:underline">
               Observatório Digital de Riscos e Desastres
             </h1>
             <p className="text-xs text-stone-600">
@@ -691,7 +718,7 @@ function Header() {
               · <em>iniciativa em desenvolvimento</em>
             </p>
           </div>
-        </div>
+        </Link>
         <div className="flex flex-col items-end gap-1 text-xs">
           <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-amber-100 text-amber-900 border border-amber-300">
             <Beaker size={12} /> Prova de conceito · v0.1 · TRL 3–4
@@ -760,22 +787,110 @@ function Footer() {
 // =========================================================================
 
 export default function Dashboard() {
+  const availableUFs = useMemo(() => getUFsWithEvents(), []);
+  const [selectedUFs, setSelectedUFs] = useState(() => new Set(availableUFs));
   const [selectedId, setSelectedId] = useState("rs_2024");
-  const selected = getAllEvents().find(e => e.id === selectedId);
+
+  const filteredEvents = useMemo(
+    () => getEventsByUFs(selectedUFs),
+    [selectedUFs]
+  );
+
+  // Se o evento selecionado sumiu do filtro, escolher o primeiro disponível
+  useEffect(() => {
+    if (filteredEvents.length === 0) return;
+    if (!filteredEvents.find(e => e.id === selectedId)) {
+      setSelectedId(filteredEvents[0].id);
+    }
+  }, [filteredEvents, selectedId]);
+
+  const selected = filteredEvents.find(e => e.id === selectedId);
+
+  const toggleUF = (uf) => {
+    setSelectedUFs(prev => {
+      const next = new Set(prev);
+      if (next.has(uf)) next.delete(uf);
+      else next.add(uf);
+      return next;
+    });
+  };
 
   return (
     <div className="min-h-screen bg-stone-100 font-sans">
       <Header />
       <main className="max-w-7xl mx-auto px-6 py-6">
-        <div className="grid grid-cols-12 gap-6">
-          <aside className="col-span-4">
-            <BrazilMap selectedId={selectedId} onSelect={setSelectedId} />
-          </aside>
-          <section className="col-span-8">
-            <EventPanel event={selected} />
-          </section>
+        {/* Breadcrumb */}
+        <div className="mb-4">
+          <Link to="/" className="text-xs text-stone-500 hover:text-stone-900 inline-flex items-center gap-1">
+            <ArrowLeft size={12} /> Voltar
+          </Link>
         </div>
-        <ComparisonSection />
+
+        {/* Barra de filtros */}
+        <div className="bg-white rounded-lg border border-stone-300 p-3 mb-4 flex items-center gap-3 flex-wrap">
+          <div className="flex items-center gap-1.5 text-xs font-medium text-stone-700 flex-shrink-0">
+            <Filter size={12} /> Filtrar por UF:
+          </div>
+          {availableUFs.map(uf => {
+            const isActive = selectedUFs.has(uf);
+            return (
+              <button
+                key={uf}
+                onClick={() => toggleUF(uf)}
+                className={`px-2.5 py-1 rounded text-xs font-medium transition-colors ${
+                  isActive
+                    ? "bg-stone-800 text-white"
+                    : "bg-stone-100 text-stone-500 hover:bg-stone-200"
+                }`}
+              >
+                {uf}
+              </button>
+            );
+          })}
+          <div className="ml-auto flex items-center gap-2">
+            <span className="text-xs text-stone-500">
+              {filteredEvents.length} de {getAllEvents().length} eventos
+            </span>
+            <button
+              onClick={() => setSelectedUFs(new Set(availableUFs))}
+              className="text-xs text-stone-600 hover:text-stone-900 underline"
+              disabled={selectedUFs.size === availableUFs.length}
+            >
+              todas
+            </button>
+          </div>
+        </div>
+
+        {/* Grid principal ou estado vazio */}
+        {filteredEvents.length === 0 ? (
+          <div className="bg-white rounded-lg border-2 border-dashed border-stone-300 p-12 text-center">
+            <div className="max-w-md mx-auto">
+              <Filter size={28} className="mx-auto text-stone-400 mb-3" />
+              <h3 className="text-sm font-semibold text-stone-800 mb-2">
+                Nenhum evento com os filtros atuais
+              </h3>
+              <p className="text-xs text-stone-600">
+                Selecione ao menos uma UF acima para ver eventos.
+              </p>
+            </div>
+          </div>
+        ) : (
+          <>
+            <div className="grid grid-cols-12 gap-6">
+              <aside className="col-span-4">
+                <BrazilMap
+                  selectedId={selectedId}
+                  onSelect={setSelectedId}
+                  events={filteredEvents}
+                />
+              </aside>
+              <section className="col-span-8">
+                {selected && <EventPanel event={selected} />}
+              </section>
+            </div>
+            <ComparisonSection events={filteredEvents} />
+          </>
+        )}
       </main>
       <Footer />
     </div>

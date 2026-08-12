@@ -4,36 +4,29 @@
  * Camada de acesso a dados. Todos os componentes do dashboard consomem
  * dados apenas por meio destas funções — nunca importando o JSON direto.
  *
- * Motivo: se um dia trocarmos a fonte (JSON local → HTTP API → banco),
- * basta reimplementar as funções abaixo sem tocar em componente algum.
- *
- * Implementação atual: leitura estática de src/data/events.json.
- * Vite serializa o JSON no bundle no momento do build (não há fetch em runtime).
+ * Implementação atual: leitura estática de src/data/events.json (Vite
+ * serializa o JSON no bundle no build). Se um dia trocarmos por HTTP API,
+ * basta reimplementar sem tocar em componente algum.
  */
 
 import eventsData from "../data/events.json";
 
 /**
  * Retorna todos os eventos.
- * @returns {Array<Event>}
  */
 export function getAllEvents() {
   return eventsData;
 }
 
 /**
- * Retorna um evento pelo id, ou undefined se não existir.
- * @param {string} id — ex: "pernambuco_pilot_2026"
- * @returns {Event | undefined}
+ * Retorna um evento pelo id.
  */
 export function getEventById(id) {
   return eventsData.find((ev) => ev.id === id);
 }
 
 /**
- * Retorna o array de vídeos coletados para um evento.
- * @param {string} eventId
- * @returns {Array<Video>} — vazio se evento não existir
+ * Retorna vídeos coletados para um evento.
  */
 export function getVideosForEvent(eventId) {
   const ev = getEventById(eventId);
@@ -41,11 +34,7 @@ export function getVideosForEvent(eventId) {
 }
 
 /**
- * Retorna as amostras (top-N com maior score BERTimbau) de uma categoria
- * em um evento específico.
- * @param {string} eventId
- * @param {string} categoryKey — ex: "responsabilizacao_governanca"
- * @returns {Array<Sample>} — vazio se evento ou categoria não existirem
+ * Retorna amostras (top-N por score) de uma categoria em um evento.
  */
 export function getSamplesForCategory(eventId, categoryKey) {
   const ev = getEventById(eventId);
@@ -53,9 +42,7 @@ export function getSamplesForCategory(eventId, categoryKey) {
 }
 
 /**
- * Retorna a distribuição de predições (contagens por categoria) de um evento.
- * @param {string} eventId
- * @returns {Array<{key, label, count, pct}>}
+ * Retorna a distribuição de predições por categoria de um evento.
  */
 export function getDistributionForEvent(eventId) {
   const ev = getEventById(eventId);
@@ -63,9 +50,7 @@ export function getDistributionForEvent(eventId) {
 }
 
 /**
- * Retorna a série temporal diária de volume de comentários para um evento.
- * @param {string} eventId
- * @returns {Array<{date, count}>}
+ * Retorna série temporal diária de volume de comentários.
  */
 export function getTimelineForEvent(eventId) {
   const ev = getEventById(eventId);
@@ -73,10 +58,7 @@ export function getTimelineForEvent(eventId) {
 }
 
 /**
- * Metadados enxutos para listagem/mapa: id, municipio, uf, tipo, nivel,
- * data_alerta, codibge, lat, lon, regime, n_comments. Sem samples nem videos.
- * Útil para componentes que só precisam de overview (ex: BrazilMap, EventList).
- * @returns {Array<EventSummary>}
+ * Metadados enxutos para listagem/mapa.
  */
 export function getEventSummaries() {
   return eventsData.map((ev) => ({
@@ -93,4 +75,22 @@ export function getEventSummaries() {
     n_comments: ev.n_comments,
     n_videos: ev.n_videos,
   }));
+}
+
+/**
+ * Retorna a lista ordenada de UFs distintas que têm evento no arquivo.
+ * Útil para popular o filtro por UF sem hardcode.
+ */
+export function getUFsWithEvents() {
+  const ufs = new Set(eventsData.map((ev) => ev.uf));
+  return Array.from(ufs).sort();
+}
+
+/**
+ * Filtra eventos por conjunto de UFs. Se o Set for vazio, retorna vazio
+ * (comportamento consistente: "nenhuma UF marcada = nenhum evento").
+ */
+export function getEventsByUFs(ufSet) {
+  if (!ufSet || ufSet.size === 0) return [];
+  return eventsData.filter((ev) => ufSet.has(ev.uf));
 }
