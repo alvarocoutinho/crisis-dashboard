@@ -58,6 +58,16 @@ export function getTimelineForEvent(eventId) {
 }
 
 /**
+ * Retorna estudos acadêmicos cadastrados manualmente para um evento.
+ * Array vazio significa "nenhum estudo cadastrado ainda" (estado explícito,
+ * não erro).
+ */
+export function getAcademicStudiesForEvent(eventId) {
+  const ev = getEventById(eventId);
+  return ev?.academic_studies ?? [];
+}
+
+/**
  * Metadados enxutos para listagem/mapa.
  */
 export function getEventSummaries() {

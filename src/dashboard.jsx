@@ -8,7 +8,7 @@ import {
   AlertTriangle, MapPin, MessageSquare, Video, Users,
   Info, ChevronRight, VolumeX, FileWarning, Beaker,
   Layers, Activity, PlayCircle, ExternalLink,
-  BarChart3, Film, X, Filter, ArrowLeft
+  BarChart3, Film, X, Filter, ArrowLeft, BookOpen
 } from "lucide-react";
 import * as d3 from "d3";
 import {
@@ -17,6 +17,7 @@ import {
   getEventSummaries,
   getUFsWithEvents,
   getEventsByUFs,
+  getAcademicStudiesForEvent,
 } from "./services/eventsRepository";
 
 // Janelas fixas de atualização (frozen framing rule)
@@ -234,6 +235,7 @@ function EventPanel({ event }) {
         {[
           { id: "analise", label: "Análise", icon: BarChart3 },
           { id: "videos", label: `Vídeos coletados (${event.n_videos})`, icon: Film },
+          { id: "estudos", label: `Estudos acadêmicos (${(event.academic_studies ?? []).length})`, icon: BookOpen },
         ].map(t => {
           const Icon = t.icon;
           const isActive = tab === t.id;
@@ -253,7 +255,77 @@ function EventPanel({ event }) {
         })}
       </div>
 
-      {tab === "videos" ? <VideoTab event={event} /> : <AnalysisTab event={event} />}
+      {tab === "videos" && <VideoTab event={event} />}
+      {tab === "estudos" && <AcademicStudiesTab event={event} />}
+      {tab === "analise" && <AnalysisTab event={event} />}
+    </div>
+  );
+}
+
+// Aba de estudos acadêmicos — curadoria manual, não vem do pipeline
+function AcademicStudiesTab({ event }) {
+  const studies = getAcademicStudiesForEvent(event.id);
+
+  if (studies.length === 0) {
+    return (
+      <div className="bg-white rounded-lg border border-stone-300 p-6">
+        <div className="flex items-start gap-3 text-stone-600">
+          <BookOpen size={20} className="text-stone-400 mt-0.5 flex-shrink-0" />
+          <div>
+            <p className="text-sm font-medium text-stone-800 mb-1">
+              Nenhum estudo cadastrado ainda para este evento.
+            </p>
+            <p className="text-xs text-stone-500 leading-relaxed">
+              Esta seção reúne, por curadoria manual, artigos científicos publicados
+              sobre o evento. Quando disponíveis, servem de contraponto acadêmico à
+              caracterização discursiva apresentada nas outras abas.
+            </p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="space-y-3">
+      <div className="bg-white rounded-lg border border-stone-300 p-4">
+        <div className="flex items-center gap-2 text-xs text-stone-600">
+          <BookOpen size={14} className="text-stone-500" />
+          <span>
+            Estudos acadêmicos publicados sobre este evento — curadoria manual, não
+            proveniente do pipeline automatizado.
+          </span>
+        </div>
+      </div>
+
+      {studies.map((s, i) => (
+        <div
+          key={i}
+          className="bg-white rounded-lg border border-stone-300 p-5 hover:border-stone-400 transition-colors"
+        >
+          <div className="text-xs text-stone-500 mb-1">
+            {s.authors} · {s.year}
+          </div>
+          <div className="text-sm font-semibold text-stone-900 leading-snug mb-2">
+            {s.title}
+          </div>
+          <div className="text-xs text-stone-600 italic mb-3">{s.venue}</div>
+          {s.url && (
+            <a
+              href={s.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-xs font-medium text-stone-700 hover:text-stone-900 border-b border-stone-300 hover:border-stone-700 pb-0.5"
+            >
+              <ExternalLink size={11} />
+              {s.url.replace(/^https?:\/\//, "")}
+            </a>
+          )}
+        </div>
+      ))}
+
+      {/* Placeholder para futura expansão: aba/seção de artigos de jornais */}
+      {/* TODO(camada 3 futura): consolidar cobertura midiática de imprensa por evento */}
     </div>
   );
 }
