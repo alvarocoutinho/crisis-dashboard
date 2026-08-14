@@ -18,6 +18,8 @@ import {
   getUFsWithEvents,
   getEventsByUFs,
   getAcademicStudiesForEvent,
+  getMacrorregioesWithEvents,
+  getUFsInMacrorregiao,
 } from "./services/eventsRepository";
 
 // Janelas fixas de atualização (frozen framing rule)
@@ -860,6 +862,7 @@ function Footer() {
 
 export default function Dashboard() {
   const availableUFs = useMemo(() => getUFsWithEvents(), []);
+  const availableRegioes = useMemo(() => getMacrorregioesWithEvents(), []);
   const [selectedUFs, setSelectedUFs] = useState(() => new Set(availableUFs));
   const [selectedId, setSelectedId] = useState("rs_2024");
 
@@ -887,6 +890,28 @@ export default function Dashboard() {
     });
   };
 
+  // Estado da chip de macrorregião: "all" | "partial" | "none"
+  const regiaoState = (regiao) => {
+    const ufs = getUFsInMacrorregiao(regiao);
+    const selecionadas = ufs.filter(uf => selectedUFs.has(uf)).length;
+    if (selecionadas === 0) return "none";
+    if (selecionadas === ufs.length) return "all";
+    return "partial";
+  };
+
+  // Clique em macrorregião: se todas selecionadas → desmarca todas;
+  // se parcial ou nenhuma → marca todas. Não é filtro paralelo, é agregador.
+  const toggleRegiao = (regiao) => {
+    const ufs = getUFsInMacrorregiao(regiao);
+    const state = regiaoState(regiao);
+    setSelectedUFs(prev => {
+      const next = new Set(prev);
+      if (state === "all") ufs.forEach(uf => next.delete(uf));
+      else ufs.forEach(uf => next.add(uf));
+      return next;
+    });
+  };
+
   return (
     <div className="min-h-screen bg-stone-100 font-sans">
       <Header />
@@ -898,38 +923,71 @@ export default function Dashboard() {
           </Link>
         </div>
 
-        {/* Barra de filtros */}
-        <div className="bg-white rounded-lg border border-stone-300 p-3 mb-4 flex items-center gap-3 flex-wrap">
-          <div className="flex items-center gap-1.5 text-xs font-medium text-stone-700 flex-shrink-0">
-            <Filter size={12} /> Filtrar por UF:
+        {/* Barra de filtros — macrorregião (agregador) + UF (granular) */}
+        <div className="bg-white rounded-lg border border-stone-300 p-3 mb-4 space-y-2">
+          {/* Linha 1: macrorregiões IBGE */}
+          <div className="flex items-center gap-3 flex-wrap">
+            <div className="flex items-center gap-1.5 text-xs font-medium text-stone-700 flex-shrink-0">
+              <Filter size={12} /> Macrorregião:
+            </div>
+            {availableRegioes.map(regiao => {
+              const state = regiaoState(regiao);
+              const cls = state === "all"
+                ? "bg-stone-800 text-white"
+                : state === "partial"
+                  ? "bg-stone-800/20 text-stone-800 border border-stone-400"
+                  : "bg-stone-100 text-stone-500 hover:bg-stone-200";
+              return (
+                <button
+                  key={regiao}
+                  onClick={() => toggleRegiao(regiao)}
+                  className={`px-2.5 py-1 rounded text-xs font-medium transition-colors ${cls}`}
+                  title={
+                    state === "all"
+                      ? `Todas as UFs de ${regiao} selecionadas — clique para desmarcar`
+                      : state === "partial"
+                        ? `Algumas UFs de ${regiao} selecionadas — clique para marcar todas`
+                        : `Nenhuma UF de ${regiao} selecionada — clique para marcar todas`
+                  }
+                >
+                  {regiao}
+                </button>
+              );
+            })}
           </div>
-          {availableUFs.map(uf => {
-            const isActive = selectedUFs.has(uf);
-            return (
+          {/* Linha 2: UFs individuais */}
+          <div className="flex items-center gap-3 flex-wrap">
+            <div className="flex items-center gap-1.5 text-xs font-medium text-stone-700 flex-shrink-0">
+              <Filter size={12} /> UF:
+            </div>
+            {availableUFs.map(uf => {
+              const isActive = selectedUFs.has(uf);
+              return (
+                <button
+                  key={uf}
+                  onClick={() => toggleUF(uf)}
+                  className={`px-2.5 py-1 rounded text-xs font-medium transition-colors ${
+                    isActive
+                      ? "bg-stone-800 text-white"
+                      : "bg-stone-100 text-stone-500 hover:bg-stone-200"
+                  }`}
+                >
+                  {uf}
+                </button>
+              );
+            })}
+            <div className="ml-auto flex items-center gap-2">
+              <span className="text-xs text-stone-500">
+                {filteredEvents.length} de {getAllEvents().length} eventos
+              </span>
               <button
-                key={uf}
-                onClick={() => toggleUF(uf)}
-                className={`px-2.5 py-1 rounded text-xs font-medium transition-colors ${
-                  isActive
-                    ? "bg-stone-800 text-white"
-                    : "bg-stone-100 text-stone-500 hover:bg-stone-200"
-                }`}
+                onClick={() => setSelectedUFs(new Set(availableUFs))}
+                className="text-xs text-stone-600 hover:text-stone-900 underline"
+                disabled={selectedUFs.size === availableUFs.length}
               >
-                {uf}
+                todas
               </button>
-            );
-          })}
-          <div className="ml-auto flex items-center gap-2">
-            <span className="text-xs text-stone-500">
-              {filteredEvents.length} de {getAllEvents().length} eventos
-            </span>
-            <button
-              onClick={() => setSelectedUFs(new Set(availableUFs))}
-              className="text-xs text-stone-600 hover:text-stone-900 underline"
-              disabled={selectedUFs.size === availableUFs.length}
-            >
-              todas
-            </button>
+            </div>
           </div>
         </div>
 

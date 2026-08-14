@@ -104,3 +104,41 @@ export function getEventsByUFs(ufSet) {
   if (!ufSet || ufSet.size === 0) return [];
   return eventsData.filter((ev) => ufSet.has(ev.uf));
 }
+
+/**
+ * Mapeamento UF → macrorregião IBGE.
+ * Fonte: divisão regional oficial do IBGE (Norte, Nordeste, Centro-Oeste,
+ * Sudeste, Sul). Estático — a divisão não muda com frequência.
+ */
+export const UF_TO_MACRORREGIAO = {
+  AC: "Norte", AP: "Norte", AM: "Norte", PA: "Norte", RO: "Norte", RR: "Norte", TO: "Norte",
+  AL: "Nordeste", BA: "Nordeste", CE: "Nordeste", MA: "Nordeste", PB: "Nordeste",
+  PE: "Nordeste", PI: "Nordeste", RN: "Nordeste", SE: "Nordeste",
+  DF: "Centro-Oeste", GO: "Centro-Oeste", MT: "Centro-Oeste", MS: "Centro-Oeste",
+  ES: "Sudeste", MG: "Sudeste", RJ: "Sudeste", SP: "Sudeste",
+  PR: "Sul", RS: "Sul", SC: "Sul",
+};
+
+/**
+ * Ordem canônica das macrorregiões (norte → sul, padrão IBGE).
+ */
+export const MACRORREGIOES_ORDER = ["Norte", "Nordeste", "Centro-Oeste", "Sudeste", "Sul"];
+
+/**
+ * Retorna as macrorregiões que têm ≥1 UF com evento no arquivo,
+ * na ordem canônica. Útil para renderizar apenas chips relevantes.
+ */
+export function getMacrorregioesWithEvents() {
+  const regioes = new Set(
+    getUFsWithEvents().map((uf) => UF_TO_MACRORREGIAO[uf]).filter(Boolean)
+  );
+  return MACRORREGIOES_ORDER.filter((r) => regioes.has(r));
+}
+
+/**
+ * Retorna as UFs presentes no dataset que pertencem a uma dada macrorregião.
+ * Base para o comportamento "clique na região = toggle todas as UFs dela".
+ */
+export function getUFsInMacrorregiao(macrorregiao) {
+  return getUFsWithEvents().filter((uf) => UF_TO_MACRORREGIAO[uf] === macrorregiao);
+}
