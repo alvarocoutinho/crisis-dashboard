@@ -10,6 +10,8 @@
  */
 
 import eventsData from "../data/events.json";
+import liveData from "../data/live.json";
+import stateData from "../data/state.json";
 
 /**
  * Retorna todos os eventos.
@@ -141,4 +143,125 @@ export function getMacrorregioesWithEvents() {
  */
 export function getUFsInMacrorregiao(macrorregiao) {
   return getUFsWithEvents().filter((uf) => UF_TO_MACRORREGIAO[uf] === macrorregiao);
+}
+
+// ============================================================
+// LIVE — Coleta prospectiva ancorada em alertas CEMADEN
+// ============================================================
+
+/**
+ * Retorna o objeto live.json completo (metadados + array de alertas).
+ * O objeto tem os campos: generated_at, pipeline_version, pilot_mode,
+ * dry_run, alerts.
+ */
+export function getLiveData() {
+  return liveData;
+}
+
+/**
+ * Retorna apenas o array de alertas ativos, no schema Event estendido
+ * (com campos prospectivos observation_status, priority_tier, etc.).
+ */
+export function getLiveAlerts() {
+  return liveData?.alerts ?? [];
+}
+
+/**
+ * Retorna um alerta live pelo id.
+ */
+export function getLiveAlertById(id) {
+  return getLiveAlerts().find((a) => a.id === id);
+}
+
+/**
+ * Retorna o state.json completo (estado operacional do pipeline).
+ */
+export function getPipelineState() {
+  return stateData;
+}
+
+/**
+ * Ordem canônica dos tiers de prioridade (mais crítico → menos).
+ * Determina ordem visual de chips e listagens.
+ */
+export const TIER_ORDER = ["muito_alto", "alto", "moderado", "acompanhamento"];
+
+/**
+ * Metadata visual por tier — cor, rótulo, cadência.
+ * Cores casam com a convenção CEMADEN (vermelho/laranja/amarelo) +
+ * cinza para acompanhamento (fora do regime crítico).
+ */
+export const TIER_META = {
+  muito_alto: {
+    label: "Muito Alto",
+    color: "#dc2626",     // red-600
+    bgClass: "bg-red-600",
+    textClass: "text-red-700",
+    borderClass: "border-red-300",
+    lightBgClass: "bg-red-50",
+    cadenceHours: 6,
+    dotRadius: 8,
+  },
+  alto: {
+    label: "Alto",
+    color: "#ea580c",     // orange-600
+    bgClass: "bg-orange-600",
+    textClass: "text-orange-700",
+    borderClass: "border-orange-300",
+    lightBgClass: "bg-orange-50",
+    cadenceHours: 12,
+    dotRadius: 7,
+  },
+  moderado: {
+    label: "Moderado",
+    color: "#ca8a04",     // yellow-600
+    bgClass: "bg-yellow-600",
+    textClass: "text-yellow-700",
+    borderClass: "border-yellow-300",
+    lightBgClass: "bg-yellow-50",
+    cadenceHours: 24,
+    dotRadius: 6,
+  },
+  acompanhamento: {
+    label: "Acompanhamento",
+    color: "#78716c",     // stone-500
+    bgClass: "bg-stone-500",
+    textClass: "text-stone-600",
+    borderClass: "border-stone-300",
+    lightBgClass: "bg-stone-50",
+    cadenceHours: 48,
+    dotRadius: 4,
+  },
+};
+
+/**
+ * Retorna os tiers presentes nos alertas live atuais, na ordem canônica.
+ */
+export function getTiersInLive() {
+  const tiers = new Set(getLiveAlerts().map((a) => a.priority_tier).filter(Boolean));
+  return TIER_ORDER.filter((t) => tiers.has(t));
+}
+
+/**
+ * Filtra alertas live por conjunto de tiers.
+ */
+export function getLiveAlertsByTiers(tierSet) {
+  if (!tierSet || tierSet.size === 0) return [];
+  return getLiveAlerts().filter((a) => tierSet.has(a.priority_tier));
+}
+
+/**
+ * Retorna alertas de "coleta prioritária" (não-acompanhamento).
+ * Usado para a Seção A do /live.
+ */
+export function getPriorityCollectionAlerts() {
+  return getLiveAlerts().filter((a) => a.priority_tier !== "acompanhamento");
+}
+
+/**
+ * Retorna alertas de "acompanhamento" (janela estendida 365d).
+ * Usado para a Seção B do /live.
+ */
+export function getExtendedWindowAlerts() {
+  return getLiveAlerts().filter((a) => a.priority_tier === "acompanhamento");
 }
