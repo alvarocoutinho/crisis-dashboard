@@ -1,0 +1,185 @@
+name: ODRD Pipeline
+
+# Cron a cada 6h (M3 confirmado: 00h/06h/12h/18h UTC) + trigger manual (F5+M)
+# Nota: GitHub Actions notoriamente atrasa cron 5-15min em horários movimentados;
+# aceito para uma cadência de 6h.
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Executar em modo dry-run (não persiste state/live/drive)'
+        type: boolean
+        default: false
+      limit_alerts:
+        description: 'Processar no máximo N alertas (0 = sem limite)'
+        type: string
+        default: '0'
+
+# Permite ao workflow commitar no repo
+permissions:
+  contents: write
+  issues: write
+
+# Evita execuções concorrentes — se um cron sobrepõe manual dispatch,
+# o novo fica na fila em vez de rodar em paralelo (protege state.json)
+concurrency:
+  group: odrd-pipeline
+  cancel-in-progress: false
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repositório
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          # PAT não necessário — GITHUB_TOKEN com contents:write basta
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: requirements-pipeline.txt
+
+      - name: Instalar dependências do pipeline
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-pipeline.txt
+
+      - name: Cache do checkpoint HuggingFace
+        # BERTimbau tem ~437MB — cachear evita 4×/dia de download
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: hf-bertimbau-weaklabels-odrd-v0.1.0
+          restore-keys: |
+            hf-bertimbau-weaklabels-odrd-
+
+      - name: Executar pipeline
+        id: pipeline
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          PED_EMAIL: ${{ secrets.PED_EMAIL }}
+          PED_PASSWORD: ${{ secrets.PED_PASSWORD }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GDRIVE_FOLDER_NAME: ODRD-piloto-tecnico
+          FAA_OUTPUT_DIR: /tmp/faa_pipeline_run
+        run: |
+          ARGS=""
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          fi
+          if [ "${{ inputs.limit_alerts }}" != "0" ] && [ -n "${{ inputs.limit_alerts }}" ]; then
+            ARGS="$ARGS --limit-alerts ${{ inputs.limit_alerts }}"
+          fi
+          # Exit codes: 0 = success, 1 = catastrófica, 2 = manutenção (parcial)
+          set +e
+          python scripts/pipeline.py $ARGS
+          echo "pipeline_exit_code=$?" >> $GITHUB_OUTPUT
+          set -e
+
+      - name: Interpretar exit code
+        id: status
+        run: |
+          CODE=${{ steps.pipeline.outputs.pipeline_exit_code }}
+          case $CODE in
+            0) echo "status=success"    >> $GITHUB_OUTPUT; echo "emoji=✓" >> $GITHUB_OUTPUT ;;
+            2) echo "status=maintenance" >> $GITHUB_OUTPUT; echo "emoji=⚠" >> $GITHUB_OUTPUT ;;
+            *) echo "status=failed"      >> $GITHUB_OUTPUT; echo "emoji=✗" >> $GITHUB_OUTPUT ;;
+          esac
+          echo "Pipeline finalizou com exit code $CODE (status=$(cat $GITHUB_OUTPUT | grep ^status | cut -d= -f2))"
+
+      # === COMMIT CONDICIONAL (M4: só se algo mudou) ===
+      # Se falha catastrófica (exit=1), NÃO commita — preserva o live/state anterior
+      - name: Commit condicional
+        if: steps.status.outputs.status != 'failed' && !inputs.dry_run
+        env:
+          STATUS: ${{ steps.status.outputs.status }}
+          EMOJI: ${{ steps.status.outputs.emoji }}
+        run: |
+          git config user.name "odrd-pipeline[bot]"
+          git config user.email "odrd-pipeline[bot]@users.noreply.github.com"
+
+          # M4: só commita se houve mudança real
+          if git diff --quiet src/data/live.json src/data/state.json 2>/dev/null; then
+            echo "Nenhuma mudança em live.json/state.json — pulando commit"
+            exit 0
+          fi
+
+          git add src/data/live.json src/data/state.json
+
+          # Timestamp e status na mensagem para auditoria
+          TIMESTAMP=$(date -u +'%Y-%m-%d %H:%M UTC')
+          MSG="${EMOJI} pipeline: ${STATUS} @ ${TIMESTAMP}"
+          if [ "$STATUS" = "maintenance" ]; then
+            MSG="$MSG (parcial — verificar logs)"
+          fi
+
+          git commit -m "$MSG"
+          git push origin main
+          echo "Commit realizado: $MSG"
+
+      # === FALHA CATASTRÓFICA: dispara workflow de issue automática ===
+      - name: Disparar workflow de falha
+        if: steps.status.outputs.status == 'failed'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'pipeline-failure',
+              per_page: 5,
+            });
+
+            const runUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const timestamp = new Date().toISOString();
+
+            // Se já existe issue aberta de falha, comenta nela em vez de abrir nova
+            if (issues.length > 0) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issues[0].number,
+                body: `Nova falha em ${timestamp}\n\nRun: ${runUrl}`,
+              });
+              console.log(`Comentário adicionado à issue #${issues[0].number}`);
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: `Pipeline ODRD falhou — ${timestamp.slice(0, 10)}`,
+                labels: ['pipeline-failure', 'automated'],
+                body: [
+                  `## Pipeline falhou (exit code 1)`,
+                  ``,
+                  `**Timestamp:** ${timestamp}`,
+                  `**Run:** ${runUrl}`,
+                  ``,
+                  `### O que fazer`,
+                  ``,
+                  `1. Ver logs do run acima`,
+                  `2. Se erro é transitório (rede, cota YouTube), aguardar próximo cron`,
+                  `3. Se erro é de código, corrigir e re-executar via workflow_dispatch`,
+                  `4. Fechar esta issue quando resolvido — futuras falhas comentarão aqui até fechar`,
+                  ``,
+                  `### Contexto`,
+                  ``,
+                  `- **Estado NÃO foi commitado** — live.json e state.json preservados na última versão boa`,
+                  `- **Próximo cron:** \`0 */6 * * *\` UTC — próxima tentativa automática em até 6h`,
+                  `- **Manual retry:** Actions → ODRD Pipeline → Run workflow`,
+                ].join('\n'),
+              });
+              console.log('Issue de falha aberta');
+            }
+
+            core.setFailed('Pipeline falhou — issue criada/atualizada');

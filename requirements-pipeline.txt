@@ -1,0 +1,26 @@
+# Dependências do pipeline ODRD (backend Python)
+# Separado do dashboard (Node/React) — instalado no runner do GitHub Actions.
+#
+# Versões fixadas com ~= (compatible release) para reprodutibilidade sem
+# congelar mais do que necessário. Atualize deliberadamente, não por acaso.
+
+# Core
+pandas~=2.2.0
+numpy~=1.26.0
+requests~=2.31.0
+
+# ML — BERTimbau inference
+torch~=2.3.0
+transformers~=4.44.0
+huggingface_hub~=0.24.0
+sentencepiece~=0.2.0        # obrigatório para tokenizer do BERTimbau
+
+# Google Drive (para leva 2 — upload de crus)
+google-api-python-client~=2.140.0
+google-auth~=2.32.0
+google-auth-httplib2~=0.2.0
+
+# Do faa_poc (frozen — mantém as versões que já funcionam)
+beautifulsoup4~=4.12.0
+lxml~=5.2.0
+python-dateutil~=2.9.0
