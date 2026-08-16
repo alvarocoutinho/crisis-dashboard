@@ -1,19 +1,99 @@
 {
   "pipeline_version": "0.1.0",
-  "last_run_at": "2026-08-15T14:36:33Z",
-  "last_run_status": "success",
-  "last_run_duration_seconds": 6,
+  "last_run_at": "2026-08-16T18:33:51Z",
+  "last_run_status": "partial",
+  "last_run_duration_seconds": 32,
   "youtube_quota": {
-    "used_today": 604,
-    "reset_at": "2026-08-16T07:00:00Z"
+    "used_today": 600,
+    "reset_at": "2026-08-17T07:00:00Z"
   },
   "active_alerts": {
+    "cemaden_rs_2472": {
+      "codibge": "4313060",
+      "municipio": "Nova Hartz",
+      "uf": "RS",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "opened_at": "2026-08-16T01:22:31Z",
+      "last_seen_open_at": "2026-08-16T18:33:51Z",
+      "transitions": [],
+      "videos_collected": [],
+      "last_collection_at": "2026-08-16T18:33:51Z",
+      "next_collection_at": "2026-08-17T18:33:51Z"
+    },
+    "cemaden_rs_2473": {
+      "codibge": "4314050",
+      "municipio": "Parobé",
+      "uf": "RS",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "opened_at": "2026-08-16T01:23:31Z",
+      "last_seen_open_at": "2026-08-16T18:33:51Z",
+      "transitions": [],
+      "videos_collected": [],
+      "last_collection_at": "2026-08-16T18:33:51Z",
+      "next_collection_at": "2026-08-17T18:33:51Z"
+    },
+    "cemaden_rs_2474": {
+      "codibge": "4310108",
+      "municipio": "Igrejinha",
+      "uf": "RS",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "opened_at": "2026-08-16T04:32:59Z",
+      "last_seen_open_at": "2026-08-16T18:33:51Z",
+      "transitions": [],
+      "videos_collected": [],
+      "last_collection_at": "2026-08-16T18:33:51Z",
+      "next_collection_at": "2026-08-17T18:33:51Z"
+    },
+    "cemaden_rs_2475": {
+      "codibge": "4314407",
+      "municipio": "Pelotas",
+      "uf": "RS",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "opened_at": "2026-08-16T06:29:38Z",
+      "last_seen_open_at": "2026-08-16T18:33:51Z",
+      "transitions": [],
+      "videos_collected": [],
+      "last_collection_at": "2026-08-16T18:33:51Z",
+      "next_collection_at": "2026-08-17T18:33:51Z"
+    },
+    "cemaden_rs_2476": {
+      "codibge": "4314209",
+      "municipio": "Pedro Osório",
+      "uf": "RS",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "opened_at": "2026-08-16T07:56:32Z",
+      "last_seen_open_at": "2026-08-16T18:33:51Z",
+      "transitions": [],
+      "videos_collected": [],
+      "last_collection_at": "2026-08-16T18:33:51Z",
+      "next_collection_at": "2026-08-17T18:33:51Z"
+    },
+    "cemaden_rs_2477": {
+      "codibge": "4318804",
+      "municipio": "São Lourenço do Sul",
+      "uf": "RS",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "opened_at": "2026-08-16T08:37:07Z",
+      "last_seen_open_at": "2026-08-16T18:33:51Z",
+      "transitions": [],
+      "videos_collected": [],
+      "last_collection_at": "2026-08-16T18:33:51Z",
+      "next_collection_at": "2026-08-17T18:33:51Z"
+    }
+  },
+  "extended_window_alerts": {
     "cemaden_sp_2464": {
       "codibge": "3550308",
       "municipio": "São Paulo",
       "uf": "SP",
       "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
+      "priority_tier": "acompanhamento",
       "opened_at": "2026-08-15T08:20:52Z",
       "last_seen_open_at": "2026-08-15T14:36:33Z",
       "transitions": [],
@@ -22,34 +102,36 @@
         "0_ceg6QChIk"
       ],
       "last_collection_at": "2026-08-15T14:36:33Z",
-      "next_collection_at": "2026-08-16T14:36:33Z"
+      "next_collection_at": "2026-08-18T18:33:51Z",
+      "closed_at": "2026-08-16T18:33:51Z"
     },
     "cemaden_rj_2465": {
       "codibge": "3304557",
       "municipio": "Rio de Janeiro",
       "uf": "RJ",
       "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
+      "priority_tier": "acompanhamento",
       "opened_at": "2026-08-15T08:31:19Z",
       "last_seen_open_at": "2026-08-15T14:36:33Z",
       "transitions": [],
       "videos_collected": [],
       "last_collection_at": "2026-08-15T14:36:33Z",
-      "next_collection_at": "2026-08-16T14:36:33Z"
+      "next_collection_at": "2026-08-18T18:33:51Z",
+      "closed_at": "2026-08-16T18:33:51Z"
     },
     "cemaden_rj_2466": {
       "codibge": "3303906",
       "municipio": "Petrópolis",
       "uf": "RJ",
       "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
+      "priority_tier": "acompanhamento",
       "opened_at": "2026-08-15T10:03:28Z",
       "last_seen_open_at": "2026-08-15T14:36:33Z",
       "transitions": [],
       "videos_collected": [],
       "last_collection_at": "2026-08-15T14:36:33Z",
-      "next_collection_at": "2026-08-16T14:36:33Z"
+      "next_collection_at": "2026-08-18T18:33:51Z",
+      "closed_at": "2026-08-16T18:33:51Z"
     }
-  },
-  "extended_window_alerts": {}
+  }
 }
