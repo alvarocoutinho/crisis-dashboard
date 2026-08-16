@@ -288,7 +288,6 @@ def main() -> int:
                 predictions_df=df_pred if 'df_pred' in locals() else None,
                 pipeline_version=PIPELINE_VERSION,
                 run_id=run_id,
-                root_folder_name=os.environ.get("GDRIVE_FOLDER_NAME", "ODRD-piloto-tecnico"),
             )
             n_ok = sum(1 for r in results.values() if r)
             log(f"Drive: {n_ok}/{len(to_collect)} alertas com upload bem-sucedido", "OK")

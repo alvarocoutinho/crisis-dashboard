@@ -65,7 +65,7 @@ class GDriveUploader:
         )
     """
 
-    def __init__(self, service_account_info: dict, root_folder_name: str):
+    def __init__(self, service_account_info: dict, root_folder_id: str):
         if not _GDRIVE_AVAILABLE:
             raise RuntimeError(
                 "google-api-python-client não instalado. "
@@ -76,24 +76,36 @@ class GDriveUploader:
         )
         self.service = build("drive", "v3", credentials=creds, cache_discovery=False)
         self.sa_email = service_account_info.get("client_email", "unknown")
-        self.root_folder_name = root_folder_name
+        self.root_folder_id = root_folder_id
         self._folder_id_cache: dict[str, str] = {}
-        self._root_id: str | None = None
 
     @classmethod
     def from_env(
         cls,
         env_var: str = "GOOGLE_SERVICE_ACCOUNT_JSON",
-        root_folder_name: str = "ODRD-piloto-tecnico",
+        folder_id_env: str = "GDRIVE_FOLDER_ID",
     ) -> "GDriveUploader":
         """Constrói do secret GitHub Actions.
 
-        O secret pode ser o JSON cru ou base64 (aceitamos ambos por
-        conveniência — GitHub Secrets sanitizam newlines em strings longas).
+        Requer duas variáveis de ambiente:
+        - GOOGLE_SERVICE_ACCOUNT_JSON: credenciais (JSON cru ou base64)
+        - GDRIVE_FOLDER_ID: ID da pasta raiz no Drive (extraído da URL)
+
+        Nota sobre escopo drive.file: como a service account usa escopo
+        mínimo, ela não pode LISTAR pastas por nome — só acessa pastas
+        cujo ID conhece a priori. Por isso passamos o ID direto em vez
+        de buscar por nome. Segurança em profundidade > conveniência.
         """
         raw = os.environ.get(env_var, "").strip()
         if not raw:
             raise RuntimeError(f"variável {env_var} vazia ou não definida")
+
+        folder_id = os.environ.get(folder_id_env, "").strip()
+        if not folder_id:
+            raise RuntimeError(
+                f"variável {folder_id_env} vazia ou não definida. "
+                f"Extraia o ID da URL da pasta no Drive (parte após /folders/)."
+            )
 
         # Tenta base64 primeiro (mais robusto para GitHub Secrets)
         info = None
@@ -108,41 +120,37 @@ class GDriveUploader:
         if info is None:
             info = json.loads(raw)
 
-        return cls(info, root_folder_name)
+        return cls(info, folder_id)
 
-    def _find_root_folder_id(self) -> str:
-        """Localiza a pasta raiz compartilhada pelo pesquisador com a SA.
+    def _validate_root_folder(self) -> str:
+        """Confirma que a pasta raiz existe e é acessível pela SA.
 
-        A pasta precisa ter sido criada manualmente no Drive do pesquisador
-        e compartilhada com o e-mail da service account (permissão Editor).
-        Se não encontrada, orienta como criar.
+        Com escopo drive.file, o get direto por ID funciona SE a SA foi
+        compartilhada como Editor ou Viewer da pasta. Se falhar aqui,
+        orienta o usuário.
         """
-        if self._root_id:
-            return self._root_id
+        try:
+            folder = self.service.files().get(
+                fileId=self.root_folder_id,
+                fields="id, name, mimeType",
+            ).execute()
+        except HttpError as e:
+            if e.resp.status in (403, 404):
+                raise RuntimeError(
+                    f"Pasta {self.root_folder_id} inacessível pela service account.\n"
+                    f"Verifique:\n"
+                    f"  1. A pasta existe no Drive\n"
+                    f"  2. Foi compartilhada com {self.sa_email} como Editor\n"
+                    f"  3. O ID em GDRIVE_FOLDER_ID bate com o da URL da pasta"
+                ) from e
+            raise
 
-        query = (
-            f"mimeType = '{MIME_FOLDER}' and "
-            f"name = '{self.root_folder_name}' and "
-            f"trashed = false"
-        )
-        resp = self.service.files().list(
-            q=query,
-            fields="files(id, name, owners(emailAddress))",
-            pageSize=10,
-        ).execute()
-
-        folders = resp.get("files", [])
-        if not folders:
+        if folder.get("mimeType") != MIME_FOLDER:
             raise RuntimeError(
-                f"Pasta '{self.root_folder_name}' não encontrada.\n"
-                f"Crie no seu Drive pessoal e compartilhe com {self.sa_email} "
-                f"como Editor. Depois rode o pipeline de novo."
+                f"ID {self.root_folder_id} aponta para um arquivo, não pasta. "
+                f"Verifique a URL no Drive."
             )
-        if len(folders) > 1:
-            print(f"[gdrive] AVISO: múltiplas pastas '{self.root_folder_name}' — usando a primeira")
-
-        self._root_id = folders[0]["id"]
-        return self._root_id
+        return self.root_folder_id
 
     def _get_or_create_folder(self, name: str, parent_id: str) -> str:
         """Retorna id de pasta existente ou cria nova. Cache em memória."""
@@ -171,7 +179,7 @@ class GDriveUploader:
 
     def _get_or_create_alert_folder(self, alert_id: str, now: datetime) -> str:
         """Cria árvore YYYY/MM/alerta_<id>/ dentro da pasta raiz."""
-        root_id = self._find_root_folder_id()
+        root_id = self._validate_root_folder()
         year_id = self._get_or_create_folder(str(now.year), root_id)
         month_id = self._get_or_create_folder(f"{now.month:02d}", year_id)
         alert_folder = self._get_or_create_folder(f"alerta_{alert_id}", month_id)
@@ -369,19 +377,25 @@ def upload_run_to_drive(
     predictions_df: pd.DataFrame | None,
     pipeline_version: str,
     run_id: str,
-    root_folder_name: str = "ODRD-piloto-tecnico",
 ) -> dict[str, dict[str, str]]:
     """Wrapper de alto nível chamado pelo pipeline.py.
 
     Envia snapshots de todos os alertas processados neste ciclo. Erros
     individuais não param o loop — pipeline continua e reporta parciais.
+
+    Requer secrets no env:
+    - GOOGLE_SERVICE_ACCOUNT_JSON: credenciais (JSON cru ou base64)
+    - GDRIVE_FOLDER_ID: ID da pasta raiz no Drive
     """
     if not os.environ.get("GOOGLE_SERVICE_ACCOUNT_JSON"):
         print("[gdrive] GOOGLE_SERVICE_ACCOUNT_JSON não definido — upload pulado")
         return {}
+    if not os.environ.get("GDRIVE_FOLDER_ID"):
+        print("[gdrive] GDRIVE_FOLDER_ID não definido — upload pulado")
+        return {}
 
     try:
-        uploader = GDriveUploader.from_env(root_folder_name=root_folder_name)
+        uploader = GDriveUploader.from_env()
     except Exception as e:
         print(f"[gdrive] falha ao inicializar cliente: {e}")
         return {}
