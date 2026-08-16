@@ -271,17 +271,24 @@ class GDriveUploader:
             Dict {filename: file_id} do que foi enviado.
         """
         now = now or datetime.now(timezone.utc)
+        print(f"[gdrive] === upload_alert_snapshot({alert_id}) ===", flush=True)
         folder_id = self._get_or_create_alert_folder(alert_id, now)
+        print(f"[gdrive]   pasta destino: {folder_id}", flush=True)
         uploaded: dict[str, str] = {}
 
         cod_alerta = alert_id.split("_")[-1]
 
         # 1. metadata.json — sobrescreve com snapshot mais recente
         alerts_csv = faa_output_dir / "alerts_log.csv"
+        print(f"[gdrive]   metadata.json: alerts_csv existe? {alerts_csv.exists()}", flush=True)
         if alerts_csv.exists():
             try:
                 df = pd.read_csv(alerts_csv)
-                mine = df[df["cod_alerta"].astype(str) == str(cod_alerta)]
+                print(f"[gdrive]     alerts_log.csv: {len(df)} linhas, colunas={list(df.columns)[:5]}...", flush=True)
+                # Match tolerante: cod_alerta como string, aceita tanto '2472' quanto '2472.0'
+                cod_str = str(cod_alerta).strip()
+                mine = df[df["cod_alerta"].astype(str).str.replace(r"\.0$", "", regex=True).str.strip() == cod_str]
+                print(f"[gdrive]     linhas do alerta {cod_str}: {len(mine)}", flush=True)
                 if not mine.empty:
                     meta = mine.iloc[-1].to_dict()
                     meta["_snapshot_at"] = now.isoformat()
@@ -293,8 +300,12 @@ class GDriveUploader:
                         json.dumps(meta, ensure_ascii=False, indent=2, default=str),
                     )
                     uploaded["metadata.json"] = fid
+                    print(f"[gdrive]     ✓ metadata.json subido (id={fid[:12]}...)", flush=True)
+                else:
+                    print(f"[gdrive]     ⚠ nenhuma linha encontrada para cod_alerta={cod_str}", flush=True)
             except Exception as e:
-                print(f"[gdrive] falha metadata {alert_id}: {e}")
+                print(f"[gdrive]     ✗ falha metadata {alert_id}: {e}", flush=True)
+                import traceback; traceback.print_exc()
 
         # 2. videos_metadata.jsonl — append
         videos_csv = faa_output_dir / "youtube_alert_video_links.csv"
@@ -362,6 +373,7 @@ class GDriveUploader:
                 print(f"[gdrive] falha predictions {alert_id}: {e}")
 
         # 5. collection_log.jsonl — sempre append, mesmo se todos os outros falharem
+        print(f"[gdrive]   collection_log.jsonl: sempre executa (registro do ciclo)", flush=True)
         try:
             log_entry = {
                 "collected_at": now.isoformat(),
@@ -375,9 +387,12 @@ class GDriveUploader:
                 [json.dumps(log_entry, ensure_ascii=False, default=str)],
             )
             uploaded["collection_log.jsonl"] = fid
+            print(f"[gdrive]     ✓ collection_log.jsonl atualizado (id={fid[:12]}...)", flush=True)
         except Exception as e:
-            print(f"[gdrive] falha collection_log {alert_id}: {e}")
+            print(f"[gdrive]     ✗ falha collection_log {alert_id}: {e}", flush=True)
+            import traceback; traceback.print_exc()
 
+        print(f"[gdrive]   TOTAL uploaded: {list(uploaded.keys())}", flush=True)
         return uploaded
 
 
@@ -412,6 +427,7 @@ def upload_run_to_drive(
 
     results: dict[str, dict[str, str]] = {}
     metadata = {"pipeline_version": pipeline_version, "run_id": run_id}
+    print(f"[gdrive] processando {len(alert_ids)} alertas...", flush=True)
     for alert_id in alert_ids:
         try:
             results[alert_id] = uploader.upload_alert_snapshot(
@@ -421,9 +437,10 @@ def upload_run_to_drive(
                 collection_metadata=metadata,
             )
             n = len(results[alert_id])
-            print(f"[gdrive] {alert_id}: {n} arquivos enviados/atualizados")
+            print(f"[gdrive] {alert_id}: {n} arquivos enviados/atualizados", flush=True)
         except Exception as e:
-            print(f"[gdrive] falha total no alerta {alert_id}: {e}")
+            print(f"[gdrive] falha total no alerta {alert_id}: {e}", flush=True)
+            import traceback; traceback.print_exc()
             results[alert_id] = {}
 
     return results
