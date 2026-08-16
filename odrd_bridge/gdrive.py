@@ -256,6 +256,7 @@ class GDriveUploader:
         faa_output_dir: Path,
         predictions_df: pd.DataFrame | None = None,
         collection_metadata: dict | None = None,
+        alert_metadata: dict | None = None,
         now: datetime | None = None,
     ) -> dict[str, str]:
         """Envia snapshot completo de um alerta para o Drive.
@@ -265,6 +266,10 @@ class GDriveUploader:
             faa_output_dir: pasta com CSVs do faa_poc
             predictions_df: DataFrame com predições (opcional)
             collection_metadata: dict com contexto do run (pipeline_version, etc.)
+            alert_metadata: dict com metadata do alerta (municipio, uf, nivel, etc.)
+                Deve vir do state.json/CEMADEN — MAIS confiável que ler do
+                alerts_log.csv que pode ter sido sobrescrito pelo faa_poc no
+                último alerta processado do ciclo.
             now: timestamp de referência (default: agora UTC)
 
         Returns:
@@ -278,34 +283,54 @@ class GDriveUploader:
 
         cod_alerta = alert_id.split("_")[-1]
 
-        # 1. metadata.json — sobrescreve com snapshot mais recente
-        alerts_csv = faa_output_dir / "alerts_log.csv"
-        print(f"[gdrive]   metadata.json: alerts_csv existe? {alerts_csv.exists()}", flush=True)
-        if alerts_csv.exists():
+        # 1. metadata.json — prefere alert_metadata (do state) ao alerts_log.csv
+        # (o CSV pode ter sido sobrescrito pelo faa_poc no último alerta do ciclo)
+        if alert_metadata:
             try:
-                df = pd.read_csv(alerts_csv)
-                print(f"[gdrive]     alerts_log.csv: {len(df)} linhas, colunas={list(df.columns)[:5]}...", flush=True)
-                # Match tolerante: cod_alerta como string, aceita tanto '2472' quanto '2472.0'
-                cod_str = str(cod_alerta).strip()
-                mine = df[df["cod_alerta"].astype(str).str.replace(r"\.0$", "", regex=True).str.strip() == cod_str]
-                print(f"[gdrive]     linhas do alerta {cod_str}: {len(mine)}", flush=True)
-                if not mine.empty:
-                    meta = mine.iloc[-1].to_dict()
-                    meta["_snapshot_at"] = now.isoformat()
-                    meta["_pipeline_version"] = (collection_metadata or {}).get(
-                        "pipeline_version", "unknown"
-                    )
-                    fid = self._upload_or_replace(
-                        folder_id, "metadata.json",
-                        json.dumps(meta, ensure_ascii=False, indent=2, default=str),
-                    )
-                    uploaded["metadata.json"] = fid
-                    print(f"[gdrive]     ✓ metadata.json subido (id={fid[:12]}...)", flush=True)
-                else:
-                    print(f"[gdrive]     ⚠ nenhuma linha encontrada para cod_alerta={cod_str}", flush=True)
+                meta = dict(alert_metadata)  # copia para não mutar chamador
+                meta["_snapshot_at"] = now.isoformat()
+                meta["_pipeline_version"] = (collection_metadata or {}).get(
+                    "pipeline_version", "unknown"
+                )
+                meta["_source"] = "state.json"
+                fid = self._upload_or_replace(
+                    folder_id, "metadata.json",
+                    json.dumps(meta, ensure_ascii=False, indent=2, default=str),
+                )
+                uploaded["metadata.json"] = fid
+                print(f"[gdrive]     ✓ metadata.json subido (de state.json)", flush=True)
             except Exception as e:
                 print(f"[gdrive]     ✗ falha metadata {alert_id}: {e}", flush=True)
                 import traceback; traceback.print_exc()
+        else:
+            # Fallback: tenta ler do CSV (comportamento antigo, para compat)
+            alerts_csv = faa_output_dir / "alerts_log.csv"
+            print(f"[gdrive]   metadata.json: alerts_csv existe? {alerts_csv.exists()}", flush=True)
+            if alerts_csv.exists():
+                try:
+                    df = pd.read_csv(alerts_csv)
+                    print(f"[gdrive]     alerts_log.csv: {len(df)} linhas, colunas={list(df.columns)[:5]}...", flush=True)
+                    cod_str = str(cod_alerta).strip()
+                    mine = df[df["cod_alerta"].astype(str).str.replace(r"\.0$", "", regex=True).str.strip() == cod_str]
+                    print(f"[gdrive]     linhas do alerta {cod_str}: {len(mine)}", flush=True)
+                    if not mine.empty:
+                        meta = mine.iloc[-1].to_dict()
+                        meta["_snapshot_at"] = now.isoformat()
+                        meta["_pipeline_version"] = (collection_metadata or {}).get(
+                            "pipeline_version", "unknown"
+                        )
+                        meta["_source"] = "alerts_log.csv (fallback)"
+                        fid = self._upload_or_replace(
+                            folder_id, "metadata.json",
+                            json.dumps(meta, ensure_ascii=False, indent=2, default=str),
+                        )
+                        uploaded["metadata.json"] = fid
+                        print(f"[gdrive]     ✓ metadata.json subido (de CSV)", flush=True)
+                    else:
+                        print(f"[gdrive]     ⚠ CSV não contém cod_alerta={cod_str} (provável: CSV foi sobrescrito por outro alerta do ciclo)", flush=True)
+                except Exception as e:
+                    print(f"[gdrive]     ✗ falha metadata {alert_id}: {e}", flush=True)
+                    import traceback; traceback.print_exc()
 
         # 2. videos_metadata.jsonl — append
         videos_csv = faa_output_dir / "youtube_alert_video_links.csv"
@@ -402,31 +427,43 @@ def upload_run_to_drive(
     predictions_df: pd.DataFrame | None,
     pipeline_version: str,
     run_id: str,
+    alerts_metadata: dict[str, dict] | None = None,
 ) -> dict[str, dict[str, str]]:
     """Wrapper de alto nível chamado pelo pipeline.py.
 
     Envia snapshots de todos os alertas processados neste ciclo. Erros
     individuais não param o loop — pipeline continua e reporta parciais.
 
+    Args:
+        alert_ids: lista de IDs dos alertas processados neste ciclo
+        faa_output_dir: pasta com CSVs do faa_poc
+        predictions_df: DataFrame com predições BERTimbau (pode ser None ou vazio)
+        pipeline_version: versão do pipeline (para auditoria)
+        run_id: ID único deste run
+        alerts_metadata: dict {alert_id: metadata_dict} vindo do state.json.
+            Fonte MAIS confiável que alerts_log.csv (que pode ter sido
+            sobrescrito pelo faa_poc no último alerta do ciclo).
+
     Requer secrets no env:
     - GOOGLE_SERVICE_ACCOUNT_JSON: credenciais (JSON cru ou base64)
     - GDRIVE_FOLDER_ID: ID da pasta raiz no Drive
     """
     if not os.environ.get("GOOGLE_SERVICE_ACCOUNT_JSON"):
-        print("[gdrive] GOOGLE_SERVICE_ACCOUNT_JSON não definido — upload pulado")
+        print("[gdrive] GOOGLE_SERVICE_ACCOUNT_JSON não definido — upload pulado", flush=True)
         return {}
     if not os.environ.get("GDRIVE_FOLDER_ID"):
-        print("[gdrive] GDRIVE_FOLDER_ID não definido — upload pulado")
+        print("[gdrive] GDRIVE_FOLDER_ID não definido — upload pulado", flush=True)
         return {}
 
     try:
         uploader = GDriveUploader.from_env()
     except Exception as e:
-        print(f"[gdrive] falha ao inicializar cliente: {e}")
+        print(f"[gdrive] falha ao inicializar cliente: {e}", flush=True)
         return {}
 
     results: dict[str, dict[str, str]] = {}
     metadata = {"pipeline_version": pipeline_version, "run_id": run_id}
+    alerts_metadata = alerts_metadata or {}
     print(f"[gdrive] processando {len(alert_ids)} alertas...", flush=True)
     for alert_id in alert_ids:
         try:
@@ -435,6 +472,7 @@ def upload_run_to_drive(
                 faa_output_dir=faa_output_dir,
                 predictions_df=predictions_df,
                 collection_metadata=metadata,
+                alert_metadata=alerts_metadata.get(alert_id),
             )
             n = len(results[alert_id])
             print(f"[gdrive] {alert_id}: {n} arquivos enviados/atualizados", flush=True)

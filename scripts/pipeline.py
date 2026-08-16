@@ -282,12 +282,21 @@ def main() -> int:
         try:
             from odrd_bridge.gdrive import upload_run_to_drive
             run_id = now.strftime("%Y%m%d-%H%M%S")
+            # Metadata dos alertas vem do state — mais confiável que alerts_log.csv
+            # (que pode ter sido sobrescrito pelo faa_poc no último alerta do ciclo)
+            alerts_metadata = {}
+            for d in to_collect:
+                meta = (state.get("active_alerts", {}).get(d.alert_id) or
+                        state.get("extended_window_alerts", {}).get(d.alert_id))
+                if meta:
+                    alerts_metadata[d.alert_id] = meta
             results = upload_run_to_drive(
                 alert_ids=[d.alert_id for d in to_collect],
                 faa_output_dir=FAA_OUTPUT_DIR,
                 predictions_df=df_pred if 'df_pred' in locals() else None,
                 pipeline_version=PIPELINE_VERSION,
                 run_id=run_id,
+                alerts_metadata=alerts_metadata,
             )
             n_ok = sum(1 for r in results.values() if r)
             log(f"Drive: {n_ok}/{len(to_collect)} alertas com upload bem-sucedido", "OK")
