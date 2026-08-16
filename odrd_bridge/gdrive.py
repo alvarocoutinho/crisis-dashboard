@@ -45,10 +45,20 @@ except ImportError:
     _GDRIVE_AVAILABLE = False
 
 
-DRIVE_SCOPES = ["https://www.googleapis.com/auth/drive.file"]
-"""Escopo mínimo: 'drive.file' só permite acesso a arquivos criados PELA
-service account, não ao Drive inteiro do dono da pasta. Este é o escopo
-seguro por padrão — não uses 'drive' completo."""
+DRIVE_SCOPES = ["https://www.googleapis.com/auth/drive"]
+"""Escopo: 'drive' permite acesso a QUALQUER arquivo/pasta compartilhado
+explicitamente com a service account (via Share do Drive).
+
+NOTA HISTÓRICA: começamos com 'drive.file' (mais restrito, só arquivos
+criados pela SA), mas descobrimos que ele NÃO cobre nosso caso — pastas
+compartilhadas via Share da UI Web do Drive não aparecem para a SA sob
+'drive.file' porque a especificação exige que o arquivo tenha sido
+'criado ou aberto pela app', e SA não tem UI para 'abrir'.
+
+Segurança em profundidade permanece: a SA só vê o que foi explicitamente
+compartilhado com o e-mail dela — o resto do Drive do usuário fica
+invisível. Cuidado operacional: não compartilhar pastas com esta SA
+sem intenção clara."""
 
 MIME_FOLDER = "application/vnd.google-apps.folder"
 
