@@ -69,8 +69,16 @@ jobs:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
           PED_EMAIL: ${{ secrets.PED_EMAIL }}
           PED_PASSWORD: ${{ secrets.PED_PASSWORD }}
-          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
-          GDRIVE_FOLDER_ID: ${{ secrets.GDRIVE_FOLDER_ID }}
+          # === GOOGLE DRIVE DESATIVADO (17/08/2026) ===
+          # Motivo: Google desabilitou storage quota para service accounts em
+          # Drives pessoais. Solução interina: CSVs vão como GitHub Actions
+          # Artifacts (step abaixo, retenção 90d). Solução definitiva pendente:
+          # migrar para Cloudflare R2 ou Google Workspace institucional.
+          # Secrets GOOGLE_SERVICE_ACCOUNT_JSON e GDRIVE_FOLDER_ID preservados
+          # no repo — descomentar as duas linhas abaixo quando storage for
+          # reconfigurado. gdrive.py permanece intacto no código.
+          # GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          # GDRIVE_FOLDER_ID: ${{ secrets.GDRIVE_FOLDER_ID }}
           FAA_OUTPUT_DIR: /tmp/faa_pipeline_run
         run: |
           ARGS=""
@@ -96,6 +104,23 @@ jobs:
             *) echo "status=failed"      >> $GITHUB_OUTPUT; echo "emoji=✗" >> $GITHUB_OUTPUT ;;
           esac
           echo "Pipeline finalizou com exit code $CODE (status=$(cat $GITHUB_OUTPUT | grep ^status | cut -d= -f2))"
+
+      # === UPLOAD DE CSVs COMO ARTIFACT ===
+      # Substitui temporariamente o upload para Google Drive (que quebrou em
+      # 17/08/2026 por Service Accounts perderem storage quota). Cada run
+      # que coleta dados vira um artifact com retenção de 90 dias — teto do
+      # free tier. Dados sensíveis (comentários literais do YouTube) NÃO vão
+      # para o repo por conta de LGPD + ToS; artifact resolve esse requisito
+      # porque acesso ao artifact requer autenticação GitHub.
+      # Não roda em dry-run (não teria dados úteis) nem em falha catastrófica.
+      - name: Upload CSVs de coleta como artifact
+        if: steps.status.outputs.status != 'failed' && !inputs.dry_run
+        uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-crus-${{ github.run_number }}-${{ github.run_id }}
+          path: /tmp/faa_pipeline_run/
+          retention-days: 90
+          if-no-files-found: ignore
 
       # === COMMIT CONDICIONAL (M4: só se algo mudou) ===
       # Se falha catastrófica (exit=1), NÃO commita — preserva o live/state anterior
