@@ -358,12 +358,21 @@ function AlertCard({ alert }) {
               </div>
             </div>
           </div>
-          <div className="text-right text-xs">
-            {/* Badge da flag (estágio operacional ODRD) — drive de cadência */}
-            <div className={`font-semibold ${flagMeta.textClass}`}>
-              {flagMeta.label} · {flagMeta.cadenceHours}h
+          <div className="text-right text-xs flex flex-col items-end gap-1">
+            {/* Badge da flag (estágio operacional ODRD) — pill colorido */}
+            <span
+              className={`inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-xs font-semibold text-white ${flagMeta.bgClass}`}
+              title={flagMeta.description}
+            >
+              <span
+                className="rounded-full inline-block bg-white"
+                style={{ width: 6, height: 6 }}
+              />
+              {flagMeta.label}
+            </span>
+            <div className="text-stone-500">
+              cadência {flagMeta.cadenceHours}h · próxima {nextCollectionFmt}
             </div>
-            <div className="text-stone-500">próxima coleta {nextCollectionFmt}</div>
           </div>
         </div>
       </div>
