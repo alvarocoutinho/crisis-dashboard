@@ -426,25 +426,118 @@ def _read_csv_or_empty(path: Path, expected_columns: list[str] | None = None) ->
         return pd.DataFrame(columns=expected_columns or [])
 
 
+def load_previous_live(path: str | Path) -> dict | None:
+    """Carrega o live.json anterior (se existir) para preservar histórico.
+
+    Retorna None se o arquivo não existe ou está corrompido — nesse caso
+    build_live_json fará o melhor esforço com apenas state + CSVs do ciclo.
+    """
+    path = Path(path)
+    if not path.exists():
+        return None
+    try:
+        with path.open("r", encoding="utf-8") as f:
+            return json.load(f)
+    except (json.JSONDecodeError, OSError) as e:
+        print(f"[build_live] live.json anterior corrompido ({e}) — ignorando histórico")
+        return None
+
+
+def _refresh_alert_entry_from_state(
+    prev_entry: dict,
+    state_meta: dict,
+    alert_id: str,
+    now_iso: str,
+) -> OrderedDict:
+    """Atualiza um entry do live.json anterior com metadados operacionais do state.
+
+    Preserva TODOS os campos de conteúdo coletado (n_comments, n_videos,
+    distribution, timeline, videos, all_samples, date_range, unlabeled*)
+    porque não houve coleta nova para este alerta neste ciclo.
+
+    Atualiza APENAS os campos operacionais que podem ter mudado no state:
+    priority_tier, observation_status, alert_closed_at, alert_transitions,
+    last_collection_at, next_collection_at.
+
+    Args:
+        prev_entry: entry deste alerta no live.json anterior (fonte de conteúdo)
+        state_meta: metadata deste alerta em state.active_alerts ou state.extended_window_alerts
+        alert_id: id canônico do alerta (cemaden_<uf>_<cod>)
+        now_iso: timestamp desta execução
+
+    Returns:
+        OrderedDict no mesmo schema de _build_alert_entry.
+    """
+    # observation_status inferido: se state_meta tem closed_at, está em extended_window
+    is_extended = bool(state_meta.get("closed_at"))
+    observation_status = "extended" if is_extended else "active"
+
+    # Reconstroi na mesma ordem canônica de _build_alert_entry para consistência
+    entry = OrderedDict()
+    # Campos de identidade — do prev_entry (imutáveis por alerta)
+    for k in ("id", "municipio", "uf", "tipo", "nivel", "data_alerta",
+              "codibge", "lat", "lon", "regime"):
+        entry[k] = prev_entry.get(k)
+    # Campos de conteúdo coletado — preservados integralmente do prev_entry
+    for k in ("n_comments", "n_videos", "unlabeled", "unlabeled_pct",
+              "date_range", "distribution", "timeline", "videos",
+              "all_samples", "academic_studies"):
+        entry[k] = prev_entry.get(k)
+    # Campos operacionais — refletem estado ATUAL do state
+    entry["observation_status"] = observation_status
+    entry["priority_tier"] = state_meta.get("priority_tier",
+                                            prev_entry.get("priority_tier", "moderado"))
+    entry["alert_opened_at"] = state_meta.get("opened_at",
+                                              prev_entry.get("alert_opened_at"))
+    entry["alert_closed_at"] = state_meta.get("closed_at")
+    entry["alert_transitions"] = state_meta.get("transitions",
+                                                prev_entry.get("alert_transitions", []))
+    # collection_health: preserva do prev_entry (é resultado da última coleta real,
+    # não muda em ciclos sem coleta)
+    entry["collection_health"] = prev_entry.get("collection_health", OrderedDict([
+        ("status", "unknown"), ("silence_type", None),
+        ("last_error", None), ("consecutive_failures", 0),
+    ]))
+    # Timestamps de coleta vêm do state (canônico), não do prev_entry
+    entry["last_collection_at"] = state_meta.get("last_collection_at",
+                                                 prev_entry.get("last_collection_at"))
+    entry["next_collection_at"] = state_meta.get("next_collection_at",
+                                                 prev_entry.get("next_collection_at"))
+    return entry
+
+
 def build_live_json(
     output_dir: str | Path,
     predictions_df: pd.DataFrame,
     pilot_mode: bool = True,
     dry_run: bool = False,
     pipeline_version: str = "0.1.0",
+    state: dict | None = None,
+    previous_live: dict | None = None,
 ) -> dict:
-    """Monta o live.json completo a partir dos CSVs do faa_poc + predições.
+    """Monta o live.json completo.
+
+    Fonte-de-verdade dos alertas: `state` (parâmetro). Fonte de conteúdo:
+    CSVs do ciclo em `output_dir` (para alertas coletados agora) OU
+    `previous_live` (para alertas em state mas sem coleta neste ciclo).
 
     Args:
-        output_dir: pasta onde o faa_poc gravou os CSVs
-        predictions_df: DataFrame retornado por bertimbau.predict_comments()
-        pilot_mode: True enquanto CEP não aprovado (dados fora do corpus científico)
-        dry_run: True quando alertas são replicados de histórico, False para reais
+        output_dir: pasta onde o faa_poc gravou os CSVs do ciclo (pode não existir
+            ou estar vazia se este run não coletou nada)
+        predictions_df: DataFrame retornado por bertimbau.predict_comments() no ciclo
+        pilot_mode: True enquanto CEP não aprovado
+        dry_run: True quando alertas são replicados de histórico
         pipeline_version: versão do pipeline
+        state: state.json atual (dict com active_alerts + extended_window_alerts).
+            Se None, cai no comportamento legado (só CSVs do ciclo, para
+            retrocompatibilidade em testes/notebooks).
+        previous_live: conteúdo do live.json anterior (dict), usado para preservar
+            histórico de alertas que estão no state mas não foram coletados
+            neste ciclo. Se None, alertas sem CSV e sem entry anterior aparecem
+            como entry mínimo (só metadados do state).
 
     Returns:
-        Dict serializável do live.json. Se não há alertas processáveis,
-        retorna estrutura mínima válida com alerts=[] (não crasha).
+        Dict serializável do live.json.
     """
     output_dir = Path(output_dir)
 
@@ -464,27 +557,115 @@ def build_live_json(
 
     now_iso = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
-    # Se não há nem alerts, retorna estrutura vazia mas válida
-    if alerts_df.empty:
-        print("[build_live] alerts_log.csv vazio — nenhum alerta processado neste ciclo")
+    # ================================================================
+    # Comportamento LEGADO (state=None): só CSVs do ciclo.
+    # Usado por notebooks/testes que não passam state.
+    # ================================================================
+    if state is None:
+        if alerts_df.empty:
+            print("[build_live] alerts_log.csv vazio e state=None — retornando alerts=[]")
+            return OrderedDict([
+                ("generated_at", now_iso),
+                ("pipeline_version", pipeline_version),
+                ("pilot_mode", pilot_mode),
+                ("dry_run", dry_run),
+                ("alerts", []),
+            ])
+        active_cods = alerts_df["cod_alerta"].astype(str).unique().tolist()
+        alerts = []
+        for cod in active_cods:
+            try:
+                entry = _build_alert_entry(
+                    cod, alerts_df, videos_df, predictions_df, visibility_df, now_iso
+                )
+                alerts.append(entry)
+            except Exception as e:
+                print(f"[build_live] pulando alerta {cod}: {e}")
         return OrderedDict([
             ("generated_at", now_iso),
             ("pipeline_version", pipeline_version),
             ("pilot_mode", pilot_mode),
             ("dry_run", dry_run),
-            ("alerts", []),
+            ("alerts", alerts),
         ])
 
-    active_cods = alerts_df["cod_alerta"].astype(str).unique().tolist()
+    # ================================================================
+    # Comportamento NOVO (state passado): state é fonte-de-verdade.
+    # ================================================================
+    # cods que foram efetivamente coletados neste ciclo (têm CSV)
+    if not alerts_df.empty:
+        collected_cods = set(alerts_df["cod_alerta"].astype(str).unique())
+    else:
+        collected_cods = set()
+
+    # Índice do live anterior por alert_id, para preservar histórico
+    prev_by_id = {}
+    if previous_live and isinstance(previous_live.get("alerts"), list):
+        for a in previous_live["alerts"]:
+            if a.get("id"):
+                prev_by_id[a["id"]] = a
+
+    # União dos alertas no state (active + extended)
+    # Ordem: active primeiro (mais recentes/importantes), extended depois
+    state_alerts = OrderedDict()
+    for aid, meta in state.get("active_alerts", {}).items():
+        state_alerts[aid] = meta
+    for aid, meta in state.get("extended_window_alerts", {}).items():
+        state_alerts[aid] = meta
+
     alerts = []
-    for cod in active_cods:
-        try:
-            entry = _build_alert_entry(
-                cod, alerts_df, videos_df, predictions_df, visibility_df, now_iso
-            )
-            alerts.append(entry)
-        except Exception as e:
-            print(f"[build_live] pulando alerta {cod}: {e}")
+    stats = {"from_csv": 0, "from_history": 0, "skipped_no_data": 0}
+
+    for alert_id, meta in state_alerts.items():
+        # cod_alerta é a parte após o último "_"
+        cod = alert_id.rsplit("_", 1)[-1]
+
+        if cod in collected_cods:
+            # Path A: alerta coletado neste ciclo — monta entry completo dos CSVs
+            try:
+                entry = _build_alert_entry(
+                    cod, alerts_df, videos_df, predictions_df, visibility_df, now_iso
+                )
+                # Sobrescreve id/status com valores do state (canônico) —
+                # _build_alert_entry usa dados do CSV que podem estar defasados
+                entry["id"] = alert_id
+                entry["priority_tier"] = meta.get("priority_tier", entry["priority_tier"])
+                if meta.get("closed_at"):
+                    entry["observation_status"] = "extended"
+                    entry["alert_closed_at"] = meta["closed_at"]
+                entry["alert_transitions"] = meta.get("transitions",
+                                                     entry.get("alert_transitions", []))
+                entry["last_collection_at"] = meta.get("last_collection_at",
+                                                      entry.get("last_collection_at"))
+                entry["next_collection_at"] = meta.get("next_collection_at",
+                                                      entry.get("next_collection_at"))
+                alerts.append(entry)
+                stats["from_csv"] += 1
+            except Exception as e:
+                print(f"[build_live] falha ao montar alerta {alert_id} do CSV: {e}")
+                # Fallback: se tem no histórico, usa ele
+                if alert_id in prev_by_id:
+                    alerts.append(_refresh_alert_entry_from_state(
+                        prev_by_id[alert_id], meta, alert_id, now_iso
+                    ))
+                    stats["from_history"] += 1
+                else:
+                    stats["skipped_no_data"] += 1
+        elif alert_id in prev_by_id:
+            # Path B: sem coleta neste ciclo, mas existe entry anterior — preserva histórico
+            alerts.append(_refresh_alert_entry_from_state(
+                prev_by_id[alert_id], meta, alert_id, now_iso
+            ))
+            stats["from_history"] += 1
+        else:
+            # Path C: alerta no state mas sem CSV e sem histórico — não podemos
+            # construir entry rico (falta lat/lon, tipo, etc). Skip silencioso;
+            # aparecerá no próximo ciclo com coleta.
+            stats["skipped_no_data"] += 1
+
+    print(f"[build_live] alertas montados: {stats['from_csv']} do CSV, "
+          f"{stats['from_history']} do histórico, {stats['skipped_no_data']} pulados "
+          f"(sem CSV nem histórico)")
 
     live = OrderedDict(
         [

@@ -29,7 +29,7 @@ sys.path.insert(0, str(REPO_ROOT))
 
 from odrd_bridge import state_manager
 from odrd_bridge.bertimbau import predict_comments
-from odrd_bridge.build_live import build_live_json, save_json
+from odrd_bridge.build_live import build_live_json, load_previous_live, save_json
 
 
 # Caminhos padrão (podem ser sobrescritos por variáveis de ambiente)
@@ -234,20 +234,6 @@ def main() -> int:
             import pandas as pd
             df_pred = pd.DataFrame()
 
-        # 8. Build live.json
-        try:
-            live_data = build_live_json(
-                output_dir=faa_output,
-                predictions_df=df_pred,
-                pilot_mode=True,   # até CEP aprovado
-                dry_run=False,
-                pipeline_version=PIPELINE_VERSION,
-            )
-        except Exception as e:
-            log(f"falha ao construir live.json: {e}", "ERROR")
-            traceback.print_exc()
-            partial_failures.append("build_live")
-
         # 9. Marca coletas completas no state
         for decision in to_collect:
             # Descobrir vídeos coletados neste ciclo (do CSV)
@@ -272,6 +258,32 @@ def main() -> int:
         quota_used_this_run = len(to_collect) * 100  # search.list ~= 100 unidades
     else:
         log("nenhum alerta devido neste ciclo — apenas atualiza metadados", "OK")
+
+    # 9.5. Build live.json — SEMPRE, mesmo em runs sem coleta.
+    # Fix da regressão: sem isso, alertas em extended_window somem do dashboard
+    # e alertas ativos ficam com snapshot obsoleto. build_live_json usa state
+    # como fonte-de-verdade e previous_live para preservar conteúdo coletado
+    # em ciclos anteriores.
+    try:
+        previous_live = load_previous_live(LIVE_PATH)
+        if 'df_pred' not in locals():
+            import pandas as _pd
+            df_pred = _pd.DataFrame()
+        live_data = build_live_json(
+            output_dir=FAA_OUTPUT_DIR,
+            predictions_df=df_pred,
+            pilot_mode=True,   # até CEP aprovado
+            dry_run=False,
+            pipeline_version=PIPELINE_VERSION,
+            state=state,
+            previous_live=previous_live,
+        )
+        n_alerts_live = len(live_data.get("alerts", []))
+        log(f"live.json montado: {n_alerts_live} alertas", "OK")
+    except Exception as e:
+        log(f"falha ao construir live.json: {e}", "ERROR")
+        traceback.print_exc()
+        partial_failures.append("build_live")
 
     # 10. Upload de crus para Drive
     if args.skip_gdrive:
@@ -327,8 +339,12 @@ def main() -> int:
 
     state_manager.save_state(state, STATE_PATH)
 
+    # live.json sempre salvo — mesmo em runs sem coleta, o conteúdo
+    # reflete o estado atual (transições, cadências, alertas em extended_window).
     if live_data is not None:
         save_json(live_data, LIVE_PATH)
+    else:
+        log("live_data is None — dashboard NÃO foi atualizado neste run", "WARN")
 
     log(f"=== FIM — status={status}, duration={duration}s, quota={quota_used_this_run} ===",
         "OK" if status == "success" else "WARN")
