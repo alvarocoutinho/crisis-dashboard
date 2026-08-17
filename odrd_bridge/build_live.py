@@ -388,6 +388,13 @@ def _build_alert_entry(
             # Campos prospectivos
             ("observation_status", "active"),
             ("priority_tier", tier),
+            # Reforma três flags (v0.2) — populados por _refresh_alert_entry_from_state
+            # quando há state; aqui em _build_alert_entry ficam com defaults porque
+            # esta função é chamada em coleta nova (state ainda não foi atualizado)
+            ("flag", "alerta"),
+            ("flag_history", []),
+            ("n_comments_valid", 0),
+            ("videos_with_valid_comments", []),
             ("alert_opened_at", opened_at),
             ("alert_closed_at", None),
             ("alert_transitions", []),
@@ -443,6 +450,20 @@ def load_previous_live(path: str | Path) -> dict | None:
         return None
 
 
+def _normalize_priority_tier(nivel_atual: str | None, existing_tier: str | None) -> str:
+    """Corrige resíduo da migração v0.1→v0.2 onde alertas migrados
+    retroativamente ficaram com priority_tier='acompanhamento'.
+
+    Em v0.2, priority_tier é APENAS metadado visual do nível CEMADEN
+    (muito_alto/alto/moderado). O valor 'acompanhamento' agora é FLAG, não tier.
+    Se encontrar 'acompanhamento' em priority_tier, recalcula do nivel_atual.
+    """
+    if existing_tier and existing_tier != "acompanhamento":
+        return existing_tier
+    m = {"Muito Alto": "muito_alto", "Alto": "alto", "Moderado": "moderado"}
+    return m.get((nivel_atual or "").strip(), "moderado")
+
+
 def _refresh_alert_entry_from_state(
     prev_entry: dict,
     state_meta: dict,
@@ -455,18 +476,21 @@ def _refresh_alert_entry_from_state(
     distribution, timeline, videos, all_samples, date_range, unlabeled*)
     porque não houve coleta nova para este alerta neste ciclo.
 
-    Atualiza APENAS os campos operacionais que podem ter mudado no state:
-    priority_tier, observation_status, alert_closed_at, alert_transitions,
-    last_collection_at, next_collection_at.
+    Atualiza campos operacionais que podem ter mudado no state:
+    - observation_status (active/extended, derivado de closed_at)
+    - priority_tier (normalizado do nivel_atual do state; corrige resíduo v0.1)
+    - alert_closed_at, alert_transitions
+    - v0.2: flag, flag_history, n_comments_valid, videos_with_valid_comments
+    - timestamps de coleta (last/next)
 
     Args:
         prev_entry: entry deste alerta no live.json anterior (fonte de conteúdo)
-        state_meta: metadata deste alerta em state.active_alerts ou state.extended_window_alerts
+        state_meta: metadata deste alerta em state (active/extended/archived)
         alert_id: id canônico do alerta (cemaden_<uf>_<cod>)
         now_iso: timestamp desta execução
 
     Returns:
-        OrderedDict no mesmo schema de _build_alert_entry.
+        OrderedDict no schema atualizado (v0.2) de _build_alert_entry.
     """
     # observation_status inferido: se state_meta tem closed_at, está em extended_window
     is_extended = bool(state_meta.get("closed_at"))
@@ -485,8 +509,17 @@ def _refresh_alert_entry_from_state(
         entry[k] = prev_entry.get(k)
     # Campos operacionais — refletem estado ATUAL do state
     entry["observation_status"] = observation_status
-    entry["priority_tier"] = state_meta.get("priority_tier",
-                                            prev_entry.get("priority_tier", "moderado"))
+    # priority_tier normalizado do nivel_atual do state (corrige resíduo v0.1
+    # onde alertas migrados ficaram com priority_tier="acompanhamento")
+    entry["priority_tier"] = _normalize_priority_tier(
+        state_meta.get("nivel_atual"),
+        state_meta.get("priority_tier", prev_entry.get("priority_tier")),
+    )
+    # v0.2: campos da Reforma três flags — vêm do state (canônico)
+    entry["flag"] = state_meta.get("flag", "alerta")
+    entry["flag_history"] = state_meta.get("flag_history", [])
+    entry["n_comments_valid"] = state_meta.get("n_comments_valid", 0)
+    entry["videos_with_valid_comments"] = state_meta.get("videos_with_valid_comments", [])
     entry["alert_opened_at"] = state_meta.get("opened_at",
                                               prev_entry.get("alert_opened_at"))
     entry["alert_closed_at"] = state_meta.get("closed_at")
@@ -629,12 +662,21 @@ def build_live_json(
                 # Sobrescreve id/status com valores do state (canônico) —
                 # _build_alert_entry usa dados do CSV que podem estar defasados
                 entry["id"] = alert_id
-                entry["priority_tier"] = meta.get("priority_tier", entry["priority_tier"])
+                # priority_tier: normaliza (corrige resíduo v0.1) usando nivel do state
+                entry["priority_tier"] = _normalize_priority_tier(
+                    meta.get("nivel_atual"),
+                    meta.get("priority_tier", entry.get("priority_tier")),
+                )
                 if meta.get("closed_at"):
                     entry["observation_status"] = "extended"
                     entry["alert_closed_at"] = meta["closed_at"]
                 entry["alert_transitions"] = meta.get("transitions",
                                                      entry.get("alert_transitions", []))
+                # v0.2: campos da Reforma três flags — canônicos vindo do state
+                entry["flag"] = meta.get("flag", "alerta")
+                entry["flag_history"] = meta.get("flag_history", [])
+                entry["n_comments_valid"] = meta.get("n_comments_valid", 0)
+                entry["videos_with_valid_comments"] = meta.get("videos_with_valid_comments", [])
                 entry["last_collection_at"] = meta.get("last_collection_at",
                                                       entry.get("last_collection_at"))
                 entry["next_collection_at"] = meta.get("next_collection_at",
