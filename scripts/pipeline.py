@@ -35,8 +35,9 @@ from odrd_bridge.build_live import build_live_json, load_previous_live, save_jso
 # Caminhos padrão (podem ser sobrescritos por variáveis de ambiente)
 STATE_PATH = REPO_ROOT / "src" / "data" / "state.json"
 LIVE_PATH = REPO_ROOT / "src" / "data" / "live.json"
+AGGREGATE_LOG_PATH = REPO_ROOT / "src" / "data" / "alertas_agregados.csv"
 FAA_OUTPUT_DIR = Path(os.environ.get("FAA_OUTPUT_DIR", "/tmp/faa_pipeline_run"))
-PIPELINE_VERSION = "0.1.0"
+PIPELINE_VERSION = "0.2.0"
 
 
 def log(msg: str, level: str = "INFO") -> None:
@@ -142,10 +143,13 @@ def main() -> int:
         log(f"secrets obrigatórios ausentes: {missing}", "ERROR")
         return 1
 
-    # 2. Carrega state
+    # 2. Carrega state e log agregado
     state = state_manager.load_state(STATE_PATH)
     log(f"state carregado: {len(state.get('active_alerts', {}))} active, "
-        f"{len(state.get('extended_window_alerts', {}))} extended")
+        f"{len(state.get('extended_window_alerts', {}))} extended, "
+        f"{len(state.get('archived_alerts', {}))} archived")
+    aggregate_log = state_manager.load_aggregate_log(AGGREGATE_LOG_PATH)
+    log(f"log agregado carregado: {len(aggregate_log)} linhas")
 
     # 3. Consulta CEMADEN e reconcilia
     cemaden_ok = True
@@ -163,32 +167,37 @@ def main() -> int:
     # CRÍTICO: só permite fechar alertas se a consulta foi bem-sucedida.
     # Se cemaden_ok=False, cemaden_alerts=[] seria interpretado como
     # "todos os alertas fecharam" — nunca queremos isso por engano.
-    state, new_ids, closed_ids = state_manager.merge_new_alerts_from_cemaden(
-        state, cemaden_alerts, now=now, close_missing=cemaden_ok,
+    state, new_ids, closed_to_extended, closed_to_puro = state_manager.merge_new_alerts_from_cemaden(
+        state, cemaden_alerts, aggregate_log, now=now, close_missing=cemaden_ok,
     )
     if new_ids:
         log(f"alertas novos: {new_ids}", "OK")
-    if closed_ids:
-        log(f"alertas fechados no CEMADEN → extended_window: {closed_ids}", "OK")
+    if closed_to_extended:
+        log(f"fechados no CEMADEN → extended_window (já haviam migrado): {closed_to_extended}", "OK")
+    if closed_to_puro:
+        log(f"fechados no CEMADEN sem sinal digital → arquivo puro no log agregado: {closed_to_puro}", "OK")
     if not cemaden_ok:
         log("transições active→extended puladas (consulta CEMADEN falhou)", "WARN")
 
     # 4. Decide quais alertas processar neste ciclo
     decisions = state_manager.decide_alerts_to_process(state, now=now)
     to_collect = [d for d in decisions if d.action == "collect"]
-    to_close = [d for d in decisions if d.action == "transition_to_closed"]
+    to_archive = [d for d in decisions if d.action == "archive_exhausted"]
     skipped = [d for d in decisions if d.action == "skip_not_due"]
 
-    log(f"decisões: {len(to_collect)} coletar, {len(to_close)} fechar 365d, "
+    log(f"decisões: {len(to_collect)} coletar, {len(to_archive)} arquivar (esgotamento temporal), "
         f"{len(skipped)} pular (não devidos)")
 
     if args.limit_alerts and len(to_collect) > args.limit_alerts:
         log(f"--limit-alerts={args.limit_alerts} aplicado, cortando de {len(to_collect)}", "WARN")
         to_collect = to_collect[:args.limit_alerts]
 
-    # 5. Fecha alertas que completaram 365d
-    for decision in to_close:
-        state_manager.close_extended_alert(state, decision.alert_id)
+    # 5. Arquivamento por regra temporal (14d acompanhamento / 28d prioritario)
+    # Executado incondicionalmente — archive_exhausted rechecha as regras
+    # e não depende de decide_alerts_to_process ter listado o alerta.
+    archived_ids = state_manager.archive_exhausted(state, aggregate_log, now=now)
+    if archived_ids:
+        log(f"arquivados por esgotamento temporal: {archived_ids}", "OK")
 
     # 6. Se há alertas a coletar, roda o pipeline
     partial_failures: list[str] = []
@@ -234,24 +243,44 @@ def main() -> int:
             import pandas as pd
             df_pred = pd.DataFrame()
 
-        # 9. Marca coletas completas no state
+        # 9. Marca coletas completas no state (v0.2: passa predições e log)
+        # Preparar links_df uma vez fora do loop
+        links_df = None
+        try:
+            import pandas as pd
+            links_csv = faa_output / "youtube_alert_video_links.csv"
+            if links_csv.exists():
+                links_df = pd.read_csv(links_csv)
+        except Exception as e:
+            log(f"não foi possível carregar youtube_alert_video_links.csv: {e}", "WARN")
+
         for decision in to_collect:
-            # Descobrir vídeos coletados neste ciclo (do CSV)
-            videos_this_alert = []
-            try:
-                import pandas as pd
-                links_csv = faa_output / "youtube_alert_video_links.csv"
-                if links_csv.exists():
-                    links_df = pd.read_csv(links_csv)
-                    cod = decision.alert_id.split("_")[-1]
+            cod = decision.alert_id.rsplit("_", 1)[-1]
+            # Vídeos coletados neste ciclo para este alerta
+            videos_this_alert: list[str] = []
+            if links_df is not None and not links_df.empty:
+                try:
                     videos_this_alert = links_df[
                         links_df["cod_alerta"].astype(str) == cod
-                    ]["video_id"].tolist()
-            except Exception as e:
-                log(f"não foi possível ler videos coletados de {decision.alert_id}: {e}", "WARN")
+                    ]["video_id"].astype(str).tolist()
+                except Exception as e:
+                    log(f"não foi possível ler videos coletados de {decision.alert_id}: {e}", "WARN")
+
+            # Predições deste alerta: filtro por video_ids
+            predictions_this_alert = None
+            if df_pred is not None and not df_pred.empty and videos_this_alert:
+                try:
+                    predictions_this_alert = df_pred[
+                        df_pred["video_id"].astype(str).isin(videos_this_alert)
+                    ]
+                except Exception as e:
+                    log(f"não foi possível filtrar predictions para {decision.alert_id}: {e}", "WARN")
 
             state_manager.mark_collection_complete(
-                state, decision.alert_id, videos_collected=videos_this_alert, now=now,
+                state, decision.alert_id, aggregate_log,
+                videos_collected_now=videos_this_alert,
+                predictions_this_alert=predictions_this_alert,
+                now=now,
             )
 
         # Estimativa de cota consumida (aproximação — refinar depois)
@@ -331,6 +360,7 @@ def main() -> int:
     state_manager.update_run_metadata(
         state, status, duration, quota_used_this_run,
         now=now, pipeline_version=PIPELINE_VERSION,
+        cemaden_checked=cemaden_ok,
     )
 
     if args.dry_run:
@@ -338,6 +368,7 @@ def main() -> int:
         return 0
 
     state_manager.save_state(state, STATE_PATH)
+    state_manager.save_aggregate_log(aggregate_log, AGGREGATE_LOG_PATH)
 
     # live.json sempre salvo — mesmo em runs sem coleta, o conteúdo
     # reflete o estado atual (transições, cadências, alertas em extended_window).
