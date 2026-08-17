@@ -11,11 +11,16 @@ import {
   getLiveData,
   getLiveAlerts,
   getPipelineState,
-  getTiersInLive,
   getPriorityCollectionAlerts,
   getExtendedWindowAlerts,
   TIER_ORDER,
   TIER_META,
+  getTierMeta,
+  FLAG_ORDER,
+  FLAG_META,
+  getFlagMeta,
+  getFlagsInLive,
+  sortAlertsByFlag,
 } from "./services/eventsRepository";
 
 // ============================================================
@@ -95,7 +100,7 @@ function LiveMap({ alerts }) {
               {alertsOrdered.map(a => {
                 if (a.lat == null || a.lon == null) return null;
                 const [x, y] = projection([a.lon, a.lat]);
-                const meta = TIER_META[a.priority_tier] ?? TIER_META.moderado;
+                const meta = getTierMeta(a.priority_tier);
                 return (
                   <g key={a.id}>
                     <circle cx={x} cy={y} r={meta.dotRadius + 2} fill="white" opacity={0.9} />
@@ -272,22 +277,23 @@ function KPI({ icon: Icon, label, value, sub, small, ok }) {
 }
 
 // ============================================================
-// Chips de filtro por tier
+// Chips de filtro por flag (v0.2: partição operacional ODRD)
 // ============================================================
-function TierFilterChips({ availableTiers, selectedTiers, onToggle, alertCounts }) {
+function FlagFilterChips({ availableFlags, selectedFlags, onToggle, alertCounts }) {
   return (
     <div className="bg-white rounded-lg border border-stone-300 p-3 mb-4 flex items-center gap-3 flex-wrap">
       <div className="flex items-center gap-1.5 text-xs font-medium text-stone-700 flex-shrink-0">
-        <Filter size={12} /> Filtrar por tier:
+        <Filter size={12} /> Filtrar por estágio:
       </div>
-      {availableTiers.map(tier => {
-        const meta = TIER_META[tier];
-        const isActive = selectedTiers.has(tier);
-        const count = alertCounts[tier] ?? 0;
+      {availableFlags.map(flag => {
+        const meta = FLAG_META[flag];
+        const isActive = selectedFlags.has(flag);
+        const count = alertCounts[flag] ?? 0;
         return (
           <button
-            key={tier}
-            onClick={() => onToggle(tier)}
+            key={flag}
+            onClick={() => onToggle(flag)}
+            title={meta.description}
             className={`px-2.5 py-1 rounded text-xs font-medium transition-colors inline-flex items-center gap-1.5 ${
               isActive
                 ? `${meta.bgClass} text-white`
@@ -314,7 +320,8 @@ function TierFilterChips({ availableTiers, selectedTiers, onToggle, alertCounts 
 // Card de um alerta live
 // ============================================================
 function AlertCard({ alert }) {
-  const meta = TIER_META[alert.priority_tier] ?? TIER_META.moderado;
+  const tierMeta = getTierMeta(alert.priority_tier);
+  const flagMeta = getFlagMeta(alert.flag);
   const nextCollectionFmt = alert.next_collection_at
     ? new Date(alert.next_collection_at).toLocaleString("pt-BR", {
         day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit",
@@ -332,14 +339,15 @@ function AlertCard({ alert }) {
   const silenceType = alert.collection_health?.silence_type;
 
   return (
-    <div className={`bg-white rounded-lg border ${meta.borderClass} overflow-hidden`}>
-      {/* Header colorido por tier */}
-      <div className={`${meta.lightBgClass} border-b ${meta.borderClass} px-4 py-3`}>
+    <div className={`bg-white rounded-lg border ${flagMeta.borderClass} overflow-hidden`}>
+      {/* Header: cor de fundo pela FLAG (estágio ODRD); dot pela gravidade CEMADEN */}
+      <div className={`${flagMeta.lightBgClass} border-b ${flagMeta.borderClass} px-4 py-3`}>
         <div className="flex items-start justify-between gap-4">
           <div className="flex items-center gap-3">
             <span
               className="rounded-full flex-shrink-0"
-              style={{ width: 14, height: 14, backgroundColor: meta.color }}
+              title={`Gravidade CEMADEN: ${tierMeta.label}`}
+              style={{ width: 14, height: 14, backgroundColor: tierMeta.color }}
             />
             <div>
               <div className="text-base font-semibold text-stone-900">
@@ -351,7 +359,10 @@ function AlertCard({ alert }) {
             </div>
           </div>
           <div className="text-right text-xs">
-            <div className={`font-semibold ${meta.textClass}`}>{meta.label}</div>
+            {/* Badge da flag (estágio operacional ODRD) — drive de cadência */}
+            <div className={`font-semibold ${flagMeta.textClass}`}>
+              {flagMeta.label} · {flagMeta.cadenceHours}h
+            </div>
             <div className="text-stone-500">próxima coleta {nextCollectionFmt}</div>
           </div>
         </div>
@@ -519,45 +530,50 @@ function Footer() {
 export default function Live() {
   const liveData = getLiveData();
   const state = getPipelineState();
-  const availableTiers = useMemo(() => getTiersInLive(), []);
+  const availableFlags = useMemo(() => getFlagsInLive(), []);
 
-  // Default: todos os tiers ativos EXCETO acompanhamento (decisão pactuada)
-  const [selectedTiers, setSelectedTiers] = useState(
-    () => new Set(availableTiers.filter(t => t !== "acompanhamento"))
+  // Default: todas as flags ativas (usuário pode desmarcar)
+  const [selectedFlags, setSelectedFlags] = useState(
+    () => new Set(availableFlags)
   );
 
-  const toggleTier = (tier) => {
-    setSelectedTiers(prev => {
+  const toggleFlag = (flag) => {
+    setSelectedFlags(prev => {
       const next = new Set(prev);
-      if (next.has(tier)) next.delete(tier);
-      else next.add(tier);
+      if (next.has(flag)) next.delete(flag);
+      else next.add(flag);
       return next;
     });
   };
 
-  // Contagens por tier (todos, não filtrados — para os chips mostrarem total)
+  // Contagens por flag (todas, não filtradas — para os chips mostrarem total)
   const alertCounts = useMemo(() => {
     const counts = {};
-    for (const t of TIER_ORDER) counts[t] = 0;
+    for (const f of FLAG_ORDER) counts[f] = 0;
     for (const a of liveData.alerts) {
-      counts[a.priority_tier] = (counts[a.priority_tier] ?? 0) + 1;
+      counts[a.flag] = (counts[a.flag] ?? 0) + 1;
     }
     return counts;
   }, [liveData]);
 
-  // Filtrar alertas pelas tiers selecionadas E separar por seção
+  // Filtrar alertas pelas flags selecionadas E separar por seção (v0.2: por observation_status)
+  // Ordenar por flag dentro de cada seção (prioritario > acompanhamento > alerta)
   const priorityAlerts = useMemo(
-    () => getPriorityCollectionAlerts().filter(a => selectedTiers.has(a.priority_tier)),
-    [selectedTiers]
+    () => getPriorityCollectionAlerts()
+      .filter(a => selectedFlags.has(a.flag))
+      .sort(sortAlertsByFlag),
+    [selectedFlags]
   );
   const extendedAlerts = useMemo(
-    () => getExtendedWindowAlerts().filter(a => selectedTiers.has(a.priority_tier)),
-    [selectedTiers]
+    () => getExtendedWindowAlerts()
+      .filter(a => selectedFlags.has(a.flag))
+      .sort(sortAlertsByFlag),
+    [selectedFlags]
   );
 
   const alertsOnMap = useMemo(
-    () => liveData.alerts.filter(a => selectedTiers.has(a.priority_tier)),
-    [liveData, selectedTiers]
+    () => liveData.alerts.filter(a => selectedFlags.has(a.flag)),
+    [liveData, selectedFlags]
   );
 
   return (
@@ -619,31 +635,29 @@ export default function Live() {
                 <LiveMap alerts={alertsOnMap} />
               </div>
               <div className="min-w-0">
-                <TierFilterChips
-                  availableTiers={availableTiers}
-                  selectedTiers={selectedTiers}
-                  onToggle={toggleTier}
+                <FlagFilterChips
+                  availableFlags={availableFlags}
+                  selectedFlags={selectedFlags}
+                  onToggle={toggleFlag}
                   alertCounts={alertCounts}
                 />
 
-                {/* Seção A — Coleta prioritária */}
+                {/* Seção A — Coleta prioritária (alertas ativos CEMADEN) */}
                 <AlertsSection
                   title="Coleta prioritária"
-                  subtitle="Alertas CEMADEN em vigência ativa — cadências 6h/12h/24h por tier."
+                  subtitle="Alertas CEMADEN em vigência ativa — cadência por estágio ODRD (24h alerta / 12h acompanhamento / 6h prioritário)."
                   icon={AlertTriangle}
                   alerts={priorityAlerts}
-                  emptyMessage="Nenhum alerta prioritário nos tiers selecionados."
+                  emptyMessage="Nenhum alerta ativo nos estágios selecionados."
                 />
 
-                {/* Seção B — Acompanhamento */}
+                {/* Seção B — Janela estendida (CEMADEN fechou, sinal digital persiste) */}
                 <AlertsSection
-                  title="Acompanhamento"
-                  subtitle="Alertas encerrados em janela estendida (até 365 dias) — cadência reduzida (48h)."
+                  title="Janela estendida"
+                  subtitle="Alertas fechados no CEMADEN mas ainda com sinal digital observável — mantidos em observação até esgotamento temporal (14d em acompanhamento, 28d em prioritário)."
                   icon={Activity}
                   alerts={extendedAlerts}
-                  emptyMessage={selectedTiers.has("acompanhamento")
-                    ? "Nenhum alerta em janela estendida atualmente."
-                    : null}
+                  emptyMessage="Nenhum alerta em janela estendida atualmente."
                 />
               </div>
             </div>
