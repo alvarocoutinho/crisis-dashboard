@@ -11,7 +11,7 @@ Política pactuada:
 Uso:
     python scripts/migrate_state_v0_1_to_v0_2.py \
         --state src/data/state.json \
-        --log logs/alertas_agregados.csv \
+        --log src/data/alertas_agregados.csv \
         [--dry-run] [--backup-dir src/data/backups]
 
 Se --dry-run: imprime plano e novo state.json em stdout, não escreve.
@@ -264,7 +264,7 @@ def migrate(state: dict, log: dict) -> tuple[dict, dict]:
 def main() -> int:
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--state", type=Path, required=True, help="Caminho para state.json")
-    p.add_argument("--log", type=Path, required=True, help="Caminho para logs/alertas_agregados.csv")
+    p.add_argument("--log", type=Path, required=True, help="Caminho para src/data/alertas_agregados.csv")
     p.add_argument("--dry-run", action="store_true", help="Não escreve; imprime plano e novo state")
     p.add_argument("--backup-dir", type=Path, default=Path("src/data/backups"),
                    help="Onde salvar backup do state antigo (default: src/data/backups/)")

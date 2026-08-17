@@ -136,7 +136,9 @@ prioritario [now - last_new_comment_at ≥ 28d] ──> archived_alerts + log ag
 
 ---
 
-## 5. Log agregado `logs/alertas_agregados.csv`
+## 5. Log agregado `src/data/alertas_agregados.csv`
+
+Fica em `src/data/` ao lado dos demais artefatos canônicos (`state.json`, `live.json`, `events.json`). Semanticamente é dado científico (base de denominador de H2), não log de execução — nome "log agregado" é mantido por continuidade com o wrap-up de 17/08.
 
 Chave composta: `(codibge, ano_mes, evento, nivel_cemaden)`. Uma linha por combinação. Contadores acumulam ao longo de eventos.
 
