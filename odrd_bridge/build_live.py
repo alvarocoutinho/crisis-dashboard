@@ -709,6 +709,37 @@ def build_live_json(
           f"{stats['from_history']} do histórico, {stats['skipped_no_data']} pulados "
           f"(sem CSV nem histórico)")
 
+    # ============================================================
+    # Bloco de arquivados (v1.0 — A7)
+    # Renderiza apenas os campos necessários para a view /archive/pipeline:
+    # identificação, contexto CEMADEN, flag_history operacional,
+    # motivo e timestamp de arquivamento, e contadores finais.
+    # ============================================================
+    archived: list[dict] = []
+    for aid, meta in state.get("archived_alerts", {}).items():
+        archived.append({
+            "id": aid,
+            "codibge": meta.get("codibge"),
+            "municipio": meta.get("municipio"),
+            "uf": meta.get("uf"),
+            "tipo": meta.get("evento"),
+            "nivel": meta.get("nivel_atual"),
+            "priority_tier": _normalize_priority_tier(
+                meta.get("nivel_atual"), meta.get("priority_tier")
+            ),
+            "flag_final": (meta.get("flag_history") or [{}])[-1].get("flag"),
+            "flag_history": meta.get("flag_history", []),
+            "opened_at": meta.get("opened_at"),
+            "closed_at": meta.get("closed_at"),
+            "archived_at": meta.get("archived_at"),
+            "archive_reason": meta.get("archive_reason"),
+            "n_videos_aderentes": meta.get("n_videos_aderentes", 0),
+            "n_comments_valid": meta.get("n_comments_valid", 0),
+            "last_new_comment_at": meta.get("last_new_comment_at"),
+        })
+    # Ordena por data de arquivamento (mais recente primeiro)
+    archived.sort(key=lambda x: x.get("archived_at") or "", reverse=True)
+
     live = OrderedDict(
         [
             ("generated_at", now_iso),
@@ -716,6 +747,7 @@ def build_live_json(
             ("pilot_mode", pilot_mode),
             ("dry_run", dry_run),
             ("alerts", alerts),
+            ("archived_alerts", archived),
         ]
     )
     return live

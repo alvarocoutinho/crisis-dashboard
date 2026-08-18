@@ -356,7 +356,7 @@ function FlagFilterChips({ availableFlags, selectedFlags, onToggle, alertCounts 
 // - < 30d: "2d" ou "2d 5h"
 // - ≥ 30d: "1mês" ou "3meses"
 // ============================================================
-function formatDuration(ms) {
+export function formatDuration(ms) {
   if (ms == null || ms < 0) return "—";
   const minutes = Math.floor(ms / (1000 * 60));
   if (minutes < 1) return "<1min";
@@ -383,7 +383,7 @@ function formatDuration(ms) {
 // Entre nós: duração da transição ("+6h").
 // Após o último nó: cauda tracejada com "há X" indicando tempo no estágio atual.
 // ============================================================
-function FlagTimeline({ history }) {
+export function FlagTimeline({ history }) {
   if (!history || history.length === 0) return null;
 
   const now = new Date();
