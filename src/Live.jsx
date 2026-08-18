@@ -190,8 +190,9 @@ function Header({ liveData }) {
           <span>
             Sistema <strong>complementar</strong> à infraestrutura de alertas do CEMADEN.
             Este painel instrumenta a camada de <strong>reação pública digital observável</strong> após
-            o alerta — <strong>cadência declarada, não tempo real</strong>: janelas fixas de 6h (Muito Alto),
-            12h (Alto), 24h (Moderado), 48h (Acompanhamento).
+            o alerta — <strong>cadência declarada, não tempo real</strong>: verificação do painel CEMADEN
+            a cada 6h; coleta por estágio operacional ODRD — 24h (Alerta), 12h (Acompanhamento),
+            6h (Prioritário).
           </span>
         </div>
       </div>

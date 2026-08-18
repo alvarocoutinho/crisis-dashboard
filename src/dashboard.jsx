@@ -227,7 +227,7 @@ function EventPanel({ event }) {
           </div>
           <p className="text-xs text-stone-500 mt-2 italic">
             Painel exibe série diária. Em produção, agregações ocorrem nas janelas fixas acima
-            (polling a cada 4h — não tempo real).
+            (verificação CEMADEN a cada 6h — não tempo real).
           </p>
         </div>
       </div>
@@ -840,7 +840,7 @@ function Footer() {
           <span>BERTimbau LOEO (Pernambuco = out-of-fold)</span> <span>·</span>
           <span>thresholds 0.5 (não calibrados)</span> <span>·</span>
           <span>anotação humana pendente</span> <span>·</span>
-          <span>polling a cada 4h (não tempo real)</span>
+          <span>polling a cada 6h (não tempo real)</span>
         </div>
         <div className="text-stone-500">
           Dados de coleta: YouTube Data API v3 (canal oficial autorizado). Alertas: CEMADEN PED.
