@@ -199,18 +199,38 @@ function Header({ liveData }) {
 // Painel de saúde do pipeline (KPIs + banner condicional)
 // ============================================================
 function PipelineHealthPanel({ liveData, state }) {
-  const lastRunDate = new Date(state.last_run_at);
   const now = new Date();
-  const hoursSinceLastRun = (now - lastRunDate) / (1000 * 60 * 60);
 
-  // Alarme: pipeline sem executar há mais de 2× a menor cadência (12h = 2×6h)
-  const isStale = hoursSinceLastRun > 12;
+  // Última verificação: quando o pipeline rodou o check CEMADEN (a cada 6h no cron).
+  // Fallback para last_run_at se o campo v0.2 não estiver presente.
+  const lastCheckDate = new Date(state.last_cemaden_check_at ?? state.last_run_at);
+  const msSinceCheck = now - lastCheckDate;
+  const hoursSinceCheck = msSinceCheck / (1000 * 60 * 60);
 
-  // Formatação amigável
-  const generatedAtFmt = new Date(liveData.generated_at).toLocaleString("pt-BR", {
+  // Última coleta: max(last_collection_at) entre todos os alertas.
+  // Só avança quando o pipeline efetivamente tenta buscar dados de algum alerta
+  // (respeitando a cadência da flag do alerta), diferente da verificação
+  // que roda em todo ciclo do cron.
+  const collectionTimestamps = liveData.alerts
+    .map(a => a.last_collection_at)
+    .filter(Boolean)
+    .map(ts => new Date(ts).getTime());
+  const hasAnyCollection = collectionTimestamps.length > 0;
+  const lastCollectionDate = hasAnyCollection
+    ? new Date(Math.max(...collectionTimestamps))
+    : null;
+  const msSinceCollection = hasAnyCollection ? now - lastCollectionDate : null;
+
+  // Alarme: verificação parada há mais de 2× a menor cadência (12h = 2×6h)
+  const isStale = hoursSinceCheck > 12;
+
+  // Formatação amigável (data absoluta no valor do KPI)
+  const fmtDate = (d) => d.toLocaleString("pt-BR", {
     day: "2-digit", month: "2-digit", year: "numeric",
     hour: "2-digit", minute: "2-digit",
   });
+  const lastCheckFmt = fmtDate(lastCheckDate);
+  const lastCollectionFmt = hasAnyCollection ? fmtDate(lastCollectionDate) : "—";
 
   return (
     <div className="space-y-3 mb-4">
@@ -220,27 +240,35 @@ function PipelineHealthPanel({ liveData, state }) {
           <XCircle size={20} className="text-red-600 flex-shrink-0 mt-0.5" />
           <div className="flex-1">
             <div className="text-sm font-semibold text-red-900">
-              Pipeline sem atualização há {Math.floor(hoursSinceLastRun)}h
+              Pipeline sem verificação há {Math.floor(hoursSinceCheck)}h
             </div>
             <div className="text-xs text-red-700 mt-1">
-              Última execução: {generatedAtFmt}. Verificar workflow GitHub Actions.
+              Última verificação CEMADEN: {lastCheckFmt}. Verificar workflow GitHub Actions.
             </div>
           </div>
         </div>
       )}
 
-      {/* Painel de status */}
+      {/* Painel de status: 5 KPIs em md+, 2 colunas em mobile */}
       <div className="bg-white rounded-lg border border-stone-300 p-5">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
           <KPI
             icon={Activity}
             label="Alertas em observação"
             value={liveData.alerts.length}
           />
           <KPI
+            icon={Radio}
+            label="Última verificação"
+            value={lastCheckFmt}
+            sub={`há ${formatDuration(msSinceCheck)}`}
+            small
+          />
+          <KPI
             icon={Clock}
             label="Última coleta"
-            value={generatedAtFmt}
+            value={lastCollectionFmt}
+            sub={hasAnyCollection ? `há ${formatDuration(msSinceCollection)}` : "sem coletas ainda"}
             small
           />
           <KPI
