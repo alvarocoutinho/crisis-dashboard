@@ -317,6 +317,111 @@ function FlagFilterChips({ availableFlags, selectedFlags, onToggle, alertCounts 
 }
 
 // ============================================================
+// Formatador de duração compacto (pt-BR)
+// - < 1h: "45min"
+// - < 24h: "6h" ou "6h 30min"
+// - < 30d: "2d" ou "2d 5h"
+// - ≥ 30d: "1mês" ou "3meses"
+// ============================================================
+function formatDuration(ms) {
+  if (ms == null || ms < 0) return "—";
+  const minutes = Math.floor(ms / (1000 * 60));
+  if (minutes < 1) return "<1min";
+  const hours = Math.floor(minutes / 60);
+  const days = Math.floor(hours / 24);
+
+  if (minutes < 60) return `${minutes}min`;
+  if (hours < 24) {
+    const remMin = minutes % 60;
+    return remMin > 0 ? `${hours}h ${remMin}min` : `${hours}h`;
+  }
+  if (days < 30) {
+    const remHours = hours % 24;
+    return remHours > 0 ? `${days}d ${remHours}h` : `${days}d`;
+  }
+  const months = Math.floor(days / 30);
+  return months === 1 ? "1mês" : `${months}meses`;
+}
+
+// ============================================================
+// Trilha de flags — histórico de transições operacionais do alerta.
+// Renderiza sempre (mesmo com 1 entrada), consolidando o hábito visual do operador.
+// Cada nó = pill colorido (FLAG_META) + timestamp abaixo.
+// Entre nós: duração da transição ("+6h").
+// Após o último nó: cauda tracejada com "há X" indicando tempo no estágio atual.
+// ============================================================
+function FlagTimeline({ history }) {
+  if (!history || history.length === 0) return null;
+
+  const now = new Date();
+  const nodes = history.map((h, i) => {
+    const at = new Date(h.at);
+    const next = history[i + 1] ? new Date(history[i + 1].at) : null;
+    return {
+      flag: h.flag,
+      at,
+      meta: FLAG_META[h.flag] ?? FLAG_META.alerta,
+      durationToNext: next ? next - at : null,
+    };
+  });
+  const lastNode = nodes[nodes.length - 1];
+  const timeSinceLast = now - lastNode.at;
+
+  return (
+    <div className="mb-3 pb-3 border-b border-stone-100">
+      <div className="text-xs font-medium text-stone-500 mb-2">
+        Trajetória do alerta
+      </div>
+      <div className="flex flex-wrap items-start gap-x-1.5 gap-y-2 text-xs">
+        {nodes.map((n, i) => (
+          <div key={i} className="flex items-start gap-1.5">
+            {/* Nó: pill + timestamp abaixo */}
+            <div className="flex flex-col items-center">
+              <span
+                className={`inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-xs font-semibold text-white ${n.meta.bgClass}`}
+                title={n.meta.description}
+              >
+                <span
+                  className="rounded-full inline-block bg-white"
+                  style={{ width: 5, height: 5 }}
+                />
+                {n.meta.label}
+              </span>
+              <span className="text-stone-500 tabular-nums mt-1 leading-tight">
+                {n.at.toLocaleString("pt-BR", {
+                  day: "2-digit", month: "2-digit",
+                  hour: "2-digit", minute: "2-digit",
+                })}
+              </span>
+            </div>
+            {/* Conector até o próximo nó (se houver) */}
+            {i < nodes.length - 1 && (
+              <div className="flex items-center gap-1 pt-1.5 text-stone-400">
+                <div className="w-3 h-px bg-stone-300" />
+                <span className="text-[10px] tabular-nums text-stone-500">
+                  +{formatDuration(n.durationToNext)}
+                </span>
+                <span className="text-stone-400">→</span>
+              </div>
+            )}
+          </div>
+        ))}
+        {/* Cauda "live": tempo desde entrada no estágio atual */}
+        <div className="flex items-center gap-1.5 pt-1.5 text-stone-400">
+          <div
+            className="w-4 border-t border-dashed border-stone-300"
+            style={{ height: 0 }}
+          />
+          <span className="text-[10px] italic text-stone-500">
+            há {formatDuration(timeSinceLast)}
+          </span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ============================================================
 // Card de um alerta live
 // ============================================================
 function AlertCard({ alert }) {
@@ -379,6 +484,9 @@ function AlertCard({ alert }) {
 
       {/* Corpo */}
       <div className="p-4">
+        {/* Trilha de flags — histórico operacional do alerta */}
+        <FlagTimeline history={alert.flag_history} />
+
         {/* Silence banner */}
         {isSilent && (
           <div className="bg-stone-50 border border-stone-200 rounded p-3 mb-3 flex items-start gap-2">
