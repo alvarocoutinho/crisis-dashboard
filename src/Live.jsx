@@ -80,7 +80,11 @@ function LiveMap({ alerts }) {
           </div>
         )}
         {status === "ok" && geo && pathGen && (
-          <svg width={width} height={height} className="w-full h-full">
+          <svg
+            viewBox={`0 0 ${width} ${height}`}
+            preserveAspectRatio="xMidYMid meet"
+            className="w-full h-full"
+          >
             <g>
               {geo.features.map((f, i) => {
                 const uf = f.properties.sigla || f.properties.SIGLA_UF || f.properties.name;
