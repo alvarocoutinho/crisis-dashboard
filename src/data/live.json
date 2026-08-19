@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T01:23:45Z",
+  "generated_at": "2026-08-19T06:50:02Z",
   "pipeline_version": "0.2.0",
   "pilot_mode": true,
   "dry_run": false,
@@ -452,10 +452,10 @@
       "lat": -32.410517554379,
       "lon": -53.335574304705,
       "regime": "prospective_live",
-      "n_comments": 9,
+      "n_comments": 15,
       "n_videos": 1,
-      "unlabeled": 2,
-      "unlabeled_pct": 22.2,
+      "unlabeled": 3,
+      "unlabeled_pct": 20.0,
       "date_range": [
         "2026-08-18",
         "2026-08-19"
@@ -464,14 +464,14 @@
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
-          "count": 5,
-          "pct": 55.6
+          "count": 7,
+          "pct": 46.7
         },
         {
           "key": "ajuda_resgate_doacoes",
           "label": "Ajuda / resgate / doações",
           "count": 2,
-          "pct": 22.2
+          "pct": 13.3
         },
         {
           "key": "responsabilizacao_governanca",
@@ -482,20 +482,20 @@
         {
           "key": "infraestrutura_ocupacao_risco",
           "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
+          "count": 1,
+          "pct": 6.7
         },
         {
           "key": "clima_chuva_meio_ambiente",
           "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
+          "count": 1,
+          "pct": 6.7
         },
         {
           "key": "experiencia_pessoal_local",
           "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
+          "count": 2,
+          "pct": 13.3
         },
         {
           "key": "alerta_prevencao_cobranca",
@@ -517,22 +517,26 @@
         },
         {
           "date": "19/08/26",
-          "count": 4
+          "count": 10
         }
       ],
       "videos": [
         {
           "video_id": "XA3QPc2KOcc",
-          "n_comments": 9,
-          "total_likes": 5,
+          "n_comments": 15,
+          "total_likes": 10,
           "first_comment": "18/08/2026",
           "top_categories": [
             {
               "label": "Solidariedade",
-              "count": 5
+              "count": 7
             },
             {
               "label": "Ajuda",
+              "count": 2
+            },
+            {
+              "label": "Experiência",
               "count": 2
             }
           ]
@@ -541,8 +545,15 @@
       "all_samples": {
         "solidariedade_oracao_luto": [
           {
-            "text": "Que Deus proteja nossa cidade nossos irmãos...",
+            "text": "Boa. Noite. Amiga. Quê tristeza. Deus. Proteja. Todos",
             "likes": 1,
+            "score": 0.997,
+            "date": "2026-08-19",
+            "video_id": "XA3QPc2KOcc"
+          },
+          {
+            "text": "Que Deus proteja nossa cidade nossos irmãos...",
+            "likes": 2,
             "score": 0.995,
             "date": "2026-08-19",
             "video_id": "XA3QPc2KOcc"
@@ -550,6 +561,13 @@
           {
             "text": "Tenho nojo dessa palavra graças a Deus, graças do que",
             "likes": 1,
+            "score": 0.995,
+            "date": "2026-08-19",
+            "video_id": "XA3QPc2KOcc"
+          },
+          {
+            "text": "É muito triste mesmo, estamos todos em oração 🙏😢",
+            "likes": 0,
             "score": 0.995,
             "date": "2026-08-19",
             "video_id": "XA3QPc2KOcc"
@@ -593,9 +611,40 @@
           }
         ],
         "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
+        "infraestrutura_ocupacao_risco": [
+          {
+            "text": "E esse lixo pelo gramado também é um pecado",
+            "likes": 1,
+            "score": 0.997,
+            "date": "2026-08-19",
+            "video_id": "XA3QPc2KOcc"
+          }
+        ],
+        "clima_chuva_meio_ambiente": [
+          {
+            "text": "Que contraste, aqui em Jaguarão o tempo está bem difícil com essa chuva ⛈️🙏",
+            "likes": 0,
+            "score": 0.979,
+            "date": "2026-08-19",
+            "video_id": "XA3QPc2KOcc"
+          }
+        ],
+        "experiencia_pessoal_local": [
+          {
+            "text": "Que contraste, aqui em Jaguarão o tempo está bem difícil com essa chuva ⛈️🙏",
+            "likes": 0,
+            "score": 0.993,
+            "date": "2026-08-19",
+            "video_id": "XA3QPc2KOcc"
+          },
+          {
+            "text": "Realmente, é uma falta de consciência que prejudica ainda mais a nossa cidade nesse momento difícil. 😔💔",
+            "likes": 1,
+            "score": 0.781,
+            "date": "2026-08-19",
+            "video_id": "XA3QPc2KOcc"
+          }
+        ],
         "alerta_prevencao_cobranca": [],
         "critica_midia_informacao": []
       },
@@ -731,8 +780,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-08-18T06:48:58Z",
-      "next_collection_at": "2026-08-19T06:48:58Z"
+      "last_collection_at": "2026-08-19T06:49:39Z",
+      "next_collection_at": "2026-08-20T06:49:39Z"
     },
     {
       "id": "cemaden_pe_2482",
@@ -836,8 +885,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-08-18T06:48:58Z",
-      "next_collection_at": "2026-08-19T06:48:58Z"
+      "last_collection_at": "2026-08-19T06:49:39Z",
+      "next_collection_at": "2026-08-20T06:49:39Z"
     },
     {
       "id": "cemaden_pe_2483",
@@ -1993,6 +2042,111 @@
       },
       "last_collection_at": "2026-08-19T01:23:09Z",
       "next_collection_at": "2026-08-20T01:23:09Z"
+    },
+    {
+      "id": "cemaden_rs_2494",
+      "municipio": "Dom Pedrito",
+      "uf": "RS",
+      "tipo": "Risco Hidrológico",
+      "nivel": "Alto",
+      "data_alerta": "18/08/2026",
+      "codibge": "4306601",
+      "lat": -31.057355013631,
+      "lon": -54.664933080761,
+      "regime": "prospective_live",
+      "n_comments": 0,
+      "n_videos": 0,
+      "unlabeled": 0,
+      "unlabeled_pct": 0.0,
+      "date_range": [
+        "",
+        ""
+      ],
+      "distribution": [
+        {
+          "key": "solidariedade_oracao_luto",
+          "label": "Solidariedade / oração / luto",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "ajuda_resgate_doacoes",
+          "label": "Ajuda / resgate / doações",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "responsabilizacao_governanca",
+          "label": "Responsabilização / governança",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "infraestrutura_ocupacao_risco",
+          "label": "Infraestrutura / ocupação de risco",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "clima_chuva_meio_ambiente",
+          "label": "Clima / chuva / meio ambiente",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "experiencia_pessoal_local",
+          "label": "Experiência pessoal / local",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "alerta_prevencao_cobranca",
+          "label": "Alerta / prevenção / cobrança",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "critica_midia_informacao",
+          "label": "Crítica à mídia / informação",
+          "count": 0,
+          "pct": 0.0
+        }
+      ],
+      "timeline": [],
+      "videos": [],
+      "all_samples": {
+        "solidariedade_oracao_luto": [],
+        "ajuda_resgate_doacoes": [],
+        "responsabilizacao_governanca": [],
+        "infraestrutura_ocupacao_risco": [],
+        "clima_chuva_meio_ambiente": [],
+        "experiencia_pessoal_local": [],
+        "alerta_prevencao_cobranca": [],
+        "critica_midia_informacao": []
+      },
+      "academic_studies": [],
+      "observation_status": "active",
+      "priority_tier": "alto",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-08-18T23:06:25Z"
+        }
+      ],
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "alert_opened_at": "2026-08-18T23:06:25Z",
+      "alert_closed_at": null,
+      "alert_transitions": [],
+      "collection_health": {
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
+      },
+      "last_collection_at": "2026-08-19T06:49:39Z",
+      "next_collection_at": "2026-08-20T06:49:39Z"
     }
   ],
   "archived_alerts": []
