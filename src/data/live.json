@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T12:53:42Z",
+  "generated_at": "2026-08-19T18:40:27Z",
   "pipeline_version": "0.2.0",
   "pilot_mode": true,
   "dry_run": false,
@@ -123,8 +123,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-08-19T01:23:09Z",
-      "next_collection_at": "2026-08-19T13:23:09Z"
+      "last_collection_at": "2026-08-19T18:39:48Z",
+      "next_collection_at": "2026-08-20T06:39:48Z"
     },
     {
       "id": "cemaden_rs_2476",
@@ -453,7 +453,7 @@
       "lon": -53.335574304705,
       "regime": "prospective_live",
       "n_comments": 17,
-      "n_videos": 1,
+      "n_videos": 2,
       "unlabeled": 4,
       "unlabeled_pct": 23.5,
       "date_range": [
@@ -540,6 +540,13 @@
               "count": 2
             }
           ]
+        },
+        {
+          "video_id": "l_Yk65oKbiU",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
         }
       ],
       "all_samples": {
@@ -1322,111 +1329,6 @@
       "next_collection_at": "2026-08-20T12:52:54Z"
     },
     {
-      "id": "cemaden_pe_2487",
-      "municipio": "Ribeirão",
-      "uf": "PE",
-      "tipo": "Risco Hidrológico",
-      "nivel": "Moderado",
-      "data_alerta": "18/08/2026",
-      "codibge": "2611804",
-      "lat": -8.505097134498,
-      "lon": -35.366660649364,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-08-18T06:25:59Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-08-18T06:25:59Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-08-19T12:52:54Z",
-      "next_collection_at": "2026-08-20T12:52:54Z"
-    },
-    {
       "id": "cemaden_pe_2488",
       "municipio": "Bonito",
       "uf": "PE",
@@ -1742,111 +1644,6 @@
       "next_collection_at": "2026-08-20T01:23:09Z"
     },
     {
-      "id": "cemaden_pe_2490",
-      "municipio": "Vitória de Santo Antão",
-      "uf": "PE",
-      "tipo": "Risco Hidrológico",
-      "nivel": "Moderado",
-      "data_alerta": "18/08/2026",
-      "codibge": "2616407",
-      "lat": -8.1541870420198,
-      "lon": -35.292579750968,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-08-18T16:52:18Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-08-18T16:52:18Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-08-19T01:23:09Z",
-      "next_collection_at": "2026-08-20T01:23:09Z"
-    },
-    {
       "id": "cemaden_pe_2491",
       "municipio": "Recife",
       "uf": "PE",
@@ -2067,13 +1864,13 @@
       "lat": -31.057355013631,
       "lon": -54.664933080761,
       "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
+      "n_comments": 2,
+      "n_videos": 1,
       "unlabeled": 0,
       "unlabeled_pct": 0.0,
       "date_range": [
-        "",
-        ""
+        "2026-08-19",
+        "2026-08-19"
       ],
       "distribution": [
         {
@@ -2085,8 +1882,8 @@
         {
           "key": "ajuda_resgate_doacoes",
           "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
+          "count": 1,
+          "pct": 50.0
         },
         {
           "key": "responsabilizacao_governanca",
@@ -2097,14 +1894,14 @@
         {
           "key": "infraestrutura_ocupacao_risco",
           "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
+          "count": 1,
+          "pct": 50.0
         },
         {
           "key": "clima_chuva_meio_ambiente",
           "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
+          "count": 1,
+          "pct": 50.0
         },
         {
           "key": "experiencia_pessoal_local",
@@ -2115,27 +1912,100 @@
         {
           "key": "alerta_prevencao_cobranca",
           "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
+          "count": 1,
+          "pct": 50.0
         },
         {
           "key": "critica_midia_informacao",
           "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
+          "count": 2,
+          "pct": 100.0
         }
       ],
-      "timeline": [],
-      "videos": [],
+      "timeline": [
+        {
+          "date": "19/08/26",
+          "count": 2
+        }
+      ],
+      "videos": [
+        {
+          "video_id": "FawKqyvaAzU",
+          "n_comments": 2,
+          "total_likes": 0,
+          "first_comment": "19/08/2026",
+          "top_categories": [
+            {
+              "label": "Crítica mídia",
+              "count": 2
+            },
+            {
+              "label": "Ajuda",
+              "count": 1
+            },
+            {
+              "label": "Infraestrutura",
+              "count": 1
+            }
+          ]
+        }
+      ],
       "all_samples": {
         "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
+        "ajuda_resgate_doacoes": [
+          {
+            "text": "Veja os detalhes e a matéria completa no Portal R7: 👉 https://noticias.r7.com/rio-grande-do-sul/rio-grande-record/chuva-intensa-alerta-defesa-civil-no-rio-grande-do-sul-19082026/",
+            "likes": 0,
+            "score": 0.877,
+            "date": "2026-08-19",
+            "video_id": "FawKqyvaAzU"
+          }
+        ],
         "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
+        "infraestrutura_ocupacao_risco": [
+          {
+            "text": "Veja os detalhes e a matéria completa no Portal R7: 👉 https://noticias.r7.com/rio-grande-do-sul/rio-grande-record/chuva-intensa-alerta-defesa-civil-no-rio-grande-do-sul-19082026/",
+            "likes": 0,
+            "score": 0.991,
+            "date": "2026-08-19",
+            "video_id": "FawKqyvaAzU"
+          }
+        ],
+        "clima_chuva_meio_ambiente": [
+          {
+            "text": "Veja os detalhes e a matéria completa no Portal R7: 👉 https://noticias.r7.com/rio-grande-do-sul/rio-grande-record/chuva-intensa-alerta-defesa-civil-no-rio-grande-do-sul-19082026/",
+            "likes": 0,
+            "score": 0.995,
+            "date": "2026-08-19",
+            "video_id": "FawKqyvaAzU"
+          }
+        ],
         "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
+        "alerta_prevencao_cobranca": [
+          {
+            "text": "Veja os detalhes e a matéria completa no Portal R7: 👉 https://noticias.r7.com/rio-grande-do-sul/rio-grande-record/chuva-intensa-alerta-defesa-civil-no-rio-grande-do-sul-19082026/",
+            "likes": 0,
+            "score": 0.999,
+            "date": "2026-08-19",
+            "video_id": "FawKqyvaAzU"
+          }
+        ],
+        "critica_midia_informacao": [
+          {
+            "text": "Ddf qual é a cura biba para ser a Record já começou",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-08-19",
+            "video_id": "FawKqyvaAzU"
+          },
+          {
+            "text": "Veja os detalhes e a matéria completa no Portal R7: 👉 https://noticias.r7.com/rio-grande-do-sul/rio-grande-record/chuva-intensa-alerta-defesa-civil-no-rio-grande-do-sul-19082026/",
+            "likes": 0,
+            "score": 0.918,
+            "date": "2026-08-19",
+            "video_id": "FawKqyvaAzU"
+          }
+        ]
       },
       "academic_studies": [],
       "observation_status": "active",
@@ -2153,8 +2023,8 @@
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
+        "status": "ok",
+        "silence_type": null,
         "last_error": null,
         "consecutive_failures": 0
       },
