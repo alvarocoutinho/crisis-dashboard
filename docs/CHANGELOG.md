@@ -27,7 +27,6 @@ Freeze pré-institucional. Estabelece linha de base tecnológica anterior a qual
 
 ### Pendências conhecidas
 
-- `<TODO>` de email de contato na Parte B do `LICENSE` — resolver antes de publicar o Zenodo.
 - DOI Zenodo do freeze — a preencher no `README.md` após execução do A8 (freeze scripts + release GitHub + depósito Zenodo).
 - Reconciliação do PDF FAPESP com o modelo v0.2 (cadência, Reforma três flags) — deliberadamente adiada para pós-submissão, conforme regra registrada.
 - Validação humana dos filtros de aderência (peça central do protocolo).
