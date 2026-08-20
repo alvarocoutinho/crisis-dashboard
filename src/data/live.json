@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T01:23:25Z",
+  "generated_at": "2026-08-20T06:52:32Z",
   "pipeline_version": "0.2.0",
   "pilot_mode": true,
   "dry_run": false,
@@ -123,8 +123,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-08-19T18:39:48Z",
-      "next_collection_at": "2026-08-20T06:39:48Z"
+      "last_collection_at": "2026-08-20T06:51:54Z",
+      "next_collection_at": "2026-08-20T18:51:54Z"
     },
     {
       "id": "cemaden_rs_2476",
@@ -228,8 +228,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-08-19T01:23:09Z",
-      "next_collection_at": "2026-08-20T01:23:09Z"
+      "last_collection_at": "2026-08-20T06:51:54Z",
+      "next_collection_at": "2026-08-21T06:51:54Z"
     },
     {
       "id": "cemaden_rs_2478",
@@ -348,7 +348,7 @@
       "lon": -52.91937696839,
       "regime": "prospective_live",
       "n_comments": 0,
-      "n_videos": 0,
+      "n_videos": 2,
       "unlabeled": 0,
       "unlabeled_pct": 0.0,
       "date_range": [
@@ -406,7 +406,22 @@
         }
       ],
       "timeline": [],
-      "videos": [],
+      "videos": [
+        {
+          "video_id": "zk_am4Xh-3w",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
+        },
+        {
+          "video_id": "-gcOGgSLJMw",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
+        }
+      ],
       "all_samples": {
         "solidariedade_oracao_luto": [],
         "ajuda_resgate_doacoes": [],
@@ -434,7 +449,7 @@
       "alert_transitions": [],
       "collection_health": {
         "status": "silent",
-        "silence_type": "no_videos_found",
+        "silence_type": "videos_without_comments",
         "last_error": null,
         "consecutive_failures": 0
       },
@@ -542,14 +557,14 @@
           ]
         },
         {
-          "video_id": "l_Yk65oKbiU",
+          "video_id": "vLDOp_6MUYQ",
           "n_comments": 0,
           "total_likes": 0,
           "first_comment": "",
           "top_categories": []
         },
         {
-          "video_id": "vLDOp_6MUYQ",
+          "video_id": "l_Yk65oKbiU",
           "n_comments": 0,
           "total_likes": 0,
           "first_comment": "",
@@ -912,8 +927,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-08-19T01:23:09Z",
-      "next_collection_at": "2026-08-20T01:23:09Z"
+      "last_collection_at": "2026-08-20T06:51:54Z",
+      "next_collection_at": "2026-08-21T06:51:54Z"
     },
     {
       "id": "cemaden_pe_2491",
@@ -1017,8 +1032,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-08-19T01:23:09Z",
-      "next_collection_at": "2026-08-20T01:23:09Z"
+      "last_collection_at": "2026-08-20T06:51:54Z",
+      "next_collection_at": "2026-08-21T06:51:54Z"
     },
     {
       "id": "cemaden_pe_2492",
@@ -1122,8 +1137,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-08-19T01:23:09Z",
-      "next_collection_at": "2026-08-20T01:23:09Z"
+      "last_collection_at": "2026-08-20T06:51:54Z",
+      "next_collection_at": "2026-08-21T06:51:54Z"
     },
     {
       "id": "cemaden_rs_2494",
@@ -1136,10 +1151,10 @@
       "lat": -31.057355013631,
       "lon": -54.664933080761,
       "regime": "prospective_live",
-      "n_comments": 12,
+      "n_comments": 13,
       "n_videos": 1,
-      "unlabeled": 1,
-      "unlabeled_pct": 8.3,
+      "unlabeled": 2,
+      "unlabeled_pct": 15.4,
       "date_range": [
         "2026-08-19",
         "2026-08-20"
@@ -1149,31 +1164,31 @@
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
           "count": 3,
-          "pct": 25.0
+          "pct": 23.1
         },
         {
           "key": "ajuda_resgate_doacoes",
           "label": "Ajuda / resgate / doações",
           "count": 1,
-          "pct": 8.3
+          "pct": 7.7
         },
         {
           "key": "responsabilizacao_governanca",
           "label": "Responsabilização / governança",
           "count": 4,
-          "pct": 33.3
+          "pct": 30.8
         },
         {
           "key": "infraestrutura_ocupacao_risco",
           "label": "Infraestrutura / ocupação de risco",
           "count": 3,
-          "pct": 25.0
+          "pct": 23.1
         },
         {
           "key": "clima_chuva_meio_ambiente",
           "label": "Clima / chuva / meio ambiente",
           "count": 3,
-          "pct": 25.0
+          "pct": 23.1
         },
         {
           "key": "experiencia_pessoal_local",
@@ -1185,13 +1200,13 @@
           "key": "alerta_prevencao_cobranca",
           "label": "Alerta / prevenção / cobrança",
           "count": 1,
-          "pct": 8.3
+          "pct": 7.7
         },
         {
           "key": "critica_midia_informacao",
           "label": "Crítica à mídia / informação",
           "count": 2,
-          "pct": 16.7
+          "pct": 15.4
         }
       ],
       "timeline": [
@@ -1201,13 +1216,13 @@
         },
         {
           "date": "20/08/26",
-          "count": 2
+          "count": 3
         }
       ],
       "videos": [
         {
           "video_id": "FawKqyvaAzU",
-          "n_comments": 12,
+          "n_comments": 13,
           "total_likes": 8,
           "first_comment": "19/08/2026",
           "top_categories": [
@@ -1365,15 +1380,21 @@
       "academic_studies": [],
       "observation_status": "active",
       "priority_tier": "alto",
-      "flag": "alerta",
+      "flag": "acompanhamento",
       "flag_history": [
         {
           "flag": "alerta",
           "at": "2026-08-18T23:06:25Z"
+        },
+        {
+          "flag": "acompanhamento",
+          "at": "2026-08-20T06:51:54Z"
         }
       ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
+      "n_comments_valid": 11,
+      "videos_with_valid_comments": [
+        "FawKqyvaAzU"
+      ],
       "alert_opened_at": "2026-08-18T23:06:25Z",
       "alert_closed_at": null,
       "alert_transitions": [],
@@ -1383,8 +1404,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-08-19T06:49:39Z",
-      "next_collection_at": "2026-08-20T06:49:39Z"
+      "last_collection_at": "2026-08-20T06:51:54Z",
+      "next_collection_at": "2026-08-20T18:51:54Z"
     },
     {
       "id": "cemaden_rs_2495",
