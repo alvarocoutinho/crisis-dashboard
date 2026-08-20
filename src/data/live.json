@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T12:55:58Z",
+  "generated_at": "2026-08-20T18:45:25Z",
   "pipeline_version": "0.2.0",
   "pilot_mode": true,
   "dry_run": false,
@@ -15,13 +15,13 @@
       "lat": -31.581167679409,
       "lon": -52.341155831415,
       "regime": "prospective_live",
-      "n_comments": 1,
-      "n_videos": 1,
-      "unlabeled": 1,
-      "unlabeled_pct": 100.0,
+      "n_comments": 0,
+      "n_videos": 0,
+      "unlabeled": 0,
+      "unlabeled_pct": 0.0,
       "date_range": [
-        "2026-08-18",
-        "2026-08-18"
+        "",
+        ""
       ],
       "distribution": [
         {
@@ -73,21 +73,8 @@
           "pct": 0.0
         }
       ],
-      "timeline": [
-        {
-          "date": "18/08/26",
-          "count": 1
-        }
-      ],
-      "videos": [
-        {
-          "video_id": "R39FGaY5-wg",
-          "n_comments": 1,
-          "total_likes": 1,
-          "first_comment": "18/08/2026",
-          "top_categories": []
-        }
-      ],
+      "timeline": [],
+      "videos": [],
       "all_samples": {
         "solidariedade_oracao_luto": [],
         "ajuda_resgate_doacoes": [],
@@ -118,8 +105,8 @@
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "ok",
-        "silence_type": null,
+        "status": "silent",
+        "silence_type": "no_videos_found",
         "last_error": null,
         "consecutive_failures": 0
       },
@@ -542,14 +529,14 @@
           ]
         },
         {
-          "video_id": "vLDOp_6MUYQ",
+          "video_id": "l_Yk65oKbiU",
           "n_comments": 0,
           "total_likes": 0,
           "first_comment": "",
           "top_categories": []
         },
         {
-          "video_id": "l_Yk65oKbiU",
+          "video_id": "vLDOp_6MUYQ",
           "n_comments": 0,
           "total_likes": 0,
           "first_comment": "",
@@ -683,7 +670,7 @@
           "at": "2026-08-19T12:52:54Z"
         }
       ],
-      "n_comments_valid": 26,
+      "n_comments_valid": 39,
       "videos_with_valid_comments": [
         "XA3QPc2KOcc"
       ],
@@ -702,8 +689,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-08-20T01:22:51Z",
-      "next_collection_at": "2026-08-20T13:22:51Z"
+      "last_collection_at": "2026-08-20T18:44:53Z",
+      "next_collection_at": "2026-08-21T06:44:53Z"
     },
     {
       "id": "cemaden_rs_2493",
@@ -821,10 +808,10 @@
       "lat": -31.057355013631,
       "lon": -54.664933080761,
       "regime": "prospective_live",
-      "n_comments": 19,
+      "n_comments": 23,
       "n_videos": 1,
-      "unlabeled": 3,
-      "unlabeled_pct": 15.8,
+      "unlabeled": 4,
+      "unlabeled_pct": 17.4,
       "date_range": [
         "2026-08-19",
         "2026-08-20"
@@ -834,31 +821,31 @@
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
           "count": 4,
-          "pct": 21.1
+          "pct": 17.4
         },
         {
           "key": "ajuda_resgate_doacoes",
           "label": "Ajuda / resgate / doações",
-          "count": 2,
-          "pct": 10.5
+          "count": 3,
+          "pct": 13.0
         },
         {
           "key": "responsabilizacao_governanca",
           "label": "Responsabilização / governança",
-          "count": 7,
-          "pct": 36.8
+          "count": 8,
+          "pct": 34.8
         },
         {
           "key": "infraestrutura_ocupacao_risco",
           "label": "Infraestrutura / ocupação de risco",
-          "count": 3,
-          "pct": 15.8
+          "count": 4,
+          "pct": 17.4
         },
         {
           "key": "clima_chuva_meio_ambiente",
           "label": "Clima / chuva / meio ambiente",
-          "count": 5,
-          "pct": 26.3
+          "count": 7,
+          "pct": 30.4
         },
         {
           "key": "experiencia_pessoal_local",
@@ -870,13 +857,13 @@
           "key": "alerta_prevencao_cobranca",
           "label": "Alerta / prevenção / cobrança",
           "count": 1,
-          "pct": 5.3
+          "pct": 4.3
         },
         {
           "key": "critica_midia_informacao",
           "label": "Crítica à mídia / informação",
-          "count": 2,
-          "pct": 10.5
+          "count": 3,
+          "pct": 13.0
         }
       ],
       "timeline": [
@@ -886,23 +873,23 @@
         },
         {
           "date": "20/08/26",
-          "count": 9
+          "count": 13
         }
       ],
       "videos": [
         {
           "video_id": "FawKqyvaAzU",
-          "n_comments": 19,
-          "total_likes": 12,
+          "n_comments": 23,
+          "total_likes": 13,
           "first_comment": "19/08/2026",
           "top_categories": [
             {
               "label": "Responsabilização",
-              "count": 7
+              "count": 8
             },
             {
               "label": "Clima/chuva",
-              "count": 5
+              "count": 7
             },
             {
               "label": "Solidariedade",
@@ -945,6 +932,13 @@
         "ajuda_resgate_doacoes": [
           {
             "text": "Gente a natureza é forte e ninguém pode fazer nada. Só Deus pode ajudar.",
+            "likes": 0,
+            "score": 0.989,
+            "date": "2026-08-20",
+            "video_id": "FawKqyvaAzU"
+          },
+          {
+            "text": "O prefeito náo vence náo da conta de retirar lixo de esquina valetas o povo náo ajuda ,eles limpam e o povo vai lá jogar mais lixo isso que passa o caminháo da coleta todo dia",
             "likes": 0,
             "score": 0.989,
             "date": "2026-08-20",
@@ -995,6 +989,13 @@
             "video_id": "FawKqyvaAzU"
           },
           {
+            "text": "O prefeito náo vence náo da conta de retirar lixo de esquina valetas o povo náo ajuda ,eles limpam e o povo vai lá jogar mais lixo isso que passa o caminháo da coleta todo dia",
+            "likes": 0,
+            "score": 0.99,
+            "date": "2026-08-20",
+            "video_id": "FawKqyvaAzU"
+          },
+          {
             "text": "Sim, esse luis inacio é fezes!",
             "likes": 0,
             "score": 0.985,
@@ -1030,6 +1031,13 @@
             "score": 0.991,
             "date": "2026-08-19",
             "video_id": "FawKqyvaAzU"
+          },
+          {
+            "text": "O prefeito náo vence náo da conta de retirar lixo de esquina valetas o povo náo ajuda ,eles limpam e o povo vai lá jogar mais lixo isso que passa o caminháo da coleta todo dia",
+            "likes": 0,
+            "score": 0.986,
+            "date": "2026-08-20",
+            "video_id": "FawKqyvaAzU"
           }
         ],
         "clima_chuva_meio_ambiente": [
@@ -1048,8 +1056,15 @@
             "video_id": "FawKqyvaAzU"
           },
           {
+            "text": "A inundação 2024 é só questão de tempo",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-08-20",
+            "video_id": "FawKqyvaAzU"
+          },
+          {
             "text": "Votaram numa bosta, agora querem o quê? O que foi feito pós enchente de 2024? Colocar Jaleco laranja e ir pra TV mostrar a previsão do tempo, não resolve.",
-            "likes": 7,
+            "likes": 8,
             "score": 0.995,
             "date": "2026-08-19",
             "video_id": "FawKqyvaAzU"
@@ -1059,6 +1074,13 @@
             "likes": 1,
             "score": 0.995,
             "date": "2026-08-19",
+            "video_id": "FawKqyvaAzU"
+          },
+          {
+            "text": "Verdade vanuza com a natureza náo se pode fazer oque esperar passar só",
+            "likes": 0,
+            "score": 0.987,
+            "date": "2026-08-20",
             "video_id": "FawKqyvaAzU"
           },
           {
@@ -1080,6 +1102,13 @@
           }
         ],
         "critica_midia_informacao": [
+          {
+            "text": "Verdade vanuza com a natureza náo se pode fazer oque esperar passar só",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-08-20",
+            "video_id": "FawKqyvaAzU"
+          },
           {
             "text": "Ddf qual é a cura biba para ser a Record já começou",
             "likes": 0,
