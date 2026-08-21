@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T18:45:25Z",
+  "generated_at": "2026-08-21T01:28:16Z",
   "pipeline_version": "0.2.0",
   "pilot_mode": true,
   "dry_run": false,
@@ -15,13 +15,13 @@
       "lat": -31.581167679409,
       "lon": -52.341155831415,
       "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
+      "n_comments": 1,
+      "n_videos": 1,
+      "unlabeled": 1,
+      "unlabeled_pct": 100.0,
       "date_range": [
-        "",
-        ""
+        "2026-08-18",
+        "2026-08-18"
       ],
       "distribution": [
         {
@@ -73,8 +73,21 @@
           "pct": 0.0
         }
       ],
-      "timeline": [],
-      "videos": [],
+      "timeline": [
+        {
+          "date": "18/08/26",
+          "count": 1
+        }
+      ],
+      "videos": [
+        {
+          "video_id": "R39FGaY5-wg",
+          "n_comments": 1,
+          "total_likes": 1,
+          "first_comment": "18/08/2026",
+          "top_categories": []
+        }
+      ],
       "all_samples": {
         "solidariedade_oracao_luto": [],
         "ajuda_resgate_doacoes": [],
@@ -105,13 +118,13 @@
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
+        "status": "ok",
+        "silence_type": null,
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-08-20T06:51:54Z",
-      "next_collection_at": "2026-08-20T18:51:54Z"
+      "last_collection_at": "2026-08-21T01:27:44Z",
+      "next_collection_at": "2026-08-21T13:27:44Z"
     },
     {
       "id": "cemaden_rs_2476",
@@ -529,14 +542,14 @@
           ]
         },
         {
-          "video_id": "l_Yk65oKbiU",
+          "video_id": "vLDOp_6MUYQ",
           "n_comments": 0,
           "total_likes": 0,
           "first_comment": "",
           "top_categories": []
         },
         {
-          "video_id": "vLDOp_6MUYQ",
+          "video_id": "l_Yk65oKbiU",
           "n_comments": 0,
           "total_likes": 0,
           "first_comment": "",
@@ -574,17 +587,17 @@
             "video_id": "XA3QPc2KOcc"
           },
           {
-            "text": "😮😮😮😮",
-            "likes": 0,
-            "score": 0.974,
-            "date": "2026-08-19",
-            "video_id": "XA3QPc2KOcc"
-          },
-          {
             "text": "😢😢😢😢",
             "likes": 0,
             "score": 0.974,
             "date": "2026-08-18",
+            "video_id": "XA3QPc2KOcc"
+          },
+          {
+            "text": "😮😮😮😮",
+            "likes": 0,
+            "score": 0.974,
+            "date": "2026-08-19",
             "video_id": "XA3QPc2KOcc"
           },
           {
@@ -808,44 +821,44 @@
       "lat": -31.057355013631,
       "lon": -54.664933080761,
       "regime": "prospective_live",
-      "n_comments": 23,
+      "n_comments": 24,
       "n_videos": 1,
       "unlabeled": 4,
-      "unlabeled_pct": 17.4,
+      "unlabeled_pct": 16.7,
       "date_range": [
         "2026-08-19",
-        "2026-08-20"
+        "2026-08-21"
       ],
       "distribution": [
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
           "count": 4,
-          "pct": 17.4
+          "pct": 16.7
         },
         {
           "key": "ajuda_resgate_doacoes",
           "label": "Ajuda / resgate / doações",
           "count": 3,
-          "pct": 13.0
+          "pct": 12.5
         },
         {
           "key": "responsabilizacao_governanca",
           "label": "Responsabilização / governança",
           "count": 8,
-          "pct": 34.8
+          "pct": 33.3
         },
         {
           "key": "infraestrutura_ocupacao_risco",
           "label": "Infraestrutura / ocupação de risco",
           "count": 4,
-          "pct": 17.4
+          "pct": 16.7
         },
         {
           "key": "clima_chuva_meio_ambiente",
           "label": "Clima / chuva / meio ambiente",
-          "count": 7,
-          "pct": 30.4
+          "count": 8,
+          "pct": 33.3
         },
         {
           "key": "experiencia_pessoal_local",
@@ -857,13 +870,13 @@
           "key": "alerta_prevencao_cobranca",
           "label": "Alerta / prevenção / cobrança",
           "count": 1,
-          "pct": 4.3
+          "pct": 4.2
         },
         {
           "key": "critica_midia_informacao",
           "label": "Crítica à mídia / informação",
           "count": 3,
-          "pct": 13.0
+          "pct": 12.5
         }
       ],
       "timeline": [
@@ -874,13 +887,17 @@
         {
           "date": "20/08/26",
           "count": 13
+        },
+        {
+          "date": "21/08/26",
+          "count": 1
         }
       ],
       "videos": [
         {
           "video_id": "FawKqyvaAzU",
-          "n_comments": 23,
-          "total_likes": 13,
+          "n_comments": 24,
+          "total_likes": 15,
           "first_comment": "19/08/2026",
           "top_categories": [
             {
@@ -889,7 +906,7 @@
             },
             {
               "label": "Clima/chuva",
-              "count": 7
+              "count": 8
             },
             {
               "label": "Solidariedade",
@@ -1042,6 +1059,13 @@
         ],
         "clima_chuva_meio_ambiente": [
           {
+            "text": "Santa Laguna dos Patos pra aguentar esse tanto de água e não extravasar... Que continue comportando, pois essa história vai longe. Morador da Praia do Laranjal, sofremos com enchentes em 2001, 2015, 2024, ... uma com grau de severidade maior que a outra. Espero que não se repita :(",
+            "likes": 1,
+            "score": 0.997,
+            "date": "2026-08-21",
+            "video_id": "FawKqyvaAzU"
+          },
+          {
             "text": "mas coisa de ratardado querer limpar valetas e ruas depois começou chuva porque não fiserão antes começar chuvas faz mais de mes ta sendo anunciado tempo severo ai depois enche tudo de agua querem limpar valetas pra aparecer na televisão disendo ta faznedo alguma coisa",
             "likes": 1,
             "score": 0.996,
@@ -1050,7 +1074,7 @@
           },
           {
             "text": "infelizmente o planeta está morrendo... daqui pra frente é só tragédia 😮",
-            "likes": 0,
+            "likes": 1,
             "score": 0.996,
             "date": "2026-08-19",
             "video_id": "FawKqyvaAzU"
@@ -1139,7 +1163,7 @@
           "at": "2026-08-20T06:51:54Z"
         }
       ],
-      "n_comments_valid": 11,
+      "n_comments_valid": 31,
       "videos_with_valid_comments": [
         "FawKqyvaAzU"
       ],
@@ -1152,8 +1176,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-08-20T06:51:54Z",
-      "next_collection_at": "2026-08-20T18:51:54Z"
+      "last_collection_at": "2026-08-21T01:27:44Z",
+      "next_collection_at": "2026-08-21T13:27:44Z"
     },
     {
       "id": "cemaden_rs_2495",
@@ -1257,8 +1281,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-08-20T01:22:51Z",
-      "next_collection_at": "2026-08-21T01:22:51Z"
+      "last_collection_at": "2026-08-21T01:27:44Z",
+      "next_collection_at": "2026-08-22T01:27:44Z"
     }
   ],
   "archived_alerts": []
