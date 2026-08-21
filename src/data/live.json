@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T06:54:06Z",
+  "generated_at": "2026-08-21T12:54:50Z",
   "pipeline_version": "0.2.0",
   "pilot_mode": true,
   "dry_run": false,
@@ -1269,7 +1269,7 @@
       },
       "academic_studies": [],
       "observation_status": "active",
-      "priority_tier": "moderado",
+      "priority_tier": "alto",
       "flag": "alerta",
       "flag_history": [
         {
@@ -1281,7 +1281,13 @@
       "videos_with_valid_comments": [],
       "alert_opened_at": "2026-08-19T17:30:33Z",
       "alert_closed_at": null,
-      "alert_transitions": [],
+      "alert_transitions": [
+        {
+          "from": "Moderado",
+          "to": "Alto",
+          "at": "2026-08-21T12:54:48Z"
+        }
+      ],
       "collection_health": {
         "status": "silent",
         "silence_type": "no_videos_found",
