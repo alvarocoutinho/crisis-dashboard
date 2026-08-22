@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T01:24:06Z",
+  "generated_at": "2026-08-22T06:45:11Z",
   "pipeline_version": "0.2.0",
   "pilot_mode": true,
   "dry_run": false,
@@ -15,13 +15,13 @@
       "lat": -31.581167679409,
       "lon": -52.341155831415,
       "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
+      "n_comments": 1,
+      "n_videos": 1,
+      "unlabeled": 1,
+      "unlabeled_pct": 100.0,
       "date_range": [
-        "",
-        ""
+        "2026-08-18",
+        "2026-08-18"
       ],
       "distribution": [
         {
@@ -73,8 +73,21 @@
           "pct": 0.0
         }
       ],
-      "timeline": [],
-      "videos": [],
+      "timeline": [
+        {
+          "date": "18/08/26",
+          "count": 1
+        }
+      ],
+      "videos": [
+        {
+          "video_id": "R39FGaY5-wg",
+          "n_comments": 1,
+          "total_likes": 1,
+          "first_comment": "18/08/2026",
+          "top_categories": []
+        }
+      ],
       "all_samples": {
         "solidariedade_oracao_luto": [],
         "ajuda_resgate_doacoes": [],
@@ -105,13 +118,13 @@
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
+        "status": "ok",
+        "silence_type": null,
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-08-21T18:41:41Z",
-      "next_collection_at": "2026-08-22T06:41:41Z"
+      "last_collection_at": "2026-08-22T06:44:36Z",
+      "next_collection_at": "2026-08-22T18:44:36Z"
     },
     {
       "id": "cemaden_rs_2476",
@@ -574,17 +587,17 @@
             "video_id": "XA3QPc2KOcc"
           },
           {
-            "text": "😢😢😢😢",
-            "likes": 0,
-            "score": 0.974,
-            "date": "2026-08-18",
-            "video_id": "XA3QPc2KOcc"
-          },
-          {
             "text": "😮😮😮😮",
             "likes": 0,
             "score": 0.974,
             "date": "2026-08-19",
+            "video_id": "XA3QPc2KOcc"
+          },
+          {
+            "text": "😢😢😢😢",
+            "likes": 0,
+            "score": 0.974,
+            "date": "2026-08-18",
             "video_id": "XA3QPc2KOcc"
           },
           {
@@ -1164,7 +1177,7 @@
           "at": "2026-08-20T06:51:54Z"
         }
       ],
-      "n_comments_valid": 52,
+      "n_comments_valid": 73,
       "videos_with_valid_comments": [
         "FawKqyvaAzU"
       ],
@@ -1177,8 +1190,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-08-21T18:41:41Z",
-      "next_collection_at": "2026-08-22T06:41:41Z"
+      "last_collection_at": "2026-08-22T06:44:36Z",
+      "next_collection_at": "2026-08-22T18:44:36Z"
     },
     {
       "id": "cemaden_rs_2495",
@@ -1288,8 +1301,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-08-21T01:27:44Z",
-      "next_collection_at": "2026-08-22T01:27:44Z"
+      "last_collection_at": "2026-08-22T06:44:36Z",
+      "next_collection_at": "2026-08-23T06:44:36Z"
     }
   ],
   "archived_alerts": []
