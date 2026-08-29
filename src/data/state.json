@@ -1,10 +1,10 @@
 {
   "schema_version": "0.2",
   "pipeline_version": "0.2.0",
-  "last_run_at": "2026-08-29T06:15:55Z",
+  "last_run_at": "2026-08-29T16:25:48Z",
   "last_run_status": "success",
-  "last_run_duration_seconds": 26,
-  "last_cemaden_check_at": "2026-08-29T06:15:55Z",
+  "last_run_duration_seconds": 1,
+  "last_cemaden_check_at": "2026-08-29T16:25:48Z",
   "youtube_quota": {
     "used_today": 1500,
     "reset_at": "2026-08-30T07:00:00Z"
@@ -25,7 +25,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-08-27T18:28:56Z",
-      "last_seen_open_at": "2026-08-29T06:15:55Z",
+      "last_seen_open_at": "2026-08-29T16:25:48Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -52,7 +52,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-08-27T18:29:20Z",
-      "last_seen_open_at": "2026-08-29T06:15:55Z",
+      "last_seen_open_at": "2026-08-29T16:25:48Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -83,7 +83,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-08-27T18:31:15Z",
-      "last_seen_open_at": "2026-08-29T06:15:55Z",
+      "last_seen_open_at": "2026-08-29T16:25:48Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [
@@ -114,7 +114,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-08-27T18:31:56Z",
-      "last_seen_open_at": "2026-08-29T06:15:55Z",
+      "last_seen_open_at": "2026-08-29T16:25:48Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -141,7 +141,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-08-27T18:33:14Z",
-      "last_seen_open_at": "2026-08-29T06:15:55Z",
+      "last_seen_open_at": "2026-08-29T16:25:48Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -168,7 +168,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-08-27T18:36:17Z",
-      "last_seen_open_at": "2026-08-29T06:15:55Z",
+      "last_seen_open_at": "2026-08-29T16:25:48Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -179,69 +179,9 @@
       "last_new_comment_at": null,
       "last_collection_at": "2026-08-29T06:15:55Z",
       "next_collection_at": "2026-08-30T06:15:55Z"
-    },
-    "cemaden_rs_2503": {
-      "codibge": "4310108",
-      "municipio": "Igrejinha",
-      "uf": "RS",
-      "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-08-28T10:19:24Z"
-        }
-      ],
-      "evento": "Risco Hidrológico",
-      "opened_at": "2026-08-28T10:19:24Z",
-      "last_seen_open_at": "2026-08-29T06:15:55Z",
-      "closed_at": null,
-      "transitions": [],
-      "videos_collected": [],
-      "n_videos_aderentes": 0,
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "last_new_data_at": null,
-      "last_new_comment_at": null,
-      "last_collection_at": "2026-08-28T21:53:58Z",
-      "next_collection_at": "2026-08-29T21:53:58Z"
     }
   },
   "extended_window_alerts": {
-    "cemaden_sp_2464": {
-      "codibge": "3550308",
-      "municipio": "São Paulo",
-      "uf": "SP",
-      "nivel_atual": "Moderado",
-      "priority_tier": "acompanhamento",
-      "flag": "acompanhamento",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-08-15T08:20:52Z"
-        },
-        {
-          "flag": "acompanhamento",
-          "at": "2026-08-15T14:36:33Z"
-        }
-      ],
-      "opened_at": "2026-08-15T08:20:52Z",
-      "last_seen_open_at": "2026-08-15T14:36:33Z",
-      "closed_at": "2026-08-16T18:33:51Z",
-      "transitions": [],
-      "videos_collected": [
-        "p7og9RLiSL0",
-        "0_ceg6QChIk"
-      ],
-      "n_videos_aderentes": 2,
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "last_new_data_at": "2026-08-15T14:36:33Z",
-      "last_new_comment_at": null,
-      "last_collection_at": "2026-08-29T06:15:55Z",
-      "next_collection_at": "2026-08-29T18:15:55Z"
-    },
     "cemaden_rs_2475": {
       "codibge": "4314407",
       "municipio": "Pelotas",
@@ -353,5 +293,41 @@
       "next_collection_at": "2026-08-29T18:15:55Z"
     }
   },
-  "archived_alerts": {}
+  "archived_alerts": {
+    "cemaden_sp_2464": {
+      "codibge": "3550308",
+      "municipio": "São Paulo",
+      "uf": "SP",
+      "nivel_atual": "Moderado",
+      "priority_tier": "acompanhamento",
+      "flag": "acompanhamento",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-08-15T08:20:52Z"
+        },
+        {
+          "flag": "acompanhamento",
+          "at": "2026-08-15T14:36:33Z"
+        }
+      ],
+      "opened_at": "2026-08-15T08:20:52Z",
+      "last_seen_open_at": "2026-08-15T14:36:33Z",
+      "closed_at": "2026-08-16T18:33:51Z",
+      "transitions": [],
+      "videos_collected": [
+        "p7og9RLiSL0",
+        "0_ceg6QChIk"
+      ],
+      "n_videos_aderentes": 2,
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "last_new_data_at": "2026-08-15T14:36:33Z",
+      "last_new_comment_at": null,
+      "last_collection_at": "2026-08-29T06:15:55Z",
+      "next_collection_at": "2026-08-29T18:15:55Z",
+      "archived_at": "2026-08-29T16:25:48Z",
+      "archive_reason": "acompanhamento_esgotado_14d"
+    }
+  }
 }
