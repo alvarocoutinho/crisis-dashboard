@@ -1,12 +1,12 @@
 {
   "schema_version": "0.2",
   "pipeline_version": "0.2.0",
-  "last_run_at": "2026-08-30T16:19:13Z",
+  "last_run_at": "2026-08-30T20:47:12Z",
   "last_run_status": "success",
-  "last_run_duration_seconds": 1,
-  "last_cemaden_check_at": "2026-08-30T16:19:13Z",
+  "last_run_duration_seconds": 44,
+  "last_cemaden_check_at": "2026-08-30T20:47:12Z",
   "youtube_quota": {
-    "used_today": 2500,
+    "used_today": 2700,
     "reset_at": "2026-08-31T07:00:00Z"
   },
   "active_alerts": {
@@ -25,7 +25,7 @@
       ],
       "evento": "Movimentos de Massa",
       "opened_at": "2026-08-29T23:05:46Z",
-      "last_seen_open_at": "2026-08-30T16:19:13Z",
+      "last_seen_open_at": "2026-08-30T20:47:12Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -52,7 +52,7 @@
       ],
       "evento": "Movimentos de Massa",
       "opened_at": "2026-08-29T23:16:18Z",
-      "last_seen_open_at": "2026-08-30T16:19:13Z",
+      "last_seen_open_at": "2026-08-30T20:47:12Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -79,7 +79,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-08-30T00:11:25Z",
-      "last_seen_open_at": "2026-08-30T16:19:13Z",
+      "last_seen_open_at": "2026-08-30T20:47:12Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -90,6 +90,41 @@
       "last_new_comment_at": null,
       "last_collection_at": "2026-08-30T04:25:35Z",
       "next_collection_at": "2026-08-31T04:25:35Z"
+    },
+    "cemaden_sp_2507": {
+      "codibge": "3550308",
+      "municipio": "São Paulo",
+      "uf": "SP",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "acompanhamento",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-08-30T15:11:15Z"
+        },
+        {
+          "flag": "acompanhamento",
+          "at": "2026-08-30T20:47:12Z"
+        }
+      ],
+      "evento": "Risco Hidrológico",
+      "opened_at": "2026-08-30T15:11:15Z",
+      "last_seen_open_at": "2026-08-30T20:47:12Z",
+      "closed_at": null,
+      "transitions": [],
+      "videos_collected": [
+        "RpkbaFLUpjI"
+      ],
+      "n_videos_aderentes": 1,
+      "n_comments_valid": 1,
+      "videos_with_valid_comments": [
+        "RpkbaFLUpjI"
+      ],
+      "last_new_data_at": "2026-08-30T20:47:12Z",
+      "last_new_comment_at": "2026-08-30T20:47:12Z",
+      "last_collection_at": "2026-08-30T20:47:12Z",
+      "next_collection_at": "2026-08-31T08:47:12Z"
     }
   },
   "extended_window_alerts": {
@@ -235,8 +270,8 @@
       "videos_with_valid_comments": [],
       "last_new_data_at": "2026-08-29T06:15:55Z",
       "last_new_comment_at": null,
-      "last_collection_at": "2026-08-29T20:39:17Z",
-      "next_collection_at": "2026-08-30T16:25:35Z"
+      "last_collection_at": "2026-08-30T20:47:12Z",
+      "next_collection_at": "2026-08-31T08:47:12Z"
     }
   },
   "archived_alerts": {
