@@ -1,13 +1,13 @@
 {
   "schema_version": "0.2",
   "pipeline_version": "0.2.0",
-  "last_run_at": "2026-08-30T20:47:12Z",
+  "last_run_at": "2026-08-31T04:29:24Z",
   "last_run_status": "success",
-  "last_run_duration_seconds": 44,
-  "last_cemaden_check_at": "2026-08-30T20:47:12Z",
+  "last_run_duration_seconds": 14,
+  "last_cemaden_check_at": "2026-08-31T04:29:24Z",
   "youtube_quota": {
-    "used_today": 2700,
-    "reset_at": "2026-08-31T07:00:00Z"
+    "used_today": 3700,
+    "reset_at": "2026-09-01T07:00:00Z"
   },
   "active_alerts": {
     "cemaden_sc_2504": {
@@ -25,7 +25,7 @@
       ],
       "evento": "Movimentos de Massa",
       "opened_at": "2026-08-29T23:05:46Z",
-      "last_seen_open_at": "2026-08-30T20:47:12Z",
+      "last_seen_open_at": "2026-08-31T04:29:24Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -34,8 +34,8 @@
       "videos_with_valid_comments": [],
       "last_new_data_at": null,
       "last_new_comment_at": null,
-      "last_collection_at": "2026-08-30T04:25:35Z",
-      "next_collection_at": "2026-08-31T04:25:35Z"
+      "last_collection_at": "2026-08-31T04:29:24Z",
+      "next_collection_at": "2026-09-01T04:29:24Z"
     },
     "cemaden_rs_2505": {
       "codibge": "4305108",
@@ -52,7 +52,7 @@
       ],
       "evento": "Movimentos de Massa",
       "opened_at": "2026-08-29T23:16:18Z",
-      "last_seen_open_at": "2026-08-30T20:47:12Z",
+      "last_seen_open_at": "2026-08-31T04:29:24Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -61,8 +61,8 @@
       "videos_with_valid_comments": [],
       "last_new_data_at": null,
       "last_new_comment_at": null,
-      "last_collection_at": "2026-08-30T04:25:35Z",
-      "next_collection_at": "2026-08-31T04:25:35Z"
+      "last_collection_at": "2026-08-31T04:29:24Z",
+      "next_collection_at": "2026-09-01T04:29:24Z"
     },
     "cemaden_rs_2506": {
       "codibge": "4319505",
@@ -79,7 +79,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-08-30T00:11:25Z",
-      "last_seen_open_at": "2026-08-30T20:47:12Z",
+      "last_seen_open_at": "2026-08-31T04:29:24Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -88,43 +88,116 @@
       "videos_with_valid_comments": [],
       "last_new_data_at": null,
       "last_new_comment_at": null,
-      "last_collection_at": "2026-08-30T04:25:35Z",
-      "next_collection_at": "2026-08-31T04:25:35Z"
+      "last_collection_at": "2026-08-31T04:29:24Z",
+      "next_collection_at": "2026-09-01T04:29:24Z"
     },
-    "cemaden_sp_2507": {
-      "codibge": "3550308",
-      "municipio": "São Paulo",
-      "uf": "SP",
+    "cemaden_rj_2508": {
+      "codibge": "3303906",
+      "municipio": "Petrópolis",
+      "uf": "RJ",
       "nivel_atual": "Moderado",
       "priority_tier": "moderado",
-      "flag": "acompanhamento",
+      "flag": "alerta",
       "flag_history": [
         {
           "flag": "alerta",
-          "at": "2026-08-30T15:11:15Z"
-        },
-        {
-          "flag": "acompanhamento",
-          "at": "2026-08-30T20:47:12Z"
+          "at": "2026-08-31T00:27:11Z"
         }
       ],
       "evento": "Risco Hidrológico",
-      "opened_at": "2026-08-30T15:11:15Z",
-      "last_seen_open_at": "2026-08-30T20:47:12Z",
+      "opened_at": "2026-08-31T00:27:11Z",
+      "last_seen_open_at": "2026-08-31T04:29:24Z",
       "closed_at": null,
       "transitions": [],
-      "videos_collected": [
-        "RpkbaFLUpjI"
+      "videos_collected": [],
+      "n_videos_aderentes": 0,
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "last_new_data_at": null,
+      "last_new_comment_at": null,
+      "last_collection_at": "2026-08-31T04:29:24Z",
+      "next_collection_at": "2026-09-01T04:29:24Z"
+    },
+    "cemaden_rj_2509": {
+      "codibge": "3303906",
+      "municipio": "Petrópolis",
+      "uf": "RJ",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-08-31T00:28:01Z"
+        }
       ],
-      "n_videos_aderentes": 1,
-      "n_comments_valid": 1,
-      "videos_with_valid_comments": [
-        "RpkbaFLUpjI"
+      "evento": "Movimentos de Massa",
+      "opened_at": "2026-08-31T00:28:01Z",
+      "last_seen_open_at": "2026-08-31T04:29:24Z",
+      "closed_at": null,
+      "transitions": [],
+      "videos_collected": [],
+      "n_videos_aderentes": 0,
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "last_new_data_at": null,
+      "last_new_comment_at": null,
+      "last_collection_at": "2026-08-31T04:29:24Z",
+      "next_collection_at": "2026-09-01T04:29:24Z"
+    },
+    "cemaden_rj_2510": {
+      "codibge": "3305802",
+      "municipio": "Teresópolis",
+      "uf": "RJ",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-08-31T00:40:23Z"
+        }
       ],
-      "last_new_data_at": "2026-08-30T20:47:12Z",
-      "last_new_comment_at": "2026-08-30T20:47:12Z",
-      "last_collection_at": "2026-08-30T20:47:12Z",
-      "next_collection_at": "2026-08-31T08:47:12Z"
+      "evento": "Movimentos de Massa",
+      "opened_at": "2026-08-31T00:40:23Z",
+      "last_seen_open_at": "2026-08-31T04:29:24Z",
+      "closed_at": null,
+      "transitions": [],
+      "videos_collected": [],
+      "n_videos_aderentes": 0,
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "last_new_data_at": null,
+      "last_new_comment_at": null,
+      "last_collection_at": "2026-08-31T04:29:24Z",
+      "next_collection_at": "2026-09-01T04:29:24Z"
+    },
+    "cemaden_rj_2511": {
+      "codibge": "3305802",
+      "municipio": "Teresópolis",
+      "uf": "RJ",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-08-31T00:43:02Z"
+        }
+      ],
+      "evento": "Risco Hidrológico",
+      "opened_at": "2026-08-31T00:43:02Z",
+      "last_seen_open_at": "2026-08-31T04:29:24Z",
+      "closed_at": null,
+      "transitions": [],
+      "videos_collected": [],
+      "n_videos_aderentes": 0,
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "last_new_data_at": null,
+      "last_new_comment_at": null,
+      "last_collection_at": "2026-08-31T04:29:24Z",
+      "next_collection_at": "2026-09-01T04:29:24Z"
     }
   },
   "extended_window_alerts": {
@@ -157,8 +230,8 @@
       "videos_with_valid_comments": [],
       "last_new_data_at": "2026-08-19T01:23:09Z",
       "last_new_comment_at": "2026-08-22T06:44:36Z",
-      "last_collection_at": "2026-08-30T11:32:56Z",
-      "next_collection_at": "2026-08-30T23:32:56Z"
+      "last_collection_at": "2026-08-31T04:29:24Z",
+      "next_collection_at": "2026-08-31T16:29:24Z"
     },
     "cemaden_rs_2480": {
       "codibge": "4311007",
@@ -199,8 +272,8 @@
       ],
       "last_new_data_at": "2026-08-22T01:23:33Z",
       "last_new_comment_at": "2026-08-22T01:23:33Z",
-      "last_collection_at": "2026-08-30T11:32:56Z",
-      "next_collection_at": "2026-08-30T23:32:56Z"
+      "last_collection_at": "2026-08-31T04:29:24Z",
+      "next_collection_at": "2026-08-31T16:29:24Z"
     },
     "cemaden_rs_2494": {
       "codibge": "4306601",
@@ -235,8 +308,8 @@
       ],
       "last_new_data_at": "2026-08-22T06:44:36Z",
       "last_new_comment_at": "2026-08-22T06:44:36Z",
-      "last_collection_at": "2026-08-30T11:32:56Z",
-      "next_collection_at": "2026-08-30T23:32:56Z"
+      "last_collection_at": "2026-08-31T04:29:24Z",
+      "next_collection_at": "2026-08-31T16:29:24Z"
     },
     "cemaden_rs_2499": {
       "codibge": "4314407",
@@ -272,6 +345,41 @@
       "last_new_comment_at": null,
       "last_collection_at": "2026-08-30T20:47:12Z",
       "next_collection_at": "2026-08-31T08:47:12Z"
+    },
+    "cemaden_sp_2507": {
+      "codibge": "3550308",
+      "municipio": "São Paulo",
+      "uf": "SP",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "acompanhamento",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-08-30T15:11:15Z"
+        },
+        {
+          "flag": "acompanhamento",
+          "at": "2026-08-30T20:47:12Z"
+        }
+      ],
+      "evento": "Risco Hidrológico",
+      "opened_at": "2026-08-30T15:11:15Z",
+      "last_seen_open_at": "2026-08-30T20:47:12Z",
+      "closed_at": "2026-08-31T04:29:24Z",
+      "transitions": [],
+      "videos_collected": [
+        "RpkbaFLUpjI"
+      ],
+      "n_videos_aderentes": 1,
+      "n_comments_valid": 1,
+      "videos_with_valid_comments": [
+        "RpkbaFLUpjI"
+      ],
+      "last_new_data_at": "2026-08-30T20:47:12Z",
+      "last_new_comment_at": "2026-08-30T20:47:12Z",
+      "last_collection_at": "2026-08-30T20:47:12Z",
+      "next_collection_at": "2026-08-31T16:29:24Z"
     }
   },
   "archived_alerts": {
