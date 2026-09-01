@@ -61,9 +61,47 @@ CADENCE_HOURS = {
 }
 
 
-def _nivel_to_tier(nivel: str) -> str:
+def _is_missing_scalar(value) -> bool:
+    """True para None, NaN/NaT e strings vazias vindas dos CSVs."""
+    if value is None:
+        return True
+    if isinstance(value, str):
+        return not value.strip()
+    try:
+        missing = pd.isna(value)
+        return bool(missing) if not hasattr(missing, "__len__") else False
+    except (TypeError, ValueError):
+        return False
+
+
+def _first_value(*values, default=""):
+    """Primeiro valor escalar não ausente, preservando o tipo original."""
+    for value in values:
+        if not _is_missing_scalar(value):
+            return value
+    return default
+
+
+def _text(value, default: str = "") -> str:
+    """Normaliza um escalar possivelmente NaN para texto seguro."""
+    value = _first_value(value, default=default)
+    return str(value).strip()
+
+
+def _float_or_none(value) -> float | None:
+    """Converte coordenada numérica; ausentes/NaN viram None."""
+    if _is_missing_scalar(value):
+        return None
+    try:
+        number = float(value)
+        return None if pd.isna(number) else number
+    except (TypeError, ValueError):
+        return None
+
+
+def _nivel_to_tier(nivel: str | None) -> str:
     """Mapeia nivel CEMADEN → priority_tier operacional."""
-    n = (nivel or "").lower().strip()
+    n = _text(nivel).lower()
     return {"muito alto": "muito_alto", "alto": "alto", "moderado": "moderado"}.get(
         n, "moderado"
     )
@@ -75,12 +113,12 @@ def _alert_id_from_cod(cod_alerta: str, uf: str, opened_at: str) -> str:
     Formato: cemaden_<uf>_<cod_alerta>. Estável ao longo do tempo desde
     que cod_alerta seja estável (é — vem do CEMADEN direto).
     """
-    return f"cemaden_{uf.lower()}_{cod_alerta}"
+    return f"cemaden_{_text(uf).lower()}_{cod_alerta}"
 
 
 def _isoformat_z(dt_str: str | None) -> str | None:
     """Converte string do faa_poc para ISO 8601 UTC com sufixo Z."""
-    if not dt_str:
+    if _is_missing_scalar(dt_str):
         return None
     try:
         dt = pd.to_datetime(dt_str, utc=True)
@@ -247,6 +285,8 @@ def _build_alert_entry(
     comments_df: pd.DataFrame,
     visibility_df: pd.DataFrame,
     now_iso: str,
+    state_meta: dict | None = None,
+    previous_entry: dict | None = None,
 ) -> OrderedDict:
     """Monta um alerta completo no schema live.json."""
     # Metadata do alerta (última linha para pegar snapshot mais recente)
@@ -254,6 +294,44 @@ def _build_alert_entry(
     if alert_rows.empty:
         raise ValueError(f"Alerta {cod_alerta} não encontrado em alerts_log.csv")
     alert = alert_rows.iloc[-1].to_dict()
+    state_meta = state_meta or {}
+    previous_entry = previous_entry or {}
+
+    # O state usa alguns nomes diferentes dos CSVs (por exemplo,
+    # ``nivel_atual``). Dados atuais têm prioridade; state e live anterior
+    # completam campos ausentes/NaN sem substituir valores válidos do ciclo.
+    municipio = _text(_first_value(
+        alert.get("municipio"), state_meta.get("municipio"),
+        previous_entry.get("municipio"),
+    ))
+    uf = _text(_first_value(
+        alert.get("uf"), state_meta.get("uf"), previous_entry.get("uf"),
+    ))
+    nivel = _text(_first_value(
+        alert.get("nivel"), state_meta.get("nivel_atual"),
+        state_meta.get("nivel"), previous_entry.get("nivel"),
+        default="Moderado",
+    ), default="Moderado")
+    evento = _text(_first_value(
+        alert.get("evento"), state_meta.get("evento"), state_meta.get("tipo"),
+        previous_entry.get("tipo"),
+    ))
+    codibge = _text(_first_value(
+        alert.get("codibge"), state_meta.get("codibge"),
+        previous_entry.get("codibge"),
+    ))
+    opened_raw = _first_value(
+        alert.get("datahoracriacao"), state_meta.get("opened_at"),
+        previous_entry.get("alert_opened_at"), default=None,
+    )
+    latitude = _first_value(
+        alert.get("latitude"), state_meta.get("latitude"), state_meta.get("lat"),
+        previous_entry.get("lat"), default=None,
+    )
+    longitude = _first_value(
+        alert.get("longitude"), state_meta.get("longitude"), state_meta.get("lon"),
+        previous_entry.get("lon"), default=None,
+    )
 
     # Comentários deste alerta (via join com video_links seria mais correto,
     # mas para piloto assumimos que todos os comentários coletados na sessão
@@ -305,9 +383,8 @@ def _build_alert_entry(
             silence_type = None
             status = "ok"
 
-    nivel = alert.get("nivel", "Moderado")
     tier = _nivel_to_tier(nivel)
-    opened_at = _isoformat_z(alert.get("datahoracriacao"))
+    opened_at = _isoformat_z(opened_raw)
 
     # data_alerta em dd/mm/yyyy (schema do dashboard)
     if opened_at:
@@ -317,13 +394,13 @@ def _build_alert_entry(
         data_alerta_br = ""
 
     # tipo: remover "- Moderado/Alto/Muito Alto" se vier concatenado do CEMADEN
-    tipo_raw = alert.get("evento", "")
+    tipo_raw = evento
     tipo_clean = tipo_raw.split(" - ")[0].strip() if " - " in tipo_raw else tipo_raw
 
     # municipio em Title Case brasileiro (CEMADEN devolve CAPS)
     # Preposições em minúsculo, exceto se forem a primeira palavra
     _LOWERCASE = {"de", "da", "do", "das", "dos", "e"}
-    raw_muni = str(alert.get("municipio", "")).lower()
+    raw_muni = municipio.lower()
     parts = raw_muni.split()
     municipio_clean = " ".join(
         p.capitalize() if (i == 0 or p not in _LOWERCASE) else p
@@ -338,15 +415,15 @@ def _build_alert_entry(
 
     entry = OrderedDict(
         [
-            ("id", _alert_id_from_cod(cod_alerta, alert.get("uf", ""), opened_at or "")),
+            ("id", _alert_id_from_cod(cod_alerta, uf, opened_at or "")),
             ("municipio", municipio_clean),
-            ("uf", alert.get("uf", "")),
+            ("uf", uf),
             ("tipo", tipo_clean),
             ("nivel", nivel),
             ("data_alerta", data_alerta_br),
-            ("codibge", str(alert.get("codibge", ""))),
-            ("lat", float(alert.get("latitude", 0)) if alert.get("latitude") else None),
-            ("lon", float(alert.get("longitude", 0)) if alert.get("longitude") else None),
+            ("codibge", codibge),
+            ("lat", _float_or_none(latitude)),
+            ("lon", _float_or_none(longitude)),
             ("regime", "prospective_live"),
             ("n_comments", len(my_comments)),
             ("n_videos", len(my_videos)),
@@ -458,10 +535,11 @@ def _normalize_priority_tier(nivel_atual: str | None, existing_tier: str | None)
     (muito_alto/alto/moderado). O valor 'acompanhamento' agora é FLAG, não tier.
     Se encontrar 'acompanhamento' em priority_tier, recalcula do nivel_atual.
     """
-    if existing_tier and existing_tier != "acompanhamento":
-        return existing_tier
+    existing = _text(existing_tier)
+    if existing and existing != "acompanhamento":
+        return existing
     m = {"Muito Alto": "muito_alto", "Alto": "alto", "Moderado": "moderado"}
-    return m.get((nivel_atual or "").strip(), "moderado")
+    return m.get(_text(nivel_atual), "moderado")
 
 
 def _refresh_alert_entry_from_state(
@@ -647,7 +725,8 @@ def build_live_json(
         state_alerts[aid] = meta
 
     alerts = []
-    stats = {"from_csv": 0, "from_history": 0, "skipped_no_data": 0}
+    stats = {"from_csv": 0, "from_history": 0, "from_state": 0,
+             "skipped_no_data": 0}
 
     for alert_id, meta in state_alerts.items():
         # cod_alerta é a parte após o último "_"
@@ -657,7 +736,9 @@ def build_live_json(
             # Path A: alerta coletado neste ciclo — monta entry completo dos CSVs
             try:
                 entry = _build_alert_entry(
-                    cod, alerts_df, videos_df, predictions_df, visibility_df, now_iso
+                    cod, alerts_df, videos_df, predictions_df, visibility_df, now_iso,
+                    state_meta=meta,
+                    previous_entry=prev_by_id.get(alert_id),
                 )
                 # Sobrescreve id/status com valores do state (canônico) —
                 # _build_alert_entry usa dados do CSV que podem estar defasados
@@ -700,13 +781,47 @@ def build_live_json(
             ))
             stats["from_history"] += 1
         else:
-            # Path C: alerta no state mas sem CSV e sem histórico — não podemos
-            # construir entry rico (falta lat/lon, tipo, etc). Skip silencioso;
-            # aparecerá no próximo ciclo com coleta.
-            stats["skipped_no_data"] += 1
+            # Path C: alerta no state sem CSV deste ciclo e sem histórico.
+            # Ainda assim cria um entry mínimo para que alertas novos não sumam
+            # do dashboard até a próxima cadência de coleta.
+            try:
+                synthetic_alerts = pd.DataFrame([{
+                    "cod_alerta": cod,
+                    "codibge": meta.get("codibge"),
+                    "municipio": meta.get("municipio"),
+                    "uf": meta.get("uf"),
+                    "nivel": meta.get("nivel_atual") or meta.get("nivel"),
+                    "evento": meta.get("evento") or meta.get("tipo"),
+                    "datahoracriacao": meta.get("opened_at"),
+                    "latitude": meta.get("latitude") or meta.get("lat"),
+                    "longitude": meta.get("longitude") or meta.get("lon"),
+                }])
+                minimal = _build_alert_entry(
+                    cod,
+                    synthetic_alerts,
+                    pd.DataFrame(columns=["cod_alerta", "video_id"]),
+                    pd.DataFrame(),
+                    pd.DataFrame(columns=["cod_alerta", "n_relevant_videos"]),
+                    now_iso,
+                    state_meta=meta,
+                )
+                minimal["id"] = alert_id
+                # Sem CSV nem histórico não há base para afirmar silêncio.
+                minimal["collection_health"] = OrderedDict([
+                    ("status", "unknown"), ("silence_type", None),
+                    ("last_error", None), ("consecutive_failures", 0),
+                ])
+                alerts.append(_refresh_alert_entry_from_state(
+                    minimal, meta, alert_id, now_iso
+                ))
+                stats["from_state"] += 1
+            except Exception as e:
+                print(f"[build_live] falha ao montar alerta {alert_id} do state: {e}")
+                stats["skipped_no_data"] += 1
 
     print(f"[build_live] alertas montados: {stats['from_csv']} do CSV, "
-          f"{stats['from_history']} do histórico, {stats['skipped_no_data']} pulados "
+          f"{stats['from_history']} do histórico, {stats['from_state']} do state, "
+          f"{stats['skipped_no_data']} pulados "
           f"(sem CSV nem histórico)")
 
     # ============================================================

@@ -37,7 +37,7 @@ STATE_PATH = REPO_ROOT / "src" / "data" / "state.json"
 LIVE_PATH = REPO_ROOT / "src" / "data" / "live.json"
 AGGREGATE_LOG_PATH = REPO_ROOT / "src" / "data" / "alertas_agregados.csv"
 FAA_OUTPUT_DIR = Path(os.environ.get("FAA_OUTPUT_DIR", "/tmp/faa_pipeline_run"))
-PIPELINE_VERSION = "0.2.1"
+PIPELINE_VERSION = "0.2.2"
 
 
 def log(msg: str, level: str = "INFO") -> None:
@@ -120,8 +120,16 @@ def run_faa_pipeline_for_alerts(alert_ids: list[str], state: dict) -> tuple[Path
         alert["cod_alerta"] = str(meta.get("cod_alerta") or aid.rsplit("_", 1)[-1])
         alert["municipio"] = meta.get("municipio") or meta.get("alert_municipio", "")
         alert["uf"] = meta.get("uf") or meta.get("alert_uf", "")
-        alert["evento"] = meta.get("evento") or meta.get("alert_evento", "")
-        alert["nivel"] = meta.get("nivel") or meta.get("alert_nivel", "")
+        alert["evento"] = (
+            meta.get("evento") or
+            meta.get("tipo") or
+            meta.get("alert_evento", "")
+        )
+        alert["nivel"] = (
+            meta.get("nivel") or
+            meta.get("nivel_atual") or
+            meta.get("alert_nivel", "")
+        )
         alert["codibge"] = meta.get("codibge") or meta.get("alert_codibge", "")
         alert["datahoracriacao"] = (
             meta.get("datahoracriacao") or
