@@ -37,7 +37,7 @@ STATE_PATH = REPO_ROOT / "src" / "data" / "state.json"
 LIVE_PATH = REPO_ROOT / "src" / "data" / "live.json"
 AGGREGATE_LOG_PATH = REPO_ROOT / "src" / "data" / "alertas_agregados.csv"
 FAA_OUTPUT_DIR = Path(os.environ.get("FAA_OUTPUT_DIR", "/tmp/faa_pipeline_run"))
-PIPELINE_VERSION = "0.2.0"
+PIPELINE_VERSION = "0.2.1"
 
 
 def log(msg: str, level: str = "INFO") -> None:
@@ -96,38 +96,66 @@ def fetch_cemaden_active_alerts() -> list[dict]:
     return alerts
 
 
-def run_faa_pipeline_for_alerts(alert_ids: list[str], state: dict) -> Path:
-    """Executa faa_poc.run() filtrado apenas para os alertas devidos.
+def run_faa_pipeline_for_alerts(alert_ids: list[str], state: dict) -> tuple[Path, list[str]]:
+    """Executa ``faa_poc.run()`` exatamente para os alertas devidos.
 
-    O faa_poc não tem filtro por alert_id específico — filtramos por UF+município
-    dos alertas do state para minimizar o escopo. Melhor que rodar tudo de novo.
+    O state já foi reconciliado com o CEMADEN neste ciclo. Reutilizar esses
+    metadados evita uma segunda seleção aproximada por UF, que podia processar
+    alertas não devidos e deixar alertas selecionados de fora.
     """
     from faa_poc import run
 
-    # Deriva UFs e municípios dos alertas devidos
-    ufs = set()
+    selected_alerts: list[dict] = []
+    missing_metadata: list[str] = []
     for aid in alert_ids:
-        meta = state.get("active_alerts", {}).get(aid) or state.get("extended_window_alerts", {}).get(aid)
-        if meta:
-            ufs.add(meta.get("uf"))
+        meta = (state.get("active_alerts", {}).get(aid) or
+                state.get("extended_window_alerts", {}).get(aid))
+        if not meta:
+            missing_metadata.append(aid)
+            continue
 
-    log(f"executando faa_poc para UFs: {sorted(ufs)}")
+        # Mantém todos os campos originais e normaliza os nomes esperados pelo
+        # faa_poc. Os fallbacks cobrem estados criados por versões anteriores.
+        alert = dict(meta)
+        alert["cod_alerta"] = str(meta.get("cod_alerta") or aid.rsplit("_", 1)[-1])
+        alert["municipio"] = meta.get("municipio") or meta.get("alert_municipio", "")
+        alert["uf"] = meta.get("uf") or meta.get("alert_uf", "")
+        alert["evento"] = meta.get("evento") or meta.get("alert_evento", "")
+        alert["nivel"] = meta.get("nivel") or meta.get("alert_nivel", "")
+        alert["codibge"] = meta.get("codibge") or meta.get("alert_codibge", "")
+        alert["datahoracriacao"] = (
+            meta.get("datahoracriacao") or
+            meta.get("alert_opened_at") or
+            meta.get("opened_at") or
+            meta.get("first_seen_at", "")
+        )
+        selected_alerts.append(alert)
+
+    if missing_metadata:
+        raise RuntimeError(
+            "metadados ausentes no state para alertas devidos: "
+            + ", ".join(missing_metadata)
+        )
+
+    ufs = sorted({a.get("uf") for a in selected_alerts if a.get("uf")})
+    log(f"executando faa_poc para {len(selected_alerts)} alertas exatos; UFs: {ufs}")
 
     FAA_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    run({
+    result = run({
         "MODE": "FULL_PIPELINE",
-        "FILTER_UF": sorted(ufs),
-        "FILTER_LEVELS": ["moderado", "alto", "muito alto"],
-        "FILTER_EVENTS": ["Risco Hidrológico", "Movimentos de Massa"],
+        "ALERTS_OVERRIDE": selected_alerts,
         "OUTPUT_DIR": str(FAA_OUTPUT_DIR),
         "INTERACTIVE_CREDENTIALS": False,
-        "MAX_ALERTS": len(alert_ids) + 2,   # margem de segurança
+        "MAX_ALERTS": len(selected_alerts),
         "MAX_VIDEOS_PER_ALERT": 10,
         "MAX_COMMENT_PAGES": 10,
         "YT_QUOTA_CEILING": 5000,
     })
+    faa_errors = list(result.get("errors", [])) if isinstance(result, dict) else []
+    if faa_errors:
+        log(f"faa_poc concluiu com {len(faa_errors)} ocorrência(s) parcial(is)", "WARN")
     log(f"faa_poc concluído — outputs em {FAA_OUTPUT_DIR}", "OK")
-    return FAA_OUTPUT_DIR
+    return FAA_OUTPUT_DIR, faa_errors
 
 
 def main() -> int:
@@ -207,7 +235,7 @@ def main() -> int:
     if to_collect:
         collect_ids = [d.alert_id for d in to_collect]
         try:
-            faa_output = run_faa_pipeline_for_alerts(collect_ids, state)
+            faa_output, faa_errors = run_faa_pipeline_for_alerts(collect_ids, state)
         except Exception as e:
             log(f"falha catastrófica no faa_poc: {e}", "ERROR")
             traceback.print_exc()
@@ -218,6 +246,9 @@ def main() -> int:
             if not args.dry_run:
                 state_manager.save_state(state, STATE_PATH)
             return 1
+
+        if faa_errors:
+            partial_failures.append("faa_poc")
 
         # 7. BERTimbau
         try:

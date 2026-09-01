@@ -137,7 +137,9 @@ def _refresh(key:str,active:list[dict],config:dict,comment_index:set[str],commen
     return new,skipped
 
 def run(overrides:dict[str,Any]|None=None)->dict:
-    config=build_config(overrides); mode=config["MODE"].upper()
+    runtime_overrides=dict(overrides or {})
+    alerts_override=runtime_overrides.pop("ALERTS_OVERRIDE",None)
+    config=build_config(runtime_overrides); mode=config["MODE"].upper()
     if mode not in VALID: raise ValueError(f"Invalid MODE: {mode}")
     started=storage.utcnow(); errors=[]; totals={"fetched":0,"processed":0,"videos":0,"comments":0,"skipped":0,"visibility":0,"substantive_absence":0,"ari_mismatches":0}
     storage.out_dir(config); ped_required=needs_ped(mode); yt_required=needs_yt(mode); ped_ok=yt_ok=False; client=None; key=None
@@ -154,8 +156,14 @@ def run(overrides:dict[str,Any]|None=None)->dict:
         if key: totals["comments"],totals["skipped"]=_refresh(key,active_videos,config,comment_index,comment_link_index)
         _advance(active_alerts,active_videos,config); storage.save_active_alerts(config,active_alerts); storage.save_active_videos(config,active_videos)
         return _finish(config,started,mode,totals,quota,ped_required,ped_ok,yt_required,yt_ok,errors)
-    try: alerts=cemaden.fetch_alerts(config)
-    except Exception as exc: alerts=[]; errors.append(f"cemaden_fetch:{exc}")
+    if alerts_override is not None:
+        # O orquestrador principal já consultou/reconciliou o CEMADEN e envia
+        # somente os alertas devidos. Isso garante seleção por ID e também
+        # permite acompanhar alertas que já migraram para extended_window.
+        alerts=[dict(alert) for alert in alerts_override]
+    else:
+        try: alerts=cemaden.fetch_alerts(config)
+        except Exception as exc: alerts=[]; errors.append(f"cemaden_fetch:{exc}")
     totals["fetched"]=len(alerts); now_iso=storage.utcnow_iso(); storage.append_csv(config,"alerts_log.csv",[{**a,"collected_at":now_iso} for a in alerts],ALERT_FIELDS)
     for alert in alerts[:config["MAX_ALERTS"]] if config.get("MAX_ALERTS") else alerts:
         cod=str(alert["cod_alerta"])
@@ -168,15 +176,34 @@ def run(overrides:dict[str,Any]|None=None)->dict:
 
         if run_ped:
             if client:
-                rows,summary=ped.fetch_accumulations(alert,client)
+                client.last_error=""
+                ped_failure_detail=""
+                print(f"[faa_poc] PED alert={cod} codibge={alert.get('codibge','')}", flush=True)
+                try:
+                    rows,summary=ped.fetch_accumulations(alert,client)
+                except Exception as exc:
+                    # Uma falha de payload/parse em um município não deve
+                    # cancelar a coleta dos demais alertas.
+                    rows,summary=[],{}
+                    detail=f"{type(exc).__name__}:{exc}"
+                    errors.append(f"ped:{cod}:{detail}"[:500])
+                    ped_failure_detail=detail
                 if summary:
                     storage.append_csv(config,"rainfall_accumulations.csv",rows,ACUM_FIELDS)
                     storage.append_csv(config,"rainfall_accumulation_summary.csv",[summary],ACUM_SUMMARY_FIELDS)
                     ari_class=summary["antecedent_rain_class"]
                     state["ped_status"]="success"
+                    state["last_error"]=""
                     totals["ari_mismatches"]+=int(ari_class=="alto" and "alto" not in (alert.get("nivel") or "").lower())
                 else:
-                    state["ped_status"]="failed"; state["last_error"]="ped_no_accumulations"
+                    state["ped_status"]="failed"
+                    client_error=getattr(client,"last_error","") or ped_failure_detail
+                    if client_error:
+                        state["last_error"]=f"ped_error:{client_error}"[:500]
+                        if not ped_failure_detail:
+                            errors.append(f"ped:{cod}:{client_error}"[:500])
+                    else:
+                        state["last_error"]="ped_no_accumulations"
             else:
                 state["ped_status"]="unavailable"; state["last_error"]="ped_credentials_or_login_unavailable"
 

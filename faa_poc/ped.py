@@ -13,22 +13,92 @@ def credentials(config: dict) -> tuple[str,str]:
     return email, password
 
 class PedClient:
-    def __init__(self, config: dict): self.config=config; self.token=None; self.cooldown_until=0.0
+    RETRYABLE_STATUS_CODES = {429, 500, 502, 503, 504}
+
+    def __init__(self, config: dict):
+        self.config=config
+        self.token=None
+        self.cooldown_until=0.0
+        self.last_error=""
+
+    def _cooldown_seconds(self) -> float:
+        return float(self.config.get("PED_FAILURE_COOLDOWN_SECONDS",
+                                     self.config.get("PED_REFRESH_COOLDOWN_SECONDS", 60)))
+
+    def _get_with_retries(self, url: str, params: dict):
+        attempts=max(1, int(self.config.get("PED_MAX_ATTEMPTS", 3)))
+        connect_timeout=float(self.config.get("PED_CONNECT_TIMEOUT_SECONDS", 10))
+        read_timeout=float(self.config.get("PED_READ_TIMEOUT_SECONDS", 45))
+        backoff=float(self.config.get("PED_RETRY_BACKOFF_SECONDS", 2))
+        codibge=params.get("codibge", "desconhecido")
+
+        for attempt in range(1, attempts + 1):
+            try:
+                response=requests.get(
+                    url,
+                    params=params,
+                    headers={"token":self.token},
+                    timeout=(connect_timeout, read_timeout),
+                )
+                if response.status_code not in self.RETRYABLE_STATUS_CODES:
+                    self.last_error=""
+                    return response
+
+                self.last_error=f"http_{response.status_code}"
+                if attempt == attempts:
+                    self.cooldown_until=time.time()+self._cooldown_seconds()
+                    return response
+                print(
+                    f"[ped] codibge={codibge} respondeu HTTP {response.status_code}; "
+                    f"tentativa {attempt}/{attempts}, repetindo",
+                    flush=True,
+                )
+            except requests.RequestException as exc:
+                self.last_error=f"{type(exc).__name__}:{exc}"
+                if attempt == attempts:
+                    self.cooldown_until=time.time()+self._cooldown_seconds()
+                    print(
+                        f"[ped] codibge={codibge} indisponível após {attempts} "
+                        f"tentativas: {type(exc).__name__}",
+                        flush=True,
+                    )
+                    return None
+                print(
+                    f"[ped] codibge={codibge} falhou com {type(exc).__name__}; "
+                    f"tentativa {attempt}/{attempts}, repetindo",
+                    flush=True,
+                )
+
+            time.sleep(backoff * (2 ** (attempt - 1)))
+
+        return None
+
     def login(self) -> None:
         email,password = credentials(self.config)
         response = requests.post(SGAA_TOKEN_URL, json={"email":email,"password":password}, timeout=30)
         if response.status_code != 200: raise RuntimeError(f"PED login failed {response.status_code}")
-        self.token = response.json()["token"]; self.cooldown_until=0.0
+        self.token = response.json()["token"]; self.cooldown_until=0.0; self.last_error=""
     def get(self, url: str, params: dict):
-        if time.time() < self.cooldown_until: return None
-        response = requests.get(url, params=params, headers={"token":self.token}, timeout=30)
+        if time.time() < self.cooldown_until:
+            self.last_error="cooldown_active"
+            return None
+        response = self._get_with_retries(url, params)
+        if response is None:
+            return None
         if response.status_code != 401: return response
         try:
-            self.login(); response = requests.get(url, params=params, headers={"token":self.token}, timeout=30)
-            if response.status_code == 401: self.cooldown_until=time.time()+self.config["PED_REFRESH_COOLDOWN_SECONDS"]; return None
+            self.login(); response = self._get_with_retries(url, params)
+            if response is None:
+                return None
+            if response.status_code == 401:
+                self.last_error="unauthorized_after_refresh"
+                self.cooldown_until=time.time()+self._cooldown_seconds()
+                return None
             return response
-        except Exception:
-            self.cooldown_until=time.time()+self.config["PED_REFRESH_COOLDOWN_SECONDS"]; return None
+        except Exception as exc:
+            self.last_error=f"auth_refresh:{type(exc).__name__}:{exc}"
+            self.cooldown_until=time.time()+self._cooldown_seconds()
+            return None
 
 def summarize(rows: list[dict], alert: dict) -> dict:
     if not rows: return {}
