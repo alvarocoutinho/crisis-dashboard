@@ -1,351 +1,15 @@
 {
   "schema_version": "0.2",
   "pipeline_version": "0.2.2",
-  "last_run_at": "2026-09-02T10:20:49Z",
+  "last_run_at": "2026-09-02T15:45:58Z",
   "last_run_status": "success",
-  "last_run_duration_seconds": 56,
-  "last_cemaden_check_at": "2026-09-02T10:20:49Z",
+  "last_run_duration_seconds": 1,
+  "last_cemaden_check_at": "2026-09-02T15:45:58Z",
   "youtube_quota": {
     "used_today": 11200,
     "reset_at": "2026-09-03T07:00:00Z"
   },
   "active_alerts": {
-    "cemaden_sc_2514": {
-      "codibge": "4207502",
-      "municipio": "Indaial",
-      "uf": "SC",
-      "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-08-31T08:38:32Z"
-        }
-      ],
-      "evento": "Movimentos de Massa",
-      "opened_at": "2026-08-31T08:38:32Z",
-      "last_seen_open_at": "2026-09-02T10:20:49Z",
-      "closed_at": null,
-      "transitions": [],
-      "videos_collected": [],
-      "n_videos_aderentes": 0,
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "last_new_data_at": null,
-      "last_new_comment_at": null,
-      "last_collection_at": "2026-09-01T18:18:29Z",
-      "next_collection_at": "2026-09-02T18:18:29Z"
-    },
-    "cemaden_sc_2516": {
-      "codibge": "4202909",
-      "municipio": "Brusque",
-      "uf": "SC",
-      "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
-      "flag": "acompanhamento",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-08-31T08:54:56Z"
-        },
-        {
-          "flag": "acompanhamento",
-          "at": "2026-09-01T18:18:29Z"
-        }
-      ],
-      "evento": "Movimentos de Massa",
-      "opened_at": "2026-08-31T08:54:56Z",
-      "last_seen_open_at": "2026-09-02T10:20:49Z",
-      "closed_at": null,
-      "transitions": [],
-      "videos_collected": [
-        "8hoGpz8CO8M"
-      ],
-      "n_videos_aderentes": 1,
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "last_new_data_at": "2026-09-01T18:18:29Z",
-      "last_new_comment_at": null,
-      "last_collection_at": "2026-09-02T10:20:49Z",
-      "next_collection_at": "2026-09-02T22:20:49Z"
-    },
-    "cemaden_sc_2517": {
-      "codibge": "4202404",
-      "municipio": "Blumenau",
-      "uf": "SC",
-      "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
-      "flag": "acompanhamento",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-08-31T09:30:39Z"
-        },
-        {
-          "flag": "acompanhamento",
-          "at": "2026-09-01T18:18:29Z"
-        }
-      ],
-      "evento": "Movimentos de Massa",
-      "opened_at": "2026-08-31T09:30:39Z",
-      "last_seen_open_at": "2026-09-02T10:20:49Z",
-      "closed_at": null,
-      "transitions": [],
-      "videos_collected": [
-        "FLCyknDf0wI"
-      ],
-      "n_videos_aderentes": 1,
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "last_new_data_at": "2026-09-01T18:18:29Z",
-      "last_new_comment_at": null,
-      "last_collection_at": "2026-09-02T10:20:49Z",
-      "next_collection_at": "2026-09-02T22:20:49Z"
-    },
-    "cemaden_sc_2518": {
-      "codibge": "4206306",
-      "municipio": "Guabiruba",
-      "uf": "SC",
-      "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-08-31T09:31:53Z"
-        }
-      ],
-      "evento": "Movimentos de Massa",
-      "opened_at": "2026-08-31T09:31:53Z",
-      "last_seen_open_at": "2026-09-02T10:20:49Z",
-      "closed_at": null,
-      "transitions": [],
-      "videos_collected": [],
-      "n_videos_aderentes": 0,
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "last_new_data_at": null,
-      "last_new_comment_at": null,
-      "last_collection_at": "2026-09-01T18:18:29Z",
-      "next_collection_at": "2026-09-02T18:18:29Z"
-    },
-    "cemaden_sc_2519": {
-      "codibge": "4201703",
-      "municipio": "Ascurra",
-      "uf": "SC",
-      "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-08-31T09:33:26Z"
-        }
-      ],
-      "evento": "Movimentos de Massa",
-      "opened_at": "2026-08-31T09:33:26Z",
-      "last_seen_open_at": "2026-09-02T10:20:49Z",
-      "closed_at": null,
-      "transitions": [],
-      "videos_collected": [],
-      "n_videos_aderentes": 0,
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "last_new_data_at": null,
-      "last_new_comment_at": null,
-      "last_collection_at": "2026-09-01T18:18:29Z",
-      "next_collection_at": "2026-09-02T18:18:29Z"
-    },
-    "cemaden_sc_2520": {
-      "codibge": "4201257",
-      "municipio": "Apiúna",
-      "uf": "SC",
-      "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-08-31T09:34:31Z"
-        }
-      ],
-      "evento": "Movimentos de Massa",
-      "opened_at": "2026-08-31T09:34:31Z",
-      "last_seen_open_at": "2026-09-02T10:20:49Z",
-      "closed_at": null,
-      "transitions": [],
-      "videos_collected": [],
-      "n_videos_aderentes": 0,
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "last_new_data_at": null,
-      "last_new_comment_at": null,
-      "last_collection_at": "2026-09-01T18:18:29Z",
-      "next_collection_at": "2026-09-02T18:18:29Z"
-    },
-    "cemaden_sc_2522": {
-      "codibge": "4205902",
-      "municipio": "Gaspar",
-      "uf": "SC",
-      "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-08-31T10:50:01Z"
-        }
-      ],
-      "evento": "Movimentos de Massa",
-      "opened_at": "2026-08-31T10:50:01Z",
-      "last_seen_open_at": "2026-09-02T10:20:49Z",
-      "closed_at": null,
-      "transitions": [],
-      "videos_collected": [],
-      "n_videos_aderentes": 0,
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "last_new_data_at": null,
-      "last_new_comment_at": null,
-      "last_collection_at": "2026-09-02T02:15:52Z",
-      "next_collection_at": "2026-09-03T02:15:52Z"
-    },
-    "cemaden_sc_2523": {
-      "codibge": "4210001",
-      "municipio": "Luiz Alves",
-      "uf": "SC",
-      "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-08-31T10:58:45Z"
-        }
-      ],
-      "evento": "Movimentos de Massa",
-      "opened_at": "2026-08-31T10:58:45Z",
-      "last_seen_open_at": "2026-09-02T10:20:49Z",
-      "closed_at": null,
-      "transitions": [],
-      "videos_collected": [],
-      "n_videos_aderentes": 0,
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "last_new_data_at": null,
-      "last_new_comment_at": null,
-      "last_collection_at": "2026-09-02T02:15:52Z",
-      "next_collection_at": "2026-09-03T02:15:52Z"
-    },
-    "cemaden_sc_2524": {
-      "codibge": "4212809",
-      "municipio": "Balneário Piçarras",
-      "uf": "SC",
-      "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-08-31T10:59:51Z"
-        }
-      ],
-      "evento": "Movimentos de Massa",
-      "opened_at": "2026-08-31T10:59:51Z",
-      "last_seen_open_at": "2026-09-02T10:20:49Z",
-      "closed_at": null,
-      "transitions": [],
-      "videos_collected": [],
-      "n_videos_aderentes": 0,
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "last_new_data_at": null,
-      "last_new_comment_at": null,
-      "last_collection_at": "2026-09-02T02:15:52Z",
-      "next_collection_at": "2026-09-03T02:15:52Z"
-    },
-    "cemaden_sc_2525": {
-      "codibge": "4217402",
-      "municipio": "Schroeder",
-      "uf": "SC",
-      "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-08-31T11:13:29Z"
-        }
-      ],
-      "evento": "Movimentos de Massa",
-      "opened_at": "2026-08-31T11:13:29Z",
-      "last_seen_open_at": "2026-09-02T10:20:49Z",
-      "closed_at": null,
-      "transitions": [],
-      "videos_collected": [],
-      "n_videos_aderentes": 0,
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "last_new_data_at": null,
-      "last_new_comment_at": null,
-      "last_collection_at": "2026-09-02T02:15:52Z",
-      "next_collection_at": "2026-09-03T02:15:52Z"
-    },
-    "cemaden_sp_2548": {
-      "codibge": "3523206",
-      "municipio": "Itararé",
-      "uf": "SP",
-      "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-09-01T00:14:48Z"
-        }
-      ],
-      "evento": "Movimentos de Massa",
-      "opened_at": "2026-09-01T00:14:48Z",
-      "last_seen_open_at": "2026-09-02T10:20:49Z",
-      "closed_at": null,
-      "transitions": [],
-      "videos_collected": [],
-      "n_videos_aderentes": 0,
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "last_new_data_at": null,
-      "last_new_comment_at": null,
-      "last_collection_at": "2026-09-02T10:20:49Z",
-      "next_collection_at": "2026-09-03T10:20:49Z"
-    },
-    "cemaden_sp_2549": {
-      "codibge": "3549904",
-      "municipio": "São José dos Campos",
-      "uf": "SP",
-      "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-09-01T04:50:39Z"
-        }
-      ],
-      "evento": "Movimentos de Massa",
-      "opened_at": "2026-09-01T04:50:39Z",
-      "last_seen_open_at": "2026-09-02T10:20:49Z",
-      "closed_at": null,
-      "transitions": [],
-      "videos_collected": [],
-      "n_videos_aderentes": 0,
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "last_new_data_at": null,
-      "last_new_comment_at": null,
-      "last_collection_at": "2026-09-01T18:18:29Z",
-      "next_collection_at": "2026-09-02T18:18:29Z"
-    },
     "cemaden_sc_2551": {
       "codibge": "4202602",
       "municipio": "Bom Retiro",
@@ -361,7 +25,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-09-01T08:52:55Z",
-      "last_seen_open_at": "2026-09-02T10:20:49Z",
+      "last_seen_open_at": "2026-09-02T15:45:58Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -388,7 +52,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-09-01T09:12:25Z",
-      "last_seen_open_at": "2026-09-02T10:20:49Z",
+      "last_seen_open_at": "2026-09-02T15:45:58Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -415,7 +79,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-09-01T15:24:28Z",
-      "last_seen_open_at": "2026-09-02T10:20:49Z",
+      "last_seen_open_at": "2026-09-02T15:45:58Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -442,7 +106,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-09-01T15:31:28Z",
-      "last_seen_open_at": "2026-09-02T10:20:49Z",
+      "last_seen_open_at": "2026-09-02T15:45:58Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -469,7 +133,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-09-01T23:47:01Z",
-      "last_seen_open_at": "2026-09-02T10:20:49Z",
+      "last_seen_open_at": "2026-09-02T15:45:58Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -496,7 +160,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-09-02T03:15:31Z",
-      "last_seen_open_at": "2026-09-02T10:20:49Z",
+      "last_seen_open_at": "2026-09-02T15:45:58Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -523,7 +187,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-09-02T03:06:20Z",
-      "last_seen_open_at": "2026-09-02T10:20:49Z",
+      "last_seen_open_at": "2026-09-02T15:45:58Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -732,6 +396,72 @@
       "last_new_comment_at": "2026-09-02T10:20:49Z",
       "last_collection_at": "2026-09-02T10:20:49Z",
       "next_collection_at": "2026-09-02T22:20:49Z"
+    },
+    "cemaden_sc_2516": {
+      "codibge": "4202909",
+      "municipio": "Brusque",
+      "uf": "SC",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "acompanhamento",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-08-31T08:54:56Z"
+        },
+        {
+          "flag": "acompanhamento",
+          "at": "2026-09-01T18:18:29Z"
+        }
+      ],
+      "evento": "Movimentos de Massa",
+      "opened_at": "2026-08-31T08:54:56Z",
+      "last_seen_open_at": "2026-09-02T10:20:49Z",
+      "closed_at": "2026-09-02T15:45:58Z",
+      "transitions": [],
+      "videos_collected": [
+        "8hoGpz8CO8M"
+      ],
+      "n_videos_aderentes": 1,
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "last_new_data_at": "2026-09-01T18:18:29Z",
+      "last_new_comment_at": null,
+      "last_collection_at": "2026-09-02T10:20:49Z",
+      "next_collection_at": "2026-09-03T03:45:58Z"
+    },
+    "cemaden_sc_2517": {
+      "codibge": "4202404",
+      "municipio": "Blumenau",
+      "uf": "SC",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "acompanhamento",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-08-31T09:30:39Z"
+        },
+        {
+          "flag": "acompanhamento",
+          "at": "2026-09-01T18:18:29Z"
+        }
+      ],
+      "evento": "Movimentos de Massa",
+      "opened_at": "2026-08-31T09:30:39Z",
+      "last_seen_open_at": "2026-09-02T10:20:49Z",
+      "closed_at": "2026-09-02T15:45:58Z",
+      "transitions": [],
+      "videos_collected": [
+        "FLCyknDf0wI"
+      ],
+      "n_videos_aderentes": 1,
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "last_new_data_at": "2026-09-01T18:18:29Z",
+      "last_new_comment_at": null,
+      "last_collection_at": "2026-09-02T10:20:49Z",
+      "next_collection_at": "2026-09-03T03:45:58Z"
     }
   },
   "archived_alerts": {
