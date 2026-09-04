@@ -1,114 +1,9 @@
 {
-  "generated_at": "2026-09-03T20:23:53Z",
+  "generated_at": "2026-09-04T02:18:50Z",
   "pipeline_version": "0.2.2",
   "pilot_mode": true,
   "dry_run": false,
   "alerts": [
-    {
-      "id": "cemaden_sp_2556",
-      "municipio": "Sete Barras",
-      "uf": "SP",
-      "tipo": "Risco Hidrológico",
-      "nivel": "Moderado",
-      "data_alerta": "02/09/2026",
-      "codibge": "3551801",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-09-02T03:06:20Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-09-02T03:06:20Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-09-03T10:31:00Z",
-      "next_collection_at": "2026-09-04T10:31:00Z"
-    },
     {
       "id": "cemaden_rs_2475",
       "municipio": "Pelotas",
@@ -854,10 +749,10 @@
       "lat": -31.581167679409,
       "lon": -52.341155831415,
       "regime": "prospective_live",
-      "n_comments": 9,
+      "n_comments": 25,
       "n_videos": 5,
-      "unlabeled": 2,
-      "unlabeled_pct": 22.2,
+      "unlabeled": 3,
+      "unlabeled_pct": 12.0,
       "date_range": [
         "2026-08-28",
         "2026-08-30"
@@ -866,60 +761,60 @@
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
-          "count": 4,
-          "pct": 44.4
+          "count": 7,
+          "pct": 28.0
         },
         {
           "key": "ajuda_resgate_doacoes",
           "label": "Ajuda / resgate / doações",
-          "count": 1,
-          "pct": 11.1
+          "count": 2,
+          "pct": 8.0
         },
         {
           "key": "responsabilizacao_governanca",
           "label": "Responsabilização / governança",
           "count": 1,
-          "pct": 11.1
+          "pct": 4.0
         },
         {
           "key": "infraestrutura_ocupacao_risco",
           "label": "Infraestrutura / ocupação de risco",
-          "count": 1,
-          "pct": 11.1
+          "count": 3,
+          "pct": 12.0
         },
         {
           "key": "clima_chuva_meio_ambiente",
           "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
+          "count": 6,
+          "pct": 24.0
         },
         {
           "key": "experiencia_pessoal_local",
           "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
+          "count": 6,
+          "pct": 24.0
         },
         {
           "key": "alerta_prevencao_cobranca",
           "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
+          "count": 2,
+          "pct": 8.0
         },
         {
           "key": "critica_midia_informacao",
           "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
+          "count": 1,
+          "pct": 4.0
         }
       ],
       "timeline": [
         {
           "date": "28/08/26",
-          "count": 1
+          "count": 16
         },
         {
           "date": "29/08/26",
-          "count": 7
+          "count": 8
         },
         {
           "date": "30/08/26",
@@ -927,6 +822,26 @@
         }
       ],
       "videos": [
+        {
+          "video_id": "nwCWDjzyvWQ",
+          "n_comments": 18,
+          "total_likes": 34,
+          "first_comment": "28/08/2026",
+          "top_categories": [
+            {
+              "label": "Clima/chuva",
+              "count": 6
+            },
+            {
+              "label": "Experiência",
+              "count": 6
+            },
+            {
+              "label": "Solidariedade",
+              "count": 4
+            }
+          ]
+        },
         {
           "video_id": "O8atoKChx6M",
           "n_comments": 5,
@@ -943,18 +858,6 @@
             },
             {
               "label": "Infraestrutura",
-              "count": 1
-            }
-          ]
-        },
-        {
-          "video_id": "f5v_yrovrgM",
-          "n_comments": 2,
-          "total_likes": 0,
-          "first_comment": "28/08/2026",
-          "top_categories": [
-            {
-              "label": "Solidariedade",
               "count": 1
             }
           ]
@@ -996,11 +899,25 @@
             "video_id": "O8atoKChx6M"
           },
           {
+            "text": "Que Deus tenha misericórdia de nós e do mundo inteiro😢",
+            "likes": 6,
+            "score": 0.994,
+            "date": "2026-08-28",
+            "video_id": "nwCWDjzyvWQ"
+          },
+          {
             "text": "Meu deus",
             "likes": 1,
             "score": 0.994,
             "date": "2026-08-29",
             "video_id": "O8atoKChx6M"
+          },
+          {
+            "text": "Jesus Cristo proteja o povo do sul 🙏",
+            "likes": 1,
+            "score": 0.994,
+            "date": "2026-08-29",
+            "video_id": "nwCWDjzyvWQ"
           },
           {
             "text": "Oi😊😅😮😮",
@@ -1010,11 +927,18 @@
             "video_id": "O8atoKChx6M"
           },
           {
-            "text": "Olá, em que rua fica? Obrigada.",
-            "likes": 0,
-            "score": 0.565,
+            "text": "Aqui interior de Gravataí RS Brasil Chuva boa e abençoada. Sem pedra sem ventania forte. Obrigado DEUS pela proteção. Gravataí RS Brasil 💕❤️💕💕❤️💕💕❤️",
+            "likes": 6,
+            "score": 0.932,
             "date": "2026-08-28",
-            "video_id": "f5v_yrovrgM"
+            "video_id": "nwCWDjzyvWQ"
+          },
+          {
+            "text": "Bom dia Obrigada",
+            "likes": 1,
+            "score": 0.723,
+            "date": "2026-08-28",
+            "video_id": "nwCWDjzyvWQ"
           }
         ],
         "ajuda_resgate_doacoes": [
@@ -1024,6 +948,13 @@
             "score": 0.997,
             "date": "2026-08-29",
             "video_id": "ffc8iNXAH9k"
+          },
+          {
+            "text": "A chuva começou com vento às 8:30 min. Uma chuva calma. O que não é normal a Defesa Civil de Sao Leopoldo/RS, enviou-me às 8:25 min o alerta. Então saio eu correndo às pressas debaixo de chuva e vento. Que segurança a população pra se abrigar, eff Sou moradora do bairro Campina em SL",
+            "likes": 3,
+            "score": 0.936,
+            "date": "2026-08-28",
+            "video_id": "nwCWDjzyvWQ"
           }
         ],
         "responsabilizacao_governanca": [
@@ -1042,12 +973,135 @@
             "score": 0.997,
             "date": "2026-08-29",
             "video_id": "O8atoKChx6M"
+          },
+          {
+            "text": "Desejamos que os rio-grandenses domem este burro chucro do El Niño bem melhor do que no passado recente. [Curitiba] 🧉🍷☕️🌧🌪🌬⛈",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-08-28",
+            "video_id": "nwCWDjzyvWQ"
+          },
+          {
+            "text": "Aqui em Santa Maria Rio Grande do Sul, choveu pouco, neste momento não está chovendo, mas tem vento Norte e fortes. 14 hs.",
+            "likes": 0,
+            "score": 0.984,
+            "date": "2026-08-28",
+            "video_id": "nwCWDjzyvWQ"
           }
         ],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
+        "clima_chuva_meio_ambiente": [
+          {
+            "text": "Cachoeira do Sul muita chuva",
+            "likes": 4,
+            "score": 0.996,
+            "date": "2026-08-28",
+            "video_id": "nwCWDjzyvWQ"
+          },
+          {
+            "text": "É a natureza se vingando do próprio homem que só a destrói",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-08-28",
+            "video_id": "nwCWDjzyvWQ"
+          },
+          {
+            "text": "A chuva começou com vento às 8:30 min. Uma chuva calma. O que não é normal a Defesa Civil de Sao Leopoldo/RS, enviou-me às 8:25 min o alerta. Então saio eu correndo às pressas debaixo de chuva e vento. Que segurança a população pra se abrigar, eff Sou moradora do bairro Campina em SL",
+            "likes": 3,
+            "score": 0.989,
+            "date": "2026-08-28",
+            "video_id": "nwCWDjzyvWQ"
+          },
+          {
+            "text": "Aqui interior de Gravataí RS Brasil Chuva boa e abençoada. Sem pedra sem ventania forte. Obrigado DEUS pela proteção. Gravataí RS Brasil 💕❤️💕💕❤️💕💕❤️",
+            "likes": 6,
+            "score": 0.984,
+            "date": "2026-08-28",
+            "video_id": "nwCWDjzyvWQ"
+          },
+          {
+            "text": "aqui em Viamão caiu granizo um temporal feio",
+            "likes": 3,
+            "score": 0.967,
+            "date": "2026-08-28",
+            "video_id": "nwCWDjzyvWQ"
+          },
+          {
+            "text": "São Lourenço do Sul granizo leve na cidade num sei na colonia",
+            "likes": 1,
+            "score": 0.773,
+            "date": "2026-08-28",
+            "video_id": "nwCWDjzyvWQ"
+          }
+        ],
+        "experiencia_pessoal_local": [
+          {
+            "text": "Bom dia, entre a tarde de ontem e hoje pela manhã ja choveu mais de 100mm aqui em Pelotas, conforme estação da embrapa cascata.!!",
+            "likes": 2,
+            "score": 0.996,
+            "date": "2026-08-28",
+            "video_id": "nwCWDjzyvWQ"
+          },
+          {
+            "text": "Bom dia!Aqui na zona leste de Porto Alegre caiu granizo agora a pouco e muito vento.",
+            "likes": 3,
+            "score": 0.996,
+            "date": "2026-08-28",
+            "video_id": "nwCWDjzyvWQ"
+          },
+          {
+            "text": "o problema é o vento que cada vez agora é mais forte, hoje foi inédito...quase 2 horas de ventos fortes aqui em Montenegro",
+            "likes": 2,
+            "score": 0.996,
+            "date": "2026-08-28",
+            "video_id": "nwCWDjzyvWQ"
+          },
+          {
+            "text": "aqui em Viamão caiu granizo um temporal feio",
+            "likes": 3,
+            "score": 0.995,
+            "date": "2026-08-28",
+            "video_id": "nwCWDjzyvWQ"
+          },
+          {
+            "text": "Aqui em Santa Maria Rio Grande do Sul, choveu pouco, neste momento não está chovendo, mas tem vento Norte e fortes. 14 hs.",
+            "likes": 0,
+            "score": 0.995,
+            "date": "2026-08-28",
+            "video_id": "nwCWDjzyvWQ"
+          },
+          {
+            "text": "Aqui interior de Gravataí RS Brasil Chuva boa e abençoada. Sem pedra sem ventania forte. Obrigado DEUS pela proteção. Gravataí RS Brasil 💕❤️💕💕❤️💕💕❤️",
+            "likes": 6,
+            "score": 0.992,
+            "date": "2026-08-28",
+            "video_id": "nwCWDjzyvWQ"
+          }
+        ],
+        "alerta_prevencao_cobranca": [
+          {
+            "text": "A chuva começou com vento às 8:30 min. Uma chuva calma. O que não é normal a Defesa Civil de Sao Leopoldo/RS, enviou-me às 8:25 min o alerta. Então saio eu correndo às pressas debaixo de chuva e vento. Que segurança a população pra se abrigar, eff Sou moradora do bairro Campina em SL",
+            "likes": 3,
+            "score": 0.998,
+            "date": "2026-08-28",
+            "video_id": "nwCWDjzyvWQ"
+          },
+          {
+            "text": "Não é vinganca,Mãe nunca se vinga de seus filhos, é um alerta pra que paremos em tempo dela se reconstituir e voltar para a harmonia que existia antes, entre a Terra e os homens!🙏",
+            "likes": 1,
+            "score": 0.998,
+            "date": "2026-08-28",
+            "video_id": "nwCWDjzyvWQ"
+          }
+        ],
+        "critica_midia_informacao": [
+          {
+            "text": "Bom dia!! Bom trabalho aí pra equipe da rádio Gaucha/RS",
+            "likes": 0,
+            "score": 0.989,
+            "date": "2026-08-28",
+            "video_id": "nwCWDjzyvWQ"
+          }
+        ]
       },
       "academic_studies": [],
       "observation_status": "extended",
@@ -1067,7 +1121,7 @@
           "at": "2026-09-03T15:35:54Z"
         }
       ],
-      "n_comments_valid": 52,
+      "n_comments_valid": 74,
       "videos_with_valid_comments": [
         "O8atoKChx6M",
         "f5v_yrovrgM",
@@ -1083,8 +1137,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-03T15:35:54Z",
-      "next_collection_at": "2026-09-03T21:35:54Z"
+      "last_collection_at": "2026-09-04T02:18:17Z",
+      "next_collection_at": "2026-09-04T08:18:17Z"
     },
     {
       "id": "cemaden_sp_2507",
@@ -1383,8 +1437,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-03T10:31:00Z",
-      "next_collection_at": "2026-09-03T22:31:00Z"
+      "last_collection_at": "2026-09-04T02:18:17Z",
+      "next_collection_at": "2026-09-04T14:18:17Z"
     },
     {
       "id": "cemaden_sc_2517",
@@ -1500,8 +1554,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-03T10:31:00Z",
-      "next_collection_at": "2026-09-03T22:31:00Z"
+      "last_collection_at": "2026-09-04T02:18:17Z",
+      "next_collection_at": "2026-09-04T14:18:17Z"
     }
   ],
   "archived_alerts": [
