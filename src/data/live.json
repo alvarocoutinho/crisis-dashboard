@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T02:27:34Z",
+  "generated_at": "2026-09-09T10:34:19Z",
   "pipeline_version": "0.2.2",
   "pilot_mode": true,
   "dry_run": false,
@@ -1051,7 +1051,7 @@
           "at": "2026-09-03T15:35:54Z"
         }
       ],
-      "n_comments_valid": 261,
+      "n_comments_valid": 278,
       "videos_with_valid_comments": [
         "-nppGOJBua4",
         "Fe2zgHVygvk",
@@ -1069,8 +1069,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-08T20:35:16Z",
-      "next_collection_at": "2026-09-09T02:35:16Z"
+      "last_collection_at": "2026-09-09T10:33:48Z",
+      "next_collection_at": "2026-09-09T16:33:48Z"
     },
     {
       "id": "cemaden_sp_2507",
@@ -1083,20 +1083,20 @@
       "lat": -23.65008054018,
       "lon": -46.648110850371,
       "regime": "prospective_live",
-      "n_comments": 22,
-      "n_videos": 7,
-      "unlabeled": 3,
-      "unlabeled_pct": 13.6,
+      "n_comments": 9,
+      "n_videos": 10,
+      "unlabeled": 1,
+      "unlabeled_pct": 11.1,
       "date_range": [
-        "2026-08-31",
+        "2026-08-30",
         "2026-09-01"
       ],
       "distribution": [
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
-          "count": 13,
-          "pct": 59.1
+          "count": 6,
+          "pct": 66.7
         },
         {
           "key": "ajuda_resgate_doacoes",
@@ -1113,20 +1113,20 @@
         {
           "key": "infraestrutura_ocupacao_risco",
           "label": "Infraestrutura / ocupação de risco",
-          "count": 2,
-          "pct": 9.1
+          "count": 1,
+          "pct": 11.1
         },
         {
           "key": "clima_chuva_meio_ambiente",
           "label": "Clima / chuva / meio ambiente",
-          "count": 2,
-          "pct": 9.1
+          "count": 1,
+          "pct": 11.1
         },
         {
           "key": "experiencia_pessoal_local",
           "label": "Experiência pessoal / local",
-          "count": 3,
-          "pct": 13.6
+          "count": 2,
+          "pct": 22.2
         },
         {
           "key": "alerta_prevencao_cobranca",
@@ -1137,41 +1137,25 @@
         {
           "key": "critica_midia_informacao",
           "label": "Crítica à mídia / informação",
-          "count": 3,
-          "pct": 13.6
+          "count": 0,
+          "pct": 0.0
         }
       ],
       "timeline": [
         {
           "date": "01/09/26",
-          "count": 11
+          "count": 2
+        },
+        {
+          "date": "30/08/26",
+          "count": 2
         },
         {
           "date": "31/08/26",
-          "count": 11
+          "count": 5
         }
       ],
       "videos": [
-        {
-          "video_id": "TISM175nvsg",
-          "n_comments": 15,
-          "total_likes": 9,
-          "first_comment": "31/08/2026",
-          "top_categories": [
-            {
-              "label": "Solidariedade",
-              "count": 7
-            },
-            {
-              "label": "Crítica mídia",
-              "count": 3
-            },
-            {
-              "label": "Clima/chuva",
-              "count": 2
-            }
-          ]
-        },
         {
           "video_id": "BZkiA1yeA1k",
           "n_comments": 5,
@@ -1193,6 +1177,18 @@
           ]
         },
         {
+          "video_id": "RpkbaFLUpjI",
+          "n_comments": 2,
+          "total_likes": 1,
+          "first_comment": "30/08/2026",
+          "top_categories": [
+            {
+              "label": "Clima/chuva",
+              "count": 1
+            }
+          ]
+        },
+        {
           "video_id": "UwFA2z6cAJE",
           "n_comments": 2,
           "total_likes": 6,
@@ -1203,6 +1199,41 @@
               "count": 2
             }
           ]
+        },
+        {
+          "video_id": "-OZZ5iEAMqE",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
+        },
+        {
+          "video_id": "Xy8t3MoW6wE",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
+        },
+        {
+          "video_id": "hkXVmsuGWgc",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
+        },
+        {
+          "video_id": "Gj215qmUgJQ",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
+        },
+        {
+          "video_id": "nuaDWrFs-Ds",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
         },
         {
           "video_id": "2C4jGJN_A_w",
@@ -1217,45 +1248,10 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": []
-        },
-        {
-          "video_id": "-OZZ5iEAMqE",
-          "n_comments": 0,
-          "total_likes": 0,
-          "first_comment": "",
-          "top_categories": []
-        },
-        {
-          "video_id": "nuaDWrFs-Ds",
-          "n_comments": 0,
-          "total_likes": 0,
-          "first_comment": "",
-          "top_categories": []
         }
       ],
       "all_samples": {
         "solidariedade_oracao_luto": [
-          {
-            "text": "​@nathgrimaldi1954não é Deus, é um fenômeno Supernatural. Tenho certeza que você é um sujeito inteligente, você sabe disso.",
-            "likes": 0,
-            "score": 0.997,
-            "date": "2026-09-01",
-            "video_id": "TISM175nvsg"
-          },
-          {
-            "text": "Deus está ao lado de vocês? imagina se tivesse contra😅😅😅",
-            "likes": 1,
-            "score": 0.997,
-            "date": "2026-08-31",
-            "video_id": "TISM175nvsg"
-          },
-          {
-            "text": "Nossaa que Deus é esse mandado pedrada. É um deus humano né 😮",
-            "likes": 1,
-            "score": 0.996,
-            "date": "2026-08-31",
-            "video_id": "TISM175nvsg"
-          },
           {
             "text": "Deus proteja a todos e os livre dos males e dos perigos, amém 🙏",
             "likes": 3,
@@ -1269,13 +1265,6 @@
             "score": 0.995,
             "date": "2026-08-31",
             "video_id": "BZkiA1yeA1k"
-          },
-          {
-            "text": "Leiam a bíblia e acreditem nela, Jesus está voltando.",
-            "likes": 1,
-            "score": 0.995,
-            "date": "2026-09-01",
-            "video_id": "TISM175nvsg"
           },
           {
             "text": "Deus tem misericórdia.",
@@ -1292,13 +1281,6 @@
             "video_id": "BZkiA1yeA1k"
           },
           {
-            "text": "🙏🏿🙏🏿🙏🏿",
-            "likes": 1,
-            "score": 0.974,
-            "date": "2026-08-31",
-            "video_id": "TISM175nvsg"
-          },
-          {
             "text": "😮😮😮😮😮😮😮😮😮😮😮😮",
             "likes": 3,
             "score": 0.974,
@@ -1311,32 +1293,11 @@
             "score": 0.962,
             "date": "2026-08-31",
             "video_id": "BZkiA1yeA1k"
-          },
-          {
-            "text": "Eu moro em Itararé e graças a Deus ficou tudo bem ❤️‍🩹🙏",
-            "likes": 0,
-            "score": 0.93,
-            "date": "2026-08-31",
-            "video_id": "TISM175nvsg"
-          },
-          {
-            "text": "Parece o fim do mundo! 😢",
-            "likes": 0,
-            "score": 0.514,
-            "date": "2026-09-01",
-            "video_id": "TISM175nvsg"
           }
         ],
         "ajuda_resgate_doacoes": [],
         "responsabilizacao_governanca": [],
         "infraestrutura_ocupacao_risco": [
-          {
-            "text": "Show nada quem e doido ? De sair de casa com este mal tempo",
-            "likes": 1,
-            "score": 0.998,
-            "date": "2026-09-01",
-            "video_id": "TISM175nvsg"
-          },
           {
             "text": "Quando Deus fala o terra derrete como cera em fogo. Vamos por a casa em ordem... As trombetas estão tocando. Jesus nos ama povo.",
             "likes": 9,
@@ -1347,18 +1308,11 @@
         ],
         "clima_chuva_meio_ambiente": [
           {
-            "text": "Pois então....alterações climáticas... Aquecimento global não existe. ...negacionistas ignorantes. !!",
-            "likes": 0,
-            "score": 0.976,
-            "date": "2026-09-01",
-            "video_id": "TISM175nvsg"
-          },
-          {
-            "text": "Nossa olha a velocidade com que as pedras de granizo atinge o chão 😮 parece que foi arremessadas por um estilingue",
-            "likes": 3,
-            "score": 0.858,
-            "date": "2026-08-31",
-            "video_id": "TISM175nvsg"
+            "text": "Amo são Paulo até com chuva",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-08-30",
+            "video_id": "RpkbaFLUpjI"
           }
         ],
         "experiencia_pessoal_local": [
@@ -1375,39 +1329,10 @@
             "score": 0.996,
             "date": "2026-08-31",
             "video_id": "BZkiA1yeA1k"
-          },
-          {
-            "text": "Eu moro em Itararé e graças a Deus ficou tudo bem ❤️‍🩹🙏",
-            "likes": 0,
-            "score": 0.995,
-            "date": "2026-08-31",
-            "video_id": "TISM175nvsg"
           }
         ],
         "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": [
-          {
-            "text": "Pois então....alterações climáticas... Aquecimento global não existe. ...negacionistas ignorantes. !!",
-            "likes": 0,
-            "score": 0.998,
-            "date": "2026-09-01",
-            "video_id": "TISM175nvsg"
-          },
-          {
-            "text": "​@ronanmarquescosta8142Eu? Por quê ?",
-            "likes": 0,
-            "score": 0.939,
-            "date": "2026-09-01",
-            "video_id": "TISM175nvsg"
-          },
-          {
-            "text": "Isso só e começo!",
-            "likes": 0,
-            "score": 0.626,
-            "date": "2026-08-31",
-            "video_id": "TISM175nvsg"
-          }
-        ]
+        "critica_midia_informacao": []
       },
       "academic_studies": [],
       "observation_status": "extended",
@@ -1427,7 +1352,7 @@
           "at": "2026-09-07T16:59:59Z"
         }
       ],
-      "n_comments_valid": 89,
+      "n_comments_valid": 97,
       "videos_with_valid_comments": [
         "BZkiA1yeA1k",
         "RpkbaFLUpjI",
@@ -1443,8 +1368,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-08T20:35:16Z",
-      "next_collection_at": "2026-09-09T02:35:16Z"
+      "last_collection_at": "2026-09-09T10:33:48Z",
+      "next_collection_at": "2026-09-09T16:33:48Z"
     },
     {
       "id": "cemaden_sc_2516",
@@ -1560,8 +1485,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-08T15:47:58Z",
-      "next_collection_at": "2026-09-09T03:47:58Z"
+      "last_collection_at": "2026-09-09T10:33:48Z",
+      "next_collection_at": "2026-09-09T22:33:48Z"
     },
     {
       "id": "cemaden_sc_2517",
@@ -1677,8 +1602,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-08T15:47:58Z",
-      "next_collection_at": "2026-09-09T03:47:58Z"
+      "last_collection_at": "2026-09-09T10:33:48Z",
+      "next_collection_at": "2026-09-09T22:33:48Z"
     }
   ],
   "archived_alerts": [
