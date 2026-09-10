@@ -1,15 +1,43 @@
 {
   "schema_version": "0.2",
   "pipeline_version": "0.2.2",
-  "last_run_at": "2026-09-09T20:17:17Z",
+  "last_run_at": "2026-09-10T02:26:42Z",
   "last_run_status": "success",
-  "last_run_duration_seconds": 28,
-  "last_cemaden_check_at": "2026-09-09T20:17:17Z",
+  "last_run_duration_seconds": 32,
+  "last_cemaden_check_at": "2026-09-10T02:26:42Z",
   "youtube_quota": {
-    "used_today": 21500,
-    "reset_at": "2026-09-10T07:00:00Z"
+    "used_today": 22000,
+    "reset_at": "2026-09-11T07:00:00Z"
   },
-  "active_alerts": {},
+  "active_alerts": {
+    "cemaden_sc_2568": {
+      "codibge": "4219507",
+      "municipio": "Xanxerê",
+      "uf": "SC",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-09-09T22:45:32Z"
+        }
+      ],
+      "evento": "Movimentos de Massa",
+      "opened_at": "2026-09-09T22:45:32Z",
+      "last_seen_open_at": "2026-09-10T02:26:42Z",
+      "closed_at": null,
+      "transitions": [],
+      "videos_collected": [],
+      "n_videos_aderentes": 0,
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "last_new_data_at": null,
+      "last_new_comment_at": null,
+      "last_collection_at": "2026-09-10T02:26:42Z",
+      "next_collection_at": "2026-09-11T02:26:42Z"
+    }
+  },
   "extended_window_alerts": {
     "cemaden_rs_2475": {
       "codibge": "4314407",
@@ -163,7 +191,7 @@
         "vJbko9m-q-s"
       ],
       "n_videos_aderentes": 8,
-      "n_comments_valid": 279,
+      "n_comments_valid": 296,
       "videos_with_valid_comments": [
         "-nppGOJBua4",
         "Fe2zgHVygvk",
@@ -172,10 +200,10 @@
         "ffc8iNXAH9k",
         "nwCWDjzyvWQ"
       ],
-      "last_new_data_at": "2026-09-09T20:17:17Z",
-      "last_new_comment_at": "2026-09-09T20:17:17Z",
-      "last_collection_at": "2026-09-09T20:17:17Z",
-      "next_collection_at": "2026-09-10T02:17:17Z"
+      "last_new_data_at": "2026-09-10T02:26:42Z",
+      "last_new_comment_at": "2026-09-10T02:26:42Z",
+      "last_collection_at": "2026-09-10T02:26:42Z",
+      "next_collection_at": "2026-09-10T08:26:42Z"
     },
     "cemaden_sp_2507": {
       "codibge": "3550308",
@@ -218,17 +246,17 @@
         "nuaDWrFs-Ds"
       ],
       "n_videos_aderentes": 12,
-      "n_comments_valid": 105,
+      "n_comments_valid": 113,
       "videos_with_valid_comments": [
         "BZkiA1yeA1k",
         "RpkbaFLUpjI",
         "TISM175nvsg",
         "UwFA2z6cAJE"
       ],
-      "last_new_data_at": "2026-09-09T20:17:17Z",
-      "last_new_comment_at": "2026-09-09T20:17:17Z",
-      "last_collection_at": "2026-09-09T20:17:17Z",
-      "next_collection_at": "2026-09-10T02:17:17Z"
+      "last_new_data_at": "2026-09-10T02:26:42Z",
+      "last_new_comment_at": "2026-09-10T02:26:42Z",
+      "last_collection_at": "2026-09-10T02:26:42Z",
+      "next_collection_at": "2026-09-10T08:26:42Z"
     },
     "cemaden_sc_2516": {
       "codibge": "4202909",
@@ -260,8 +288,8 @@
       "videos_with_valid_comments": [],
       "last_new_data_at": "2026-09-01T18:18:29Z",
       "last_new_comment_at": null,
-      "last_collection_at": "2026-09-09T10:33:48Z",
-      "next_collection_at": "2026-09-09T22:33:48Z"
+      "last_collection_at": "2026-09-10T02:26:42Z",
+      "next_collection_at": "2026-09-10T14:26:42Z"
     },
     "cemaden_sc_2517": {
       "codibge": "4202404",
@@ -293,8 +321,8 @@
       "videos_with_valid_comments": [],
       "last_new_data_at": "2026-09-01T18:18:29Z",
       "last_new_comment_at": null,
-      "last_collection_at": "2026-09-09T10:33:48Z",
-      "next_collection_at": "2026-09-09T22:33:48Z"
+      "last_collection_at": "2026-09-10T02:26:42Z",
+      "next_collection_at": "2026-09-10T14:26:42Z"
     }
   },
   "archived_alerts": {
