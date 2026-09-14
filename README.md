@@ -10,7 +10,7 @@ Plataforma ponta a ponta de observação da **reação pública digital observá
 
 ## Escopo científico
 
-O ODRD é o **instrumento de escuta** do CEPID CLIMARES / Eixo 7 (Educação e Difusão de Conhecimento) — complementar, não substitutivo, à infraestrutura de emissão do CEMADEN. Instrumenta a lacuna entre alerta e reação pública documentada em Marchezini (2018), Sulaiman & Aledo (2016) e no debate sobre *last-mile* em sistemas de alerta.
+O ODRD é o **instrumento de escuta** — complementar, não substitutivo, à infraestrutura de emissão do CEMADEN. Instrumenta a lacuna entre alerta e reação pública documentada em Marchezini (2018), Sulaiman & Aledo (2016) e no debate sobre *last-mile* em sistemas de alerta.
 
 **O que o sistema mede:** presença/ausência, volume e composição temática de manifestações digitais observáveis em janelas fixas após a publicação do alerta.
 
@@ -128,19 +128,13 @@ crisis-dashboard/
 
 ## Como citar
 
-DOI Zenodo do freeze v1.0.0: **a preencher após [A8 — freeze scripts]**.
-
-Enquanto o DOI não é emitido, cite como:
-
-> Coutinho, Á. L. A. (2026). *Observatório Digital de Riscos e Desastres (ODRD) — v1.0.0*. NEPAM/Unicamp. https://github.com/alvarocoutinho/crisis-dashboard
+DOI Zenodo do freeze v1.0.0: https://doi.org/10.5281/zenodo.22032995
 
 ---
 
 ## Coordenação e vínculo institucional
 
-**Álvaro Luz Alves Coutinho** — NEPAM / PPGA&S, Universidade Estadual de Campinas (Unicamp)
-**Supervisão:** Profa. Leila da Costa Ferreira
-**Contexto institucional:** CEPID CLIMARES / Eixo 7 · parceria científica com CEMADEN
+**Álvaro Luz Alves Coutinho**
 
 Contato para licenciamento comercial: ver [LICENSE](./LICENSE), Parte B.
 
