@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T17:30:58Z",
+  "generated_at": "2026-09-14T21:19:47Z",
   "pipeline_version": "0.2.2",
   "pilot_mode": true,
   "dry_run": false,
@@ -112,8 +112,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-13T20:05:42Z",
-      "next_collection_at": "2026-09-14T20:05:42Z"
+      "last_collection_at": "2026-09-14T21:16:10Z",
+      "next_collection_at": "2026-09-15T21:16:10Z"
     },
     {
       "id": "cemaden_pr_2570",
@@ -217,8 +217,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-13T20:05:42Z",
-      "next_collection_at": "2026-09-14T20:05:42Z"
+      "last_collection_at": "2026-09-14T21:16:10Z",
+      "next_collection_at": "2026-09-15T21:16:10Z"
     },
     {
       "id": "cemaden_sp_2571",
@@ -797,99 +797,585 @@
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
+      "n_comments": 64,
+      "n_videos": 1,
+      "unlabeled": 20,
+      "unlabeled_pct": 31.2,
       "date_range": [
-        "",
-        ""
+        "2026-09-11",
+        "2026-09-14"
       ],
       "distribution": [
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
+          "count": 16,
+          "pct": 25.0
         },
         {
           "key": "ajuda_resgate_doacoes",
           "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
+          "count": 3,
+          "pct": 4.7
         },
         {
           "key": "responsabilizacao_governanca",
           "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
+          "count": 8,
+          "pct": 12.5
         },
         {
           "key": "infraestrutura_ocupacao_risco",
           "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
+          "count": 3,
+          "pct": 4.7
         },
         {
           "key": "clima_chuva_meio_ambiente",
           "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
+          "count": 16,
+          "pct": 25.0
         },
         {
           "key": "experiencia_pessoal_local",
           "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
+          "count": 2,
+          "pct": 3.1
         },
         {
           "key": "alerta_prevencao_cobranca",
           "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
+          "count": 1,
+          "pct": 1.6
         },
         {
           "key": "critica_midia_informacao",
           "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
+          "count": 13,
+          "pct": 20.3
         }
       ],
-      "timeline": [],
-      "videos": [],
+      "timeline": [
+        {
+          "date": "11/09/26",
+          "count": 53
+        },
+        {
+          "date": "12/09/26",
+          "count": 7
+        },
+        {
+          "date": "13/09/26",
+          "count": 2
+        },
+        {
+          "date": "14/09/26",
+          "count": 2
+        }
+      ],
+      "videos": [
+        {
+          "video_id": "HLfTpQv78C0",
+          "n_comments": 64,
+          "total_likes": 73,
+          "first_comment": "11/09/2026",
+          "top_categories": [
+            {
+              "label": "Solidariedade",
+              "count": 16
+            },
+            {
+              "label": "Clima/chuva",
+              "count": 16
+            },
+            {
+              "label": "Crítica mídia",
+              "count": 13
+            }
+          ]
+        }
+      ],
       "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
+        "solidariedade_oracao_luto": [
+          {
+            "text": "MISERICÓRDIA !!!! SAÚDE !!!! FÉ !!!! LUZ !!!! FORÇAS !!!! GARRA !!!!",
+            "likes": 1,
+            "score": 0.999,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "SUPER NINE KKKKKKKKKKKKKKKKKKK OS CARAS INVENTAM CADA COISA MEU DEUS. Que passe logo esse periodo do El Nine não aguento mais essa tempestade.",
+            "likes": 2,
+            "score": 0.998,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "El nino é um fenômeno que vem acontecendo raramente, e isso é normal, deixa jesus em paz ele não tem nada aver com isso, e também existe a lá ninã que é o oposto do el ninõ",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@luisilva19gente o el nino é um fenômeno que vem acontecendo raramente, e isso é normal, deixa jesus em paz ele não tem nada aver com isso, e também existe a lá ninã que é o oposto do el ninõ",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Ja morei em Sapopemba. Valha nos Deus!",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Vira outras ainda depois dessa fase 01. N terá fim até a terra ir p o a destruição geral e Jesus vem! 👍🤔",
+            "likes": 0,
+            "score": 0.995,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Triste 😢",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Tem nada haver com política, é sinais do fim dos tempos. Jesus está voltando.",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Meu deus",
+            "likes": 0,
+            "score": 0.994,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "É os sinais da volta de Jesus.",
+            "likes": 2,
+            "score": 0.994,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "😮😮😮😮 misericórdia 😮😮😮😮😮😮😮😮",
+            "likes": 0,
+            "score": 0.994,
+            "date": "2026-09-14",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Um dilúvio não é impossível, só é improvável, não tem agua na superfície para cobrir os continentes (se houvesse eles já estariam submersos, óbvio.) Precisaria de uma super reserva subterrânea como a recentemente descoberta vir a tona e inundar a crosta, basicamente um ato de Deus. Mas pequenos \"dilúvios\" localizados são comuns pelo globo, Rio Grande do Sul é um caso muito triste disso.",
+            "likes": 1,
+            "score": 0.992,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "😮",
+            "likes": 0,
+            "score": 0.974,
+            "date": "2026-09-14",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Eu também! Mas O senhor Jesus me trouxe pra Suzano e me deu casa própria aqui. Louvado seja Deus!",
+            "likes": 1,
+            "score": 0.966,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@airtonfae5140Meu lula??? DEUS nos livre deste SALAFRÁRIO!!! Defendo o meio ambiente mas sou oposição total à Lula. Lula é a maior praga contra o meio ambiente, em seu 3⁰ mandato as queimadas e desmatamentos aumentaram, ele autorizou o funcionamento de várias usinas movidas à diesel e carvão mineral de seus parceiros Joeslei Batista e irmão do grupo J&F. Lula destruiu geral, economia, contas públ",
+            "likes": 0,
+            "score": 0.777,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "e ainda há quem diga que o Dilúvio é impossível ...",
+            "likes": 3,
+            "score": 0.608,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          }
+        ],
+        "ajuda_resgate_doacoes": [
+          {
+            "text": "@mrbrs2 primeiramente, parabéns pela sua discordância respeitosa. Em segundo, não existe metodologia científica que consiga definir a relação florestas\\tempestades tropicais. Essa discussão se dá no campo das possibilidades quando se ignoram os 2 maiores fatores científicos absolutos: OCEANOS e o SOL. Para você ter uma noção do nível de conhecimento empírico que possuímos, descobriu-se uma nova co",
+            "likes": 0,
+            "score": 0.947,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@Eduardo-z5f6rCARA SE VC NÃO SABE O EL NINÕ JÁ APARECEU EM 2001 E 2015, NÃO VEM FALAR QUE ELE É UM FENÔMENO NOVO. E AINDA MAIS EXISTE A LA NINÃ ELA É O OPOSTO DO EL NINÕ OS DOIS SÃO FENÔMENOS QUE RARAMENTE APARECEM.",
+            "likes": 0,
+            "score": 0.887,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@JosemaraRodrigues-e2hÉ algo sério",
+            "likes": 0,
+            "score": 0.829,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
+          }
+        ],
+        "responsabilizacao_governanca": [
+          {
+            "text": "Paulistas, de sairia o dinheiro para reconstruir o Estado? PACTO FEDERATIVO. Vocês ficam com menos de 10% dos seus impostos.",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-09-13",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "O teu Lula em todos seus mandatos tiveram recordes de desmatamento e incêndio florestal.",
+            "likes": 1,
+            "score": 0.993,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "@jtbilseniwisk8913Jesus tem que vir vir, pq o El Nine capeta já está presidindo o bananal faz tempo.",
+            "likes": 1,
+            "score": 0.992,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@airtonfae5140Meu lula??? DEUS nos livre deste SALAFRÁRIO!!! Defendo o meio ambiente mas sou oposição total à Lula. Lula é a maior praga contra o meio ambiente, em seu 3⁰ mandato as queimadas e desmatamentos aumentaram, ele autorizou o funcionamento de várias usinas movidas à diesel e carvão mineral de seus parceiros Joeslei Batista e irmão do grupo J&F. Lula destruiu geral, economia, contas públ",
+            "likes": 0,
+            "score": 0.991,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Políticos e órgãos de fiscalização ambiental!!! Continuem facilitando o desmatamento, até que as questões climáticas atinjam o ponto de não retorno. Talvez neste futuro, que parece estar próximo, vocês poderão viver com Elon Musk em Marte ou na Lua.",
+            "likes": 6,
+            "score": 0.987,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​​@ElsonSilva-gh4duCara,não sei se vc sabe a verdadeira história da humanidade,mas,não se tem dados antigos,q evidenciem isso.Agora,cataclismos \"naturais\",sempre existiram.Agora,seguir narrativas,com nomes bonitinhos que o sistema dá, não dá.Uma vez,q existem patentes,ou seja, PROVAS contundentes,de q grupinhos,criam essas porcarias de propósito com intuito escusos da população \"inocente\".É igual ",
+            "likes": 0,
+            "score": 0.986,
+            "date": "2026-09-13",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​​@luisilva19Você não percebe que ele se referiu ao Flávio Bolsonaro, dando essa resposta estúpida quando perguntado sobre aquecimento global? Foi isso que ele respondeu.",
+            "likes": 0,
+            "score": 0.948,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@Eduardo-z5f6rCARA SE VC NÃO SABE O EL NINÕ JÁ APARECEU EM 2001 E 2015, NÃO VEM FALAR QUE ELE É UM FENÔMENO NOVO. E AINDA MAIS EXISTE A LA NINÃ ELA É O OPOSTO DO EL NINÕ OS DOIS SÃO FENÔMENOS QUE RARAMENTE APARECEM.",
+            "likes": 0,
+            "score": 0.569,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
+          }
+        ],
+        "infraestrutura_ocupacao_risco": [
+          {
+            "text": "Um dilúvio não é impossível, só é improvável, não tem agua na superfície para cobrir os continentes (se houvesse eles já estariam submersos, óbvio.) Precisaria de uma super reserva subterrânea como a recentemente descoberta vir a tona e inundar a crosta, basicamente um ato de Deus. Mas pequenos \"dilúvios\" localizados são comuns pelo globo, Rio Grande do Sul é um caso muito triste disso.",
+            "likes": 1,
+            "score": 0.998,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Eu também! Mas O senhor Jesus me trouxe pra Suzano e me deu casa própria aqui. Louvado seja Deus!",
+            "likes": 1,
+            "score": 0.974,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "E continuem acabando com as reservas florestais e fazendo condomínios fechados ...",
+            "likes": 7,
+            "score": 0.821,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          }
+        ],
+        "clima_chuva_meio_ambiente": [
+          {
+            "text": "​@airtonfae5140Meu lula??? DEUS nos livre deste SALAFRÁRIO!!! Defendo o meio ambiente mas sou oposição total à Lula. Lula é a maior praga contra o meio ambiente, em seu 3⁰ mandato as queimadas e desmatamentos aumentaram, ele autorizou o funcionamento de várias usinas movidas à diesel e carvão mineral de seus parceiros Joeslei Batista e irmão do grupo J&F. Lula destruiu geral, economia, contas públ",
+            "likes": 0,
+            "score": 0.999,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "@DanielFer-j6n o planeta tem suas dinâmicas térmicas consolidadas a milênios, as pessoas ao verem a natureza agir da forma como sempre agiu sobre suas cabeças tentam achar motivos para esse comportamento \"radical\" e chegam a brilhante conclusão que isso é por causa de desmatamento. É MUITO IRÔNICO QUE OS SERES MAIS INTELIGENTES DESSE PLANETA ACREDITEM EM ALGO TÃO ESTÚPIDO.",
+            "likes": 1,
+            "score": 0.998,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "A chuva de granizo foi na cidade de Presidente Epitácio - SP, danificou vários carros.",
+            "likes": 1,
+            "score": 0.997,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Natureza se revoltando",
+            "likes": 1,
+            "score": 0.997,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@ranulfopereira7146 Sobre o funcionamento das tempestades não, não há! Agora se você se refere a narrativa sobre o impacto do desmatamento como causa delas, as evidências estão do lado oposto dessa teoria, ainda temos muito que aprender sobre a dinâmica climática planetária mas os fatos empíricos de quase meio século mostram que a dinâmica entre o sol e os oceanos é que são as máximas",
+            "likes": 1,
+            "score": 0.997,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "@TyrannoPauloRex Apesar de eu concordar contigo em tudo escrito, A relação com o que foi mencionado no comentário é que, o processo no qual mencionou tem se mostrado cada ano que passa mais frequente e intensos por diversos fatores, inclusive a destruição de área verdes, contribui para que o clima do planeta mude de forma acentuada e mais rapida.",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Que estranho essas chuvas nessa época.E durante a madrugada.Chega a irritar.",
+            "likes": 2,
+            "score": 0.995,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Não é desmatamento a terra é dinâmica o SOL, as marés, os ventos... aí voces vem com essa bosta de agenda ambientalista nojenta!",
+            "likes": 4,
+            "score": 0.995,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "@ed.hraustr mesmo que toda a agua dos polos derretessem o resultado não causaria um dilúvio: elevação de +ou- 70m no nível dos oceanos, de 5% a 10% dos continentes seriam submersos. o efeito mais nocivo seria a ruptura das correntes oceânicas absorção massiva de calor pelos oceanos, inverno extremo no norte\\sul , calor mortal nos trópicos aliadas a tempestades avassaladoras devido a rápida evapora",
+            "likes": 0,
+            "score": 0.991,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Votem no. Flávio BOSO RACHADINHA do BB OLSOMASTER que não acredita em aquecimento global e quer destruir o que resta do meio ambiente assim já acaba com tudo de uma vez",
+            "likes": 1,
+            "score": 0.988,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Políticos e órgãos de fiscalização ambiental!!! Continuem facilitando o desmatamento, até que as questões climáticas atinjam o ponto de não retorno. Talvez neste futuro, que parece estar próximo, vocês poderão viver com Elon Musk em Marte ou na Lua.",
+            "likes": 6,
+            "score": 0.984,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "O teu Lula em todos seus mandatos tiveram recordes de desmatamento e incêndio florestal.",
+            "likes": 1,
+            "score": 0.983,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​​@luisilva19Você não percebe que ele se referiu ao Flávio Bolsonaro, dando essa resposta estúpida quando perguntado sobre aquecimento global? Foi isso que ele respondeu.",
+            "likes": 0,
+            "score": 0.981,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Um dilúvio não é impossível, só é improvável, não tem agua na superfície para cobrir os continentes (se houvesse eles já estariam submersos, óbvio.) Precisaria de uma super reserva subterrânea como a recentemente descoberta vir a tona e inundar a crosta, basicamente um ato de Deus. Mas pequenos \"dilúvios\" localizados são comuns pelo globo, Rio Grande do Sul é um caso muito triste disso.",
+            "likes": 1,
+            "score": 0.964,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "@ricardoalho2973 essa afirmação é antiga e leva em consideração a cobertura total dos picos, algo muito extremo, mas, se consideramos que mais de 95% da humanidade reside em platôs, alguns mais altos outros mais baixos, com casos de montanhas médias e baixas, A MEGA RESERVA DE AGUA descoberta recentemente entre as camadas interiores do manto que são capazes de encher + de 3 vezes todos os oceanos ",
+            "likes": 0,
+            "score": 0.613,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​​@ElsonSilva-gh4duCara,não sei se vc sabe a verdadeira história da humanidade,mas,não se tem dados antigos,q evidenciem isso.Agora,cataclismos \"naturais\",sempre existiram.Agora,seguir narrativas,com nomes bonitinhos que o sistema dá, não dá.Uma vez,q existem patentes,ou seja, PROVAS contundentes,de q grupinhos,criam essas porcarias de propósito com intuito escusos da população \"inocente\".É igual ",
+            "likes": 0,
+            "score": 0.528,
+            "date": "2026-09-13",
+            "video_id": "HLfTpQv78C0"
+          }
+        ],
+        "experiencia_pessoal_local": [
+          {
+            "text": "Outra vez? Aqui em SP capital esta sol. 11/9",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Eu também! Mas O senhor Jesus me trouxe pra Suzano e me deu casa própria aqui. Louvado seja Deus!",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
+          }
+        ],
+        "alerta_prevencao_cobranca": [
+          {
+            "text": "@mrbrs2 primeiramente, parabéns pela sua discordância respeitosa. Em segundo, não existe metodologia científica que consiga definir a relação florestas\\tempestades tropicais. Essa discussão se dá no campo das possibilidades quando se ignoram os 2 maiores fatores científicos absolutos: OCEANOS e o SOL. Para você ter uma noção do nível de conhecimento empírico que possuímos, descobriu-se uma nova co",
+            "likes": 0,
+            "score": 0.834,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          }
+        ],
+        "critica_midia_informacao": [
+          {
+            "text": "​​@ElsonSilva-gh4duCara,não sei se vc sabe a verdadeira história da humanidade,mas,não se tem dados antigos,q evidenciem isso.Agora,cataclismos \"naturais\",sempre existiram.Agora,seguir narrativas,com nomes bonitinhos que o sistema dá, não dá.Uma vez,q existem patentes,ou seja, PROVAS contundentes,de q grupinhos,criam essas porcarias de propósito com intuito escusos da população \"inocente\".É igual ",
+            "likes": 0,
+            "score": 1.0,
+            "date": "2026-09-13",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Esse evento em nada tem a haver com a existência de condomínios, isso é o sistema de resfriamento das zonas do globo, quando as massas de ar quente e ar gelado se encontram ocorrem as tempestades que são grandes \"ventiladores\" mixando o ar e resfriando essas áreas. O planeta tem suas próprias sessões de esquenta\\esfria e o ser humano não tem capacidade de intervir de forma significativa nesta dinâ",
+            "likes": 3,
+            "score": 0.998,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Esse evento em nada tem a haver com a existência de condomínios, isso é o sistema de resfriamento das zonas do globo, quando as massas de ar quente e ar gelado se encontram ocorrem as tempestades que são grandes \"ventiladores\" mixando o ar e resfriando essas áreas. O planeta tem suas próprias sessões de esquenta\\esfria e o ser humano não tem capacidade de intervir de forma significativa nesta dinâ",
+            "likes": 1,
+            "score": 0.998,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​​@luisilva19Você não percebe que ele se referiu ao Flávio Bolsonaro, dando essa resposta estúpida quando perguntado sobre aquecimento global? Foi isso que ele respondeu.",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@ElsonSilva-gh4duTanto que nunca existiu,antes né?Passou a existir,e estar com persistência nos últimos anos na mídia. E bem num momento oportuno!O famigerado Reset Mundial?Pq será né?",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Votem no. Flávio BOSO RACHADINHA do BB OLSOMASTER que não acredita em aquecimento global e quer destruir o que resta do meio ambiente assim já acaba com tudo de uma vez",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "não confunda realidade com fábulas mitológicas 😮",
+            "likes": 0,
+            "score": 0.993,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Gente,isso é Geoengenharia solar.Estao manipulando de propósito.Por exemplo,uma cidade onde tem trinta terremotos por ano,ele multiplicam pra trezentos.Existem patentes que provam isso.",
+            "likes": 0,
+            "score": 0.993,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "@ricardoalho2973 essa afirmação é antiga e leva em consideração a cobertura total dos picos, algo muito extremo, mas, se consideramos que mais de 95% da humanidade reside em platôs, alguns mais altos outros mais baixos, com casos de montanhas médias e baixas, A MEGA RESERVA DE AGUA descoberta recentemente entre as camadas interiores do manto que são capazes de encher + de 3 vezes todos os oceanos ",
+            "likes": 0,
+            "score": 0.986,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@TyrannoPauloRexHá controvérsias!!!",
+            "likes": 0,
+            "score": 0.91,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@JosemaraRodrigues-e2hÉ algo sério",
+            "likes": 0,
+            "score": 0.863,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Um dilúvio não é impossível, só é improvável, não tem agua na superfície para cobrir os continentes (se houvesse eles já estariam submersos, óbvio.) Precisaria de uma super reserva subterrânea como a recentemente descoberta vir a tona e inundar a crosta, basicamente um ato de Deus. Mas pequenos \"dilúvios\" localizados são comuns pelo globo, Rio Grande do Sul é um caso muito triste disso.",
+            "likes": 1,
+            "score": 0.759,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "É o Super El Nino começando. Vai piorar. Será um desastre",
+            "likes": 3,
+            "score": 0.504,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          }
+        ]
       },
       "academic_studies": [],
       "observation_status": "active",
       "priority_tier": "moderado",
-      "flag": "alerta",
+      "flag": "acompanhamento",
       "flag_history": [
         {
           "flag": "alerta",
           "at": "2026-09-10T12:24:23Z"
+        },
+        {
+          "flag": "acompanhamento",
+          "at": "2026-09-14T21:16:10Z"
         }
       ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
+      "n_comments_valid": 44,
+      "videos_with_valid_comments": [
+        "HLfTpQv78C0"
+      ],
       "alert_opened_at": "2026-09-10T12:24:23Z",
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
+        "status": "ok",
+        "silence_type": null,
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-13T20:05:42Z",
-      "next_collection_at": "2026-09-14T20:05:42Z"
+      "last_collection_at": "2026-09-14T21:16:10Z",
+      "next_collection_at": "2026-09-15T09:16:10Z"
     },
     {
       "id": "cemaden_sp_2573",
@@ -1142,8 +1628,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-13T20:05:42Z",
-      "next_collection_at": "2026-09-14T20:05:42Z"
+      "last_collection_at": "2026-09-14T21:16:10Z",
+      "next_collection_at": "2026-09-15T21:16:10Z"
     },
     {
       "id": "cemaden_sp_2575",
@@ -1404,68 +1890,68 @@
       "municipio": "São Paulo",
       "uf": "SP",
       "tipo": "Movimentos de Massa",
-      "nivel": "Alto",
+      "nivel": "Moderado",
       "data_alerta": "10/09/2026",
       "codibge": "3550308",
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
-      "n_comments": 101,
+      "n_comments": 104,
       "n_videos": 5,
       "unlabeled": 27,
-      "unlabeled_pct": 26.7,
+      "unlabeled_pct": 26.0,
       "date_range": [
         "2026-09-11",
-        "2026-09-13"
+        "2026-09-14"
       ],
       "distribution": [
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
-          "count": 20,
-          "pct": 19.8
+          "count": 22,
+          "pct": 21.2
         },
         {
           "key": "ajuda_resgate_doacoes",
           "label": "Ajuda / resgate / doações",
           "count": 5,
-          "pct": 5.0
+          "pct": 4.8
         },
         {
           "key": "responsabilizacao_governanca",
           "label": "Responsabilização / governança",
-          "count": 20,
-          "pct": 19.8
+          "count": 21,
+          "pct": 20.2
         },
         {
           "key": "infraestrutura_ocupacao_risco",
           "label": "Infraestrutura / ocupação de risco",
           "count": 12,
-          "pct": 11.9
+          "pct": 11.5
         },
         {
           "key": "clima_chuva_meio_ambiente",
           "label": "Clima / chuva / meio ambiente",
           "count": 20,
-          "pct": 19.8
+          "pct": 19.2
         },
         {
           "key": "experiencia_pessoal_local",
           "label": "Experiência pessoal / local",
           "count": 6,
-          "pct": 5.9
+          "pct": 5.8
         },
         {
           "key": "alerta_prevencao_cobranca",
           "label": "Alerta / prevenção / cobrança",
           "count": 2,
-          "pct": 2.0
+          "pct": 1.9
         },
         {
           "key": "critica_midia_informacao",
           "label": "Crítica à mídia / informação",
           "count": 14,
-          "pct": 13.9
+          "pct": 13.5
         }
       ],
       "timeline": [
@@ -1479,23 +1965,27 @@
         },
         {
           "date": "13/09/26",
-          "count": 23
+          "count": 24
+        },
+        {
+          "date": "14/09/26",
+          "count": 2
         }
       ],
       "videos": [
         {
           "video_id": "HLfTpQv78C0",
-          "n_comments": 61,
+          "n_comments": 64,
           "total_likes": 73,
           "first_comment": "11/09/2026",
           "top_categories": [
             {
-              "label": "Clima/chuva",
+              "label": "Solidariedade",
               "count": 16
             },
             {
-              "label": "Solidariedade",
-              "count": 14
+              "label": "Clima/chuva",
+              "count": 16
             },
             {
               "label": "Crítica mídia",
@@ -1506,7 +1996,7 @@
         {
           "video_id": "0z0nd9loopY",
           "n_comments": 21,
-          "total_likes": 175,
+          "total_likes": 201,
           "first_comment": "13/09/2026",
           "top_categories": [
             {
@@ -1665,10 +2155,24 @@
             "video_id": "HLfTpQv78C0"
           },
           {
+            "text": "😮😮😮😮 misericórdia 😮😮😮😮😮😮😮😮",
+            "likes": 0,
+            "score": 0.994,
+            "date": "2026-09-14",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
             "text": "Um dilúvio não é impossível, só é improvável, não tem agua na superfície para cobrir os continentes (se houvesse eles já estariam submersos, óbvio.) Precisaria de uma super reserva subterrânea como a recentemente descoberta vir a tona e inundar a crosta, basicamente um ato de Deus. Mas pequenos \"dilúvios\" localizados são comuns pelo globo, Rio Grande do Sul é um caso muito triste disso.",
             "likes": 1,
             "score": 0.992,
             "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "😮",
+            "likes": 0,
+            "score": 0.974,
+            "date": "2026-09-14",
             "video_id": "HLfTpQv78C0"
           },
           {
@@ -1698,20 +2202,6 @@
             "score": 0.935,
             "date": "2026-09-12",
             "video_id": "-O41i-QLYnA"
-          },
-          {
-            "text": "​@airtonfae5140Meu lula??? DEUS nos livre deste SALAFRÁRIO!!! Defendo o meio ambiente mas sou oposição total à Lula. Lula é a maior praga contra o meio ambiente, em seu 3⁰ mandato as queimadas e desmatamentos aumentaram, ele autorizou o funcionamento de várias usinas movidas à diesel e carvão mineral de seus parceiros Joeslei Batista e irmão do grupo J&F. Lula destruiu geral, economia, contas públ",
-            "likes": 0,
-            "score": 0.777,
-            "date": "2026-09-11",
-            "video_id": "HLfTpQv78C0"
-          },
-          {
-            "text": "e ainda há quem diga que o Dilúvio é impossível ...",
-            "likes": 3,
-            "score": 0.608,
-            "date": "2026-09-11",
-            "video_id": "HLfTpQv78C0"
           }
         ],
         "ajuda_resgate_doacoes": [
@@ -1775,7 +2265,7 @@
           },
           {
             "text": "O prefeito só multando Comendo o dinheiro e nada de interditar a obra.🤬",
-            "likes": 10,
+            "likes": 14,
             "score": 0.998,
             "date": "2026-09-13",
             "video_id": "0z0nd9loopY"
@@ -1796,7 +2286,7 @@
           },
           {
             "text": "Porque a prefeitura não interditou se tava errado, agora um vendedor de fluta na rua manda um exército de PM tomar a barraca e agredir",
-            "likes": 35,
+            "likes": 41,
             "score": 0.997,
             "date": "2026-09-13",
             "video_id": "0z0nd9loopY"
@@ -1807,6 +2297,13 @@
             "score": 0.997,
             "date": "2026-09-13",
             "video_id": "0z0nd9loopY"
+          },
+          {
+            "text": "Paulistas, de sairia o dinheiro para reconstruir o Estado? PACTO FEDERATIVO. Vocês ficam com menos de 10% dos seus impostos.",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-09-13",
+            "video_id": "HLfTpQv78C0"
           },
           {
             "text": "Lula desabou o Brasil",
@@ -1845,7 +2342,7 @@
           },
           {
             "text": "Tem que investigar e punir os responsáveis principalmente os funcionários público corruptos que estam por trás dessa tragédia",
-            "likes": 18,
+            "likes": 21,
             "score": 0.991,
             "date": "2026-09-13",
             "video_id": "0z0nd9loopY"
@@ -1884,13 +2381,6 @@
             "score": 0.948,
             "date": "2026-09-11",
             "video_id": "HLfTpQv78C0"
-          },
-          {
-            "text": "​@Eduardo-z5f6rCARA SE VC NÃO SABE O EL NINÕ JÁ APARECEU EM 2001 E 2015, NÃO VEM FALAR QUE ELE É UM FENÔMENO NOVO. E AINDA MAIS EXISTE A LA NINÃ ELA É O OPOSTO DO EL NINÕ OS DOIS SÃO FENÔMENOS QUE RARAMENTE APARECEM.",
-            "likes": 0,
-            "score": 0.569,
-            "date": "2026-09-12",
-            "video_id": "HLfTpQv78C0"
           }
         ],
         "infraestrutura_ocupacao_risco": [
@@ -1910,14 +2400,14 @@
           },
           {
             "text": "A construção continuou e depois que estava construido é que a PMSP multou autuou interditou????",
-            "likes": 5,
+            "likes": 6,
             "score": 0.997,
             "date": "2026-09-13",
             "video_id": "0z0nd9loopY"
           },
           {
             "text": "Fazer prédio sem viga. De 12 andar. É um perigo. Eu nunca vi na vida. Construis prédio sem vigar",
-            "likes": 12,
+            "likes": 14,
             "score": 0.997,
             "date": "2026-09-13",
             "video_id": "0z0nd9loopY"
@@ -2059,7 +2549,7 @@
           },
           {
             "text": "Tem que investigar e punir os responsáveis principalmente os funcionários público corruptos que estam por trás dessa tragédia",
-            "likes": 18,
+            "likes": 21,
             "score": 0.989,
             "date": "2026-09-13",
             "video_id": "0z0nd9loopY"
@@ -2300,7 +2790,7 @@
           "at": "2026-09-12T09:54:32Z"
         }
       ],
-      "n_comments_valid": 565,
+      "n_comments_valid": 642,
       "videos_with_valid_comments": [
         "-O41i-QLYnA",
         "0z0nd9loopY",
@@ -2330,8 +2820,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-14T11:24:12Z",
-      "next_collection_at": "2026-09-14T17:24:12Z"
+      "last_collection_at": "2026-09-14T21:16:10Z",
+      "next_collection_at": "2026-09-15T03:16:10Z"
     },
     {
       "id": "cemaden_sp_2578",
@@ -2764,10 +3254,10 @@
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
-      "n_comments": 68,
-      "n_videos": 7,
-      "unlabeled": 10,
-      "unlabeled_pct": 14.7,
+      "n_comments": 122,
+      "n_videos": 8,
+      "unlabeled": 30,
+      "unlabeled_pct": 24.6,
       "date_range": [
         "2026-09-11",
         "2026-09-14"
@@ -2776,75 +3266,95 @@
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
-          "count": 30,
-          "pct": 44.1
+          "count": 40,
+          "pct": 32.8
         },
         {
           "key": "ajuda_resgate_doacoes",
           "label": "Ajuda / resgate / doações",
-          "count": 5,
-          "pct": 7.4
+          "count": 8,
+          "pct": 6.6
         },
         {
           "key": "responsabilizacao_governanca",
           "label": "Responsabilização / governança",
-          "count": 5,
-          "pct": 7.4
+          "count": 12,
+          "pct": 9.8
         },
         {
           "key": "infraestrutura_ocupacao_risco",
           "label": "Infraestrutura / ocupação de risco",
           "count": 5,
-          "pct": 7.4
+          "pct": 4.1
         },
         {
           "key": "clima_chuva_meio_ambiente",
           "label": "Clima / chuva / meio ambiente",
-          "count": 7,
-          "pct": 10.3
+          "count": 23,
+          "pct": 18.9
         },
         {
           "key": "experiencia_pessoal_local",
           "label": "Experiência pessoal / local",
-          "count": 10,
-          "pct": 14.7
+          "count": 12,
+          "pct": 9.8
         },
         {
           "key": "alerta_prevencao_cobranca",
           "label": "Alerta / prevenção / cobrança",
           "count": 5,
-          "pct": 7.4
+          "pct": 4.1
         },
         {
           "key": "critica_midia_informacao",
           "label": "Crítica à mídia / informação",
-          "count": 4,
-          "pct": 5.9
+          "count": 17,
+          "pct": 13.9
         }
       ],
       "timeline": [
         {
           "date": "11/09/26",
-          "count": 13
+          "count": 66
         },
         {
           "date": "12/09/26",
-          "count": 4
+          "count": 11
         },
         {
           "date": "13/09/26",
-          "count": 32
+          "count": 30
         },
         {
           "date": "14/09/26",
-          "count": 19
+          "count": 15
         }
       ],
       "videos": [
         {
+          "video_id": "HLfTpQv78C0",
+          "n_comments": 64,
+          "total_likes": 73,
+          "first_comment": "11/09/2026",
+          "top_categories": [
+            {
+              "label": "Solidariedade",
+              "count": 16
+            },
+            {
+              "label": "Clima/chuva",
+              "count": 16
+            },
+            {
+              "label": "Crítica mídia",
+              "count": 13
+            }
+          ]
+        },
+        {
           "video_id": "dQEK_SfqtHE",
           "n_comments": 21,
-          "total_likes": 26,
+          "total_likes": 31,
           "first_comment": "13/09/2026",
           "top_categories": [
             {
@@ -2884,7 +3394,7 @@
         {
           "video_id": "mC7ak82eySE",
           "n_comments": 18,
-          "total_likes": 14,
+          "total_likes": 15,
           "first_comment": "12/09/2026",
           "top_categories": [
             {
@@ -2902,34 +3412,21 @@
           ]
         },
         {
-          "video_id": "otLDyUV3S8c",
-          "n_comments": 10,
-          "total_likes": 10,
-          "first_comment": "13/09/2026",
-          "top_categories": [
-            {
-              "label": "Solidariedade",
-              "count": 6
-            },
-            {
-              "label": "Infraestrutura",
-              "count": 3
-            },
-            {
-              "label": "Responsabilização",
-              "count": 1
-            }
-          ]
-        },
-        {
           "video_id": "-K41UOyCntQ",
           "n_comments": 1,
-          "total_likes": 0,
+          "total_likes": 1,
           "first_comment": "13/09/2026",
           "top_categories": []
         },
         {
           "video_id": "UTynGCA9c1I",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
+        },
+        {
+          "video_id": "ZEQSgKCVQD4",
           "n_comments": 0,
           "total_likes": 0,
           "first_comment": "",
@@ -2946,11 +3443,53 @@
       "all_samples": {
         "solidariedade_oracao_luto": [
           {
+            "text": "MISERICÓRDIA !!!! SAÚDE !!!! FÉ !!!! LUZ !!!! FORÇAS !!!! GARRA !!!!",
+            "likes": 1,
+            "score": 0.999,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "SUPER NINE KKKKKKKKKKKKKKKKKKK OS CARAS INVENTAM CADA COISA MEU DEUS. Que passe logo esse periodo do El Nine não aguento mais essa tempestade.",
+            "likes": 2,
+            "score": 0.998,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
             "text": "DEUS ESTÁ VOLTANDO GLÓRIA A DEUS",
             "likes": 5,
             "score": 0.997,
             "date": "2026-09-13",
             "video_id": "dQEK_SfqtHE"
+          },
+          {
+            "text": "El nino é um fenômeno que vem acontecendo raramente, e isso é normal, deixa jesus em paz ele não tem nada aver com isso, e também existe a lá ninã que é o oposto do el ninõ",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@luisilva19gente o el nino é um fenômeno que vem acontecendo raramente, e isso é normal, deixa jesus em paz ele não tem nada aver com isso, e também existe a lá ninã que é o oposto do el ninõ",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Ja morei em Sapopemba. Valha nos Deus!",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Vira outras ainda depois dessa fase 01. N terá fim até a terra ir p o a destruição geral e Jesus vem! 👍🤔",
+            "likes": 0,
+            "score": 0.995,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
           },
           {
             "text": "Situação muito triste mesmo. 🙏",
@@ -2965,6 +3504,13 @@
             "score": 0.995,
             "date": "2026-09-14",
             "video_id": "dQEK_SfqtHE"
+          },
+          {
+            "text": "Triste 😢",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
           },
           {
             "text": "Muito obrigado pelas orações, que Deus abençoe a todos nós! 🙏",
@@ -2995,6 +3541,13 @@
             "video_id": "dQEK_SfqtHE"
           },
           {
+            "text": "Tem nada haver com política, é sinais do fim dos tempos. Jesus está voltando.",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
             "text": "Que Jesus proteja vocês 🙏🏻, sou de Cananéia",
             "likes": 4,
             "score": 0.995,
@@ -3009,6 +3562,13 @@
             "video_id": "dQEK_SfqtHE"
           },
           {
+            "text": "Meu deus",
+            "likes": 0,
+            "score": 0.994,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
             "text": "Deus tenha misericórdias",
             "likes": 1,
             "score": 0.994,
@@ -3017,73 +3577,10 @@
           },
           {
             "text": "Que Deus tenha misericórdia 🙏🏿",
-            "likes": 1,
+            "likes": 2,
             "score": 0.994,
             "date": "2026-09-13",
             "video_id": "mC7ak82eySE"
-          },
-          {
-            "text": "​@MorganeMotaq pena",
-            "likes": 0,
-            "score": 0.987,
-            "date": "2026-09-13",
-            "video_id": "JaspoaOI9tQ"
-          },
-          {
-            "text": "😢",
-            "likes": 0,
-            "score": 0.974,
-            "date": "2026-09-14",
-            "video_id": "dQEK_SfqtHE"
-          },
-          {
-            "text": "22❤❤❤❤❤❤",
-            "likes": 1,
-            "score": 0.974,
-            "date": "2026-09-14",
-            "video_id": "dQEK_SfqtHE"
-          },
-          {
-            "text": "😢😢",
-            "likes": 4,
-            "score": 0.974,
-            "date": "2026-09-13",
-            "video_id": "dQEK_SfqtHE"
-          },
-          {
-            "text": "🙏🙏🙏",
-            "likes": 0,
-            "score": 0.974,
-            "date": "2026-09-14",
-            "video_id": "otLDyUV3S8c"
-          },
-          {
-            "text": "🙏🙏",
-            "likes": 0,
-            "score": 0.974,
-            "date": "2026-09-14",
-            "video_id": "otLDyUV3S8c"
-          },
-          {
-            "text": "😮😮😮",
-            "likes": 1,
-            "score": 0.974,
-            "date": "2026-09-14",
-            "video_id": "otLDyUV3S8c"
-          },
-          {
-            "text": "🙏🙏🙏",
-            "likes": 0,
-            "score": 0.974,
-            "date": "2026-09-14",
-            "video_id": "otLDyUV3S8c"
-          },
-          {
-            "text": "😢😢😢😢😢",
-            "likes": 0,
-            "score": 0.974,
-            "date": "2026-09-11",
-            "video_id": "JaspoaOI9tQ"
           }
         ],
         "ajuda_resgate_doacoes": [
@@ -3116,6 +3613,27 @@
             "video_id": "JaspoaOI9tQ"
           },
           {
+            "text": "@mrbrs2 primeiramente, parabéns pela sua discordância respeitosa. Em segundo, não existe metodologia científica que consiga definir a relação florestas\\tempestades tropicais. Essa discussão se dá no campo das possibilidades quando se ignoram os 2 maiores fatores científicos absolutos: OCEANOS e o SOL. Para você ter uma noção do nível de conhecimento empírico que possuímos, descobriu-se uma nova co",
+            "likes": 0,
+            "score": 0.947,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@Eduardo-z5f6rCARA SE VC NÃO SABE O EL NINÕ JÁ APARECEU EM 2001 E 2015, NÃO VEM FALAR QUE ELE É UM FENÔMENO NOVO. E AINDA MAIS EXISTE A LA NINÃ ELA É O OPOSTO DO EL NINÕ OS DOIS SÃO FENÔMENOS QUE RARAMENTE APARECEM.",
+            "likes": 0,
+            "score": 0.887,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@JosemaraRodrigues-e2hÉ algo sério",
+            "likes": 0,
+            "score": 0.829,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
             "text": "@claudiotorres-x9q tá preparado pra volta dele?",
             "likes": 0,
             "score": 0.747,
@@ -3132,22 +3650,64 @@
             "video_id": "dQEK_SfqtHE"
           },
           {
-            "text": "Estão o desgoverno bolsonarista que não precaveu o povo do Paraná, o povo paranaense são bolsonaristas que vai sofrer",
+            "text": "Paulistas, de sairia o dinheiro para reconstruir o Estado? PACTO FEDERATIVO. Vocês ficam com menos de 10% dos seus impostos.",
             "likes": 0,
+            "score": 0.996,
+            "date": "2026-09-13",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "O teu Lula em todos seus mandatos tiveram recordes de desmatamento e incêndio florestal.",
+            "likes": 1,
+            "score": 0.993,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "@jtbilseniwisk8913Jesus tem que vir vir, pq o El Nine capeta já está presidindo o bananal faz tempo.",
+            "likes": 1,
+            "score": 0.992,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@airtonfae5140Meu lula??? DEUS nos livre deste SALAFRÁRIO!!! Defendo o meio ambiente mas sou oposição total à Lula. Lula é a maior praga contra o meio ambiente, em seu 3⁰ mandato as queimadas e desmatamentos aumentaram, ele autorizou o funcionamento de várias usinas movidas à diesel e carvão mineral de seus parceiros Joeslei Batista e irmão do grupo J&F. Lula destruiu geral, economia, contas públ",
+            "likes": 0,
+            "score": 0.991,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Políticos e órgãos de fiscalização ambiental!!! Continuem facilitando o desmatamento, até que as questões climáticas atinjam o ponto de não retorno. Talvez neste futuro, que parece estar próximo, vocês poderão viver com Elon Musk em Marte ou na Lua.",
+            "likes": 6,
+            "score": 0.987,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​​@ElsonSilva-gh4duCara,não sei se vc sabe a verdadeira história da humanidade,mas,não se tem dados antigos,q evidenciem isso.Agora,cataclismos \"naturais\",sempre existiram.Agora,seguir narrativas,com nomes bonitinhos que o sistema dá, não dá.Uma vez,q existem patentes,ou seja, PROVAS contundentes,de q grupinhos,criam essas porcarias de propósito com intuito escusos da população \"inocente\".É igual ",
+            "likes": 0,
+            "score": 0.986,
+            "date": "2026-09-13",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Estão o desgoverno bolsonarista que não precaveu o povo do Paraná, o povo paranaense são bolsonaristas que vai sofrer",
+            "likes": 1,
             "score": 0.978,
             "date": "2026-09-14",
             "video_id": "dQEK_SfqtHE"
           },
           {
-            "text": "Vamos ficar atentos aos alertas das autoridades sobre isso. 🙏",
+            "text": "​​@luisilva19Você não percebe que ele se referiu ao Flávio Bolsonaro, dando essa resposta estúpida quando perguntado sobre aquecimento global? Foi isso que ele respondeu.",
             "likes": 0,
-            "score": 0.95,
-            "date": "2026-09-13",
-            "video_id": "otLDyUV3S8c"
+            "score": 0.948,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
           },
           {
             "text": "Você é lunático, vai viver esperando isso",
-            "likes": 1,
+            "likes": 3,
             "score": 0.762,
             "date": "2026-09-14",
             "video_id": "dQEK_SfqtHE"
@@ -3158,6 +3718,13 @@
             "score": 0.76,
             "date": "2026-09-14",
             "video_id": "dQEK_SfqtHE"
+          },
+          {
+            "text": "​@Eduardo-z5f6rCARA SE VC NÃO SABE O EL NINÕ JÁ APARECEU EM 2001 E 2015, NÃO VEM FALAR QUE ELE É UM FENÔMENO NOVO. E AINDA MAIS EXISTE A LA NINÃ ELA É O OPOSTO DO EL NINÕ OS DOIS SÃO FENÔMENOS QUE RARAMENTE APARECEM.",
+            "likes": 0,
+            "score": 0.569,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
           }
         ],
         "infraestrutura_ocupacao_risco": [
@@ -3169,25 +3736,18 @@
             "video_id": "JaspoaOI9tQ"
           },
           {
-            "text": "Eles vão abrir mais duas barragem",
+            "text": "Um dilúvio não é impossível, só é improvável, não tem agua na superfície para cobrir os continentes (se houvesse eles já estariam submersos, óbvio.) Precisaria de uma super reserva subterrânea como a recentemente descoberta vir a tona e inundar a crosta, basicamente um ato de Deus. Mas pequenos \"dilúvios\" localizados são comuns pelo globo, Rio Grande do Sul é um caso muito triste disso.",
             "likes": 1,
-            "score": 0.997,
-            "date": "2026-09-13",
-            "video_id": "otLDyUV3S8c"
+            "score": 0.998,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
           },
           {
-            "text": "Deve ter muito bagre nesse rio",
+            "text": "Eu também! Mas O senhor Jesus me trouxe pra Suzano e me deu casa própria aqui. Louvado seja Deus!",
             "likes": 1,
-            "score": 0.996,
-            "date": "2026-09-13",
-            "video_id": "otLDyUV3S8c"
-          },
-          {
-            "text": "Com certeza, o rio é muito rico em vida. 🐟",
-            "likes": 0,
-            "score": 0.996,
-            "date": "2026-09-13",
-            "video_id": "otLDyUV3S8c"
+            "score": 0.974,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
           },
           {
             "text": "Vila Mariana está chovendo",
@@ -3195,15 +3755,64 @@
             "score": 0.953,
             "date": "2026-09-12",
             "video_id": "JaspoaOI9tQ"
+          },
+          {
+            "text": "E continuem acabando com as reservas florestais e fazendo condomínios fechados ...",
+            "likes": 7,
+            "score": 0.821,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
           }
         ],
         "clima_chuva_meio_ambiente": [
+          {
+            "text": "​@airtonfae5140Meu lula??? DEUS nos livre deste SALAFRÁRIO!!! Defendo o meio ambiente mas sou oposição total à Lula. Lula é a maior praga contra o meio ambiente, em seu 3⁰ mandato as queimadas e desmatamentos aumentaram, ele autorizou o funcionamento de várias usinas movidas à diesel e carvão mineral de seus parceiros Joeslei Batista e irmão do grupo J&F. Lula destruiu geral, economia, contas públ",
+            "likes": 0,
+            "score": 0.999,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
           {
             "text": "Hoje eu corri da chuva de um lado para outro eu estou exausta de correr da chuva nem taxi nem guarda chuva adiantou eu cheguei em casa tomei banho pos roupa bem quente lanchei e apaguei o sofa com o celular na mao dormi e nem dei conta que dormi ! Muito vento .chuva torta vira o guarda chuva ! Mas o Rio Pinheiros nao estava cheio.e nem as marginais estavam entupidas tudo estava fluindo.bem ! Vamos",
             "likes": 0,
             "score": 0.998,
             "date": "2026-09-11",
             "video_id": "JaspoaOI9tQ"
+          },
+          {
+            "text": "@DanielFer-j6n o planeta tem suas dinâmicas térmicas consolidadas a milênios, as pessoas ao verem a natureza agir da forma como sempre agiu sobre suas cabeças tentam achar motivos para esse comportamento \"radical\" e chegam a brilhante conclusão que isso é por causa de desmatamento. É MUITO IRÔNICO QUE OS SERES MAIS INTELIGENTES DESSE PLANETA ACREDITEM EM ALGO TÃO ESTÚPIDO.",
+            "likes": 1,
+            "score": 0.998,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "A chuva de granizo foi na cidade de Presidente Epitácio - SP, danificou vários carros.",
+            "likes": 1,
+            "score": 0.997,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Natureza se revoltando",
+            "likes": 1,
+            "score": 0.997,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@ranulfopereira7146 Sobre o funcionamento das tempestades não, não há! Agora se você se refere a narrativa sobre o impacto do desmatamento como causa delas, as evidências estão do lado oposto dessa teoria, ainda temos muito que aprender sobre a dinâmica climática planetária mas os fatos empíricos de quase meio século mostram que a dinâmica entre o sol e os oceanos é que são as máximas",
+            "likes": 1,
+            "score": 0.997,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "@TyrannoPauloRex Apesar de eu concordar contigo em tudo escrito, A relação com o que foi mencionado no comentário é que, o processo no qual mencionou tem se mostrado cada ano que passa mais frequente e intensos por diversos fatores, inclusive a destruição de área verdes, contribui para que o clima do planeta mude de forma acentuada e mais rapida.",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
           },
           {
             "text": "O problema e a chuva que já caiu",
@@ -3227,11 +3836,39 @@
             "video_id": "JaspoaOI9tQ"
           },
           {
+            "text": "Que estranho essas chuvas nessa época.E durante a madrugada.Chega a irritar.",
+            "likes": 2,
+            "score": 0.995,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Não é desmatamento a terra é dinâmica o SOL, as marés, os ventos... aí voces vem com essa bosta de agenda ambientalista nojenta!",
+            "likes": 4,
+            "score": 0.995,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
             "text": "Amém senhor Jesus Cristo manda chuva e só eles invadem os rios de novo",
             "likes": 0,
             "score": 0.994,
             "date": "2026-09-13",
             "video_id": "dQEK_SfqtHE"
+          },
+          {
+            "text": "@ed.hraustr mesmo que toda a agua dos polos derretessem o resultado não causaria um dilúvio: elevação de +ou- 70m no nível dos oceanos, de 5% a 10% dos continentes seriam submersos. o efeito mais nocivo seria a ruptura das correntes oceânicas absorção massiva de calor pelos oceanos, inverno extremo no norte\\sul , calor mortal nos trópicos aliadas a tempestades avassaladoras devido a rápida evapora",
+            "likes": 0,
+            "score": 0.991,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Votem no. Flávio BOSO RACHADINHA do BB OLSOMASTER que não acredita em aquecimento global e quer destruir o que resta do meio ambiente assim já acaba com tudo de uma vez",
+            "likes": 1,
+            "score": 0.988,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
           },
           {
             "text": "Ainda bem que a defesa Civil alertou sobre às chuvas, pq achei que estava sol e iria pra praia, obrigado tenente",
@@ -3241,11 +3878,32 @@
             "video_id": "JaspoaOI9tQ"
           },
           {
+            "text": "Políticos e órgãos de fiscalização ambiental!!! Continuem facilitando o desmatamento, até que as questões climáticas atinjam o ponto de não retorno. Talvez neste futuro, que parece estar próximo, vocês poderão viver com Elon Musk em Marte ou na Lua.",
+            "likes": 6,
+            "score": 0.984,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
             "text": "Pois é, a chuva não deu trégua por aqui. 🙏",
             "likes": 0,
             "score": 0.983,
             "date": "2026-09-13",
             "video_id": "mC7ak82eySE"
+          },
+          {
+            "text": "O teu Lula em todos seus mandatos tiveram recordes de desmatamento e incêndio florestal.",
+            "likes": 1,
+            "score": 0.983,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​​@luisilva19Você não percebe que ele se referiu ao Flávio Bolsonaro, dando essa resposta estúpida quando perguntado sobre aquecimento global? Foi isso que ele respondeu.",
+            "likes": 0,
+            "score": 0.981,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
           }
         ],
         "experiencia_pessoal_local": [
@@ -3285,11 +3943,25 @@
             "video_id": "JaspoaOI9tQ"
           },
           {
+            "text": "Outra vez? Aqui em SP capital esta sol. 11/9",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
             "text": "Ainda bem aqui em Sorocaba em jardim aupes não tem muitos lagos e nem praias então aqui e possível chover e trovejar muito mais depois sempre passa glória a deus que toda terra esteja protegido na mão de Deus eu também estou com medo gente",
             "likes": 2,
             "score": 0.996,
             "date": "2026-09-11",
             "video_id": "JaspoaOI9tQ"
+          },
+          {
+            "text": "Eu também! Mas O senhor Jesus me trouxe pra Suzano e me deu casa própria aqui. Louvado seja Deus!",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
           },
           {
             "text": "Realmente, a situação está muito triste por aqui. 🙏",
@@ -3329,13 +4001,6 @@
             "video_id": "JaspoaOI9tQ"
           },
           {
-            "text": "Vamos ficar atentos aos alertas das autoridades sobre isso. 🙏",
-            "likes": 0,
-            "score": 0.998,
-            "date": "2026-09-13",
-            "video_id": "otLDyUV3S8c"
-          },
-          {
             "text": "Aqui em Marília um monte de alerta pra amanhã nem aula vai ter pra receber as pessoas que mora em área dr risco.preocupante que zdeus tenha misericórdia de nós e do Brasil inteiro",
             "likes": 4,
             "score": 0.998,
@@ -3355,9 +4020,44 @@
             "score": 0.986,
             "date": "2026-09-13",
             "video_id": "mC7ak82eySE"
+          },
+          {
+            "text": "@mrbrs2 primeiramente, parabéns pela sua discordância respeitosa. Em segundo, não existe metodologia científica que consiga definir a relação florestas\\tempestades tropicais. Essa discussão se dá no campo das possibilidades quando se ignoram os 2 maiores fatores científicos absolutos: OCEANOS e o SOL. Para você ter uma noção do nível de conhecimento empírico que possuímos, descobriu-se uma nova co",
+            "likes": 0,
+            "score": 0.834,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
           }
         ],
         "critica_midia_informacao": [
+          {
+            "text": "​​@ElsonSilva-gh4duCara,não sei se vc sabe a verdadeira história da humanidade,mas,não se tem dados antigos,q evidenciem isso.Agora,cataclismos \"naturais\",sempre existiram.Agora,seguir narrativas,com nomes bonitinhos que o sistema dá, não dá.Uma vez,q existem patentes,ou seja, PROVAS contundentes,de q grupinhos,criam essas porcarias de propósito com intuito escusos da população \"inocente\".É igual ",
+            "likes": 0,
+            "score": 1.0,
+            "date": "2026-09-13",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Esse evento em nada tem a haver com a existência de condomínios, isso é o sistema de resfriamento das zonas do globo, quando as massas de ar quente e ar gelado se encontram ocorrem as tempestades que são grandes \"ventiladores\" mixando o ar e resfriando essas áreas. O planeta tem suas próprias sessões de esquenta\\esfria e o ser humano não tem capacidade de intervir de forma significativa nesta dinâ",
+            "likes": 1,
+            "score": 0.998,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Esse evento em nada tem a haver com a existência de condomínios, isso é o sistema de resfriamento das zonas do globo, quando as massas de ar quente e ar gelado se encontram ocorrem as tempestades que são grandes \"ventiladores\" mixando o ar e resfriando essas áreas. O planeta tem suas próprias sessões de esquenta\\esfria e o ser humano não tem capacidade de intervir de forma significativa nesta dinâ",
+            "likes": 3,
+            "score": 0.998,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​​@luisilva19Você não percebe que ele se referiu ao Flávio Bolsonaro, dando essa resposta estúpida quando perguntado sobre aquecimento global? Foi isso que ele respondeu.",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
           {
             "text": "Eu não acredito que o SBT tirou uma grande jornalista que é a Dani Brand,para colocar essa mosca morta aí. Toda atrapalhada e patricinha. Eu não assisto mais. O SBT.",
             "likes": 0,
@@ -3366,11 +4066,67 @@
             "video_id": "JaspoaOI9tQ"
           },
           {
+            "text": "​@ElsonSilva-gh4duTanto que nunca existiu,antes né?Passou a existir,e estar com persistência nos últimos anos na mídia. E bem num momento oportuno!O famigerado Reset Mundial?Pq será né?",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Votem no. Flávio BOSO RACHADINHA do BB OLSOMASTER que não acredita em aquecimento global e quer destruir o que resta do meio ambiente assim já acaba com tudo de uma vez",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "não confunda realidade com fábulas mitológicas 😮",
+            "likes": 0,
+            "score": 0.993,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Gente,isso é Geoengenharia solar.Estao manipulando de propósito.Por exemplo,uma cidade onde tem trinta terremotos por ano,ele multiplicam pra trezentos.Existem patentes que provam isso.",
+            "likes": 0,
+            "score": 0.993,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "@ricardoalho2973 essa afirmação é antiga e leva em consideração a cobertura total dos picos, algo muito extremo, mas, se consideramos que mais de 95% da humanidade reside em platôs, alguns mais altos outros mais baixos, com casos de montanhas médias e baixas, A MEGA RESERVA DE AGUA descoberta recentemente entre as camadas interiores do manto que são capazes de encher + de 3 vezes todos os oceanos ",
+            "likes": 0,
+            "score": 0.986,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@TyrannoPauloRexHá controvérsias!!!",
+            "likes": 0,
+            "score": 0.91,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@JosemaraRodrigues-e2hÉ algo sério",
+            "likes": 0,
+            "score": 0.863,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
             "text": "@shabatshalomsoares9971 Qi abaixo de 20 pra dizer isso!",
             "likes": 0,
             "score": 0.828,
             "date": "2026-09-14",
             "video_id": "dQEK_SfqtHE"
+          },
+          {
+            "text": "Um dilúvio não é impossível, só é improvável, não tem agua na superfície para cobrir os continentes (se houvesse eles já estariam submersos, óbvio.) Precisaria de uma super reserva subterrânea como a recentemente descoberta vir a tona e inundar a crosta, basicamente um ato de Deus. Mas pequenos \"dilúvios\" localizados são comuns pelo globo, Rio Grande do Sul é um caso muito triste disso.",
+            "likes": 1,
+            "score": 0.759,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
           },
           {
             "text": "Itś only water.",
@@ -3385,6 +4141,13 @@
             "score": 0.508,
             "date": "2026-09-14",
             "video_id": "dQEK_SfqtHE"
+          },
+          {
+            "text": "É o Super El Nino começando. Vai piorar. Será um desastre",
+            "likes": 3,
+            "score": 0.504,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
           }
         ]
       },
@@ -3406,8 +4169,9 @@
           "at": "2026-09-14T11:24:12Z"
         }
       ],
-      "n_comments_valid": 63,
+      "n_comments_valid": 155,
       "videos_with_valid_comments": [
+        "HLfTpQv78C0",
         "JaspoaOI9tQ",
         "dQEK_SfqtHE",
         "mC7ak82eySE",
@@ -3422,8 +4186,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-14T11:24:12Z",
-      "next_collection_at": "2026-09-14T17:24:12Z"
+      "last_collection_at": "2026-09-14T21:16:10Z",
+      "next_collection_at": "2026-09-15T03:16:10Z"
     },
     {
       "id": "cemaden_sp_2587",
@@ -4995,8 +5759,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-13T20:05:42Z",
-      "next_collection_at": "2026-09-14T20:05:42Z"
+      "last_collection_at": "2026-09-14T21:16:10Z",
+      "next_collection_at": "2026-09-15T21:16:10Z"
     },
     {
       "id": "cemaden_sp_2600",
@@ -5100,8 +5864,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-13T20:05:42Z",
-      "next_collection_at": "2026-09-14T20:05:42Z"
+      "last_collection_at": "2026-09-14T21:16:10Z",
+      "next_collection_at": "2026-09-15T21:16:10Z"
     },
     {
       "id": "cemaden_rj_2601",
@@ -5205,8 +5969,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-13T20:05:42Z",
-      "next_collection_at": "2026-09-14T20:05:42Z"
+      "last_collection_at": "2026-09-14T21:16:10Z",
+      "next_collection_at": "2026-09-15T21:16:10Z"
     },
     {
       "id": "cemaden_sp_2602",
@@ -5310,8 +6074,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-13T20:05:42Z",
-      "next_collection_at": "2026-09-14T20:05:42Z"
+      "last_collection_at": "2026-09-14T21:16:10Z",
+      "next_collection_at": "2026-09-15T21:16:10Z"
     },
     {
       "id": "cemaden_sp_2603",
@@ -5415,8 +6179,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-13T20:05:42Z",
-      "next_collection_at": "2026-09-14T20:05:42Z"
+      "last_collection_at": "2026-09-14T21:16:10Z",
+      "next_collection_at": "2026-09-15T21:16:10Z"
     },
     {
       "id": "cemaden_sp_2604",
@@ -5520,8 +6284,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-13T20:05:42Z",
-      "next_collection_at": "2026-09-14T20:05:42Z"
+      "last_collection_at": "2026-09-14T21:16:10Z",
+      "next_collection_at": "2026-09-15T21:16:10Z"
     },
     {
       "id": "cemaden_sp_2605",
@@ -5625,8 +6389,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-13T20:05:42Z",
-      "next_collection_at": "2026-09-14T20:05:42Z"
+      "last_collection_at": "2026-09-14T21:16:10Z",
+      "next_collection_at": "2026-09-15T21:16:10Z"
     },
     {
       "id": "cemaden_sp_2606",
@@ -5730,8 +6494,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-13T20:05:42Z",
-      "next_collection_at": "2026-09-14T20:05:42Z"
+      "last_collection_at": "2026-09-14T21:16:10Z",
+      "next_collection_at": "2026-09-15T21:16:10Z"
     },
     {
       "id": "cemaden_sc_2607",
@@ -5835,8 +6599,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-13T20:05:42Z",
-      "next_collection_at": "2026-09-14T20:05:42Z"
+      "last_collection_at": "2026-09-14T21:16:10Z",
+      "next_collection_at": "2026-09-15T21:16:10Z"
     },
     {
       "id": "cemaden_sc_2608",
@@ -5940,8 +6704,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-13T20:05:42Z",
-      "next_collection_at": "2026-09-14T20:05:42Z"
+      "last_collection_at": "2026-09-14T21:16:10Z",
+      "next_collection_at": "2026-09-15T21:16:10Z"
     },
     {
       "id": "cemaden_pr_2611",
@@ -6045,8 +6809,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-13T20:05:42Z",
-      "next_collection_at": "2026-09-14T20:05:42Z"
+      "last_collection_at": "2026-09-14T21:16:10Z",
+      "next_collection_at": "2026-09-15T21:16:10Z"
     },
     {
       "id": "cemaden_rj_2614",
@@ -6150,8 +6914,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-13T20:05:42Z",
-      "next_collection_at": "2026-09-14T20:05:42Z"
+      "last_collection_at": "2026-09-14T21:16:10Z",
+      "next_collection_at": "2026-09-15T21:16:10Z"
     },
     {
       "id": "cemaden_pr_2631",
@@ -10321,10 +11085,10 @@
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
-      "n_comments": 269,
+      "n_comments": 240,
       "n_videos": 2,
-      "unlabeled": 38,
-      "unlabeled_pct": 14.1,
+      "unlabeled": 37,
+      "unlabeled_pct": 15.4,
       "date_range": [
         "2026-09-13",
         "2026-09-14"
@@ -10333,80 +11097,80 @@
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
-          "count": 45,
-          "pct": 16.7
+          "count": 50,
+          "pct": 20.8
         },
         {
           "key": "ajuda_resgate_doacoes",
           "label": "Ajuda / resgate / doações",
-          "count": 16,
-          "pct": 5.9
+          "count": 15,
+          "pct": 6.2
         },
         {
           "key": "responsabilizacao_governanca",
           "label": "Responsabilização / governança",
-          "count": 105,
-          "pct": 39.0
+          "count": 80,
+          "pct": 33.3
         },
         {
           "key": "infraestrutura_ocupacao_risco",
           "label": "Infraestrutura / ocupação de risco",
-          "count": 77,
-          "pct": 28.6
+          "count": 64,
+          "pct": 26.7
         },
         {
           "key": "clima_chuva_meio_ambiente",
           "label": "Clima / chuva / meio ambiente",
-          "count": 37,
-          "pct": 13.8
+          "count": 26,
+          "pct": 10.8
         },
         {
           "key": "experiencia_pessoal_local",
           "label": "Experiência pessoal / local",
-          "count": 12,
-          "pct": 4.5
+          "count": 9,
+          "pct": 3.8
         },
         {
           "key": "alerta_prevencao_cobranca",
           "label": "Alerta / prevenção / cobrança",
           "count": 6,
-          "pct": 2.2
+          "pct": 2.5
         },
         {
           "key": "critica_midia_informacao",
           "label": "Crítica à mídia / informação",
-          "count": 21,
-          "pct": 7.8
+          "count": 17,
+          "pct": 7.1
         }
       ],
       "timeline": [
         {
           "date": "13/09/26",
-          "count": 204
+          "count": 144
         },
         {
           "date": "14/09/26",
-          "count": 65
+          "count": 96
         }
       ],
       "videos": [
         {
           "video_id": "qSmKOPIqnv8",
-          "n_comments": 268,
-          "total_likes": 435,
+          "n_comments": 239,
+          "total_likes": 247,
           "first_comment": "13/09/2026",
           "top_categories": [
             {
               "label": "Responsabilização",
-              "count": 105
+              "count": 80
             },
             {
               "label": "Infraestrutura",
-              "count": 77
+              "count": 64
             },
             {
               "label": "Solidariedade",
-              "count": 45
+              "count": 50
             }
           ]
         },
@@ -10430,6 +11194,27 @@
       "all_samples": {
         "solidariedade_oracao_luto": [
           {
+            "text": "NO SUL ESTAMOS DESDE DEZEMBRO ORANDO E CLAMANDO PRA DEUS AMENIZAR POR O QUE ESTA POR VIR EM NOME DE JESUS 🙏",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-09-14",
+            "video_id": "qSmKOPIqnv8"
+          },
+          {
+            "text": "LEVANTE UM CLAMOR A DEUS E SE HUMILHAM DIANTE DE DEUS E VOLTE A PROCURAR JESUS",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-09-14",
+            "video_id": "qSmKOPIqnv8"
+          },
+          {
+            "text": "TEM MISERICÓRDIA DEUS !!!!!!!",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-09-14",
+            "video_id": "qSmKOPIqnv8"
+          },
+          {
             "text": "Isso é tão triste que só quem passa sabe a real dimensão da falta de dignidade de ter que morar em um lugar onde sempre se repetirá a perda de tudo e até mesmo a saúde. Eu tenho certeza de que houvesse outro local seguro para morar essas iriam.",
             "likes": 0,
             "score": 0.996,
@@ -10438,14 +11223,7 @@
           },
           {
             "text": "QUE DESESPERO...SENHOR TENHA PIEDADE...DESSAS PESSOAS 😢",
-            "likes": 2,
-            "score": 0.996,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
-            "text": "Essa situação è muito triste sou do RS ésofrimento demais",
-            "likes": 2,
+            "likes": 3,
             "score": 0.996,
             "date": "2026-09-13",
             "video_id": "qSmKOPIqnv8"
@@ -10480,7 +11258,7 @@
           },
           {
             "text": "​@marciomattos1516Deus não faz isso. Quem faz isso é o ser humano. Jamais isso é de Deus!",
-            "likes": 0,
+            "likes": 1,
             "score": 0.996,
             "date": "2026-09-14",
             "video_id": "qSmKOPIqnv8"
@@ -10501,7 +11279,7 @@
           },
           {
             "text": "Que triste!!!😢😢😢😢",
-            "likes": 1,
+            "likes": 2,
             "score": 0.995,
             "date": "2026-09-13",
             "video_id": "qSmKOPIqnv8"
@@ -10515,14 +11293,14 @@
           },
           {
             "text": "Meu Deus proteja seu povo!😢",
-            "likes": 2,
+            "likes": 3,
             "score": 0.995,
             "date": "2026-09-13",
             "video_id": "qSmKOPIqnv8"
           },
           {
             "text": "Que tristeza, meu Deus!",
-            "likes": 1,
+            "likes": 2,
             "score": 0.995,
             "date": "2026-09-13",
             "video_id": "qSmKOPIqnv8"
@@ -10543,30 +11321,16 @@
           },
           {
             "text": "Misericórdia Deus 😮😮",
-            "likes": 0,
+            "likes": 1,
             "score": 0.994,
             "date": "2026-09-14",
             "video_id": "qSmKOPIqnv8"
           },
           {
             "text": "Meu Deus quanto sofrimento",
-            "likes": 1,
+            "likes": 2,
             "score": 0.994,
             "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
-            "text": "Só Deus para ter misericórdia de todos.",
-            "likes": 0,
-            "score": 0.994,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
-            "text": "Meu Deus misericórdia",
-            "likes": 0,
-            "score": 0.994,
-            "date": "2026-09-14",
             "video_id": "qSmKOPIqnv8"
           }
         ],
@@ -10587,7 +11351,7 @@
           },
           {
             "text": "A pergunta correta é: Porque o estado não ajuda essas pessoas a ter uma casinha em local seguro?!",
-            "likes": 1,
+            "likes": 2,
             "score": 0.996,
             "date": "2026-09-14",
             "video_id": "qSmKOPIqnv8"
@@ -10642,13 +11406,6 @@
             "video_id": "qSmKOPIqnv8"
           },
           {
-            "text": "É CARLOS, COMO VC SABE TUDO ISSO? ONDE VC MORA? VC MORA BEM? E SE SENTE À VONTADE PRA PISAR NOS MAIS NECESSITADOS? VC NAO TEM NENHUMA SOLIDARIEDADE COM AS PESSOAS Q NAO TEM OUTRO LUGAR PRA IR? PORQUE VC NAO VAI LÁ DIZER PRA ESSES MORADORES SAO ELES ESTÚPIDOS? PORQUE NAO VAI LÁ PISAR MAIS AINDA NELES? OLHA, MANO, NO MUNDO TEM MUUUUUUITO MAIS POBRES Q RICOS. VC É RICO? OU POBRE? OU REMEDIADO? SÓ PEL",
-            "likes": 3,
-            "score": 0.957,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
             "text": "VOTA NO HADDAD, ISSO QUE DÁ",
             "likes": 0,
             "score": 0.946,
@@ -10656,17 +11413,17 @@
             "video_id": "qSmKOPIqnv8"
           },
           {
-            "text": "O ALKIMIN ESTAVA NO PODER E O ESQUERDISTA INCRNTIVAM AS INVASÕES, mas Boulos e lula não vivem aí. SAUDADES DO MALUF DAS COHAB E CINGAPURA",
-            "likes": 1,
-            "score": 0.833,
+            "text": "O HADDAD VAI MELHORAR .",
+            "likes": 0,
+            "score": 0.935,
             "date": "2026-09-14",
             "video_id": "qSmKOPIqnv8"
           },
           {
-            "text": "​@LucasSilva-sw3lqnão e meu caso 😂",
-            "likes": 0,
-            "score": 0.67,
-            "date": "2026-09-13",
+            "text": "O ALKIMIN ESTAVA NO PODER E O ESQUERDISTA INCRNTIVAM AS INVASÕES, mas Boulos e lula não vivem aí. SAUDADES DO MALUF DAS COHAB E CINGAPURA",
+            "likes": 1,
+            "score": 0.833,
+            "date": "2026-09-14",
             "video_id": "qSmKOPIqnv8"
           },
           {
@@ -10707,43 +11464,8 @@
             "video_id": "qSmKOPIqnv8"
           },
           {
-            "text": "​@FelipeBorges-s1d, cadê o prefeito e o governador para dar parecer sobre??? 🧐🧐 Não adianta o presidente da República liberar verbas e o governador e prefeito \"desviar\" para outros investimentos... talvez o dinheiro tenha ido para o \"filme Darck Horse\" 😏... enquanto a população ignorar que esses indivíduos dentro da governabilidade do país estão simplesmente roubando dinheiro público na cara dura,",
-            "likes": 1,
-            "score": 0.998,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
-            "text": "​@anastaciamaria6967kkkkkkkk Geraldo Alckmin sempre foi de direita, ficou 12 anos no poder do Estados, é tão de direita q é Vice do Atual presidente, acho q vc nunca ouviu falar do Teatro das tesouras na política né?... Da uma pesquisada, isso é de abrir os olhos, não estou querendo ser chato, é pq somos iludidos pela política a muito tempo.",
-            "likes": 0,
-            "score": 0.998,
-            "date": "2026-09-14",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
-            "text": "O povo Brasileiros tem que ter vergonha na cara e não votar em politicos que são mentirosos covardes que só promete e não fazem nada cos que são mentirosos",
-            "likes": 0,
-            "score": 0.997,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
-            "text": "​@RosileneReis-i6nnunca a culpa é do Lula ne",
-            "likes": 1,
-            "score": 0.997,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
             "text": "OBRIGADO PREFEITO GUSTAVO NUNES",
             "likes": 0,
-            "score": 0.997,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
-            "text": "Sim. Em grande parte, o Jardim Pantanal, na Zona Leste de São Paulo, surgiu de ocupações irregulares de terras, principalmente na várzea do Rio Tietê. A própria Prefeitura informa que o processo de ocupação começou por volta de 1986, numa área ambientalmente frágil de várzea. Estudos históricos apontam que, no fim dos anos 1980, movimentos de moradia e famílias passaram a ocupar diversas áreas ao ",
-            "likes": 5,
             "score": 0.997,
             "date": "2026-09-13",
             "video_id": "qSmKOPIqnv8"
@@ -10770,13 +11492,6 @@
             "video_id": "qSmKOPIqnv8"
           },
           {
-            "text": "E a prefeitura e o governo cobram seus impostos (IPTU), sua luz , sua água . Estado e Município legalizam através de impostos ou não...? Aí aparecem alguns cretinos, ignorantes e discriminam seus moradores.",
-            "likes": 0,
-            "score": 0.997,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
             "text": "​@LucasSilva-sw3lqconcordo você, mas se os políticos não fizeram nada até agora , acho que vai continuar como está...e infelizmente ou sai ou vão continuar reclamando.",
             "likes": 0,
             "score": 0.997,
@@ -10785,13 +11500,6 @@
           },
           {
             "text": "Em São Paulo, e cidades vizinhas, tem invasão de propriedades privadas ou do estado, diariamente, geralmente incentivadas pela turminha do Psol !!",
-            "likes": 1,
-            "score": 0.997,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
-            "text": "Kkkkkkkkkk se esse problema fosse só desse governo ​e não acontecesse em outros, mas acredito que seja mais uma piada do q falta de raciocínio @anastaciamaria6967",
             "likes": 1,
             "score": 0.997,
             "date": "2026-09-13",
@@ -10812,17 +11520,66 @@
             "video_id": "qSmKOPIqnv8"
           },
           {
-            "text": "Vergonha, políticos gastando milhões em campanha e vendo pessoas sem ter onde viver",
+            "text": "Prefeitura e estado de São Paulo!? Um caos!😢😮",
+            "likes": 15,
+            "score": 0.997,
+            "date": "2026-09-13",
+            "video_id": "qSmKOPIqnv8"
+          },
+          {
+            "text": "Morada digna é a que está sendo criada no governo Tarcísio junto ao prefeito de São Paulo",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-09-14",
+            "video_id": "qSmKOPIqnv8"
+          },
+          {
+            "text": "Então na sua opinião p resolver problemas com quase 30 anos é só colocar um 🦑 cachaceiro como governador e centenas como prefeito.......vai q cola. O golpe esta ai cai quem quer.",
+            "likes": 4,
+            "score": 0.997,
+            "date": "2026-09-13",
+            "video_id": "qSmKOPIqnv8"
+          },
+          {
+            "text": "Claro....não temos prefeito e nem governador",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-09-14",
+            "video_id": "qSmKOPIqnv8"
+          },
+          {
+            "text": "O povo não aguenta mais, mas querem o governo da desgraça por mais 4 anos. Gostam de sofrer!! Parem de reclamar e de chorar e não negociem seu voto se quiserem um Brasil diferente tem que ser alguém que olha para vocês como ser humano. O governo L não tem compromisso com vocês. . 🚩👎 🇧🇷💚💛22",
             "likes": 0,
             "score": 0.997,
             "date": "2026-09-13",
             "video_id": "qSmKOPIqnv8"
           },
           {
-            "text": "Prefeitura e estado de São Paulo!? Um caos!😢😮",
-            "likes": 14,
+            "text": "Sempre a mesma coisa a mais de cinquenta anos mesmo problema não fazem nada e uma vergonha o desespero das pessoas vendo todas as suas coisas destruídas os governantes desse país não fazem seu trabalho não se importam com a população e asqueroso",
+            "likes": 0,
             "score": 0.997,
+            "date": "2026-09-14",
+            "video_id": "qSmKOPIqnv8"
+          },
+          {
+            "text": "Kd a prefeitura hein? Kd?",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-09-14",
+            "video_id": "qSmKOPIqnv8"
+          },
+          {
+            "text": "Então Bolsonaristas de São Paulo, falam que mandam dinheiro pra outros lugares mas não sabem quanto o governo federal gasta pra manter e reestruturar lugares como esse que são muitos.",
+            "likes": 1,
+            "score": 0.996,
             "date": "2026-09-13",
+            "video_id": "qSmKOPIqnv8"
+          },
+          {
+            "text": "😢 nossa País indo de mau a pior o povo sofre e os políticos tudo com salários de 30 k pra cima",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-09-14",
             "video_id": "qSmKOPIqnv8"
           }
         ],
@@ -10849,6 +11606,13 @@
             "video_id": "qSmKOPIqnv8"
           },
           {
+            "text": "Infelizmente esse lugar era várias lagoas do Rio Tietê. Fizeram um aterro e loteamentos. Infelizmente é a Várzea do Rio",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-09-14",
+            "video_id": "qSmKOPIqnv8"
+          },
+          {
             "text": "O povo invadiu um pantano à beira de um rio enorme e esperam o quê no perído das chuvas intensas? O Estado é um lixo que sabe mas não se move pra nada o dinheiro que roubam dá e sobra para comprar áreas e construir prédios para moradia popular",
             "likes": 0,
             "score": 0.998,
@@ -10863,17 +11627,17 @@
             "video_id": "qSmKOPIqnv8"
           },
           {
-            "text": "Sim. Em grande parte, o Jardim Pantanal, na Zona Leste de São Paulo, surgiu de ocupações irregulares de terras, principalmente na várzea do Rio Tietê. A própria Prefeitura informa que o processo de ocupação começou por volta de 1986, numa área ambientalmente frágil de várzea. Estudos históricos apontam que, no fim dos anos 1980, movimentos de moradia e famílias passaram a ocupar diversas áreas ao ",
-            "likes": 5,
-            "score": 0.998,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
             "text": "Pior é que tem viu , o Brasil tem mais de 8 mil km de extensão territorial e terra pra não acabar mais, o que acontece é que a maioria do povo brasileiro gosta de morar amontoado igual bicho de monte e um cheirando o cu do outro, povo prefere pagar 200 mil numa laje de favela em São Paulo do que comprar uma boa casa em lugar bom em cidades menores do interior.",
             "likes": 0,
             "score": 0.997,
             "date": "2026-09-13",
+            "video_id": "qSmKOPIqnv8"
+          },
+          {
+            "text": "A imprensa faz sensasionalismo parecem analfabetos, constrói em lugar errado e depois fica reclamando. Acho melhor tirar o Rio desse lugar. Casas??? Tem escrituras dos imóveis???? Eu trabalhei para comprar minha casa.",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-09-14",
             "video_id": "qSmKOPIqnv8"
           },
           {
@@ -10895,13 +11659,6 @@
             "likes": 0,
             "score": 0.997,
             "date": "2026-09-14",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
-            "text": "Esse ponto da cidade é a várzea do Rio , isso era um pântano..Era uma extensão que ficava a maior parte do ano inundada , aí o povo chega e quer mudar..Aí era pra ser um parque ecológico e não ter casa alguma , essa área não tem solução , o relevo não permite ..",
-            "likes": 0,
-            "score": 0.997,
-            "date": "2026-09-13",
             "video_id": "qSmKOPIqnv8"
           },
           {
@@ -10947,17 +11704,17 @@
             "video_id": "qSmKOPIqnv8"
           },
           {
-            "text": "Porque deixaram construir num lugar desses 🤔🤔",
+            "text": "Tem que derrubar a favela e fazer prédios com moradias do 1° andar para cima ! Mas pergunta pra eles se eles querem ? Tem que proteger os criminosos que moram aí no meio dos trabalhadores pirando pânico !",
             "likes": 0,
             "score": 0.997,
             "date": "2026-09-14",
             "video_id": "qSmKOPIqnv8"
           },
           {
-            "text": "A China entulha milhões de pessoas em conjuntos classe pobre a beira das represas, e 5% vivem no luxo, no Brasil milhões em favelas.",
+            "text": "Porque deixaram construir num lugar desses 🤔🤔",
             "likes": 0,
             "score": 0.997,
-            "date": "2026-09-13",
+            "date": "2026-09-14",
             "video_id": "qSmKOPIqnv8"
           },
           {
@@ -10970,10 +11727,10 @@
         ],
         "clima_chuva_meio_ambiente": [
           {
-            "text": "​@myk.f.cvc acha que é simples! O presidente não governa sozinho! Mas sua ministra de meio ambiente Marina Silva, foi responsável pela diminuição do desmatamento! Questões sociais não se resolvem com estalar de dedos! Ainda mais pq os estados tem governadores, as cidades tem prefeitos! Mas já percebeu que quando tem uma enchente e só corpo de pobre boiando? A elite não se importa! E votam cada vez",
-            "likes": 1,
+            "text": "Por que as pessoas não tentam sair desses lugares? Perdeu tudo \"de novo\"... se nada mudou na situação desde a última enchente, não havia garantia alguma ee que não haveria mais enchentes.",
+            "likes": 0,
             "score": 0.999,
-            "date": "2026-09-13",
+            "date": "2026-09-14",
             "video_id": "qSmKOPIqnv8"
           },
           {
@@ -10981,13 +11738,6 @@
             "likes": 0,
             "score": 0.997,
             "date": "2026-09-14",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
-            "text": "O poder público se deixar vende tudo! Madeira, minérios! Não lembram do Sales?!! E foi ministro do meio ambiente!",
-            "likes": 1,
-            "score": 0.997,
-            "date": "2026-09-13",
             "video_id": "qSmKOPIqnv8"
           },
           {
@@ -11019,13 +11769,6 @@
             "video_id": "qSmKOPIqnv8"
           },
           {
-            "text": "Ali é uma área de várzea e de proteção ambiental, naturalmente é um lugar q alaga, mas o povo invadiu na época de seca, aí quando chove acaba acontecendo isso, não é problema próprio do governo, as pessoas q invadiram um lugar inadequado para moradia, aí para o governo fazer alguma coisa tem q retirar todas as pessoas de lá para outro lugar",
-            "likes": 3,
-            "score": 0.996,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
             "text": "A ta,só em lugares que não pode construir acontece isso né,as ruas do centro tudo alagada é culpa de quem?Aa já sei,vc vai falar que é da chuva.Fofa,governo e prefeito de São Paulo não se preocupam com Poha nenhuma,um prédio caiu e matou umas 5 pessoas..sabe porque?Porque ninguém fiscaliza Poha nenhuma,só querem dinheiro.",
             "likes": 0,
             "score": 0.996,
@@ -11035,13 +11778,6 @@
           {
             "text": "Sai de São Paulo em 99 e já ouvia falar de alagamento nesse bairro e hoje é as mesmas pessoas reclamando do mesmo problema e não sai, não dá pra entender....",
             "likes": 0,
-            "score": 0.995,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
-            "text": "​@alinecostta1o seu presidente nao governa sozinho certo ! O bosonaro governava sozinho ? Eu moro perto dessas areas atigida , invadirao brejos e pantanal isso alaga amais de 50 anos as ves culpamos os policos injustamente",
-            "likes": 1,
             "score": 0.995,
             "date": "2026-09-13",
             "video_id": "qSmKOPIqnv8"
@@ -11061,24 +11797,10 @@
             "video_id": "qSmKOPIqnv8"
           },
           {
-            "text": "​@ribeiromariah30, governo de São Paulo está fazendo a recuperação dos rios Tiete e Pinheiros. Procure no Google e vai ter confirmação do que estou dizendo. Chuvas foram fortes e as águas dos corregos e ruas com bueiros cheios de lixo, acabam indo para os rios. Somos um povo mal educado e jogamos tudo em corregos e lixos domésticos que depositamos perto de bueiros que acabam causando inundações.",
+            "text": "Não tem mais espaço para à água da chuva passar gente, muita construção",
             "likes": 0,
-            "score": 0.995,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
-            "text": "A fúria da natureza milhões jogados na urgia eo povo sofre com essa situação acorda povo",
-            "likes": 0,
-            "score": 0.995,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
-            "text": "Sempre souberam que ali é local de alagamento. E mesmo assim invadiram. Agora a culpa é da sociedade. Me poupe.",
-            "likes": 12,
-            "score": 0.994,
-            "date": "2026-09-13",
+            "score": 0.992,
+            "date": "2026-09-14",
             "video_id": "qSmKOPIqnv8"
           },
           {
@@ -11096,35 +11818,56 @@
             "video_id": "qSmKOPIqnv8"
           },
           {
-            "text": "Invadiram sabendo que alagava aí sempre foi uma extensão do Rio Tietê",
-            "likes": 7,
-            "score": 0.99,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
             "text": "O povo invadiu um pantano à beira de um rio enorme e esperam o quê no perído das chuvas intensas? O Estado é um lixo que sabe mas não se move pra nada o dinheiro que roubam dá e sobra para comprar áreas e construir prédios para moradia popular",
             "likes": 0,
             "score": 0.989,
             "date": "2026-09-13",
             "video_id": "qSmKOPIqnv8"
+          },
+          {
+            "text": "Com todo esse sofrimento, essas pessoas ainda beijam os pés da ex prefeita Erundina, ela quem invadiu juntamente com a população e construiram, até hoje ela fala que sente orgulho de ter dado moradia pra essas pessoas...... Minha tia morava aí até o ano passado, conseguiu o apartamento do governo e saiu fora daí , a coitada , em todos os alagamentos que dava era uma calamidade, dormia com as filha",
+            "likes": 0,
+            "score": 0.989,
+            "date": "2026-09-14",
+            "video_id": "qSmKOPIqnv8"
+          },
+          {
+            "text": "Construiram na várzea do rio que normalmente enche de água em época de chuvas.",
+            "likes": 0,
+            "score": 0.987,
+            "date": "2026-09-13",
+            "video_id": "qSmKOPIqnv8"
+          },
+          {
+            "text": "Infelizmente construção em leite de Rio,a natureza cobra",
+            "likes": 0,
+            "score": 0.986,
+            "date": "2026-09-14",
+            "video_id": "qSmKOPIqnv8"
+          },
+          {
+            "text": "Foi construídas casas no lugar da água. Caminho da água, sempre sera inundado.",
+            "likes": 12,
+            "score": 0.986,
+            "date": "2026-09-13",
+            "video_id": "qSmKOPIqnv8"
+          },
+          {
+            "text": "Mas depende desses afetado por essas enchentes nas áreas de riscos não votem mais em candidatos que estão à anos no poder e permitem moradias nessas areas de risco !!!!!",
+            "likes": 0,
+            "score": 0.985,
+            "date": "2026-09-14",
+            "video_id": "qSmKOPIqnv8"
+          },
+          {
+            "text": "Como alega Flavio Bolsonaro: \"Não há crise climática ou \"aquecimento global\", isso é invenção da Esquerda..\". Propõe o \"saneamento básico\" como o corretor desses \"eventos atribuídos à ações humanas\"... Pena que não tenha somado a esse discurso, outro dito por seu pai, sobre a indiscutível necessidade de ''fazer cocô, dia sim, dia não\" !!",
+            "likes": 1,
+            "score": 0.983,
+            "date": "2026-09-13",
+            "video_id": "qSmKOPIqnv8"
           }
         ],
         "experiencia_pessoal_local": [
-          {
-            "text": "É CARLOS, COMO VC SABE TUDO ISSO? ONDE VC MORA? VC MORA BEM? E SE SENTE À VONTADE PRA PISAR NOS MAIS NECESSITADOS? VC NAO TEM NENHUMA SOLIDARIEDADE COM AS PESSOAS Q NAO TEM OUTRO LUGAR PRA IR? PORQUE VC NAO VAI LÁ DIZER PRA ESSES MORADORES SAO ELES ESTÚPIDOS? PORQUE NAO VAI LÁ PISAR MAIS AINDA NELES? OLHA, MANO, NO MUNDO TEM MUUUUUUITO MAIS POBRES Q RICOS. VC É RICO? OU POBRE? OU REMEDIADO? SÓ PEL",
-            "likes": 3,
-            "score": 0.999,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
-            "text": "​@carlosmiranda7564vai saber né, na internet é todo mundo rico. Aqui no meu bairro tem um monte que se diz empressrio de direita e recebem bolsa familia, tem ate a dona Rose que em 2000 tinha um bar e agora vende espetinho na frente da casa e acha que é milionaria, filho preso por trafico, filha de 15 anos grávidas do irmão do pastor de 21. Na internet é facil viver uma vida que nunca existiu.",
-            "likes": 0,
-            "score": 0.998,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
           {
             "text": "Gente com o nível de chuvas que anda acontecendo, não tem como isso não acontecer até aqui no Japão pais de primeiro mundo está acontecendo, detalhe aqui é só a água mesmo, no Brasil é com muitos lixos pq a população colabora para isso.",
             "likes": 0,
@@ -11161,10 +11904,10 @@
             "video_id": "qSmKOPIqnv8"
           },
           {
-            "text": "​@cristiangoncalves4344 O Governo de SP Nunca foi de esquerda, então, sim, o que a Direita e Extrema direita fazem aqui parece piada mesmo.",
-            "likes": 1,
-            "score": 0.995,
-            "date": "2026-09-13",
+            "text": "Precisa tirar esse bairro do napa, sem choro nem vela, tem de tirar, fazer um minha casa minha vida, levar eles pra lá e demolir td, isso aí é o rio e ele tá cobrando.",
+            "likes": 0,
+            "score": 0.994,
+            "date": "2026-09-14",
             "video_id": "qSmKOPIqnv8"
           },
           {
@@ -11175,10 +11918,10 @@
             "video_id": "qSmKOPIqnv8"
           },
           {
-            "text": "​@alinecostta1o seu presidente nao governa sozinho certo ! O bosonaro governava sozinho ? Eu moro perto dessas areas atigida , invadirao brejos e pantanal isso alaga amais de 50 anos as ves culpamos os policos injustamente",
-            "likes": 1,
-            "score": 0.992,
-            "date": "2026-09-13",
+            "text": "A imprensa faz sensasionalismo parecem analfabetos, constrói em lugar errado e depois fica reclamando. Acho melhor tirar o Rio desse lugar. Casas??? Tem escrituras dos imóveis???? Eu trabalhei para comprar minha casa.",
+            "likes": 0,
+            "score": 0.989,
+            "date": "2026-09-14",
             "video_id": "qSmKOPIqnv8"
           },
           {
@@ -11187,28 +11930,21 @@
             "score": 0.984,
             "date": "2026-09-13",
             "video_id": "qSmKOPIqnv8"
-          },
-          {
-            "text": "​@LucasSilva-sw3lqnão e meu caso 😂",
-            "likes": 0,
-            "score": 0.647,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
           }
         ],
         "alerta_prevencao_cobranca": [
           {
-            "text": "Aí não é lugar de ter moradias ,fora o risco das doenças com as enchentes",
-            "likes": 1,
-            "score": 0.998,
-            "date": "2026-09-13",
+            "text": "Mas depende desses afetado por essas enchentes nas áreas de riscos não votem mais em candidatos que estão à anos no poder e permitem moradias nessas areas de risco !!!!!",
+            "likes": 0,
+            "score": 0.999,
+            "date": "2026-09-14",
             "video_id": "qSmKOPIqnv8"
           },
           {
-            "text": "Sim. Em grande parte, o Jardim Pantanal, na Zona Leste de São Paulo, surgiu de ocupações irregulares de terras, principalmente na várzea do Rio Tietê. A própria Prefeitura informa que o processo de ocupação começou por volta de 1986, numa área ambientalmente frágil de várzea. Estudos históricos apontam que, no fim dos anos 1980, movimentos de moradia e famílias passaram a ocupar diversas áreas ao ",
-            "likes": 5,
+            "text": "Ainda pior é correr risco de pegar leptospirose da urina dos ratos !",
+            "likes": 0,
             "score": 0.998,
-            "date": "2026-09-13",
+            "date": "2026-09-14",
             "video_id": "qSmKOPIqnv8"
           },
           {
@@ -11227,7 +11963,7 @@
           },
           {
             "text": "O Bairro inteiro é uma INVASÃO na lateral de um rio. Sempre foi assim, mas continuam construindo, ou seja, assumiram o risco.",
-            "likes": 4,
+            "likes": 5,
             "score": 0.997,
             "date": "2026-09-13",
             "video_id": "qSmKOPIqnv8"
@@ -11243,7 +11979,7 @@
         "critica_midia_informacao": [
           {
             "text": "Verdade",
-            "likes": 1,
+            "likes": 2,
             "score": 0.998,
             "date": "2026-09-13",
             "video_id": "qSmKOPIqnv8"
@@ -11270,6 +12006,13 @@
             "video_id": "qSmKOPIqnv8"
           },
           {
+            "text": "Orem ,ou sigam a Bíblia Sagrada, esqueçam as mídias televisivas, eles deixaram de mostrar a verdade do que acontece com a sociedade. Há uma quadrilha muito grande na política, esqueçam Lula vs Flávio, congresso, deputados, vereadores, agora todos farão tudo . Povo cuidado.",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-09-14",
+            "video_id": "qSmKOPIqnv8"
+          },
+          {
             "text": "povo continua sendo cabo eleitoral do bêbado descondenado, continuam sendo que governo sonha , na verdade é uma área de invasão que o município não fez intervenção .",
             "likes": 0,
             "score": 0.997,
@@ -11277,29 +12020,8 @@
             "video_id": "qSmKOPIqnv8"
           },
           {
-            "text": "😢o pior é que é verdade",
-            "likes": 1,
-            "score": 0.997,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
             "text": "Como alega Flavio Bolsonaro: \"Não há crise climática ou \"aquecimento global\", isso é invenção da Esquerda..\". Propõe o \"saneamento básico\" como o corretor desses \"eventos atribuídos à ações humanas\"... Pena que não tenha somado a esse discurso, outro dito por seu pai, sobre a indiscutível necessidade de ''fazer cocô, dia sim, dia não\" !!",
             "likes": 1,
-            "score": 0.997,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
-            "text": "Achei que o Lule tinha acabado com os pobres. Na verdade aumentou a miséria, os que ficaram ricos pertecem à família 🦑.",
-            "likes": 1,
-            "score": 0.997,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
-            "text": "​@edm851falou a verdade dito isso 99 porcento das pessoas que vivem aí são de outros estados é a mesma porcentagem das famílias que vivem nas favelas é só pesquisar",
-            "likes": 0,
             "score": 0.997,
             "date": "2026-09-13",
             "video_id": "qSmKOPIqnv8"
@@ -11313,7 +12035,7 @@
           },
           {
             "text": "Esse lugar é, na verdade, extensão do rio!",
-            "likes": 28,
+            "likes": 33,
             "score": 0.981,
             "date": "2026-09-13",
             "video_id": "qSmKOPIqnv8"
@@ -11322,13 +12044,6 @@
             "text": "Qual a novidade , Nunes e Tarcísio sabe disso e continua",
             "likes": 1,
             "score": 0.947,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
-            "text": "​​@carlosmiranda7564fala pobre de direita tambem, é o que mais tem .",
-            "likes": 0,
-            "score": 0.904,
             "date": "2026-09-13",
             "video_id": "qSmKOPIqnv8"
           },
@@ -11361,13 +12076,6 @@
             "video_id": "qSmKOPIqnv8"
           },
           {
-            "text": "A Resposta do Tarcínico: \" Tô nem aí \". Nunes : Aã, me esqueçam.",
-            "likes": 2,
-            "score": 0.718,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
             "text": "O nome já diz, JD. PANTANAL!! PQ SERA NÉ",
             "likes": 1,
             "score": 0.691,
@@ -11375,9 +12083,16 @@
             "video_id": "qSmKOPIqnv8"
           },
           {
-            "text": "É CARLOS, COMO VC SABE TUDO ISSO? ONDE VC MORA? VC MORA BEM? E SE SENTE À VONTADE PRA PISAR NOS MAIS NECESSITADOS? VC NAO TEM NENHUMA SOLIDARIEDADE COM AS PESSOAS Q NAO TEM OUTRO LUGAR PRA IR? PORQUE VC NAO VAI LÁ DIZER PRA ESSES MORADORES SAO ELES ESTÚPIDOS? PORQUE NAO VAI LÁ PISAR MAIS AINDA NELES? OLHA, MANO, NO MUNDO TEM MUUUUUUITO MAIS POBRES Q RICOS. VC É RICO? OU POBRE? OU REMEDIADO? SÓ PEL",
-            "likes": 3,
-            "score": 0.63,
+            "text": "@luizfernandocamposmelofiga6103 É só tirar para um lugar melhor que ninguém reclama... ninguém mora nessas condições porque gosta.",
+            "likes": 0,
+            "score": 0.67,
+            "date": "2026-09-14",
+            "video_id": "qSmKOPIqnv8"
+          },
+          {
+            "text": "Calma moreno Tarcísio tem 4 anos apenas pra desfazer décadas e décadas de descaso e falsas promessas dos tucanos vai ser um desafio imenso",
+            "likes": 0,
+            "score": 0.504,
             "date": "2026-09-13",
             "video_id": "qSmKOPIqnv8"
           }
@@ -11401,7 +12116,7 @@
           "at": "2026-09-14T11:24:12Z"
         }
       ],
-      "n_comments_valid": 273,
+      "n_comments_valid": 476,
       "videos_with_valid_comments": [
         "KwnzpgMLHCk",
         "qSmKOPIqnv8"
@@ -11415,8 +12130,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-14T11:24:12Z",
-      "next_collection_at": "2026-09-14T17:24:12Z"
+      "last_collection_at": "2026-09-14T21:16:10Z",
+      "next_collection_at": "2026-09-15T03:16:10Z"
     },
     {
       "id": "cemaden_sc_2720",
@@ -11520,8 +12235,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-13T20:05:42Z",
-      "next_collection_at": "2026-09-14T20:05:42Z"
+      "last_collection_at": "2026-09-14T21:16:10Z",
+      "next_collection_at": "2026-09-15T21:16:10Z"
     },
     {
       "id": "cemaden_sc_2721",
@@ -11625,8 +12340,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-13T20:05:42Z",
-      "next_collection_at": "2026-09-14T20:05:42Z"
+      "last_collection_at": "2026-09-14T21:16:10Z",
+      "next_collection_at": "2026-09-15T21:16:10Z"
     },
     {
       "id": "cemaden_sp_2717",
@@ -11736,8 +12451,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-13T20:05:42Z",
-      "next_collection_at": "2026-09-14T20:05:42Z"
+      "last_collection_at": "2026-09-14T21:16:10Z",
+      "next_collection_at": "2026-09-15T21:16:10Z"
     },
     {
       "id": "cemaden_sp_2718",
@@ -11847,8 +12562,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-13T20:05:42Z",
-      "next_collection_at": "2026-09-14T20:05:42Z"
+      "last_collection_at": "2026-09-14T21:16:10Z",
+      "next_collection_at": "2026-09-15T21:16:10Z"
     },
     {
       "id": "cemaden_sc_2719",
@@ -11952,8 +12667,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-13T20:05:42Z",
-      "next_collection_at": "2026-09-14T20:05:42Z"
+      "last_collection_at": "2026-09-14T21:16:10Z",
+      "next_collection_at": "2026-09-15T21:16:10Z"
     },
     {
       "id": "cemaden_pr_2722",
@@ -12057,8 +12772,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-13T20:05:42Z",
-      "next_collection_at": "2026-09-14T20:05:42Z"
+      "last_collection_at": "2026-09-14T21:16:10Z",
+      "next_collection_at": "2026-09-15T21:16:10Z"
     },
     {
       "id": "cemaden_sp_2724",
@@ -12479,6 +13194,111 @@
       },
       "last_collection_at": "2026-09-14T02:44:08Z",
       "next_collection_at": "2026-09-15T02:44:08Z"
+    },
+    {
+      "id": "cemaden_sp_2729",
+      "municipio": "Campo Limpo Paulista",
+      "uf": "SP",
+      "tipo": "Movimentos de Massa",
+      "nivel": "Moderado",
+      "data_alerta": "14/09/2026",
+      "codibge": "3509601",
+      "lat": null,
+      "lon": null,
+      "regime": "prospective_live",
+      "n_comments": 0,
+      "n_videos": 0,
+      "unlabeled": 0,
+      "unlabeled_pct": 0.0,
+      "date_range": [
+        "",
+        ""
+      ],
+      "distribution": [
+        {
+          "key": "solidariedade_oracao_luto",
+          "label": "Solidariedade / oração / luto",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "ajuda_resgate_doacoes",
+          "label": "Ajuda / resgate / doações",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "responsabilizacao_governanca",
+          "label": "Responsabilização / governança",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "infraestrutura_ocupacao_risco",
+          "label": "Infraestrutura / ocupação de risco",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "clima_chuva_meio_ambiente",
+          "label": "Clima / chuva / meio ambiente",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "experiencia_pessoal_local",
+          "label": "Experiência pessoal / local",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "alerta_prevencao_cobranca",
+          "label": "Alerta / prevenção / cobrança",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "critica_midia_informacao",
+          "label": "Crítica à mídia / informação",
+          "count": 0,
+          "pct": 0.0
+        }
+      ],
+      "timeline": [],
+      "videos": [],
+      "all_samples": {
+        "solidariedade_oracao_luto": [],
+        "ajuda_resgate_doacoes": [],
+        "responsabilizacao_governanca": [],
+        "infraestrutura_ocupacao_risco": [],
+        "clima_chuva_meio_ambiente": [],
+        "experiencia_pessoal_local": [],
+        "alerta_prevencao_cobranca": [],
+        "critica_midia_informacao": []
+      },
+      "academic_studies": [],
+      "observation_status": "active",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-09-14T17:44:42Z"
+        }
+      ],
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "alert_opened_at": "2026-09-14T17:44:42Z",
+      "alert_closed_at": null,
+      "alert_transitions": [],
+      "collection_health": {
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
+      },
+      "last_collection_at": "2026-09-14T21:16:10Z",
+      "next_collection_at": "2026-09-15T21:16:10Z"
     },
     {
       "id": "cemaden_rs_2475",
@@ -13527,7 +14347,7 @@
           "at": "2026-09-03T15:35:54Z"
         }
       ],
-      "n_comments_valid": 460,
+      "n_comments_valid": 477,
       "videos_with_valid_comments": [
         "-nppGOJBua4",
         "Fe2zgHVygvk",
@@ -13545,8 +14365,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-14T11:24:12Z",
-      "next_collection_at": "2026-09-14T17:24:12Z"
+      "last_collection_at": "2026-09-14T21:16:10Z",
+      "next_collection_at": "2026-09-15T03:16:10Z"
     },
     {
       "id": "cemaden_sp_2507",
@@ -13677,7 +14497,21 @@
           ]
         },
         {
-          "video_id": "2C4jGJN_A_w",
+          "video_id": "Gj215qmUgJQ",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
+        },
+        {
+          "video_id": "nuaDWrFs-Ds",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
+        },
+        {
+          "video_id": "Xy8t3MoW6wE",
           "n_comments": 0,
           "total_likes": 0,
           "first_comment": "",
@@ -13698,20 +14532,6 @@
           "top_categories": []
         },
         {
-          "video_id": "nuaDWrFs-Ds",
-          "n_comments": 0,
-          "total_likes": 0,
-          "first_comment": "",
-          "top_categories": []
-        },
-        {
-          "video_id": "Gj215qmUgJQ",
-          "n_comments": 0,
-          "total_likes": 0,
-          "first_comment": "",
-          "top_categories": []
-        },
-        {
           "video_id": "QsPV-9DcKFQ",
           "n_comments": 0,
           "total_likes": 0,
@@ -13719,7 +14539,7 @@
           "top_categories": []
         },
         {
-          "video_id": "Xy8t3MoW6wE",
+          "video_id": "2C4jGJN_A_w",
           "n_comments": 0,
           "total_likes": 0,
           "first_comment": "",
@@ -13828,7 +14648,7 @@
           "at": "2026-09-07T16:59:59Z"
         }
       ],
-      "n_comments_valid": 193,
+      "n_comments_valid": 201,
       "videos_with_valid_comments": [
         "BZkiA1yeA1k",
         "RpkbaFLUpjI",
@@ -13844,8 +14664,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-14T11:24:12Z",
-      "next_collection_at": "2026-09-14T17:24:12Z"
+      "last_collection_at": "2026-09-14T21:16:10Z",
+      "next_collection_at": "2026-09-15T03:16:10Z"
     },
     {
       "id": "cemaden_sc_2516",
@@ -14092,10 +14912,10 @@
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
-      "n_comments": 399,
-      "n_videos": 4,
-      "unlabeled": 63,
-      "unlabeled_pct": 15.8,
+      "n_comments": 356,
+      "n_videos": 5,
+      "unlabeled": 59,
+      "unlabeled_pct": 16.6,
       "date_range": [
         "2026-09-12",
         "2026-09-14"
@@ -14105,49 +14925,49 @@
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
           "count": 71,
-          "pct": 17.8
+          "pct": 19.9
         },
         {
           "key": "ajuda_resgate_doacoes",
           "label": "Ajuda / resgate / doações",
-          "count": 32,
-          "pct": 8.0
+          "count": 27,
+          "pct": 7.6
         },
         {
           "key": "responsabilizacao_governanca",
           "label": "Responsabilização / governança",
-          "count": 151,
-          "pct": 37.8
+          "count": 119,
+          "pct": 33.4
         },
         {
           "key": "infraestrutura_ocupacao_risco",
           "label": "Infraestrutura / ocupação de risco",
-          "count": 100,
-          "pct": 25.1
+          "count": 87,
+          "pct": 24.4
         },
         {
           "key": "clima_chuva_meio_ambiente",
           "label": "Clima / chuva / meio ambiente",
-          "count": 60,
-          "pct": 15.0
+          "count": 48,
+          "pct": 13.5
         },
         {
           "key": "experiencia_pessoal_local",
           "label": "Experiência pessoal / local",
-          "count": 16,
-          "pct": 4.0
+          "count": 12,
+          "pct": 3.4
         },
         {
           "key": "alerta_prevencao_cobranca",
           "label": "Alerta / prevenção / cobrança",
           "count": 8,
-          "pct": 2.0
+          "pct": 2.2
         },
         {
           "key": "critica_midia_informacao",
           "label": "Crítica à mídia / informação",
-          "count": 26,
-          "pct": 6.5
+          "count": 25,
+          "pct": 7.0
         }
       ],
       "timeline": [
@@ -14157,38 +14977,38 @@
         },
         {
           "date": "13/09/26",
-          "count": 286
+          "count": 212
         },
         {
           "date": "14/09/26",
-          "count": 95
+          "count": 126
         }
       ],
       "videos": [
         {
           "video_id": "qSmKOPIqnv8",
-          "n_comments": 268,
-          "total_likes": 435,
+          "n_comments": 239,
+          "total_likes": 247,
           "first_comment": "13/09/2026",
           "top_categories": [
             {
               "label": "Responsabilização",
-              "count": 105
+              "count": 80
             },
             {
               "label": "Infraestrutura",
-              "count": 77
+              "count": 64
             },
             {
               "label": "Solidariedade",
-              "count": 45
+              "count": 50
             }
           ]
         },
         {
           "video_id": "Mx9RsqhVzSs",
           "n_comments": 76,
-          "total_likes": 138,
+          "total_likes": 180,
           "first_comment": "13/09/2026",
           "top_categories": [
             {
@@ -14226,28 +15046,56 @@
           ]
         },
         {
-          "video_id": "KtQVJ8_d8Aw",
-          "n_comments": 24,
-          "total_likes": 37,
+          "video_id": "cgvIRir0gB0",
+          "n_comments": 10,
+          "total_likes": 5,
           "first_comment": "12/09/2026",
           "top_categories": [
             {
-              "label": "Responsabilização",
-              "count": 8
+              "label": "Infraestrutura",
+              "count": 3
+            },
+            {
+              "label": "Crítica mídia",
+              "count": 3
             },
             {
               "label": "Solidariedade",
-              "count": 6
-            },
-            {
-              "label": "Ajuda",
-              "count": 5
+              "count": 1
             }
           ]
+        },
+        {
+          "video_id": "Zrbb16yD_q0",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
         }
       ],
       "all_samples": {
         "solidariedade_oracao_luto": [
+          {
+            "text": "NO SUL ESTAMOS DESDE DEZEMBRO ORANDO E CLAMANDO PRA DEUS AMENIZAR POR O QUE ESTA POR VIR EM NOME DE JESUS 🙏",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-09-14",
+            "video_id": "qSmKOPIqnv8"
+          },
+          {
+            "text": "LEVANTE UM CLAMOR A DEUS E SE HUMILHAM DIANTE DE DEUS E VOLTE A PROCURAR JESUS",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-09-14",
+            "video_id": "qSmKOPIqnv8"
+          },
+          {
+            "text": "TEM MISERICÓRDIA DEUS !!!!!!!",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-09-14",
+            "video_id": "qSmKOPIqnv8"
+          },
           {
             "text": "Queridos irmãos, eu sei que pode parecer loucura para alguns, porém as escrituras estão se cumprindo. Creio,que seja o princípio das dores.. a Terra toda está,em dores de parto. E isto,é um claro sinal da 2 vinda de Jesus..Se voltem,a Deus enquanto se pode acha lo.",
             "likes": 3,
@@ -14264,7 +15112,7 @@
           },
           {
             "text": "QUE DESESPERO...SENHOR TENHA PIEDADE...DESSAS PESSOAS 😢",
-            "likes": 2,
+            "likes": 3,
             "score": 0.996,
             "date": "2026-09-13",
             "video_id": "qSmKOPIqnv8"
@@ -14282,20 +15130,6 @@
             "score": 0.996,
             "date": "2026-09-13",
             "video_id": "Mx9RsqhVzSs"
-          },
-          {
-            "text": "DEUS&EU",
-            "likes": 0,
-            "score": 0.996,
-            "date": "2026-09-13",
-            "video_id": "KtQVJ8_d8Aw"
-          },
-          {
-            "text": "Essa situação è muito triste sou do RS ésofrimento demais",
-            "likes": 2,
-            "score": 0.996,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
           },
           {
             "text": "😢😢😢😢😢 triste eu já passei por isso 😞😞😞",
@@ -14327,7 +15161,7 @@
           },
           {
             "text": "​@marciomattos1516Deus não faz isso. Quem faz isso é o ser humano. Jamais isso é de Deus!",
-            "likes": 0,
+            "likes": 1,
             "score": 0.996,
             "date": "2026-09-14",
             "video_id": "qSmKOPIqnv8"
@@ -14338,13 +15172,6 @@
             "score": 0.995,
             "date": "2026-09-13",
             "video_id": "qSmKOPIqnv8"
-          },
-          {
-            "text": "Deus",
-            "likes": 0,
-            "score": 0.995,
-            "date": "2026-09-13",
-            "video_id": "KtQVJ8_d8Aw"
           },
           {
             "text": "Deus sabe o que faz...",
@@ -14362,7 +15189,7 @@
           },
           {
             "text": "Que triste!!!😢😢😢😢",
-            "likes": 1,
+            "likes": 2,
             "score": 0.995,
             "date": "2026-09-13",
             "video_id": "qSmKOPIqnv8"
@@ -14383,7 +15210,7 @@
           },
           {
             "text": "Meu Deus proteja seu povo!😢",
-            "likes": 2,
+            "likes": 3,
             "score": 0.995,
             "date": "2026-09-13",
             "video_id": "qSmKOPIqnv8"
@@ -14405,29 +15232,8 @@
             "video_id": "qSmKOPIqnv8"
           },
           {
-            "text": "Nao adianta votar errado e pedir ajuda pra Deus não",
-            "likes": 0,
-            "score": 0.997,
-            "date": "2026-09-13",
-            "video_id": "KtQVJ8_d8Aw"
-          },
-          {
-            "text": "ENFERMEIROS E ENFERMEIRAS ESTOMATERAPEUTAS ESPECIFICOS D CUIDAR D FERIDAS. P AJUDAR NA CICATRIZACAO",
-            "likes": 0,
-            "score": 0.997,
-            "date": "2026-09-13",
-            "video_id": "KtQVJ8_d8Aw"
-          },
-          {
-            "text": "Misericordia jesus ajuda papai . Entra com a providencia none d hesus",
-            "likes": 2,
-            "score": 0.997,
-            "date": "2026-09-13",
-            "video_id": "KtQVJ8_d8Aw"
-          },
-          {
             "text": "A pergunta correta é: Porque o estado não ajuda essas pessoas a ter uma casinha em local seguro?!",
-            "likes": 1,
+            "likes": 2,
             "score": 0.996,
             "date": "2026-09-14",
             "video_id": "qSmKOPIqnv8"
@@ -14482,13 +15288,6 @@
             "video_id": "qSmKOPIqnv8"
           },
           {
-            "text": "Venham gravar aqui... No Itaim Paulista, vila Seabra, São Martinho, Jd Pantanal. Vem pra cá o povo precisa de ajuda mostra a situação e o abandono dos governantes o povo está esquecido",
-            "likes": 0,
-            "score": 0.989,
-            "date": "2026-09-13",
-            "video_id": "KtQVJ8_d8Aw"
-          },
-          {
             "text": "Os políticos não tem nada haver com isso , as pessoas tem que se converter jesus estar voltando, não cai uma folha de uma árvore se não for com o consentimento de Deus, deus estar chamando as pessoas ao arrependimento, se arrependam de seus pecados só jesus cura restaura e salva, só ele faz milagres de verdade, quando acabou o vinho,Maria chamou jesus e ele transformou a água em vinho se outros fi",
             "likes": 1,
             "score": 0.982,
@@ -14517,18 +15316,46 @@
             "video_id": "qSmKOPIqnv8"
           },
           {
-            "text": "É CARLOS, COMO VC SABE TUDO ISSO? ONDE VC MORA? VC MORA BEM? E SE SENTE À VONTADE PRA PISAR NOS MAIS NECESSITADOS? VC NAO TEM NENHUMA SOLIDARIEDADE COM AS PESSOAS Q NAO TEM OUTRO LUGAR PRA IR? PORQUE VC NAO VAI LÁ DIZER PRA ESSES MORADORES SAO ELES ESTÚPIDOS? PORQUE NAO VAI LÁ PISAR MAIS AINDA NELES? OLHA, MANO, NO MUNDO TEM MUUUUUUITO MAIS POBRES Q RICOS. VC É RICO? OU POBRE? OU REMEDIADO? SÓ PEL",
-            "likes": 3,
-            "score": 0.957,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
             "text": "VOTA NO HADDAD, ISSO QUE DÁ",
             "likes": 0,
             "score": 0.946,
             "date": "2026-09-13",
             "video_id": "qSmKOPIqnv8"
+          },
+          {
+            "text": "O HADDAD VAI MELHORAR .",
+            "likes": 0,
+            "score": 0.935,
+            "date": "2026-09-14",
+            "video_id": "qSmKOPIqnv8"
+          },
+          {
+            "text": "O ALKIMIN ESTAVA NO PODER E O ESQUERDISTA INCRNTIVAM AS INVASÕES, mas Boulos e lula não vivem aí. SAUDADES DO MALUF DAS COHAB E CINGAPURA",
+            "likes": 1,
+            "score": 0.833,
+            "date": "2026-09-14",
+            "video_id": "qSmKOPIqnv8"
+          },
+          {
+            "text": "E pra que vc tem carro?",
+            "likes": 0,
+            "score": 0.769,
+            "date": "2026-09-13",
+            "video_id": "kEow9BJwy8Q"
+          },
+          {
+            "text": "Quem sofre são sempre os trabalhadores voltando dos serviços depois de um dia de trabalho 😮",
+            "likes": 1,
+            "score": 0.713,
+            "date": "2026-09-13",
+            "video_id": "kEow9BJwy8Q"
+          },
+          {
+            "text": "​@shirleisanches1039👍",
+            "likes": 0,
+            "score": 0.688,
+            "date": "2026-09-13",
+            "video_id": "Mx9RsqhVzSs"
           }
         ],
         "responsabilizacao_governanca": [
@@ -14554,22 +15381,8 @@
             "video_id": "qSmKOPIqnv8"
           },
           {
-            "text": "​@FelipeBorges-s1d, cadê o prefeito e o governador para dar parecer sobre??? 🧐🧐 Não adianta o presidente da República liberar verbas e o governador e prefeito \"desviar\" para outros investimentos... talvez o dinheiro tenha ido para o \"filme Darck Horse\" 😏... enquanto a população ignorar que esses indivíduos dentro da governabilidade do país estão simplesmente roubando dinheiro público na cara dura,",
-            "likes": 1,
-            "score": 0.998,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
-            "text": "​@anastaciamaria6967kkkkkkkk Geraldo Alckmin sempre foi de direita, ficou 12 anos no poder do Estados, é tão de direita q é Vice do Atual presidente, acho q vc nunca ouviu falar do Teatro das tesouras na política né?... Da uma pesquisada, isso é de abrir os olhos, não estou querendo ser chato, é pq somos iludidos pela política a muito tempo.",
-            "likes": 0,
-            "score": 0.998,
-            "date": "2026-09-14",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
             "text": "O prefeito não tem culpa nenhuma a culpa de tudo isso é do próprio povo",
-            "likes": 13,
+            "likes": 18,
             "score": 0.998,
             "date": "2026-09-13",
             "video_id": "Mx9RsqhVzSs"
@@ -14582,20 +15395,6 @@
             "video_id": "Mx9RsqhVzSs"
           },
           {
-            "text": "O povo Brasileiros tem que ter vergonha na cara e não votar em politicos que são mentirosos covardes que só promete e não fazem nada cos que são mentirosos",
-            "likes": 0,
-            "score": 0.997,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
-            "text": "​@RosileneReis-i6nnunca a culpa é do Lula ne",
-            "likes": 1,
-            "score": 0.997,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
             "text": "CADÊ O PREFEITO E O GOVERNADOR E O DINHEIRO DO ICMS E OUTROS IMPOSTOS?",
             "likes": 1,
             "score": 0.997,
@@ -14605,13 +15404,6 @@
           {
             "text": "OBRIGADO PREFEITO GUSTAVO NUNES",
             "likes": 0,
-            "score": 0.997,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
-            "text": "Sim. Em grande parte, o Jardim Pantanal, na Zona Leste de São Paulo, surgiu de ocupações irregulares de terras, principalmente na várzea do Rio Tietê. A própria Prefeitura informa que o processo de ocupação começou por volta de 1986, numa área ambientalmente frágil de várzea. Estudos históricos apontam que, no fim dos anos 1980, movimentos de moradia e famílias passaram a ocupar diversas áreas ao ",
-            "likes": 5,
             "score": 0.997,
             "date": "2026-09-13",
             "video_id": "qSmKOPIqnv8"
@@ -14632,7 +15424,7 @@
           },
           {
             "text": "TUDO ISSO É UMA CONJUNÇAO DE FATOS.... MUDANÇA CLIMATICA, EL NINO, PREFEITURA INOPERANTE PORQUICE POPULAR, LIXO NAS RUAS, IMPERMEABILIZAÇAO DO SOLO....CONSTRUÇOES, OLITICOS CANALHAS, ROUBO DE VERBAS PUBLICAS, PREFEITO INCOMPETENTE, POVO PORCO...RESULTA NISSO.",
-            "likes": 1,
+            "likes": 4,
             "score": 0.997,
             "date": "2026-09-14",
             "video_id": "Mx9RsqhVzSs"
@@ -14640,13 +15432,6 @@
           {
             "text": "Os governantes estão em campanhas pra todos os cargos, menos vereador e prefeito, então presta atenção no seu voto, principalmente se você mora assim,em todo o país.",
             "likes": 1,
-            "score": 0.997,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
-            "text": "E a prefeitura e o governo cobram seus impostos (IPTU), sua luz , sua água . Estado e Município legalizam através de impostos ou não...? Aí aparecem alguns cretinos, ignorantes e discriminam seus moradores.",
-            "likes": 0,
             "score": 0.997,
             "date": "2026-09-13",
             "video_id": "qSmKOPIqnv8"
@@ -14666,10 +15451,52 @@
             "video_id": "qSmKOPIqnv8"
           },
           {
-            "text": "Kkkkkkkkkk se esse problema fosse só desse governo ​e não acontecesse em outros, mas acredito que seja mais uma piada do q falta de raciocínio @anastaciamaria6967",
-            "likes": 1,
+            "text": "E o Governador de direita Tarcisio bozoloíde tá preocupado só com sua reeleição, só aumentando ICMS, dando de graça empresas e terras públicas para seus cupinchas, abrindo um monte de pedágios caríssimos pro povo pagar. Sabesp privatizou a preço de banana e os serviços pioraram e ficaram mais caros. Educação e segurança conseguiu piorar mais ainda.",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-09-14",
+            "video_id": "Mx9RsqhVzSs"
+          },
+          {
+            "text": "Tudo isso foi permitido pela prefeitura e pelo prefeito que aceitou a época que foi invadido isso aí, deram água e luz pra esse povo, vereador até incentiva essa barbárie, agora quem sofre é a população que também sabia que isso aí enche d'água quando chove forte.",
+            "likes": 0,
             "score": 0.997,
             "date": "2026-09-13",
+            "video_id": "qSmKOPIqnv8"
+          },
+          {
+            "text": "Tragico que 99,9 dessas pessoas são muito simples e manipulaveis e vão votar nas mesmas pessoas que proporcionam isso pra elas, Flavio Volsonaro e Lula.",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-09-13",
+            "video_id": "qSmKOPIqnv8"
+          },
+          {
+            "text": "Prefeitura e estado de São Paulo!? Um caos!😢😮",
+            "likes": 15,
+            "score": 0.997,
+            "date": "2026-09-13",
+            "video_id": "qSmKOPIqnv8"
+          },
+          {
+            "text": "Morada digna é a que está sendo criada no governo Tarcísio junto ao prefeito de São Paulo",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-09-14",
+            "video_id": "qSmKOPIqnv8"
+          },
+          {
+            "text": "Então na sua opinião p resolver problemas com quase 30 anos é só colocar um 🦑 cachaceiro como governador e centenas como prefeito.......vai q cola. O golpe esta ai cai quem quer.",
+            "likes": 4,
+            "score": 0.997,
+            "date": "2026-09-13",
+            "video_id": "qSmKOPIqnv8"
+          },
+          {
+            "text": "Claro....não temos prefeito e nem governador",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-09-14",
             "video_id": "qSmKOPIqnv8"
           }
         ],
@@ -14703,6 +15530,13 @@
             "video_id": "qSmKOPIqnv8"
           },
           {
+            "text": "Infelizmente esse lugar era várias lagoas do Rio Tietê. Fizeram um aterro e loteamentos. Infelizmente é a Várzea do Rio",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-09-14",
+            "video_id": "qSmKOPIqnv8"
+          },
+          {
             "text": "O povo invadiu um pantano à beira de um rio enorme e esperam o quê no perído das chuvas intensas? O Estado é um lixo que sabe mas não se move pra nada o dinheiro que roubam dá e sobra para comprar áreas e construir prédios para moradia popular",
             "likes": 0,
             "score": 0.998,
@@ -14731,24 +15565,17 @@
             "video_id": "Mx9RsqhVzSs"
           },
           {
-            "text": "Sim. Em grande parte, o Jardim Pantanal, na Zona Leste de São Paulo, surgiu de ocupações irregulares de terras, principalmente na várzea do Rio Tietê. A própria Prefeitura informa que o processo de ocupação começou por volta de 1986, numa área ambientalmente frágil de várzea. Estudos históricos apontam que, no fim dos anos 1980, movimentos de moradia e famílias passaram a ocupar diversas áreas ao ",
-            "likes": 5,
-            "score": 0.998,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
-            "text": "Isso e lugar de viver uma cidade no meio de um rio porco tenho parentes aí já vivi tempo aí já bati muito balde retirando água porca de dentro de casa vim embora com 12 anos melhor coisa que fiz na vida e horrível chuveu povo quase nem dorme a noite erguendo suas coisas pra vê se n perde tudo oq as vezes nem presta mais saudades 0 .",
-            "likes": 0,
-            "score": 0.998,
-            "date": "2026-09-14",
-            "video_id": "KtQVJ8_d8Aw"
-          },
-          {
             "text": "Pior é que tem viu , o Brasil tem mais de 8 mil km de extensão territorial e terra pra não acabar mais, o que acontece é que a maioria do povo brasileiro gosta de morar amontoado igual bicho de monte e um cheirando o cu do outro, povo prefere pagar 200 mil numa laje de favela em São Paulo do que comprar uma boa casa em lugar bom em cidades menores do interior.",
             "likes": 0,
             "score": 0.997,
             "date": "2026-09-13",
+            "video_id": "qSmKOPIqnv8"
+          },
+          {
+            "text": "A imprensa faz sensasionalismo parecem analfabetos, constrói em lugar errado e depois fica reclamando. Acho melhor tirar o Rio desse lugar. Casas??? Tem escrituras dos imóveis???? Eu trabalhei para comprar minha casa.",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-09-14",
             "video_id": "qSmKOPIqnv8"
           },
           {
@@ -14760,7 +15587,7 @@
           },
           {
             "text": "15m na beira do rio é área de manancial, proibido construir.",
-            "likes": 5,
+            "likes": 17,
             "score": 0.997,
             "date": "2026-09-14",
             "video_id": "Mx9RsqhVzSs"
@@ -14780,13 +15607,6 @@
             "video_id": "qSmKOPIqnv8"
           },
           {
-            "text": "Esse ponto da cidade é a várzea do Rio , isso era um pântano..Era uma extensão que ficava a maior parte do ano inundada , aí o povo chega e quer mudar..Aí era pra ser um parque ecológico e não ter casa alguma , essa área não tem solução , o relevo não permite ..",
-            "likes": 0,
-            "score": 0.997,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
             "text": "Sou do norte do Paraná, não vejo lixo nas ruas,mas ai é muita porquice A conta chega",
             "likes": 0,
             "score": 0.997,
@@ -14802,7 +15622,7 @@
           },
           {
             "text": "O Rio tem memória vocês que fã,em casas as margens parece que não.",
-            "likes": 11,
+            "likes": 15,
             "score": 0.997,
             "date": "2026-09-13",
             "video_id": "Mx9RsqhVzSs"
@@ -14813,14 +15633,21 @@
             "score": 0.997,
             "date": "2026-09-14",
             "video_id": "qSmKOPIqnv8"
+          },
+          {
+            "text": "“Como se fosse uma extensão do Tietê” ALI É UMA EXTENSÃO DO TIETE. O povo foi construir na várzea do rio, não tem como esperar algo diferente",
+            "likes": 1,
+            "score": 0.997,
+            "date": "2026-09-13",
+            "video_id": "qSmKOPIqnv8"
           }
         ],
         "clima_chuva_meio_ambiente": [
           {
-            "text": "​@myk.f.cvc acha que é simples! O presidente não governa sozinho! Mas sua ministra de meio ambiente Marina Silva, foi responsável pela diminuição do desmatamento! Questões sociais não se resolvem com estalar de dedos! Ainda mais pq os estados tem governadores, as cidades tem prefeitos! Mas já percebeu que quando tem uma enchente e só corpo de pobre boiando? A elite não se importa! E votam cada vez",
-            "likes": 1,
+            "text": "Por que as pessoas não tentam sair desses lugares? Perdeu tudo \"de novo\"... se nada mudou na situação desde a última enchente, não havia garantia alguma ee que não haveria mais enchentes.",
+            "likes": 0,
             "score": 0.999,
-            "date": "2026-09-13",
+            "date": "2026-09-14",
             "video_id": "qSmKOPIqnv8"
           },
           {
@@ -14828,13 +15655,6 @@
             "likes": 0,
             "score": 0.997,
             "date": "2026-09-14",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
-            "text": "O poder público se deixar vende tudo! Madeira, minérios! Não lembram do Sales?!! E foi ministro do meio ambiente!",
-            "likes": 1,
-            "score": 0.997,
-            "date": "2026-09-13",
             "video_id": "qSmKOPIqnv8"
           },
           {
@@ -14875,13 +15695,6 @@
           {
             "text": "Vc ta vendo os postes narrativa bode velho? São pessoas que pagam impostos, e se a situação é essa é porque o poder público não faz nada pra solucionar o problema. Triste é ver um velho pobre dar risada do próprio comentário sobre uma tragédia.",
             "likes": 0,
-            "score": 0.996,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
-            "text": "Ali é uma área de várzea e de proteção ambiental, naturalmente é um lugar q alaga, mas o povo invadiu na época de seca, aí quando chove acaba acontecendo isso, não é problema próprio do governo, as pessoas q invadiram um lugar inadequado para moradia, aí para o governo fazer alguma coisa tem q retirar todas as pessoas de lá para outro lugar",
-            "likes": 3,
             "score": 0.996,
             "date": "2026-09-13",
             "video_id": "qSmKOPIqnv8"
@@ -14929,13 +15742,6 @@
             "video_id": "Mx9RsqhVzSs"
           },
           {
-            "text": "​@alinecostta1o seu presidente nao governa sozinho certo ! O bosonaro governava sozinho ? Eu moro perto dessas areas atigida , invadirao brejos e pantanal isso alaga amais de 50 anos as ves culpamos os policos injustamente",
-            "likes": 1,
-            "score": 0.995,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
             "text": "Só alaga bairros pobres né A faria lima não alaga🤔",
             "likes": 0,
             "score": 0.995,
@@ -14950,28 +15756,35 @@
             "video_id": "qSmKOPIqnv8"
           },
           {
-            "text": "​@ribeiromariah30, governo de São Paulo está fazendo a recuperação dos rios Tiete e Pinheiros. Procure no Google e vai ter confirmação do que estou dizendo. Chuvas foram fortes e as águas dos corregos e ruas com bueiros cheios de lixo, acabam indo para os rios. Somos um povo mal educado e jogamos tudo em corregos e lixos domésticos que depositamos perto de bueiros que acabam causando inundações.",
+            "text": "É a força da natureza, através do fenômeno el nino",
+            "likes": 12,
+            "score": 0.993,
+            "date": "2026-09-13",
+            "video_id": "Mx9RsqhVzSs"
+          },
+          {
+            "text": "Não tem mais espaço para à água da chuva passar gente, muita construção",
             "likes": 0,
-            "score": 0.995,
+            "score": 0.992,
+            "date": "2026-09-14",
+            "video_id": "qSmKOPIqnv8"
+          },
+          {
+            "text": "Gente com o nível de chuvas que anda acontecendo, não tem como isso não acontecer até aqui no Japão pais de primeiro mundo está acontecendo, detalhe aqui é só a água mesmo, no Brasil é com muitos lixos pq a população colabora para isso.",
+            "likes": 0,
+            "score": 0.992,
             "date": "2026-09-13",
             "video_id": "qSmKOPIqnv8"
+          },
+          {
+            "text": "Jamdira sp alagamentos ...2 homens desaparecem na correnteza acionar por favor os bombeiros a esposa procura marido e irmao setembro 2026 11",
+            "likes": 0,
+            "score": 0.992,
+            "date": "2026-09-13",
+            "video_id": "kEow9BJwy8Q"
           }
         ],
         "experiencia_pessoal_local": [
-          {
-            "text": "É CARLOS, COMO VC SABE TUDO ISSO? ONDE VC MORA? VC MORA BEM? E SE SENTE À VONTADE PRA PISAR NOS MAIS NECESSITADOS? VC NAO TEM NENHUMA SOLIDARIEDADE COM AS PESSOAS Q NAO TEM OUTRO LUGAR PRA IR? PORQUE VC NAO VAI LÁ DIZER PRA ESSES MORADORES SAO ELES ESTÚPIDOS? PORQUE NAO VAI LÁ PISAR MAIS AINDA NELES? OLHA, MANO, NO MUNDO TEM MUUUUUUITO MAIS POBRES Q RICOS. VC É RICO? OU POBRE? OU REMEDIADO? SÓ PEL",
-            "likes": 3,
-            "score": 0.999,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
-            "text": "​@carlosmiranda7564vai saber né, na internet é todo mundo rico. Aqui no meu bairro tem um monte que se diz empressrio de direita e recebem bolsa familia, tem ate a dona Rose que em 2000 tinha um bar e agora vende espetinho na frente da casa e acha que é milionaria, filho preso por trafico, filha de 15 anos grávidas do irmão do pastor de 21. Na internet é facil viver uma vida que nunca existiu.",
-            "likes": 0,
-            "score": 0.998,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
           {
             "text": "Gente com o nível de chuvas que anda acontecendo, não tem como isso não acontecer até aqui no Japão pais de primeiro mundo está acontecendo, detalhe aqui é só a água mesmo, no Brasil é com muitos lixos pq a população colabora para isso.",
             "likes": 0,
@@ -14981,7 +15794,7 @@
           },
           {
             "text": "Quem mora perto de barragem,de rios ou em moro tem que sair ,não pensa só sair .projeto haarp no Brasil.",
-            "likes": 2,
+            "likes": 3,
             "score": 0.997,
             "date": "2026-09-14",
             "video_id": "Mx9RsqhVzSs"
@@ -15015,10 +15828,10 @@
             "video_id": "qSmKOPIqnv8"
           },
           {
-            "text": "​@cristiangoncalves4344 O Governo de SP Nunca foi de esquerda, então, sim, o que a Direita e Extrema direita fazem aqui parece piada mesmo.",
-            "likes": 1,
-            "score": 0.995,
-            "date": "2026-09-13",
+            "text": "Precisa tirar esse bairro do napa, sem choro nem vela, tem de tirar, fazer um minha casa minha vida, levar eles pra lá e demolir td, isso aí é o rio e ele tá cobrando.",
+            "likes": 0,
+            "score": 0.994,
+            "date": "2026-09-14",
             "video_id": "qSmKOPIqnv8"
           },
           {
@@ -15036,30 +15849,16 @@
             "video_id": "qSmKOPIqnv8"
           },
           {
-            "text": "​@alinecostta1o seu presidente nao governa sozinho certo ! O bosonaro governava sozinho ? Eu moro perto dessas areas atigida , invadirao brejos e pantanal isso alaga amais de 50 anos as ves culpamos os policos injustamente",
-            "likes": 1,
-            "score": 0.992,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
-            "text": "Venham gravar aqui... No Itaim Paulista, vila Seabra, São Martinho, Jd Pantanal. Vem pra cá o povo precisa de ajuda mostra a situação e o abandono dos governantes o povo está esquecido",
+            "text": "A imprensa faz sensasionalismo parecem analfabetos, constrói em lugar errado e depois fica reclamando. Acho melhor tirar o Rio desse lugar. Casas??? Tem escrituras dos imóveis???? Eu trabalhei para comprar minha casa.",
             "likes": 0,
             "score": 0.989,
-            "date": "2026-09-13",
-            "video_id": "KtQVJ8_d8Aw"
+            "date": "2026-09-14",
+            "video_id": "qSmKOPIqnv8"
           },
           {
             "text": "Mesmo que o poder público tire essas pessoas desse local, outros vão invidar para construir casas e seo governo tivesse tentado tirar eles daí imagina eles ficariam revoltados, iam falar que o governo tava expulsando, não da pra entender; cadê \" minha casa minha vida\". Isso não era mais pra existir, muito triste.",
             "likes": 0,
             "score": 0.984,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
-            "text": "​@LucasSilva-sw3lqnão e meu caso 😂",
-            "likes": 0,
-            "score": 0.647,
             "date": "2026-09-13",
             "video_id": "qSmKOPIqnv8"
           },
@@ -15080,6 +15879,13 @@
             "video_id": "Mx9RsqhVzSs"
           },
           {
+            "text": "Mas depende desses afetado por essas enchentes nas áreas de riscos não votem mais em candidatos que estão à anos no poder e permitem moradias nessas areas de risco !!!!!",
+            "likes": 0,
+            "score": 0.999,
+            "date": "2026-09-14",
+            "video_id": "qSmKOPIqnv8"
+          },
+          {
             "text": "Gente, o governo de São Paulo criou algum plano emergêncial, porque faz tempo que esse evento foi previsto",
             "likes": 1,
             "score": 0.999,
@@ -15087,17 +15893,10 @@
             "video_id": "Mx9RsqhVzSs"
           },
           {
-            "text": "Aí não é lugar de ter moradias ,fora o risco das doenças com as enchentes",
-            "likes": 1,
+            "text": "Ainda pior é correr risco de pegar leptospirose da urina dos ratos !",
+            "likes": 0,
             "score": 0.998,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
-            "text": "Sim. Em grande parte, o Jardim Pantanal, na Zona Leste de São Paulo, surgiu de ocupações irregulares de terras, principalmente na várzea do Rio Tietê. A própria Prefeitura informa que o processo de ocupação começou por volta de 1986, numa área ambientalmente frágil de várzea. Estudos históricos apontam que, no fim dos anos 1980, movimentos de moradia e famílias passaram a ocupar diversas áreas ao ",
-            "likes": 5,
-            "score": 0.998,
-            "date": "2026-09-13",
+            "date": "2026-09-14",
             "video_id": "qSmKOPIqnv8"
           },
           {
@@ -15116,7 +15915,7 @@
           },
           {
             "text": "O Bairro inteiro é uma INVASÃO na lateral de um rio. Sempre foi assim, mas continuam construindo, ou seja, assumiram o risco.",
-            "likes": 4,
+            "likes": 5,
             "score": 0.997,
             "date": "2026-09-13",
             "video_id": "qSmKOPIqnv8"
@@ -15131,8 +15930,15 @@
         ],
         "critica_midia_informacao": [
           {
+            "text": "Olhem aí o impacto que causou o povo elegendo corruptos bolsonaristas. Acharam que eles iriam só ficar roubando com recibos falsificados de abastecimento de combustívies ou com rachadinhas? Vcs chamaram o impacto pelo voto e o impacto chegou quando a quasdrilha BOLSONARISTA roubou 55 bilhões com o BOLSOMASTER e EMBOLSO-INSS desde 2019, dinheiro que está fazendo falta agora para cuidarmos das vítim",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-09-12",
+            "video_id": "cgvIRir0gB0"
+          },
+          {
             "text": "Verdade",
-            "likes": 1,
+            "likes": 2,
             "score": 0.998,
             "date": "2026-09-13",
             "video_id": "qSmKOPIqnv8"
@@ -15173,17 +15979,17 @@
             "video_id": "qSmKOPIqnv8"
           },
           {
-            "text": "povo continua sendo cabo eleitoral do bêbado descondenado, continuam sendo que governo sonha , na verdade é uma área de invasão que o município não fez intervenção .",
+            "text": "Orem ,ou sigam a Bíblia Sagrada, esqueçam as mídias televisivas, eles deixaram de mostrar a verdade do que acontece com a sociedade. Há uma quadrilha muito grande na política, esqueçam Lula vs Flávio, congresso, deputados, vereadores, agora todos farão tudo . Povo cuidado.",
             "likes": 0,
             "score": 0.997,
             "date": "2026-09-14",
             "video_id": "qSmKOPIqnv8"
           },
           {
-            "text": "😢o pior é que é verdade",
-            "likes": 1,
+            "text": "povo continua sendo cabo eleitoral do bêbado descondenado, continuam sendo que governo sonha , na verdade é uma área de invasão que o município não fez intervenção .",
+            "likes": 0,
             "score": 0.997,
-            "date": "2026-09-13",
+            "date": "2026-09-14",
             "video_id": "qSmKOPIqnv8"
           },
           {
@@ -15194,18 +16000,11 @@
             "video_id": "qSmKOPIqnv8"
           },
           {
-            "text": "Achei que o Lule tinha acabado com os pobres. Na verdade aumentou a miséria, os que ficaram ricos pertecem à família 🦑.",
+            "text": "Gosto muito desse jornal ok",
             "likes": 1,
             "score": 0.997,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
-            "text": "​@edm851falou a verdade dito isso 99 porcento das pessoas que vivem aí são de outros estados é a mesma porcentagem das famílias que vivem nas favelas é só pesquisar",
-            "likes": 0,
-            "score": 0.997,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
+            "date": "2026-09-12",
+            "video_id": "cgvIRir0gB0"
           },
           {
             "text": "Impermeabilizar o solo sem drenagem adequada tem seu preço. Claro, sem considerar todos os desvios em obras públicas que são os verdadeiros motivos dessa situação.",
@@ -15216,7 +16015,7 @@
           },
           {
             "text": "Esse lugar é, na verdade, extensão do rio!",
-            "likes": 28,
+            "likes": 33,
             "score": 0.981,
             "date": "2026-09-13",
             "video_id": "qSmKOPIqnv8"
@@ -15225,13 +16024,6 @@
             "text": "Qual a novidade , Nunes e Tarcísio sabe disso e continua",
             "likes": 1,
             "score": 0.947,
-            "date": "2026-09-13",
-            "video_id": "qSmKOPIqnv8"
-          },
-          {
-            "text": "​​@carlosmiranda7564fala pobre de direita tambem, é o que mais tem .",
-            "likes": 0,
-            "score": 0.904,
             "date": "2026-09-13",
             "video_id": "qSmKOPIqnv8"
           },
@@ -15264,6 +16056,13 @@
             "video_id": "qSmKOPIqnv8"
           },
           {
+            "text": "ok",
+            "likes": 0,
+            "score": 0.807,
+            "date": "2026-09-13",
+            "video_id": "cgvIRir0gB0"
+          },
+          {
             "text": "Você ouviu bem a entrevistada dona ARLETE, dizendo que esta situação vem desde 2009????",
             "likes": 0,
             "score": 0.791,
@@ -15290,7 +16089,7 @@
           "at": "2026-09-13T15:27:03Z"
         }
       ],
-      "n_comments_valid": 512,
+      "n_comments_valid": 809,
       "videos_with_valid_comments": [
         "Hyhg7HsXX7s",
         "KtQVJ8_d8Aw",
@@ -15309,8 +16108,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-14T11:24:12Z",
-      "next_collection_at": "2026-09-14T17:24:12Z"
+      "last_collection_at": "2026-09-14T21:16:10Z",
+      "next_collection_at": "2026-09-15T03:16:10Z"
     }
   ],
   "archived_alerts": [
