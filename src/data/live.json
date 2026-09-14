@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T11:47:29Z",
+  "generated_at": "2026-09-14T17:30:58Z",
   "pipeline_version": "0.2.2",
   "pilot_mode": true,
   "dry_run": false,
@@ -2284,7 +2284,7 @@
       },
       "academic_studies": [],
       "observation_status": "active",
-      "priority_tier": "alto",
+      "priority_tier": "moderado",
       "flag": "prioritario",
       "flag_history": [
         {
@@ -2317,6 +2317,11 @@
           "from": "Moderado",
           "to": "Alto",
           "at": "2026-09-12T19:59:41Z"
+        },
+        {
+          "from": "Alto",
+          "to": "Moderado",
+          "at": "2026-09-14T17:22:54Z"
         }
       ],
       "collection_health": {
@@ -3522,8 +3527,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-13T15:27:03Z",
-      "next_collection_at": "2026-09-14T15:27:03Z"
+      "last_collection_at": "2026-09-14T17:22:54Z",
+      "next_collection_at": "2026-09-15T17:22:54Z"
     },
     {
       "id": "cemaden_sp_2588",
@@ -3627,8 +3632,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-13T15:27:03Z",
-      "next_collection_at": "2026-09-14T15:27:03Z"
+      "last_collection_at": "2026-09-14T17:22:54Z",
+      "next_collection_at": "2026-09-15T17:22:54Z"
     },
     {
       "id": "cemaden_sp_2590",
@@ -3732,8 +3737,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-13T15:27:03Z",
-      "next_collection_at": "2026-09-14T15:27:03Z"
+      "last_collection_at": "2026-09-14T17:22:54Z",
+      "next_collection_at": "2026-09-15T17:22:54Z"
     },
     {
       "id": "cemaden_sp_2591",
@@ -3837,8 +3842,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-13T15:27:03Z",
-      "next_collection_at": "2026-09-14T15:27:03Z"
+      "last_collection_at": "2026-09-14T17:22:54Z",
+      "next_collection_at": "2026-09-15T17:22:54Z"
     },
     {
       "id": "cemaden_sp_2592",
@@ -3942,8 +3947,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-13T15:27:03Z",
-      "next_collection_at": "2026-09-14T15:27:03Z"
+      "last_collection_at": "2026-09-14T17:22:54Z",
+      "next_collection_at": "2026-09-15T17:22:54Z"
     },
     {
       "id": "cemaden_mg_2593",
@@ -4047,8 +4052,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-13T15:27:03Z",
-      "next_collection_at": "2026-09-14T15:27:03Z"
+      "last_collection_at": "2026-09-14T17:22:54Z",
+      "next_collection_at": "2026-09-15T17:22:54Z"
     },
     {
       "id": "cemaden_sp_2594",
@@ -4061,20 +4066,20 @@
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
+      "n_comments": 2,
+      "n_videos": 2,
       "unlabeled": 0,
       "unlabeled_pct": 0.0,
       "date_range": [
-        "",
-        ""
+        "2026-09-12",
+        "2026-09-13"
       ],
       "distribution": [
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
+          "count": 1,
+          "pct": 50.0
         },
         {
           "key": "ajuda_resgate_doacoes",
@@ -4085,8 +4090,8 @@
         {
           "key": "responsabilizacao_governanca",
           "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
+          "count": 1,
+          "pct": 50.0
         },
         {
           "key": "infraestrutura_ocupacao_risco",
@@ -4119,12 +4124,61 @@
           "pct": 0.0
         }
       ],
-      "timeline": [],
-      "videos": [],
+      "timeline": [
+        {
+          "date": "12/09/26",
+          "count": 1
+        },
+        {
+          "date": "13/09/26",
+          "count": 1
+        }
+      ],
+      "videos": [
+        {
+          "video_id": "Vh3Ht_HdgoQ",
+          "n_comments": 2,
+          "total_likes": 2,
+          "first_comment": "12/09/2026",
+          "top_categories": [
+            {
+              "label": "Solidariedade",
+              "count": 1
+            },
+            {
+              "label": "Responsabilização",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "video_id": "P-SU5QCojUQ",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
+        }
+      ],
       "all_samples": {
-        "solidariedade_oracao_luto": [],
+        "solidariedade_oracao_luto": [
+          {
+            "text": "É muita ganância da humanidade e pouca consciência. 😮😢",
+            "likes": 0,
+            "score": 0.591,
+            "date": "2026-09-13",
+            "video_id": "Vh3Ht_HdgoQ"
+          }
+        ],
         "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
+        "responsabilizacao_governanca": [
+          {
+            "text": "É isso aí, Caipirada. Cotinuem votando em prefeitos negacionistas e no Tarcísio. Vai piorar nos proximos anos.",
+            "likes": 2,
+            "score": 0.996,
+            "date": "2026-09-12",
+            "video_id": "Vh3Ht_HdgoQ"
+          }
+        ],
         "infraestrutura_ocupacao_risco": [],
         "clima_chuva_meio_ambiente": [],
         "experiencia_pessoal_local": [],
@@ -4145,7 +4199,7 @@
           "at": "2026-09-12T14:46:14Z"
         }
       ],
-      "n_comments_valid": 2,
+      "n_comments_valid": 4,
       "videos_with_valid_comments": [
         "Vh3Ht_HdgoQ"
       ],
@@ -4153,13 +4207,13 @@
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
+        "status": "ok",
+        "silence_type": null,
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-14T02:44:08Z",
-      "next_collection_at": "2026-09-14T14:44:08Z"
+      "last_collection_at": "2026-09-14T17:22:54Z",
+      "next_collection_at": "2026-09-15T05:22:54Z"
     },
     {
       "id": "cemaden_sp_2595",
@@ -4172,20 +4226,20 @@
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
+      "n_comments": 2,
+      "n_videos": 1,
       "unlabeled": 0,
       "unlabeled_pct": 0.0,
       "date_range": [
-        "",
-        ""
+        "2026-09-12",
+        "2026-09-13"
       ],
       "distribution": [
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
+          "count": 1,
+          "pct": 50.0
         },
         {
           "key": "ajuda_resgate_doacoes",
@@ -4196,8 +4250,8 @@
         {
           "key": "responsabilizacao_governanca",
           "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
+          "count": 1,
+          "pct": 50.0
         },
         {
           "key": "infraestrutura_ocupacao_risco",
@@ -4230,12 +4284,54 @@
           "pct": 0.0
         }
       ],
-      "timeline": [],
-      "videos": [],
+      "timeline": [
+        {
+          "date": "12/09/26",
+          "count": 1
+        },
+        {
+          "date": "13/09/26",
+          "count": 1
+        }
+      ],
+      "videos": [
+        {
+          "video_id": "Vh3Ht_HdgoQ",
+          "n_comments": 2,
+          "total_likes": 2,
+          "first_comment": "12/09/2026",
+          "top_categories": [
+            {
+              "label": "Solidariedade",
+              "count": 1
+            },
+            {
+              "label": "Responsabilização",
+              "count": 1
+            }
+          ]
+        }
+      ],
       "all_samples": {
-        "solidariedade_oracao_luto": [],
+        "solidariedade_oracao_luto": [
+          {
+            "text": "É muita ganância da humanidade e pouca consciência. 😮😢",
+            "likes": 0,
+            "score": 0.591,
+            "date": "2026-09-13",
+            "video_id": "Vh3Ht_HdgoQ"
+          }
+        ],
         "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
+        "responsabilizacao_governanca": [
+          {
+            "text": "É isso aí, Caipirada. Cotinuem votando em prefeitos negacionistas e no Tarcísio. Vai piorar nos proximos anos.",
+            "likes": 2,
+            "score": 0.996,
+            "date": "2026-09-12",
+            "video_id": "Vh3Ht_HdgoQ"
+          }
+        ],
         "infraestrutura_ocupacao_risco": [],
         "clima_chuva_meio_ambiente": [],
         "experiencia_pessoal_local": [],
@@ -4256,7 +4352,7 @@
           "at": "2026-09-12T14:46:14Z"
         }
       ],
-      "n_comments_valid": 2,
+      "n_comments_valid": 4,
       "videos_with_valid_comments": [
         "Vh3Ht_HdgoQ"
       ],
@@ -4264,13 +4360,13 @@
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
+        "status": "ok",
+        "silence_type": null,
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-14T02:44:08Z",
-      "next_collection_at": "2026-09-14T14:44:08Z"
+      "last_collection_at": "2026-09-14T17:22:54Z",
+      "next_collection_at": "2026-09-15T05:22:54Z"
     },
     {
       "id": "cemaden_sp_2596",
@@ -4374,8 +4470,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-13T15:27:03Z",
-      "next_collection_at": "2026-09-14T15:27:03Z"
+      "last_collection_at": "2026-09-14T17:22:54Z",
+      "next_collection_at": "2026-09-15T17:22:54Z"
     },
     {
       "id": "cemaden_sp_2597",
@@ -4479,8 +4575,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-13T15:27:03Z",
-      "next_collection_at": "2026-09-14T15:27:03Z"
+      "last_collection_at": "2026-09-14T17:22:54Z",
+      "next_collection_at": "2026-09-15T17:22:54Z"
     },
     {
       "id": "cemaden_sp_2598",
@@ -4493,20 +4589,20 @@
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
+      "n_comments": 20,
+      "n_videos": 2,
+      "unlabeled": 1,
+      "unlabeled_pct": 5.0,
       "date_range": [
-        "",
-        ""
+        "2026-09-13",
+        "2026-09-14"
       ],
       "distribution": [
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
+          "count": 13,
+          "pct": 65.0
         },
         {
           "key": "ajuda_resgate_doacoes",
@@ -4517,20 +4613,20 @@
         {
           "key": "responsabilizacao_governanca",
           "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
+          "count": 1,
+          "pct": 5.0
         },
         {
           "key": "infraestrutura_ocupacao_risco",
           "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
+          "count": 3,
+          "pct": 15.0
         },
         {
           "key": "clima_chuva_meio_ambiente",
           "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
+          "count": 2,
+          "pct": 10.0
         },
         {
           "key": "experiencia_pessoal_local",
@@ -4541,51 +4637,261 @@
         {
           "key": "alerta_prevencao_cobranca",
           "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
+          "count": 1,
+          "pct": 5.0
         },
         {
           "key": "critica_midia_informacao",
           "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
+          "count": 1,
+          "pct": 5.0
         }
       ],
-      "timeline": [],
-      "videos": [],
+      "timeline": [
+        {
+          "date": "13/09/26",
+          "count": 4
+        },
+        {
+          "date": "14/09/26",
+          "count": 16
+        }
+      ],
+      "videos": [
+        {
+          "video_id": "otLDyUV3S8c",
+          "n_comments": 11,
+          "total_likes": 10,
+          "first_comment": "13/09/2026",
+          "top_categories": [
+            {
+              "label": "Solidariedade",
+              "count": 7
+            },
+            {
+              "label": "Infraestrutura",
+              "count": 3
+            },
+            {
+              "label": "Responsabilização",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "video_id": "PuWdpSJi0o4",
+          "n_comments": 9,
+          "total_likes": 5,
+          "first_comment": "14/09/2026",
+          "top_categories": [
+            {
+              "label": "Solidariedade",
+              "count": 6
+            },
+            {
+              "label": "Clima/chuva",
+              "count": 2
+            },
+            {
+              "label": "Crítica mídia",
+              "count": 1
+            }
+          ]
+        }
+      ],
       "all_samples": {
-        "solidariedade_oracao_luto": [],
+        "solidariedade_oracao_luto": [
+          {
+            "text": "Pensei que ia parar na ponte, que nada a força da água é invencível.",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-09-14",
+            "video_id": "PuWdpSJi0o4"
+          },
+          {
+            "text": "Meu Deus",
+            "likes": 1,
+            "score": 0.994,
+            "date": "2026-09-14",
+            "video_id": "PuWdpSJi0o4"
+          },
+          {
+            "text": "Senhor misericordia",
+            "likes": 2,
+            "score": 0.994,
+            "date": "2026-09-14",
+            "video_id": "PuWdpSJi0o4"
+          },
+          {
+            "text": "🙏🙏",
+            "likes": 0,
+            "score": 0.974,
+            "date": "2026-09-14",
+            "video_id": "PuWdpSJi0o4"
+          },
+          {
+            "text": "🙏🙏🙏",
+            "likes": 0,
+            "score": 0.974,
+            "date": "2026-09-14",
+            "video_id": "otLDyUV3S8c"
+          },
+          {
+            "text": "😮😮😮",
+            "likes": 1,
+            "score": 0.974,
+            "date": "2026-09-14",
+            "video_id": "otLDyUV3S8c"
+          },
+          {
+            "text": "🙏🙏🙏",
+            "likes": 0,
+            "score": 0.974,
+            "date": "2026-09-14",
+            "video_id": "otLDyUV3S8c"
+          },
+          {
+            "text": "🙏🙏",
+            "likes": 0,
+            "score": 0.974,
+            "date": "2026-09-14",
+            "video_id": "otLDyUV3S8c"
+          },
+          {
+            "text": "Quê pavor",
+            "likes": 3,
+            "score": 0.974,
+            "date": "2026-09-14",
+            "video_id": "otLDyUV3S8c"
+          },
+          {
+            "text": "Força da natureza contra a força da engenharia",
+            "likes": 0,
+            "score": 0.914,
+            "date": "2026-09-14",
+            "video_id": "PuWdpSJi0o4"
+          },
+          {
+            "text": "V i i i i i i i i i i i i r g i ! 😮",
+            "likes": 0,
+            "score": 0.835,
+            "date": "2026-09-14",
+            "video_id": "otLDyUV3S8c"
+          },
+          {
+            "text": "Minha nossa",
+            "likes": 4,
+            "score": 0.789,
+            "date": "2026-09-14",
+            "video_id": "otLDyUV3S8c"
+          },
+          {
+            "text": "É complicado",
+            "likes": 0,
+            "score": 0.531,
+            "date": "2026-09-14",
+            "video_id": "PuWdpSJi0o4"
+          }
+        ],
         "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
+        "responsabilizacao_governanca": [
+          {
+            "text": "Vamos ficar atentos aos alertas das autoridades sobre isso. 🙏",
+            "likes": 0,
+            "score": 0.95,
+            "date": "2026-09-13",
+            "video_id": "otLDyUV3S8c"
+          }
+        ],
+        "infraestrutura_ocupacao_risco": [
+          {
+            "text": "Eles vão abrir mais duas barragem",
+            "likes": 1,
+            "score": 0.997,
+            "date": "2026-09-13",
+            "video_id": "otLDyUV3S8c"
+          },
+          {
+            "text": "Deve ter muito bagre nesse rio",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-09-13",
+            "video_id": "otLDyUV3S8c"
+          },
+          {
+            "text": "Com certeza, o rio é muito rico em vida. 🐟",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-09-13",
+            "video_id": "otLDyUV3S8c"
+          }
+        ],
+        "clima_chuva_meio_ambiente": [
+          {
+            "text": "Tão assustador. A natureza muitas vezes é implacável. 😱😱😱",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-09-14",
+            "video_id": "PuWdpSJi0o4"
+          },
+          {
+            "text": "Força da natureza contra a força da engenharia",
+            "likes": 0,
+            "score": 0.994,
+            "date": "2026-09-14",
+            "video_id": "PuWdpSJi0o4"
+          }
+        ],
         "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
+        "alerta_prevencao_cobranca": [
+          {
+            "text": "Vamos ficar atentos aos alertas das autoridades sobre isso. 🙏",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-09-13",
+            "video_id": "otLDyUV3S8c"
+          }
+        ],
+        "critica_midia_informacao": [
+          {
+            "text": "Verdade",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-09-14",
+            "video_id": "PuWdpSJi0o4"
+          }
+        ]
       },
       "academic_studies": [],
       "observation_status": "active",
       "priority_tier": "moderado",
-      "flag": "alerta",
+      "flag": "acompanhamento",
       "flag_history": [
         {
           "flag": "alerta",
           "at": "2026-09-11T07:09:35Z"
+        },
+        {
+          "flag": "acompanhamento",
+          "at": "2026-09-14T17:22:54Z"
         }
       ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
+      "n_comments_valid": 19,
+      "videos_with_valid_comments": [
+        "PuWdpSJi0o4",
+        "otLDyUV3S8c"
+      ],
       "alert_opened_at": "2026-09-11T07:09:35Z",
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
+        "status": "ok",
+        "silence_type": null,
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-13T15:27:03Z",
-      "next_collection_at": "2026-09-14T15:27:03Z"
+      "last_collection_at": "2026-09-14T17:22:54Z",
+      "next_collection_at": "2026-09-15T05:22:54Z"
     },
     {
       "id": "cemaden_sp_2599",
@@ -6163,111 +6469,6 @@
       "n_comments_valid": 0,
       "videos_with_valid_comments": [],
       "alert_opened_at": "2026-09-11T18:51:27Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-09-14T11:24:12Z",
-      "next_collection_at": "2026-09-15T11:24:12Z"
-    },
-    {
-      "id": "cemaden_pr_2670",
-      "municipio": "Campo Largo",
-      "uf": "PR",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "11/09/2026",
-      "codibge": "4104204",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-09-11T18:55:34Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-09-11T18:55:34Z",
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
@@ -8313,111 +8514,6 @@
       "n_comments_valid": 0,
       "videos_with_valid_comments": [],
       "alert_opened_at": "2026-09-12T02:57:08Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-09-14T11:24:12Z",
-      "next_collection_at": "2026-09-15T11:24:12Z"
-    },
-    {
-      "id": "cemaden_sp_2695",
-      "municipio": "Cabreúva",
-      "uf": "SP",
-      "tipo": "Risco Hidrológico",
-      "nivel": "Moderado",
-      "data_alerta": "12/09/2026",
-      "codibge": "3508405",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-09-12T02:57:24Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-09-12T02:57:24Z",
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
@@ -11965,111 +12061,6 @@
       "next_collection_at": "2026-09-14T20:05:42Z"
     },
     {
-      "id": "cemaden_sp_2723",
-      "municipio": "Monte Mor",
-      "uf": "SP",
-      "tipo": "Risco Hidrológico",
-      "nivel": "Moderado",
-      "data_alerta": "12/09/2026",
-      "codibge": "3531803",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-09-12T16:11:37Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-09-12T16:11:37Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-09-13T20:05:42Z",
-      "next_collection_at": "2026-09-14T20:05:42Z"
-    },
-    {
       "id": "cemaden_sp_2724",
       "municipio": "Itaóca",
       "uf": "SP",
@@ -13868,7 +13859,7 @@
       "lon": -48.909710720914,
       "regime": "prospective_live",
       "n_comments": 0,
-      "n_videos": 0,
+      "n_videos": 1,
       "unlabeled": 0,
       "unlabeled_pct": 0.0,
       "date_range": [
@@ -13926,7 +13917,15 @@
         }
       ],
       "timeline": [],
-      "videos": [],
+      "videos": [
+        {
+          "video_id": "8hoGpz8CO8M",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
+        }
+      ],
       "all_samples": {
         "solidariedade_oracao_luto": [],
         "ajuda_resgate_doacoes": [],
@@ -13958,12 +13957,12 @@
       "alert_transitions": [],
       "collection_health": {
         "status": "silent",
-        "silence_type": "no_videos_found",
+        "silence_type": "videos_without_comments",
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-14T02:44:08Z",
-      "next_collection_at": "2026-09-14T14:44:08Z"
+      "last_collection_at": "2026-09-14T17:22:54Z",
+      "next_collection_at": "2026-09-15T05:22:54Z"
     },
     {
       "id": "cemaden_sc_2517",
@@ -13977,7 +13976,7 @@
       "lon": -49.097025008272,
       "regime": "prospective_live",
       "n_comments": 0,
-      "n_videos": 0,
+      "n_videos": 1,
       "unlabeled": 0,
       "unlabeled_pct": 0.0,
       "date_range": [
@@ -14035,7 +14034,15 @@
         }
       ],
       "timeline": [],
-      "videos": [],
+      "videos": [
+        {
+          "video_id": "FLCyknDf0wI",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
+        }
+      ],
       "all_samples": {
         "solidariedade_oracao_luto": [],
         "ajuda_resgate_doacoes": [],
@@ -14067,12 +14074,12 @@
       "alert_transitions": [],
       "collection_health": {
         "status": "silent",
-        "silence_type": "no_videos_found",
+        "silence_type": "videos_without_comments",
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-14T02:44:08Z",
-      "next_collection_at": "2026-09-14T14:44:08Z"
+      "last_collection_at": "2026-09-14T17:22:54Z",
+      "next_collection_at": "2026-09-15T05:22:54Z"
     },
     {
       "id": "cemaden_sp_2609",
