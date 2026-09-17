@@ -1,13 +1,13 @@
 {
   "schema_version": "0.2",
   "pipeline_version": "0.2.2",
-  "last_run_at": "2026-09-16T15:54:04Z",
+  "last_run_at": "2026-09-17T02:46:44Z",
   "last_run_status": "success",
-  "last_run_duration_seconds": 1,
-  "last_cemaden_check_at": "2026-09-16T15:54:04Z",
+  "last_run_duration_seconds": 278,
+  "last_cemaden_check_at": "2026-09-17T02:46:44Z",
   "youtube_quota": {
-    "used_today": 89100,
-    "reset_at": "2026-09-17T07:00:00Z"
+    "used_today": 90800,
+    "reset_at": "2026-09-18T07:00:00Z"
   },
   "active_alerts": {
     "cemaden_sp_2657": {
@@ -25,7 +25,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-09-11T17:05:28Z",
-      "last_seen_open_at": "2026-09-16T15:54:04Z",
+      "last_seen_open_at": "2026-09-17T02:46:44Z",
       "closed_at": null,
       "transitions": [
         {
@@ -49,16 +49,24 @@
       "uf": "SP",
       "nivel_atual": "Alto",
       "priority_tier": "alto",
-      "flag": "alerta",
+      "flag": "prioritario",
       "flag_history": [
         {
           "flag": "alerta",
           "at": "2026-09-12T12:11:35Z"
+        },
+        {
+          "flag": "acompanhamento",
+          "at": "2026-09-17T02:46:44Z"
+        },
+        {
+          "flag": "prioritario",
+          "at": "2026-09-17T02:46:44Z"
         }
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-09-12T12:11:35Z",
-      "last_seen_open_at": "2026-09-16T15:54:04Z",
+      "last_seen_open_at": "2026-09-17T02:46:44Z",
       "closed_at": null,
       "transitions": [
         {
@@ -67,74 +75,24 @@
           "at": "2026-09-13T15:27:03Z"
         }
       ],
-      "videos_collected": [],
-      "n_videos_aderentes": 0,
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "last_new_data_at": null,
-      "last_new_comment_at": null,
-      "last_collection_at": "2026-09-16T02:42:58Z",
-      "next_collection_at": "2026-09-17T02:42:58Z"
-    },
-    "cemaden_sp_2718": {
-      "codibge": "3514809",
-      "municipio": "Eldorado",
-      "uf": "SP",
-      "nivel_atual": "Alto",
-      "priority_tier": "alto",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-09-12T12:45:19Z"
-        }
+      "videos_collected": [
+        "KtQVJ8_d8Aw",
+        "cgvIRir0gB0",
+        "fKaHJbwMSaI",
+        "v13VotuvHA8"
       ],
-      "evento": "Risco Hidrológico",
-      "opened_at": "2026-09-12T12:45:19Z",
-      "last_seen_open_at": "2026-09-16T15:54:04Z",
-      "closed_at": null,
-      "transitions": [
-        {
-          "from": "Moderado",
-          "to": "Alto",
-          "at": "2026-09-13T15:27:03Z"
-        }
+      "n_videos_aderentes": 4,
+      "n_comments_valid": 63,
+      "videos_with_valid_comments": [
+        "KtQVJ8_d8Aw",
+        "cgvIRir0gB0",
+        "fKaHJbwMSaI",
+        "v13VotuvHA8"
       ],
-      "videos_collected": [],
-      "n_videos_aderentes": 0,
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "last_new_data_at": null,
-      "last_new_comment_at": null,
-      "last_collection_at": "2026-09-16T02:42:58Z",
-      "next_collection_at": "2026-09-17T02:42:58Z"
-    },
-    "cemaden_rs_2728": {
-      "codibge": "4318002",
-      "municipio": "São Borja",
-      "uf": "RS",
-      "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-09-13T18:15:33Z"
-        }
-      ],
-      "evento": "Risco Hidrológico",
-      "opened_at": "2026-09-13T18:15:33Z",
-      "last_seen_open_at": "2026-09-16T15:54:04Z",
-      "closed_at": null,
-      "transitions": [],
-      "videos_collected": [],
-      "n_videos_aderentes": 0,
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "last_new_data_at": null,
-      "last_new_comment_at": null,
-      "last_collection_at": "2026-09-16T10:37:29Z",
-      "next_collection_at": "2026-09-17T10:37:29Z"
+      "last_new_data_at": "2026-09-17T02:46:44Z",
+      "last_new_comment_at": "2026-09-17T02:46:44Z",
+      "last_collection_at": "2026-09-17T02:46:44Z",
+      "next_collection_at": "2026-09-17T08:46:44Z"
     }
   },
   "extended_window_alerts": {
@@ -165,14 +123,14 @@
         "R39FGaY5-wg"
       ],
       "n_videos_aderentes": 3,
-      "n_comments_valid": 189,
+      "n_comments_valid": 198,
       "videos_with_valid_comments": [
         "0P0rteK4PiE"
       ],
-      "last_new_data_at": "2026-09-16T10:37:29Z",
-      "last_new_comment_at": "2026-09-16T10:37:29Z",
-      "last_collection_at": "2026-09-16T10:37:29Z",
-      "next_collection_at": "2026-09-16T22:37:29Z"
+      "last_new_data_at": "2026-09-17T02:46:44Z",
+      "last_new_comment_at": "2026-09-17T02:46:44Z",
+      "last_collection_at": "2026-09-17T02:46:44Z",
+      "next_collection_at": "2026-09-17T14:46:44Z"
     },
     "cemaden_rs_2480": {
       "codibge": "4311007",
@@ -214,8 +172,8 @@
       ],
       "last_new_data_at": "2026-09-12T09:54:32Z",
       "last_new_comment_at": "2026-09-12T09:54:32Z",
-      "last_collection_at": "2026-09-16T10:37:29Z",
-      "next_collection_at": "2026-09-16T22:37:29Z"
+      "last_collection_at": "2026-09-17T02:46:44Z",
+      "next_collection_at": "2026-09-17T14:46:44Z"
     },
     "cemaden_rs_2494": {
       "codibge": "4306601",
@@ -244,14 +202,14 @@
         "nMKmDt7DPCc"
       ],
       "n_videos_aderentes": 2,
-      "n_comments_valid": 493,
+      "n_comments_valid": 513,
       "videos_with_valid_comments": [
         "FawKqyvaAzU"
       ],
-      "last_new_data_at": "2026-09-16T10:37:29Z",
-      "last_new_comment_at": "2026-09-16T10:37:29Z",
-      "last_collection_at": "2026-09-16T10:37:29Z",
-      "next_collection_at": "2026-09-16T22:37:29Z"
+      "last_new_data_at": "2026-09-17T02:46:44Z",
+      "last_new_comment_at": "2026-09-17T02:46:44Z",
+      "last_collection_at": "2026-09-17T02:46:44Z",
+      "next_collection_at": "2026-09-17T14:46:44Z"
     },
     "cemaden_rs_2499": {
       "codibge": "4314407",
@@ -291,7 +249,7 @@
         "vJbko9m-q-s"
       ],
       "n_videos_aderentes": 9,
-      "n_comments_valid": 512,
+      "n_comments_valid": 529,
       "videos_with_valid_comments": [
         "-nppGOJBua4",
         "Fe2zgHVygvk",
@@ -300,10 +258,10 @@
         "ffc8iNXAH9k",
         "nwCWDjzyvWQ"
       ],
-      "last_new_data_at": "2026-09-16T10:37:29Z",
-      "last_new_comment_at": "2026-09-16T10:37:29Z",
-      "last_collection_at": "2026-09-16T10:37:29Z",
-      "next_collection_at": "2026-09-16T16:37:29Z"
+      "last_new_data_at": "2026-09-17T02:46:44Z",
+      "last_new_comment_at": "2026-09-17T02:46:44Z",
+      "last_collection_at": "2026-09-17T02:46:44Z",
+      "next_collection_at": "2026-09-17T08:46:44Z"
     },
     "cemaden_sp_2507": {
       "codibge": "3550308",
@@ -346,17 +304,17 @@
         "nuaDWrFs-Ds"
       ],
       "n_videos_aderentes": 12,
-      "n_comments_valid": 225,
+      "n_comments_valid": 233,
       "videos_with_valid_comments": [
         "BZkiA1yeA1k",
         "RpkbaFLUpjI",
         "TISM175nvsg",
         "UwFA2z6cAJE"
       ],
-      "last_new_data_at": "2026-09-16T10:37:29Z",
-      "last_new_comment_at": "2026-09-16T10:37:29Z",
-      "last_collection_at": "2026-09-16T10:37:29Z",
-      "next_collection_at": "2026-09-16T16:37:29Z"
+      "last_new_data_at": "2026-09-17T02:46:44Z",
+      "last_new_comment_at": "2026-09-17T02:46:44Z",
+      "last_collection_at": "2026-09-17T02:46:44Z",
+      "next_collection_at": "2026-09-17T08:46:44Z"
     },
     "cemaden_sp_2609": {
       "codibge": "3550308",
@@ -400,7 +358,7 @@
         "z1OeMc28Yos"
       ],
       "n_videos_aderentes": 13,
-      "n_comments_valid": 1966,
+      "n_comments_valid": 2557,
       "videos_with_valid_comments": [
         "Hyhg7HsXX7s",
         "KtQVJ8_d8Aw",
@@ -411,10 +369,10 @@
         "qSmKOPIqnv8",
         "z1OeMc28Yos"
       ],
-      "last_new_data_at": "2026-09-16T10:37:29Z",
-      "last_new_comment_at": "2026-09-16T10:37:29Z",
-      "last_collection_at": "2026-09-16T10:37:29Z",
-      "next_collection_at": "2026-09-16T16:37:29Z"
+      "last_new_data_at": "2026-09-17T02:46:44Z",
+      "last_new_comment_at": "2026-09-17T02:46:44Z",
+      "last_collection_at": "2026-09-17T02:46:44Z",
+      "next_collection_at": "2026-09-17T08:46:44Z"
     },
     "cemaden_sp_2586": {
       "codibge": "3542800",
@@ -457,7 +415,7 @@
         "pAw2H5RV9t0"
       ],
       "n_videos_aderentes": 12,
-      "n_comments_valid": 467,
+      "n_comments_valid": 505,
       "videos_with_valid_comments": [
         "HLfTpQv78C0",
         "JaspoaOI9tQ",
@@ -467,10 +425,10 @@
         "mC7ak82eySE",
         "otLDyUV3S8c"
       ],
-      "last_new_data_at": "2026-09-16T10:37:29Z",
-      "last_new_comment_at": "2026-09-16T10:37:29Z",
-      "last_collection_at": "2026-09-16T10:37:29Z",
-      "next_collection_at": "2026-09-16T16:37:29Z"
+      "last_new_data_at": "2026-09-17T02:46:44Z",
+      "last_new_comment_at": "2026-09-17T02:46:44Z",
+      "last_collection_at": "2026-09-17T02:46:44Z",
+      "next_collection_at": "2026-09-17T08:46:44Z"
     },
     "cemaden_sp_2594": {
       "codibge": "3552403",
@@ -505,8 +463,8 @@
       ],
       "last_new_data_at": "2026-09-16T10:37:29Z",
       "last_new_comment_at": "2026-09-16T10:37:29Z",
-      "last_collection_at": "2026-09-16T10:37:29Z",
-      "next_collection_at": "2026-09-16T22:37:29Z"
+      "last_collection_at": "2026-09-17T02:46:44Z",
+      "next_collection_at": "2026-09-17T14:46:44Z"
     },
     "cemaden_sp_2595": {
       "codibge": "3545803",
@@ -539,15 +497,15 @@
         "Vh3Ht_HdgoQ"
       ],
       "n_videos_aderentes": 2,
-      "n_comments_valid": 52,
+      "n_comments_valid": 98,
       "videos_with_valid_comments": [
         "HLfTpQv78C0",
         "Vh3Ht_HdgoQ"
       ],
-      "last_new_data_at": "2026-09-16T10:37:29Z",
-      "last_new_comment_at": "2026-09-16T10:37:29Z",
-      "last_collection_at": "2026-09-16T10:37:29Z",
-      "next_collection_at": "2026-09-16T16:37:29Z"
+      "last_new_data_at": "2026-09-17T02:46:44Z",
+      "last_new_comment_at": "2026-09-17T02:46:44Z",
+      "last_collection_at": "2026-09-17T02:46:44Z",
+      "next_collection_at": "2026-09-17T08:46:44Z"
     },
     "cemaden_sp_2598": {
       "codibge": "3521200",
@@ -576,19 +534,21 @@
       "closed_at": "2026-09-15T20:44:27Z",
       "transitions": [],
       "videos_collected": [
+        "KtQVJ8_d8Aw",
         "PuWdpSJi0o4",
         "otLDyUV3S8c"
       ],
-      "n_videos_aderentes": 2,
-      "n_comments_valid": 57,
+      "n_videos_aderentes": 3,
+      "n_comments_valid": 100,
       "videos_with_valid_comments": [
+        "KtQVJ8_d8Aw",
         "PuWdpSJi0o4",
         "otLDyUV3S8c"
       ],
-      "last_new_data_at": "2026-09-16T10:37:29Z",
-      "last_new_comment_at": "2026-09-16T10:37:29Z",
-      "last_collection_at": "2026-09-16T10:37:29Z",
-      "next_collection_at": "2026-09-16T16:37:29Z"
+      "last_new_data_at": "2026-09-17T02:46:44Z",
+      "last_new_comment_at": "2026-09-17T02:46:44Z",
+      "last_collection_at": "2026-09-17T02:46:44Z",
+      "next_collection_at": "2026-09-17T08:46:44Z"
     },
     "cemaden_pr_2669": {
       "codibge": "4116208",
@@ -621,8 +581,8 @@
       "videos_with_valid_comments": [],
       "last_new_data_at": "2026-09-15T16:01:53Z",
       "last_new_comment_at": null,
-      "last_collection_at": "2026-09-16T10:37:29Z",
-      "next_collection_at": "2026-09-16T22:37:29Z"
+      "last_collection_at": "2026-09-17T02:46:44Z",
+      "next_collection_at": "2026-09-17T14:46:44Z"
     },
     "cemaden_sp_2689": {
       "codibge": "3552205",
@@ -654,8 +614,8 @@
       "videos_with_valid_comments": [],
       "last_new_data_at": "2026-09-15T16:01:53Z",
       "last_new_comment_at": null,
-      "last_collection_at": "2026-09-15T16:01:53Z",
-      "next_collection_at": "2026-09-16T22:37:29Z"
+      "last_collection_at": "2026-09-17T02:46:44Z",
+      "next_collection_at": "2026-09-17T14:46:44Z"
     },
     "cemaden_sc_2721": {
       "codibge": "4213609",
@@ -687,8 +647,8 @@
       "videos_with_valid_comments": [],
       "last_new_data_at": "2026-09-16T02:42:58Z",
       "last_new_comment_at": null,
-      "last_collection_at": "2026-09-16T02:42:58Z",
-      "next_collection_at": "2026-09-16T22:37:29Z"
+      "last_collection_at": "2026-09-17T02:46:44Z",
+      "next_collection_at": "2026-09-17T14:46:44Z"
     },
     "cemaden_sp_2571": {
       "codibge": "3547809",
@@ -886,16 +846,16 @@
         "KwnzpgMLHCk"
       ],
       "n_videos_aderentes": 3,
-      "n_comments_valid": 72,
+      "n_comments_valid": 141,
       "videos_with_valid_comments": [
         "HLfTpQv78C0",
         "KtQVJ8_d8Aw",
         "KwnzpgMLHCk"
       ],
-      "last_new_data_at": "2026-09-16T10:37:29Z",
-      "last_new_comment_at": "2026-09-16T10:37:29Z",
-      "last_collection_at": "2026-09-16T10:37:29Z",
-      "next_collection_at": "2026-09-16T21:54:04Z"
+      "last_new_data_at": "2026-09-17T02:46:44Z",
+      "last_new_comment_at": "2026-09-17T02:46:44Z",
+      "last_collection_at": "2026-09-17T02:46:44Z",
+      "next_collection_at": "2026-09-17T08:46:44Z"
     },
     "cemaden_sp_2577": {
       "codibge": "3550308",
@@ -948,22 +908,23 @@
         "s4l41KdW75M"
       ],
       "n_videos_aderentes": 11,
-      "n_comments_valid": 912,
+      "n_comments_valid": 1167,
       "videos_with_valid_comments": [
         "-O41i-QLYnA",
         "0z0nd9loopY",
         "HLfTpQv78C0",
         "KtQVJ8_d8Aw",
+        "LnzPAjIyRes",
         "PfUpdJ4Gdco",
         "bZgYWYd8acQ",
         "n-DC99OxuM8",
         "nb6Z3IH2agk",
         "s4l41KdW75M"
       ],
-      "last_new_data_at": "2026-09-16T10:37:29Z",
-      "last_new_comment_at": "2026-09-16T10:37:29Z",
-      "last_collection_at": "2026-09-16T10:37:29Z",
-      "next_collection_at": "2026-09-16T21:54:04Z"
+      "last_new_data_at": "2026-09-17T02:46:44Z",
+      "last_new_comment_at": "2026-09-17T02:46:44Z",
+      "last_collection_at": "2026-09-17T02:46:44Z",
+      "next_collection_at": "2026-09-17T08:46:44Z"
     },
     "cemaden_sp_2679": {
       "codibge": "3513801",
@@ -1142,16 +1103,16 @@
         "qSmKOPIqnv8"
       ],
       "n_videos_aderentes": 3,
-      "n_comments_valid": 1087,
+      "n_comments_valid": 1305,
       "videos_with_valid_comments": [
         "KtQVJ8_d8Aw",
         "KwnzpgMLHCk",
         "qSmKOPIqnv8"
       ],
-      "last_new_data_at": "2026-09-16T10:37:29Z",
-      "last_new_comment_at": "2026-09-16T10:37:29Z",
-      "last_collection_at": "2026-09-16T10:37:29Z",
-      "next_collection_at": "2026-09-16T21:54:04Z"
+      "last_new_data_at": "2026-09-17T02:46:44Z",
+      "last_new_comment_at": "2026-09-17T02:46:44Z",
+      "last_collection_at": "2026-09-17T02:46:44Z",
+      "next_collection_at": "2026-09-17T08:46:44Z"
     }
   },
   "archived_alerts": {
