@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T10:46:11Z",
+  "generated_at": "2026-09-26T15:32:02Z",
   "pipeline_version": "0.2.2",
   "pilot_mode": true,
   "dry_run": false,
@@ -15,20 +15,20 @@
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
+      "n_comments": 5,
+      "n_videos": 1,
+      "unlabeled": 1,
+      "unlabeled_pct": 20.0,
       "date_range": [
-        "",
-        ""
+        "2026-09-24",
+        "2026-09-25"
       ],
       "distribution": [
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
+          "count": 3,
+          "pct": 60.0
         },
         {
           "key": "ajuda_resgate_doacoes",
@@ -45,14 +45,14 @@
         {
           "key": "infraestrutura_ocupacao_risco",
           "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
+          "count": 1,
+          "pct": 20.0
         },
         {
           "key": "clima_chuva_meio_ambiente",
           "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
+          "count": 1,
+          "pct": 20.0
         },
         {
           "key": "experiencia_pessoal_local",
@@ -73,14 +73,82 @@
           "pct": 0.0
         }
       ],
-      "timeline": [],
-      "videos": [],
+      "timeline": [
+        {
+          "date": "24/09/26",
+          "count": 3
+        },
+        {
+          "date": "25/09/26",
+          "count": 2
+        }
+      ],
+      "videos": [
+        {
+          "video_id": "rBqMG1h8dys",
+          "n_comments": 5,
+          "total_likes": 3,
+          "first_comment": "24/09/2026",
+          "top_categories": [
+            {
+              "label": "Solidariedade",
+              "count": 3
+            },
+            {
+              "label": "Infraestrutura",
+              "count": 1
+            },
+            {
+              "label": "Clima/chuva",
+              "count": 1
+            }
+          ]
+        }
+      ],
       "all_samples": {
-        "solidariedade_oracao_luto": [],
+        "solidariedade_oracao_luto": [
+          {
+            "text": "🙏🙏🙏 obrigado",
+            "likes": 0,
+            "score": 0.977,
+            "date": "2026-09-25",
+            "video_id": "rBqMG1h8dys"
+          },
+          {
+            "text": "🙏🙏🙏 abraço",
+            "likes": 0,
+            "score": 0.972,
+            "date": "2026-09-24",
+            "video_id": "rBqMG1h8dys"
+          },
+          {
+            "text": "🙏🙏🙏 obrigado por mostrar",
+            "likes": 2,
+            "score": 0.781,
+            "date": "2026-09-24",
+            "video_id": "rBqMG1h8dys"
+          }
+        ],
         "ajuda_resgate_doacoes": [],
         "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
+        "infraestrutura_ocupacao_risco": [
+          {
+            "text": "✅ O Rio dos Sinos ultrapassa a cota de inundação nesta quinta-feira dia 24/09/2026.",
+            "likes": 0,
+            "score": 0.993,
+            "date": "2026-09-24",
+            "video_id": "rBqMG1h8dys"
+          }
+        ],
+        "clima_chuva_meio_ambiente": [
+          {
+            "text": "✅ O Rio dos Sinos ultrapassa a cota de inundação nesta quinta-feira dia 24/09/2026.",
+            "likes": 0,
+            "score": 0.99,
+            "date": "2026-09-24",
+            "video_id": "rBqMG1h8dys"
+          }
+        ],
         "experiencia_pessoal_local": [],
         "alerta_prevencao_cobranca": [],
         "critica_midia_informacao": []
@@ -88,26 +156,32 @@
       "academic_studies": [],
       "observation_status": "active",
       "priority_tier": "moderado",
-      "flag": "alerta",
+      "flag": "acompanhamento",
       "flag_history": [
         {
           "flag": "alerta",
           "at": "2026-09-24T07:09:31Z"
+        },
+        {
+          "flag": "acompanhamento",
+          "at": "2026-09-26T15:30:51Z"
         }
       ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
+      "n_comments_valid": 4,
+      "videos_with_valid_comments": [
+        "rBqMG1h8dys"
+      ],
       "alert_opened_at": "2026-09-24T07:09:31Z",
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
+        "status": "ok",
+        "silence_type": null,
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-25T10:56:26Z",
-      "next_collection_at": "2026-09-26T10:56:26Z"
+      "last_collection_at": "2026-09-26T15:30:51Z",
+      "next_collection_at": "2026-09-27T03:30:51Z"
     },
     {
       "id": "cemaden_rs_2475",
@@ -4833,14 +4907,14 @@
           },
           {
             "text": "Esse evento em nada tem a haver com a existência de condomínios, isso é o sistema de resfriamento das zonas do globo, quando as massas de ar quente e ar gelado se encontram ocorrem as tempestades que são grandes \"ventiladores\" mixando o ar e resfriando essas áreas. O planeta tem suas próprias sessões de esquenta\\esfria e o ser humano não tem capacidade de intervir de forma significativa nesta dinâ",
-            "likes": 1,
+            "likes": 3,
             "score": 0.998,
             "date": "2026-09-11",
             "video_id": "HLfTpQv78C0"
           },
           {
             "text": "Esse evento em nada tem a haver com a existência de condomínios, isso é o sistema de resfriamento das zonas do globo, quando as massas de ar quente e ar gelado se encontram ocorrem as tempestades que são grandes \"ventiladores\" mixando o ar e resfriando essas áreas. O planeta tem suas próprias sessões de esquenta\\esfria e o ser humano não tem capacidade de intervir de forma significativa nesta dinâ",
-            "likes": 3,
+            "likes": 1,
             "score": 0.998,
             "date": "2026-09-11",
             "video_id": "HLfTpQv78C0"
@@ -4931,7 +5005,7 @@
           "at": "2026-09-13T20:05:42Z"
         }
       ],
-      "n_comments_valid": 674,
+      "n_comments_valid": 715,
       "videos_with_valid_comments": [
         "HLfTpQv78C0"
       ],
@@ -4944,8 +5018,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-26T02:52:24Z",
-      "next_collection_at": "2026-09-26T14:52:24Z"
+      "last_collection_at": "2026-09-26T15:30:51Z",
+      "next_collection_at": "2026-09-27T03:30:51Z"
     },
     {
       "id": "cemaden_sp_2572",
@@ -5406,14 +5480,14 @@
           },
           {
             "text": "Esse evento em nada tem a haver com a existência de condomínios, isso é o sistema de resfriamento das zonas do globo, quando as massas de ar quente e ar gelado se encontram ocorrem as tempestades que são grandes \"ventiladores\" mixando o ar e resfriando essas áreas. O planeta tem suas próprias sessões de esquenta\\esfria e o ser humano não tem capacidade de intervir de forma significativa nesta dinâ",
-            "likes": 1,
+            "likes": 3,
             "score": 0.998,
             "date": "2026-09-11",
             "video_id": "HLfTpQv78C0"
           },
           {
             "text": "Esse evento em nada tem a haver com a existência de condomínios, isso é o sistema de resfriamento das zonas do globo, quando as massas de ar quente e ar gelado se encontram ocorrem as tempestades que são grandes \"ventiladores\" mixando o ar e resfriando essas áreas. O planeta tem suas próprias sessões de esquenta\\esfria e o ser humano não tem capacidade de intervir de forma significativa nesta dinâ",
-            "likes": 3,
+            "likes": 1,
             "score": 0.998,
             "date": "2026-09-11",
             "video_id": "HLfTpQv78C0"
@@ -5504,7 +5578,7 @@
           "at": "2026-09-14T21:16:10Z"
         }
       ],
-      "n_comments_valid": 598,
+      "n_comments_valid": 639,
       "videos_with_valid_comments": [
         "HLfTpQv78C0"
       ],
@@ -5528,8 +5602,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-26T02:52:24Z",
-      "next_collection_at": "2026-09-26T14:52:24Z"
+      "last_collection_at": "2026-09-26T15:30:51Z",
+      "next_collection_at": "2026-09-27T03:30:51Z"
     },
     {
       "id": "cemaden_sp_2573",
@@ -10918,7 +10992,7 @@
       "lon": null,
       "regime": "prospective_live",
       "n_comments": 0,
-      "n_videos": 0,
+      "n_videos": 1,
       "unlabeled": 0,
       "unlabeled_pct": 0.0,
       "date_range": [
@@ -10976,7 +11050,15 @@
         }
       ],
       "timeline": [],
-      "videos": [],
+      "videos": [
+        {
+          "video_id": "PoENUjaOgFw",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
+        }
+      ],
       "all_samples": {
         "solidariedade_oracao_luto": [],
         "ajuda_resgate_doacoes": [],
@@ -11010,12 +11092,12 @@
       "alert_transitions": [],
       "collection_health": {
         "status": "silent",
-        "silence_type": "no_videos_found",
+        "silence_type": "videos_without_comments",
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-26T02:52:24Z",
-      "next_collection_at": "2026-09-26T14:52:24Z"
+      "last_collection_at": "2026-09-26T15:30:51Z",
+      "next_collection_at": "2026-09-27T03:30:51Z"
     },
     {
       "id": "cemaden_sp_2684",
@@ -11029,7 +11111,7 @@
       "lon": null,
       "regime": "prospective_live",
       "n_comments": 30,
-      "n_videos": 2,
+      "n_videos": 1,
       "unlabeled": 6,
       "unlabeled_pct": 20.0,
       "date_range": [
@@ -11124,13 +11206,6 @@
               "count": 5
             }
           ]
-        },
-        {
-          "video_id": "61T6aE92UMo",
-          "n_comments": 0,
-          "total_likes": 0,
-          "first_comment": "",
-          "top_categories": []
         }
       ],
       "all_samples": {
@@ -11409,7 +11484,7 @@
           "at": "2026-09-15T16:01:53Z"
         }
       ],
-      "n_comments_valid": 264,
+      "n_comments_valid": 288,
       "videos_with_valid_comments": [
         "KtQVJ8_d8Aw"
       ],
@@ -11422,8 +11497,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-26T02:52:24Z",
-      "next_collection_at": "2026-09-26T14:52:24Z"
+      "last_collection_at": "2026-09-26T15:30:51Z",
+      "next_collection_at": "2026-09-27T03:30:51Z"
     },
     {
       "id": "cemaden_sp_2686",
@@ -14996,7 +15071,7 @@
       "lon": null,
       "regime": "prospective_live",
       "n_comments": 16,
-      "n_videos": 3,
+      "n_videos": 4,
       "unlabeled": 6,
       "unlabeled_pct": 37.5,
       "date_range": [
@@ -15118,6 +15193,13 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": []
+        },
+        {
+          "video_id": "bY1bSDsZK0o",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
         }
       ],
       "all_samples": {
@@ -15223,7 +15305,7 @@
       "academic_studies": [],
       "observation_status": "extended",
       "priority_tier": "moderado",
-      "flag": "acompanhamento",
+      "flag": "prioritario",
       "flag_history": [
         {
           "flag": "alerta",
@@ -15232,9 +15314,13 @@
         {
           "flag": "acompanhamento",
           "at": "2026-09-21T17:36:30Z"
+        },
+        {
+          "flag": "prioritario",
+          "at": "2026-09-26T15:30:51Z"
         }
       ],
-      "n_comments_valid": 41,
+      "n_comments_valid": 51,
       "videos_with_valid_comments": [
         "0_BH2DBCYyw",
         "FrkXV-cmuyM",
@@ -15250,8 +15336,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-26T02:52:24Z",
-      "next_collection_at": "2026-09-26T14:52:24Z"
+      "last_collection_at": "2026-09-26T15:30:51Z",
+      "next_collection_at": "2026-09-26T21:30:51Z"
     },
     {
       "id": "cemaden_sc_2776",
@@ -15265,7 +15351,7 @@
       "lon": null,
       "regime": "prospective_live",
       "n_comments": 0,
-      "n_videos": 0,
+      "n_videos": 4,
       "unlabeled": 0,
       "unlabeled_pct": 0.0,
       "date_range": [
@@ -15323,7 +15409,36 @@
         }
       ],
       "timeline": [],
-      "videos": [],
+      "videos": [
+        {
+          "video_id": "EogTe4jqPeM",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
+        },
+        {
+          "video_id": "Iaio8aZTo0Y",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
+        },
+        {
+          "video_id": "HGrpA9Rg7VU",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
+        },
+        {
+          "video_id": "lxyI8MQMEqw",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
+        }
+      ],
       "all_samples": {
         "solidariedade_oracao_luto": [],
         "ajuda_resgate_doacoes": [],
@@ -15355,12 +15470,12 @@
       "alert_transitions": [],
       "collection_health": {
         "status": "silent",
-        "silence_type": "no_videos_found",
+        "silence_type": "videos_without_comments",
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-26T02:52:24Z",
-      "next_collection_at": "2026-09-26T14:52:24Z"
+      "last_collection_at": "2026-09-26T15:30:51Z",
+      "next_collection_at": "2026-09-27T03:30:51Z"
     },
     {
       "id": "cemaden_rs_2805",
