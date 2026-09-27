@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T16:10:50Z",
+  "generated_at": "2026-09-27T20:49:55Z",
   "pipeline_version": "0.2.2",
   "pilot_mode": true,
   "dry_run": false,
@@ -182,111 +182,6 @@
       },
       "last_collection_at": "2026-09-27T11:09:11Z",
       "next_collection_at": "2026-09-27T23:09:11Z"
-    },
-    {
-      "id": "cemaden_ac_2836",
-      "municipio": "Marechal Thaumaturgo",
-      "uf": "AC",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "26/09/2026",
-      "codibge": "1200351",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-09-26T14:52:40Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-09-26T14:52:40Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-09-26T20:30:30Z",
-      "next_collection_at": "2026-09-27T20:30:30Z"
     },
     {
       "id": "cemaden_rs_2837",
@@ -1328,50 +1223,50 @@
       "lat": -31.581167679409,
       "lon": -52.341155831415,
       "regime": "prospective_live",
-      "n_comments": 2,
-      "n_videos": 3,
+      "n_comments": 18,
+      "n_videos": 4,
       "unlabeled": 1,
-      "unlabeled_pct": 50.0,
+      "unlabeled_pct": 5.6,
       "date_range": [
-        "2026-08-29",
+        "2026-08-28",
         "2026-08-30"
       ],
       "distribution": [
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
+          "count": 7,
+          "pct": 38.9
         },
         {
           "key": "ajuda_resgate_doacoes",
           "label": "Ajuda / resgate / doações",
           "count": 1,
-          "pct": 50.0
+          "pct": 5.6
         },
         {
           "key": "responsabilizacao_governanca",
           "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
+          "count": 1,
+          "pct": 5.6
         },
         {
           "key": "infraestrutura_ocupacao_risco",
           "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
+          "count": 2,
+          "pct": 11.1
         },
         {
           "key": "clima_chuva_meio_ambiente",
           "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
+          "count": 2,
+          "pct": 11.1
         },
         {
           "key": "experiencia_pessoal_local",
           "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
+          "count": 2,
+          "pct": 11.1
         },
         {
           "key": "alerta_prevencao_cobranca",
@@ -1382,14 +1277,18 @@
         {
           "key": "critica_midia_informacao",
           "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
+          "count": 6,
+          "pct": 33.3
         }
       ],
       "timeline": [
         {
+          "date": "28/08/26",
+          "count": 11
+        },
+        {
           "date": "29/08/26",
-          "count": 1
+          "count": 6
         },
         {
           "date": "30/08/26",
@@ -1397,6 +1296,26 @@
         }
       ],
       "videos": [
+        {
+          "video_id": "-nppGOJBua4",
+          "n_comments": 16,
+          "total_likes": 36,
+          "first_comment": "28/08/2026",
+          "top_categories": [
+            {
+              "label": "Solidariedade",
+              "count": 7
+            },
+            {
+              "label": "Crítica mídia",
+              "count": 6
+            },
+            {
+              "label": "Infraestrutura",
+              "count": 2
+            }
+          ]
+        },
         {
           "video_id": "ffc8iNXAH9k",
           "n_comments": 2,
@@ -1425,7 +1344,57 @@
         }
       ],
       "all_samples": {
-        "solidariedade_oracao_luto": [],
+        "solidariedade_oracao_luto": [
+          {
+            "text": "Opa boa tarde irmão que Deus tenha misericórdia que município é aí?",
+            "likes": 2,
+            "score": 0.995,
+            "date": "2026-08-28",
+            "video_id": "-nppGOJBua4"
+          },
+          {
+            "text": "Meu Deus!",
+            "likes": 0,
+            "score": 0.995,
+            "date": "2026-08-28",
+            "video_id": "-nppGOJBua4"
+          },
+          {
+            "text": "Misericórdia Senhor Jesus Cristo mãe rainha 👑 🇧🇷 👑 protege-nos ❤❤❤❤❤❤",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-08-28",
+            "video_id": "-nppGOJBua4"
+          },
+          {
+            "text": "Deus tenha misericórdia do povo gaúcho",
+            "likes": 0,
+            "score": 0.994,
+            "date": "2026-08-29",
+            "video_id": "-nppGOJBua4"
+          },
+          {
+            "text": "Misericórdia mesmo",
+            "likes": 0,
+            "score": 0.993,
+            "date": "2026-08-28",
+            "video_id": "-nppGOJBua4"
+          },
+          {
+            "text": "E u sou de Passo fundo Rio grande do Sul, E também fico Brava de não dizer a ondem foi isso que cidade do Rio grande do Sul Deus tens misericórdia dos seus",
+            "likes": 0,
+            "score": 0.959,
+            "date": "2026-08-29",
+            "video_id": "-nppGOJBua4"
+          },
+          {
+            "text": "Alguém aí pode informar qual foi a cidade( obrigada)",
+            "likes": 0,
+            "score": 0.678,
+            "date": "2026-08-29",
+            "video_id": "-nppGOJBua4"
+          }
+        ],
         "ajuda_resgate_doacoes": [
           {
             "text": "Oi Sheila: pega um barco",
@@ -1435,12 +1404,108 @@
             "video_id": "ffc8iNXAH9k"
           }
         ],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
+        "responsabilizacao_governanca": [
+          {
+            "text": "que Inresponsabilidade desse Jornalista",
+            "likes": 0,
+            "score": 0.952,
+            "date": "2026-08-29",
+            "video_id": "-nppGOJBua4"
+          }
+        ],
+        "infraestrutura_ocupacao_risco": [
+          {
+            "text": "E u sou de Passo fundo Rio grande do Sul, E também fico Brava de não dizer a ondem foi isso que cidade do Rio grande do Sul Deus tens misericórdia dos seus",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-08-29",
+            "video_id": "-nppGOJBua4"
+          },
+          {
+            "text": "Sou de porto Alegre rio grande do sul, aqui não teve granizo 🙎🙎",
+            "likes": 4,
+            "score": 0.99,
+            "date": "2026-08-28",
+            "video_id": "-nppGOJBua4"
+          }
+        ],
+        "clima_chuva_meio_ambiente": [
+          {
+            "text": "A natureza tá fazendo o limpa nas terras sulistas do Brasil varonil. Varre tudo mãe!!!?",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-08-28",
+            "video_id": "-nppGOJBua4"
+          },
+          {
+            "text": "Onde, quando este aguaceiro? No ano passado?",
+            "likes": 1,
+            "score": 0.981,
+            "date": "2026-08-28",
+            "video_id": "-nppGOJBua4"
+          }
+        ],
+        "experiencia_pessoal_local": [
+          {
+            "text": "Moro no RS e não teve granizo na minha cidade de Dom Pedrito. Dão essas notícias por metade, quem vê, não se localiza",
+            "likes": 8,
+            "score": 0.998,
+            "date": "2026-08-28",
+            "video_id": "-nppGOJBua4"
+          },
+          {
+            "text": "Sou de porto Alegre rio grande do sul, aqui não teve granizo 🙎🙎",
+            "likes": 4,
+            "score": 0.994,
+            "date": "2026-08-28",
+            "video_id": "-nppGOJBua4"
+          }
+        ],
         "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
+        "critica_midia_informacao": [
+          {
+            "text": "Mentira isso foi em Goiás",
+            "likes": 8,
+            "score": 0.997,
+            "date": "2026-08-28",
+            "video_id": "-nppGOJBua4"
+          },
+          {
+            "text": "Eu já acho que para saber a verdade.",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-08-29",
+            "video_id": "-nppGOJBua4"
+          },
+          {
+            "text": "Os jornalistas são tão bons, que você precisa investir em pesquisa, para saber a notícia toda.",
+            "likes": 11,
+            "score": 0.997,
+            "date": "2026-08-28",
+            "video_id": "-nppGOJBua4"
+          },
+          {
+            "text": "que Inresponsabilidade desse Jornalista",
+            "likes": 0,
+            "score": 0.995,
+            "date": "2026-08-29",
+            "video_id": "-nppGOJBua4"
+          },
+          {
+            "text": "Moro no RS e não teve granizo na minha cidade de Dom Pedrito. Dão essas notícias por metade, quem vê, não se localiza",
+            "likes": 8,
+            "score": 0.967,
+            "date": "2026-08-28",
+            "video_id": "-nppGOJBua4"
+          },
+          {
+            "text": "Filmam o mesmo lugar por 20 minutos 😂😂😂😂😂😂",
+            "likes": 0,
+            "score": 0.724,
+            "date": "2026-08-28",
+            "video_id": "-nppGOJBua4"
+          }
+        ]
       },
       "academic_studies": [],
       "observation_status": "extended",
@@ -1460,7 +1525,7 @@
           "at": "2026-09-03T15:35:54Z"
         }
       ],
-      "n_comments_valid": 894,
+      "n_comments_valid": 911,
       "videos_with_valid_comments": [
         "-nppGOJBua4",
         "Fe2zgHVygvk",
@@ -1478,8 +1543,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-27T11:09:11Z",
-      "next_collection_at": "2026-09-27T17:09:11Z"
+      "last_collection_at": "2026-09-27T20:42:11Z",
+      "next_collection_at": "2026-09-28T02:42:11Z"
     },
     {
       "id": "cemaden_sp_2507",
@@ -1610,28 +1675,7 @@
           ]
         },
         {
-          "video_id": "hkXVmsuGWgc",
-          "n_comments": 0,
-          "total_likes": 0,
-          "first_comment": "",
-          "top_categories": []
-        },
-        {
-          "video_id": "nuaDWrFs-Ds",
-          "n_comments": 0,
-          "total_likes": 0,
-          "first_comment": "",
-          "top_categories": []
-        },
-        {
           "video_id": "QsPV-9DcKFQ",
-          "n_comments": 0,
-          "total_likes": 0,
-          "first_comment": "",
-          "top_categories": []
-        },
-        {
-          "video_id": "Gj215qmUgJQ",
           "n_comments": 0,
           "total_likes": 0,
           "first_comment": "",
@@ -1645,6 +1689,13 @@
           "top_categories": []
         },
         {
+          "video_id": "hkXVmsuGWgc",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
+        },
+        {
           "video_id": "2C4jGJN_A_w",
           "n_comments": 0,
           "total_likes": 0,
@@ -1652,7 +1703,21 @@
           "top_categories": []
         },
         {
+          "video_id": "nuaDWrFs-Ds",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
+        },
+        {
           "video_id": "Xy8t3MoW6wE",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
+        },
+        {
+          "video_id": "Gj215qmUgJQ",
           "n_comments": 0,
           "total_likes": 0,
           "first_comment": "",
@@ -1761,7 +1826,7 @@
           "at": "2026-09-07T16:59:59Z"
         }
       ],
-      "n_comments_valid": 431,
+      "n_comments_valid": 439,
       "videos_with_valid_comments": [
         "BZkiA1yeA1k",
         "RpkbaFLUpjI",
@@ -1777,8 +1842,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-27T11:09:11Z",
-      "next_collection_at": "2026-09-27T17:09:11Z"
+      "last_collection_at": "2026-09-27T20:42:11Z",
+      "next_collection_at": "2026-09-28T02:42:11Z"
     },
     {
       "id": "cemaden_sp_2609",
@@ -1791,8 +1856,8 @@
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
-      "n_comments": 724,
-      "n_videos": 7,
+      "n_comments": 726,
+      "n_videos": 8,
       "unlabeled": 140,
       "unlabeled_pct": 19.3,
       "date_range": [
@@ -1803,7 +1868,7 @@
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
-          "count": 122,
+          "count": 123,
           "pct": 16.9
         },
         {
@@ -1816,7 +1881,7 @@
           "key": "responsabilizacao_governanca",
           "label": "Responsabilização / governança",
           "count": 212,
-          "pct": 29.3
+          "pct": 29.2
         },
         {
           "key": "infraestrutura_ocupacao_risco",
@@ -1827,8 +1892,8 @@
         {
           "key": "clima_chuva_meio_ambiente",
           "label": "Clima / chuva / meio ambiente",
-          "count": 106,
-          "pct": 14.6
+          "count": 107,
+          "pct": 14.7
         },
         {
           "key": "experiencia_pessoal_local",
@@ -1846,7 +1911,7 @@
           "key": "critica_midia_informacao",
           "label": "Crítica à mídia / informação",
           "count": 70,
-          "pct": 9.7
+          "pct": 9.6
         }
       ],
       "timeline": [
@@ -1856,7 +1921,7 @@
         },
         {
           "date": "13/09/26",
-          "count": 279
+          "count": 281
         },
         {
           "date": "14/09/26",
@@ -2004,6 +2069,22 @@
             },
             {
               "label": "Solidariedade",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "video_id": "Hyhg7HsXX7s",
+          "n_comments": 2,
+          "total_likes": 2,
+          "first_comment": "13/09/2026",
+          "top_categories": [
+            {
+              "label": "Solidariedade",
+              "count": 1
+            },
+            {
+              "label": "Clima/chuva",
               "count": 1
             }
           ]
@@ -3151,7 +3232,7 @@
           "at": "2026-09-13T15:27:03Z"
         }
       ],
-      "n_comments_valid": 15774,
+      "n_comments_valid": 16360,
       "videos_with_valid_comments": [
         "CPqyzhnDUzE",
         "Hyhg7HsXX7s",
@@ -3172,8 +3253,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-27T11:09:11Z",
-      "next_collection_at": "2026-09-27T17:09:11Z"
+      "last_collection_at": "2026-09-27T20:42:11Z",
+      "next_collection_at": "2026-09-28T02:42:11Z"
     },
     {
       "id": "cemaden_sp_2586",
@@ -3186,72 +3267,76 @@
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
-      "n_comments": 47,
-      "n_videos": 5,
-      "unlabeled": 10,
-      "unlabeled_pct": 21.3,
+      "n_comments": 65,
+      "n_videos": 6,
+      "unlabeled": 12,
+      "unlabeled_pct": 18.5,
       "date_range": [
-        "2026-09-12",
+        "2026-09-11",
         "2026-09-14"
       ],
       "distribution": [
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
-          "count": 19,
-          "pct": 40.4
+          "count": 24,
+          "pct": 36.9
         },
         {
           "key": "ajuda_resgate_doacoes",
           "label": "Ajuda / resgate / doações",
-          "count": 4,
-          "pct": 8.5
+          "count": 6,
+          "pct": 9.2
         },
         {
           "key": "responsabilizacao_governanca",
           "label": "Responsabilização / governança",
           "count": 5,
-          "pct": 10.6
+          "pct": 7.7
         },
         {
           "key": "infraestrutura_ocupacao_risco",
           "label": "Infraestrutura / ocupação de risco",
-          "count": 3,
-          "pct": 6.4
+          "count": 5,
+          "pct": 7.7
         },
         {
           "key": "clima_chuva_meio_ambiente",
           "label": "Clima / chuva / meio ambiente",
-          "count": 3,
-          "pct": 6.4
+          "count": 7,
+          "pct": 10.8
         },
         {
           "key": "experiencia_pessoal_local",
           "label": "Experiência pessoal / local",
-          "count": 4,
-          "pct": 8.5
+          "count": 10,
+          "pct": 15.4
         },
         {
           "key": "alerta_prevencao_cobranca",
           "label": "Alerta / prevenção / cobrança",
-          "count": 1,
-          "pct": 2.1
+          "count": 4,
+          "pct": 6.2
         },
         {
           "key": "critica_midia_informacao",
           "label": "Crítica à mídia / informação",
-          "count": 4,
-          "pct": 8.5
+          "count": 6,
+          "pct": 9.2
         }
       ],
       "timeline": [
         {
+          "date": "11/09/26",
+          "count": 13
+        },
+        {
           "date": "12/09/26",
-          "count": 4
+          "count": 7
         },
         {
           "date": "13/09/26",
-          "count": 30
+          "count": 32
         },
         {
           "date": "14/09/26",
@@ -3262,7 +3347,7 @@
         {
           "video_id": "dQEK_SfqtHE",
           "n_comments": 19,
-          "total_likes": 28,
+          "total_likes": 29,
           "first_comment": "13/09/2026",
           "top_categories": [
             {
@@ -3276,6 +3361,26 @@
             {
               "label": "Ajuda",
               "count": 1
+            }
+          ]
+        },
+        {
+          "video_id": "JaspoaOI9tQ",
+          "n_comments": 18,
+          "total_likes": 18,
+          "first_comment": "11/09/2026",
+          "top_categories": [
+            {
+              "label": "Experiência",
+              "count": 6
+            },
+            {
+              "label": "Solidariedade",
+              "count": 5
+            },
+            {
+              "label": "Clima/chuva",
+              "count": 4
             }
           ]
         },
@@ -3414,10 +3519,17 @@
             "video_id": "mC7ak82eySE"
           },
           {
-            "text": "😢😢",
-            "likes": 4,
-            "score": 0.974,
+            "text": "​@MorganeMotaq pena",
+            "likes": 0,
+            "score": 0.987,
             "date": "2026-09-13",
+            "video_id": "JaspoaOI9tQ"
+          },
+          {
+            "text": "😢",
+            "likes": 0,
+            "score": 0.974,
+            "date": "2026-09-14",
             "video_id": "dQEK_SfqtHE"
           },
           {
@@ -3428,11 +3540,18 @@
             "video_id": "dQEK_SfqtHE"
           },
           {
-            "text": "😢",
+            "text": "😢😢",
+            "likes": 4,
+            "score": 0.974,
+            "date": "2026-09-13",
+            "video_id": "dQEK_SfqtHE"
+          },
+          {
+            "text": "😢😢😢😢😢",
             "likes": 0,
             "score": 0.974,
-            "date": "2026-09-14",
-            "video_id": "dQEK_SfqtHE"
+            "date": "2026-09-11",
+            "video_id": "JaspoaOI9tQ"
           },
           {
             "text": "Amém senhor Jesus Cristo manda chuva e só eles invadem os rios de novo",
@@ -3440,6 +3559,13 @@
             "score": 0.961,
             "date": "2026-09-13",
             "video_id": "dQEK_SfqtHE"
+          },
+          {
+            "text": "Ainda bem aqui em Sorocaba em jardim aupes não tem muitos lagos e nem praias então aqui e possível chover e trovejar muito mais depois sempre passa glória a deus que toda terra esteja protegido na mão de Deus eu também estou com medo gente",
+            "likes": 2,
+            "score": 0.959,
+            "date": "2026-09-11",
+            "video_id": "JaspoaOI9tQ"
           },
           {
             "text": "Que legal, essa região tem muita história mesmo, um forte abraço! 🤝",
@@ -3454,20 +3580,6 @@
             "score": 0.948,
             "date": "2026-09-13",
             "video_id": "mC7ak82eySE"
-          },
-          {
-            "text": "Boanoite 👍",
-            "likes": 0,
-            "score": 0.946,
-            "date": "2026-09-13",
-            "video_id": "cgvIRir0gB0"
-          },
-          {
-            "text": "Pessoal, saiam desses lugares.Não abusem da sorte.",
-            "likes": 0,
-            "score": 0.8,
-            "date": "2026-09-14",
-            "video_id": "dQEK_SfqtHE"
           }
         ],
         "ajuda_resgate_doacoes": [
@@ -3484,6 +3596,20 @@
             "score": 0.995,
             "date": "2026-09-13",
             "video_id": "mC7ak82eySE"
+          },
+          {
+            "text": "Ainda bem que a defesa Civil alertou sobre às chuvas, pq achei que estava sol e iria pra praia, obrigado tenente",
+            "likes": 2,
+            "score": 0.979,
+            "date": "2026-09-12",
+            "video_id": "JaspoaOI9tQ"
+          },
+          {
+            "text": "E em Curitiba também recebi mensagem da defesa civil agora alerta vermelho",
+            "likes": 1,
+            "score": 0.966,
+            "date": "2026-09-11",
+            "video_id": "JaspoaOI9tQ"
           },
           {
             "text": "@claudiotorres-x9q tá preparado pra volta dele?",
@@ -3524,7 +3650,7 @@
           },
           {
             "text": "Você é lunático, vai viver esperando isso",
-            "likes": 5,
+            "likes": 6,
             "score": 0.762,
             "date": "2026-09-14",
             "video_id": "dQEK_SfqtHE"
@@ -3539,11 +3665,25 @@
         ],
         "infraestrutura_ocupacao_risco": [
           {
+            "text": "Hoje eu corri da chuva de um lado para outro eu estou exausta de correr da chuva nem taxi nem guarda chuva adiantou eu cheguei em casa tomei banho pos roupa bem quente lanchei e apaguei o sofa com o celular na mao dormi e nem dei conta que dormi ! Muito vento .chuva torta vira o guarda chuva ! Mas o Rio Pinheiros nao estava cheio.e nem as marginais estavam entupidas tudo estava fluindo.bem ! Vamos",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-09-11",
+            "video_id": "JaspoaOI9tQ"
+          },
+          {
             "text": "vou votar no nunes e tarcicio de novo pq isso ai é coisa la de brasilia, os esquerditas devem ter entupido de proposito os esgoto. Eles propusero melhorias e postam que vao fazer, eu acredito sim, pq nao?",
             "likes": 0,
             "score": 0.995,
             "date": "2026-09-13",
             "video_id": "cgvIRir0gB0"
+          },
+          {
+            "text": "Vila Mariana está chovendo",
+            "likes": 1,
+            "score": 0.953,
+            "date": "2026-09-12",
+            "video_id": "JaspoaOI9tQ"
           },
           {
             "text": "Como é bom morar em São Paulo !!!",
@@ -3562,6 +3702,13 @@
         ],
         "clima_chuva_meio_ambiente": [
           {
+            "text": "Hoje eu corri da chuva de um lado para outro eu estou exausta de correr da chuva nem taxi nem guarda chuva adiantou eu cheguei em casa tomei banho pos roupa bem quente lanchei e apaguei o sofa com o celular na mao dormi e nem dei conta que dormi ! Muito vento .chuva torta vira o guarda chuva ! Mas o Rio Pinheiros nao estava cheio.e nem as marginais estavam entupidas tudo estava fluindo.bem ! Vamos",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-09-11",
+            "video_id": "JaspoaOI9tQ"
+          },
+          {
             "text": "O problema e a chuva que já caiu",
             "likes": 0,
             "score": 0.996,
@@ -3569,11 +3716,32 @@
             "video_id": "mC7ak82eySE"
           },
           {
+            "text": "Não vi essa chuva toda sp capital",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-09-11",
+            "video_id": "JaspoaOI9tQ"
+          },
+          {
+            "text": "Era um calor extremo sem setembro agora é chuva",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-09-12",
+            "video_id": "JaspoaOI9tQ"
+          },
+          {
             "text": "Amém senhor Jesus Cristo manda chuva e só eles invadem os rios de novo",
             "likes": 0,
             "score": 0.994,
             "date": "2026-09-13",
             "video_id": "dQEK_SfqtHE"
+          },
+          {
+            "text": "Ainda bem que a defesa Civil alertou sobre às chuvas, pq achei que estava sol e iria pra praia, obrigado tenente",
+            "likes": 2,
+            "score": 0.986,
+            "date": "2026-09-12",
+            "video_id": "JaspoaOI9tQ"
           },
           {
             "text": "Pois é, a chuva não deu trégua por aqui. 🙏",
@@ -3585,11 +3753,46 @@
         ],
         "experiencia_pessoal_local": [
           {
+            "text": "AQUI EM JACUNDÁ NO PARA NÃO CHOVE A DIAS ESTÁ TÃO SECO.QUE AS MISERICÓRDIA DO SENHOR NOS ALCANSE😢😢❤",
+            "likes": 1,
+            "score": 0.997,
+            "date": "2026-09-13",
+            "video_id": "JaspoaOI9tQ"
+          },
+          {
+            "text": "Aqui em Mogi ainda não chegou",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-09-11",
+            "video_id": "JaspoaOI9tQ"
+          },
+          {
+            "text": "Aqui em Mogi ainda não chegou",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-09-11",
+            "video_id": "JaspoaOI9tQ"
+          },
+          {
             "text": "Pois é, a situação por aqui está bem complicada. 🙏",
             "likes": 0,
             "score": 0.996,
             "date": "2026-09-13",
             "video_id": "mC7ak82eySE"
+          },
+          {
+            "text": "Eu moro em Mogi é perigoso",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-09-11",
+            "video_id": "JaspoaOI9tQ"
+          },
+          {
+            "text": "Ainda bem aqui em Sorocaba em jardim aupes não tem muitos lagos e nem praias então aqui e possível chover e trovejar muito mais depois sempre passa glória a deus que toda terra esteja protegido na mão de Deus eu também estou com medo gente",
+            "likes": 2,
+            "score": 0.996,
+            "date": "2026-09-11",
+            "video_id": "JaspoaOI9tQ"
           },
           {
             "text": "Realmente, a situação está muito triste por aqui. 🙏",
@@ -3611,9 +3814,37 @@
             "score": 0.99,
             "date": "2026-09-13",
             "video_id": "mC7ak82eySE"
+          },
+          {
+            "text": "Aqui em Marília um monte de alerta pra amanhã nem aula vai ter pra receber as pessoas que mora em área dr risco.preocupante que zdeus tenha misericórdia de nós e do Brasil inteiro",
+            "likes": 4,
+            "score": 0.99,
+            "date": "2026-09-11",
+            "video_id": "JaspoaOI9tQ"
           }
         ],
         "alerta_prevencao_cobranca": [
+          {
+            "text": "E em Curitiba também recebi mensagem da defesa civil agora alerta vermelho",
+            "likes": 1,
+            "score": 0.998,
+            "date": "2026-09-11",
+            "video_id": "JaspoaOI9tQ"
+          },
+          {
+            "text": "Aqui em Marília um monte de alerta pra amanhã nem aula vai ter pra receber as pessoas que mora em área dr risco.preocupante que zdeus tenha misericórdia de nós e do Brasil inteiro",
+            "likes": 4,
+            "score": 0.998,
+            "date": "2026-09-11",
+            "video_id": "JaspoaOI9tQ"
+          },
+          {
+            "text": "Ainda bem que a defesa Civil alertou sobre às chuvas, pq achei que estava sol e iria pra praia, obrigado tenente",
+            "likes": 2,
+            "score": 0.997,
+            "date": "2026-09-12",
+            "video_id": "JaspoaOI9tQ"
+          },
           {
             "text": "Obrigado pelo alerta, estarei muito atento por aqui! 🙏",
             "likes": 0,
@@ -3629,6 +3860,13 @@
             "score": 0.998,
             "date": "2026-09-12",
             "video_id": "cgvIRir0gB0"
+          },
+          {
+            "text": "Eu não acredito que o SBT tirou uma grande jornalista que é a Dani Brand,para colocar essa mosca morta aí. Toda atrapalhada e patricinha. Eu não assisto mais. O SBT.",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-09-11",
+            "video_id": "JaspoaOI9tQ"
           },
           {
             "text": "Gosto muito desse jornal ok",
@@ -3650,6 +3888,13 @@
             "score": 0.807,
             "date": "2026-09-13",
             "video_id": "cgvIRir0gB0"
+          },
+          {
+            "text": "Itś only water.",
+            "likes": 0,
+            "score": 0.623,
+            "date": "2026-09-11",
+            "video_id": "JaspoaOI9tQ"
           }
         ]
       },
@@ -3671,7 +3916,7 @@
           "at": "2026-09-14T11:24:12Z"
         }
       ],
-      "n_comments_valid": 1759,
+      "n_comments_valid": 1812,
       "videos_with_valid_comments": [
         "HLfTpQv78C0",
         "JaspoaOI9tQ",
@@ -3691,8 +3936,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-27T11:09:11Z",
-      "next_collection_at": "2026-09-27T17:09:11Z"
+      "last_collection_at": "2026-09-27T20:42:11Z",
+      "next_collection_at": "2026-09-28T02:42:11Z"
     },
     {
       "id": "cemaden_sp_2594",
@@ -3815,8 +4060,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-27T11:09:11Z",
-      "next_collection_at": "2026-09-27T17:09:11Z"
+      "last_collection_at": "2026-09-27T20:42:11Z",
+      "next_collection_at": "2026-09-28T02:42:11Z"
     },
     {
       "id": "cemaden_sp_2595",
@@ -4325,14 +4570,14 @@
           },
           {
             "text": "Esse evento em nada tem a haver com a existência de condomínios, isso é o sistema de resfriamento das zonas do globo, quando as massas de ar quente e ar gelado se encontram ocorrem as tempestades que são grandes \"ventiladores\" mixando o ar e resfriando essas áreas. O planeta tem suas próprias sessões de esquenta\\esfria e o ser humano não tem capacidade de intervir de forma significativa nesta dinâ",
-            "likes": 3,
+            "likes": 1,
             "score": 0.998,
             "date": "2026-09-11",
             "video_id": "HLfTpQv78C0"
           },
           {
             "text": "Esse evento em nada tem a haver com a existência de condomínios, isso é o sistema de resfriamento das zonas do globo, quando as massas de ar quente e ar gelado se encontram ocorrem as tempestades que são grandes \"ventiladores\" mixando o ar e resfriando essas áreas. O planeta tem suas próprias sessões de esquenta\\esfria e o ser humano não tem capacidade de intervir de forma significativa nesta dinâ",
-            "likes": 1,
+            "likes": 3,
             "score": 0.998,
             "date": "2026-09-11",
             "video_id": "HLfTpQv78C0"
@@ -4427,7 +4672,7 @@
           "at": "2026-09-16T10:37:29Z"
         }
       ],
-      "n_comments_valid": 1151,
+      "n_comments_valid": 1197,
       "videos_with_valid_comments": [
         "HLfTpQv78C0",
         "Vh3Ht_HdgoQ"
@@ -4441,8 +4686,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-27T11:09:11Z",
-      "next_collection_at": "2026-09-27T17:09:11Z"
+      "last_collection_at": "2026-09-27T20:42:11Z",
+      "next_collection_at": "2026-09-28T02:42:11Z"
     },
     {
       "id": "cemaden_sp_2598",
@@ -4603,13 +4848,6 @@
             "video_id": "otLDyUV3S8c"
           },
           {
-            "text": "🙏🙏",
-            "likes": 0,
-            "score": 0.974,
-            "date": "2026-09-14",
-            "video_id": "otLDyUV3S8c"
-          },
-          {
             "text": "😮😮😮",
             "likes": 1,
             "score": 0.974,
@@ -4618,6 +4856,13 @@
           },
           {
             "text": "🙏🙏🙏",
+            "likes": 0,
+            "score": 0.974,
+            "date": "2026-09-14",
+            "video_id": "otLDyUV3S8c"
+          },
+          {
+            "text": "🙏🙏",
             "likes": 0,
             "score": 0.974,
             "date": "2026-09-14",
@@ -4746,7 +4991,7 @@
           "at": "2026-09-16T10:37:29Z"
         }
       ],
-      "n_comments_valid": 672,
+      "n_comments_valid": 691,
       "videos_with_valid_comments": [
         "KtQVJ8_d8Aw",
         "PuWdpSJi0o4",
@@ -4761,8 +5006,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-27T11:09:11Z",
-      "next_collection_at": "2026-09-27T17:09:11Z"
+      "last_collection_at": "2026-09-27T20:42:11Z",
+      "next_collection_at": "2026-09-28T02:42:11Z"
     },
     {
       "id": "cemaden_pr_2669",
@@ -5259,7 +5504,7 @@
           "at": "2026-09-26T10:37:38Z"
         }
       ],
-      "n_comments_valid": 96,
+      "n_comments_valid": 105,
       "videos_with_valid_comments": [
         "FPXa_XAz2A4",
         "muN6UGTynJM"
@@ -5273,8 +5518,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-27T11:09:11Z",
-      "next_collection_at": "2026-09-27T17:09:11Z"
+      "last_collection_at": "2026-09-27T20:42:11Z",
+      "next_collection_at": "2026-09-28T02:42:11Z"
     },
     {
       "id": "cemaden_sp_2571",
@@ -5520,10 +5765,10 @@
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
-      "n_comments": 162,
-      "n_videos": 5,
-      "unlabeled": 36,
-      "unlabeled_pct": 22.2,
+      "n_comments": 168,
+      "n_videos": 7,
+      "unlabeled": 39,
+      "unlabeled_pct": 23.2,
       "date_range": [
         "2026-09-11",
         "2026-09-15"
@@ -5532,38 +5777,38 @@
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
-          "count": 31,
-          "pct": 19.1
+          "count": 33,
+          "pct": 19.6
         },
         {
           "key": "ajuda_resgate_doacoes",
           "label": "Ajuda / resgate / doações",
           "count": 10,
-          "pct": 6.2
+          "pct": 6.0
         },
         {
           "key": "responsabilizacao_governanca",
           "label": "Responsabilização / governança",
-          "count": 48,
-          "pct": 29.6
+          "count": 49,
+          "pct": 29.2
         },
         {
           "key": "infraestrutura_ocupacao_risco",
           "label": "Infraestrutura / ocupação de risco",
           "count": 23,
-          "pct": 14.2
+          "pct": 13.7
         },
         {
           "key": "clima_chuva_meio_ambiente",
           "label": "Clima / chuva / meio ambiente",
           "count": 24,
-          "pct": 14.8
+          "pct": 14.3
         },
         {
           "key": "experiencia_pessoal_local",
           "label": "Experiência pessoal / local",
           "count": 6,
-          "pct": 3.7
+          "pct": 3.6
         },
         {
           "key": "alerta_prevencao_cobranca",
@@ -5575,7 +5820,7 @@
           "key": "critica_midia_informacao",
           "label": "Crítica à mídia / informação",
           "count": 21,
-          "pct": 13.0
+          "pct": 12.5
         }
       ],
       "timeline": [
@@ -5589,7 +5834,7 @@
         },
         {
           "date": "13/09/26",
-          "count": 70
+          "count": 76
         },
         {
           "date": "14/09/26",
@@ -5682,7 +5927,30 @@
           ]
         },
         {
+          "video_id": "VFhXQEinE5k",
+          "n_comments": 6,
+          "total_likes": 2,
+          "first_comment": "13/09/2026",
+          "top_categories": [
+            {
+              "label": "Solidariedade",
+              "count": 2
+            },
+            {
+              "label": "Responsabilização",
+              "count": 1
+            }
+          ]
+        },
+        {
           "video_id": "lnWeVVkiGJM",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
+        },
+        {
+          "video_id": "B1rqRqsKVHQ",
           "n_comments": 0,
           "total_likes": 0,
           "first_comment": "",
@@ -5997,6 +6265,13 @@
             "video_id": "-O41i-QLYnA"
           },
           {
+            "text": "E mais isso e mão de obra fraca",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-09-13",
+            "video_id": "VFhXQEinE5k"
+          },
+          {
             "text": "As obras deles , tudo virou brejos , olha aí malandragens 👽🤔",
             "likes": 0,
             "score": 0.997,
@@ -6037,13 +6312,6 @@
             "score": 0.996,
             "date": "2026-09-12",
             "video_id": "KtQVJ8_d8Aw"
-          },
-          {
-            "text": "Paulistas, de sairia o dinheiro para reconstruir o Estado? PACTO FEDERATIVO. Vocês ficam com menos de 10% dos seus impostos.",
-            "likes": 0,
-            "score": 0.996,
-            "date": "2026-09-13",
-            "video_id": "HLfTpQv78C0"
           }
         ],
         "infraestrutura_ocupacao_risco": [
@@ -6544,7 +6812,7 @@
           "at": "2026-09-17T10:46:21Z"
         }
       ],
-      "n_comments_valid": 2258,
+      "n_comments_valid": 2387,
       "videos_with_valid_comments": [
         "-O41i-QLYnA",
         "0z0nd9loopY",
@@ -6573,8 +6841,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-27T11:09:11Z",
-      "next_collection_at": "2026-09-27T17:09:11Z"
+      "last_collection_at": "2026-09-27T20:42:11Z",
+      "next_collection_at": "2026-09-28T02:42:11Z"
     },
     {
       "id": "cemaden_sp_2574",
@@ -7403,7 +7671,7 @@
           "at": "2026-09-18T02:33:53Z"
         }
       ],
-      "n_comments_valid": 1394,
+      "n_comments_valid": 1462,
       "videos_with_valid_comments": [
         "HLfTpQv78C0",
         "KtQVJ8_d8Aw"
@@ -7417,8 +7685,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-27T11:09:11Z",
-      "next_collection_at": "2026-09-27T17:09:11Z"
+      "last_collection_at": "2026-09-27T20:42:11Z",
+      "next_collection_at": "2026-09-28T02:42:11Z"
     },
     {
       "id": "cemaden_sp_2575",
@@ -7432,7 +7700,7 @@
       "lon": null,
       "regime": "prospective_live",
       "n_comments": 168,
-      "n_videos": 6,
+      "n_videos": 7,
       "unlabeled": 39,
       "unlabeled_pct": 23.2,
       "date_range": [
@@ -7610,6 +7878,13 @@
         },
         {
           "video_id": "lnWeVVkiGJM",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
+        },
+        {
+          "video_id": "B1rqRqsKVHQ",
           "n_comments": 0,
           "total_likes": 0,
           "first_comment": "",
@@ -8471,7 +8746,7 @@
           "at": "2026-09-16T10:37:29Z"
         }
       ],
-      "n_comments_valid": 2289,
+      "n_comments_valid": 2418,
       "videos_with_valid_comments": [
         "-O41i-QLYnA",
         "0z0nd9loopY",
@@ -8490,8 +8765,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-27T11:09:11Z",
-      "next_collection_at": "2026-09-27T17:09:11Z"
+      "last_collection_at": "2026-09-27T20:42:11Z",
+      "next_collection_at": "2026-09-28T02:42:11Z"
     },
     {
       "id": "cemaden_sp_2577",
@@ -8504,10 +8779,10 @@
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
-      "n_comments": 315,
+      "n_comments": 193,
       "n_videos": 7,
-      "unlabeled": 60,
-      "unlabeled_pct": 19.0,
+      "unlabeled": 39,
+      "unlabeled_pct": 20.2,
       "date_range": [
         "2026-09-11",
         "2026-09-15"
@@ -8516,50 +8791,50 @@
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
-          "count": 78,
-          "pct": 24.8
+          "count": 49,
+          "pct": 25.4
         },
         {
           "key": "ajuda_resgate_doacoes",
           "label": "Ajuda / resgate / doações",
-          "count": 24,
-          "pct": 7.6
+          "count": 13,
+          "pct": 6.7
         },
         {
           "key": "responsabilizacao_governanca",
           "label": "Responsabilização / governança",
-          "count": 75,
+          "count": 46,
           "pct": 23.8
         },
         {
           "key": "infraestrutura_ocupacao_risco",
           "label": "Infraestrutura / ocupação de risco",
-          "count": 63,
-          "pct": 20.0
+          "count": 39,
+          "pct": 20.2
         },
         {
           "key": "clima_chuva_meio_ambiente",
           "label": "Clima / chuva / meio ambiente",
-          "count": 43,
-          "pct": 13.7
+          "count": 36,
+          "pct": 18.7
         },
         {
           "key": "experiencia_pessoal_local",
           "label": "Experiência pessoal / local",
-          "count": 15,
-          "pct": 4.8
+          "count": 10,
+          "pct": 5.2
         },
         {
           "key": "alerta_prevencao_cobranca",
           "label": "Alerta / prevenção / cobrança",
-          "count": 11,
-          "pct": 3.5
+          "count": 5,
+          "pct": 2.6
         },
         {
           "key": "critica_midia_informacao",
           "label": "Crítica à mídia / informação",
-          "count": 36,
-          "pct": 11.4
+          "count": 19,
+          "pct": 9.8
         }
       ],
       "timeline": [
@@ -8569,11 +8844,11 @@
         },
         {
           "date": "12/09/26",
-          "count": 217
+          "count": 94
         },
         {
           "date": "13/09/26",
-          "count": 34
+          "count": 35
         },
         {
           "date": "14/09/26",
@@ -8585,26 +8860,6 @@
         }
       ],
       "videos": [
-        {
-          "video_id": "s4l41KdW75M",
-          "n_comments": 139,
-          "total_likes": 691,
-          "first_comment": "12/09/2026",
-          "top_categories": [
-            {
-              "label": "Solidariedade",
-              "count": 34
-            },
-            {
-              "label": "Responsabilização",
-              "count": 31
-            },
-            {
-              "label": "Infraestrutura",
-              "count": 31
-            }
-          ]
-        },
         {
           "video_id": "HLfTpQv78C0",
           "n_comments": 64,
@@ -8706,6 +8961,26 @@
           ]
         },
         {
+          "video_id": "nb6Z3IH2agk",
+          "n_comments": 17,
+          "total_likes": 11,
+          "first_comment": "12/09/2026",
+          "top_categories": [
+            {
+              "label": "Infraestrutura",
+              "count": 7
+            },
+            {
+              "label": "Solidariedade",
+              "count": 5
+            },
+            {
+              "label": "Responsabilização",
+              "count": 2
+            }
+          ]
+        },
+        {
           "video_id": "n-DC99OxuM8",
           "n_comments": 7,
           "total_likes": 12,
@@ -8729,13 +9004,6 @@
       "all_samples": {
         "solidariedade_oracao_luto": [
           {
-            "text": "VARIOS HOMENS PASSANDO BALDE UM P OS OUTROS , AONDE ELE VIU ISSO , NO VIDEO TEM VARIOS HOMENS OLHANDO SEM MUITA PREÇA E MOVIMENTO ,QUE É A MAIORIA , CORRETO, SÓ DEUS NA CAUSA.",
-            "likes": 3,
-            "score": 0.999,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
             "text": "MISERICÓRDIA !!!! SAÚDE !!!! FÉ !!!! LUZ !!!! FORÇAS !!!! GARRA !!!!",
             "likes": 2,
             "score": 0.999,
@@ -8750,13 +9018,6 @@
             "video_id": "HLfTpQv78C0"
           },
           {
-            "text": "ESTAMOS ANOS LUZ ATRÁS DA CHINA EM CONTRIBUIÇÕES. BASTA VER AQUELA PONTE GIGANTESCA.NUMA RIBANCEIRA. AGORA VUM SIMPES PRÉDIO CAI",
-            "likes": 0,
-            "score": 0.998,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
             "text": "AV : NOSSA SENHORA DA FONTE EM GUAIANASES NA ZONA LESTE ,, AV DA MORTE AGUARDANDO DUPLICAÇÃO A DÉCADAS ,, RICARDO NUNES NUNCA APARECEU PÔR LÁ 😮😮😮😮😮😮",
             "likes": 1,
             "score": 0.997,
@@ -8769,13 +9030,6 @@
             "score": 0.997,
             "date": "2026-09-13",
             "video_id": "-O41i-QLYnA"
-          },
-          {
-            "text": "Coloca um drone ai para termos a dimensão da area atingida... Que Deus de forças aos profissionais e conforte os familiares",
-            "likes": 14,
-            "score": 0.997,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
           },
           {
             "text": "Meu Deussssss o que sera de nos!!!! imaginem nao entramos na primavera ...e o verao? como sera? Deus nos ajude😮 Suely Dias Damaceno 12:24 hrs Sabado 12/09/26 ❤❤❤😊😢",
@@ -8806,32 +9060,11 @@
             "video_id": "HLfTpQv78C0"
           },
           {
-            "text": "Foi dito q muitos irá partir nesse mês... eu quase q fui Deus não deixou ... orar e vigiar se possível jejum tbm ..por q o mal ta no mundo o anti Cristo...",
-            "likes": 1,
-            "score": 0.996,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
-            "text": "A maior tristeza de ouvir ninguém faz nada só quando já não tem mas o que fazer no dia das eleições o Brasil tinha que parar ninguém votar",
-            "likes": 0,
-            "score": 0.996,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
             "text": "Ja morei em Sapopemba. Valha nos Deus!",
             "likes": 1,
             "score": 0.996,
             "date": "2026-09-11",
             "video_id": "HLfTpQv78C0"
-          },
-          {
-            "text": "Triste, sairem da Bolivia pra ganharem a vida e terminarem mortos no Brasil.",
-            "likes": 0,
-            "score": 0.996,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
           },
           {
             "text": "DEUS&EU",
@@ -8862,11 +9095,53 @@
             "video_id": "HLfTpQv78C0"
           },
           {
-            "text": "O que seria correto fazer então, senhor sabichão? Todo mundo subir em cima dos escombros e começar a dar marretada? Forçar os escombros pra fazer eles cairem mais e matar uma possível sobrevivente? Onde já se viu ser tão burro?",
+            "text": "Triste 😢",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Deus",
+            "likes": 0,
+            "score": 0.995,
+            "date": "2026-09-13",
+            "video_id": "KtQVJ8_d8Aw"
+          },
+          {
+            "text": "Vazamento deixado pela SABESP, o senhor não ouviu???? Devia!",
             "likes": 0,
             "score": 0.995,
             "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
+            "video_id": "PfUpdJ4Gdco"
+          },
+          {
+            "text": "Meu Deus 😢",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-09-12",
+            "video_id": "PfUpdJ4Gdco"
+          },
+          {
+            "text": "Isso tudo é muito triste 😞",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-09-12",
+            "video_id": "LnzPAjIyRes"
+          },
+          {
+            "text": "Tem nada haver com política, é sinais do fim dos tempos. Jesus está voltando.",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "que tristeza. muito sofrimento. que Deus conforte as famílias e os familiares também.",
+            "likes": 5,
+            "score": 0.995,
+            "date": "2026-09-13",
+            "video_id": "KtQVJ8_d8Aw"
           }
         ],
         "ajuda_resgate_doacoes": [
@@ -8876,13 +9151,6 @@
             "score": 0.997,
             "date": "2026-09-13",
             "video_id": "KtQVJ8_d8Aw"
-          },
-          {
-            "text": "Deus ajude estas pessoas",
-            "likes": 13,
-            "score": 0.997,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
           },
           {
             "text": "Esses são realmente heróis 🙌👏👏👏",
@@ -8904,27 +9172,6 @@
             "score": 0.997,
             "date": "2026-09-13",
             "video_id": "KtQVJ8_d8Aw"
-          },
-          {
-            "text": "Ou cão policial/bombeiro.",
-            "likes": 4,
-            "score": 0.996,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
-            "text": "Reparem nos bombeiros ao fundo, carregando “baldinhos com pedrinhas” e fingindo que estão revirando em busca de sobreviventes",
-            "likes": 7,
-            "score": 0.996,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
-            "text": "Lleven perros para rastrear si hay vida,los veo a los bomberos demasiado trankilosssssssss",
-            "likes": 8,
-            "score": 0.992,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
           },
           {
             "text": "Parabens aos bombeiros, mas certas construções e precario agora ainda mas com essas chuvas e eu ninho, a fiscalização esta dormindo e prefeitura so com dinheiro no bolso ,dinheirinho do povo ,casa popular sem noção, agora pagar isso com que ,governo ,presidente e prefeitura tem tudo isso pra ajudar o povo brasileiro.",
@@ -8962,20 +9209,6 @@
             "video_id": "HLfTpQv78C0"
           },
           {
-            "text": "meu Deus 🤯 que tristeza o mundo inteiro está sofrendo com algum tipo de tragédia em outros países sofrendo muito com outras tragédias e muitas mortes. no nosso país Brasil a tragédia infelizmente vem com outras promoções. é o mar checando família sofrendo muito com valanche de granito em forma de bolinha têm um nome técnico mais não lembro água com lamas . quando vem não dá tempo de pegar nada nem",
-            "likes": 1,
-            "score": 0.911,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
-            "text": "Cadê os cães farejadores? Não sei se seria o caso de usá-los.",
-            "likes": 2,
-            "score": 0.908,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
             "text": "Que legal o Táxi estilo americano",
             "likes": 0,
             "score": 0.905,
@@ -8990,98 +9223,21 @@
             "video_id": "HLfTpQv78C0"
           },
           {
-            "text": "Feriu sim pessoas soterradas e dois já retirados mortos",
-            "likes": 1,
-            "score": 0.88,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
-            "text": "Será que alguém vai preso",
-            "likes": 0,
-            "score": 0.832,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
             "text": "​@JosemaraRodrigues-e2hÉ algo sério",
             "likes": 0,
             "score": 0.829,
             "date": "2026-09-12",
             "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@Kazuma-s6rboa",
+            "likes": 0,
+            "score": 0.572,
+            "date": "2026-09-12",
+            "video_id": "nb6Z3IH2agk"
           }
         ],
         "responsabilizacao_governanca": [
-          {
-            "text": "Que lastima, pero tambien en ARGENTINA suele pasar eso porque lo construyen asi nomas y a veces es privado ensimismo los demas no tienen la culpa los unicos responsables es el director de la obra y albañiles que no saben hcer su trbajo o bien solo obedecen al director que muchos se roban el dinero y dejan trabjr a los albañiles con pocos materiales, asi se manejan , si yo soy la directora y contra",
-            "likes": 0,
-            "score": 0.999,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
-            "text": "Atenção autoridades, obra irregular embargada e caso não tenha projeto executivo estrutural, a prefeitura deveria mandar demolir imediatamente. Saliento que uma das peças principais de um projeto estrutural são sondagem do terreno e o projeto da fundação.",
-            "likes": 14,
-            "score": 0.999,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
-            "text": "o Prédio caiu culpa é do fiscal da obra(Prefeitura)💵💴💶💷💸💰💰💰",
-            "likes": 16,
-            "score": 0.999,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
-            "text": "Quem confia nesse monte de obras aí feitas de qualquer jeito? Prédios super altos em locais sem estrutura. Acorda, Brasil!!!! O descaso dos governos domina!!!",
-            "likes": 1,
-            "score": 0.999,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
-            "text": "São Paulo tem um prefeito com muitos acessores, cada microrregião tem uma subprefeitura, com um subprefeito e mais milhares de acessores (cargos comissionados que ganham muito bem, sem sequer terem sido votados). Além disso, tem órgãos públicos (com mais milhares de parasitas que ganham super bem). Mas ninguém enxergou que o prédio estava embargado e deveria ser demolido? Eu me pergunto - pra que ",
-            "likes": 0,
-            "score": 0.999,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
-            "text": "Os responsáveis por esta obra tem que ser responsabilizado .",
-            "likes": 60,
-            "score": 0.998,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
-            "text": "A CULPA É DA PREFEITURA QUE SO COBRA IPTU BANDOS DE LADRÕES 😡😡😡😡",
-            "likes": 2,
-            "score": 0.998,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
-            "text": "Esses predinhos viraram febre na Zona Leste, o que fizeram com areas de zoneamento?? tem fiscalização? acho que deveria ser perguntado ao prefeito e vereadores de SP",
-            "likes": 4,
-            "score": 0.998,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
-            "text": "Quem autorizou a obra ? Quem é o engenheiro da obra e o engenheiro da prefeitura responsavel pela obra.? Corrupçao gera sofrimento .",
-            "likes": 2,
-            "score": 0.998,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
-            "text": "Obra embargada , junto com a corrupção ativa em todo país, resultado? Isso que a gente está assistindo",
-            "likes": 0,
-            "score": 0.998,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
           {
             "text": "A sabesp está deixando a desejar...com essas obras",
             "likes": 2,
@@ -9097,13 +9253,6 @@
             "video_id": "PfUpdJ4Gdco"
           },
           {
-            "text": "Tem alguns imóveis que são invadidos, que já estão abandonados, e em péssimos estado de conservação",
-            "likes": 5,
-            "score": 0.998,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
             "text": "No bairro de Cidade Patriarca tem várias outras obras na mesma situação",
             "likes": 0,
             "score": 0.998,
@@ -9111,25 +9260,11 @@
             "video_id": "-O41i-QLYnA"
           },
           {
-            "text": "Novamente deveriam ser presas dezenas de pessoas numa situação dessas.... E claro, o Estado conivente deve ser responsável também...",
-            "likes": 3,
-            "score": 0.998,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
-            "text": "Pedreiro? A culpa é do dono do empreendimento que contratou tudo de pior qualidade, deveria pegar pena de morte.",
-            "likes": 2,
-            "score": 0.997,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
-            "text": "Prefeitura omissa deixa dão autorização pra fazer prédio em qualquer pedaço de terra",
+            "text": "O engenheiro responsável era cotista? Não sabia dessa informação.",
             "likes": 0,
             "score": 0.997,
             "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
+            "video_id": "nb6Z3IH2agk"
           },
           {
             "text": "A Prefeitura é responsável na que estava embargada. Prefeito bolsonarista",
@@ -9139,28 +9274,112 @@
             "video_id": "-O41i-QLYnA"
           },
           {
-            "text": "prefeitura OMISSA assassina..... descansem em paz irmãozinhos🙏🏽",
-            "likes": 5,
+            "text": "Se a obra estava embargada deveria ter sido implodido",
+            "likes": 0,
             "score": 0.997,
             "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
+            "video_id": "LnzPAjIyRes"
           },
           {
-            "text": "Enquanto políticos compram mansão de 6 milhões a população pobre não tem onde morar",
-            "likes": 7,
-            "score": 0.997,
+            "text": "Sério isso, Taxad foi o pior prefeito de São Paulo",
+            "likes": 8,
+            "score": 0.996,
             "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
+            "video_id": "KtQVJ8_d8Aw"
+          },
+          {
+            "text": "Paulistas, de sairia o dinheiro para reconstruir o Estado? PACTO FEDERATIVO. Vocês ficam com menos de 10% dos seus impostos.",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-09-13",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Mas, estava cuidando de todos honestamente o cara não é vagabundo é um trabalhador, a casa estava de pé a 38 anos a Sabesp fez uma obra de qualquer forma e comprometeu, a culpa não é da vítima, retardada....",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-09-13",
+            "video_id": "PfUpdJ4Gdco"
+          },
+          {
+            "text": "Parabens aos bombeiros, mas certas construções e precario agora ainda mas com essas chuvas e eu ninho, a fiscalização esta dormindo e prefeitura so com dinheiro no bolso ,dinheirinho do povo ,casa popular sem noção, agora pagar isso com que ,governo ,presidente e prefeitura tem tudo isso pra ajudar o povo brasileiro.",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-09-12",
+            "video_id": "LnzPAjIyRes"
+          },
+          {
+            "text": "E o lula não faz nada ?ele não e o pai do pobriii ?",
+            "likes": 0,
+            "score": 0.995,
+            "date": "2026-09-13",
+            "video_id": "KtQVJ8_d8Aw"
+          },
+          {
+            "text": "Jardim Pantanal Sempre foi a Milhares de Anos, uma Área em que o Rio Tietê invade quando há Chuvas Longas em que o Rio sobe muito. Então o Povo Invadiu o Local e Governos nada fizeram para retirar esse Povo da Área, e muito pelo Contrário os Governos ainda fizeram Escolas calçaram Ruas e Instalações de Energia Elétrica e melhorias. Agora todos que ficaram nesse lugar irão sofrer eternamente",
+            "likes": 0,
+            "score": 0.995,
+            "date": "2026-09-14",
+            "video_id": "KtQVJ8_d8Aw"
+          },
+          {
+            "text": "Lula desabou o Brasil",
+            "likes": 4,
+            "score": 0.995,
+            "date": "2026-09-12",
+            "video_id": "-O41i-QLYnA"
+          },
+          {
+            "text": "PORQUE NÃO PODEMOS. MULTAR O PODER PÚBLICO, DA MESMA FORMA QUE ELES NOS MULTAM?",
+            "likes": 2,
+            "score": 0.995,
+            "date": "2026-09-12",
+            "video_id": "-O41i-QLYnA"
+          },
+          {
+            "text": "DAI A PESSOA TA EM CASA, ACHANDO QUE ESTA SEGURA, COM RELAÇÃO AO TEMPO LA FORA, E O PRÉDIO DESABA EM CIMA DE SUA CASA😢😢😢 Meus sentimentos a família 😌 Penso também, (um achismo meu) que pelo fato de estar parada a obra a muito tempo, e possivelmente os abalos da nova estação por perto, ou até por baixo, podem ter feito algum abalado nas estruturas, que ja não eram boas... e como não sou perita, ain",
+            "likes": 5,
+            "score": 0.994,
+            "date": "2026-09-12",
+            "video_id": "LnzPAjIyRes"
+          },
+          {
+            "text": "​@marisilva-z8uisso que quando ganham , vendem rapidamente pra arrumar mais dinheiro fácil. Os governos tinham que ter um cadastro nacional através do CPF, quem ganhou casa é vendeu não pode ter outra oportunidade.",
+            "likes": 0,
+            "score": 0.993,
+            "date": "2026-09-12",
+            "video_id": "PfUpdJ4Gdco"
+          },
+          {
+            "text": "A prefeitura t que dar uma casa para eles tem muitas por aí a fora",
+            "likes": 0,
+            "score": 0.993,
+            "date": "2026-09-12",
+            "video_id": "PfUpdJ4Gdco"
+          },
+          {
+            "text": "TUDO CULPA DA NATUREZA QUE FICA MANDANDO ESSE MONTE DE CHUVAS PRA SÃO PAULO SEM NINGUÉM PEDIR🙄💁🏼‍♀️",
+            "likes": 1,
+            "score": 0.993,
+            "date": "2026-09-12",
+            "video_id": "n-DC99OxuM8"
+          },
+          {
+            "text": "O teu Lula em todos seus mandatos tiveram recordes de desmatamento e incêndio florestal.",
+            "likes": 1,
+            "score": 0.993,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "@jtbilseniwisk8913Jesus tem que vir vir, pq o El Nine capeta já está presidindo o bananal faz tempo.",
+            "likes": 1,
+            "score": 0.992,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
           }
         ],
         "infraestrutura_ocupacao_risco": [
-          {
-            "text": "Agradeçam aos nossos vereadores muitos deles ligados ao ramo da construção civil, como proprietários ou “sócios” de incorporadoras pela belíssima especulação imobiliária desenfreada que estamos presenciando. A aprovação do último Plano Diretor está transformando completamente os bairros próximos a estações de metrô e terminais de ônibus. A lógica parece ser simples: construir o máximo possível, me",
-            "likes": 4,
-            "score": 0.999,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
           {
             "text": "Es evidente! La mayoría de las construcciones en brasil apartir de la 1ra planta hacia arriba no tienen columnas. Eso solo se ve en brasil! Toda las construcciones DEBEN TENER ESE PILAR DE AGUANTE\" Donde se ha visto que una casa donde se quieren otros pisos ( andares) apenas tiene columnas en la casa de ABAJO) CLARO.Q SE VIENE ABAJO. MUCHAS CONSTRUCCIONES EN BRASIL DE ESE TIPO",
             "likes": 3,
@@ -9176,39 +9395,11 @@
             "video_id": "PfUpdJ4Gdco"
           },
           {
-            "text": "Perto de casa 😢",
-            "likes": 0,
-            "score": 0.998,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
-            "text": "Acho errado prédio construído onde tem casa",
-            "likes": 30,
-            "score": 0.998,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
-            "text": "Haviam pelo menos 10 pessoas na casa soterrada",
-            "likes": 1,
-            "score": 0.998,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
             "text": "Verdade,no meu bairro mesmo tiraram alguns que moravam em área de risco,com rio passando atrás,ganharam aps populares,mas outras famílias já invadiram a área de risco, é complicado.",
             "likes": 2,
             "score": 0.998,
             "date": "2026-09-12",
             "video_id": "PfUpdJ4Gdco"
-          },
-          {
-            "text": "Ahh tá...o prédio caiu porque tem uma casa invadida do lado??? \"Jenio\"",
-            "likes": 4,
-            "score": 0.998,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
           },
           {
             "text": "Isso e lugar de viver uma cidade no meio de um rio porco tenho parentes aí já vivi tempo aí já bati muito balde retirando água porca de dentro de casa vim embora com 12 anos melhor coisa que fiz na vida e horrível chuveu povo quase nem dorme a noite erguendo suas coisas pra vê se n perde tudo oq as vezes nem presta mais saudades 0 .",
@@ -9218,13 +9409,6 @@
             "video_id": "KtQVJ8_d8Aw"
           },
           {
-            "text": "Nesse caso a construtora constrói prédio de 3 andares do lado de casas se elá comprar o quarteirão inteiro pode construí prédios enorme",
-            "likes": 1,
-            "score": 0.998,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
             "text": "Um dilúvio não é impossível, só é improvável, não tem agua na superfície para cobrir os continentes (se houvesse eles já estariam submersos, óbvio.) Precisaria de uma super reserva subterrânea como a recentemente descoberta vir a tona e inundar a crosta, basicamente um ato de Deus. Mas pequenos \"dilúvios\" localizados são comuns pelo globo, Rio Grande do Sul é um caso muito triste disso.",
             "likes": 2,
             "score": 0.998,
@@ -9232,11 +9416,11 @@
             "video_id": "HLfTpQv78C0"
           },
           {
-            "text": "Foi o prédio que caiu em cima da casa e não o contrário. Que comentário é esse? Se liga!",
+            "text": "No Google maps aparece o prédio em construção da para ver a placa construtora hisforme dono Cristiano salgado vivaqua",
             "likes": 0,
             "score": 0.997,
             "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
+            "video_id": "nb6Z3IH2agk"
           },
           {
             "text": "E oque mais existe ém São Paulo é casa assim",
@@ -9246,25 +9430,11 @@
             "video_id": "PfUpdJ4Gdco"
           },
           {
-            "text": "a lei do zoneamento do municipio permite essas construções.😤",
-            "likes": 1,
-            "score": 0.997,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
             "text": "PERGUNTA SE A CASA DE ALGUM POLÍTICO CORRUPTO ALAGOU OU DESABOU. PERGUNTA SE A RUA ONDE ELES, OS POLÍTICOS CORRUPTOS, MORAM, TEVE ENCHENTE. PAÍS MISERÁVEL.",
             "likes": 0,
             "score": 0.997,
             "date": "2026-09-14",
             "video_id": "KtQVJ8_d8Aw"
-          },
-          {
-            "text": "Esse prédio começou parece em 2019 ou 2020 , pelas fotos do maps não tinha uma coluna em concreto armado , tudo feito no sistema de agulha, o bloco aparenta ser semi estrutural , várias partes do térreo e primeiro andar sem amarração , tinha 10 andares ,não tinha como isso ficar de pé, sem contar o absurdo que é subir um prédio desta altura no meio de casas , não deveria ser permitido.",
-            "likes": 2,
-            "score": 0.997,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
           },
           {
             "text": "Gente isso é uma favela, esse povo não paga nem imposto",
@@ -9288,11 +9458,67 @@
             "video_id": "PfUpdJ4Gdco"
           },
           {
-            "text": "Construção mal feita, sem sustentação 😢😢😢",
-            "likes": 3,
+            "text": "Imagina qual era a qualidade da construção do prédio.",
+            "likes": 4,
             "score": 0.997,
             "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
+            "video_id": "LnzPAjIyRes"
+          },
+          {
+            "text": "Prédio construído com papel!!! Imagina se desaba depois de pronto, com os moradores dentro?!",
+            "likes": 6,
+            "score": 0.997,
+            "date": "2026-09-12",
+            "video_id": "LnzPAjIyRes"
+          },
+          {
+            "text": "Não, amigo. Esse tipo de construção, de qualidade realmente duvidosa, não é maioria, não. Forte abraço.",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-09-13",
+            "video_id": "-O41i-QLYnA"
+          },
+          {
+            "text": "O prédio deveria estar sendo bem construído.",
+            "likes": 11,
+            "score": 0.996,
+            "date": "2026-09-12",
+            "video_id": "LnzPAjIyRes"
+          },
+          {
+            "text": "Jardim Pantanal Sempre foi a Milhares de Anos, uma Área em que o Rio Tietê invade quando há Chuvas Longas em que o Rio sobe muito. Então o Povo Invadiu o Local e Governos nada fizeram para retirar esse Povo da Área, e muito pelo Contrário os Governos ainda fizeram Escolas calçaram Ruas e Instalações de Energia Elétrica e melhorias. Agora todos que ficaram nesse lugar irão sofrer eternamente",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-09-14",
+            "video_id": "KtQVJ8_d8Aw"
+          },
+          {
+            "text": "Qual é a construtora?",
+            "likes": 3,
+            "score": 0.995,
+            "date": "2026-09-12",
+            "video_id": "-O41i-QLYnA"
+          },
+          {
+            "text": "DAI A PESSOA TA EM CASA, ACHANDO QUE ESTA SEGURA, COM RELAÇÃO AO TEMPO LA FORA, E O PRÉDIO DESABA EM CIMA DE SUA CASA😢😢😢 Meus sentimentos a família 😌 Penso também, (um achismo meu) que pelo fato de estar parada a obra a muito tempo, e possivelmente os abalos da nova estação por perto, ou até por baixo, podem ter feito algum abalado nas estruturas, que ja não eram boas... e como não sou perita, ain",
+            "likes": 5,
+            "score": 0.995,
+            "date": "2026-09-12",
+            "video_id": "LnzPAjIyRes"
+          },
+          {
+            "text": "Aqui em Santos tubulação da Sabesp rompeu e um prédio todo interditado, a Sabesp joga o problema para congas e os moradores em casa de parentes.",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-09-12",
+            "video_id": "PfUpdJ4Gdco"
+          },
+          {
+            "text": "Precisa divilfar o nome da construtora.",
+            "likes": 0,
+            "score": 0.994,
+            "date": "2026-09-12",
+            "video_id": "nb6Z3IH2agk"
           }
         ],
         "clima_chuva_meio_ambiente": [
@@ -9360,13 +9586,6 @@
             "video_id": "PfUpdJ4Gdco"
           },
           {
-            "text": "Chuva não derruba prédio, provavelmente alicerce mal feito",
-            "likes": 6,
-            "score": 0.996,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
             "text": "Em Monte Mor, estamos na merda! Não pode cair uma chuva que já trava nossas vidas",
             "likes": 0,
             "score": 0.996,
@@ -9423,18 +9642,25 @@
             "video_id": "n-DC99OxuM8"
           },
           {
-            "text": "😢que horrível! Consequência das chuvas talvez.",
-            "likes": 1,
-            "score": 0.995,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
             "text": "Não é desmatamento a terra é dinâmica o SOL, as marés, os ventos... aí voces vem com essa bosta de agenda ambientalista nojenta!",
             "likes": 4,
             "score": 0.995,
             "date": "2026-09-11",
             "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Analisando, chuva, muito lixo espalhado, obras mal feitas, falta de acompanhamento em tudo o que é feito, NADA DE CATÁSTROFE, SÃO TRAGÉDIAS ANUNCIADAS.... BRASIL, ACORDA!",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-09-13",
+            "video_id": "KtQVJ8_d8Aw"
+          },
+          {
+            "text": "No Brasil engenharia não serve para nada as pessoas constroem o que querem de qualquer forma e está ai o resultado, quantas casas vão desabar com essas chuvas.",
+            "likes": 7,
+            "score": 0.994,
+            "date": "2026-09-12",
+            "video_id": "PfUpdJ4Gdco"
           }
         ],
         "experiencia_pessoal_local": [
@@ -9453,25 +9679,11 @@
             "video_id": "-O41i-QLYnA"
           },
           {
-            "text": "Aqui na capital nem tá chovendo tanto assim. Hoje mesmo, apenas garoou",
-            "likes": 0,
-            "score": 0.997,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
             "text": "Verdade,no meu bairro mesmo tiraram alguns que moravam em área de risco,com rio passando atrás,ganharam aps populares,mas outras famílias já invadiram a área de risco, é complicado.",
             "likes": 2,
             "score": 0.996,
             "date": "2026-09-12",
             "video_id": "PfUpdJ4Gdco"
-          },
-          {
-            "text": "Eu é que não moro do lado de um prédio desse, se construírem ao lado da minha casa vendo ela pela metade do preço e vou embora.",
-            "likes": 1,
-            "score": 0.996,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
           },
           {
             "text": "Outra vez? Aqui em SP capital esta sol. 11/9",
@@ -9481,25 +9693,11 @@
             "video_id": "HLfTpQv78C0"
           },
           {
-            "text": "CNPJ sempre fez o que bem entende aqui em SP. SP está abandonada muito tempo, quem não tem dinheiro paga com a vida.",
-            "likes": 1,
-            "score": 0.996,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
             "text": "Aqui na minha cidade no interior de São Paulo, tudo calmo..apenas nublado",
             "likes": 1,
             "score": 0.996,
             "date": "2026-09-12",
             "video_id": "n-DC99OxuM8"
-          },
-          {
-            "text": "Meu Deus e perto onde moro.",
-            "likes": 2,
-            "score": 0.996,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
           },
           {
             "text": "Um acionista da sabesp aqui, chupador de lola do PIOR GOVERNADOR DE SÃO PAULO!!",
@@ -9523,13 +9721,6 @@
             "video_id": "PfUpdJ4Gdco"
           },
           {
-            "text": "Essa obra perto aqui ela tava embargada foi feito alguns andares a mais tava ilegal a construção",
-            "likes": 0,
-            "score": 0.993,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
             "text": "Graças a Deus, aqui no litoral de SP teve um vento moderado apenas e a chuva veio, mas sem força.",
             "likes": 6,
             "score": 0.99,
@@ -9546,39 +9737,11 @@
         ],
         "alerta_prevencao_cobranca": [
           {
-            "text": "​@rachelvalladares8475meu comentário não tem que ver com o caso em tela, fia! Estou falando de prédios em construção, às vezes parados por alguma circunstâncias, que ficam abandonados, PRÉDIOS, ao lado de casas ou não, em mal estado de conservação, com riscos de desabamento, sobre casas ou seja o que for! Presta atenção vc antes de garanchar teu comentário,",
-            "likes": 1,
-            "score": 0.999,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
-            "text": "​@jorgeluis1304deixa de ser tapado seu jegue, o que eu estou falando é de prédios desocupados em péssimos estados que são invadidos, com risco, e não no caso em tela! PNC!",
-            "likes": 0,
-            "score": 0.999,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
             "text": "Mas a chuva faz parte da natureza. O problema é construir em locais de risco.",
             "likes": 0,
             "score": 0.998,
             "date": "2026-09-12",
             "video_id": "n-DC99OxuM8"
-          },
-          {
-            "text": "Tem fazer um plano de contigencia para super el nino e 😢todos estados 😢.",
-            "likes": 2,
-            "score": 0.998,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
-            "text": "meu Deus 🤯 que tristeza o mundo inteiro está sofrendo com algum tipo de tragédia em outros países sofrendo muito com outras tragédias e muitas mortes. no nosso país Brasil a tragédia infelizmente vem com outras promoções. é o mar checando família sofrendo muito com valanche de granito em forma de bolinha têm um nome técnico mais não lembro água com lamas . quando vem não dá tempo de pegar nada nem",
-            "likes": 1,
-            "score": 0.996,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
           },
           {
             "text": "Acusar o Tarcísio é fácil, a sabesp está há muitos anos em Sp atravessando por varios governos. Agora as pessos constroem suas casas em locais perigosos e colocam suas famílias sabendo que uma hora ou outra essa tragédia pode acontecer em qualquer momento. SP está saturada com essas invasões, sem organização causando um risco a sociedade local. Agora achar culpados é mais facil.",
@@ -9602,25 +9765,11 @@
             "video_id": "PfUpdJ4Gdco"
           },
           {
-            "text": "Agradeçam aos nossos vereadores muitos deles ligados ao ramo da construção civil, como proprietários ou “sócios” de incorporadoras pela belíssima especulação imobiliária desenfreada que estamos presenciando. A aprovação do último Plano Diretor está transformando completamente os bairros próximos a estações de metrô e terminais de ônibus. A lógica parece ser simples: construir o máximo possível, me",
-            "likes": 4,
-            "score": 0.959,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
             "text": "@mrbrs2 primeiramente, parabéns pela sua discordância respeitosa. Em segundo, não existe metodologia científica que consiga definir a relação florestas\\tempestades tropicais. Essa discussão se dá no campo das possibilidades quando se ignoram os 2 maiores fatores científicos absolutos: OCEANOS e o SOL. Para você ter uma noção do nível de conhecimento empírico que possuímos, descobriu-se uma nova co",
             "likes": 0,
             "score": 0.834,
             "date": "2026-09-11",
             "video_id": "HLfTpQv78C0"
-          },
-          {
-            "text": "Noticiar mortes e rápido. Laudo técnico é sempre demorado. Por que será?",
-            "likes": 2,
-            "score": 0.755,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
           }
         ],
         "critica_midia_informacao": [
@@ -9633,14 +9782,14 @@
           },
           {
             "text": "Esse evento em nada tem a haver com a existência de condomínios, isso é o sistema de resfriamento das zonas do globo, quando as massas de ar quente e ar gelado se encontram ocorrem as tempestades que são grandes \"ventiladores\" mixando o ar e resfriando essas áreas. O planeta tem suas próprias sessões de esquenta\\esfria e o ser humano não tem capacidade de intervir de forma significativa nesta dinâ",
-            "likes": 3,
+            "likes": 1,
             "score": 0.998,
             "date": "2026-09-11",
             "video_id": "HLfTpQv78C0"
           },
           {
             "text": "Esse evento em nada tem a haver com a existência de condomínios, isso é o sistema de resfriamento das zonas do globo, quando as massas de ar quente e ar gelado se encontram ocorrem as tempestades que são grandes \"ventiladores\" mixando o ar e resfriando essas áreas. O planeta tem suas próprias sessões de esquenta\\esfria e o ser humano não tem capacidade de intervir de forma significativa nesta dinâ",
-            "likes": 1,
+            "likes": 3,
             "score": 0.998,
             "date": "2026-09-11",
             "video_id": "HLfTpQv78C0"
@@ -9653,60 +9802,11 @@
             "video_id": "HLfTpQv78C0"
           },
           {
-            "text": "FALO MESMO!! é prédio para todo lado, elas vem compram uma casa e sobem torres de 50,100 apt em 6 meses, gente claro que teremos mais noticias dessas.... graças a ilustrissima administração de SP",
-            "likes": 19,
-            "score": 0.997,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
-            "text": "Verdade, a gente é tão condicionado a certos jargões que eu nunca tinha me ligado em algo que ficou tão óbvio ao ler seu comentário.",
-            "likes": 5,
-            "score": 0.997,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
-            "text": "Lula recebeu Vorcaro em reuniões fora da agenda, por isso secretas. Só sabemos porque Vorcaro contou e ainda disse que Lula o aconselhou a não vender o banco... Esse é o verdadeiro Lula, não o que se apresenta como a alma mais honesta do país 😮😮😮😮",
-            "likes": 1,
-            "score": 0.997,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
             "text": "​@ElsonSilva-gh4duTanto que nunca existiu,antes né?Passou a existir,e estar com persistência nos últimos anos na mídia. E bem num momento oportuno!O famigerado Reset Mundial?Pq será né?",
             "likes": 0,
             "score": 0.997,
             "date": "2026-09-11",
             "video_id": "HLfTpQv78C0"
-          },
-          {
-            "text": "Nem viu a notícia.",
-            "likes": 2,
-            "score": 0.997,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
-            "text": "Bom dia de todo o meu ❤ que Deus os receba e que descansem em paz ,muito triste essa noticia que a Jovem Pan acaba de noticiar sou muito agradecida as pessoas que trabalham ao vivo e mostram infelizmente as tragedias que acontecem nesse pais. Obrigada. Suely Dias Damaceno 12/09/26 10:20 hrs Sabado. Minhas sinceras Condolencias as familias dos que partiram no dia de hoje.❤❤❤😢😢😢",
-            "likes": 2,
-            "score": 0.996,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
-            "text": "De as notícias certas. Quantos andares tinha o prédio? Quantos anos tinham as vítimas, de quantos meses de gravidez , estava a vítima que faleceu?",
-            "likes": 2,
-            "score": 0.996,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
-            "text": "Noticiar mortes e rápido. Laudo técnico é sempre demorado. Por que será?",
-            "likes": 2,
-            "score": 0.995,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
           },
           {
             "text": "Votem no. Flávio BOSO RACHADINHA do BB OLSOMASTER que não acredita em aquecimento global e quer destruir o que resta do meio ambiente assim já acaba com tudo de uma vez",
@@ -9716,25 +9816,11 @@
             "video_id": "HLfTpQv78C0"
           },
           {
-            "text": "Pois é. A geração RedesSociais+IA+PauloFreire está dando seus frutos. Daqui pra frente só ladeira abaixo",
-            "likes": 5,
-            "score": 0.994,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
-          },
-          {
             "text": "não confunda realidade com fábulas mitológicas 😮",
             "likes": 0,
             "score": 0.993,
             "date": "2026-09-11",
             "video_id": "HLfTpQv78C0"
-          },
-          {
-            "text": "Isso é uma verdadeira tragédia! O pessoal veio da Bolívia trabalhar no Brasil e um prédio desaba em cima! Misericórdia, Senhor 🙏",
-            "likes": 0,
-            "score": 0.993,
-            "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
           },
           {
             "text": "Gente,isso é Geoengenharia solar.Estao manipulando de propósito.Por exemplo,uma cidade onde tem trinta terremotos por ano,ele multiplicam pra trezentos.Existem patentes que provam isso.",
@@ -9758,11 +9844,67 @@
             "video_id": "HLfTpQv78C0"
           },
           {
-            "text": "Lula mentira.",
-            "likes": 1,
-            "score": 0.983,
+            "text": "​@TyrannoPauloRexHá controvérsias!!!",
+            "likes": 0,
+            "score": 0.91,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@Kazuma-s6rboa",
+            "likes": 0,
+            "score": 0.885,
             "date": "2026-09-12",
-            "video_id": "s4l41KdW75M"
+            "video_id": "nb6Z3IH2agk"
+          },
+          {
+            "text": "​@claudiopereira1472por impopularidade?.. Que piada",
+            "likes": 0,
+            "score": 0.864,
+            "date": "2026-09-15",
+            "video_id": "KtQVJ8_d8Aw"
+          },
+          {
+            "text": "​@JosemaraRodrigues-e2hÉ algo sério",
+            "likes": 0,
+            "score": 0.863,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Um dilúvio não é impossível, só é improvável, não tem agua na superfície para cobrir os continentes (se houvesse eles já estariam submersos, óbvio.) Precisaria de uma super reserva subterrânea como a recentemente descoberta vir a tona e inundar a crosta, basicamente um ato de Deus. Mas pequenos \"dilúvios\" localizados são comuns pelo globo, Rio Grande do Sul é um caso muito triste disso.",
+            "likes": 2,
+            "score": 0.759,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@aparecidasantanna4570mas com a Comgás nunca aconteceu, que eu me lembre.",
+            "likes": 0,
+            "score": 0.741,
+            "date": "2026-09-12",
+            "video_id": "PfUpdJ4Gdco"
+          },
+          {
+            "text": "Já parou pra pensar que as pessoas podiam não ter para onde ir? Vcs bostejam demais na internet!",
+            "likes": 0,
+            "score": 0.569,
+            "date": "2026-09-12",
+            "video_id": "LnzPAjIyRes"
+          },
+          {
+            "text": "Tarcísio 1 turno né turma... Que piada!",
+            "likes": 0,
+            "score": 0.552,
+            "date": "2026-09-15",
+            "video_id": "KtQVJ8_d8Aw"
+          },
+          {
+            "text": "É o Super El Nino começando. Vai piorar. Será um desastre",
+            "likes": 4,
+            "score": 0.504,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
           }
         ]
       },
@@ -9784,7 +9926,7 @@
           "at": "2026-09-12T09:54:32Z"
         }
       ],
-      "n_comments_valid": 4446,
+      "n_comments_valid": 4600,
       "videos_with_valid_comments": [
         "-O41i-QLYnA",
         "0z0nd9loopY",
@@ -9817,8 +9959,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-27T11:09:11Z",
-      "next_collection_at": "2026-09-27T17:09:11Z"
+      "last_collection_at": "2026-09-27T20:42:11Z",
+      "next_collection_at": "2026-09-28T02:42:11Z"
     },
     {
       "id": "cemaden_sp_2679",
@@ -10986,7 +11128,7 @@
           "at": "2026-09-17T10:46:21Z"
         }
       ],
-      "n_comments_valid": 6557,
+      "n_comments_valid": 6814,
       "videos_with_valid_comments": [
         "-O41i-QLYnA",
         "0z0nd9loopY",
@@ -11007,8 +11149,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-27T11:09:11Z",
-      "next_collection_at": "2026-09-27T17:09:11Z"
+      "last_collection_at": "2026-09-27T20:42:11Z",
+      "next_collection_at": "2026-09-28T02:42:11Z"
     },
     {
       "id": "cemaden_sp_2680",
@@ -11457,14 +11599,14 @@
           ]
         },
         {
-          "video_id": "lnWeVVkiGJM",
+          "video_id": "F8HzBn9e5EI",
           "n_comments": 0,
           "total_likes": 0,
           "first_comment": "",
           "top_categories": []
         },
         {
-          "video_id": "F8HzBn9e5EI",
+          "video_id": "H4rpPQ7pBmY",
           "n_comments": 0,
           "total_likes": 0,
           "first_comment": "",
@@ -12494,7 +12636,7 @@
           "at": "2026-09-17T10:46:21Z"
         }
       ],
-      "n_comments_valid": 6847,
+      "n_comments_valid": 7210,
       "videos_with_valid_comments": [
         "-O41i-QLYnA",
         "0z0nd9loopY",
@@ -12516,8 +12658,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-27T11:09:11Z",
-      "next_collection_at": "2026-09-27T17:09:11Z"
+      "last_collection_at": "2026-09-27T20:42:11Z",
+      "next_collection_at": "2026-09-28T02:42:11Z"
     },
     {
       "id": "cemaden_sp_2716",
@@ -12989,7 +13131,7 @@
           "at": "2026-09-14T11:24:12Z"
         }
       ],
-      "n_comments_valid": 4712,
+      "n_comments_valid": 4747,
       "videos_with_valid_comments": [
         "-O41i-QLYnA",
         "0z0nd9loopY",
@@ -13010,8 +13152,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-27T11:09:11Z",
-      "next_collection_at": "2026-09-27T17:09:11Z"
+      "last_collection_at": "2026-09-27T20:42:11Z",
+      "next_collection_at": "2026-09-28T02:42:11Z"
     },
     {
       "id": "cemaden_sp_2717",
@@ -13737,7 +13879,7 @@
           "at": "2026-09-17T02:46:44Z"
         }
       ],
-      "n_comments_valid": 700,
+      "n_comments_valid": 755,
       "videos_with_valid_comments": [
         "KtQVJ8_d8Aw",
         "cgvIRir0gB0",
@@ -13759,8 +13901,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-27T11:09:11Z",
-      "next_collection_at": "2026-09-27T17:09:11Z"
+      "last_collection_at": "2026-09-27T20:42:11Z",
+      "next_collection_at": "2026-09-28T02:42:11Z"
     },
     {
       "id": "cemaden_sc_2768",
@@ -13774,7 +13916,7 @@
       "lon": null,
       "regime": "prospective_live",
       "n_comments": 149,
-      "n_videos": 7,
+      "n_videos": 8,
       "unlabeled": 9,
       "unlabeled_pct": 6.0,
       "date_range": [
@@ -13887,20 +14029,6 @@
           ]
         },
         {
-          "video_id": "Vwi5PKDEm0k",
-          "n_comments": 0,
-          "total_likes": 0,
-          "first_comment": "",
-          "top_categories": []
-        },
-        {
-          "video_id": "iJfCxgt_cas",
-          "n_comments": 0,
-          "total_likes": 0,
-          "first_comment": "",
-          "top_categories": []
-        },
-        {
           "video_id": "T9z_4JATYHM",
           "n_comments": 0,
           "total_likes": 0,
@@ -13916,6 +14044,27 @@
         },
         {
           "video_id": "MBTUW8XTSVM",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
+        },
+        {
+          "video_id": "Vwi5PKDEm0k",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
+        },
+        {
+          "video_id": "Vfh5Uohzm4g",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
+        },
+        {
+          "video_id": "iJfCxgt_cas",
           "n_comments": 0,
           "total_likes": 0,
           "first_comment": "",
@@ -14609,7 +14758,7 @@
           "at": "2026-09-24T16:16:40Z"
         }
       ],
-      "n_comments_valid": 1090,
+      "n_comments_valid": 1230,
       "videos_with_valid_comments": [
         "APDi5fLPf_E",
         "OBzHfFeQHQ0",
@@ -14625,8 +14774,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-27T11:09:11Z",
-      "next_collection_at": "2026-09-27T17:09:11Z"
+      "last_collection_at": "2026-09-27T20:42:11Z",
+      "next_collection_at": "2026-09-28T02:42:11Z"
     },
     {
       "id": "cemaden_sc_2772",
@@ -14882,7 +15031,7 @@
           "at": "2026-09-26T15:30:51Z"
         }
       ],
-      "n_comments_valid": 61,
+      "n_comments_valid": 71,
       "videos_with_valid_comments": [
         "0_BH2DBCYyw",
         "FrkXV-cmuyM",
@@ -14898,8 +15047,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-27T11:09:11Z",
-      "next_collection_at": "2026-09-27T17:09:11Z"
+      "last_collection_at": "2026-09-27T20:42:11Z",
+      "next_collection_at": "2026-09-28T02:42:11Z"
     },
     {
       "id": "cemaden_sc_2776",
@@ -15452,7 +15601,7 @@
           "at": "2026-09-26T10:37:38Z"
         }
       ],
-      "n_comments_valid": 109,
+      "n_comments_valid": 135,
       "videos_with_valid_comments": [
         "TRzqbfCz93E",
         "kG6GHfiVnjw"
@@ -15472,8 +15621,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-27T11:09:11Z",
-      "next_collection_at": "2026-09-27T17:09:11Z"
+      "last_collection_at": "2026-09-27T20:42:11Z",
+      "next_collection_at": "2026-09-28T02:42:11Z"
     },
     {
       "id": "cemaden_rs_2742",
@@ -15700,7 +15849,7 @@
       "lon": null,
       "regime": "prospective_live",
       "n_comments": 84,
-      "n_videos": 6,
+      "n_videos": 7,
       "unlabeled": 12,
       "unlabeled_pct": 14.3,
       "date_range": [
@@ -15817,7 +15966,7 @@
           ]
         },
         {
-          "video_id": "38Y5dHfts_E",
+          "video_id": "GJeQSdjYINM",
           "n_comments": 0,
           "total_likes": 0,
           "first_comment": "",
@@ -15838,7 +15987,14 @@
           "top_categories": []
         },
         {
-          "video_id": "GJeQSdjYINM",
+          "video_id": "38Y5dHfts_E",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
+        },
+        {
+          "video_id": "sPOkdZ6aW2k",
           "n_comments": 0,
           "total_likes": 0,
           "first_comment": "",
@@ -16335,7 +16491,7 @@
           "at": "2026-09-23T10:36:05Z"
         }
       ],
-      "n_comments_valid": 463,
+      "n_comments_valid": 535,
       "videos_with_valid_comments": [
         "d8Jyndmq0jc",
         "rKtuEKYS9cE"
@@ -16355,8 +16511,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-27T11:09:11Z",
-      "next_collection_at": "2026-09-27T17:09:11Z"
+      "last_collection_at": "2026-09-27T20:42:11Z",
+      "next_collection_at": "2026-09-28T02:42:11Z"
     }
   ],
   "archived_alerts": [
