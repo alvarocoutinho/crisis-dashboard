@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T21:51:25Z",
+  "generated_at": "2026-10-01T03:26:55Z",
   "pipeline_version": "0.2.2",
   "pilot_mode": true,
   "dry_run": false,
@@ -106,8 +106,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-30T03:20:42Z",
-      "next_collection_at": "2026-10-01T03:20:42Z"
+      "last_collection_at": "2026-10-01T03:26:23Z",
+      "next_collection_at": "2026-10-02T03:26:23Z"
     },
     {
       "id": "cemaden_rs_2848",
@@ -120,44 +120,44 @@
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
-      "n_comments": 19,
-      "n_videos": 2,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
+      "n_comments": 30,
+      "n_videos": 5,
+      "unlabeled": 3,
+      "unlabeled_pct": 10.0,
       "date_range": [
         "2026-09-29",
-        "2026-09-30"
+        "2026-10-01"
       ],
       "distribution": [
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
-          "count": 12,
-          "pct": 63.2
+          "count": 18,
+          "pct": 60.0
         },
         {
           "key": "ajuda_resgate_doacoes",
           "label": "Ajuda / resgate / doações",
           "count": 1,
-          "pct": 5.3
+          "pct": 3.3
         },
         {
           "key": "responsabilizacao_governanca",
           "label": "Responsabilização / governança",
-          "count": 2,
-          "pct": 10.5
+          "count": 1,
+          "pct": 3.3
         },
         {
           "key": "infraestrutura_ocupacao_risco",
           "label": "Infraestrutura / ocupação de risco",
           "count": 4,
-          "pct": 21.1
+          "pct": 13.3
         },
         {
           "key": "clima_chuva_meio_ambiente",
           "label": "Clima / chuva / meio ambiente",
-          "count": 1,
-          "pct": 5.3
+          "count": 3,
+          "pct": 10.0
         },
         {
           "key": "experiencia_pessoal_local",
@@ -174,25 +174,29 @@
         {
           "key": "critica_midia_informacao",
           "label": "Crítica à mídia / informação",
-          "count": 3,
-          "pct": 15.8
+          "count": 4,
+          "pct": 13.3
         }
       ],
       "timeline": [
         {
+          "date": "01/10/26",
+          "count": 7
+        },
+        {
           "date": "29/09/26",
-          "count": 16
+          "count": 13
         },
         {
           "date": "30/09/26",
-          "count": 3
+          "count": 10
         }
       ],
       "videos": [
         {
           "video_id": "4FBIzMH__AM",
-          "n_comments": 16,
-          "total_likes": 12,
+          "n_comments": 13,
+          "total_likes": 11,
           "first_comment": "29/09/2026",
           "top_categories": [
             {
@@ -201,38 +205,84 @@
             },
             {
               "label": "Infraestrutura",
-              "count": 4
+              "count": 3
             },
             {
-              "label": "Responsabilização",
+              "label": "Crítica mídia",
               "count": 2
             }
           ]
         },
         {
-          "video_id": "3lfv4UnfTpM",
-          "n_comments": 3,
-          "total_likes": 3,
+          "video_id": "636UjsHCWz8",
+          "n_comments": 11,
+          "total_likes": 5,
           "first_comment": "30/09/2026",
           "top_categories": [
             {
               "label": "Solidariedade",
+              "count": 5
+            },
+            {
+              "label": "Clima/chuva",
               "count": 2
+            },
+            {
+              "label": "Responsabilização",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "video_id": "3lfv4UnfTpM",
+          "n_comments": 4,
+          "total_likes": 5,
+          "first_comment": "30/09/2026",
+          "top_categories": [
+            {
+              "label": "Solidariedade",
+              "count": 3
             },
             {
               "label": "Crítica mídia",
               "count": 1
             }
           ]
+        },
+        {
+          "video_id": "mIS1liEGS4k",
+          "n_comments": 2,
+          "total_likes": 5,
+          "first_comment": "30/09/2026",
+          "top_categories": [
+            {
+              "label": "Infraestrutura",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "video_id": "c1OLPAIcPKI",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
         }
       ],
       "all_samples": {
         "solidariedade_oracao_luto": [
           {
             "text": "Bom diaaaa amigo só pela misericórdia de Deus",
-            "likes": 1,
+            "likes": 2,
             "score": 0.996,
             "date": "2026-09-30",
+            "video_id": "3lfv4UnfTpM"
+          },
+          {
+            "text": "Bom 👍 dia, com certeza amigo, que Deus nos proteja e tenha misericórdia de todos nós!! 🙏❤",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-10-01",
             "video_id": "3lfv4UnfTpM"
           },
           {
@@ -250,8 +300,29 @@
             "video_id": "4FBIzMH__AM"
           },
           {
-            "text": "Juízos de Deus",
+            "text": "Meu Deus 😮",
             "likes": 0,
+            "score": 0.995,
+            "date": "2026-09-30",
+            "video_id": "636UjsHCWz8"
+          },
+          {
+            "text": "Oh meu Deus.... misericórdia senhor 🙏",
+            "likes": 3,
+            "score": 0.995,
+            "date": "2026-09-30",
+            "video_id": "636UjsHCWz8"
+          },
+          {
+            "text": "Meu Deus tenha misericórdia 😢",
+            "likes": 1,
+            "score": 0.994,
+            "date": "2026-09-30",
+            "video_id": "636UjsHCWz8"
+          },
+          {
+            "text": "Juízos de Deus",
+            "likes": 1,
             "score": 0.994,
             "date": "2026-09-29",
             "video_id": "4FBIzMH__AM"
@@ -283,6 +354,20 @@
             "score": 0.974,
             "date": "2026-09-29",
             "video_id": "4FBIzMH__AM"
+          },
+          {
+            "text": "🥺😥❤️💚💛",
+            "likes": 1,
+            "score": 0.974,
+            "date": "2026-09-30",
+            "video_id": "636UjsHCWz8"
+          },
+          {
+            "text": "😢😢😢😢",
+            "likes": 0,
+            "score": 0.974,
+            "date": "2026-10-01",
+            "video_id": "636UjsHCWz8"
           },
           {
             "text": "Fico muito triste de saber dessas notícias, que o Deus criador do céu e da terra tem misericórdia do povo do Rio grande do Sul",
@@ -324,32 +409,25 @@
         ],
         "responsabilizacao_governanca": [
           {
-            "text": "Dudu Milk segurou a verba enviada pelo Governo Federal. E este não vai enviar mais porque o ATUAL governador NÃO APRESENTOU ATÉ AGORA projetos para contenção.",
+            "text": "esse estado ta na merda faz tempo!",
             "likes": 0,
-            "score": 0.997,
-            "date": "2026-09-29",
-            "video_id": "4FBIzMH__AM"
-          },
-          {
-            "text": "PORQUE LULE ODEIA GAÚCHO?",
-            "likes": 1,
             "score": 0.996,
-            "date": "2026-09-29",
-            "video_id": "4FBIzMH__AM"
+            "date": "2026-10-01",
+            "video_id": "636UjsHCWz8"
           }
         ],
         "infraestrutura_ocupacao_risco": [
           {
+            "text": "Rio grande do Sul",
+            "likes": 3,
+            "score": 0.998,
+            "date": "2026-09-30",
+            "video_id": "mIS1liEGS4k"
+          },
+          {
             "text": "RIO GRANDE DO SUL ATENÇÃO!!! ⚠️ Voltem urgentemente ao primeiro AMOR (Jesus) enquanto há tempo.",
             "likes": 1,
             "score": 0.998,
-            "date": "2026-09-29",
-            "video_id": "4FBIzMH__AM"
-          },
-          {
-            "text": "Por que o PT não se cria no Rio Grande do Sul.",
-            "likes": 1,
-            "score": 0.997,
             "date": "2026-09-29",
             "video_id": "4FBIzMH__AM"
           },
@@ -375,6 +453,20 @@
             "score": 0.997,
             "date": "2026-09-29",
             "video_id": "4FBIzMH__AM"
+          },
+          {
+            "text": "Plantamos que colhemos platantemo desmatamento. Agredimo natureza. Vem conta só lamentar mais nada",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-10-01",
+            "video_id": "636UjsHCWz8"
+          },
+          {
+            "text": "Nunca foi desmatamento...nunca....... rios cheio de areia.....e lago cheio de aaareiaaqqq",
+            "likes": 0,
+            "score": 0.995,
+            "date": "2026-10-01",
+            "video_id": "636UjsHCWz8"
           }
         ],
         "experiencia_pessoal_local": [],
@@ -386,6 +478,13 @@
             "score": 0.999,
             "date": "2026-09-29",
             "video_id": "4FBIzMH__AM"
+          },
+          {
+            "text": "Fazer nova cidade parte dela pelo menos deixar aí pra água isso e realidade nova",
+            "likes": 0,
+            "score": 0.99,
+            "date": "2026-10-01",
+            "video_id": "636UjsHCWz8"
           },
           {
             "text": "Fico muito triste de saber dessas notícias, que o Deus criador do céu e da terra tem misericórdia do povo do Rio grande do Sul",
@@ -406,7 +505,7 @@
       "academic_studies": [],
       "observation_status": "active",
       "priority_tier": "alto",
-      "flag": "acompanhamento",
+      "flag": "prioritario",
       "flag_history": [
         {
           "flag": "alerta",
@@ -415,12 +514,18 @@
         {
           "flag": "acompanhamento",
           "at": "2026-09-29T17:25:18Z"
+        },
+        {
+          "flag": "prioritario",
+          "at": "2026-10-01T03:26:23Z"
         }
       ],
-      "n_comments_valid": 35,
+      "n_comments_valid": 62,
       "videos_with_valid_comments": [
         "3lfv4UnfTpM",
-        "4FBIzMH__AM"
+        "4FBIzMH__AM",
+        "636UjsHCWz8",
+        "mIS1liEGS4k"
       ],
       "alert_opened_at": "2026-09-28T08:08:16Z",
       "alert_closed_at": null,
@@ -437,8 +542,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-30T11:43:46Z",
-      "next_collection_at": "2026-09-30T23:43:46Z"
+      "last_collection_at": "2026-10-01T03:26:23Z",
+      "next_collection_at": "2026-10-01T09:26:23Z"
     },
     {
       "id": "cemaden_rs_2849",
@@ -758,8 +863,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-30T03:20:42Z",
-      "next_collection_at": "2026-10-01T03:20:42Z"
+      "last_collection_at": "2026-10-01T03:26:23Z",
+      "next_collection_at": "2026-10-02T03:26:23Z"
     },
     {
       "id": "cemaden_sc_2862",
@@ -983,7 +1088,7 @@
       "lon": null,
       "regime": "prospective_live",
       "n_comments": 0,
-      "n_videos": 1,
+      "n_videos": 0,
       "unlabeled": 0,
       "unlabeled_pct": 0.0,
       "date_range": [
@@ -1041,15 +1146,7 @@
         }
       ],
       "timeline": [],
-      "videos": [
-        {
-          "video_id": "KzTV1M7MFjQ",
-          "n_comments": 0,
-          "total_likes": 0,
-          "first_comment": "",
-          "top_categories": []
-        }
-      ],
+      "videos": [],
       "all_samples": {
         "solidariedade_oracao_luto": [],
         "ajuda_resgate_doacoes": [],
@@ -1081,12 +1178,12 @@
       "alert_transitions": [],
       "collection_health": {
         "status": "silent",
-        "silence_type": "videos_without_comments",
+        "silence_type": "no_videos_found",
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-30T11:43:46Z",
-      "next_collection_at": "2026-09-30T23:43:46Z"
+      "last_collection_at": "2026-10-01T03:26:23Z",
+      "next_collection_at": "2026-10-01T15:26:23Z"
     },
     {
       "id": "cemaden_rs_2866",
@@ -1404,6 +1501,111 @@
       "next_collection_at": "2026-10-01T21:46:25Z"
     },
     {
+      "id": "cemaden_rj_2868",
+      "municipio": "Teresópolis",
+      "uf": "RJ",
+      "tipo": "Movimentos de Massa",
+      "nivel": "Moderado",
+      "data_alerta": "30/09/2026",
+      "codibge": "3305802",
+      "lat": null,
+      "lon": null,
+      "regime": "prospective_live",
+      "n_comments": 0,
+      "n_videos": 0,
+      "unlabeled": 0,
+      "unlabeled_pct": 0.0,
+      "date_range": [
+        "",
+        ""
+      ],
+      "distribution": [
+        {
+          "key": "solidariedade_oracao_luto",
+          "label": "Solidariedade / oração / luto",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "ajuda_resgate_doacoes",
+          "label": "Ajuda / resgate / doações",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "responsabilizacao_governanca",
+          "label": "Responsabilização / governança",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "infraestrutura_ocupacao_risco",
+          "label": "Infraestrutura / ocupação de risco",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "clima_chuva_meio_ambiente",
+          "label": "Clima / chuva / meio ambiente",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "experiencia_pessoal_local",
+          "label": "Experiência pessoal / local",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "alerta_prevencao_cobranca",
+          "label": "Alerta / prevenção / cobrança",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "critica_midia_informacao",
+          "label": "Crítica à mídia / informação",
+          "count": 0,
+          "pct": 0.0
+        }
+      ],
+      "timeline": [],
+      "videos": [],
+      "all_samples": {
+        "solidariedade_oracao_luto": [],
+        "ajuda_resgate_doacoes": [],
+        "responsabilizacao_governanca": [],
+        "infraestrutura_ocupacao_risco": [],
+        "clima_chuva_meio_ambiente": [],
+        "experiencia_pessoal_local": [],
+        "alerta_prevencao_cobranca": [],
+        "critica_midia_informacao": []
+      },
+      "academic_studies": [],
+      "observation_status": "active",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-09-30T19:07:35Z"
+        }
+      ],
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "alert_opened_at": "2026-09-30T19:07:35Z",
+      "alert_closed_at": null,
+      "alert_transitions": [],
+      "collection_health": {
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
+      },
+      "last_collection_at": "2026-10-01T03:26:23Z",
+      "next_collection_at": "2026-10-02T03:26:23Z"
+    },
+    {
       "id": "cemaden_rs_2475",
       "municipio": "Pelotas",
       "uf": "RS",
@@ -1511,8 +1713,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-30T11:43:46Z",
-      "next_collection_at": "2026-09-30T23:43:46Z"
+      "last_collection_at": "2026-10-01T03:26:23Z",
+      "next_collection_at": "2026-10-01T15:26:23Z"
     },
     {
       "id": "cemaden_rs_2494",
@@ -1525,44 +1727,44 @@
       "lat": -31.057355013631,
       "lon": -54.664933080761,
       "regime": "prospective_live",
-      "n_comments": 24,
-      "n_videos": 2,
-      "unlabeled": 4,
-      "unlabeled_pct": 16.7,
+      "n_comments": 0,
+      "n_videos": 0,
+      "unlabeled": 0,
+      "unlabeled_pct": 0.0,
       "date_range": [
-        "2026-08-19",
-        "2026-08-21"
+        "",
+        ""
       ],
       "distribution": [
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
-          "count": 4,
-          "pct": 16.7
+          "count": 0,
+          "pct": 0.0
         },
         {
           "key": "ajuda_resgate_doacoes",
           "label": "Ajuda / resgate / doações",
-          "count": 3,
-          "pct": 12.5
+          "count": 0,
+          "pct": 0.0
         },
         {
           "key": "responsabilizacao_governanca",
           "label": "Responsabilização / governança",
-          "count": 8,
-          "pct": 33.3
+          "count": 0,
+          "pct": 0.0
         },
         {
           "key": "infraestrutura_ocupacao_risco",
           "label": "Infraestrutura / ocupação de risco",
-          "count": 4,
-          "pct": 16.7
+          "count": 0,
+          "pct": 0.0
         },
         {
           "key": "clima_chuva_meio_ambiente",
           "label": "Clima / chuva / meio ambiente",
-          "count": 8,
-          "pct": 33.3
+          "count": 0,
+          "pct": 0.0
         },
         {
           "key": "experiencia_pessoal_local",
@@ -1573,292 +1775,27 @@
         {
           "key": "alerta_prevencao_cobranca",
           "label": "Alerta / prevenção / cobrança",
-          "count": 1,
-          "pct": 4.2
+          "count": 0,
+          "pct": 0.0
         },
         {
           "key": "critica_midia_informacao",
           "label": "Crítica à mídia / informação",
-          "count": 3,
-          "pct": 12.5
+          "count": 0,
+          "pct": 0.0
         }
       ],
-      "timeline": [
-        {
-          "date": "19/08/26",
-          "count": 9
-        },
-        {
-          "date": "20/08/26",
-          "count": 13
-        },
-        {
-          "date": "21/08/26",
-          "count": 2
-        }
-      ],
-      "videos": [
-        {
-          "video_id": "FawKqyvaAzU",
-          "n_comments": 24,
-          "total_likes": 15,
-          "first_comment": "19/08/2026",
-          "top_categories": [
-            {
-              "label": "Responsabilização",
-              "count": 8
-            },
-            {
-              "label": "Clima/chuva",
-              "count": 8
-            },
-            {
-              "label": "Solidariedade",
-              "count": 4
-            }
-          ]
-        },
-        {
-          "video_id": "nMKmDt7DPCc",
-          "n_comments": 0,
-          "total_likes": 0,
-          "first_comment": "",
-          "top_categories": []
-        }
-      ],
+      "timeline": [],
+      "videos": [],
       "all_samples": {
-        "solidariedade_oracao_luto": [
-          {
-            "text": "E ainda tem gente que reza e diz graças a Deus, graças do que se esse merda não passa de uma ilusão, você já viu uma árvore, sim agora alguém já viu esse filha da puta chamado Deus, engraçado os únicos que conseguem ver e falar com esse bosta chamado Deus, são os padres, e pastores engraçado né",
-            "likes": 0,
-            "score": 0.997,
-            "date": "2026-08-20",
-            "video_id": "FawKqyvaAzU"
-          },
-          {
-            "text": "Misericórdia 😢",
-            "likes": 0,
-            "score": 0.994,
-            "date": "2026-08-19",
-            "video_id": "FawKqyvaAzU"
-          },
-          {
-            "text": "Gente a natureza é forte e ninguém pode fazer nada. Só Deus pode ajudar.",
-            "likes": 0,
-            "score": 0.952,
-            "date": "2026-08-20",
-            "video_id": "FawKqyvaAzU"
-          },
-          {
-            "text": "E ai cadê esse bosta chamado Deus, que pai é esse que mata seus filhos e destroi tudo, se esse merda chamado Deus existir não passa de um grande bandido filha da puta, matador de pessoas boas, humildes, e pobres, Deus lixo dos lixos",
-            "likes": 0,
-            "score": 0.945,
-            "date": "2026-08-20",
-            "video_id": "FawKqyvaAzU"
-          }
-        ],
-        "ajuda_resgate_doacoes": [
-          {
-            "text": "Gente a natureza é forte e ninguém pode fazer nada. Só Deus pode ajudar.",
-            "likes": 0,
-            "score": 0.989,
-            "date": "2026-08-20",
-            "video_id": "FawKqyvaAzU"
-          },
-          {
-            "text": "O prefeito náo vence náo da conta de retirar lixo de esquina valetas o povo náo ajuda ,eles limpam e o povo vai lá jogar mais lixo isso que passa o caminháo da coleta todo dia",
-            "likes": 0,
-            "score": 0.989,
-            "date": "2026-08-20",
-            "video_id": "FawKqyvaAzU"
-          },
-          {
-            "text": "Veja os detalhes e a matéria completa no Portal R7: 👉 https://noticias.r7.com/rio-grande-do-sul/rio-grande-record/chuva-intensa-alerta-defesa-civil-no-rio-grande-do-sul-19082026/",
-            "likes": 1,
-            "score": 0.877,
-            "date": "2026-08-19",
-            "video_id": "FawKqyvaAzU"
-          }
-        ],
-        "responsabilizacao_governanca": [
-          {
-            "text": "Que coisa, culpa do el niño.",
-            "likes": 0,
-            "score": 0.997,
-            "date": "2026-08-19",
-            "video_id": "FawKqyvaAzU"
-          },
-          {
-            "text": "Lamentável, culpa do el niño.",
-            "likes": 0,
-            "score": 0.997,
-            "date": "2026-08-19",
-            "video_id": "FawKqyvaAzU"
-          },
-          {
-            "text": "Tem uma verba pra pelotas de 250 milhões do PAC do presidente do prefeito Marroni. Talvez ele utilize essa verba Eleitoral ❤",
-            "likes": 1,
-            "score": 0.996,
-            "date": "2026-08-19",
-            "video_id": "FawKqyvaAzU"
-          },
-          {
-            "text": "Esse prefeito de Pelotas é acomodado, não faz nada.",
-            "likes": 0,
-            "score": 0.996,
-            "date": "2026-08-20",
-            "video_id": "FawKqyvaAzU"
-          },
-          {
-            "text": "Esse prefeito Marroni é aquele que atropelou e matou menina de 8 anos?",
-            "likes": 0,
-            "score": 0.996,
-            "date": "2026-08-20",
-            "video_id": "FawKqyvaAzU"
-          },
-          {
-            "text": "O prefeito náo vence náo da conta de retirar lixo de esquina valetas o povo náo ajuda ,eles limpam e o povo vai lá jogar mais lixo isso que passa o caminháo da coleta todo dia",
-            "likes": 0,
-            "score": 0.99,
-            "date": "2026-08-20",
-            "video_id": "FawKqyvaAzU"
-          },
-          {
-            "text": "Sim, esse luis inacio é fezes!",
-            "likes": 0,
-            "score": 0.985,
-            "date": "2026-08-20",
-            "video_id": "FawKqyvaAzU"
-          },
-          {
-            "text": "Principais Projetos do PAC Mobilidade em PelotasCaminho do Ônibus: R$ 55 milhões para requalificar 12,5 km de vias de transporte coletivo em dez bairros (como Pestano, Cohab Fragata e Areal).Avenidas Estruturantes: R$ 52 milhões divididos entre a requalificação da Avenida Theodoro Müller (Fragata) e o Corredor do Obelisco na Avenida Manoel Antônio Peres (Areal).Viaduto da Fernando Osório: R$ 35 mi",
-            "likes": 0,
-            "score": 0.971,
-            "date": "2026-08-19",
-            "video_id": "FawKqyvaAzU"
-          }
-        ],
-        "infraestrutura_ocupacao_risco": [
-          {
-            "text": "E ai cadê esse bosta chamado Deus, que pai é esse que mata seus filhos e destroi tudo, se esse merda chamado Deus existir não passa de um grande bandido filha da puta, matador de pessoas boas, humildes, e pobres, Deus lixo dos lixos",
-            "likes": 0,
-            "score": 0.997,
-            "date": "2026-08-20",
-            "video_id": "FawKqyvaAzU"
-          },
-          {
-            "text": "Principais Projetos do PAC Mobilidade em PelotasCaminho do Ônibus: R$ 55 milhões para requalificar 12,5 km de vias de transporte coletivo em dez bairros (como Pestano, Cohab Fragata e Areal).Avenidas Estruturantes: R$ 52 milhões divididos entre a requalificação da Avenida Theodoro Müller (Fragata) e o Corredor do Obelisco na Avenida Manoel Antônio Peres (Areal).Viaduto da Fernando Osório: R$ 35 mi",
-            "likes": 0,
-            "score": 0.997,
-            "date": "2026-08-19",
-            "video_id": "FawKqyvaAzU"
-          },
-          {
-            "text": "Veja os detalhes e a matéria completa no Portal R7: 👉 https://noticias.r7.com/rio-grande-do-sul/rio-grande-record/chuva-intensa-alerta-defesa-civil-no-rio-grande-do-sul-19082026/",
-            "likes": 1,
-            "score": 0.991,
-            "date": "2026-08-19",
-            "video_id": "FawKqyvaAzU"
-          },
-          {
-            "text": "O prefeito náo vence náo da conta de retirar lixo de esquina valetas o povo náo ajuda ,eles limpam e o povo vai lá jogar mais lixo isso que passa o caminháo da coleta todo dia",
-            "likes": 0,
-            "score": 0.986,
-            "date": "2026-08-20",
-            "video_id": "FawKqyvaAzU"
-          }
-        ],
-        "clima_chuva_meio_ambiente": [
-          {
-            "text": "Santa Laguna dos Patos pra aguentar esse tanto de água e não extravasar... Que continue comportando, pois essa história vai longe. Morador da Praia do Laranjal, sofremos com enchentes em 2001, 2015, 2024, ... uma com grau de severidade maior que a outra. Espero que não se repita :(",
-            "likes": 1,
-            "score": 0.997,
-            "date": "2026-08-21",
-            "video_id": "FawKqyvaAzU"
-          },
-          {
-            "text": "mas coisa de ratardado querer limpar valetas e ruas depois começou chuva porque não fiserão antes começar chuvas faz mais de mes ta sendo anunciado tempo severo ai depois enche tudo de agua querem limpar valetas pra aparecer na televisão disendo ta faznedo alguma coisa",
-            "likes": 1,
-            "score": 0.996,
-            "date": "2026-08-20",
-            "video_id": "FawKqyvaAzU"
-          },
-          {
-            "text": "infelizmente o planeta está morrendo... daqui pra frente é só tragédia 😮",
-            "likes": 1,
-            "score": 0.996,
-            "date": "2026-08-19",
-            "video_id": "FawKqyvaAzU"
-          },
-          {
-            "text": "A inundação 2024 é só questão de tempo",
-            "likes": 0,
-            "score": 0.996,
-            "date": "2026-08-20",
-            "video_id": "FawKqyvaAzU"
-          },
-          {
-            "text": "Votaram numa bosta, agora querem o quê? O que foi feito pós enchente de 2024? Colocar Jaleco laranja e ir pra TV mostrar a previsão do tempo, não resolve.",
-            "likes": 8,
-            "score": 0.995,
-            "date": "2026-08-19",
-            "video_id": "FawKqyvaAzU"
-          },
-          {
-            "text": "Veja os detalhes e a matéria completa no Portal R7: 👉 https://noticias.r7.com/rio-grande-do-sul/rio-grande-record/chuva-intensa-alerta-defesa-civil-no-rio-grande-do-sul-19082026/",
-            "likes": 1,
-            "score": 0.995,
-            "date": "2026-08-19",
-            "video_id": "FawKqyvaAzU"
-          },
-          {
-            "text": "Verdade vanuza com a natureza náo se pode fazer oque esperar passar só",
-            "likes": 0,
-            "score": 0.987,
-            "date": "2026-08-20",
-            "video_id": "FawKqyvaAzU"
-          },
-          {
-            "text": "Gente a natureza é forte e ninguém pode fazer nada. Só Deus pode ajudar.",
-            "likes": 0,
-            "score": 0.982,
-            "date": "2026-08-20",
-            "video_id": "FawKqyvaAzU"
-          }
-        ],
+        "solidariedade_oracao_luto": [],
+        "ajuda_resgate_doacoes": [],
+        "responsabilizacao_governanca": [],
+        "infraestrutura_ocupacao_risco": [],
+        "clima_chuva_meio_ambiente": [],
         "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [
-          {
-            "text": "Veja os detalhes e a matéria completa no Portal R7: 👉 https://noticias.r7.com/rio-grande-do-sul/rio-grande-record/chuva-intensa-alerta-defesa-civil-no-rio-grande-do-sul-19082026/",
-            "likes": 1,
-            "score": 0.999,
-            "date": "2026-08-19",
-            "video_id": "FawKqyvaAzU"
-          }
-        ],
-        "critica_midia_informacao": [
-          {
-            "text": "Verdade vanuza com a natureza náo se pode fazer oque esperar passar só",
-            "likes": 0,
-            "score": 0.997,
-            "date": "2026-08-20",
-            "video_id": "FawKqyvaAzU"
-          },
-          {
-            "text": "Veja os detalhes e a matéria completa no Portal R7: 👉 https://noticias.r7.com/rio-grande-do-sul/rio-grande-record/chuva-intensa-alerta-defesa-civil-no-rio-grande-do-sul-19082026/",
-            "likes": 1,
-            "score": 0.918,
-            "date": "2026-08-19",
-            "video_id": "FawKqyvaAzU"
-          },
-          {
-            "text": "Pelotas, Nem Tao Doce Assim, Marrone... https://youtu.be/PFDz6el3I9A?is=k9AsVF9DYTnyqJKn",
-            "likes": 0,
-            "score": 0.789,
-            "date": "2026-08-21",
-            "video_id": "FawKqyvaAzU"
-          }
-        ]
+        "alerta_prevencao_cobranca": [],
+        "critica_midia_informacao": []
       },
       "academic_studies": [],
       "observation_status": "extended",
@@ -1882,13 +1819,13 @@
       "alert_closed_at": "2026-08-22T12:44:17Z",
       "alert_transitions": [],
       "collection_health": {
-        "status": "ok",
-        "silence_type": null,
+        "status": "silent",
+        "silence_type": "no_videos_found",
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-30T11:43:46Z",
-      "next_collection_at": "2026-09-30T23:43:46Z"
+      "last_collection_at": "2026-10-01T03:26:23Z",
+      "next_collection_at": "2026-10-01T15:26:23Z"
     },
     {
       "id": "cemaden_rs_2499",
@@ -12555,7 +12492,7 @@
           "at": "2026-09-30T17:23:54Z"
         }
       ],
-      "n_comments_valid": 313,
+      "n_comments_valid": 338,
       "videos_with_valid_comments": [
         "KtQVJ8_d8Aw",
         "a88rWqu0GWU"
@@ -12569,8 +12506,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-30T17:23:54Z",
-      "next_collection_at": "2026-09-30T23:23:54Z"
+      "last_collection_at": "2026-10-01T03:26:23Z",
+      "next_collection_at": "2026-10-01T09:26:23Z"
     },
     {
       "id": "cemaden_sp_2686",
@@ -15729,8 +15666,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-09-30T11:43:46Z",
-      "next_collection_at": "2026-09-30T23:43:46Z"
+      "last_collection_at": "2026-10-01T03:26:23Z",
+      "next_collection_at": "2026-10-01T15:26:23Z"
     },
     {
       "id": "cemaden_rs_2745",

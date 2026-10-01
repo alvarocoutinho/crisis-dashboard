@@ -1,13 +1,13 @@
 {
   "schema_version": "0.2",
   "pipeline_version": "0.2.2",
-  "last_run_at": "2026-09-30T21:46:25Z",
-  "last_run_status": "partial",
-  "last_run_duration_seconds": 301,
-  "last_cemaden_check_at": "2026-09-30T21:46:25Z",
+  "last_run_at": "2026-10-01T03:26:23Z",
+  "last_run_status": "success",
+  "last_run_duration_seconds": 32,
+  "last_cemaden_check_at": "2026-10-01T03:26:23Z",
   "youtube_quota": {
-    "used_today": 197600,
-    "reset_at": "2026-10-01T07:00:00Z"
+    "used_today": 198500,
+    "reset_at": "2026-10-02T07:00:00Z"
   },
   "active_alerts": {
     "cemaden_rs_2840": {
@@ -25,7 +25,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-09-27T09:29:29Z",
-      "last_seen_open_at": "2026-09-30T21:46:25Z",
+      "last_seen_open_at": "2026-10-01T03:26:23Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -34,8 +34,8 @@
       "videos_with_valid_comments": [],
       "last_new_data_at": null,
       "last_new_comment_at": null,
-      "last_collection_at": "2026-09-30T03:20:42Z",
-      "next_collection_at": "2026-10-01T03:20:42Z"
+      "last_collection_at": "2026-10-01T03:26:23Z",
+      "next_collection_at": "2026-10-02T03:26:23Z"
     },
     "cemaden_rs_2848": {
       "codibge": "4311403",
@@ -43,7 +43,7 @@
       "uf": "RS",
       "nivel_atual": "Alto",
       "priority_tier": "alto",
-      "flag": "acompanhamento",
+      "flag": "prioritario",
       "flag_history": [
         {
           "flag": "alerta",
@@ -52,11 +52,15 @@
         {
           "flag": "acompanhamento",
           "at": "2026-09-29T17:25:18Z"
+        },
+        {
+          "flag": "prioritario",
+          "at": "2026-10-01T03:26:23Z"
         }
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-09-28T08:08:16Z",
-      "last_seen_open_at": "2026-09-30T21:46:25Z",
+      "last_seen_open_at": "2026-10-01T03:26:23Z",
       "closed_at": null,
       "transitions": [
         {
@@ -67,18 +71,23 @@
       ],
       "videos_collected": [
         "3lfv4UnfTpM",
-        "4FBIzMH__AM"
+        "4FBIzMH__AM",
+        "636UjsHCWz8",
+        "c1OLPAIcPKI",
+        "mIS1liEGS4k"
       ],
-      "n_videos_aderentes": 2,
-      "n_comments_valid": 35,
+      "n_videos_aderentes": 5,
+      "n_comments_valid": 62,
       "videos_with_valid_comments": [
         "3lfv4UnfTpM",
-        "4FBIzMH__AM"
+        "4FBIzMH__AM",
+        "636UjsHCWz8",
+        "mIS1liEGS4k"
       ],
-      "last_new_data_at": "2026-09-30T11:43:46Z",
-      "last_new_comment_at": "2026-09-30T11:43:46Z",
-      "last_collection_at": "2026-09-30T11:43:46Z",
-      "next_collection_at": "2026-09-30T23:43:46Z"
+      "last_new_data_at": "2026-10-01T03:26:23Z",
+      "last_new_comment_at": "2026-10-01T03:26:23Z",
+      "last_collection_at": "2026-10-01T03:26:23Z",
+      "next_collection_at": "2026-10-01T09:26:23Z"
     },
     "cemaden_rs_2849": {
       "codibge": "4307807",
@@ -95,7 +104,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-09-28T08:10:12Z",
-      "last_seen_open_at": "2026-09-30T21:46:25Z",
+      "last_seen_open_at": "2026-10-01T03:26:23Z",
       "closed_at": null,
       "transitions": [
         {
@@ -128,7 +137,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-09-28T08:11:40Z",
-      "last_seen_open_at": "2026-09-30T21:46:25Z",
+      "last_seen_open_at": "2026-10-01T03:26:23Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -155,7 +164,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-09-28T19:36:04Z",
-      "last_seen_open_at": "2026-09-30T21:46:25Z",
+      "last_seen_open_at": "2026-10-01T03:26:23Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -164,8 +173,8 @@
       "videos_with_valid_comments": [],
       "last_new_data_at": null,
       "last_new_comment_at": null,
-      "last_collection_at": "2026-09-30T03:20:42Z",
-      "next_collection_at": "2026-10-01T03:20:42Z"
+      "last_collection_at": "2026-10-01T03:26:23Z",
+      "next_collection_at": "2026-10-02T03:26:23Z"
     },
     "cemaden_sc_2862": {
       "codibge": "4219507",
@@ -182,7 +191,7 @@
       ],
       "evento": "Movimentos de Massa",
       "opened_at": "2026-09-29T10:47:06Z",
-      "last_seen_open_at": "2026-09-30T21:46:25Z",
+      "last_seen_open_at": "2026-10-01T03:26:23Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -209,7 +218,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-09-29T11:45:04Z",
-      "last_seen_open_at": "2026-09-30T21:46:25Z",
+      "last_seen_open_at": "2026-10-01T03:26:23Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -240,7 +249,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-09-30T08:01:41Z",
-      "last_seen_open_at": "2026-09-30T21:46:25Z",
+      "last_seen_open_at": "2026-10-01T03:26:23Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [
@@ -251,8 +260,8 @@
       "videos_with_valid_comments": [],
       "last_new_data_at": "2026-09-30T11:43:46Z",
       "last_new_comment_at": null,
-      "last_collection_at": "2026-09-30T11:43:46Z",
-      "next_collection_at": "2026-09-30T23:43:46Z"
+      "last_collection_at": "2026-10-01T03:26:23Z",
+      "next_collection_at": "2026-10-01T15:26:23Z"
     },
     "cemaden_rs_2866": {
       "codibge": "4318408",
@@ -269,7 +278,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-09-30T11:24:45Z",
-      "last_seen_open_at": "2026-09-30T21:46:25Z",
+      "last_seen_open_at": "2026-10-01T03:26:23Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -296,7 +305,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-09-30T09:59:30Z",
-      "last_seen_open_at": "2026-09-30T21:46:25Z",
+      "last_seen_open_at": "2026-10-01T03:26:23Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -323,7 +332,7 @@
       ],
       "evento": "Movimentos de Massa",
       "opened_at": "2026-09-30T18:30:23Z",
-      "last_seen_open_at": "2026-09-30T21:46:25Z",
+      "last_seen_open_at": "2026-10-01T03:26:23Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -334,6 +343,33 @@
       "last_new_comment_at": null,
       "last_collection_at": "2026-09-30T21:46:25Z",
       "next_collection_at": "2026-10-01T21:46:25Z"
+    },
+    "cemaden_rj_2868": {
+      "codibge": "3305802",
+      "municipio": "Teresópolis",
+      "uf": "RJ",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-09-30T19:07:35Z"
+        }
+      ],
+      "evento": "Movimentos de Massa",
+      "opened_at": "2026-09-30T19:07:35Z",
+      "last_seen_open_at": "2026-10-01T03:26:23Z",
+      "closed_at": null,
+      "transitions": [],
+      "videos_collected": [],
+      "n_videos_aderentes": 0,
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "last_new_data_at": null,
+      "last_new_comment_at": null,
+      "last_collection_at": "2026-10-01T03:26:23Z",
+      "next_collection_at": "2026-10-02T03:26:23Z"
     }
   },
   "extended_window_alerts": {
@@ -370,8 +406,8 @@
       ],
       "last_new_data_at": "2026-09-29T17:25:18Z",
       "last_new_comment_at": "2026-09-29T17:25:18Z",
-      "last_collection_at": "2026-09-30T11:43:46Z",
-      "next_collection_at": "2026-09-30T23:43:46Z"
+      "last_collection_at": "2026-10-01T03:26:23Z",
+      "next_collection_at": "2026-10-01T15:26:23Z"
     },
     "cemaden_rs_2494": {
       "codibge": "4306601",
@@ -406,8 +442,8 @@
       ],
       "last_new_data_at": "2026-09-30T11:43:46Z",
       "last_new_comment_at": "2026-09-30T11:43:46Z",
-      "last_collection_at": "2026-09-30T11:43:46Z",
-      "next_collection_at": "2026-09-30T23:43:46Z"
+      "last_collection_at": "2026-10-01T03:26:23Z",
+      "next_collection_at": "2026-10-01T15:26:23Z"
     },
     "cemaden_rs_2499": {
       "codibge": "4314407",
@@ -1205,15 +1241,15 @@
         "a88rWqu0GWU"
       ],
       "n_videos_aderentes": 3,
-      "n_comments_valid": 313,
+      "n_comments_valid": 338,
       "videos_with_valid_comments": [
         "KtQVJ8_d8Aw",
         "a88rWqu0GWU"
       ],
-      "last_new_data_at": "2026-09-30T17:23:54Z",
-      "last_new_comment_at": "2026-09-30T17:23:54Z",
-      "last_collection_at": "2026-09-30T17:23:54Z",
-      "next_collection_at": "2026-09-30T23:23:54Z"
+      "last_new_data_at": "2026-10-01T03:26:23Z",
+      "last_new_comment_at": "2026-10-01T03:26:23Z",
+      "last_collection_at": "2026-10-01T03:26:23Z",
+      "next_collection_at": "2026-10-01T09:26:23Z"
     },
     "cemaden_sp_2686": {
       "codibge": "3534401",
@@ -1610,8 +1646,8 @@
       ],
       "last_new_data_at": "2026-09-29T17:25:18Z",
       "last_new_comment_at": "2026-09-29T17:25:18Z",
-      "last_collection_at": "2026-09-30T11:43:46Z",
-      "next_collection_at": "2026-09-30T23:43:46Z"
+      "last_collection_at": "2026-10-01T03:26:23Z",
+      "next_collection_at": "2026-10-01T15:26:23Z"
     },
     "cemaden_rs_2745": {
       "codibge": "4319505",
