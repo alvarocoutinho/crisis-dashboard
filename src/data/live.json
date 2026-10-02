@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T22:20:11Z",
+  "generated_at": "2026-10-02T03:27:55Z",
   "pipeline_version": "0.2.2",
   "pilot_mode": true,
   "dry_run": false,
@@ -9,7 +9,7 @@
       "municipio": "Cachoeira do Sul",
       "uf": "RS",
       "tipo": "Risco Hidrológico",
-      "nivel": "Moderado",
+      "nivel": "Alto",
       "data_alerta": "27/09/2026",
       "codibge": "4303004",
       "lat": null,
@@ -112,8 +112,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-10-01T03:26:23Z",
-      "next_collection_at": "2026-10-02T03:26:23Z"
+      "last_collection_at": "2026-10-02T03:27:05Z",
+      "next_collection_at": "2026-10-03T03:27:05Z"
     },
     {
       "id": "cemaden_sc_2862",
@@ -546,7 +546,7 @@
       "municipio": "Teresópolis",
       "uf": "RJ",
       "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
+      "nivel": "Alto",
       "data_alerta": "30/09/2026",
       "codibge": "3305802",
       "lat": null,
@@ -649,8 +649,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-10-01T03:26:23Z",
-      "next_collection_at": "2026-10-02T03:26:23Z"
+      "last_collection_at": "2026-10-02T03:27:05Z",
+      "next_collection_at": "2026-10-03T03:27:05Z"
     },
     {
       "id": "cemaden_sc_2869",
@@ -6013,75 +6013,530 @@
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
+      "n_comments": 61,
+      "n_videos": 1,
+      "unlabeled": 20,
+      "unlabeled_pct": 32.8,
       "date_range": [
-        "",
-        ""
+        "2026-09-11",
+        "2026-09-13"
       ],
       "distribution": [
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
+          "count": 14,
+          "pct": 23.0
         },
         {
           "key": "ajuda_resgate_doacoes",
           "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
+          "count": 3,
+          "pct": 4.9
         },
         {
           "key": "responsabilizacao_governanca",
           "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
+          "count": 7,
+          "pct": 11.5
         },
         {
           "key": "infraestrutura_ocupacao_risco",
           "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
+          "count": 3,
+          "pct": 4.9
         },
         {
           "key": "clima_chuva_meio_ambiente",
           "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
+          "count": 16,
+          "pct": 26.2
         },
         {
           "key": "experiencia_pessoal_local",
           "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
+          "count": 2,
+          "pct": 3.3
         },
         {
           "key": "alerta_prevencao_cobranca",
           "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
+          "count": 1,
+          "pct": 1.6
         },
         {
           "key": "critica_midia_informacao",
           "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
+          "count": 13,
+          "pct": 21.3
         }
       ],
-      "timeline": [],
-      "videos": [],
+      "timeline": [
+        {
+          "date": "11/09/26",
+          "count": 53
+        },
+        {
+          "date": "12/09/26",
+          "count": 7
+        },
+        {
+          "date": "13/09/26",
+          "count": 1
+        }
+      ],
+      "videos": [
+        {
+          "video_id": "HLfTpQv78C0",
+          "n_comments": 61,
+          "total_likes": 88,
+          "first_comment": "11/09/2026",
+          "top_categories": [
+            {
+              "label": "Clima/chuva",
+              "count": 16
+            },
+            {
+              "label": "Solidariedade",
+              "count": 14
+            },
+            {
+              "label": "Crítica mídia",
+              "count": 13
+            }
+          ]
+        }
+      ],
       "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
+        "solidariedade_oracao_luto": [
+          {
+            "text": "MISERICÓRDIA !!!! SAÚDE !!!! FÉ !!!! LUZ !!!! FORÇAS !!!! GARRA !!!!",
+            "likes": 3,
+            "score": 0.999,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "SUPER NINE KKKKKKKKKKKKKKKKKKK OS CARAS INVENTAM CADA COISA MEU DEUS. Que passe logo esse periodo do El Nine não aguento mais essa tempestade.",
+            "likes": 3,
+            "score": 0.998,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "El nino é um fenômeno que vem acontecendo raramente, e isso é normal, deixa jesus em paz ele não tem nada aver com isso, e também existe a lá ninã que é o oposto do el ninõ",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@luisilva19gente o el nino é um fenômeno que vem acontecendo raramente, e isso é normal, deixa jesus em paz ele não tem nada aver com isso, e também existe a lá ninã que é o oposto do el ninõ",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Ja morei em Sapopemba. Valha nos Deus!",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Vira outras ainda depois dessa fase 01. N terá fim até a terra ir p o a destruição geral e Jesus vem! 👍🤔",
+            "likes": 0,
+            "score": 0.995,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Triste 😢",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Tem nada haver com política, é sinais do fim dos tempos. Jesus está voltando.",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Meu deus",
+            "likes": 0,
+            "score": 0.994,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "É os sinais da volta de Jesus.",
+            "likes": 4,
+            "score": 0.994,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Um dilúvio não é impossível, só é improvável, não tem agua na superfície para cobrir os continentes (se houvesse eles já estariam submersos, óbvio.) Precisaria de uma super reserva subterrânea como a recentemente descoberta vir a tona e inundar a crosta, basicamente um ato de Deus. Mas pequenos \"dilúvios\" localizados são comuns pelo globo, Rio Grande do Sul é um caso muito triste disso.",
+            "likes": 2,
+            "score": 0.992,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Eu também! Mas O senhor Jesus me trouxe pra Suzano e me deu casa própria aqui. Louvado seja Deus!",
+            "likes": 1,
+            "score": 0.966,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@airtonfae5140Meu lula??? DEUS nos livre deste SALAFRÁRIO!!! Defendo o meio ambiente mas sou oposição total à Lula. Lula é a maior praga contra o meio ambiente, em seu 3⁰ mandato as queimadas e desmatamentos aumentaram, ele autorizou o funcionamento de várias usinas movidas à diesel e carvão mineral de seus parceiros Joeslei Batista e irmão do grupo J&F. Lula destruiu geral, economia, contas públ",
+            "likes": 0,
+            "score": 0.777,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "e ainda há quem diga que o Dilúvio é impossível ...",
+            "likes": 4,
+            "score": 0.608,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          }
+        ],
+        "ajuda_resgate_doacoes": [
+          {
+            "text": "@mrbrs2 primeiramente, parabéns pela sua discordância respeitosa. Em segundo, não existe metodologia científica que consiga definir a relação florestas\\tempestades tropicais. Essa discussão se dá no campo das possibilidades quando se ignoram os 2 maiores fatores científicos absolutos: OCEANOS e o SOL. Para você ter uma noção do nível de conhecimento empírico que possuímos, descobriu-se uma nova co",
+            "likes": 0,
+            "score": 0.947,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@Eduardo-z5f6rCARA SE VC NÃO SABE O EL NINÕ JÁ APARECEU EM 2001 E 2015, NÃO VEM FALAR QUE ELE É UM FENÔMENO NOVO. E AINDA MAIS EXISTE A LA NINÃ ELA É O OPOSTO DO EL NINÕ OS DOIS SÃO FENÔMENOS QUE RARAMENTE APARECEM.",
+            "likes": 0,
+            "score": 0.887,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@JosemaraRodrigues-e2hÉ algo sério",
+            "likes": 0,
+            "score": 0.829,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
+          }
+        ],
+        "responsabilizacao_governanca": [
+          {
+            "text": "O teu Lula em todos seus mandatos tiveram recordes de desmatamento e incêndio florestal.",
+            "likes": 1,
+            "score": 0.993,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "@jtbilseniwisk8913Jesus tem que vir vir, pq o El Nine capeta já está presidindo o bananal faz tempo.",
+            "likes": 1,
+            "score": 0.992,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@airtonfae5140Meu lula??? DEUS nos livre deste SALAFRÁRIO!!! Defendo o meio ambiente mas sou oposição total à Lula. Lula é a maior praga contra o meio ambiente, em seu 3⁰ mandato as queimadas e desmatamentos aumentaram, ele autorizou o funcionamento de várias usinas movidas à diesel e carvão mineral de seus parceiros Joeslei Batista e irmão do grupo J&F. Lula destruiu geral, economia, contas públ",
+            "likes": 0,
+            "score": 0.991,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Políticos e órgãos de fiscalização ambiental!!! Continuem facilitando o desmatamento, até que as questões climáticas atinjam o ponto de não retorno. Talvez neste futuro, que parece estar próximo, vocês poderão viver com Elon Musk em Marte ou na Lua.",
+            "likes": 7,
+            "score": 0.987,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​​@ElsonSilva-gh4duCara,não sei se vc sabe a verdadeira história da humanidade,mas,não se tem dados antigos,q evidenciem isso.Agora,cataclismos \"naturais\",sempre existiram.Agora,seguir narrativas,com nomes bonitinhos que o sistema dá, não dá.Uma vez,q existem patentes,ou seja, PROVAS contundentes,de q grupinhos,criam essas porcarias de propósito com intuito escusos da população \"inocente\".É igual ",
+            "likes": 0,
+            "score": 0.986,
+            "date": "2026-09-13",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​​@luisilva19Você não percebe que ele se referiu ao Flávio Bolsonaro, dando essa resposta estúpida quando perguntado sobre aquecimento global? Foi isso que ele respondeu.",
+            "likes": 0,
+            "score": 0.948,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@Eduardo-z5f6rCARA SE VC NÃO SABE O EL NINÕ JÁ APARECEU EM 2001 E 2015, NÃO VEM FALAR QUE ELE É UM FENÔMENO NOVO. E AINDA MAIS EXISTE A LA NINÃ ELA É O OPOSTO DO EL NINÕ OS DOIS SÃO FENÔMENOS QUE RARAMENTE APARECEM.",
+            "likes": 0,
+            "score": 0.569,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
+          }
+        ],
+        "infraestrutura_ocupacao_risco": [
+          {
+            "text": "Um dilúvio não é impossível, só é improvável, não tem agua na superfície para cobrir os continentes (se houvesse eles já estariam submersos, óbvio.) Precisaria de uma super reserva subterrânea como a recentemente descoberta vir a tona e inundar a crosta, basicamente um ato de Deus. Mas pequenos \"dilúvios\" localizados são comuns pelo globo, Rio Grande do Sul é um caso muito triste disso.",
+            "likes": 2,
+            "score": 0.998,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Eu também! Mas O senhor Jesus me trouxe pra Suzano e me deu casa própria aqui. Louvado seja Deus!",
+            "likes": 1,
+            "score": 0.974,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "E continuem acabando com as reservas florestais e fazendo condomínios fechados ...",
+            "likes": 7,
+            "score": 0.821,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          }
+        ],
+        "clima_chuva_meio_ambiente": [
+          {
+            "text": "​@airtonfae5140Meu lula??? DEUS nos livre deste SALAFRÁRIO!!! Defendo o meio ambiente mas sou oposição total à Lula. Lula é a maior praga contra o meio ambiente, em seu 3⁰ mandato as queimadas e desmatamentos aumentaram, ele autorizou o funcionamento de várias usinas movidas à diesel e carvão mineral de seus parceiros Joeslei Batista e irmão do grupo J&F. Lula destruiu geral, economia, contas públ",
+            "likes": 0,
+            "score": 0.999,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "@DanielFer-j6n o planeta tem suas dinâmicas térmicas consolidadas a milênios, as pessoas ao verem a natureza agir da forma como sempre agiu sobre suas cabeças tentam achar motivos para esse comportamento \"radical\" e chegam a brilhante conclusão que isso é por causa de desmatamento. É MUITO IRÔNICO QUE OS SERES MAIS INTELIGENTES DESSE PLANETA ACREDITEM EM ALGO TÃO ESTÚPIDO.",
+            "likes": 1,
+            "score": 0.998,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "A chuva de granizo foi na cidade de Presidente Epitácio - SP, danificou vários carros.",
+            "likes": 1,
+            "score": 0.997,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Natureza se revoltando",
+            "likes": 2,
+            "score": 0.997,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@ranulfopereira7146 Sobre o funcionamento das tempestades não, não há! Agora se você se refere a narrativa sobre o impacto do desmatamento como causa delas, as evidências estão do lado oposto dessa teoria, ainda temos muito que aprender sobre a dinâmica climática planetária mas os fatos empíricos de quase meio século mostram que a dinâmica entre o sol e os oceanos é que são as máximas",
+            "likes": 1,
+            "score": 0.997,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "@TyrannoPauloRex Apesar de eu concordar contigo em tudo escrito, A relação com o que foi mencionado no comentário é que, o processo no qual mencionou tem se mostrado cada ano que passa mais frequente e intensos por diversos fatores, inclusive a destruição de área verdes, contribui para que o clima do planeta mude de forma acentuada e mais rapida.",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Que estranho essas chuvas nessa época.E durante a madrugada.Chega a irritar.",
+            "likes": 3,
+            "score": 0.995,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Não é desmatamento a terra é dinâmica o SOL, as marés, os ventos... aí voces vem com essa bosta de agenda ambientalista nojenta!",
+            "likes": 4,
+            "score": 0.995,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "@ed.hraustr mesmo que toda a agua dos polos derretessem o resultado não causaria um dilúvio: elevação de +ou- 70m no nível dos oceanos, de 5% a 10% dos continentes seriam submersos. o efeito mais nocivo seria a ruptura das correntes oceânicas absorção massiva de calor pelos oceanos, inverno extremo no norte\\sul , calor mortal nos trópicos aliadas a tempestades avassaladoras devido a rápida evapora",
+            "likes": 0,
+            "score": 0.991,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Votem no. Flávio BOSO RACHADINHA do BB OLSOMASTER que não acredita em aquecimento global e quer destruir o que resta do meio ambiente assim já acaba com tudo de uma vez",
+            "likes": 1,
+            "score": 0.988,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Políticos e órgãos de fiscalização ambiental!!! Continuem facilitando o desmatamento, até que as questões climáticas atinjam o ponto de não retorno. Talvez neste futuro, que parece estar próximo, vocês poderão viver com Elon Musk em Marte ou na Lua.",
+            "likes": 7,
+            "score": 0.984,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "O teu Lula em todos seus mandatos tiveram recordes de desmatamento e incêndio florestal.",
+            "likes": 1,
+            "score": 0.983,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​​@luisilva19Você não percebe que ele se referiu ao Flávio Bolsonaro, dando essa resposta estúpida quando perguntado sobre aquecimento global? Foi isso que ele respondeu.",
+            "likes": 0,
+            "score": 0.981,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Um dilúvio não é impossível, só é improvável, não tem agua na superfície para cobrir os continentes (se houvesse eles já estariam submersos, óbvio.) Precisaria de uma super reserva subterrânea como a recentemente descoberta vir a tona e inundar a crosta, basicamente um ato de Deus. Mas pequenos \"dilúvios\" localizados são comuns pelo globo, Rio Grande do Sul é um caso muito triste disso.",
+            "likes": 2,
+            "score": 0.964,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "@ricardoalho2973 essa afirmação é antiga e leva em consideração a cobertura total dos picos, algo muito extremo, mas, se consideramos que mais de 95% da humanidade reside em platôs, alguns mais altos outros mais baixos, com casos de montanhas médias e baixas, A MEGA RESERVA DE AGUA descoberta recentemente entre as camadas interiores do manto que são capazes de encher + de 3 vezes todos os oceanos ",
+            "likes": 0,
+            "score": 0.613,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​​@ElsonSilva-gh4duCara,não sei se vc sabe a verdadeira história da humanidade,mas,não se tem dados antigos,q evidenciem isso.Agora,cataclismos \"naturais\",sempre existiram.Agora,seguir narrativas,com nomes bonitinhos que o sistema dá, não dá.Uma vez,q existem patentes,ou seja, PROVAS contundentes,de q grupinhos,criam essas porcarias de propósito com intuito escusos da população \"inocente\".É igual ",
+            "likes": 0,
+            "score": 0.528,
+            "date": "2026-09-13",
+            "video_id": "HLfTpQv78C0"
+          }
+        ],
+        "experiencia_pessoal_local": [
+          {
+            "text": "Outra vez? Aqui em SP capital esta sol. 11/9",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Eu também! Mas O senhor Jesus me trouxe pra Suzano e me deu casa própria aqui. Louvado seja Deus!",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
+          }
+        ],
+        "alerta_prevencao_cobranca": [
+          {
+            "text": "@mrbrs2 primeiramente, parabéns pela sua discordância respeitosa. Em segundo, não existe metodologia científica que consiga definir a relação florestas\\tempestades tropicais. Essa discussão se dá no campo das possibilidades quando se ignoram os 2 maiores fatores científicos absolutos: OCEANOS e o SOL. Para você ter uma noção do nível de conhecimento empírico que possuímos, descobriu-se uma nova co",
+            "likes": 0,
+            "score": 0.834,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          }
+        ],
+        "critica_midia_informacao": [
+          {
+            "text": "​​@ElsonSilva-gh4duCara,não sei se vc sabe a verdadeira história da humanidade,mas,não se tem dados antigos,q evidenciem isso.Agora,cataclismos \"naturais\",sempre existiram.Agora,seguir narrativas,com nomes bonitinhos que o sistema dá, não dá.Uma vez,q existem patentes,ou seja, PROVAS contundentes,de q grupinhos,criam essas porcarias de propósito com intuito escusos da população \"inocente\".É igual ",
+            "likes": 0,
+            "score": 1.0,
+            "date": "2026-09-13",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Esse evento em nada tem a haver com a existência de condomínios, isso é o sistema de resfriamento das zonas do globo, quando as massas de ar quente e ar gelado se encontram ocorrem as tempestades que são grandes \"ventiladores\" mixando o ar e resfriando essas áreas. O planeta tem suas próprias sessões de esquenta\\esfria e o ser humano não tem capacidade de intervir de forma significativa nesta dinâ",
+            "likes": 3,
+            "score": 0.998,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Esse evento em nada tem a haver com a existência de condomínios, isso é o sistema de resfriamento das zonas do globo, quando as massas de ar quente e ar gelado se encontram ocorrem as tempestades que são grandes \"ventiladores\" mixando o ar e resfriando essas áreas. O planeta tem suas próprias sessões de esquenta\\esfria e o ser humano não tem capacidade de intervir de forma significativa nesta dinâ",
+            "likes": 1,
+            "score": 0.998,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​​@luisilva19Você não percebe que ele se referiu ao Flávio Bolsonaro, dando essa resposta estúpida quando perguntado sobre aquecimento global? Foi isso que ele respondeu.",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@ElsonSilva-gh4duTanto que nunca existiu,antes né?Passou a existir,e estar com persistência nos últimos anos na mídia. E bem num momento oportuno!O famigerado Reset Mundial?Pq será né?",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Votem no. Flávio BOSO RACHADINHA do BB OLSOMASTER que não acredita em aquecimento global e quer destruir o que resta do meio ambiente assim já acaba com tudo de uma vez",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "não confunda realidade com fábulas mitológicas 😮",
+            "likes": 0,
+            "score": 0.993,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Gente,isso é Geoengenharia solar.Estao manipulando de propósito.Por exemplo,uma cidade onde tem trinta terremotos por ano,ele multiplicam pra trezentos.Existem patentes que provam isso.",
+            "likes": 0,
+            "score": 0.993,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "@ricardoalho2973 essa afirmação é antiga e leva em consideração a cobertura total dos picos, algo muito extremo, mas, se consideramos que mais de 95% da humanidade reside em platôs, alguns mais altos outros mais baixos, com casos de montanhas médias e baixas, A MEGA RESERVA DE AGUA descoberta recentemente entre as camadas interiores do manto que são capazes de encher + de 3 vezes todos os oceanos ",
+            "likes": 0,
+            "score": 0.986,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@TyrannoPauloRexHá controvérsias!!!",
+            "likes": 0,
+            "score": 0.91,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@JosemaraRodrigues-e2hÉ algo sério",
+            "likes": 0,
+            "score": 0.863,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Um dilúvio não é impossível, só é improvável, não tem agua na superfície para cobrir os continentes (se houvesse eles já estariam submersos, óbvio.) Precisaria de uma super reserva subterrânea como a recentemente descoberta vir a tona e inundar a crosta, basicamente um ato de Deus. Mas pequenos \"dilúvios\" localizados são comuns pelo globo, Rio Grande do Sul é um caso muito triste disso.",
+            "likes": 2,
+            "score": 0.759,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "É o Super El Nino começando. Vai piorar. Será um desastre",
+            "likes": 4,
+            "score": 0.504,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          }
+        ]
       },
       "academic_studies": [],
       "observation_status": "extended",
@@ -6097,7 +6552,7 @@
           "at": "2026-09-13T20:05:42Z"
         }
       ],
-      "n_comments_valid": 885,
+      "n_comments_valid": 926,
       "videos_with_valid_comments": [
         "HLfTpQv78C0"
       ],
@@ -6105,13 +6560,13 @@
       "alert_closed_at": "2026-09-16T15:54:04Z",
       "alert_transitions": [],
       "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
+        "status": "ok",
+        "silence_type": null,
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-10-01T12:12:30Z",
-      "next_collection_at": "2026-10-02T00:12:30Z"
+      "last_collection_at": "2026-10-02T03:27:05Z",
+      "next_collection_at": "2026-10-02T15:27:05Z"
     },
     {
       "id": "cemaden_sp_2572",
@@ -6124,75 +6579,537 @@
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
+      "n_comments": 61,
+      "n_videos": 2,
+      "unlabeled": 20,
+      "unlabeled_pct": 32.8,
       "date_range": [
-        "",
-        ""
+        "2026-09-11",
+        "2026-09-13"
       ],
       "distribution": [
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
+          "count": 14,
+          "pct": 23.0
         },
         {
           "key": "ajuda_resgate_doacoes",
           "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
+          "count": 3,
+          "pct": 4.9
         },
         {
           "key": "responsabilizacao_governanca",
           "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
+          "count": 7,
+          "pct": 11.5
         },
         {
           "key": "infraestrutura_ocupacao_risco",
           "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
+          "count": 3,
+          "pct": 4.9
         },
         {
           "key": "clima_chuva_meio_ambiente",
           "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
+          "count": 16,
+          "pct": 26.2
         },
         {
           "key": "experiencia_pessoal_local",
           "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
+          "count": 2,
+          "pct": 3.3
         },
         {
           "key": "alerta_prevencao_cobranca",
           "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
+          "count": 1,
+          "pct": 1.6
         },
         {
           "key": "critica_midia_informacao",
           "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
+          "count": 13,
+          "pct": 21.3
         }
       ],
-      "timeline": [],
-      "videos": [],
+      "timeline": [
+        {
+          "date": "11/09/26",
+          "count": 53
+        },
+        {
+          "date": "12/09/26",
+          "count": 7
+        },
+        {
+          "date": "13/09/26",
+          "count": 1
+        }
+      ],
+      "videos": [
+        {
+          "video_id": "HLfTpQv78C0",
+          "n_comments": 61,
+          "total_likes": 88,
+          "first_comment": "11/09/2026",
+          "top_categories": [
+            {
+              "label": "Clima/chuva",
+              "count": 16
+            },
+            {
+              "label": "Solidariedade",
+              "count": 14
+            },
+            {
+              "label": "Crítica mídia",
+              "count": 13
+            }
+          ]
+        },
+        {
+          "video_id": "F8HzBn9e5EI",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
+        }
+      ],
       "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
+        "solidariedade_oracao_luto": [
+          {
+            "text": "MISERICÓRDIA !!!! SAÚDE !!!! FÉ !!!! LUZ !!!! FORÇAS !!!! GARRA !!!!",
+            "likes": 3,
+            "score": 0.999,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "SUPER NINE KKKKKKKKKKKKKKKKKKK OS CARAS INVENTAM CADA COISA MEU DEUS. Que passe logo esse periodo do El Nine não aguento mais essa tempestade.",
+            "likes": 3,
+            "score": 0.998,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "El nino é um fenômeno que vem acontecendo raramente, e isso é normal, deixa jesus em paz ele não tem nada aver com isso, e também existe a lá ninã que é o oposto do el ninõ",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@luisilva19gente o el nino é um fenômeno que vem acontecendo raramente, e isso é normal, deixa jesus em paz ele não tem nada aver com isso, e também existe a lá ninã que é o oposto do el ninõ",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Ja morei em Sapopemba. Valha nos Deus!",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Vira outras ainda depois dessa fase 01. N terá fim até a terra ir p o a destruição geral e Jesus vem! 👍🤔",
+            "likes": 0,
+            "score": 0.995,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Triste 😢",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Tem nada haver com política, é sinais do fim dos tempos. Jesus está voltando.",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Meu deus",
+            "likes": 0,
+            "score": 0.994,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "É os sinais da volta de Jesus.",
+            "likes": 4,
+            "score": 0.994,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Um dilúvio não é impossível, só é improvável, não tem agua na superfície para cobrir os continentes (se houvesse eles já estariam submersos, óbvio.) Precisaria de uma super reserva subterrânea como a recentemente descoberta vir a tona e inundar a crosta, basicamente um ato de Deus. Mas pequenos \"dilúvios\" localizados são comuns pelo globo, Rio Grande do Sul é um caso muito triste disso.",
+            "likes": 2,
+            "score": 0.992,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Eu também! Mas O senhor Jesus me trouxe pra Suzano e me deu casa própria aqui. Louvado seja Deus!",
+            "likes": 1,
+            "score": 0.966,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@airtonfae5140Meu lula??? DEUS nos livre deste SALAFRÁRIO!!! Defendo o meio ambiente mas sou oposição total à Lula. Lula é a maior praga contra o meio ambiente, em seu 3⁰ mandato as queimadas e desmatamentos aumentaram, ele autorizou o funcionamento de várias usinas movidas à diesel e carvão mineral de seus parceiros Joeslei Batista e irmão do grupo J&F. Lula destruiu geral, economia, contas públ",
+            "likes": 0,
+            "score": 0.777,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "e ainda há quem diga que o Dilúvio é impossível ...",
+            "likes": 4,
+            "score": 0.608,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          }
+        ],
+        "ajuda_resgate_doacoes": [
+          {
+            "text": "@mrbrs2 primeiramente, parabéns pela sua discordância respeitosa. Em segundo, não existe metodologia científica que consiga definir a relação florestas\\tempestades tropicais. Essa discussão se dá no campo das possibilidades quando se ignoram os 2 maiores fatores científicos absolutos: OCEANOS e o SOL. Para você ter uma noção do nível de conhecimento empírico que possuímos, descobriu-se uma nova co",
+            "likes": 0,
+            "score": 0.947,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@Eduardo-z5f6rCARA SE VC NÃO SABE O EL NINÕ JÁ APARECEU EM 2001 E 2015, NÃO VEM FALAR QUE ELE É UM FENÔMENO NOVO. E AINDA MAIS EXISTE A LA NINÃ ELA É O OPOSTO DO EL NINÕ OS DOIS SÃO FENÔMENOS QUE RARAMENTE APARECEM.",
+            "likes": 0,
+            "score": 0.887,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@JosemaraRodrigues-e2hÉ algo sério",
+            "likes": 0,
+            "score": 0.829,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
+          }
+        ],
+        "responsabilizacao_governanca": [
+          {
+            "text": "O teu Lula em todos seus mandatos tiveram recordes de desmatamento e incêndio florestal.",
+            "likes": 1,
+            "score": 0.993,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "@jtbilseniwisk8913Jesus tem que vir vir, pq o El Nine capeta já está presidindo o bananal faz tempo.",
+            "likes": 1,
+            "score": 0.992,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@airtonfae5140Meu lula??? DEUS nos livre deste SALAFRÁRIO!!! Defendo o meio ambiente mas sou oposição total à Lula. Lula é a maior praga contra o meio ambiente, em seu 3⁰ mandato as queimadas e desmatamentos aumentaram, ele autorizou o funcionamento de várias usinas movidas à diesel e carvão mineral de seus parceiros Joeslei Batista e irmão do grupo J&F. Lula destruiu geral, economia, contas públ",
+            "likes": 0,
+            "score": 0.991,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Políticos e órgãos de fiscalização ambiental!!! Continuem facilitando o desmatamento, até que as questões climáticas atinjam o ponto de não retorno. Talvez neste futuro, que parece estar próximo, vocês poderão viver com Elon Musk em Marte ou na Lua.",
+            "likes": 7,
+            "score": 0.987,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​​@ElsonSilva-gh4duCara,não sei se vc sabe a verdadeira história da humanidade,mas,não se tem dados antigos,q evidenciem isso.Agora,cataclismos \"naturais\",sempre existiram.Agora,seguir narrativas,com nomes bonitinhos que o sistema dá, não dá.Uma vez,q existem patentes,ou seja, PROVAS contundentes,de q grupinhos,criam essas porcarias de propósito com intuito escusos da população \"inocente\".É igual ",
+            "likes": 0,
+            "score": 0.986,
+            "date": "2026-09-13",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​​@luisilva19Você não percebe que ele se referiu ao Flávio Bolsonaro, dando essa resposta estúpida quando perguntado sobre aquecimento global? Foi isso que ele respondeu.",
+            "likes": 0,
+            "score": 0.948,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@Eduardo-z5f6rCARA SE VC NÃO SABE O EL NINÕ JÁ APARECEU EM 2001 E 2015, NÃO VEM FALAR QUE ELE É UM FENÔMENO NOVO. E AINDA MAIS EXISTE A LA NINÃ ELA É O OPOSTO DO EL NINÕ OS DOIS SÃO FENÔMENOS QUE RARAMENTE APARECEM.",
+            "likes": 0,
+            "score": 0.569,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
+          }
+        ],
+        "infraestrutura_ocupacao_risco": [
+          {
+            "text": "Um dilúvio não é impossível, só é improvável, não tem agua na superfície para cobrir os continentes (se houvesse eles já estariam submersos, óbvio.) Precisaria de uma super reserva subterrânea como a recentemente descoberta vir a tona e inundar a crosta, basicamente um ato de Deus. Mas pequenos \"dilúvios\" localizados são comuns pelo globo, Rio Grande do Sul é um caso muito triste disso.",
+            "likes": 2,
+            "score": 0.998,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Eu também! Mas O senhor Jesus me trouxe pra Suzano e me deu casa própria aqui. Louvado seja Deus!",
+            "likes": 1,
+            "score": 0.974,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "E continuem acabando com as reservas florestais e fazendo condomínios fechados ...",
+            "likes": 7,
+            "score": 0.821,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          }
+        ],
+        "clima_chuva_meio_ambiente": [
+          {
+            "text": "​@airtonfae5140Meu lula??? DEUS nos livre deste SALAFRÁRIO!!! Defendo o meio ambiente mas sou oposição total à Lula. Lula é a maior praga contra o meio ambiente, em seu 3⁰ mandato as queimadas e desmatamentos aumentaram, ele autorizou o funcionamento de várias usinas movidas à diesel e carvão mineral de seus parceiros Joeslei Batista e irmão do grupo J&F. Lula destruiu geral, economia, contas públ",
+            "likes": 0,
+            "score": 0.999,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "@DanielFer-j6n o planeta tem suas dinâmicas térmicas consolidadas a milênios, as pessoas ao verem a natureza agir da forma como sempre agiu sobre suas cabeças tentam achar motivos para esse comportamento \"radical\" e chegam a brilhante conclusão que isso é por causa de desmatamento. É MUITO IRÔNICO QUE OS SERES MAIS INTELIGENTES DESSE PLANETA ACREDITEM EM ALGO TÃO ESTÚPIDO.",
+            "likes": 1,
+            "score": 0.998,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "A chuva de granizo foi na cidade de Presidente Epitácio - SP, danificou vários carros.",
+            "likes": 1,
+            "score": 0.997,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Natureza se revoltando",
+            "likes": 2,
+            "score": 0.997,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@ranulfopereira7146 Sobre o funcionamento das tempestades não, não há! Agora se você se refere a narrativa sobre o impacto do desmatamento como causa delas, as evidências estão do lado oposto dessa teoria, ainda temos muito que aprender sobre a dinâmica climática planetária mas os fatos empíricos de quase meio século mostram que a dinâmica entre o sol e os oceanos é que são as máximas",
+            "likes": 1,
+            "score": 0.997,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "@TyrannoPauloRex Apesar de eu concordar contigo em tudo escrito, A relação com o que foi mencionado no comentário é que, o processo no qual mencionou tem se mostrado cada ano que passa mais frequente e intensos por diversos fatores, inclusive a destruição de área verdes, contribui para que o clima do planeta mude de forma acentuada e mais rapida.",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Que estranho essas chuvas nessa época.E durante a madrugada.Chega a irritar.",
+            "likes": 3,
+            "score": 0.995,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Não é desmatamento a terra é dinâmica o SOL, as marés, os ventos... aí voces vem com essa bosta de agenda ambientalista nojenta!",
+            "likes": 4,
+            "score": 0.995,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "@ed.hraustr mesmo que toda a agua dos polos derretessem o resultado não causaria um dilúvio: elevação de +ou- 70m no nível dos oceanos, de 5% a 10% dos continentes seriam submersos. o efeito mais nocivo seria a ruptura das correntes oceânicas absorção massiva de calor pelos oceanos, inverno extremo no norte\\sul , calor mortal nos trópicos aliadas a tempestades avassaladoras devido a rápida evapora",
+            "likes": 0,
+            "score": 0.991,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Votem no. Flávio BOSO RACHADINHA do BB OLSOMASTER que não acredita em aquecimento global e quer destruir o que resta do meio ambiente assim já acaba com tudo de uma vez",
+            "likes": 1,
+            "score": 0.988,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Políticos e órgãos de fiscalização ambiental!!! Continuem facilitando o desmatamento, até que as questões climáticas atinjam o ponto de não retorno. Talvez neste futuro, que parece estar próximo, vocês poderão viver com Elon Musk em Marte ou na Lua.",
+            "likes": 7,
+            "score": 0.984,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "O teu Lula em todos seus mandatos tiveram recordes de desmatamento e incêndio florestal.",
+            "likes": 1,
+            "score": 0.983,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​​@luisilva19Você não percebe que ele se referiu ao Flávio Bolsonaro, dando essa resposta estúpida quando perguntado sobre aquecimento global? Foi isso que ele respondeu.",
+            "likes": 0,
+            "score": 0.981,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Um dilúvio não é impossível, só é improvável, não tem agua na superfície para cobrir os continentes (se houvesse eles já estariam submersos, óbvio.) Precisaria de uma super reserva subterrânea como a recentemente descoberta vir a tona e inundar a crosta, basicamente um ato de Deus. Mas pequenos \"dilúvios\" localizados são comuns pelo globo, Rio Grande do Sul é um caso muito triste disso.",
+            "likes": 2,
+            "score": 0.964,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "@ricardoalho2973 essa afirmação é antiga e leva em consideração a cobertura total dos picos, algo muito extremo, mas, se consideramos que mais de 95% da humanidade reside em platôs, alguns mais altos outros mais baixos, com casos de montanhas médias e baixas, A MEGA RESERVA DE AGUA descoberta recentemente entre as camadas interiores do manto que são capazes de encher + de 3 vezes todos os oceanos ",
+            "likes": 0,
+            "score": 0.613,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​​@ElsonSilva-gh4duCara,não sei se vc sabe a verdadeira história da humanidade,mas,não se tem dados antigos,q evidenciem isso.Agora,cataclismos \"naturais\",sempre existiram.Agora,seguir narrativas,com nomes bonitinhos que o sistema dá, não dá.Uma vez,q existem patentes,ou seja, PROVAS contundentes,de q grupinhos,criam essas porcarias de propósito com intuito escusos da população \"inocente\".É igual ",
+            "likes": 0,
+            "score": 0.528,
+            "date": "2026-09-13",
+            "video_id": "HLfTpQv78C0"
+          }
+        ],
+        "experiencia_pessoal_local": [
+          {
+            "text": "Outra vez? Aqui em SP capital esta sol. 11/9",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Eu também! Mas O senhor Jesus me trouxe pra Suzano e me deu casa própria aqui. Louvado seja Deus!",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
+          }
+        ],
+        "alerta_prevencao_cobranca": [
+          {
+            "text": "@mrbrs2 primeiramente, parabéns pela sua discordância respeitosa. Em segundo, não existe metodologia científica que consiga definir a relação florestas\\tempestades tropicais. Essa discussão se dá no campo das possibilidades quando se ignoram os 2 maiores fatores científicos absolutos: OCEANOS e o SOL. Para você ter uma noção do nível de conhecimento empírico que possuímos, descobriu-se uma nova co",
+            "likes": 0,
+            "score": 0.834,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          }
+        ],
+        "critica_midia_informacao": [
+          {
+            "text": "​​@ElsonSilva-gh4duCara,não sei se vc sabe a verdadeira história da humanidade,mas,não se tem dados antigos,q evidenciem isso.Agora,cataclismos \"naturais\",sempre existiram.Agora,seguir narrativas,com nomes bonitinhos que o sistema dá, não dá.Uma vez,q existem patentes,ou seja, PROVAS contundentes,de q grupinhos,criam essas porcarias de propósito com intuito escusos da população \"inocente\".É igual ",
+            "likes": 0,
+            "score": 1.0,
+            "date": "2026-09-13",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Esse evento em nada tem a haver com a existência de condomínios, isso é o sistema de resfriamento das zonas do globo, quando as massas de ar quente e ar gelado se encontram ocorrem as tempestades que são grandes \"ventiladores\" mixando o ar e resfriando essas áreas. O planeta tem suas próprias sessões de esquenta\\esfria e o ser humano não tem capacidade de intervir de forma significativa nesta dinâ",
+            "likes": 3,
+            "score": 0.998,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Esse evento em nada tem a haver com a existência de condomínios, isso é o sistema de resfriamento das zonas do globo, quando as massas de ar quente e ar gelado se encontram ocorrem as tempestades que são grandes \"ventiladores\" mixando o ar e resfriando essas áreas. O planeta tem suas próprias sessões de esquenta\\esfria e o ser humano não tem capacidade de intervir de forma significativa nesta dinâ",
+            "likes": 1,
+            "score": 0.998,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​​@luisilva19Você não percebe que ele se referiu ao Flávio Bolsonaro, dando essa resposta estúpida quando perguntado sobre aquecimento global? Foi isso que ele respondeu.",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@ElsonSilva-gh4duTanto que nunca existiu,antes né?Passou a existir,e estar com persistência nos últimos anos na mídia. E bem num momento oportuno!O famigerado Reset Mundial?Pq será né?",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Votem no. Flávio BOSO RACHADINHA do BB OLSOMASTER que não acredita em aquecimento global e quer destruir o que resta do meio ambiente assim já acaba com tudo de uma vez",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "não confunda realidade com fábulas mitológicas 😮",
+            "likes": 0,
+            "score": 0.993,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Gente,isso é Geoengenharia solar.Estao manipulando de propósito.Por exemplo,uma cidade onde tem trinta terremotos por ano,ele multiplicam pra trezentos.Existem patentes que provam isso.",
+            "likes": 0,
+            "score": 0.993,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "@ricardoalho2973 essa afirmação é antiga e leva em consideração a cobertura total dos picos, algo muito extremo, mas, se consideramos que mais de 95% da humanidade reside em platôs, alguns mais altos outros mais baixos, com casos de montanhas médias e baixas, A MEGA RESERVA DE AGUA descoberta recentemente entre as camadas interiores do manto que são capazes de encher + de 3 vezes todos os oceanos ",
+            "likes": 0,
+            "score": 0.986,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@TyrannoPauloRexHá controvérsias!!!",
+            "likes": 0,
+            "score": 0.91,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "​@JosemaraRodrigues-e2hÉ algo sério",
+            "likes": 0,
+            "score": 0.863,
+            "date": "2026-09-12",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "Um dilúvio não é impossível, só é improvável, não tem agua na superfície para cobrir os continentes (se houvesse eles já estariam submersos, óbvio.) Precisaria de uma super reserva subterrânea como a recentemente descoberta vir a tona e inundar a crosta, basicamente um ato de Deus. Mas pequenos \"dilúvios\" localizados são comuns pelo globo, Rio Grande do Sul é um caso muito triste disso.",
+            "likes": 2,
+            "score": 0.759,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          },
+          {
+            "text": "É o Super El Nino começando. Vai piorar. Será um desastre",
+            "likes": 4,
+            "score": 0.504,
+            "date": "2026-09-11",
+            "video_id": "HLfTpQv78C0"
+          }
+        ]
       },
       "academic_studies": [],
       "observation_status": "extended",
@@ -6208,7 +7125,7 @@
           "at": "2026-09-14T21:16:10Z"
         }
       ],
-      "n_comments_valid": 680,
+      "n_comments_valid": 721,
       "videos_with_valid_comments": [
         "HLfTpQv78C0"
       ],
@@ -6227,13 +7144,13 @@
         }
       ],
       "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
+        "status": "ok",
+        "silence_type": null,
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-10-01T12:12:30Z",
-      "next_collection_at": "2026-10-02T00:12:30Z"
+      "last_collection_at": "2026-10-02T03:27:05Z",
+      "next_collection_at": "2026-10-02T15:27:05Z"
     },
     {
       "id": "cemaden_sp_2573",
@@ -15796,7 +16713,7 @@
       "lon": null,
       "regime": "prospective_live",
       "n_comments": 0,
-      "n_videos": 0,
+      "n_videos": 4,
       "unlabeled": 0,
       "unlabeled_pct": 0.0,
       "date_range": [
@@ -15854,7 +16771,36 @@
         }
       ],
       "timeline": [],
-      "videos": [],
+      "videos": [
+        {
+          "video_id": "lxyI8MQMEqw",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
+        },
+        {
+          "video_id": "Iaio8aZTo0Y",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
+        },
+        {
+          "video_id": "EogTe4jqPeM",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
+        },
+        {
+          "video_id": "HGrpA9Rg7VU",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
+        }
+      ],
       "all_samples": {
         "solidariedade_oracao_luto": [],
         "ajuda_resgate_doacoes": [],
@@ -15886,12 +16832,12 @@
       "alert_transitions": [],
       "collection_health": {
         "status": "silent",
-        "silence_type": "no_videos_found",
+        "silence_type": "videos_without_comments",
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-10-01T12:12:30Z",
-      "next_collection_at": "2026-10-02T00:12:30Z"
+      "last_collection_at": "2026-10-02T03:27:05Z",
+      "next_collection_at": "2026-10-02T15:27:05Z"
     },
     {
       "id": "cemaden_rs_2805",
@@ -17253,8 +18199,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-10-01T12:12:30Z",
-      "next_collection_at": "2026-10-02T00:12:30Z"
+      "last_collection_at": "2026-10-02T03:27:05Z",
+      "next_collection_at": "2026-10-02T15:27:05Z"
     },
     {
       "id": "cemaden_rs_2848",
