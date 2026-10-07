@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T22:20:09Z",
+  "generated_at": "2026-10-07T03:40:23Z",
   "pipeline_version": "0.2.2",
   "pilot_mode": true,
   "dry_run": false,
@@ -334,8 +334,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-10-05T23:34:10Z",
-      "next_collection_at": "2026-10-06T23:34:10Z"
+      "last_collection_at": "2026-10-07T03:37:56Z",
+      "next_collection_at": "2026-10-08T03:37:56Z"
     },
     {
       "id": "cemaden_rs_2880",
@@ -445,8 +445,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-10-05T23:34:10Z",
-      "next_collection_at": "2026-10-06T23:34:10Z"
+      "last_collection_at": "2026-10-07T03:37:56Z",
+      "next_collection_at": "2026-10-08T03:37:56Z"
     },
     {
       "id": "cemaden_rs_2884",
@@ -556,8 +556,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-10-05T23:34:10Z",
-      "next_collection_at": "2026-10-06T23:34:10Z"
+      "last_collection_at": "2026-10-07T03:37:56Z",
+      "next_collection_at": "2026-10-08T03:37:56Z"
     },
     {
       "id": "cemaden_rs_2897",
@@ -781,7 +781,7 @@
       "lon": null,
       "regime": "prospective_live",
       "n_comments": 0,
-      "n_videos": 0,
+      "n_videos": 1,
       "unlabeled": 0,
       "unlabeled_pct": 0.0,
       "date_range": [
@@ -839,7 +839,15 @@
         }
       ],
       "timeline": [],
-      "videos": [],
+      "videos": [
+        {
+          "video_id": "2IdrfL2QPlc",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": []
+        }
+      ],
       "all_samples": {
         "solidariedade_oracao_luto": [],
         "ajuda_resgate_doacoes": [],
@@ -853,11 +861,15 @@
       "academic_studies": [],
       "observation_status": "active",
       "priority_tier": "moderado",
-      "flag": "alerta",
+      "flag": "acompanhamento",
       "flag_history": [
         {
           "flag": "alerta",
           "at": "2026-10-05T19:37:02Z"
+        },
+        {
+          "flag": "acompanhamento",
+          "at": "2026-10-07T03:37:56Z"
         }
       ],
       "n_comments_valid": 0,
@@ -867,12 +879,12 @@
       "alert_transitions": [],
       "collection_health": {
         "status": "silent",
-        "silence_type": "no_videos_found",
+        "silence_type": "videos_without_comments",
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-10-05T23:34:10Z",
-      "next_collection_at": "2026-10-06T23:34:10Z"
+      "last_collection_at": "2026-10-07T03:37:56Z",
+      "next_collection_at": "2026-10-07T15:37:56Z"
     },
     {
       "id": "cemaden_sc_2915",
