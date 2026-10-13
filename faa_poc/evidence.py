@@ -6,7 +6,10 @@ Um vídeo pode ser relevante para o episódio regional e não ser evidência
 de visibilidade daquele município — distinção que a auditoria de 13/10/2026
 mostrou ser decisiva (títulos com "SP" ligados a 13 municípios diferentes).
 
-A evidência é registrada, não usada para aceitar ou rejeitar vídeos.
+A evidência não aceita nem rejeita vídeos. Desde a v0.3.2 ela ordena os
+vídeos aceitos (os que nomeiam o município primeiro) e decide quais contam
+para a promoção de flag e para o indicador municipal (H2); os demais
+continuam no episódio regional (H1).
 
 Valores:
     titulo+descricao | titulo | descricao | transcricao | nenhuma

@@ -4,15 +4,22 @@ Reforma das três flags (17/08/2026). O drive único de cadência passa a ser
 `flag ∈ {"alerta", "acompanhamento", "prioritario"}`, não `priority_tier`
 (que vira metadado visual). Cadências: 24h / 12h / 6h.
 
-Transições:
-- alerta → acompanhamento: primeiro vídeo aderente (entrou em videos_collected)
-- acompanhamento → prioritario: n_comments_valid ≥ 50 E
-  len(videos_with_valid_comments) ≥ 2
-- Sem regressão: nunca retrocede de flag.
+Transições (v0.3.2 — só contam vídeos que NOMEIAM o município do alerta,
+`video_evidence` ≠ "nenhuma"; vídeos de escopo estadual/regional continuam em
+videos_collected e servem ao episódio regional, H1):
+- alerta → acompanhamento: n_videos_municipais ≥ 1
+- acompanhamento → prioritario: n_comments_valid_municipal ≥ 50 E
+  len(videos_with_valid_comments_municipal) ≥ 2
+- Sem regressão no ciclo normal. A reavaliação única de 13/10/2026
+  (scripts/reevaluate_flags_v0_3_2.py) rebaixou flags concedidas pelo critério
+  antigo e registrou a proveniência em flag_history.
+- Até a v0.3.1 o critério usava todos os vídeos aderentes (n_videos_aderentes,
+  n_comments_valid), o que promovia alertas por cobertura estadual.
 
 Arquivamento:
-- Alerta fechado no CEMADEN com flag=alerta: some do state, incrementa
-  n_arquivados_alerta_puro no log agregado (não vai para extended_window).
+- Alerta fechado no CEMADEN com flag=alerta e SEM vídeo algum: some do state,
+  incrementa n_arquivados_alerta_puro no log agregado. Com vídeos regionais
+  (v0.3.2), vai para extended_window e é arquivado após 14d sem dado novo.
 - acompanhamento sem novo dado por 14d: vai para archived_alerts, incrementa
   n_arquivados_completos.
 - prioritario sem novo comentário por 28d: vai para archived_alerts, incrementa
@@ -74,6 +81,8 @@ ARCHIVE_PRIORITARIO_DAYS = 28
 # Massa crítica para promoção acompanhamento → prioritario — homologada Leila
 PROMOTE_PRIORITARIO_N_COMMENTS = 50
 PROMOTE_PRIORITARIO_N_VIDEOS = 2
+# Rótulo gravado em flag_history: qual regra concedeu a flag
+FLAG_CRITERION = "municipal_v0.3.2"
 
 # Ordem canônica das colunas do log agregado
 AGGREGATE_LOG_HEADER = [
@@ -413,7 +422,8 @@ def _should_archive_by_time(meta: dict, now: datetime) -> bool:
       não arquiva por tempo — deixa fluxo natural resolver
     """
     flag = meta.get("flag", "alerta")
-    if flag == "acompanhamento":
+    if flag == "acompanhamento" or (flag == "alerta" and meta.get("videos_collected")):
+        # v0.3.2: alerta só com cobertura regional segue a regra de 14 dias
         anchor = _parse_iso(meta.get("last_new_data_at"))
         threshold = timedelta(days=ARCHIVE_ACOMPANHAMENTO_DAYS)
     elif flag == "prioritario":
@@ -434,6 +444,9 @@ def _archive_reason(meta: dict, now: datetime) -> str:
     if flag == "prioritario":
         anchor = meta.get("last_new_comment_at")
         return f"prioritario sem novo comentário desde {anchor} (≥{ARCHIVE_PRIORITARIO_DAYS}d)"
+    if flag == "alerta" and meta.get("videos_collected"):
+        anchor = meta.get("last_new_data_at")
+        return f"alerta com cobertura só regional sem dado novo desde {anchor} (≥{ARCHIVE_ACOMPANHAMENTO_DAYS}d)"
     return "razão desconhecida"
 
 
@@ -540,7 +553,7 @@ def merge_new_alerts_from_cemaden(
             meta = active[alert_id]
             flag = meta.get("flag", "alerta")
 
-            if flag == "alerta":
+            if flag == "alerta" and not meta.get("videos_collected"):
                 # Regra nova: some do state, incrementa n_arquivados_alerta_puro
                 bump_aggregate_log(log, meta, "n_arquivados_alerta_puro")
                 del active[alert_id]
@@ -661,6 +674,12 @@ def mark_collection_complete(
         meta["videos_with_valid_comments"] = sorted(
             existing_valid_videos | new_videos_with_valid_comments
         )
+        # v0.3.2: contagem por vídeo, para separar o que vem de vídeos municipais
+        if "video_id" in valid_df.columns:
+            by_video = meta.setdefault("valid_comments_by_video", {})
+            for vid, n in valid_df["video_id"].astype(str).value_counts().items():
+                by_video[vid] = int(by_video.get(vid, 0)) + int(n)
+    recompute_municipal_counters(meta)
 
     # 3. Timestamps de "dado novo"
     if new_videos or n_new_valid_comments > 0:
@@ -710,8 +729,22 @@ def merge_video_evidence(meta: dict, incoming: dict[str, str]) -> None:
             continue
         if _EVIDENCE_RANK.get(ev, 0) >= _EVIDENCE_RANK.get(current.get(vid), -1):
             current[vid] = ev
-    vids = set(meta.get("videos_collected", [])) | set(current)
-    meta["n_videos_municipais"] = sum(1 for v in vids if _EVIDENCE_RANK.get(current.get(v), 0) > 0)
+    recompute_municipal_counters(meta)
+
+
+def recompute_municipal_counters(meta: dict) -> None:
+    """Deriva os contadores municipais (v0.3.2) de video_evidence e valid_comments_by_video.
+
+    São derivados, não acumulados: quando uma transcrição promove um vídeo a
+    evidência municipal, os comentários dele passam a contar sem recoleta.
+    """
+    ev = meta.get("video_evidence", {}) or {}
+    by_video = meta.get("valid_comments_by_video", {}) or {}
+    vids = set(meta.get("videos_collected", [])) | set(ev)
+    municipais = sorted(v for v in vids if _EVIDENCE_RANK.get(ev.get(v), 0) > 0)
+    meta["n_videos_municipais"] = len(municipais)
+    meta["n_comments_valid_municipal"] = sum(int(by_video.get(v, 0)) for v in municipais)
+    meta["videos_with_valid_comments_municipal"] = [v for v in municipais if int(by_video.get(v, 0)) > 0]
 
 
 def _comment_hash(comment_id: str) -> str:
@@ -739,6 +772,8 @@ def promote_flag_if_eligible(meta: dict, log: dict, now: datetime | None = None)
     Cascata em um único ciclo é possível (alerta → acompanhamento → prioritario
     se um único ciclo trouxer vídeo + 50 comentários em 2 vídeos).
 
+    v0.3.2: só vídeos que nomeiam o município contam (ver docstring do módulo).
+
     Returns:
         Nova flag se houve promoção, senão None.
     """
@@ -746,31 +781,32 @@ def promote_flag_if_eligible(meta: dict, log: dict, now: datetime | None = None)
     now_iso = _iso_utc(now)
     original_flag = meta.get("flag", "alerta")
     current_flag = original_flag
+    recompute_municipal_counters(meta)
 
     # alerta → acompanhamento
-    if current_flag == "alerta" and meta.get("n_videos_aderentes", 0) >= 1:
+    if current_flag == "alerta" and meta.get("n_videos_municipais", 0) >= 1:
         current_flag = "acompanhamento"
         meta["flag"] = current_flag
         meta.setdefault("flag_history", []).append({
-            "flag": current_flag, "at": now_iso,
+            "flag": current_flag, "at": now_iso, "criterio": FLAG_CRITERION,
         })
         bump_aggregate_log(log, meta, "n_migrados_acompanhamento")
-        print(f"[state_manager] promoção alerta → acompanhamento (n_videos={meta['n_videos_aderentes']})")
+        print(f"[state_manager] promoção alerta → acompanhamento (n_videos_municipais={meta['n_videos_municipais']})")
 
     # acompanhamento → prioritario
     if current_flag == "acompanhamento":
-        n_valid = meta.get("n_comments_valid", 0)
-        n_videos_valid = len(meta.get("videos_with_valid_comments", []))
+        n_valid = meta.get("n_comments_valid_municipal", 0)
+        n_videos_valid = len(meta.get("videos_with_valid_comments_municipal", []))
         if (n_valid >= PROMOTE_PRIORITARIO_N_COMMENTS
                 and n_videos_valid >= PROMOTE_PRIORITARIO_N_VIDEOS):
             current_flag = "prioritario"
             meta["flag"] = current_flag
             meta.setdefault("flag_history", []).append({
-                "flag": current_flag, "at": now_iso,
+                "flag": current_flag, "at": now_iso, "criterio": FLAG_CRITERION,
             })
             bump_aggregate_log(log, meta, "n_migrados_prioritario")
             print(f"[state_manager] promoção acompanhamento → prioritario "
-                  f"(n_comments_valid={n_valid}, n_videos_valid={n_videos_valid})")
+                  f"(n_comments_valid_municipal={n_valid}, n_videos={n_videos_valid})")
 
     # Se houve mudança, recalcula next_collection_at
     if current_flag != original_flag:
@@ -809,6 +845,7 @@ def archive_exhausted(state: dict, log: dict, now: datetime | None = None) -> li
         flag = meta.get("flag", "alerta")
         reason = ("acompanhamento_esgotado_14d" if flag == "acompanhamento"
                   else "prioritario_esgotado_28d" if flag == "prioritario"
+                  else "alerta_regional_esgotado_14d" if flag == "alerta"
                   else "desconhecido")
         meta["archived_at"] = now_iso
         meta["archive_reason"] = reason

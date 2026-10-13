@@ -865,6 +865,14 @@ def build_live_json(
             1 for v in entry.get("videos") or [] if v["municipal_evidence"] not in ("", "nenhuma"))
         entry["n_videos_verificados"] = sum(
             1 for v in entry.get("videos") or [] if v["municipal_evidence"] != "")
+        # v0.3.2: indicador municipal (H2) — só vídeos que nomeiam o município.
+        # Na amostra exibida e no acumulado do state (que decide a flag).
+        entry["n_comments_municipais"] = sum(
+            int(v.get("n_comments") or 0) for v in entry.get("videos") or []
+            if v["municipal_evidence"] not in ("", "nenhuma"))
+        entry["n_comments_valid_municipal"] = meta.get("n_comments_valid_municipal", 0)
+        entry["videos_with_valid_comments_municipal"] = meta.get("videos_with_valid_comments_municipal", [])
+        entry["flag_reassessment"] = meta.get("flag_reassessment")
 
     print(f"[build_live] alertas montados: {stats['from_csv']} do CSV, "
           f"{stats['from_history']} do histórico, {stats['from_state']} do state, "
@@ -897,6 +905,9 @@ def build_live_json(
             "archive_reason": meta.get("archive_reason"),
             "n_videos_aderentes": meta.get("n_videos_aderentes", 0),
             "n_comments_valid": meta.get("n_comments_valid", 0),
+            "n_videos_municipais": meta.get("n_videos_municipais", 0),
+            "n_comments_valid_municipal": meta.get("n_comments_valid_municipal", 0),
+            "flag_reassessment": meta.get("flag_reassessment"),
             "last_new_comment_at": meta.get("last_new_comment_at"),
         })
     # Ordena por data de arquivamento (mais recente primeiro)

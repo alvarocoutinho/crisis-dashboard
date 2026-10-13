@@ -18,6 +18,8 @@ BRAZIL_STATES = {
     "PA":"Pará","PB":"Paraíba","PR":"Paraná","PE":"Pernambuco","PI":"Piauí","RJ":"Rio de Janeiro","RN":"Rio Grande do Norte",
     "RS":"Rio Grande do Sul","RO":"Rondônia","RR":"Roraima","SC":"Santa Catarina","SP":"São Paulo","SE":"Sergipe","TO":"Tocantins",
 }
+# v0.3.2: geo.score_video ignora aqui o nome do estado (já conta como
+# state_name) e o município do alerta, e conta cada lugar uma vez.
 REGIONAL_ALIASES = {
     "PE": ["pernambuco", "grande recife", "rmr", "recife"], "AL": ["alagoas", "maceio"],
     "AM": ["amazonas", "manaus"], "PA": ["para", "pará", "belem", "belém"],

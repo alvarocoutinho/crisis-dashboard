@@ -394,6 +394,7 @@ export function FlagTimeline({ history }) {
       flag: h.flag,
       at,
       meta: FLAG_META[h.flag] ?? FLAG_META.alerta,
+      reason: h.reason,
       durationToNext: next ? next - at : null,
     };
   });
@@ -412,7 +413,7 @@ export function FlagTimeline({ history }) {
             <div className="flex flex-col items-center">
               <span
                 className={`inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-xs font-semibold text-white ${n.meta.bgClass}`}
-                title={n.meta.description}
+                title={n.reason ?? n.meta.description}
               >
                 <span
                   className="rounded-full inline-block bg-white"
@@ -549,6 +550,17 @@ function AlertCard({ alert }) {
         {/* Trilha de flags — histórico operacional do alerta */}
         <FlagTimeline history={alert.flag_history} />
 
+        {/* v0.3.2: flag reavaliada pelo critério municipal */}
+        {alert.flag_reassessment && alert.flag_reassessment.from !== alert.flag_reassessment.to && (
+          <div className="text-xs text-stone-600 bg-stone-50 border border-stone-200 rounded p-2 mb-3">
+            Flag reavaliada em{" "}
+            {new Date(alert.flag_reassessment.at).toLocaleDateString("pt-BR")}: era{" "}
+            <strong>{FLAG_META[alert.flag_reassessment.from]?.label ?? alert.flag_reassessment.from}</strong>.
+            {" "}Desde a v0.3.2 só contam vídeos que nomeiam o município; os demais
+            ficam como cobertura regional do episódio.
+          </div>
+        )}
+
         {/* Falha técnica (cota/API) — explicitamente NÃO é silêncio */}
         {isError && (
           <div className="bg-amber-50 border border-amber-200 rounded p-3 mb-3 flex items-start gap-2">
@@ -584,7 +596,13 @@ function AlertCard({ alert }) {
 
         {/* KPIs mini */}
         <div className="grid grid-cols-3 gap-3 mb-3">
-          <MiniStat label="Comentários" value={alert.n_comments} />
+          <MiniStat
+            label="Comentários"
+            value={alert.n_comments}
+            sub={alert.n_videos_verificados > 0 && alert.n_comments > 0
+              ? `${alert.n_comments_municipais ?? 0} em vídeos que citam ${alert.municipio}`
+              : undefined}
+          />
           <MiniStat
             label="Vídeos"
             value={alert.n_videos}
@@ -603,6 +621,9 @@ function AlertCard({ alert }) {
           <div className="mb-3">
             <div className="text-xs font-medium text-stone-700 mb-2">
               Distribuição por categoria
+              {alert.n_videos_verificados > 0 && alert.n_videos_municipais < alert.n_videos && (
+                <span className="font-normal text-stone-500"> · inclui vídeos de cobertura regional</span>
+              )}
             </div>
             <div className="space-y-1">
               {alert.distribution

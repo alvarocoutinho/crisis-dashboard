@@ -245,7 +245,10 @@ function ArchivedAlertCard({ alert }) {
         {/* Contadores finais */}
         <div className="grid grid-cols-3 gap-3">
           <FinalMetric label="Comentários coletados" value={alert.n_comments_valid ?? 0} />
-          <FinalMetric label="Vídeos aderentes" value={alert.n_videos_aderentes ?? 0} />
+          <FinalMetric
+            label="Vídeos (citam o município)"
+            value={`${alert.n_videos_aderentes ?? 0} (${alert.n_videos_municipais ?? 0})`}
+          />
           <FinalMetric
             label="Último comentário"
             value={

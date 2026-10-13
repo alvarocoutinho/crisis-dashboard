@@ -134,12 +134,15 @@ jobs:
           git config user.email "odrd-pipeline[bot]@users.noreply.github.com"
 
           # M4: só commita se houve mudança real
-          if git diff --quiet src/data/live.json src/data/state.json 2>/dev/null; then
-            echo "Nenhuma mudança em live.json/state.json — pulando commit"
+          # v0.3.2: o log agregado (denominadores de H1) também é versionado.
+          # Até a v0.3.1 ele era atualizado em memória e descartado a cada run.
+          DATA="src/data/live.json src/data/state.json src/data/alertas_agregados.csv"
+          if git diff --quiet $DATA 2>/dev/null; then
+            echo "Nenhuma mudança em live/state/log agregado — pulando commit"
             exit 0
           fi
 
-          git add src/data/live.json src/data/state.json
+          git add $DATA
 
           # Timestamp e status na mensagem para auditoria
           TIMESTAMP=$(date -u +'%Y-%m-%d %H:%M UTC')
