@@ -6,6 +6,51 @@ O formato segue [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) e o 
 
 ---
 
+## [Pipeline 0.3.2] — 2026-10-13
+
+**Flags e indicador municipal passam a contar só vídeos que nomeiam o município.** A v0.3.1 mostrou o problema: 8 alertas promovidos não tinham nenhum vídeo que citasse o município. Eram 5 `prioritario` (Osasco, Santos, Mauá, Praia Grande, Santa Bárbara d'Oeste) e 3 `acompanhamento` (Guarujá, Santo André, São Paulo 2464). A visibilidade "municipal" deles vinha de cobertura estadual ou da capital. Decisão metodológica do pesquisador, com autonomia delegada pela orientadora.
+
+### Corrigido — pontuação geográfica (`faa_poc/geo.py`)
+
+- **Dupla contagem de "São Paulo".** "sao paulo" e "são paulo" eram o mesmo alias depois de normalizar, e ainda somavam com o nome do estado. "Grande São Paulo" na descrição dava geo 6,0, acima de um vídeo que nomeia o município (5,0). Agora o nome do estado (e a capital homônima em SP/RJ) não é alias, aliases são deduplicados, o município do alerta não conta como alias e um alias contido em outro ("recife" em "grande recife") conta uma vez. Mesmo caso: geo 4,0.
+- **"Pará" = "para".** A busca do nome do estado era por substring do texto normalizado: a preposição "para" (e "Paraná", "Paraíba") "citava o Pará". O resultado era `cross_state_penalty` −2 em vídeos de qualquer UF com "para" no título. Agora a busca é por palavra inteira, o Pará só conta com acento ou como "estado do Pará", e "Mato Grosso" não casa dentro de "Mato Grosso do Sul". O município também passa a casar só como palavra inteira.
+
+### Alterado
+
+- **Ordenação dos vídeos aceitos** (`faa_poc/pipeline.py`): os que nomeiam o município entram antes dos de escopo estadual/regional e só depois vem o score. Antes, a cobertura estadual podia ocupar as 10 vagas de `MAX_VIDEOS_PER_ALERT`.
+- **Promoção de flag** (`state_manager.promote_flag_if_eligible`):
+  - alerta → acompanhamento: `n_videos_municipais ≥ 1`;
+  - acompanhamento → prioritario: `n_comments_valid_municipal ≥ 50` em `≥ 2` vídeos municipais.
+
+  Vídeos regionais continuam em `videos_collected` e servem ao episódio regional (H1). `flag_history` registra `criterio: municipal_v0.3.2`.
+- **Contagem por vídeo** `valid_comments_by_video` no state. Os contadores municipais são *derivados* (não acumulados), então uma transcrição que promove um vídeo a evidência municipal reconta sem recoleta.
+- **Arquivamento:** um alerta fechado com flag `alerta` mas com vídeos regionais não some mais do state. Vai para extended_window e é arquivado após 14 dias sem dado novo (`alerta_regional_esgotado_14d`).
+- **Painel:** "N em vídeos que citam <município>" sob Comentários, aviso de flag reavaliada (com a flag anterior) e a nota "inclui vídeos de cobertura regional" na distribuição. No arquivo, "Vídeos (citam o município)".
+
+### Corrigido — log agregado
+
+- O workflow do pipeline só commitava `live.json` e `state.json`. `alertas_agregados.csv` (denominadores de H1: emitidos, arquivados como alerta puro, migrados) era atualizado em memória e descartado em todo run desde 17/08 — o arquivo tinha 12 linhas de agosto. Agora é commitado. A reavaliação o reconstrói a partir do histórico do `state.json`: 499 alertas emitidos, dos quais 449 foram arquivados como alerta puro.
+
+### Adicionado
+
+- `scripts/reevaluate_flags_v0_3_2.py` + workflow manual **"ODRD Reavaliação de flags v0.3.2"**. É a reavaliação única das flags já concedidas e a única exceção documentada à regra "sem regressão". Os comentários válidos por vídeo são estimados pela maior amostra de cada vídeo no histórico do `live.json`, e a decisão é testada também contra o teto (todos os comentários do vídeo). Grava:
+  - a proveniência: `flag_reassessment`, `flag_legacy_v0_3_1` e uma entrada em `flag_history` com `reason`;
+  - o relatório sem texto `docs/reavaliacao_flags_v0_3_2.csv`.
+- **Resultado no dry-run de 13/10** (50 alertas; 22 mudam; todas as decisões são robustas ao teto):
+  - 4 continuam `prioritario`: São Sebastião do Caí, Timbé do Sul e São Paulo ×2.
+  - 14 `prioritario` → `acompanhamento`. Juquitiba tem 230 comentários válidos municipais, mas num único vídeo.
+  - 5 `prioritario` → `alerta`: Osasco, Santos, Mauá, Praia Grande e Santa Bárbara d'Oeste.
+  - 3 `acompanhamento` → `alerta`: Santo André, Guarujá e São Paulo (2464, arquivado).
+- `tests/test_municipal_rules.py`: pontuação, ordenação, promoção, recontagem por transcrição e arquivamento.
+
+### Limitações conhecidas
+
+- Os comentários válidos por vídeo dos alertas antigos são estimativas (a fração rotulada do alerta aplicada ao vídeo). Nenhuma decisão muda usando o teto, mas os números exatos só existem nos CSVs do Drive.
+- A distribuição por categoria do painel ainda mistura vídeos municipais e regionais. A análise de enquadramento (H2) deve filtrar por `municipal_evidence` nos dados do Drive.
+- A evidência "descricao" conta como municipal. Os 34 casos só-descrição não foram conferidos por amostra.
+
+---
+
 ## [Pipeline 0.3.1] — 2026-10-13
 
 **Evidência municipal por vínculo alerta–vídeo.** A auditoria de 13/10 mostrou que 38% dos vínculos só tinham "SP"/estado no título e que, nos 85 vínculos verificáveis por transcrição, 79% dos municípios não aparecem na fala. O vínculo continua aceito pelo filtro de relevância (pertence ao evento), mas agora registra **se o vídeo nomeia o município do alerta**.

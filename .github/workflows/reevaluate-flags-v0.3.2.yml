@@ -1,0 +1,64 @@
+name: ODRD Reavaliação de flags v0.3.2 (executar uma vez)
+
+# Reaplica às flags já concedidas o critério municipal da v0.3.2 (só contam
+# vídeos que nomeiam o município), reconstrói o log agregado a partir do
+# histórico do state.json e grava o relatório docs/reavaliacao_flags_v0_3_2.csv.
+# Idempotente. Rode primeiro com dry_run marcado e leia o log.
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Só mostrar o que mudaria (não commita)'
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: odrd-pipeline
+  cancel-in-progress: false
+
+jobs:
+  reevaluate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # histórico completo: amostras do live.json e alertas do state.json
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # Só o necessário (sem torch/transformers): state_manager importa faa_poc,
+      # cujo __init__ carrega requests; os testes usam pandas.
+      - run: pip install "requests~=2.31.0" "pandas~=2.2.0" "numpy~=1.26.0"
+
+      - name: Testes das regras municipais
+        run: python tests/test_municipal_rules.py
+
+      - name: Reavaliar
+        env:
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          if [ "$DRY_RUN" = "true" ]; then
+            python scripts/reevaluate_flags_v0_3_2.py --dry-run
+          else
+            python scripts/reevaluate_flags_v0_3_2.py
+          fi
+
+      - name: Commit
+        if: ${{ !inputs.dry_run }}
+        run: |
+          git config user.name "odrd-pipeline[bot]"
+          git config user.email "odrd-pipeline[bot]@users.noreply.github.com"
+          FILES="src/data/state.json src/data/live.json src/data/alertas_agregados.csv docs/reavaliacao_flags_v0_3_2.csv"
+          git add $FILES
+          if git diff --cached --quiet; then
+            echo "Nada a gravar"; exit 0
+          fi
+          git commit -m "chore(data): reavaliação das flags pelo critério municipal (v0.3.2)"
+          git pull --rebase origin main
+          git push origin main

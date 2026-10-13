@@ -8,6 +8,45 @@ def _uf_token_present(raw: str, uf: str) -> bool:
     uf = (uf or "").upper().strip()
     return bool(len(uf) == 2 and re.search(rf"(?<![A-Za-zÀ-ÿ0-9]){re.escape(uf)}(?![A-Za-zÀ-ÿ0-9])", raw))
 
+def _has_phrase(text: str, phrase: str) -> bool:
+    """Frase normalizada como palavra inteira ("para" não casa com "parada")."""
+    return bool(phrase) and re.search(rf"(?<![a-z0-9]){re.escape(phrase)}(?![a-z0-9])", text) is not None
+
+def _state_present(uf: str, raw: str, text: str) -> bool:
+    """O texto nomeia o estado `uf`? (v0.3.2)
+
+    Até a v0.3.1 a busca era por substring do nome normalizado. Para o Pará
+    isso é "para", a preposição: quase todo título em português "citava o
+    Pará", o que disparava cross_state_penalty em vídeos de RS, SP, SC... e
+    "Paraná"/"Paraíba" também continham "para". Agora: palavra inteira, e o
+    Pará só com acento ("Pará") ou "estado do Pará". "Mato Grosso" não casa
+    dentro de "Mato Grosso do Sul".
+    """
+    name = normalize(BRAZIL_STATES.get(uf, ""))
+    if not name:
+        return False
+    if uf == "PA":
+        return bool(re.search(r"(?<![a-zà-ÿ0-9])pará(?![a-zà-ÿ0-9])", raw.lower())) or _has_phrase(text, "estado do para")
+    if uf == "MT":
+        return re.search(r"(?<![a-z0-9])mato grosso(?! do sul)(?![a-z0-9])", text) is not None
+    return _has_phrase(text, name)
+
+def _regional_alias_hits(uf: str, text: str, municipio: str) -> list[str]:
+    """Aliases regionais presentes, cada lugar contado uma vez (v0.3.2).
+
+    Antes, "sao paulo" e "são paulo" (a mesma string depois de normalizar)
+    contavam duas vezes, e ainda somavam com o nome do estado: "Grande São
+    Paulo" dava geo 6,0, acima de um vídeo que nomeia o município (5,0).
+    Agora: aliases deduplicados após normalizar; o nome do estado (e, em SP
+    e RJ, da capital homônima) não é alias, porque já conta como state_name;
+    o município do alerta não é alias; um alias contido em outro que também
+    casou ("recife" em "grande recife") não conta de novo.
+    """
+    state_name = normalize(BRAZIL_STATES.get(uf, ""))
+    aliases = {normalize(a) for a in REGIONAL_ALIASES.get(uf, [])} - {state_name, municipio, ""}
+    hits = sorted(a for a in aliases if _has_phrase(text, a))
+    return [a for a in hits if not any(a != b and a in b for b in hits)]
+
 def _event_family(evento: str) -> str:
     return next((k for k in EVENT_TERMS if k != "default" and k.lower() in (evento or "").lower()), "default")
 
@@ -19,12 +58,10 @@ def score_video(video: dict, alert: dict, config: dict) -> dict:
     for term in NEGATIVE_TERMS:
         if normalize(term) in text: return _reject(f"negative_term:{term}", "negative")
 
-    state_name = BRAZIL_STATES.get(uf, "")
-    muni_hit = bool(municipio) and len(municipio) >= 4 and municipio in text
-    state_hit = bool(state_name and normalize(state_name) in text)
+    muni_hit = bool(municipio) and len(municipio) >= 4 and _has_phrase(text, municipio)
+    state_hit = _state_present(uf, raw, text)
     uf_hit = _uf_token_present(raw, uf)
-    aliases = sum(1 for alias in REGIONAL_ALIASES.get(uf, []) if normalize(alias) in text)
-    aliases = min(aliases, 3)
+    aliases = min(len(_regional_alias_hits(uf, text, municipio)), 3)
     reasons, geo_score, match_type = [], 0.0, "none"
 
     # Direct municipal evidence requires municipality + explicit UF/state co-evidence.
@@ -44,7 +81,7 @@ def score_video(video: dict, alert: dict, config: dict) -> dict:
         match_type = "regional_alias" if match_type == "none" else match_type
         reasons.append(f"alias×{aliases}")
 
-    other_states = [state for code, state in BRAZIL_STATES.items() if code != uf and normalize(state) in text]
+    other_states = [state for code, state in BRAZIL_STATES.items() if code != uf and _state_present(code, raw, text)]
     if other_states and match_type != "municipality_direct":
         geo_score = max(0.0, geo_score - 2.0)
         reasons.append(f"cross_state_penalty:{other_states[0]}")
