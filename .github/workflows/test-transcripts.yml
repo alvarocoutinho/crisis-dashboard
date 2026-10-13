@@ -1,0 +1,31 @@
+name: Teste — transcrições no Actions (experimento)
+
+# Experimento descartável: verifica se o YouTube entrega legendas para um
+# runner do GitHub Actions. Não grava texto; só status, como anotações.
+on:
+  workflow_dispatch:
+    inputs:
+      video_ids:
+        description: 'IDs separados por espaço (vídeos que tinham legenda no Colab)'
+        type: string
+        default: 'KtQVJ8_d8Aw -O41i-QLYnA 0z0nd9loopY lnWeVVkiGJM Gj215qmUgJQ'
+
+permissions:
+  contents: read
+
+jobs:
+  teste:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install "youtube-transcript-api~=1.2"
+      - name: Tentar baixar legendas
+        env:
+          VIDEO_IDS: ${{ inputs.video_ids }}
+        run: python scripts/test_transcripts_actions.py $VIDEO_IDS
