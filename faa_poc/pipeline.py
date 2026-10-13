@@ -10,6 +10,7 @@ from typing import Any
 from . import cemaden, ped, storage, youtube
 from .config import build_config
 from .constants import *
+from .evidence import municipal_evidence
 from .geo import score_video
 from .timeutils import parse_dt, utcnow
 
@@ -105,6 +106,9 @@ def _collect_for_alert(alert:dict,key:str,quota:youtube.QuotaTracker,config:dict
 
     for base,video in accepted[:config["MAX_VIDEOS_PER_ALERT"]]:
         vid=base["video_id"]
+        # v0.3.1: o vídeo nomeia o município? (título + descrição completa)
+        base["municipal_evidence"]=municipal_evidence(alert.get("municipio",""),alert.get("uf",""),
+            title=video.get("title",""),description=stats.get(vid,{}).get("description","") or video.get("description_snippet",""))
         result["links"].append(base)
         if vid not in video_index:
             result["canonical"].append({**{k:v for k,v in video.items() if k != "search_query"},**stats.get(vid,{}),"first_seen_at":now_iso})

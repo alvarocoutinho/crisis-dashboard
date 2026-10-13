@@ -457,6 +457,29 @@ export function FlagTimeline({ history }) {
 // ============================================================
 // Card de um alerta live
 // ============================================================
+// v0.3.1 — o vídeo nomeia o município do alerta? Separa visibilidade
+// municipal (H2) de cobertura regional do episódio (H1).
+const EVIDENCE_META = {
+  "titulo+descricao": { label: "cita o município", cls: "bg-emerald-50 text-emerald-800 border-emerald-200" },
+  titulo: { label: "cita o município", cls: "bg-emerald-50 text-emerald-800 border-emerald-200" },
+  descricao: { label: "cita o município (descrição)", cls: "bg-emerald-50 text-emerald-800 border-emerald-200" },
+  transcricao: { label: "cita o município (fala)", cls: "bg-emerald-50 text-emerald-800 border-emerald-200" },
+  nenhuma: { label: "cobertura regional", cls: "bg-stone-50 text-stone-600 border-stone-200" },
+};
+
+function EvidenceBadge({ evidence }) {
+  const meta = EVIDENCE_META[evidence];
+  if (!meta) return null;
+  return (
+    <span
+      className={`inline-block mt-0.5 px-1.5 py-px rounded border text-[10px] ${meta.cls}`}
+      title="Onde o vídeo nomeia o município do alerta (título, descrição ou fala). 'Cobertura regional' = vídeo sobre o evento que não cita este município."
+    >
+      {meta.label}
+    </span>
+  );
+}
+
 function AlertCard({ alert }) {
   const tierMeta = getTierMeta(alert.priority_tier);
   const flagMeta = getFlagMeta(alert.flag);
@@ -562,7 +585,13 @@ function AlertCard({ alert }) {
         {/* KPIs mini */}
         <div className="grid grid-cols-3 gap-3 mb-3">
           <MiniStat label="Comentários" value={alert.n_comments} />
-          <MiniStat label="Vídeos" value={alert.n_videos} />
+          <MiniStat
+            label="Vídeos"
+            value={alert.n_videos}
+            sub={alert.n_videos_verificados > 0
+              ? `${alert.n_videos_municipais} citam ${alert.municipio}`
+              : undefined}
+          />
           <MiniStat
             label="Não classificados"
             value={alert.n_comments > 0 ? `${alert.unlabeled_pct}%` : "—"}
@@ -626,6 +655,7 @@ function AlertCard({ alert }) {
                     <div className="text-stone-500">
                       {v.n_comments} coment. · {v.total_likes} likes
                     </div>
+                    <EvidenceBadge evidence={v.municipal_evidence} />
                   </div>
                   <ExternalLink size={10} className="text-stone-400 flex-shrink-0" />
                 </a>
@@ -645,11 +675,12 @@ function AlertCard({ alert }) {
   );
 }
 
-function MiniStat({ label, value }) {
+function MiniStat({ label, value, sub }) {
   return (
     <div className="bg-stone-50 rounded p-2 text-center">
       <div className="text-xs text-stone-500">{label}</div>
       <div className="text-lg font-semibold text-stone-900 tabular-nums">{value}</div>
+      {sub && <div className="text-[10px] text-stone-500 mt-0.5 truncate" title={sub}>{sub}</div>}
     </div>
   );
 }
