@@ -1,0 +1,54 @@
+name: ODRD Migração v0.3 (executar uma vez)
+
+# Migração única após a correção de cota (pipeline 0.3.0):
+# finaliza janelas legadas, restaura conteúdo apagado do live.json a partir
+# do histórico git e reconta n_comments_valid. Idempotente.
+# Como usar: Actions → "ODRD Migração v0.3" → Run workflow.
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Só mostrar o que mudaria (não commita)'
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+# Mesmo grupo do pipeline: nunca roda ao mesmo tempo que o cron
+concurrency:
+  group: odrd-pipeline
+  cancel-in-progress: false
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # histórico completo: necessário para restaurar o live.json
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Migrar state/live
+        run: |
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            python scripts/migrate_v0_3.py --dry-run
+          else
+            python scripts/migrate_v0_3.py
+          fi
+
+      - name: Commit
+        if: ${{ !inputs.dry_run }}
+        run: |
+          git config user.name "odrd-pipeline[bot]"
+          git config user.email "odrd-pipeline[bot]@users.noreply.github.com"
+          if git diff --quiet src/data/live.json src/data/state.json; then
+            echo "Nada a migrar"; exit 0
+          fi
+          git add src/data/live.json src/data/state.json
+          git commit -m "chore(data): migração v0.3 — janelas legadas, live.json restaurado, contadores recontados"
+          git push origin main

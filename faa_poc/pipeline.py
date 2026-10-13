@@ -70,8 +70,10 @@ def _collect_for_alert(alert:dict,key:str,quota:youtube.QuotaTracker,config:dict
         if not quota.can_search(high):
             result["outcome"]="quota_exhausted"; break
         response=youtube.search(query,after,before,key,config["MAX_VIDEOS_PER_ALERT"])
-        quota.charge(100)
+        quota.charge_search()
         if response.status != "ok":
+            # search.list tem limite diário próprio: recusa aqui bloqueia só buscas
+            if response.status=="quota_exhausted": quota.search_exhausted=True
             result["outcome"] = response.status; break
         for video in response.items:
             seen_videos.setdefault(video["video_id"], {**video, "search_query": query})
@@ -79,9 +81,12 @@ def _collect_for_alert(alert:dict,key:str,quota:youtube.QuotaTracker,config:dict
     result["candidates"]=len(candidates)
     if result["outcome"] != "ok": return result
 
+    if candidates and not quota.can_spend(1):
+        result["outcome"]="quota_exhausted"; return result
     stats_response=youtube.stats([video["video_id"] for video in candidates],key)
     quota.charge(1 if candidates else 0)
     if stats_response.status != "ok":
+        if stats_response.status=="quota_exhausted": quota.exhausted=True
         result["outcome"]=stats_response.status
         return result
     stats={row["video_id"]:row for row in stats_response.items}
@@ -94,6 +99,8 @@ def _collect_for_alert(alert:dict,key:str,quota:youtube.QuotaTracker,config:dict
             result["rejected"].append({**base,"title":video.get("title",""),"channel_title":video.get("channel_title",""),"rejection_reason":score["rejection_reason"]})
             continue
         accepted.append((base,video))
+    opened_dt=parse_dt(alert.get("datahoracriacao"))
+    window_end=opened_dt+timedelta(hours=config["EVENT_WINDOW_HOURS"]) if opened_dt else None
     accepted.sort(key=lambda pair:(float(pair[0]["relevance_score"]),int(stats.get(pair[0]["video_id"],{}).get("comment_count",0) or 0),int(stats.get(pair[0]["video_id"],{}).get("view_count",0) or 0)),reverse=True)
 
     for base,video in accepted[:config["MAX_VIDEOS_PER_ALERT"]]:
@@ -102,11 +109,12 @@ def _collect_for_alert(alert:dict,key:str,quota:youtube.QuotaTracker,config:dict
         if vid not in video_index:
             result["canonical"].append({**{k:v for k,v in video.items() if k != "search_query"},**stats.get(vid,{}),"first_seen_at":now_iso})
             video_index.add(vid)
-        comment_response=youtube.comments(vid,key,max_pages=config["MAX_COMMENT_PAGES"],order=config["YT_COMMENT_ORDER"])
+        comment_response=youtube.comments(vid,key,max_pages=config["MAX_COMMENT_PAGES"],order=config["YT_COMMENT_ORDER"],quota=quota,window_end=window_end)
         if comment_response.status != "ok":
+            # v0.3: keep whatever was collected before the failure (partial
+            # pages are still valid observations) but report the outcome so
+            # the orchestrator retries the alert instead of marking it done.
             result["comment_outcome"]=comment_response.status
-            continue
-        quota.charge(max(1,(len(comment_response.items)+19)//20))
         canonical,links,skipped=youtube.comment_links(comment_response.items,alert=alert,link_scope=base["link_scope"],window_hours=config["EVENT_WINDOW_HOURS"])
         result["skipped"] += skipped
         for row in canonical:
@@ -151,7 +159,7 @@ def run(overrides:dict[str,Any]|None=None)->dict:
         if not key: errors.append("youtube_key:missing")
     status=storage.load_status(config); active_alerts=storage.load_active_alerts(config); active_videos=storage.load_active_videos(config)
     video_index=storage.build_set_index(config,"youtube_videos_canonical.csv","video_id"); comment_index=storage.build_set_index(config,"youtube_comments_canonical.csv","comment_id"); comment_link_index=storage.build_pair_index(config,"youtube_alert_comment_links.csv","comment_id","cod_alerta")
-    quota=youtube.QuotaTracker(ceiling=config["YT_QUOTA_CEILING"],high_reserve=config["YT_QUOTA_HIGH_RESERVE"])
+    quota=youtube.QuotaTracker(ceiling=config["YT_QUOTA_CEILING"],high_reserve=config["YT_QUOTA_HIGH_RESERVE"],search_ceiling=config.get("YT_SEARCH_CEILING",40),search_high_reserve=config.get("YT_SEARCH_HIGH_RESERVE",4))
     if mode=="COMMENT_REFRESH_ONLY":
         if key: totals["comments"],totals["skipped"]=_refresh(key,active_videos,config,comment_index,comment_link_index)
         _advance(active_alerts,active_videos,config); storage.save_active_alerts(config,active_alerts); storage.save_active_videos(config,active_videos)
@@ -209,7 +217,12 @@ def run(overrides:dict[str,Any]|None=None)->dict:
 
         _register_alert(alert,active_alerts,ari_class)
 
-        if run_yt:
+        if run_yt and key and (quota.exhausted or quota.search_exhausted):
+            # v0.3: the API already answered quotaExceeded in this run; further
+            # calls would fail too. Defer explicitly — never record as silence.
+            state["youtube_status"]="deferred_quota"; state["comment_status"]="deferred_quota"
+            state["last_error"]="youtube_quota_exhausted_earlier_in_run"
+        elif run_yt:
             if key:
                 result=_collect_for_alert(alert,key,quota,config,video_index,comment_index,comment_link_index)
                 storage.append_csv(config,"youtube_videos_canonical.csv",result["canonical"],VIDEO_CANONICAL_FIELDS)
@@ -239,4 +252,4 @@ def run(overrides:dict[str,Any]|None=None)->dict:
 def _finish(config,started,mode,totals,quota,ped_required,ped_ok,yt_required,yt_ok,errors):
     duration=round((storage.utcnow()-started).total_seconds(),2)
     storage.append_csv(config,"pipeline_runs.csv",[{"run_at":started.isoformat(),"mode":mode,"duration_s":duration,"n_alerts_fetched":totals["fetched"],"n_alerts_processed":totals["processed"],"n_videos":totals["videos"],"n_comments":totals["comments"],"n_comments_skipped_outside_event_window":totals["skipped"],"n_visibility_observations":totals["visibility"],"n_substantive_absence_observations":totals["substantive_absence"],"n_ari_mismatches":totals["ari_mismatches"],"quota_used":quota.used,"ped_required":ped_required,"ped_ok":ped_ok,"youtube_required":yt_required,"youtube_ok":yt_ok,"errors":";".join(errors)[:500]}],RUN_LOG_FIELDS)
-    return {"mode":mode,"duration_s":duration,"totals":totals,"errors":errors}
+    return {"mode":mode,"duration_s":duration,"totals":totals,"errors":errors,"quota_used":quota.used,"quota_exhausted":quota.exhausted,"searches_used":quota.searches,"search_exhausted":quota.search_exhausted}

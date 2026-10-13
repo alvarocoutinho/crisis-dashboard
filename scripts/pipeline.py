@@ -37,7 +37,20 @@ STATE_PATH = REPO_ROOT / "src" / "data" / "state.json"
 LIVE_PATH = REPO_ROOT / "src" / "data" / "live.json"
 AGGREGATE_LOG_PATH = REPO_ROOT / "src" / "data" / "alertas_agregados.csv"
 FAA_OUTPUT_DIR = Path(os.environ.get("FAA_OUTPUT_DIR", "/tmp/faa_pipeline_run"))
-PIPELINE_VERSION = "0.2.2"
+PIPELINE_VERSION = "0.3.0"
+
+# v0.3 — orçamento de cota YouTube Data API. Pela tabela de custos oficial
+# (atualizada em 08/10/2026) toda chamada custa 1 unidade contra 10.000/dia e
+# search.list tem, além disso, limite próprio de 100 chamadas/dia — hoje o
+# limite que realmente restringe. As margens protegem execuções manuais/Colab
+# com a mesma chave. Tetos por execução distribuem a cota entre os 4 crons.
+YT_DAILY_BUDGET = int(os.environ.get("YT_DAILY_BUDGET", "9000"))
+YT_RUN_BUDGET = int(os.environ.get("YT_RUN_BUDGET", "4500"))
+YT_DAILY_SEARCH_BUDGET = int(os.environ.get("YT_DAILY_SEARCH_BUDGET", "90"))
+YT_RUN_SEARCH_BUDGET = int(os.environ.get("YT_RUN_SEARCH_BUDGET", "40"))
+# Abaixo disso não vale começar (1 par de buscas + estatísticas + páginas).
+YT_MIN_RUN_BUDGET = 50
+YT_MIN_RUN_SEARCHES = 2
 
 
 def log(msg: str, level: str = "INFO") -> None:
@@ -96,7 +109,8 @@ def fetch_cemaden_active_alerts() -> list[dict]:
     return alerts
 
 
-def run_faa_pipeline_for_alerts(alert_ids: list[str], state: dict) -> tuple[Path, list[str]]:
+def run_faa_pipeline_for_alerts(alert_ids: list[str], state: dict, quota_ceiling: int,
+                                search_ceiling: int) -> tuple[Path, list[str], dict]:
     """Executa ``faa_poc.run()`` exatamente para os alertas devidos.
 
     O state já foi reconciliado com o CEMADEN neste ciclo. Reutilizar esses
@@ -157,13 +171,44 @@ def run_faa_pipeline_for_alerts(alert_ids: list[str], state: dict) -> tuple[Path
         "MAX_ALERTS": len(selected_alerts),
         "MAX_VIDEOS_PER_ALERT": 10,
         "MAX_COMMENT_PAGES": 10,
-        "YT_QUOTA_CEILING": 5000,
+        # v0.3: teto real deste run = min(teto por run, saldo do dia). A
+        # reserva para níveis Alto/Muito Alto escala com o teto.
+        "YT_QUOTA_CEILING": quota_ceiling,
+        "YT_QUOTA_HIGH_RESERVE": min(400, quota_ceiling // 4),
+        # Reserva de buscas para alertas Alto/Muito Alto
+        "YT_SEARCH_CEILING": search_ceiling,
+        "YT_SEARCH_HIGH_RESERVE": min(4, search_ceiling // 4),
     })
-    faa_errors = list(result.get("errors", [])) if isinstance(result, dict) else []
+    result = result if isinstance(result, dict) else {}
+    faa_errors = list(result.get("errors", []))
     if faa_errors:
         log(f"faa_poc concluiu com {len(faa_errors)} ocorrência(s) parcial(is)", "WARN")
-    log(f"faa_poc concluído — outputs em {FAA_OUTPUT_DIR}", "OK")
-    return FAA_OUTPUT_DIR, faa_errors
+    log(f"faa_poc concluído — outputs em {FAA_OUTPUT_DIR} "
+        f"(unidades: {result.get('quota_used', '?')}/{quota_ceiling}; "
+        f"buscas: {result.get('searches_used', '?')}/{search_ceiling})", "OK")
+    return FAA_OUTPUT_DIR, faa_errors, result
+
+
+def read_collection_outcomes(faa_output: Path) -> dict[str, tuple[bool, str | None]]:
+    """Lê alert_processing_status.csv → {cod_alerta: (sucesso, erro)}.
+
+    Sucesso = busca ok E comentários ok/não aplicável. Qualquer outro estado
+    (quota_exhausted, api_error, deferred_quota) é falha e o alerta é
+    retentado no próximo ciclo em vez de ser dado como coletado.
+    """
+    import csv
+    path = faa_output / "alert_processing_status.csv"
+    out: dict[str, tuple[bool, str | None]] = {}
+    if not path.exists():
+        return out
+    with path.open(encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            yt = row.get("youtube_status", "")
+            cm = row.get("comment_status", "")
+            ok = yt == "ok" and cm in {"success", "not_applicable"}
+            err = None if ok else f"youtube={yt};comments={cm}"
+            out[str(row.get("cod_alerta"))] = (ok, err)
+    return out
 
 
 def main() -> int:
@@ -186,6 +231,22 @@ def main() -> int:
         f"{len(state.get('archived_alerts', {}))} archived")
     aggregate_log = state_manager.load_aggregate_log(AGGREGATE_LOG_PATH)
     log(f"log agregado carregado: {len(aggregate_log)} linhas")
+
+    # 2b. v0.3: regra de janela para alertas legados + rollover do dia de cota
+    legacy_finalized = state_manager.normalize_legacy_v03(state, now=now)
+    if legacy_finalized:
+        log(f"janela de coleta já encerrada (legado, sem novas chamadas à API): "
+            f"{len(legacy_finalized)} alertas", "OK")
+    quota_state = state_manager.roll_quota_day(state, now)
+    quota_remaining = max(0, YT_DAILY_BUDGET - int(quota_state.get("used_today", 0)))
+    searches_remaining = max(0, YT_DAILY_SEARCH_BUDGET - int(quota_state.get("searches_today", 0)))
+    if quota_state.get("exhausted_by_api"):
+        quota_remaining = 0
+    if quota_state.get("search_exhausted_by_api"):
+        searches_remaining = 0
+    log(f"cota YouTube do dia {quota_state['day']}: unidades {quota_state.get('used_today', 0)}"
+        f"/{YT_DAILY_BUDGET}, buscas {quota_state.get('searches_today', 0)}/{YT_DAILY_SEARCH_BUDGET} "
+        f"(reset {quota_state['reset_at']})")
 
     # 3. Consulta CEMADEN e reconcilia
     cemaden_ok = True
@@ -220,9 +281,10 @@ def main() -> int:
     to_collect = [d for d in decisions if d.action == "collect"]
     to_archive = [d for d in decisions if d.action == "archive_exhausted"]
     skipped = [d for d in decisions if d.action == "skip_not_due"]
+    window_closed = [d for d in decisions if d.action == "skip_window_closed"]
 
     log(f"decisões: {len(to_collect)} coletar, {len(to_archive)} arquivar (esgotamento temporal), "
-        f"{len(skipped)} pular (não devidos)")
+        f"{len(skipped)} pular (não devidos), {len(window_closed)} janela encerrada")
 
     if args.limit_alerts and len(to_collect) > args.limit_alerts:
         log(f"--limit-alerts={args.limit_alerts} aplicado, cortando de {len(to_collect)}", "WARN")
@@ -238,12 +300,24 @@ def main() -> int:
     # 6. Se há alertas a coletar, roda o pipeline
     partial_failures: list[str] = []
     quota_used_this_run = 0
+    searches_used_this_run = 0
     live_data = None
+
+    run_ceiling = min(YT_RUN_BUDGET, quota_remaining)
+    run_search_ceiling = min(YT_RUN_SEARCH_BUDGET, searches_remaining)
+    if to_collect and (run_ceiling < YT_MIN_RUN_BUDGET or run_search_ceiling < YT_MIN_RUN_SEARCHES):
+        # v0.3: sem saldo — adia explicitamente. Os alertas continuam devidos
+        # e nada é registrado como silêncio.
+        log(f"orçamento de cota insuficiente (unidades {run_ceiling}, buscas {run_search_ceiling}): "
+            f"{len(to_collect)} alertas adiados", "WARN")
+        partial_failures.append("quota_budget")
+        to_collect = []
 
     if to_collect:
         collect_ids = [d.alert_id for d in to_collect]
         try:
-            faa_output, faa_errors = run_faa_pipeline_for_alerts(collect_ids, state)
+            faa_output, faa_errors, faa_result = run_faa_pipeline_for_alerts(
+                collect_ids, state, run_ceiling, run_search_ceiling)
         except Exception as e:
             log(f"falha catastrófica no faa_poc: {e}", "ERROR")
             traceback.print_exc()
@@ -257,6 +331,22 @@ def main() -> int:
 
         if faa_errors:
             partial_failures.append("faa_poc")
+        quota_used_this_run = int(faa_result.get("quota_used", 0))
+        searches_used_this_run = int(faa_result.get("searches_used", 0))
+        if faa_result.get("search_exhausted"):
+            log("API recusou search.list por cota antes do orçamento interno (limite de "
+                "100 buscas/dia compartilhado com outro cliente?). Buscas bloqueadas até o reset.", "WARN")
+            state_manager.roll_quota_day(state, now)["search_exhausted_by_api"] = True
+            partial_failures.append("youtube_search_quota")
+        if faa_result.get("quota_exhausted"):
+            # A API recusou por cota antes do nosso orçamento acabar: outra
+            # aplicação (ex.: Colab) usa a mesma chave/projeto. Bloqueia o
+            # resto do dia de cota para não insistir.
+            log("API respondeu quotaExceeded antes do orçamento interno — a chave "
+                "pode estar sendo usada por outro cliente (Colab?). Bloqueando até o reset.", "WARN")
+            state_manager.roll_quota_day(state, now)["exhausted_by_api"] = True
+            partial_failures.append("youtube_quota")
+        outcomes = read_collection_outcomes(faa_output)
 
         # 7. BERTimbau
         try:
@@ -315,15 +405,21 @@ def main() -> int:
                 except Exception as e:
                     log(f"não foi possível filtrar predictions para {decision.alert_id}: {e}", "WARN")
 
+            ok, err = outcomes.get(cod, (False, "missing_processing_status"))
             state_manager.mark_collection_complete(
                 state, decision.alert_id, aggregate_log,
                 videos_collected_now=videos_this_alert,
                 predictions_this_alert=predictions_this_alert,
                 now=now,
+                success=ok,
+                error=err,
             )
+            if not ok:
+                log(f"coleta incompleta de {decision.alert_id} ({err}) — será retentada", "WARN")
 
-        # Estimativa de cota consumida (aproximação — refinar depois)
-        quota_used_this_run = len(to_collect) * 100  # search.list ~= 100 unidades
+        n_failed = sum(1 for ok, _ in outcomes.values() if not ok)
+        if n_failed:
+            partial_failures.append(f"collection_incomplete:{n_failed}")
     else:
         log("nenhum alerta devido neste ciclo — apenas atualiza metadados", "OK")
 
@@ -400,6 +496,7 @@ def main() -> int:
         state, status, duration, quota_used_this_run,
         now=now, pipeline_version=PIPELINE_VERSION,
         cemaden_checked=cemaden_ok,
+        searches_used=searches_used_this_run,
     )
 
     if args.dry_run:

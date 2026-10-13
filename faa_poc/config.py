@@ -31,6 +31,9 @@ CONFIG: dict[str, Any] = {
     # Quota management
     "YT_QUOTA_CEILING": 2400,
     "YT_QUOTA_HIGH_RESERVE": 400,
+    # search.list: limite próprio de 100 chamadas/dia (tabela de custos da API)
+    "YT_SEARCH_CEILING": 40,
+    "YT_SEARCH_HIGH_RESERVE": 4,
 
     # Relevance rules
     "MIN_GEO_SCORE": 2.0,

@@ -6,6 +6,39 @@ O formato segue [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) e o 
 
 ---
 
+## [Pipeline 0.3.0] — 2026-10-13
+
+**Correção do consumo de cota da YouTube Data API e da contaminação do dashboard por falhas de cota.**
+
+### Diagnóstico
+
+- **Alertas-zumbi.** A janela de coleta é fixa (vídeos publicados em abertura−6h…abertura+72h; comentários com |t−abertura| ≤ 72h), mas alertas `prioritario` eram recoletados a cada 6h por até 28 dias, refazendo 2 × `search.list` e toda a paginação de comentários sobre uma janela já encerrada. Pela tabela de custos oficial (atualizada em 08/10/2026), `search.list` tem limite próprio de 100 chamadas/dia: 23 `prioritario` × 2 buscas × 4 runs ≈ 184 buscas/dia. As chamadas de respostas (uma por tópico com resposta) saturavam os 10.000 restantes.
+- **Recontagem.** O diretório de saída do faa_poc é efêmero no Actions; os mesmos comentários eram recoletados e somados de novo a `n_comments_valid` a cada ciclo (122.120 no state vs. ~3.400 comentários observados, ≈36×). `last_new_comment_at` era renovado sempre, então nenhum `prioritario` arquivava, e 10 dos 23 `prioritario` não atingem o critério (≥50 comentários válidos em ≥2 vídeos) com os dados observados.
+- **Falha registrada como sucesso.** Coletas com `quota_exhausted` eram marcadas como concluídas (`next_collection_at` avançava); alertas `alerta` (ordenados por último) nunca chegavam a ser coletados.
+- **Falha registrada como silêncio.** O `build_live` reconstruía o entry a partir de CSVs vazios: alertas com centenas de comentários apareciam como `silent / no_videos_found` (35 de 40 em 13/10).
+- **Contabilidade.** Chamadas de respostas (`comments.list`) não eram contadas; `youtube_quota.used_today` nunca zerava (reset empurrado sempre para o dia seguinte; chegou a 297.300); o teto por run (5.000) × 4 runs/dia excedia a cota diária.
+
+### Alterado
+
+- `state_manager`: regra de janela — após uma coleta bem-sucedida depois de abertura+72h(+6h de margem), `window_finalized_at` é gravado e o alerta não gera mais chamadas (`skip_window_closed`); continua no dashboard e segue o arquivamento homologado (14d/28d). Alertas legados são finalizados só com evidência de coleta bem-sucedida pós-janela (`normalize_legacy_v03`).
+- `state_manager`: deduplicação de comentários por alerta (hash truncado, descartado ao finalizar a janela); falha de coleta não avança `next_collection_at` e registra `consecutive_failures`/`last_error`; rollover do dia de cota em America/Los_Angeles; coletas com janela aberta têm prioridade na fila.
+- `scripts/pipeline.py`: orçamentos separados para unidades (`YT_DAILY_BUDGET` 9.000/dia, `YT_RUN_BUDGET` 4.500/run) e para `search.list` (`YT_DAILY_SEARCH_BUDGET` 90/dia, `YT_RUN_SEARCH_BUDGET` 40/run), com contagem real; se a API recusar antes do orçamento (chave compartilhada), bloqueia o recurso recusado até o reset.
+- `faa_poc/youtube.py`: `commentThreads` com 100 itens/página e `part=snippet,replies` (respostas embutidas); `comments.list` só quando faltam respostas e o tópico está dentro da janela; toda chamada é cobrada.
+- `build_live`: falha de coleta preserva o conteúdo anterior e marca `collection_health.status="error"`; alertas legados sem prova de coleta ficam `unknown`, nunca `silent`.
+- `Live.jsx`: banner âmbar de falha técnica ("não é silêncio"); "janela de coleta encerrada" no lugar da cadência.
+
+### Dados
+
+- Migração única: workflow manual `ODRD Migração v0.3` (`scripts/migrate_v0_3.py`, checkout com histórico completo). `scripts/restore_live_from_history.py` restaura no `live.json` o conteúdo dos alertas esvaziados (ou com amostra menor que a histórica), a partir da versão com mais comentários (proveniência em `content_restored_from`), e reconta `n_comments_valid` (valor antigo em `n_comments_valid_legacy`; `counters_integrity` registra a origem). **Flags não foram alteradas.**
+
+### Simulação (`scripts/simulate_quota.py`, API falsa com a tabela de custos de 08/10/2026, 3 dias a partir do state de 13/10)
+
+- Antes: 10.000 unidades/dia (saturado) e 93–98 buscas/dia; até 34 alertas com `quota_exhausted` por run; 6 dos 10 alertas novos nunca coletados; 40/40 rotulados como silêncio ao final.
+- Depois: 400–520 unidades/dia e 28–58 buscas/dia; 0 falhas; todos os alertas novos coletados e finalizados.
+- **Limite estrutural:** com 2 buscas por coleta e ~4 coletas por janela, 100 buscas/dia cobrem da ordem de 12–25 alertas novos por dia. Num pico do El Niño isso exige pedido de aumento de cota ao Google ou redução de buscas por alerta.
+
+---
+
 ## [1.0.0] — 2026-08-18
 
 Freeze pré-institucional. Estabelece linha de base tecnológica anterior a qualquer vínculo formal Unicamp ou financiamento FAPESP — funciona como *Background IP* para eventual arquitetura futura em camadas (Core / Research Adapter / Commercial Adapter). Ver [ODRD_decisoes_PI_v1_pre_FAPESP.md](./docs/ODRD_decisoes_PI_v1_pre_FAPESP.md) para o raciocínio estratégico.

@@ -280,7 +280,7 @@ function PipelineHealthPanel({ liveData, state }) {
             icon={TrendingUp}
             label="Cota YouTube (dia)"
             value={`${state.youtube_quota.used_today.toLocaleString("pt-BR")}`}
-            sub={`de 10.000 · reset ${new Date(state.youtube_quota.reset_at).toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })}`}
+            sub={`de 10.000 · buscas ${state.youtube_quota.searches_today ?? "—"}/100 · reset ${new Date(state.youtube_quota.reset_at).toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })}`}
           />
           <KPI
             icon={CheckCircle2}
@@ -472,9 +472,13 @@ function AlertCard({ alert }) {
       })
     : "—";
 
-  // Silence banner
+  // Silence banner — só para silêncio observado; falha técnica tem banner próprio
   const isSilent = alert.collection_health?.status === "silent";
   const silenceType = alert.collection_health?.silence_type;
+  const isError = alert.collection_health?.status === "error";
+  const failures = alert.collection_health?.consecutive_failures ?? 0;
+  // v0.3: janela de coleta (abertura + 72h) encerrada → sem novas chamadas à API
+  const windowClosed = Boolean(alert.window_finalized_at);
 
   return (
     <div className={`bg-white rounded-lg border ${flagMeta.borderClass} overflow-hidden`}>
@@ -509,7 +513,9 @@ function AlertCard({ alert }) {
               {flagMeta.label}
             </span>
             <div className="text-stone-500">
-              cadência {flagMeta.cadenceHours}h · próxima {nextCollectionFmt}
+              {windowClosed
+                ? "janela de coleta encerrada"
+                : `cadência ${flagMeta.cadenceHours}h · próxima ${nextCollectionFmt}`}
             </div>
           </div>
         </div>
@@ -519,6 +525,21 @@ function AlertCard({ alert }) {
       <div className="p-4">
         {/* Trilha de flags — histórico operacional do alerta */}
         <FlagTimeline history={alert.flag_history} />
+
+        {/* Falha técnica (cota/API) — explicitamente NÃO é silêncio */}
+        {isError && (
+          <div className="bg-amber-50 border border-amber-200 rounded p-3 mb-3 flex items-start gap-2">
+            <AlertTriangle size={16} className="text-amber-600 flex-shrink-0 mt-0.5" />
+            <div className="text-xs text-amber-900">
+              <div className="font-medium">Coleta incompleta — falha técnica</div>
+              <div className="text-amber-800 mt-0.5">
+                A última tentativa não terminou (cota ou erro da API do YouTube
+                {failures > 1 ? `; ${failures} tentativas seguidas` : ""}). O alerta será
+                retentado. <em>Não é silêncio digital</em> e não entra no denominador de silêncio.
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Silence banner */}
         {isSilent && (
