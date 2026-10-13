@@ -7,8 +7,9 @@ Executa, sobre o state/live atuais do repositório:
    falhas de cota e reconta n_comments_valid (legado preservado).
 
 Idempotente. Precisa do histórico git completo (o workflow
-`migrate-v0.3.yml` faz checkout com fetch-depth: 0). Só usa a biblioteca
-padrão. O live.json é remontado por completo no próximo run do pipeline.
+`migrate-v0.3.yml` faz checkout com fetch-depth: 0). Depende só de
+`requests` (importado pelo pacote faa_poc). O live.json é remontado por
+completo no próximo run do pipeline.
 
 Uso: python scripts/migrate_v0_3.py [--dry-run]
 """

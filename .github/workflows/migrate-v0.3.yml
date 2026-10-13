@@ -33,6 +33,10 @@ jobs:
         with:
           python-version: '3.11'
 
+      # state_manager importa faa_poc, cujo __init__ carrega o cliente HTTP
+      - name: Instalar dependência mínima
+        run: pip install "requests~=2.31.0"
+
       - name: Migrar state/live
         run: |
           if [ "${{ inputs.dry_run }}" = "true" ]; then
