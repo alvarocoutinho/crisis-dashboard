@@ -362,7 +362,12 @@ def _build_alert_entry(
     if not vis_rows.empty:
         vis = vis_rows.iloc[-1]
         n_relevant = int(vis.get("n_relevant_videos", 0) or 0)
-        if n_relevant == 0:
+        vis_status = _text(vis.get("status"))
+        if vis_status in {"quota_exhausted", "api_error"}:
+            # v0.3: falha técnica NUNCA é silêncio observável
+            silence_type = None
+            status = "error"
+        elif n_relevant == 0:
             silence_type = "no_videos_found"
             status = "silent"
         elif my_comments.empty:
@@ -652,6 +657,20 @@ def build_live_json(
     """
     output_dir = Path(output_dir)
 
+    # v0.3: resultado por alerta do ciclo (busca + comentários). Alertas cuja
+    # coleta falhou NÃO têm o conteúdo reconstruído a partir de CSVs vazios/
+    # parciais — preserva-se o live anterior e marca-se collection_health=error.
+    status_df = _read_csv_or_empty(
+        output_dir / "alert_processing_status.csv",
+        expected_columns=["cod_alerta", "youtube_status", "comment_status"],
+    )
+    failed_cods: set[str] = set()
+    for _, row in status_df.iterrows():
+        yt = _text(row.get("youtube_status"))
+        cm = _text(row.get("comment_status"))
+        if not (yt == "ok" and cm in {"success", "not_applicable"}):
+            failed_cods.add(str(row.get("cod_alerta")))
+
     alerts_df = _read_csv_or_empty(
         output_dir / "alerts_log.csv",
         expected_columns=["cod_alerta", "codibge", "municipio", "uf", "nivel",
@@ -705,7 +724,7 @@ def build_live_json(
     # ================================================================
     # cods que foram efetivamente coletados neste ciclo (têm CSV)
     if not alerts_df.empty:
-        collected_cods = set(alerts_df["cod_alerta"].astype(str).unique())
+        collected_cods = set(alerts_df["cod_alerta"].astype(str).unique()) - failed_cods
     else:
         collected_cods = set()
 
@@ -818,6 +837,26 @@ def build_live_json(
             except Exception as e:
                 print(f"[build_live] falha ao montar alerta {alert_id} do state: {e}")
                 stats["skipped_no_data"] += 1
+
+    # v0.3: saúde da coleta e janela vêm do state (canônico)
+    by_id = {aid: meta for aid, meta in state_alerts.items()}
+    for entry in alerts:
+        meta = by_id.get(entry.get("id"), {})
+        failures = int(meta.get("consecutive_failures", 0) or 0)
+        if failures > 0:
+            entry["collection_health"] = OrderedDict([
+                ("status", "error"), ("silence_type", None),
+                ("last_error", meta.get("last_error")),
+                ("consecutive_failures", failures),
+            ])
+        elif meta.get("legacy_unverified") and (entry.get("collection_health") or {}).get("status") == "silent":
+            # Coletas v0.2 sem prova de sucesso: sem base para afirmar silêncio
+            entry["collection_health"] = OrderedDict([
+                ("status", "unknown"), ("silence_type", None),
+                ("last_error", "unverified_pre_v0.3"), ("consecutive_failures", 0),
+            ])
+        entry["window_finalized_at"] = meta.get("window_finalized_at")
+        entry["counters_integrity"] = meta.get("counters_integrity", "ok")
 
     print(f"[build_live] alertas montados: {stats['from_csv']} do CSV, "
           f"{stats['from_history']} do histórico, {stats['from_state']} do state, "

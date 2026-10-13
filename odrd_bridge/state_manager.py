@@ -26,16 +26,39 @@ Log agregado (src/data/alertas_agregados.csv):
 from __future__ import annotations
 
 import csv
+import hashlib
 import json
 from collections import OrderedDict, defaultdict
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Literal
+from zoneinfo import ZoneInfo
+
+from faa_poc.config import CONFIG as _FAA_CONFIG
 
 
 SCHEMA_VERSION = "0.2"
-PIPELINE_VERSION = "0.2.0"
+PIPELINE_VERSION = "0.3.0"
+
+# ------------------------------------------------------------------------------
+# v0.3 — Janela de coleta (correção do consumo de cota, 13/10/2026)
+# ------------------------------------------------------------------------------
+# O faa_poc só aceita vídeos publicados em [abertura-6h, abertura+72h] e só
+# conta comentários com |publicação - abertura| ≤ 72h. Passado esse prazo,
+# nenhum dado novo *dentro da janela* pode surgir: refazer search.list (100
+# unidades cada) e paginar comentários devolve sempre o mesmo conjunto.
+# Regra: depois que uma coleta BEM-SUCEDIDA ocorre após o fim da janela
+# (+ margem para atraso de indexação), a janela é dada como finalizada e o
+# alerta não gera mais chamadas à API. Ele continua no state/dashboard e segue
+# as regras de arquivamento homologadas (14d/28d sem dado novo).
+COLLECTION_WINDOW_HOURS = max(
+    int(_FAA_CONFIG["SEARCH_POST_ALERT_HOURS"]), int(_FAA_CONFIG["EVENT_WINDOW_HOURS"])
+)
+FINAL_SWEEP_MARGIN_HOURS = 6
+
+# Cota YouTube Data API: o dia de cota vira à meia-noite de America/Los_Angeles
+QUOTA_TZ = ZoneInfo("America/Los_Angeles")
 
 # Cadências (horas) por flag — pactuadas no wrap-up de 17/08/2026, homologadas Leila
 CADENCE_HOURS_BY_FLAG = {
@@ -193,7 +216,7 @@ def bump_aggregate_log(log: dict, alert: dict, counter: str, delta: int = 1) -> 
 class AlertDecision:
     """Uma decisão sobre um alerta para o ciclo corrente."""
     alert_id: str
-    action: Literal["collect", "skip_not_due", "archive_exhausted"]
+    action: Literal["collect", "skip_not_due", "archive_exhausted", "skip_window_closed"]
     flag: str
     reason: str
 
@@ -290,6 +313,14 @@ def decide_alerts_to_process(
                     ))
                     continue
 
+            # v0.3: janela finalizada → nenhuma chamada à API
+            if meta.get("window_finalized_at"):
+                decisions.append(AlertDecision(
+                    alert_id=alert_id, action="skip_window_closed", flag=flag,
+                    reason=f"{bucket_name}, janela finalizada em {meta['window_finalized_at']}",
+                ))
+                continue
+
             next_at = _parse_iso(meta.get("next_collection_at"))
             if next_at is None or next_at <= now:
                 decisions.append(AlertDecision(
@@ -302,14 +333,74 @@ def decide_alerts_to_process(
                     reason=f"{bucket_name}, próxima coleta em {next_at}",
                 ))
 
-    # Ordenação: collect primeiro; dentro de collect, prioritario > acompanhamento > alerta
+    # Ordenação: collect primeiro. v0.3: dentro de collect, alertas com janela
+    # ainda aberta vêm antes das varreduras finais (a cota vai para o evento em
+    # curso); depois prioritario > acompanhamento > alerta.
     flag_priority = {"prioritario": 0, "acompanhamento": 1, "alerta": 2}
-    action_priority = {"collect": 0, "archive_exhausted": 1, "skip_not_due": 2}
+    action_priority = {"collect": 0, "archive_exhausted": 1, "skip_not_due": 2,
+                       "skip_window_closed": 3}
+
+    def _window_rank(d: AlertDecision) -> int:
+        end = collection_window_end(_find_alert(state, d.alert_id) or {})
+        return 0 if (end is None or now < end) else 1
+
     decisions.sort(key=lambda d: (
         action_priority.get(d.action, 99),
+        _window_rank(d) if d.action == "collect" else 0,
         flag_priority.get(d.flag, 99),
     ))
     return decisions
+
+
+def collection_window_end(meta: dict) -> datetime | None:
+    """Fim da janela de coleta do alerta (abertura + 72h + margem)."""
+    opened = _parse_iso(meta.get("opened_at"))
+    if opened is None:
+        return None
+    return opened + timedelta(hours=COLLECTION_WINDOW_HOURS + FINAL_SWEEP_MARGIN_HOURS)
+
+
+def normalize_legacy_v03(state: dict, now: datetime | None = None) -> list[str]:
+    """Migração idempotente para a regra de janela v0.3.
+
+    Alertas anteriores à v0.3 não têm `window_finalized_at`. Só é seguro
+    finalizá-los quando há evidência de uma coleta bem-sucedida DEPOIS do fim
+    da janela: `last_new_data_at`/`last_new_comment_at` só eram gravados quando
+    a coleta devolvia dados. Sem essa evidência (ex.: alertas `alerta` cujas
+    coletas falharam por cota), o alerta recebe uma varredura final.
+
+    Também marca `counters_integrity`, porque até a v0.2.2 os comentários
+    recoletados a cada ciclo eram somados de novo a `n_comments_valid`.
+
+    Returns:
+        ids finalizados nesta chamada.
+    """
+    now = now or datetime.now(timezone.utc)
+    finalized = []
+    for bucket_name in ("active_alerts", "extended_window_alerts", "archived_alerts"):
+        for alert_id, meta in state.get(bucket_name, {}).items():
+            if "counters_integrity" not in meta:
+                meta["counters_integrity"] = (
+                    "inflated_pre_v0.3" if meta.get("n_comments_valid", 0) > 0 else "ok"
+                )
+            if bucket_name == "archived_alerts" or meta.get("window_finalized_at"):
+                continue
+            end = collection_window_end(meta)
+            stamps = [_parse_iso(meta.get(k)) for k in ("last_new_data_at", "last_new_comment_at")]
+            stamps = [p for p in stamps if p is not None]
+            proofs = [p for p in stamps if end is not None and p >= end]
+            if end is not None and now >= end and proofs:
+                meta["window_finalized_at"] = _iso_utc(max(proofs))
+                meta["window_finalized_reason"] = "legacy_inferred_v0.3"
+                meta.pop("seen_comment_hashes", None)
+                finalized.append(alert_id)
+            elif not stamps and "legacy_unverified" not in meta:
+                # Sem prova de coleta bem-sucedida: as coletas v0.2 deste alerta
+                # podem ter sido falhas de cota marcadas como concluídas. Não
+                # afirmar silêncio e coletar já no próximo ciclo.
+                meta["legacy_unverified"] = True
+                meta["next_collection_at"] = _iso_utc(now)
+    return finalized
 
 
 def _should_archive_by_time(meta: dict, now: datetime) -> bool:
@@ -477,8 +568,20 @@ def mark_collection_complete(
     videos_collected_now: list[str] | None = None,
     predictions_this_alert: object = None,  # pd.DataFrame; usa duck typing p/ evitar import
     now: datetime | None = None,
+    success: bool = True,
+    error: str | None = None,
 ) -> None:
-    """Atualiza state depois de uma coleta bem-sucedida de um alerta (v0.2).
+    """Atualiza state depois de uma coleta de um alerta (v0.2; v0.3 abaixo).
+
+    v0.3:
+        - `success=False` (quota_exhausted/api_error/deferred): dados parciais
+          ainda são incorporados (com deduplicação), mas `last_collection_at` e
+          `next_collection_at` NÃO avançam — o alerta continua devido e é
+          retentado; `consecutive_failures`/`last_error` registram a falha.
+        - Deduplicação: só comentários nunca vistos para este alerta contam em
+          `n_comments_valid` e renovam `last_new_comment_at` (antes, cada ciclo
+          recontava todos os comentários recoletados).
+        - Sucesso após o fim da janela de coleta → `window_finalized_at`.
 
     Args:
         state: state mutável
@@ -529,6 +632,15 @@ def mark_collection_complete(
         except Exception:
             n_rows = 0
 
+        # v0.3: descarta comentários já contados para este alerta
+        if n_rows > 0 and "comment_id" in df.columns:
+            seen = set(meta.get("seen_comment_hashes", []))
+            hashes = df["comment_id"].astype(str).map(_comment_hash)
+            fresh_mask = ~hashes.isin(seen)
+            df = df[fresh_mask.values]
+            meta["seen_comment_hashes"] = sorted(seen | set(hashes))
+            n_rows = len(df)
+
         if n_rows > 0 and "n_model_labels" in df.columns:
             has_any_new_comment = True
             valid_df = df[df["n_model_labels"] >= 1]
@@ -551,12 +663,40 @@ def mark_collection_complete(
     if has_any_new_comment:
         meta["last_new_comment_at"] = now_iso
 
+    meta["last_attempt_at"] = now_iso
+    if not success:
+        # v0.3: falha não é coleta — mantém o alerta devido para retentativa
+        meta["consecutive_failures"] = int(meta.get("consecutive_failures", 0)) + 1
+        meta["last_error"] = error or "unknown"
+        promote_flag_if_eligible(meta, log, now)
+        return
+
+    meta["consecutive_failures"] = 0
+    meta["last_error"] = None
+    meta["legacy_unverified"] = False
+
     # 4. Timestamps de coleta e próxima coleta pela flag atual
     meta["last_collection_at"] = now_iso
     meta["next_collection_at"] = _next_collection_from_flag(meta.get("flag", "alerta"), now)
 
     # 5. Promoção de flag (pode mutar meta["flag"], meta["flag_history"] e log)
     promote_flag_if_eligible(meta, log, now)
+
+    # 6. v0.3: coleta bem-sucedida após o fim da janela é a varredura final
+    end = collection_window_end(meta)
+    if end is not None and now >= end and not meta.get("window_finalized_at"):
+        meta["window_finalized_at"] = now_iso
+        meta["window_finalized_reason"] = "final_sweep"
+        meta.pop("seen_comment_hashes", None)  # minimização: não é mais necessário
+
+
+def _comment_hash(comment_id: str) -> str:
+    """Hash curto e não reversível do comment_id, só para deduplicação.
+
+    O state.json é público; guardar ids crus do YouTube permitiria listar o
+    corpus. 12 hex (48 bits) bastam para milhares de ids por alerta.
+    """
+    return hashlib.sha256(f"odrd-dedup-v1:{comment_id}".encode()).hexdigest()[:12]
 
 
 def _find_alert(state: dict, alert_id: str) -> dict | None:
@@ -669,6 +809,7 @@ def update_run_metadata(
     now: datetime | None = None,
     pipeline_version: str = PIPELINE_VERSION,
     cemaden_checked: bool = False,
+    searches_used: int = 0,
 ) -> None:
     """Atualiza metadados de execução do state — sempre chamado no fim do run.
 
@@ -686,17 +827,33 @@ def update_run_metadata(
     if cemaden_checked:
         state["last_cemaden_check_at"] = now_iso
 
-    # Reset de cota YouTube: se passou da meia-noite Pacific desde last_run
-    quota = state.setdefault("youtube_quota", {"used_today": 0, "reset_at": None})
-    reset_at = _parse_iso(quota.get("reset_at"))
-    if reset_at is None or now >= reset_at:
-        quota["used_today"] = quota_used
-    else:
-        quota["used_today"] = quota.get("used_today", 0) + quota_used
+    # v0.3: contabilidade real por dia de cota (meia-noite America/Los_Angeles).
+    # A versão anterior empurrava reset_at sempre para "amanhã 07h UTC" e,
+    # como o cron roda a cada 6h, o contador nunca zerava (chegou a 297.300).
+    quota = roll_quota_day(state, now)
+    quota["used_today"] = int(quota.get("used_today", 0)) + int(quota_used)
+    quota["searches_today"] = int(quota.get("searches_today", 0)) + int(searches_used)
 
-    # Próximo reset: 07h UTC (meia-noite Pacific)
-    next_reset = (now + timedelta(days=1)).replace(hour=7, minute=0, second=0, microsecond=0)
-    quota["reset_at"] = _iso_utc(next_reset)
+
+def roll_quota_day(state: dict, now: datetime | None = None) -> dict:
+    """Zera `youtube_quota.used_today` quando o dia de cota (Pacific) mudou.
+
+    Returns:
+        o dict `state["youtube_quota"]` já normalizado.
+    """
+    now = now or datetime.now(timezone.utc)
+    quota = state.setdefault("youtube_quota", {"used_today": 0, "reset_at": None})
+    local = now.astimezone(QUOTA_TZ)
+    day = local.date().isoformat()
+    if quota.get("day") != day:
+        quota["day"] = day
+        quota["used_today"] = 0
+        quota["searches_today"] = 0
+        quota.pop("exhausted_by_api", None)
+        quota.pop("search_exhausted_by_api", None)
+    next_midnight = (local + timedelta(days=1)).replace(hour=0, minute=0, second=0, microsecond=0)
+    quota["reset_at"] = _iso_utc(next_midnight)
+    return quota
 
 
 # ==============================================================================

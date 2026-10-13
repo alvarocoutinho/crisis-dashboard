@@ -2,10 +2,11 @@
 from __future__ import annotations
 import getpass, os
 from dataclasses import dataclass, field
+from datetime import datetime
 import requests
 from .constants import YT_BASE, YT_SEARCH_TERMS
 from .text import clean_text, classify_themes, comment_quality
-from .timeutils import alert_search_window, hours_from_alert, in_event_window
+from .timeutils import alert_search_window, hours_from_alert, in_event_window, parse_dt
 
 @dataclass
 class ApiResult:
@@ -15,8 +16,23 @@ class ApiResult:
 
 @dataclass
 class QuotaTracker:
-    used: int=0; ceiling: int=2400; high_reserve: int=400
-    def can_search(self, high: bool) -> bool: return self.used + 100 <= (self.ceiling if high else self.ceiling-self.high_reserve)
+    """Per-run quota budget, following the YouTube Data API cost table
+    (page updated 2026-10-08): every call costs 1 unit against the daily
+    10,000, and ``search.list`` additionally has its OWN limit of 100
+    calls/day. Units and searches are therefore budgeted separately.
+
+    v0.3: every request is charged where it is made (including reply lookups
+    that were previously uncounted). ``exhausted`` / ``search_exhausted``
+    latch once the API itself answers quotaExceeded, so the rest of the run
+    stops calling it.
+    """
+    used: int=0; ceiling: int=2400; high_reserve: int=400; exhausted: bool=False
+    searches: int=0; search_ceiling: int=40; search_high_reserve: int=4; search_exhausted: bool=False
+    def can_search(self, high: bool) -> bool:
+        limit = self.search_ceiling if high else self.search_ceiling - self.search_high_reserve
+        return not (self.exhausted or self.search_exhausted) and self.searches + 1 <= limit and self.can_spend(1)
+    def charge_search(self) -> None: self.searches += 1; self.used += 1
+    def can_spend(self, units:int=1) -> bool: return not self.exhausted and self.used + units <= self.ceiling
     def charge(self, units:int) -> None: self.used += units
 
 def resolve_key(config:dict) -> str|None:
@@ -67,28 +83,60 @@ def _status_from_response(response) -> tuple[str, str]:
     status = "quota_exhausted" if response.status_code == 403 and "quota" in body else "api_error"
     return status, f"{response.status_code}:{response.text[:180]}"
 
-def comments(video_id:str,key:str,*,max_pages:int,order:str) -> ApiResult:
-    """Retrieve up to ``max_pages`` comment-thread pages plus available replies."""
-    collected=[]; token=None; pages=0
+COMMENT_PAGE_SIZE = 100  # API maximum; 1 unit per page regardless of size
+
+def comments(video_id:str,key:str,*,max_pages:int,order:str,quota:QuotaTracker|None=None,window_end:datetime|None=None) -> ApiResult:
+    """Retrieve up to ``max_pages`` comment-thread pages plus available replies.
+
+    v0.3 (quota): pages of 100 threads instead of 20 (same 1-unit cost);
+    replies come embedded via ``part=snippet,replies`` and ``comments.list``
+    is called only when a thread has more replies than the embedded ones;
+    threads whose top-level comment is after ``window_end`` skip that extra
+    call, because their replies are necessarily later and would be dropped
+    by ``comment_links`` anyway. Every request is charged to ``quota``.
+    A partial result (budget or API quota ran out) keeps the items collected
+    so far and reports ``quota_exhausted`` so the alert is retried later.
+    """
+    collected=[]; token=None; pages=0; incomplete=""
+    def _spend() -> bool:
+        if quota is None: return True
+        if not quota.can_spend(1): return False
+        quota.charge(1); return True
     while pages < max_pages:
-        params={"part":"snippet","videoId":video_id,"maxResults":20,"order":order,"key":key}
+        if not _spend(): return ApiResult(items=collected,status="quota_exhausted",error="run_budget_exhausted")
+        params={"part":"snippet,replies","videoId":video_id,"maxResults":COMMENT_PAGE_SIZE,"order":order,"key":key}
         if token: params["pageToken"]=token
         response=requests.get(f"{YT_BASE}/commentThreads",params=params,timeout=20)
         status,error=_status_from_response(response)
-        if status != "ok": return ApiResult(items=collected,status=status,error=error)
+        if status != "ok":
+            if status=="quota_exhausted" and quota is not None: quota.exhausted=True
+            return ApiResult(items=collected,status=status,error=error)
         data=response.json(); pages += 1
         for item in data.get("items",[]):
             thread=item.get("snippet",{}); top=thread.get("topLevelComment",{}); snippet=top.get("snippet",{}); cid=top.get("id","")
-            if cid: collected.append(_comment_row(snippet,video_id=video_id,comment_id=cid,parent_id=None,is_reply=False))
-            if thread.get("totalReplyCount",0)>0 and cid:
-                reply_response=requests.get(f"{YT_BASE}/comments",params={"part":"snippet","parentId":cid,"maxResults":100,"key":key},timeout=20)
-                reply_status,_=_status_from_response(reply_response)
-                if reply_status != "ok": continue
-                for reply in reply_response.json().get("items",[]):
-                    rs=reply.get("snippet",{}); rid=reply.get("id","")
-                    if rid: collected.append(_comment_row(rs,video_id=video_id,comment_id=rid,parent_id=cid,is_reply=True))
+            if not cid: continue
+            collected.append(_comment_row(snippet,video_id=video_id,comment_id=cid,parent_id=None,is_reply=False))
+            n_replies=int(thread.get("totalReplyCount",0) or 0)
+            if n_replies<=0: continue
+            replies=(item.get("replies") or {}).get("comments",[]) or []
+            top_published=parse_dt(snippet.get("publishedAt"))
+            after_window=window_end is not None and top_published is not None and top_published>window_end
+            if len(replies)<n_replies and not after_window:
+                if not _spend():
+                    incomplete="run_budget_exhausted"
+                else:
+                    reply_response=requests.get(f"{YT_BASE}/comments",params={"part":"snippet","parentId":cid,"maxResults":100,"key":key},timeout=20)
+                    reply_status,reply_error=_status_from_response(reply_response)
+                    if reply_status=="ok": replies=reply_response.json().get("items",[])
+                    elif reply_status=="quota_exhausted":
+                        incomplete=reply_error
+                        if quota is not None: quota.exhausted=True
+            for reply in replies:
+                rs=reply.get("snippet",{}); rid=reply.get("id","")
+                if rid: collected.append(_comment_row(rs,video_id=video_id,comment_id=rid,parent_id=cid,is_reply=True))
         token=data.get("nextPageToken")
         if not token: break
+    if incomplete: return ApiResult(items=collected,status="quota_exhausted",error=incomplete)
     return ApiResult(items=collected)
 
 def comment_links(comment_rows:list[dict],*,alert:dict,link_scope:str,window_hours:int) -> tuple[list[dict],list[dict],int]:
