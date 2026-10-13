@@ -37,7 +37,7 @@ STATE_PATH = REPO_ROOT / "src" / "data" / "state.json"
 LIVE_PATH = REPO_ROOT / "src" / "data" / "live.json"
 AGGREGATE_LOG_PATH = REPO_ROOT / "src" / "data" / "alertas_agregados.csv"
 FAA_OUTPUT_DIR = Path(os.environ.get("FAA_OUTPUT_DIR", "/tmp/faa_pipeline_run"))
-PIPELINE_VERSION = "0.3.0"
+PIPELINE_VERSION = "0.3.1"
 
 # v0.3 — orçamento de cota YouTube Data API. Pela tabela de custos oficial
 # (atualizada em 08/10/2026) toda chamada custa 1 unidade contra 10.000/dia e
@@ -387,11 +387,16 @@ def main() -> int:
             cod = decision.alert_id.rsplit("_", 1)[-1]
             # Vídeos coletados neste ciclo para este alerta
             videos_this_alert: list[str] = []
+            evidence_this_alert: dict[str, str] = {}
             if links_df is not None and not links_df.empty:
                 try:
-                    videos_this_alert = links_df[
-                        links_df["cod_alerta"].astype(str) == cod
-                    ]["video_id"].astype(str).tolist()
+                    rows = links_df[links_df["cod_alerta"].astype(str) == cod]
+                    videos_this_alert = rows["video_id"].astype(str).tolist()
+                    if "municipal_evidence" in rows.columns:
+                        evidence_this_alert = dict(zip(
+                            rows["video_id"].astype(str),
+                            rows["municipal_evidence"].fillna("").astype(str),
+                        ))
                 except Exception as e:
                     log(f"não foi possível ler videos coletados de {decision.alert_id}: {e}", "WARN")
 
@@ -413,6 +418,7 @@ def main() -> int:
                 now=now,
                 success=ok,
                 error=err,
+                video_evidence=evidence_this_alert,
             )
             if not ok:
                 log(f"coleta incompleta de {decision.alert_id} ({err}) — será retentada", "WARN")

@@ -570,6 +570,7 @@ def mark_collection_complete(
     now: datetime | None = None,
     success: bool = True,
     error: str | None = None,
+    video_evidence: dict[str, str] | None = None,
 ) -> None:
     """Atualiza state depois de uma coleta de um alerta (v0.2; v0.3 abaixo).
 
@@ -610,6 +611,10 @@ def mark_collection_complete(
     if meta is None:
         print(f"[state_manager] AVISO: alert_id {alert_id} não encontrado em state")
         return
+
+    # 0. v0.3.1: evidência municipal por vídeo (onde o vídeo nomeia o município)
+    if video_evidence:
+        merge_video_evidence(meta, video_evidence)
 
     # 1. Merge de vídeos coletados (union set, preserva idempotência)
     existing_videos = set(meta.get("videos_collected", []))
@@ -688,6 +693,25 @@ def mark_collection_complete(
         meta["window_finalized_at"] = now_iso
         meta["window_finalized_reason"] = "final_sweep"
         meta.pop("seen_comment_hashes", None)  # minimização: não é mais necessário
+
+
+_EVIDENCE_RANK = {"titulo+descricao": 4, "titulo": 3, "descricao": 2, "transcricao": 1, "nenhuma": 0}
+
+
+def merge_video_evidence(meta: dict, incoming: dict[str, str]) -> None:
+    """Grava a evidência municipal por vídeo, mantendo a mais forte já vista.
+
+    Uma descrição editada depois ou uma transcrição posterior podem só
+    acrescentar evidência; nunca a rebaixam.
+    """
+    current = meta.setdefault("video_evidence", {})
+    for vid, ev in incoming.items():
+        if not ev:
+            continue
+        if _EVIDENCE_RANK.get(ev, 0) >= _EVIDENCE_RANK.get(current.get(vid), -1):
+            current[vid] = ev
+    vids = set(meta.get("videos_collected", [])) | set(current)
+    meta["n_videos_municipais"] = sum(1 for v in vids if _EVIDENCE_RANK.get(current.get(v), 0) > 0)
 
 
 def _comment_hash(comment_id: str) -> str:

@@ -64,12 +64,20 @@ def search(query:str, after:str, before:str, key:str, n:int) -> ApiResult:
     result.items=out; return result
 
 def stats(video_ids:list[str],key:str) -> ApiResult:
+    """Estatísticas + descrição completa e tags (v0.3.1).
+
+    ``search.list`` devolve só um trecho curto da descrição; ``videos.list``
+    com ``part=snippet`` traz a descrição inteira na MESMA chamada (custo
+    de 1 unidade por chamada, até 50 vídeos), usada como evidência municipal.
+    """
     if not video_ids: return ApiResult(items=[])
-    result=_request("videos",{"part":"statistics","id":",".join(video_ids),"key":key})
+    result=_request("videos",{"part":"snippet,statistics","id":",".join(video_ids[:50]),"key":key})
     if result.status!="ok": return result
     out=[]
     for item in result.items:
-        data=item.get("statistics",{}); out.append({"video_id":item.get("id"),"view_count":data.get("viewCount",0),"like_count":data.get("likeCount",0),"comment_count":data.get("commentCount",0)})
+        data=item.get("statistics",{}); snip=item.get("snippet",{})
+        out.append({"video_id":item.get("id"),"view_count":data.get("viewCount",0),"like_count":data.get("likeCount",0),"comment_count":data.get("commentCount",0),
+                    "description":snip.get("description",""),"tags":"|".join(snip.get("tags",[]) or [])})
     result.items=out; return result
 
 def _comment_row(snippet:dict,*,video_id:str,comment_id:str,parent_id:str|None,is_reply:bool) -> dict:

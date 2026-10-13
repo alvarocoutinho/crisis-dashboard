@@ -6,6 +6,24 @@ O formato segue [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) e o 
 
 ---
 
+## [Pipeline 0.3.1] — 2026-10-13
+
+**Evidência municipal por vínculo alerta–vídeo.** A auditoria de 13/10 mostrou que 38% dos vínculos só tinham "SP"/estado no título e que, nos 85 vínculos verificáveis por transcrição, 79% dos municípios não aparecem na fala. O vínculo continua aceito pelo filtro de relevância (pertence ao evento), mas agora registra **se o vídeo nomeia o município do alerta**.
+
+### Adicionado
+
+- `faa_poc/evidence.py`: `municipal_evidence()` → `titulo+descricao | titulo | descricao | transcricao | nenhuma`. Ignora usos não municipais do nome ("Rio Ribeira", "Vale do Taquari", "Marginal Tietê"); para a capital paulista, "São Paulo"/"SP" sozinhos não contam (ambíguos com o estado), só capital, bairros e zonas.
+- `videos.list` passa a pedir `part=snippet,statistics` na mesma chamada (custo inalterado): descrição completa e tags vão para o CSV de vídeos (artifacts) e alimentam a evidência.
+- State: `video_evidence` por alerta e `n_videos_municipais`; a evidência só é promovida, nunca rebaixada.
+- `scripts/backfill_video_evidence.py` + workflow manual **"ODRD Evidência municipal — backfill"**: aplica a evidência aos vídeos já coletados (~4 unidades de cota); aceita `--transcripts` para somar transcrições locais. Grava só o rótulo, nunca a descrição ou a transcrição.
+- Painel: selo por vídeo ("cita o município" / "cobertura regional") e "N citam <município>" no card.
+
+### Não alterado (deliberadamente)
+
+- O filtro de relevância continua decidindo quais vídeos entram; a descrição completa **não** é usada para aceitar vídeos (risco de vínculo excessivo por listas de cidades). Revisar depois de medir a evidência.
+
+---
+
 ## [Pipeline 0.3.0] — 2026-10-13
 
 **Correção do consumo de cota da YouTube Data API e da contaminação do dashboard por falhas de cota.**

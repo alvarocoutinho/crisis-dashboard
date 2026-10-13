@@ -12,7 +12,7 @@ daily quota that resets at midnight America/Los_Angeles, and charges only
 requests it actually served.
 """
 from __future__ import annotations
-import hashlib, importlib.util, json, os, shutil, sys, tempfile, types
+import collections, hashlib, importlib.util, json, os, shutil, sys, tempfile, types
 from collections import Counter, defaultdict
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -162,7 +162,9 @@ def fake_get(url, params=None, timeout=None, **kw):
         return Resp(403, {"error": {"errors": [{"reason": "quotaExceeded"}], "message": "The request cannot be completed because you have exceeded your quota."}})
     if endpoint == "search": return Resp(200, {"items": W.search(params)})
     if endpoint == "videos":
-        return Resp(200, {"items": [{"id": v, "statistics": {"viewCount": 100, "likeCount": 1, "commentCount": W.videos.get(v, {}).get("n_threads", 0)}} for v in params["id"].split(",")]})
+        return Resp(200, {"items": [{"id": v, "statistics": {"viewCount": 100, "likeCount": 1, "commentCount": W.videos.get(v, {}).get("n_threads", 0)},
+                                     "snippet": {"description": (f"Reportagem em {W.videos[v]['muni']}" if h(v, "d") % 2 else "Inscreva-se no canal"), "tags": ["chuva"]}}
+                                    for v in params["id"].split(",")]})
     if endpoint == "commentThreads": return Resp(200, W.comment_threads(params))
     return Resp(200, W.replies(params))
 
@@ -255,6 +257,9 @@ alerta_status = {aid: (m.get("flag"), m.get("n_videos_aderentes"), m.get("last_c
 print("active alerts after replay:")
 for k, v in alerta_status.items(): print("  ", k, v)
 live = json.loads((work / "live.json").read_text())
+ev = collections.Counter(e for b in ("active_alerts", "extended_window_alerts") for m in final[b].values() for e in (m.get("video_evidence") or {}).values())
+print("video_evidence no state:", dict(ev))
+print("live n_videos_municipais:", sum(a.get("n_videos_municipais", 0) for a in live["alerts"]), "verificados:", sum(a.get("n_videos_verificados", 0) for a in live["alerts"]))
 print("live collection_health:", Counter(a["collection_health"].get("status") for a in live["alerts"]),
       Counter(a["collection_health"].get("silence_type") for a in live["alerts"]))
 json.dump(rows, open(work / "rows.json", "w"))

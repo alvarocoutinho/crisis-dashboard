@@ -857,6 +857,14 @@ def build_live_json(
             ])
         entry["window_finalized_at"] = meta.get("window_finalized_at")
         entry["counters_integrity"] = meta.get("counters_integrity", "ok")
+        # v0.3.1: evidência municipal por vídeo ("" = ainda não verificada)
+        ev = meta.get("video_evidence", {}) or {}
+        for v in entry.get("videos") or []:
+            v["municipal_evidence"] = ev.get(str(v.get("video_id")), "")
+        entry["n_videos_municipais"] = sum(
+            1 for v in entry.get("videos") or [] if v["municipal_evidence"] not in ("", "nenhuma"))
+        entry["n_videos_verificados"] = sum(
+            1 for v in entry.get("videos") or [] if v["municipal_evidence"] != "")
 
     print(f"[build_live] alertas montados: {stats['from_csv']} do CSV, "
           f"{stats['from_history']} do histórico, {stats['from_state']} do state, "
