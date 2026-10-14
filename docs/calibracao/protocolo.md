@@ -74,6 +74,11 @@ A IA nunca entra no gabarito nem na adjudicação.
   3. "Chuvas em SP" para um alerta da capital: a IA marcou `indeterminado`.
 
   Esses pares são de treino. Ajustar o livro a partir deles é permitido; ajustar a partir da amostra, não.
+- **Decisões do pesquisador (14/10), que formam o livro v1.1:**
+  1. o desabamento durante o episódio conta como `perigo = sim`, mesmo sem causa declarada;
+  2. o rio com o nome da cidade só vale `municipio` se o vídeo indicar a cidade;
+  3. "SP" sozinho para alerta da capital vale `regiao_vizinho` e entra no episódio regional.
+- **Consequência da regra 1 para a H2:** a cobertura dos desabamentos da Penha (obra irregular) entra no corpus. Ela concentra comentários de responsabilização sobre a obra, e não sobre a chuva. A análise da H2 deve testar a sensibilidade com e sem esses vídeos.
 
 **Limitação a declarar:** pela interface de conversa não se controla a temperatura, e a versão do modelo que atende pode mudar. Isso compromete a reprodutibilidade exata. Por isso a autoconsistência entre a rodada 1 e a rodada 2 é obrigatória, e as respostas brutas são guardadas. Se a IA for usada depois em produção (monitoramento), o caminho reprodutível é a API, com o modelo fixado.
 
