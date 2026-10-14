@@ -6,6 +6,19 @@ O formato segue [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) e o 
 
 ---
 
+## [Arquivamento provisório] — 2026-10-14
+
+- **Artifacts do pipeline cifrados.** O repositório é público, e qualquer pessoa logada no GitHub podia baixar os artifacts, que contêm texto de comentários.
+  - Agora os CSVs vão em `crus.7z` (AES-256, nomes dos arquivos cifrados), com o segredo `BACKUP_PASSPHRASE`.
+  - Sem o segredo, nada é enviado.
+- **`backup-mensal.yml` e `scripts/backup_artifacts.py`:** todo dia 1, juntam os artifacts dos últimos 90 dias num pacote cifrado e testado, para o pesquisador baixar e guardar.
+  - O manifesto, sem conteúdo, fica em `data/backups/`.
+  - Apagar os artifacts originais só é possível manualmente (`apagar_originais = APAGAR`) e só para o que está num manifesto.
+- **`docs/arquivamento.md`:** classes de dados, rotina mensal, destino definitivo pendente (conta institucional) e pendências de conformidade (termos do YouTube).
+- **Testes:** 2.
+
+---
+
 ## [Observação CEMADEN 0.1.0] — 2026-10-14
 
 - **Workflow `cemaden-horario.yml`** (minuto 41 de cada hora), com `scripts/observe_cemaden.py` e o pacote `odrd_cemaden/`.

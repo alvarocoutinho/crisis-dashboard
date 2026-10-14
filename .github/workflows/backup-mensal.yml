@@ -1,0 +1,109 @@
+name: ODRD Backup mensal dos dados brutos
+
+# Junta todos os artifacts do pipeline ainda válidos (até 90 dias) num único
+# pacote cifrado (7z AES-256, cabeçalhos cifrados, senha = segredo
+# BACKUP_PASSPHRASE) e publica como artifact "odrd-backup-AAAA-MM".
+# O pesquisador baixa esse arquivo e guarda fora do GitHub. O manifesto
+# (nomes, datas, tamanhos e hashes — nada de conteúdo) é commitado em
+# data/backups/ como registro do que entrou em cada backup.
+#
+# Apagar os artifacts originais é opcional e manual: só depois de baixar e
+# conferir o pacote, rodar à mão com "apagar_originais" = APAGAR. Só são
+# apagados os artifacts listados no manifesto do mês informado.
+on:
+  schedule:
+    - cron: '17 12 1 * *'     # dia 1 de cada mês, 09h17 de Brasília
+  workflow_dispatch:
+    inputs:
+      apagar_originais:
+        description: 'Digite APAGAR para apagar os artifacts listados no manifesto do mês abaixo (só depois de baixar e conferir o backup)'
+        type: string
+        default: ''
+      mes_manifesto:
+        description: 'Mês do manifesto a usar para apagar (AAAA-MM); vazio = mês atual'
+        type: string
+        default: ''
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: odrd-backup
+  cancel-in-progress: false
+
+jobs:
+  backup:
+    if: ${{ inputs.apagar_originais != 'APAGAR' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
+      BACKUP_PASSPHRASE: ${{ secrets.BACKUP_PASSPHRASE }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install "requests~=2.31.0"
+      - name: Conferir o segredo
+        run: |
+          if [ -z "$BACKUP_PASSPHRASE" ]; then
+            echo "::error title=Segredo ausente::crie o segredo BACKUP_PASSPHRASE (Settings → Secrets and variables → Actions)"; exit 1
+          fi
+      - name: Baixar os artifacts do pipeline
+        id: baixar
+        run: |
+          MES=$(TZ=America/Sao_Paulo date +%Y-%m)
+          echo "mes=$MES" >> $GITHUB_OUTPUT
+          python scripts/backup_artifacts.py baixar --saida "/tmp/odrd-backup-$MES" --manifesto "data/backups/manifesto_$MES.csv"
+      - name: Cifrar o pacote
+        run: |
+          MES=${{ steps.baixar.outputs.mes }}
+          command -v 7z >/dev/null || sudo apt-get install -y -qq p7zip-full
+          cp "data/backups/manifesto_$MES.csv" "/tmp/odrd-backup-$MES/"
+          mkdir -p /tmp/pacote
+          7z a -t7z -mhe=on -mx=9 -p"$BACKUP_PASSPHRASE" "/tmp/pacote/odrd-backup-$MES.7z" "/tmp/odrd-backup-$MES" > /dev/null
+          7z t -p"$BACKUP_PASSPHRASE" "/tmp/pacote/odrd-backup-$MES.7z" > /dev/null && echo "pacote testado: íntegro"
+          sha256sum "/tmp/pacote/odrd-backup-$MES.7z" | tee "/tmp/pacote/odrd-backup-$MES.7z.sha256"
+          ls -la /tmp/pacote
+      - uses: actions/upload-artifact@v4
+        with:
+          name: odrd-backup-${{ steps.baixar.outputs.mes }}
+          path: /tmp/pacote/
+          retention-days: 90
+          if-no-files-found: error
+      - name: Commitar o manifesto
+        run: |
+          git config user.name "odrd-pipeline[bot]"
+          git config user.email "odrd-pipeline[bot]@users.noreply.github.com"
+          git add data/backups
+          if git diff --cached --quiet; then echo "manifesto sem mudança"; exit 0; fi
+          git commit -q -m "chore(backup): manifesto ${{ steps.baixar.outputs.mes }}"
+          for i in 1 2 3; do
+            git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0
+            sleep $((i * 15))
+          done
+          echo "::error::push falhou"; exit 1
+
+  apagar:
+    if: ${{ inputs.apagar_originais == 'APAGAR' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install "requests~=2.31.0"
+      - name: Apagar os artifacts já incluídos num backup
+        run: |
+          MES="${{ inputs.mes_manifesto }}"; [ -z "$MES" ] && MES=$(TZ=America/Sao_Paulo date +%Y-%m)
+          test -f "data/backups/manifesto_$MES.csv" || { echo "::error::não existe data/backups/manifesto_$MES.csv"; exit 1; }
+          python scripts/backup_artifacts.py apagar --manifesto "data/backups/manifesto_$MES.csv" --confirmar APAGAR
