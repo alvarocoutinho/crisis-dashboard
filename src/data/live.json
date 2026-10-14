@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T10:58:04Z",
+  "generated_at": "2026-10-14T16:17:30Z",
   "pipeline_version": "0.3.3",
   "pilot_mode": true,
   "dry_run": false,
@@ -116,6 +116,7 @@
       "next_collection_at": "2026-10-14T20:07:30Z",
       "window_finalized_at": "2026-10-13T20:07:30Z",
       "counters_integrity": "ok",
+      "videos_por_formato": {},
       "n_videos_municipais": 0,
       "n_videos_verificados": 0,
       "n_comments_municipais": 0,
@@ -246,6 +247,7 @@
       "next_collection_at": "2026-10-14T20:07:30Z",
       "window_finalized_at": "2026-10-13T20:07:30Z",
       "counters_integrity": "ok",
+      "videos_por_formato": {},
       "n_videos_municipais": 0,
       "n_videos_verificados": 0,
       "n_comments_municipais": 0,
@@ -370,6 +372,7 @@
       "next_collection_at": "2026-10-14T20:07:30Z",
       "window_finalized_at": "2026-10-13T20:07:30Z",
       "counters_integrity": "ok",
+      "videos_por_formato": {},
       "n_videos_municipais": 0,
       "n_videos_verificados": 0,
       "n_comments_municipais": 0,
@@ -494,6 +497,7 @@
       "next_collection_at": "2026-10-14T20:07:30Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
+      "videos_por_formato": {},
       "n_videos_municipais": 0,
       "n_videos_verificados": 0,
       "n_comments_municipais": 0,
@@ -618,6 +622,7 @@
       "next_collection_at": "2026-10-14T20:07:30Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
+      "videos_por_formato": {},
       "n_videos_municipais": 0,
       "n_videos_verificados": 0,
       "n_comments_municipais": 0,
@@ -742,6 +747,7 @@
       "next_collection_at": "2026-10-14T20:07:30Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
+      "videos_por_formato": {},
       "n_videos_municipais": 0,
       "n_videos_verificados": 0,
       "n_comments_municipais": 0,
@@ -866,6 +872,7 @@
       "next_collection_at": "2026-10-14T20:07:30Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
+      "videos_por_formato": {},
       "n_videos_municipais": 0,
       "n_videos_verificados": 0,
       "n_comments_municipais": 0,
@@ -990,6 +997,7 @@
       "next_collection_at": "2026-10-14T20:07:30Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
+      "videos_por_formato": {},
       "n_videos_municipais": 0,
       "n_videos_verificados": 0,
       "n_comments_municipais": 0,
@@ -1103,7 +1111,8 @@
               "count": 2
             }
           ],
-          "municipal_evidence": "titulo+descricao"
+          "municipal_evidence": "titulo+descricao",
+          "formato": "longo"
         },
         {
           "video_id": "6nQ3Hailw_s",
@@ -1111,7 +1120,8 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         }
       ],
       "all_samples": {
@@ -1244,6 +1254,9 @@
       "next_collection_at": "2026-10-14T06:45:08Z",
       "window_finalized_at": "2026-10-10T16:45:01Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "videos_por_formato": {
+        "longo": 2
+      },
       "n_videos_municipais": 1,
       "n_videos_verificados": 2,
       "n_comments_municipais": 9,
@@ -1367,7 +1380,8 @@
               "count": 4
             }
           ],
-          "municipal_evidence": "titulo+descricao"
+          "municipal_evidence": "titulo+descricao",
+          "formato": "longo"
         },
         {
           "video_id": "nMKmDt7DPCc",
@@ -1375,7 +1389,8 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "short"
         }
       ],
       "all_samples": {
@@ -1650,6 +1665,10 @@
       "next_collection_at": "2026-10-14T06:45:08Z",
       "window_finalized_at": "2026-10-10T16:45:01Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "videos_por_formato": {
+        "longo": 1,
+        "short": 1
+      },
       "n_videos_municipais": 1,
       "n_videos_verificados": 2,
       "n_comments_municipais": 25,
@@ -1773,7 +1792,8 @@
               "count": 4
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "short"
         },
         {
           "video_id": "-nppGOJBua4",
@@ -1794,7 +1814,8 @@
               "count": 2
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "O8atoKChx6M",
@@ -1815,7 +1836,8 @@
               "count": 1
             }
           ],
-          "municipal_evidence": "descricao"
+          "municipal_evidence": "descricao",
+          "formato": "short"
         },
         {
           "video_id": "ffc8iNXAH9k",
@@ -1828,7 +1850,8 @@
               "count": 1
             }
           ],
-          "municipal_evidence": "titulo"
+          "municipal_evidence": "titulo",
+          "formato": "short"
         },
         {
           "video_id": "ohq9MKVUKtE",
@@ -1836,7 +1859,8 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
-          "municipal_evidence": "titulo"
+          "municipal_evidence": "titulo",
+          "formato": "short"
         }
       ],
       "all_samples": {
@@ -2239,6 +2263,10 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "videos_por_formato": {
+        "short": 4,
+        "longo": 1
+      },
       "n_videos_municipais": 3,
       "n_videos_verificados": 5,
       "n_comments_municipais": 7,
@@ -2360,7 +2388,8 @@
               "count": 2
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "short"
         },
         {
           "video_id": "BZkiA1yeA1k",
@@ -2381,7 +2410,8 @@
               "count": 1
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "UwFA2z6cAJE",
@@ -2394,7 +2424,8 @@
               "count": 2
             }
           ],
-          "municipal_evidence": "descricao"
+          "municipal_evidence": "descricao",
+          "formato": "short"
         },
         {
           "video_id": "2C4jGJN_A_w",
@@ -2402,7 +2433,8 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
-          "municipal_evidence": "descricao"
+          "municipal_evidence": "descricao",
+          "formato": "longo"
         },
         {
           "video_id": "QsPV-9DcKFQ",
@@ -2410,7 +2442,8 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "-OZZ5iEAMqE",
@@ -2418,7 +2451,8 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "short"
         },
         {
           "video_id": "nuaDWrFs-Ds",
@@ -2426,7 +2460,8 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         }
       ],
       "all_samples": {
@@ -2649,6 +2684,10 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "videos_por_formato": {
+        "short": 3,
+        "longo": 4
+      },
       "n_videos_municipais": 2,
       "n_videos_verificados": 7,
       "n_comments_municipais": 2,
@@ -2776,7 +2815,8 @@
               "count": 51
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "short"
         },
         {
           "video_id": "OlQQqaBlMXU",
@@ -2797,7 +2837,8 @@
               "count": 39
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "z1OeMc28Yos",
@@ -2818,7 +2859,8 @@
               "count": 20
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "Mx9RsqhVzSs",
@@ -2839,7 +2881,8 @@
               "count": 17
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "short"
         },
         {
           "video_id": "kEow9BJwy8Q",
@@ -2860,7 +2903,8 @@
               "count": 5
             }
           ],
-          "municipal_evidence": "descricao"
+          "municipal_evidence": "descricao",
+          "formato": "short"
         },
         {
           "video_id": "KtQVJ8_d8Aw",
@@ -2881,7 +2925,8 @@
               "count": 5
             }
           ],
-          "municipal_evidence": "descricao"
+          "municipal_evidence": "descricao",
+          "formato": "longo"
         },
         {
           "video_id": "cgvIRir0gB0",
@@ -2902,7 +2947,8 @@
               "count": 2
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         }
       ],
       "all_samples": {
@@ -4073,6 +4119,10 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "videos_por_formato": {
+        "short": 3,
+        "longo": 4
+      },
       "n_videos_municipais": 2,
       "n_videos_verificados": 7,
       "n_comments_municipais": 61,
@@ -4203,7 +4253,8 @@
               "count": 39
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "KtQVJ8_d8Aw",
@@ -4224,7 +4275,8 @@
               "count": 5
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "dQEK_SfqtHE",
@@ -4245,7 +4297,8 @@
               "count": 1
             }
           ],
-          "municipal_evidence": "descricao"
+          "municipal_evidence": "descricao",
+          "formato": "short"
         },
         {
           "video_id": "mC7ak82eySE",
@@ -4266,7 +4319,8 @@
               "count": 2
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "cgvIRir0gB0",
@@ -4287,7 +4341,8 @@
               "count": 1
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "PuWdpSJi0o4",
@@ -4308,7 +4363,8 @@
               "count": 1
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "short"
         },
         {
           "video_id": "UTynGCA9c1I",
@@ -4316,7 +4372,8 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
-          "municipal_evidence": "titulo"
+          "municipal_evidence": "titulo",
+          "formato": "short"
         },
         {
           "video_id": "d93OscU1-Wc",
@@ -4324,7 +4381,8 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
-          "municipal_evidence": "titulo"
+          "municipal_evidence": "titulo",
+          "formato": "short"
         }
       ],
       "all_samples": {
@@ -5367,6 +5425,10 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "videos_por_formato": {
+        "longo": 4,
+        "short": 4
+      },
       "n_videos_municipais": 3,
       "n_videos_verificados": 8,
       "n_comments_municipais": 19,
@@ -5494,7 +5556,8 @@
               "count": 5
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "P-SU5QCojUQ",
@@ -5502,7 +5565,8 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
-          "municipal_evidence": "titulo+descricao"
+          "municipal_evidence": "titulo+descricao",
+          "formato": "short"
         }
       ],
       "all_samples": {
@@ -5811,6 +5875,10 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "videos_por_formato": {
+        "longo": 1,
+        "short": 1
+      },
       "n_videos_municipais": 1,
       "n_videos_verificados": 2,
       "n_comments_municipais": 0,
@@ -5938,7 +6006,8 @@
               "count": 13
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "Vh3Ht_HdgoQ",
@@ -5955,7 +6024,8 @@
               "count": 1
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         }
       ],
       "all_samples": {
@@ -6466,6 +6536,9 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "videos_por_formato": {
+        "longo": 2
+      },
       "n_videos_municipais": 0,
       "n_videos_verificados": 2,
       "n_comments_municipais": 0,
@@ -6591,7 +6664,8 @@
               "count": 5
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "otLDyUV3S8c",
@@ -6612,7 +6686,8 @@
               "count": 1
             }
           ],
-          "municipal_evidence": "titulo+descricao"
+          "municipal_evidence": "titulo+descricao",
+          "formato": "short"
         },
         {
           "video_id": "PuWdpSJi0o4",
@@ -6633,7 +6708,8 @@
               "count": 1
             }
           ],
-          "municipal_evidence": "titulo+descricao"
+          "municipal_evidence": "titulo+descricao",
+          "formato": "short"
         }
       ],
       "all_samples": {
@@ -7089,6 +7165,10 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "videos_por_formato": {
+        "longo": 1,
+        "short": 2
+      },
       "n_videos_municipais": 2,
       "n_videos_verificados": 3,
       "n_comments_municipais": 20,
@@ -7213,7 +7293,8 @@
               "count": 3
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "muN6UGTynJM",
@@ -7226,7 +7307,8 @@
               "count": 2
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "RiT7PmlBX-Y",
@@ -7234,7 +7316,8 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
-          "municipal_evidence": "titulo"
+          "municipal_evidence": "titulo",
+          "formato": "longo"
         }
       ],
       "all_samples": {
@@ -7421,6 +7504,9 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "videos_por_formato": {
+        "longo": 3
+      },
       "n_videos_municipais": 1,
       "n_videos_verificados": 3,
       "n_comments_municipais": 0,
@@ -7546,7 +7632,8 @@
               "count": 13
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         }
       ],
       "all_samples": {
@@ -8038,6 +8125,9 @@
       "next_collection_at": "2026-10-14T06:45:08Z",
       "window_finalized_at": "2026-10-10T16:45:01Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "videos_por_formato": {
+        "longo": 1
+      },
       "n_videos_municipais": 0,
       "n_videos_verificados": 1,
       "n_comments_municipais": 0,
@@ -8163,7 +8253,8 @@
               "count": 13
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "F8HzBn9e5EI",
@@ -8171,7 +8262,8 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         }
       ],
       "all_samples": {
@@ -8674,6 +8766,9 @@
       "next_collection_at": "2026-10-14T06:45:08Z",
       "window_finalized_at": "2026-10-10T16:45:01Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "videos_por_formato": {
+        "longo": 2
+      },
       "n_videos_municipais": 0,
       "n_videos_verificados": 2,
       "n_comments_municipais": 0,
@@ -8803,7 +8898,8 @@
               "count": 13
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "0z0nd9loopY",
@@ -8824,7 +8920,8 @@
               "count": 6
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "short"
         },
         {
           "video_id": "KtQVJ8_d8Aw",
@@ -8845,7 +8942,8 @@
               "count": 5
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "zx6JBhizIs4",
@@ -8866,7 +8964,8 @@
               "count": 7
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "-O41i-QLYnA",
@@ -8887,7 +8986,8 @@
               "count": 4
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "F8HzBn9e5EI",
@@ -8895,7 +8995,8 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         }
       ],
       "all_samples": {
@@ -9821,6 +9922,10 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "videos_por_formato": {
+        "longo": 5,
+        "short": 1
+      },
       "n_videos_municipais": 0,
       "n_videos_verificados": 6,
       "n_comments_municipais": 0,
@@ -9950,7 +10055,8 @@
               "count": 13
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "KtQVJ8_d8Aw",
@@ -9971,7 +10077,8 @@
               "count": 5
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         }
       ],
       "all_samples": {
@@ -10692,6 +10799,9 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "videos_por_formato": {
+        "longo": 2
+      },
       "n_videos_municipais": 0,
       "n_videos_verificados": 2,
       "n_comments_municipais": 0,
@@ -10821,7 +10931,8 @@
               "count": 13
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "0z0nd9loopY",
@@ -10842,7 +10953,8 @@
               "count": 6
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "short"
         },
         {
           "video_id": "KtQVJ8_d8Aw",
@@ -10863,7 +10975,8 @@
               "count": 5
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "-O41i-QLYnA",
@@ -10884,7 +10997,8 @@
               "count": 4
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "VFhXQEinE5k",
@@ -10901,7 +11015,8 @@
               "count": 1
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "B1rqRqsKVHQ",
@@ -10909,7 +11024,8 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "short"
         },
         {
           "video_id": "lnWeVVkiGJM",
@@ -10917,7 +11033,8 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         }
       ],
       "all_samples": {
@@ -11804,6 +11921,10 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "videos_por_formato": {
+        "longo": 5,
+        "short": 2
+      },
       "n_videos_municipais": 0,
       "n_videos_verificados": 7,
       "n_comments_municipais": 0,
@@ -11933,7 +12054,8 @@
               "count": 39
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "s4l41KdW75M",
@@ -11954,7 +12076,8 @@
               "count": 31
             }
           ],
-          "municipal_evidence": "descricao"
+          "municipal_evidence": "descricao",
+          "formato": "longo"
         },
         {
           "video_id": "HLfTpQv78C0",
@@ -11975,7 +12098,8 @@
               "count": 13
             }
           ],
-          "municipal_evidence": "descricao"
+          "municipal_evidence": "descricao",
+          "formato": "longo"
         },
         {
           "video_id": "0z0nd9loopY",
@@ -11996,7 +12120,8 @@
               "count": 6
             }
           ],
-          "municipal_evidence": "titulo+descricao"
+          "municipal_evidence": "titulo+descricao",
+          "formato": "short"
         },
         {
           "video_id": "KtQVJ8_d8Aw",
@@ -12017,7 +12142,8 @@
               "count": 5
             }
           ],
-          "municipal_evidence": "descricao"
+          "municipal_evidence": "descricao",
+          "formato": "longo"
         },
         {
           "video_id": "LnzPAjIyRes",
@@ -12038,7 +12164,8 @@
               "count": 6
             }
           ],
-          "municipal_evidence": "titulo+descricao"
+          "municipal_evidence": "titulo+descricao",
+          "formato": "longo"
         },
         {
           "video_id": "-O41i-QLYnA",
@@ -12059,7 +12186,8 @@
               "count": 4
             }
           ],
-          "municipal_evidence": "titulo+descricao"
+          "municipal_evidence": "titulo+descricao",
+          "formato": "longo"
         },
         {
           "video_id": "cgvIRir0gB0",
@@ -12080,7 +12208,8 @@
               "count": 1
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "n-DC99OxuM8",
@@ -12101,7 +12230,8 @@
               "count": 1
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         }
       ],
       "all_samples": {
@@ -13273,6 +13403,10 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "videos_por_formato": {
+        "longo": 8,
+        "short": 1
+      },
       "n_videos_municipais": 6,
       "n_videos_verificados": 9,
       "n_comments_municipais": 326,
@@ -13409,7 +13543,8 @@
               "count": 50
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "short"
         },
         {
           "video_id": "D1gwEWj_Nu0",
@@ -13430,7 +13565,8 @@
               "count": 17
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "0z0nd9loopY",
@@ -13451,7 +13587,8 @@
               "count": 6
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "short"
         },
         {
           "video_id": "KtQVJ8_d8Aw",
@@ -13472,7 +13609,8 @@
               "count": 5
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "kOaGpskZOso",
@@ -13493,7 +13631,8 @@
               "count": 6
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "-O41i-QLYnA",
@@ -13514,7 +13653,8 @@
               "count": 4
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "VFhXQEinE5k",
@@ -13531,7 +13671,8 @@
               "count": 1
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "lnWeVVkiGJM",
@@ -13539,7 +13680,8 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         }
       ],
       "all_samples": {
@@ -14598,6 +14740,10 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "videos_por_formato": {
+        "short": 2,
+        "longo": 6
+      },
       "n_videos_municipais": 0,
       "n_videos_verificados": 8,
       "n_comments_municipais": 0,
@@ -14725,7 +14871,8 @@
               "count": 5
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "y-lTSJDoUxs",
@@ -14742,7 +14889,8 @@
               "count": 1
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "a88rWqu0GWU",
@@ -14759,7 +14907,8 @@
               "count": 1
             }
           ],
-          "municipal_evidence": "titulo+descricao"
+          "municipal_evidence": "titulo+descricao",
+          "formato": "short"
         }
       ],
       "all_samples": {
@@ -15103,6 +15252,10 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "videos_por_formato": {
+        "longo": 2,
+        "short": 1
+      },
       "n_videos_municipais": 1,
       "n_videos_verificados": 3,
       "n_comments_municipais": 1,
@@ -15230,7 +15383,8 @@
               "count": 50
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "short"
         },
         {
           "video_id": "D1gwEWj_Nu0",
@@ -15251,7 +15405,8 @@
               "count": 17
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "0z0nd9loopY",
@@ -15272,7 +15427,8 @@
               "count": 6
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "short"
         },
         {
           "video_id": "KtQVJ8_d8Aw",
@@ -15293,7 +15449,8 @@
               "count": 5
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "kOaGpskZOso",
@@ -15314,7 +15471,8 @@
               "count": 6
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "-O41i-QLYnA",
@@ -15335,7 +15493,8 @@
               "count": 4
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "5IkSPPyOBx8",
@@ -15356,7 +15515,8 @@
               "count": 1
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "short"
         },
         {
           "video_id": "VFhXQEinE5k",
@@ -15373,7 +15533,8 @@
               "count": 1
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "F8HzBn9e5EI",
@@ -15381,7 +15542,8 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "lnWeVVkiGJM",
@@ -15389,7 +15551,8 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         }
       ],
       "all_samples": {
@@ -16456,6 +16619,10 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "videos_por_formato": {
+        "short": 3,
+        "longo": 7
+      },
       "n_videos_municipais": 0,
       "n_videos_verificados": 10,
       "n_comments_municipais": 0,
@@ -16577,7 +16744,8 @@
               "count": 50
             }
           ],
-          "municipal_evidence": "descricao"
+          "municipal_evidence": "descricao",
+          "formato": "short"
         },
         {
           "video_id": "D1gwEWj_Nu0",
@@ -16598,7 +16766,8 @@
               "count": 17
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "0z0nd9loopY",
@@ -16619,7 +16788,8 @@
               "count": 6
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "short"
         },
         {
           "video_id": "kOaGpskZOso",
@@ -16640,7 +16810,8 @@
               "count": 6
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "kmHYy84jIgw",
@@ -16661,7 +16832,8 @@
               "count": 2
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "short"
         },
         {
           "video_id": "5IkSPPyOBx8",
@@ -16682,7 +16854,8 @@
               "count": 1
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "short"
         }
       ],
       "all_samples": {
@@ -17732,6 +17905,10 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "videos_por_formato": {
+        "short": 4,
+        "longo": 2
+      },
       "n_videos_municipais": 1,
       "n_videos_verificados": 6,
       "n_comments_municipais": 229,
@@ -17859,7 +18036,8 @@
               "count": 5
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "v13VotuvHA8",
@@ -17880,7 +18058,8 @@
               "count": 5
             }
           ],
-          "municipal_evidence": "descricao"
+          "municipal_evidence": "descricao",
+          "formato": "short"
         },
         {
           "video_id": "cgvIRir0gB0",
@@ -17901,7 +18080,8 @@
               "count": 2
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "fKaHJbwMSaI",
@@ -17922,7 +18102,8 @@
               "count": 2
             }
           ],
-          "municipal_evidence": "titulo"
+          "municipal_evidence": "titulo",
+          "formato": "short"
         }
       ],
       "all_samples": {
@@ -18588,6 +18769,10 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "videos_por_formato": {
+        "longo": 2,
+        "short": 2
+      },
       "n_videos_municipais": 2,
       "n_videos_verificados": 4,
       "n_comments_municipais": 36,
@@ -18716,7 +18901,8 @@
               "count": 8
             }
           ],
-          "municipal_evidence": "titulo+descricao"
+          "municipal_evidence": "titulo+descricao",
+          "formato": "short"
         },
         {
           "video_id": "OBzHfFeQHQ0",
@@ -18737,7 +18923,8 @@
               "count": 8
             }
           ],
-          "municipal_evidence": "titulo+descricao"
+          "municipal_evidence": "titulo+descricao",
+          "formato": "short"
         },
         {
           "video_id": "avv3CZixaKE",
@@ -18758,7 +18945,8 @@
               "count": 9
             }
           ],
-          "municipal_evidence": "titulo+descricao"
+          "municipal_evidence": "titulo+descricao",
+          "formato": "longo"
         },
         {
           "video_id": "APDi5fLPf_E",
@@ -18771,7 +18959,8 @@
               "count": 3
             }
           ],
-          "municipal_evidence": "descricao"
+          "municipal_evidence": "descricao",
+          "formato": "short"
         },
         {
           "video_id": "diTGO4TyEoY",
@@ -18779,7 +18968,8 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
-          "municipal_evidence": "titulo"
+          "municipal_evidence": "titulo",
+          "formato": "short"
         },
         {
           "video_id": "P5mrGZNFDkw",
@@ -18787,7 +18977,8 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
-          "municipal_evidence": "titulo+descricao"
+          "municipal_evidence": "titulo+descricao",
+          "formato": "short"
         },
         {
           "video_id": "T9z_4JATYHM",
@@ -18795,7 +18986,8 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
-          "municipal_evidence": "titulo+descricao"
+          "municipal_evidence": "titulo+descricao",
+          "formato": "longo"
         },
         {
           "video_id": "MBTUW8XTSVM",
@@ -18803,7 +18995,8 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
-          "municipal_evidence": "titulo"
+          "municipal_evidence": "titulo",
+          "formato": "short"
         }
       ],
       "all_samples": {
@@ -19660,6 +19853,10 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "videos_por_formato": {
+        "short": 6,
+        "longo": 2
+      },
       "n_videos_municipais": 8,
       "n_videos_verificados": 8,
       "n_comments_municipais": 222,
@@ -19790,7 +19987,8 @@
               "count": 1
             }
           ],
-          "municipal_evidence": "descricao"
+          "municipal_evidence": "descricao",
+          "formato": "longo"
         },
         {
           "video_id": "eMWM8zA62c4",
@@ -19811,7 +20009,8 @@
               "count": 1
             }
           ],
-          "municipal_evidence": "descricao"
+          "municipal_evidence": "descricao",
+          "formato": "short"
         },
         {
           "video_id": "FrkXV-cmuyM",
@@ -19832,7 +20031,8 @@
               "count": 1
             }
           ],
-          "municipal_evidence": "descricao"
+          "municipal_evidence": "descricao",
+          "formato": "short"
         },
         {
           "video_id": "bY1bSDsZK0o",
@@ -19840,7 +20040,8 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
-          "municipal_evidence": "descricao"
+          "municipal_evidence": "descricao",
+          "formato": "short"
         },
         {
           "video_id": "zFpJCtuBSfk",
@@ -19848,7 +20049,8 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
-          "municipal_evidence": "titulo+descricao"
+          "municipal_evidence": "titulo+descricao",
+          "formato": "short"
         }
       ],
       "all_samples": {
@@ -20038,6 +20240,10 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "videos_por_formato": {
+        "longo": 1,
+        "short": 4
+      },
       "n_videos_municipais": 5,
       "n_videos_verificados": 5,
       "n_comments_municipais": 22,
@@ -20165,7 +20371,8 @@
               "count": 6
             }
           ],
-          "municipal_evidence": "titulo+descricao"
+          "municipal_evidence": "titulo+descricao",
+          "formato": "longo"
         },
         {
           "video_id": "TRzqbfCz93E",
@@ -20182,7 +20389,8 @@
               "count": 1
             }
           ],
-          "municipal_evidence": "titulo"
+          "municipal_evidence": "titulo",
+          "formato": "short"
         },
         {
           "video_id": "TyQOuujCymY",
@@ -20190,7 +20398,8 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
-          "municipal_evidence": "titulo"
+          "municipal_evidence": "titulo",
+          "formato": "longo"
         }
       ],
       "all_samples": {
@@ -20551,6 +20760,10 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "videos_por_formato": {
+        "longo": 2,
+        "short": 1
+      },
       "n_videos_municipais": 3,
       "n_videos_verificados": 3,
       "n_comments_municipais": 31,
@@ -20675,7 +20888,8 @@
               "count": 1
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "Hq0OV9YrL0E",
@@ -20683,7 +20897,8 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
-          "municipal_evidence": "descricao"
+          "municipal_evidence": "descricao",
+          "formato": "longo"
         }
       ],
       "all_samples": {
@@ -20788,6 +21003,9 @@
       "next_collection_at": "2026-10-14T06:45:08Z",
       "window_finalized_at": "2026-10-10T16:45:01Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "videos_por_formato": {
+        "longo": 2
+      },
       "n_videos_municipais": 1,
       "n_videos_verificados": 2,
       "n_comments_municipais": 0,
@@ -20913,7 +21131,8 @@
               "count": 5
             }
           ],
-          "municipal_evidence": "descricao"
+          "municipal_evidence": "descricao",
+          "formato": "longo"
         },
         {
           "video_id": "d8Jyndmq0jc",
@@ -20934,7 +21153,8 @@
               "count": 5
             }
           ],
-          "municipal_evidence": "titulo"
+          "municipal_evidence": "titulo",
+          "formato": "longo"
         },
         {
           "video_id": "r6tsRqjGZGs",
@@ -20942,7 +21162,8 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
-          "municipal_evidence": "titulo"
+          "municipal_evidence": "titulo",
+          "formato": "short"
         },
         {
           "video_id": "GJeQSdjYINM",
@@ -20950,7 +21171,8 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
-          "municipal_evidence": "titulo"
+          "municipal_evidence": "titulo",
+          "formato": "short"
         },
         {
           "video_id": "38Y5dHfts_E",
@@ -20958,7 +21180,8 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
-          "municipal_evidence": "titulo"
+          "municipal_evidence": "titulo",
+          "formato": "short"
         },
         {
           "video_id": "kAz3sngId6U",
@@ -20966,7 +21189,8 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
-          "municipal_evidence": "titulo"
+          "municipal_evidence": "titulo",
+          "formato": "short"
         }
       ],
       "all_samples": {
@@ -21483,6 +21707,10 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "videos_por_formato": {
+        "longo": 2,
+        "short": 4
+      },
       "n_videos_municipais": 6,
       "n_videos_verificados": 6,
       "n_comments_municipais": 84,
@@ -21603,7 +21831,8 @@
               "count": 1
             }
           ],
-          "municipal_evidence": "titulo"
+          "municipal_evidence": "titulo",
+          "formato": "longo"
         }
       ],
       "all_samples": {
@@ -21685,6 +21914,9 @@
       "next_collection_at": "2026-10-14T06:45:08Z",
       "window_finalized_at": "2026-10-10T16:45:01Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "videos_por_formato": {
+        "longo": 1
+      },
       "n_videos_municipais": 1,
       "n_videos_verificados": 1,
       "n_comments_municipais": 5,
@@ -21808,7 +22040,8 @@
               "count": 2
             }
           ],
-          "municipal_evidence": "titulo+descricao"
+          "municipal_evidence": "titulo+descricao",
+          "formato": "short"
         },
         {
           "video_id": "4FBIzMH__AM",
@@ -21829,7 +22062,8 @@
               "count": 2
             }
           ],
-          "municipal_evidence": "titulo+descricao"
+          "municipal_evidence": "titulo+descricao",
+          "formato": "longo"
         },
         {
           "video_id": "3lfv4UnfTpM",
@@ -21846,7 +22080,8 @@
               "count": 1
             }
           ],
-          "municipal_evidence": "titulo"
+          "municipal_evidence": "titulo",
+          "formato": "short"
         },
         {
           "video_id": "bvqZFilv3RQ",
@@ -21859,7 +22094,8 @@
               "count": 2
             }
           ],
-          "municipal_evidence": "titulo"
+          "municipal_evidence": "titulo",
+          "formato": "short"
         },
         {
           "video_id": "mIS1liEGS4k",
@@ -21872,7 +22108,8 @@
               "count": 1
             }
           ],
-          "municipal_evidence": "titulo"
+          "municipal_evidence": "titulo",
+          "formato": "short"
         }
       ],
       "all_samples": {
@@ -22202,6 +22439,10 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "videos_por_formato": {
+        "short": 4,
+        "longo": 1
+      },
       "n_videos_municipais": 5,
       "n_videos_verificados": 5,
       "n_comments_municipais": 38,
@@ -22330,7 +22571,8 @@
               "count": 8
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "IOOjwHj7dWc",
@@ -22351,7 +22593,8 @@
               "count": 3
             }
           ],
-          "municipal_evidence": "descricao"
+          "municipal_evidence": "descricao",
+          "formato": "longo"
         },
         {
           "video_id": "636UjsHCWz8",
@@ -22372,7 +22615,8 @@
               "count": 2
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "short"
         },
         {
           "video_id": "eXrYzz6uz_M",
@@ -22393,7 +22637,8 @@
               "count": 3
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "short"
         },
         {
           "video_id": "OGjvrCaTXTA",
@@ -22414,7 +22659,8 @@
               "count": 1
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "45EKcza6ti0",
@@ -22431,7 +22677,8 @@
               "count": 1
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "mIS1liEGS4k",
@@ -22444,7 +22691,8 @@
               "count": 1
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "short"
         },
         {
           "video_id": "Rnts52cYwVU",
@@ -22457,7 +22705,8 @@
               "count": 1
             }
           ],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         },
         {
           "video_id": "KzTV1M7MFjQ",
@@ -22465,7 +22714,8 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
-          "municipal_evidence": "descricao"
+          "municipal_evidence": "descricao",
+          "formato": "short"
         },
         {
           "video_id": "fqkU17NaHwo",
@@ -22473,7 +22723,8 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
-          "municipal_evidence": "nenhuma"
+          "municipal_evidence": "nenhuma",
+          "formato": "short"
         }
       ],
       "all_samples": {
@@ -23110,6 +23361,10 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "videos_por_formato": {
+        "longo": 5,
+        "short": 5
+      },
       "n_videos_municipais": 2,
       "n_videos_verificados": 10,
       "n_comments_municipais": 26,
@@ -23207,7 +23462,8 @@
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
-          "municipal_evidence": "titulo+descricao"
+          "municipal_evidence": "titulo+descricao",
+          "formato": "short"
         }
       ],
       "all_samples": {
@@ -23249,6 +23505,9 @@
       "next_collection_at": "2026-10-14T22:58:00Z",
       "window_finalized_at": "2026-10-14T10:58:00Z",
       "counters_integrity": "ok",
+      "videos_por_formato": {
+        "short": 1
+      },
       "n_videos_municipais": 1,
       "n_videos_verificados": 1,
       "n_comments_municipais": 0,
