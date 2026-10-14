@@ -15,6 +15,17 @@ def normalize(text: str | None) -> str:
     s = "".join(ch for ch in s if not unicodedata.combining(ch))
     return _WS_RE.sub(" ", s.lower()).strip()
 
+# v0.3.3: menções a outros usuários identificam pessoas que não estão no estudo.
+# O YouTube entrega "@handle" no texto e, no textDisplay, um link <a> para o canal.
+_MENTION_LINK_RE = re.compile(r'<a\s[^>]*href="[^"]*(?:/channel/|/@|/user/|/c/)[^"]*"[^>]*>.*?</a>', re.I | re.S)
+_MENTION_RE = re.compile(r"(?<![\w.])[\u200b\u200c\u200d\ufeff]*@[\w.\-\u00c0-\u024f]+", re.U)
+MENTION_PLACEHOLDER = "@usuario"
+
+def pseudonymize_mentions(text: str | None) -> str:
+    """Troca menções a usuários (@handle e links para canais) por um marcador fixo."""
+    if not text: return text or ""
+    return _MENTION_RE.sub(MENTION_PLACEHOLDER, _MENTION_LINK_RE.sub(MENTION_PLACEHOLDER, str(text)))
+
 def clean_text(text: str | None) -> str:
     if text is None: return ""
     return _WS_RE.sub(" ", _HTML_RE.sub(" ", html.unescape(str(text)))).strip()

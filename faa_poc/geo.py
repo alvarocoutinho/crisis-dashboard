@@ -56,7 +56,8 @@ def score_video(video: dict, alert: dict, config: dict) -> dict:
     municipio, uf, evento = normalize(alert.get("municipio", "")), (alert.get("uf") or "").upper(), alert.get("evento", "")
     if has_cjk(title): return _reject("cjk_script", "cjk_reject")
     for term in NEGATIVE_TERMS:
-        if normalize(term) in text: return _reject(f"negative_term:{term}", "negative")
+        # v0.3.3: palavra inteira — por trecho, "unânime" continha "anime"
+        if _has_phrase(text, normalize(term)): return _reject(f"negative_term:{term}", "negative")
 
     muni_hit = bool(municipio) and len(municipio) >= 4 and _has_phrase(text, municipio)
     state_hit = _state_present(uf, raw, text)

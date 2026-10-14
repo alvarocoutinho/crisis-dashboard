@@ -37,7 +37,7 @@ STATE_PATH = REPO_ROOT / "src" / "data" / "state.json"
 LIVE_PATH = REPO_ROOT / "src" / "data" / "live.json"
 AGGREGATE_LOG_PATH = REPO_ROOT / "src" / "data" / "alertas_agregados.csv"
 FAA_OUTPUT_DIR = Path(os.environ.get("FAA_OUTPUT_DIR", "/tmp/faa_pipeline_run"))
-PIPELINE_VERSION = "0.3.2"
+PIPELINE_VERSION = "0.3.3"
 
 # v0.3 — orçamento de cota YouTube Data API. Pela tabela de custos oficial
 # (atualizada em 08/10/2026) toda chamada custa 1 unidade contra 10.000/dia e

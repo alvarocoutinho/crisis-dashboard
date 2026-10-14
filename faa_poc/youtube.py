@@ -5,7 +5,7 @@ from dataclasses import dataclass, field
 from datetime import datetime
 import requests
 from .constants import YT_BASE, YT_SEARCH_TERMS
-from .text import clean_text, classify_themes, comment_quality
+from .text import clean_text, classify_themes, comment_quality, pseudonymize_mentions
 from .timeutils import alert_search_window, hours_from_alert, in_event_window, parse_dt
 
 @dataclass
@@ -81,8 +81,9 @@ def stats(video_ids:list[str],key:str) -> ApiResult:
     result.items=out; return result
 
 def _comment_row(snippet:dict,*,video_id:str,comment_id:str,parent_id:str|None,is_reply:bool) -> dict:
-    text=snippet.get("textDisplay",""); clean=clean_text(text)
-    return {"comment_id":comment_id,"video_id":video_id,"parent_id":parent_id,"text":text,"text_clean":clean,"author":snippet.get("authorDisplayName", ""),"published_at":snippet.get("publishedAt", ""),"like_count":snippet.get("likeCount",0),"is_reply":is_reply,**classify_themes(clean),**comment_quality(clean)}
+    # v0.3.3 (minimização): sem nome do autor; menções a outros usuários pseudonimizadas
+    text=pseudonymize_mentions(snippet.get("textDisplay","")); clean=pseudonymize_mentions(clean_text(text))
+    return {"comment_id":comment_id,"video_id":video_id,"parent_id":parent_id,"text":text,"text_clean":clean,"published_at":snippet.get("publishedAt", ""),"like_count":snippet.get("likeCount",0),"is_reply":is_reply,**classify_themes(clean),**comment_quality(clean)}
 
 def _status_from_response(response) -> tuple[str, str]:
     if response.status_code == 200:

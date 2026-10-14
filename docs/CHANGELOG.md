@@ -6,6 +6,36 @@ O formato segue [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) e o 
 
 ---
 
+## [Pipeline 0.3.3] — 2026-10-14
+
+**Instrumentação para calibrar os filtros e correções sem ambiguidade. Os critérios de decisão não mudam** (as mudanças ficam para a v0.4, depois do estudo de calibração; ver `docs/calibracao/protocolo.md`).
+
+### Adicionado
+
+- **Todos os candidatos da busca são guardados**, e não só os aceitos, com os atributos usados na decisão: canal, data, título, descrição, tags, scores, motivos, evidência municipal, decisão (`selecionado` / `aceito_excedente` / `rejeitado`) e `filter_version`. Ficam em `youtube_candidates.csv` (artifact) e em `candidates.jsonl` no Drive, sem expirar. Qualquer filtro calibrado pode ser reaplicado retroativamente sem gastar buscas.
+- **Kit do estudo de calibração:**
+  - `docs/calibracao/protocolo.md` (desenho);
+  - `docs/calibracao/livro_de_codigos.md` (perigo × episódio × lugar);
+  - `scripts/build_annotation_sample.py`: amostra estratificada com pesos, planilhas cegas com listas de opções, dupla codificação, treino, e trechos de transcrição em volta do município e dos termos de perigo.
+- **Notebook de coleta retrospectiva v2:**
+  - guarda descrição, canal e tags;
+  - fase `variantes` (3 consultas alternativas nos alertas de calibração);
+  - célula de complemento que busca a descrição do lote 1 (1 unidade a cada 50 vídeos, sem gastar buscas);
+  - refaz automaticamente os alertas cujo tipo de evento mudou;
+  - migra os CSVs do lote 1 para as colunas novas.
+
+### Corrigido
+
+- **Termos negativos** comparados por palavra inteira. Antes, comparados por trecho, rejeitavam "unânime" (por conter "anime"), "O drama das famílias…", "Receita Federal prorroga prazo…" e "Oração pelas vítimas…".
+- **Universo da coleta retrospectiva:** os 12 alertas antigos sem tipo de evento tiveram o tipo recuperado do histórico do `live.json` (coluna `evento_fonte`). Sem o tipo, a busca usava "desastre"/"emergência" e trouxe, em Petrópolis, um acidente de ônibus.
+
+### Privacidade
+
+- O nome do autor deixou de ser guardado nos comentários.
+- Menções a outros usuários (`@handle` e links para canais) viram `@usuario` no texto, tanto no pipeline quanto no notebook. O lote 1 é migrado pelo próprio notebook.
+
+---
+
 ## [Ferramentas] — 2026-10-13 — coleta retrospectiva
 
 O pipeline não muda. Para verificar o silêncio dos 449 alertas que saíram do state sem vídeo durante o período de cota estourada:
