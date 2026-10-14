@@ -1,4 +1,4 @@
-# Livro de códigos — relevância de vídeos para alertas do CEMADEN (v1, 14/10/2026)
+# Livro de códigos — relevância de vídeos para alertas do CEMADEN (v1.1, 14/10/2026)
 
 **Unidade:** o par **alerta × vídeo**. Cada linha da planilha mostra o alerta (município, UF, tipo de evento e hora de abertura) e um vídeo (título, canal, data, descrição, trechos da transcrição quando houver, e o link).
 
@@ -10,14 +10,15 @@ Responda as três dimensões de forma independente.
 
 | Valor | Quando |
 |---|---|
-| `sim` | Chuva forte, temporal, enchente, alagamento, inundação, cheia de rio, enxurrada, deslizamento, desabamento ou queda de barreira causados por chuva. Também conta a previsão ou o alerta *desse* tipo de evento, e as consequências diretas (desabrigados, resgate, obras emergenciais). |
-| `nao` | Outro assunto, mesmo trágico: acidente de trânsito, incêndio, crime, futebol, obituário, política sem relação com o evento. Também: desabamento de prédio **sem** chuva como causa apontada. |
+| `sim` | Chuva forte, temporal, enchente, alagamento, inundação, cheia de rio, enxurrada, deslizamento, desabamento ou queda de barreira causados por chuva. Também conta a previsão ou o alerta *desse* tipo de evento, e as consequências diretas (desabrigados, resgate, obras emergenciais). **Desabamento de prédio, casa ou obra ocorrido durante o episódio de chuva conta como `sim` mesmo sem a causa declarada** (regra 1 da v1.1). |
+| `nao` | Outro assunto, mesmo trágico: acidente de trânsito, incêndio, crime, futebol, obituário, política sem relação com o evento. Também: desabamento **fora** do episódio de chuva, ou atribuído pelo material a uma causa sem relação com a chuva (explosão de gás, incêndio, demolição). |
 | `incerto` | O material disponível não permite decidir. Use pouco e explique em `observacao`. |
 
 Exemplos:
 - "Ônibus tomba na Serra de Petrópolis e deixa mortos" → `nao`. É acidente de trânsito, mesmo que houvesse neblina.
 - "Chuva agrava erosão e parte de ponte desaba em Santa Bárbara d'Oeste" → `sim`.
 - "Morre a atriz Glória Menezes" → `nao`.
+- "Seis morrem após desabamento de prédio na Penha, em SP", publicado durante as chuvas de 10 a 12/09 → `sim`. A causa não está declarada, mas o desabamento ocorre no episódio (regra 1).
 
 ## 2. `episodio` — trata **deste** episódio, ou seja, da chuva em curso na data do alerta?
 
@@ -40,8 +41,8 @@ A data de publicação ajuda, mas não decide sozinha: um vídeo publicado no di
 
 **Cuidados:**
 - **Homônimos.** "Pelotas" em espanhol (bolas), "Santos" (o time de futebol), "Registro", "Ribeira" (o rio): o nome aparecer não basta. O vídeo precisa tratar do município.
-- **Rios e vales.** "Rio Ribeira", "Vale do Taquari" e "Bacia do Itajaí" não equivalem ao município.
-- **Capital paulista.** "SP" ou "São Paulo" sozinhos são ambíguos. Só marque `municipio` para alerta da capital se o vídeo tratar da cidade (bairros, zonas, "capital").
+- **Rios e vales.** "Rio Ribeira", "Vale do Taquari" e "Bacia do Itajaí" não equivalem ao município. **Exceção (regra 2 da v1.1):** rio com o nome da cidade conta como `municipio` quando o vídeo indica a cidade. Por exemplo: a cota medida nela, imagens dela ou bairros dela. "Rio Jaguarão acima da cota" sem nenhum indicativo da cidade → `regiao_vizinho`.
+- **Capital paulista (regra 3 da v1.1).** "SP" ou "São Paulo" sozinhos são ambíguos. Para alerta da capital, só marque `municipio` se o vídeo tratar da cidade (bairros, zonas, "capital", Marginal). "Chuvas em SP" sem nenhum indicativo da cidade → `regiao_vizinho`: conta para o episódio regional, não como cobertura municipal.
 - **Lista sem conteúdo.** Se o município aparece só numa lista de cidades em alerta, sem nada relatado sobre ele, marque `regiao_vizinho`.
 
 ## 4. `fonte_decisao` — o que sustentou o seu rótulo
@@ -70,3 +71,11 @@ Abra o vídeo só quando metadados e trechos não permitirem decidir alguma dime
 - Os títulos são públicos, mas a planilha fica no Drive do projeto e não vai ao repositório.
 - Não copie comentários nem nomes de usuários para fora da planilha.
 - Quem codifica assina termo de confidencialidade e consta na equipe do projeto no CEP.
+
+## Histórico de versões
+
+- **v1 (14/10/2026):** versão inicial.
+- **v1.1 (14/10/2026):** três regras decididas pelo pesquisador a partir dos pares de treino do piloto, antes de qualquer anotação da amostra:
+  1. desabamento durante o episódio de chuva sem causa declarada → `perigo = sim`;
+  2. rio com o nome da cidade → `municipio` só se o vídeo indicar a cidade;
+  3. "SP" sozinho para alerta da capital → `regiao_vizinho`.
