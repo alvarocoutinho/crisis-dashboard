@@ -6,6 +6,20 @@ O formato segue [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) e o 
 
 ---
 
+## [Ferramentas] — 2026-10-13 — coleta retrospectiva
+
+O pipeline não muda. Para verificar o silêncio dos 449 alertas que saíram do state sem vídeo durante o período de cota estourada:
+
+- `scripts/build_retro_universe.py` → `data/retro/universo_alertas.csv`: 38 alertas de calibração, 449 de silêncio e uma amostra sistemática de 120.
+- `notebooks/ODRD_coleta_retrospectiva.ipynb` (Colab, chave e projeto próprios).
+  - Usa o mesmo método da v0.3.2: consultas, filtro, evidência e ordenação.
+  - Mede na calibração a sensibilidade da busca retrospectiva.
+  - Coleta os comentários da janela de 72 h só dos vídeos que citam o município.
+  - Retoma de onde parou entre execuções diárias.
+- `scripts/merge_retro_backfill.py` → `data/retro/resultados_alertas.csv`. Grava só contagens e IDs; não toca state, live nem flags.
+
+---
+
 ## [Pipeline 0.3.2] — 2026-10-13
 
 **Flags e indicador municipal passam a contar só vídeos que nomeiam o município.** A v0.3.1 mostrou o problema: 8 alertas promovidos não tinham nenhum vídeo que citasse o município. Eram 5 `prioritario` (Osasco, Santos, Mauá, Praia Grande, Santa Bárbara d'Oeste) e 3 `acompanhamento` (Guarujá, Santo André, São Paulo 2464). A visibilidade "municipal" deles vinha de cobertura estadual ou da capital. Decisão metodológica do pesquisador, com autonomia delegada pela orientadora.
