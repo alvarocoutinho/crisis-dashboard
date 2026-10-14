@@ -1,15 +1,15 @@
 {
   "schema_version": "0.2",
   "pipeline_version": "0.3.3",
-  "last_run_at": "2026-10-14T02:58:26Z",
+  "last_run_at": "2026-10-14T10:58:00Z",
   "last_run_status": "success",
-  "last_run_duration_seconds": 1,
-  "last_cemaden_check_at": "2026-10-14T02:58:26Z",
+  "last_run_duration_seconds": 4,
+  "last_cemaden_check_at": "2026-10-14T10:58:00Z",
   "youtube_quota": {
-    "used_today": 32,
-    "reset_at": "2026-10-14T07:00:00Z",
-    "day": "2026-10-13",
-    "searches_today": 24
+    "used_today": 4,
+    "reset_at": "2026-10-15T07:00:00Z",
+    "day": "2026-10-14",
+    "searches_today": 2
   },
   "active_alerts": {
     "cemaden_rs_2880": {
@@ -27,7 +27,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-10-02T11:25:51Z",
-      "last_seen_open_at": "2026-10-14T02:58:26Z",
+      "last_seen_open_at": "2026-10-14T10:58:00Z",
       "closed_at": null,
       "transitions": [
         {
@@ -82,7 +82,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-10-03T08:16:49Z",
-      "last_seen_open_at": "2026-10-14T02:58:26Z",
+      "last_seen_open_at": "2026-10-14T10:58:00Z",
       "closed_at": null,
       "transitions": [
         {
@@ -137,7 +137,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-10-03T21:48:44Z",
-      "last_seen_open_at": "2026-10-14T02:58:26Z",
+      "last_seen_open_at": "2026-10-14T10:58:00Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -186,7 +186,7 @@
       ],
       "evento": "Movimentos de Massa",
       "opened_at": "2026-10-10T14:41:52Z",
-      "last_seen_open_at": "2026-10-14T02:58:26Z",
+      "last_seen_open_at": "2026-10-14T10:58:00Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -233,7 +233,7 @@
       ],
       "evento": "Movimentos de Massa",
       "opened_at": "2026-10-11T03:47:07Z",
-      "last_seen_open_at": "2026-10-14T02:58:26Z",
+      "last_seen_open_at": "2026-10-14T10:58:00Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -280,7 +280,7 @@
       ],
       "evento": "Movimentos de Massa",
       "opened_at": "2026-10-12T04:52:48Z",
-      "last_seen_open_at": "2026-10-14T02:58:26Z",
+      "last_seen_open_at": "2026-10-14T10:58:00Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -327,7 +327,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-10-12T16:48:29Z",
-      "last_seen_open_at": "2026-10-14T02:58:26Z",
+      "last_seen_open_at": "2026-10-14T10:58:00Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -374,7 +374,7 @@
       ],
       "evento": "Movimentos de Massa",
       "opened_at": "2026-10-13T16:44:36Z",
-      "last_seen_open_at": "2026-10-14T02:58:26Z",
+      "last_seen_open_at": "2026-10-14T10:58:00Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -3181,8 +3181,8 @@
       "videos_with_valid_comments": [],
       "last_new_data_at": "2026-10-07T03:37:56Z",
       "last_new_comment_at": null,
-      "last_collection_at": "2026-10-13T18:45:08Z",
-      "next_collection_at": "2026-10-14T06:45:08Z",
+      "last_collection_at": "2026-10-14T10:58:00Z",
+      "next_collection_at": "2026-10-14T22:58:00Z",
       "counters_integrity": "ok",
       "video_evidence": {
         "2IdrfL2QPlc": "titulo+descricao"
@@ -3201,7 +3201,13 @@
         "n_videos_with_valid_municipal": 0,
         "contagem": "observada",
         "robusta_ao_teto": true
-      }
+      },
+      "last_attempt_at": "2026-10-14T10:58:00Z",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "legacy_unverified": false,
+      "window_finalized_at": "2026-10-14T10:58:00Z",
+      "window_finalized_reason": "final_sweep"
     }
   },
   "archived_alerts": {
