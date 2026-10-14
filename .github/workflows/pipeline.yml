@@ -105,22 +105,45 @@ jobs:
           esac
           echo "Pipeline finalizou com exit code $CODE (status=$(cat $GITHUB_OUTPUT | grep ^status | cut -d= -f2))"
 
-      # === UPLOAD DE CSVs COMO ARTIFACT ===
+      # === UPLOAD DE CSVs COMO ARTIFACT (cifrado) ===
       # Substitui temporariamente o upload para Google Drive (que quebrou em
       # 17/08/2026 por Service Accounts perderem storage quota). Cada run
       # que coleta dados vira um artifact com retenção de 90 dias — teto do
-      # free tier. Dados sensíveis (comentários literais do YouTube) NÃO vão
-      # para o repo por conta de LGPD + ToS; artifact resolve esse requisito
-      # porque acesso ao artifact requer autenticação GitHub.
-      # Não roda em dry-run (não teria dados úteis) nem em falha catastrófica.
-      - name: Upload CSVs de coleta como artifact
+      # free tier; o workflow backup-mensal.yml junta todos num pacote mensal.
+      #
+      # ATENÇÃO (14/10/2026): o repositório é público, e artifacts de
+      # repositório público podem ser baixados por QUALQUER pessoa logada no
+      # GitHub (docs: "signed into GitHub and have read access"). Os CSVs têm
+      # texto de comentários (dados pessoais, LGPD) — por isso o diretório é
+      # cifrado (7z AES-256, cabeçalhos cifrados) com o segredo
+      # BACKUP_PASSPHRASE antes do upload. Sem o segredo, nada é enviado.
+      - name: Cifrar CSVs de coleta
+        id: cifra
         if: steps.status.outputs.status != 'failed' && !inputs.dry_run
+        env:
+          BACKUP_PASSPHRASE: ${{ secrets.BACKUP_PASSPHRASE }}
+        run: |
+          if [ -z "$BACKUP_PASSPHRASE" ]; then
+            echo "::warning title=Artifact não enviado::segredo BACKUP_PASSPHRASE ausente — os CSVs desta execução não foram guardados (nunca enviamos sem cifrar)."
+            echo "ok=false" >> $GITHUB_OUTPUT; exit 0
+          fi
+          if [ -z "$(ls -A /tmp/faa_pipeline_run 2>/dev/null)" ]; then
+            echo "ok=false" >> $GITHUB_OUTPUT; exit 0
+          fi
+          command -v 7z >/dev/null || sudo apt-get install -y -qq p7zip-full
+          mkdir -p /tmp/faa_cifrado
+          7z a -t7z -mhe=on -mx=9 -p"$BACKUP_PASSPHRASE" /tmp/faa_cifrado/crus.7z /tmp/faa_pipeline_run/ > /dev/null
+          ls -la /tmp/faa_cifrado
+          echo "ok=true" >> $GITHUB_OUTPUT
+
+      - name: Upload dos CSVs cifrados como artifact
+        if: steps.cifra.outputs.ok == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: pipeline-crus-${{ github.run_number }}-${{ github.run_id }}
-          path: /tmp/faa_pipeline_run/
+          path: /tmp/faa_cifrado/crus.7z
           retention-days: 90
-          if-no-files-found: ignore
+          if-no-files-found: error
 
       # === COMMIT CONDICIONAL (M4: só se algo mudou) ===
       # Se falha catastrófica (exit=1), NÃO commita — preserva o live/state anterior
