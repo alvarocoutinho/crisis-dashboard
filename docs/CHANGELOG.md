@@ -17,7 +17,7 @@ O formato segue [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) e o 
 - **Documentação:** `docs/idap.md` (fonte, ressalvas, janela do feed, camadas de armazenamento).
 - **Testes:** 8, sobre uma amostra real de 4 alertas.
 - **Painel `/idap`, "Alertas à população":**
-  - mapa (Leaflet com fundo CARTO) com os polígonos coloridos por severidade e contorno tracejado para alertas encerrados;
+  - mapa (Leaflet com fundo OpenStreetMap dessaturado; a CARTO passou a exigir chave de API) com os polígonos coloridos por severidade e contorno tracejado para alertas encerrados;
   - filtros por janela (24 h, 3 dias, 7 dias), severidade e UF;
   - lista e detalhe de cada alerta: texto, orientação, vigência e identificador CAP;
   - faixa de saúde da coleta: última captura, capturas em 24 h, lacunas na numeração;
