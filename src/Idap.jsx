@@ -283,9 +283,13 @@ export default function Idap() {
               </div>
             )}
             <MapContainer center={[-14.5, -52]} zoom={4} minZoom={3} className="h-full w-full" scrollWheelZoom>
+              {/* Fundo OSM padrão (sem chave), dessaturado em CSS para não competir com os
+                  polígonos. Os tiles da CARTO passaram a exigir chave de API (out/2026). */}
               <TileLayer
-                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
-                url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+                maxZoom={19}
+                className="basemap-suave"
               />
               <GeoJSON
                 key={chaveMapa}
