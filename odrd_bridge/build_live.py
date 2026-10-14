@@ -20,7 +20,7 @@ Uso (dentro do notebook Colab):
 from __future__ import annotations
 
 import json
-from collections import OrderedDict, defaultdict
+from collections import Counter, OrderedDict, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -859,8 +859,12 @@ def build_live_json(
         entry["counters_integrity"] = meta.get("counters_integrity", "ok")
         # v0.3.1: evidência municipal por vídeo ("" = ainda não verificada)
         ev = meta.get("video_evidence", {}) or {}
+        fmt = meta.get("video_format", {}) or {}
         for v in entry.get("videos") or []:
             v["municipal_evidence"] = ev.get(str(v.get("video_id")), "")
+            v["formato"] = fmt.get(str(v.get("video_id")), "")  # v0.3.4 ("" = não verificado)
+        entry["videos_por_formato"] = dict(Counter(
+            v["formato"] or "nao_verificado" for v in entry.get("videos") or []))
         entry["n_videos_municipais"] = sum(
             1 for v in entry.get("videos") or [] if v["municipal_evidence"] not in ("", "nenhuma"))
         entry["n_videos_verificados"] = sum(

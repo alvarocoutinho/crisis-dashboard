@@ -2,7 +2,7 @@
 
 Entrada: os arquivos do notebook notebooks/ODRD_coleta_retrospectiva.ipynb
 (Drive do pesquisador; títulos e descrições não vão para o repositório):
-  resultados_alertas.csv, videos.csv, [videos_complemento.csv], [pasta de transcrições]
+  resultados_alertas.csv, videos.csv, [videos_complemento.csv], [formatos.csv], [pasta de transcrições]
 
 Unidade de anotação: o PAR alerta–vídeo (o mesmo vídeo pode ser municipal para
 um alerta e regional para outro). Todos os candidatos de todas as consultas
@@ -23,7 +23,7 @@ Saída (pasta --saida, fica no Drive):
   anotacao_treino.xlsx        — 30 pares de prática, fora da amostra
   anotacao_validacao_assistida.xlsx — 50 pares da amostra para o codificador 1
                                 re-rotular assistindo ao vídeo (erro do julgamento por metadados)
-  anotacao_chave.csv          — id_par → estrato, peso, decisão e scores (só o pesquisador)
+  anotacao_chave.csv          — id_par → estrato, peso, decisão, scores e formato (só o pesquisador)
   ia/                         — prompts prontos por lote para os anotadores de IA
                                 (condições metadados e transcricao) + manifesto com hashes
 
@@ -93,6 +93,9 @@ def montar_pool(dados: Path) -> list[dict]:
         if r.get("status") == "ok" and r.get("coletado_em", "") >= ultimo.get(r["alert_id"], {}).get("coletado_em", ""):
             ultimo[r["alert_id"]] = r
     compl = {r["video_id"]: r for r in _ler(dados / "videos_complemento.csv")}
+    # v0.3.4: formato (short | longo | ao_vivo | indeterminado) — variável de análise, fora da planilha
+    formato = {r["video_id"]: r["formato"] for r in _ler(dados / "formatos.csv") if r.get("formato")}
+    formato.update({r["video_id"]: r["formato"] for r in _ler(dados / "videos.csv") if r.get("formato")})
     vids = _ler(dados / "videos.csv")
     # lote 1 não tinha coletado_em nos vídeos: vale a linha sem data se o resultado mais recente for do lote 1
     tem_data = {(r["alert_id"], r.get("coletado_em", "")) for r in vids if r.get("coletado_em")}
@@ -117,6 +120,7 @@ def montar_pool(dados: Path) -> list[dict]:
             "municipal_evidence": v.get("municipal_evidence", ""), "aceito_padrao": None, "variantes": set(),
             "relevance_score": v.get("relevance_score", ""), "geo_score": v.get("geo_score", ""),
             "event_score": v.get("event_score", ""), "rejection_reason": v.get("rejection_reason", ""),
+            "formato": formato.get(v["video_id"], ""),
         })
         p["variantes"].add(var)
         if var == "padrao":
@@ -180,7 +184,7 @@ def _xlsx(caminho: Path, linhas: list[dict], transcricoes: Path | None) -> None:
         ws.append([r["id_par"], r["municipio"], r["uf"], r["evento"], r["alerta_aberto_em"][:16], r["title"],
                    r["channel_title"], r["published_at"][:16], (r["description"] or "")[:1500], trechos,
                    f"https://www.youtube.com/watch?v={r['video_id']}", "", "", "", "", ""])
-    n = len(linhas) + 1
+    n = max(len(linhas) + 1, 2)   # planilha vazia ainda recebe as listas de opções
     for i, (campo, opcoes) in enumerate(ROTULOS.items()):
         col = chr(ord("A") + cols.index(campo))
         dv = DataValidation(type="list", formula1='"' + ",".join(opcoes) + '"', allow_blank=True)
@@ -265,7 +269,11 @@ def main() -> int:
     pool = montar_pool(args.dados)
     tam = Counter(p["estrato"] for p in pool)
     print(f"pool: {len(pool)} pares alerta–vídeo; por estrato: {dict(sorted(tam.items()))}")
-    amostra = sortear(pool, args.n, rng)
+    print(f"pool por formato: {dict(Counter(p['formato'] or 'sem_formato' for p in pool).most_common())}")
+    n_amostra = min(args.n, max(0, len(pool) - args.treino))
+    if n_amostra < args.n:   # pool pequeno: reserva os pares de treino antes de sortear
+        print(f"aviso: pool de {len(pool)} pares não comporta {args.n} + {args.treino} de treino; amostra reduzida a {n_amostra}")
+    amostra = sortear(pool, n_amostra, rng)
     rng.shuffle(amostra)  # ordem aleatória: o codificador não vê os estratos
     for i, p in enumerate(amostra, 1):
         p["id_par"] = f"P{i:04d}"
@@ -287,7 +295,7 @@ def main() -> int:
                 args.transcricoes, {"metadados": args.lote_ia_metadados, "transcricao": args.lote_ia_transcricao})
     campos = ["id_par", "alert_id", "video_id", "estrato", "peso", "grupo", "municipio", "uf", "evento",
               "aceito_padrao", "variantes", "municipal_evidence", "relevance_score", "geo_score", "event_score",
-              "rejection_reason", "dupla", "assistido", "tem_transcricao"]
+              "rejection_reason", "formato", "dupla", "assistido", "tem_transcricao"]
     ids_dupla = {p["id_par"] for p in dupla}
     ids_assist = {p["id_par"] for p in assistidos}
     with (args.saida / "anotacao_chave.csv").open("w", encoding="utf-8", newline="") as fh:
@@ -299,6 +307,7 @@ def main() -> int:
                                                and (args.transcricoes / f"{p['video_id']}.txt").exists()),
                         "peso": p.get("peso", "")})
     sorteados = Counter(p["estrato"] for p in amostra)
+    print(f"amostra por formato: {dict(Counter(p['formato'] or 'sem_formato' for p in amostra).most_common())}")
     print(f"amostra: {len(amostra)} pares {dict(sorted(sorteados.items()))}; dupla: {len(dupla)}; "
           f"treino: {len(treino)}; validação assistida: {len(assistidos)}")
     print(f"gravado em {args.saida}")

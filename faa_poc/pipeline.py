@@ -107,6 +107,7 @@ def _collect_for_alert(alert:dict,key:str,quota:youtube.QuotaTracker,config:dict
         # v0.3.1: o vídeo nomeia o município? (título + descrição completa)
         base["municipal_evidence"]=municipal_evidence(alert.get("municipio",""),alert.get("uf",""),
             title=video.get("title",""),description=stats.get(vid,{}).get("description","") or video.get("description_snippet",""))
+        base["formato"]=stats.get(vid,{}).get("formato","")  # v0.3.4
     # v0.3.2: vídeos que nomeiam o município entram antes dos de escopo
     # estadual/regional. Ordenar só pelo score deixava cobertura estadual
     # ocupar as vagas de MAX_VIDEOS_PER_ALERT (auditoria de 13/10/2026).
@@ -126,6 +127,7 @@ def _collect_for_alert(alert:dict,key:str,quota:youtube.QuotaTracker,config:dict
             "published_at":video.get("published_at",""),"channel_id":video.get("channel_id",""),"channel_title":video.get("channel_title",""),
             "title":video.get("title",""),"description_snippet":video.get("description_snippet",""),"description":st.get("description",""),
             "tags":st.get("tags",""),"view_count":st.get("view_count",""),"comment_count":st.get("comment_count",""),
+            **{k:st.get(k,"") for k in ("duration_s","embed_width","embed_height","live_status","formato")},
             **{k:sc[k] for k in ("relevance_score","geo_score","event_score","geo_match_type","relevance_reasons","rejection_reason")},
             "municipal_evidence":municipal_evidence(alert.get("municipio",""),alert.get("uf",""),title=video.get("title",""),
                                                      description=st.get("description","") or video.get("description_snippet","")),

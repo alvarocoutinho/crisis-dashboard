@@ -481,6 +481,26 @@ function EvidenceBadge({ evidence }) {
   );
 }
 
+// v0.3.4: formato do vídeo. Shorts circulam pelo feed de Shorts e têm outra
+// dinâmica de comentários; "longo" fica sem selo para não poluir o card.
+const FORMAT_META = {
+  short: { label: "Short", cls: "bg-violet-50 text-violet-800 border-violet-200" },
+  ao_vivo: { label: "ao vivo", cls: "bg-rose-50 text-rose-800 border-rose-200" },
+};
+
+function FormatBadge({ formato }) {
+  const meta = FORMAT_META[formato];
+  if (!meta) return null;
+  return (
+    <span
+      className={`inline-block mt-0.5 ml-1 px-1.5 py-px rounded border text-[10px] ${meta.cls}`}
+      title="Formato pela API do YouTube: Short = vertical ou quadrado com até 3 min; ao vivo = transmissão (inclui gravação de live encerrada)."
+    >
+      {meta.label}
+    </span>
+  );
+}
+
 function AlertCard({ alert }) {
   const tierMeta = getTierMeta(alert.priority_tier);
   const flagMeta = getFlagMeta(alert.flag);
@@ -677,6 +697,7 @@ function AlertCard({ alert }) {
                       {v.n_comments} coment. · {v.total_likes} likes
                     </div>
                     <EvidenceBadge evidence={v.municipal_evidence} />
+                    <FormatBadge formato={v.formato} />
                   </div>
                   <ExternalLink size={10} className="text-stone-400 flex-shrink-0" />
                 </a>

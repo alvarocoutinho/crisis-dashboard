@@ -6,6 +6,51 @@ O formato segue [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) e o 
 
 ---
 
+## [Pipeline 0.3.4] — 2026-10-14 — formato do vídeo (short | longo | ao vivo)
+
+**Registro, sem mudar decisão.** Os filtros continuam os da 0.3.3 (`filter_version` = `0.3.3`). O formato é uma variável de análise para a H1 e a H2 e um atributo candidato para a v0.4.
+
+### Por quê
+
+Short, vídeo longo e transmissão ao vivo diferem em distribuição, produção e dinâmica de comentários:
+- **Distribuição:** o Short circula sobretudo pelo feed de Shorts; o vídeo longo, pela busca e pelas sugestões.
+- **Produção:** muito Short é corte ou repostagem de reportagem.
+- **Comentários:** o volume de comentários não é comparável entre formatos.
+
+### Como se classifica
+
+A YouTube Data API não tem campo "Short". Aplica-se a definição do próprio YouTube: vídeo vertical ou quadrado com até 3 minutos (60 s para uploads anteriores a 15/10/2024). As regras, em ordem:
+
+1. `liveStreamingDetails` presente, ou `liveBroadcastContent` = live/upcoming → `ao_vivo`, inclusive a gravação de uma live encerrada.
+2. Duração (`contentDetails.duration`) acima do limite → `longo`.
+3. Dentro do limite, com proporção conhecida (`player.embedWidth`/`embedHeight`, pedidos com `maxHeight`): vertical ou quadrado → `short`; horizontal → `longo`.
+4. Dentro do limite, sem proporção, ou sem duração → `indeterminado`.
+
+As partes vêm na mesma chamada `videos.list` que já era feita, então o custo de cota não muda. A hashtag `#shorts` não é usada: muitos Shorts não a têm, e vídeos longos às vezes a usam.
+
+### Adicionado
+
+- `faa_poc.youtube.video_format()` e `parse_duration()`.
+- Colunas `duration_s`, `embed_width`, `embed_height`, `live_status` e `formato` em `youtube_videos_canonical.csv` e `youtube_candidates.csv`; `formato` também em `youtube_alert_video_links.csv`.
+- No state: `video_format` por alerta, no formato `{video_id: formato}`. Um formato definido nunca volta a `indeterminado`.
+- No `live.json`: `formato` em cada vídeo e `videos_por_formato` em cada alerta.
+- No painel: selo "Short" e "ao vivo" nos cartões de vídeo.
+- `scripts/backfill_video_format.py` e o workflow **"ODRD Formato dos vídeos — backfill"**, que preenchem o formato dos vídeos já coletados (1 unidade a cada 50 vídeos, sem buscas; `dry_run` ligado por padrão).
+- **Notebook de coleta retrospectiva v2.2:**
+  - `formato` em `videos.csv`;
+  - a célula **Formato** preenche os vídeos já coletados em `formatos.csv` e mostra candidatos, aceitos e vídeos que citam o município por formato.
+- `build_annotation_sample.py`: `formato` na chave. A planilha dos codificadores não muda.
+- `build_annotation_sample.py` também ganhou duas proteções: quando o pool não comporta a amostra mais o treino, a amostra é reduzida com aviso, e planilhas vazias deixam de quebrar o script.
+- `analyze_annotation.py`: precisão e recuperação do filtro atual por formato.
+
+### Limitações
+
+- **Zona ambígua de 60 a 180 s:** depende da proporção do player. Se a API não devolver as dimensões, o vídeo fica `indeterminado` e não é adivinhado.
+- **Vídeo vertical curto enviado como vídeo comum:** é classificado como Short, a mesma regra que o YouTube aplica desde 2024.
+- **Amostra:** a amostra de calibração não é estratificada por formato. As estimativas por formato são reportadas com o n de cada formato.
+
+---
+
 ## [Ferramentas] — 2026-10-14 — anotadores de IA e análise da calibração
 
 - `docs/calibracao/prompt_ia_v1.md`: prompt congelado dos anotadores de IA.
