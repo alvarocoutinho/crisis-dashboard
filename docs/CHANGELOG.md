@@ -6,6 +6,19 @@ O formato segue [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) e o 
 
 ---
 
+## [IDAP 0.1.0] — 2026-10-14 — alertas da Defesa Civil à população (CAP 1.2)
+
+- **Coletor de hora em hora** (`.github/workflows/idap.yml`, `scripts/collect_idap.py` e o pacote `odrd_idap/`) do feed nacional da IDAP.
+  - O feed só guarda cerca de 12 h, então a coleta é contínua.
+  - O XML CAP original de cada alerta vai para o Release `idap-arquivo`, um `.jsonl.gz` por dia.
+  - O catálogo de pesquisa fica em `data/idap/alertas.csv`; o log de capturas, com janela e lacunas na numeração, em `data/idap/capturas.csv`.
+  - A geometria simplificada para o painel fica em `public/data/idap/`.
+- **Semente:** os 73 alertas da captura de 14/10/2026 às 16h29 (Colab do pesquisador).
+- **Documentação:** `docs/idap.md` (fonte, ressalvas, janela do feed, camadas de armazenamento).
+- **Testes:** 8, sobre uma amostra real de 4 alertas.
+
+---
+
 ## [Pipeline 0.3.4] — 2026-10-14 — formato do vídeo (short | longo | ao vivo)
 
 **Registro, sem mudar decisão.** Os filtros continuam os da 0.3.3 (`filter_version` = `0.3.3`). O formato é uma variável de análise para a H1 e a H2 e um atributo candidato para a v0.4.

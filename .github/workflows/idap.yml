@@ -1,0 +1,111 @@
+name: ODRD IDAP — alertas à população (de hora em hora)
+
+# Coleta o feed nacional Atom/CAP 1.2 da IDAP (Defesa Civil). O feed guarda só
+# uma janela curta (≈12 h observadas em 14/10/2026; 24 h segundo o Fórum
+# SBTVD): o que não for coletado nesse prazo se perde.
+#
+# Ordem de segurança: o XML CAP original vai primeiro para o Release
+# "idap-arquivo". Só depois o catálogo é commitado. Se a publicação falhar, o
+# job falha, nada é commitado, e a próxima hora recoleta.
+on:
+  schedule:
+    - cron: '23 * * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Só mostrar o que seria coletado (não publica nem commita)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: odrd-idap
+  cancel-in-progress: false
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+      STAGING: /tmp/idap_raw
+      RELEASE: idap-arquivo
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install "requests~=2.31.0" "shapely~=2.0"
+
+      - name: Baixar os arquivos brutos de hoje e de ontem (para mesclar)
+        if: ${{ !inputs.dry_run }}
+        run: |
+          mkdir -p "$STAGING"
+          if gh release view "$RELEASE" >/dev/null 2>&1; then
+            for d in $(TZ=America/Sao_Paulo date +%F) $(TZ=America/Sao_Paulo date -d yesterday +%F); do
+              gh release download "$RELEASE" -p "idap_cap_${d}.jsonl.gz" -D "$STAGING" --clobber 2>/dev/null \
+                && echo "baixado idap_cap_${d}.jsonl.gz" || echo "sem arquivo de ${d} ainda"
+            done
+          fi
+          # marca o estado anterior para publicar só o que mudou
+          for f in "$STAGING"/*.jsonl.gz; do [ -e "$f" ] && sha256sum "$f" >> /tmp/idap_antes.sha; done; true
+          # sementes (capturas feitas fora do workflow) entram se o dia ainda não está no Release
+          gh release view "$RELEASE" --json assets --jq '.assets[].name' > /tmp/idap_assets.txt 2>/dev/null || : > /tmp/idap_assets.txt
+          for f in data/idap/semente/*.jsonl.gz; do
+            [ -e "$f" ] || continue
+            nome=$(basename "$f")
+            grep -qx "$nome" /tmp/idap_assets.txt && continue   # o Release já tem esse dia: nunca sobrescrever
+            cp "$f" "$STAGING/$nome"; echo "semente $nome"
+          done
+
+      - name: Coletar o feed
+        run: |
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            python scripts/collect_idap.py --staging "$STAGING" --dry-run
+          else
+            python scripts/collect_idap.py --staging "$STAGING"
+          fi
+
+      - name: Publicar o XML CAP original no Release
+        if: ${{ !inputs.dry_run }}
+        run: |
+          shopt -s nullglob
+          files=("$STAGING"/*.jsonl.gz)
+          [ ${#files[@]} -eq 0 ] && { echo "nada a publicar"; exit 0; }
+          if ! gh release view "$RELEASE" >/dev/null 2>&1; then
+            gh release create "$RELEASE" --title "Arquivo IDAP (CAP 1.2)" --latest=false \
+              --notes "XML CAP original dos alertas da IDAP, um arquivo .jsonl.gz por dia de emissão (horário de Brasília). Gerado pelo workflow idap.yml. Fonte: https://idapfile.mdr.gov.br/idap/api/rss/cap"
+          fi
+          gh release view "$RELEASE" --json assets --jq '.assets[].name' > /tmp/idap_assets.txt
+          for f in "${files[@]}"; do
+            nome=$(basename "$f")
+            if [ -f /tmp/idap_antes.sha ] && grep -q "$(sha256sum "$f" | cut -d' ' -f1)" /tmp/idap_antes.sha; then
+              continue   # sem mudança
+            fi
+            # dia já publicado mas não baixado no início (ex.: semente, dia antigo): mescla antes de subir
+            if grep -qx "$nome" /tmp/idap_assets.txt && ! grep -q "/$nome\$" /tmp/idap_antes.sha 2>/dev/null; then
+              mkdir -p /tmp/idap_remoto
+              gh release download "$RELEASE" -p "$nome" -D /tmp/idap_remoto --clobber
+              python scripts/idap_merge_raw.py "$f" "/tmp/idap_remoto/$nome"
+            fi
+            gh release upload "$RELEASE" "$f" --clobber
+            echo "publicado $nome"
+          done
+
+      - name: Commit
+        if: ${{ !inputs.dry_run }}
+        run: |
+          git config user.name "odrd-pipeline[bot]"
+          git config user.email "odrd-pipeline[bot]@users.noreply.github.com"
+          git add data/idap public/data/idap
+          if git diff --cached --quiet; then echo "nada a commitar"; exit 0; fi
+          git commit -q -m "chore(idap): coleta $(date -u +%FT%H:%MZ)"
+          for i in 1 2 3; do
+            git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0
+            sleep $((i * 15))
+          done
+          echo "::error::push falhou depois de 3 tentativas"; exit 1
