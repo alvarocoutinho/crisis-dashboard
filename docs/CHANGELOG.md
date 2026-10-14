@@ -6,6 +6,17 @@ O formato segue [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) e o 
 
 ---
 
+## [Observação CEMADEN 0.1.0] — 2026-10-14
+
+- **Workflow `cemaden-horario.yml`** (minuto 41 de cada hora), com `scripts/observe_cemaden.py` e o pacote `odrd_cemaden/`.
+  - Consulta o painel do CEMADEN de hora em hora, sem filtro.
+  - Grava o catálogo dos alertas observados, com duração e um marcador de se o pipeline os viu; o log de capturas; e os retratos brutos quando o conteúdo muda.
+  - Só observa: não altera o state nem gasta cota do YouTube.
+- **Objetivo:** medir quantos alertas relevantes abrem e fecham entre as consultas de 6 em 6 h do pipeline (`docs/cemaden_observacao.md`).
+- **Testes:** 4.
+
+---
+
 ## [IDAP 0.1.0] — 2026-10-14 — alertas da Defesa Civil à população (CAP 1.2)
 
 - **Coletor de hora em hora** (`.github/workflows/idap.yml`, `scripts/collect_idap.py` e o pacote `odrd_idap/`) do feed nacional da IDAP.
