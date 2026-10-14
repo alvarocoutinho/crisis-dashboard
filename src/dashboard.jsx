@@ -798,7 +798,7 @@ function Header() {
             <Beaker size={12} /> Prova de conceito · v0.1 · TRL 3–4
           </span>
           <span className="text-stone-500 text-right">
-            NEPAM/Unicamp · CEPID CLIMARES · parceria CEMADEN
+            Projeto de pesquisa independente
           </span>
         </div>
       </div>
@@ -848,8 +848,7 @@ function Footer() {
           treinamento do modelo. Mapa base: GeoJSON de estados brasileiros (click_that_hood, MIT).
           Atualização dos dados exibidos: <strong>manual, por design</strong> — as agregações
           vêm do pipeline v2.4 rodando no Colab/Google Drive, não de um <em>backend</em> online.
-          Coordenação: Álvaro Luz Alves Coutinho (NEPAM/PPGA&amp;S/Unicamp), sob supervisão da
-          Profa. Leila da Costa Ferreira, no âmbito do CEPID CLIMARES (Eixo 7).
+          Responsável: Álvaro Luz Alves Coutinho.
         </div>
       </div>
     </footer>

@@ -37,7 +37,7 @@ CATALOG = REPO / "data" / "idap" / "alertas.csv"
 CAPTURES = REPO / "data" / "idap" / "capturas.csv"
 LACUNAS = REPO / "data" / "idap" / "lacunas.csv"
 PUB = REPO / "public" / "data" / "idap"
-UA = "ODRD-observatorio/0.1 (pesquisa academica; Unicamp/NEPAM; github.com/alvarocoutinho/crisis-dashboard)"
+UA = "ODRD-observatorio/0.1 (pesquisa academica; github.com/alvarocoutinho/crisis-dashboard)"
 
 
 def baixar() -> tuple[bytes | None, dict]:

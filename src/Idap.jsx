@@ -218,7 +218,7 @@ export default function Idap() {
             <div className="w-10 h-10 rounded-md bg-stone-800 text-white flex items-center justify-center text-xs font-semibold">ODRD</div>
             <div>
               <h1 className="text-xl font-semibold text-stone-900 leading-tight group-hover:underline">Observatório Digital de Riscos e Desastres</h1>
-              <p className="text-xs text-stone-600">NEPAM/Unicamp · CEPID CLIMARES</p>
+              <p className="text-xs text-stone-600">Projeto de pesquisa independente</p>
             </div>
           </Link>
         </div>
