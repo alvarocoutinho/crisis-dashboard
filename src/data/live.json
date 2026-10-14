@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-13T20:07:48Z",
-  "pipeline_version": "0.3.0",
+  "generated_at": "2026-10-14T02:58:28Z",
+  "pipeline_version": "0.3.3",
   "pilot_mode": true,
   "dry_run": false,
   "alerts": [
@@ -116,6 +116,9 @@
       "next_collection_at": "2026-10-14T20:07:30Z",
       "window_finalized_at": "2026-10-13T20:07:30Z",
       "counters_integrity": "ok",
+      "n_videos_municipais": 0,
+      "n_videos_verificados": 0,
+      "n_comments_municipais": 0,
       "n_comments_valid_municipal": 0,
       "videos_with_valid_comments_municipal": [],
       "flag_reassessment": {
@@ -129,10 +132,7 @@
         "n_videos_with_valid_municipal": 0,
         "contagem": "observada",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0
+      }
     },
     {
       "id": "cemaden_rs_2884",
@@ -246,6 +246,9 @@
       "next_collection_at": "2026-10-14T20:07:30Z",
       "window_finalized_at": "2026-10-13T20:07:30Z",
       "counters_integrity": "ok",
+      "n_videos_municipais": 0,
+      "n_videos_verificados": 0,
+      "n_comments_municipais": 0,
       "n_comments_valid_municipal": 0,
       "videos_with_valid_comments_municipal": [],
       "flag_reassessment": {
@@ -259,10 +262,7 @@
         "n_videos_with_valid_municipal": 0,
         "contagem": "observada",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0
+      }
     },
     {
       "id": "cemaden_rs_2897",
@@ -370,6 +370,9 @@
       "next_collection_at": "2026-10-14T20:07:30Z",
       "window_finalized_at": "2026-10-13T20:07:30Z",
       "counters_integrity": "ok",
+      "n_videos_municipais": 0,
+      "n_videos_verificados": 0,
+      "n_comments_municipais": 0,
       "n_comments_valid_municipal": 0,
       "videos_with_valid_comments_municipal": [],
       "flag_reassessment": {
@@ -383,10 +386,7 @@
         "n_videos_with_valid_municipal": 0,
         "contagem": "observada",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0
+      }
     },
     {
       "id": "cemaden_pr_2960",
@@ -494,6 +494,9 @@
       "next_collection_at": "2026-10-14T20:07:30Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
+      "n_videos_municipais": 0,
+      "n_videos_verificados": 0,
+      "n_comments_municipais": 0,
       "n_comments_valid_municipal": 0,
       "videos_with_valid_comments_municipal": [],
       "flag_reassessment": {
@@ -507,10 +510,7 @@
         "n_videos_with_valid_municipal": 0,
         "contagem": "observada",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0
+      }
     },
     {
       "id": "cemaden_pr_2962",
@@ -618,6 +618,9 @@
       "next_collection_at": "2026-10-14T20:07:30Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
+      "n_videos_municipais": 0,
+      "n_videos_verificados": 0,
+      "n_comments_municipais": 0,
       "n_comments_valid_municipal": 0,
       "videos_with_valid_comments_municipal": [],
       "flag_reassessment": {
@@ -631,10 +634,7 @@
         "n_videos_with_valid_municipal": 0,
         "contagem": "observada",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0
+      }
     },
     {
       "id": "cemaden_pr_2966",
@@ -742,6 +742,9 @@
       "next_collection_at": "2026-10-14T20:07:30Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
+      "n_videos_municipais": 0,
+      "n_videos_verificados": 0,
+      "n_comments_municipais": 0,
       "n_comments_valid_municipal": 0,
       "videos_with_valid_comments_municipal": [],
       "flag_reassessment": {
@@ -755,134 +758,7 @@
         "n_videos_with_valid_municipal": 0,
         "contagem": "observada",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0
-    },
-    {
-      "id": "cemaden_pr_2967",
-      "municipio": "Foz do Iguaçu",
-      "uf": "PR",
-      "tipo": "Risco Hidrológico",
-      "nivel": "Moderado",
-      "data_alerta": "12/10/2026",
-      "codibge": "4108304",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-12T16:15:28Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-12T16:15:28Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-10-13T20:07:30Z",
-      "next_collection_at": "2026-10-14T20:07:30Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": {
-        "at": "2026-10-13T23:46:37Z",
-        "from": "alerta",
-        "to": "alerta",
-        "criterio": "municipal_v0.3.2",
-        "n_videos": 0,
-        "n_videos_municipais": 0,
-        "n_comments_valid_municipal": 0,
-        "n_videos_with_valid_municipal": 0,
-        "contagem": "observada",
-        "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0
+      }
     },
     {
       "id": "cemaden_sp_2968",
@@ -990,6 +866,9 @@
       "next_collection_at": "2026-10-14T20:07:30Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
+      "n_videos_municipais": 0,
+      "n_videos_verificados": 0,
+      "n_comments_municipais": 0,
       "n_comments_valid_municipal": 0,
       "videos_with_valid_comments_municipal": [],
       "flag_reassessment": {
@@ -1003,258 +882,7 @@
         "n_videos_with_valid_municipal": 0,
         "contagem": "observada",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0
-    },
-    {
-      "id": "cemaden_pr_2969",
-      "municipio": "São Miguel do Iguaçu",
-      "uf": "PR",
-      "tipo": "Risco Hidrológico",
-      "nivel": "Moderado",
-      "data_alerta": "12/10/2026",
-      "codibge": "4125704",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-12T17:39:19Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-12T17:39:19Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-10-13T20:07:30Z",
-      "next_collection_at": "2026-10-14T20:07:30Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": {
-        "at": "2026-10-13T23:46:37Z",
-        "from": "alerta",
-        "to": "alerta",
-        "criterio": "municipal_v0.3.2",
-        "n_videos": 0,
-        "n_videos_municipais": 0,
-        "n_comments_valid_municipal": 0,
-        "n_videos_with_valid_municipal": 0,
-        "contagem": "observada",
-        "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0
-    },
-    {
-      "id": "cemaden_sp_2970",
-      "municipio": "Marília",
-      "uf": "SP",
-      "tipo": "Risco Hidrológico",
-      "nivel": "Moderado",
-      "data_alerta": "13/10/2026",
-      "codibge": "3529005",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-13T13:08:49Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-13T13:08:49Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-10-13T20:07:30Z",
-      "next_collection_at": "2026-10-14T20:07:30Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": {
-        "at": "2026-10-13T23:46:37Z",
-        "from": "alerta",
-        "to": "alerta",
-        "criterio": "municipal_v0.3.2",
-        "n_videos": 0,
-        "n_videos_municipais": 0,
-        "n_comments_valid_municipal": 0,
-        "n_videos_with_valid_municipal": 0,
-        "contagem": "observada",
-        "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0
+      }
     },
     {
       "id": "cemaden_mg_2971",
@@ -1362,6 +990,9 @@
       "next_collection_at": "2026-10-14T20:07:30Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
+      "n_videos_municipais": 0,
+      "n_videos_verificados": 0,
+      "n_comments_municipais": 0,
       "n_comments_valid_municipal": 0,
       "videos_with_valid_comments_municipal": [],
       "flag_reassessment": {
@@ -1375,134 +1006,7 @@
         "n_videos_with_valid_municipal": 0,
         "contagem": "observada",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0
-    },
-    {
-      "id": "cemaden_mg_2972",
-      "municipio": "Eugenópolis",
-      "uf": "MG",
-      "tipo": "Risco Hidrológico",
-      "nivel": "Moderado",
-      "data_alerta": "13/10/2026",
-      "codibge": "3124906",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-13T16:50:27Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-13T16:50:27Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-10-13T20:07:30Z",
-      "next_collection_at": "2026-10-14T20:07:30Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": {
-        "at": "2026-10-13T23:46:37Z",
-        "from": "alerta",
-        "to": "alerta",
-        "criterio": "municipal_v0.3.2",
-        "n_videos": 0,
-        "n_videos_municipais": 0,
-        "n_comments_valid_municipal": 0,
-        "n_videos_with_valid_municipal": 0,
-        "contagem": "observada",
-        "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0
+      }
     },
     {
       "id": "cemaden_rs_2475",
@@ -1740,6 +1244,9 @@
       "next_collection_at": "2026-10-14T06:45:08Z",
       "window_finalized_at": "2026-10-10T16:45:01Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "n_videos_municipais": 1,
+      "n_videos_verificados": 2,
+      "n_comments_municipais": 9,
       "n_comments_valid_municipal": 9,
       "videos_with_valid_comments_municipal": [
         "0P0rteK4PiE"
@@ -1755,10 +1262,7 @@
         "n_videos_with_valid_municipal": 1,
         "contagem": "estimada_historico_live",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 1,
-      "n_videos_verificados": 2,
-      "n_comments_municipais": 9
+      }
     },
     {
       "id": "cemaden_rs_2494",
@@ -2146,6 +1650,9 @@
       "next_collection_at": "2026-10-14T06:45:08Z",
       "window_finalized_at": "2026-10-10T16:45:01Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "n_videos_municipais": 1,
+      "n_videos_verificados": 2,
+      "n_comments_municipais": 25,
       "n_comments_valid_municipal": 21,
       "videos_with_valid_comments_municipal": [
         "FawKqyvaAzU"
@@ -2161,10 +1668,7 @@
         "n_videos_with_valid_municipal": 1,
         "contagem": "estimada_historico_live",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 1,
-      "n_videos_verificados": 2,
-      "n_comments_municipais": 25
+      }
     },
     {
       "id": "cemaden_rs_2499",
@@ -2735,6 +2239,9 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "n_videos_municipais": 3,
+      "n_videos_verificados": 5,
+      "n_comments_municipais": 7,
       "n_comments_valid_municipal": 8,
       "videos_with_valid_comments_municipal": [
         "O8atoKChx6M",
@@ -2752,10 +2259,7 @@
         "n_videos_with_valid_municipal": 3,
         "contagem": "estimada_historico_live",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 3,
-      "n_videos_verificados": 5,
-      "n_comments_municipais": 7
+      }
     },
     {
       "id": "cemaden_sp_2507",
@@ -3145,6 +2649,9 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "n_videos_municipais": 2,
+      "n_videos_verificados": 7,
+      "n_comments_municipais": 2,
       "n_comments_valid_municipal": 2,
       "videos_with_valid_comments_municipal": [
         "UwFA2z6cAJE"
@@ -3160,10 +2667,7 @@
         "n_videos_with_valid_municipal": 1,
         "contagem": "estimada_historico_live",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 2,
-      "n_videos_verificados": 7,
-      "n_comments_municipais": 2
+      }
     },
     {
       "id": "cemaden_sp_2609",
@@ -4569,6 +4073,9 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "n_videos_municipais": 2,
+      "n_videos_verificados": 7,
+      "n_comments_municipais": 61,
       "n_comments_valid_municipal": 105,
       "videos_with_valid_comments_municipal": [
         "CPqyzhnDUzE",
@@ -4587,10 +4094,7 @@
         "n_videos_with_valid_municipal": 4,
         "contagem": "estimada_historico_live",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 2,
-      "n_videos_verificados": 7,
-      "n_comments_municipais": 61
+      }
     },
     {
       "id": "cemaden_sp_2586",
@@ -5863,6 +5367,9 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "n_videos_municipais": 3,
+      "n_videos_verificados": 8,
+      "n_comments_municipais": 19,
       "n_comments_valid_municipal": 18,
       "videos_with_valid_comments_municipal": [
         "dQEK_SfqtHE"
@@ -5878,10 +5385,7 @@
         "n_videos_with_valid_municipal": 1,
         "contagem": "estimada_historico_live",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 3,
-      "n_videos_verificados": 8,
-      "n_comments_municipais": 19
+      }
     },
     {
       "id": "cemaden_sp_2594",
@@ -6307,6 +5811,9 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "n_videos_municipais": 1,
+      "n_videos_verificados": 2,
+      "n_comments_municipais": 0,
       "n_comments_valid_municipal": 1,
       "videos_with_valid_comments_municipal": [
         "CrRUWx2Q5bY"
@@ -6322,10 +5829,7 @@
         "n_videos_with_valid_municipal": 1,
         "contagem": "estimada_historico_live",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 1,
-      "n_videos_verificados": 2,
-      "n_comments_municipais": 0
+      }
     },
     {
       "id": "cemaden_sp_2595",
@@ -6962,6 +6466,9 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "n_videos_municipais": 0,
+      "n_videos_verificados": 2,
+      "n_comments_municipais": 0,
       "n_comments_valid_municipal": 0,
       "videos_with_valid_comments_municipal": [],
       "flag_reassessment": {
@@ -6975,10 +6482,7 @@
         "n_videos_with_valid_municipal": 0,
         "contagem": "estimada_historico_live",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 2,
-      "n_comments_municipais": 0
+      }
     },
     {
       "id": "cemaden_sp_2598",
@@ -7585,6 +7089,9 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "n_videos_municipais": 2,
+      "n_videos_verificados": 3,
+      "n_comments_municipais": 20,
       "n_comments_valid_municipal": 17,
       "videos_with_valid_comments_municipal": [
         "PuWdpSJi0o4",
@@ -7601,10 +7108,7 @@
         "n_videos_with_valid_municipal": 2,
         "contagem": "estimada_historico_live",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 2,
-      "n_videos_verificados": 3,
-      "n_comments_municipais": 20
+      }
     },
     {
       "id": "cemaden_sc_2721",
@@ -7917,6 +7421,9 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "n_videos_municipais": 1,
+      "n_videos_verificados": 3,
+      "n_comments_municipais": 0,
       "n_comments_valid_municipal": 0,
       "videos_with_valid_comments_municipal": [],
       "flag_reassessment": {
@@ -7930,10 +7437,7 @@
         "n_videos_with_valid_municipal": 0,
         "contagem": "estimada_historico_live",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 1,
-      "n_videos_verificados": 3,
-      "n_comments_municipais": 0
+      }
     },
     {
       "id": "cemaden_sp_2571",
@@ -8534,6 +8038,9 @@
       "next_collection_at": "2026-10-14T06:45:08Z",
       "window_finalized_at": "2026-10-10T16:45:01Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "n_videos_municipais": 0,
+      "n_videos_verificados": 1,
+      "n_comments_municipais": 0,
       "n_comments_valid_municipal": 0,
       "videos_with_valid_comments_municipal": [],
       "flag_reassessment": {
@@ -8547,10 +8054,7 @@
         "n_videos_with_valid_municipal": 0,
         "contagem": "estimada_historico_live",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 1,
-      "n_comments_municipais": 0
+      }
     },
     {
       "id": "cemaden_sp_2572",
@@ -9170,6 +8674,9 @@
       "next_collection_at": "2026-10-14T06:45:08Z",
       "window_finalized_at": "2026-10-10T16:45:01Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "n_videos_municipais": 0,
+      "n_videos_verificados": 2,
+      "n_comments_municipais": 0,
       "n_comments_valid_municipal": 0,
       "videos_with_valid_comments_municipal": [],
       "flag_reassessment": {
@@ -9183,10 +8690,7 @@
         "n_videos_with_valid_municipal": 0,
         "contagem": "estimada_historico_live",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 2,
-      "n_comments_municipais": 0
+      }
     },
     {
       "id": "cemaden_sp_2573",
@@ -10317,6 +9821,9 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "n_videos_municipais": 0,
+      "n_videos_verificados": 6,
+      "n_comments_municipais": 0,
       "n_comments_valid_municipal": 0,
       "videos_with_valid_comments_municipal": [],
       "flag_reassessment": {
@@ -10330,10 +9837,7 @@
         "n_videos_with_valid_municipal": 0,
         "contagem": "estimada_historico_live",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 6,
-      "n_comments_municipais": 0
+      }
     },
     {
       "id": "cemaden_sp_2574",
@@ -11188,6 +10692,9 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "n_videos_municipais": 0,
+      "n_videos_verificados": 2,
+      "n_comments_municipais": 0,
       "n_comments_valid_municipal": 0,
       "videos_with_valid_comments_municipal": [],
       "flag_reassessment": {
@@ -11201,10 +10708,7 @@
         "n_videos_with_valid_municipal": 0,
         "contagem": "estimada_historico_live",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 2,
-      "n_comments_municipais": 0
+      }
     },
     {
       "id": "cemaden_sp_2575",
@@ -12300,6 +11804,9 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "n_videos_municipais": 0,
+      "n_videos_verificados": 7,
+      "n_comments_municipais": 0,
       "n_comments_valid_municipal": 0,
       "videos_with_valid_comments_municipal": [],
       "flag_reassessment": {
@@ -12313,10 +11820,7 @@
         "n_videos_with_valid_municipal": 0,
         "contagem": "estimada_historico_live",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 7,
-      "n_comments_municipais": 0
+      }
     },
     {
       "id": "cemaden_sp_2577",
@@ -13769,6 +13273,9 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "n_videos_municipais": 6,
+      "n_videos_verificados": 9,
+      "n_comments_municipais": 326,
       "n_comments_valid_municipal": 333,
       "videos_with_valid_comments_municipal": [
         "-O41i-QLYnA",
@@ -13793,10 +13300,7 @@
         "n_videos_with_valid_municipal": 10,
         "contagem": "estimada_historico_live",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 6,
-      "n_videos_verificados": 9,
-      "n_comments_municipais": 326
+      }
     },
     {
       "id": "cemaden_sp_2679",
@@ -15094,6 +14598,9 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "n_videos_municipais": 0,
+      "n_videos_verificados": 8,
+      "n_comments_municipais": 0,
       "n_comments_valid_municipal": 1,
       "videos_with_valid_comments_municipal": [
         "1xsZcncWSZk"
@@ -15109,10 +14616,7 @@
         "n_videos_with_valid_municipal": 1,
         "contagem": "estimada_historico_live",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 8,
-      "n_comments_municipais": 0
+      }
     },
     {
       "id": "cemaden_sp_2684",
@@ -15599,6 +15103,9 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "n_videos_municipais": 1,
+      "n_videos_verificados": 3,
+      "n_comments_municipais": 1,
       "n_comments_valid_municipal": 1,
       "videos_with_valid_comments_municipal": [
         "a88rWqu0GWU"
@@ -15614,10 +15121,7 @@
         "n_videos_with_valid_municipal": 1,
         "contagem": "estimada_historico_live",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 1,
-      "n_videos_verificados": 3,
-      "n_comments_municipais": 1
+      }
     },
     {
       "id": "cemaden_sp_2686",
@@ -16952,6 +16456,9 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "n_videos_municipais": 0,
+      "n_videos_verificados": 10,
+      "n_comments_municipais": 0,
       "n_comments_valid_municipal": 0,
       "videos_with_valid_comments_municipal": [],
       "flag_reassessment": {
@@ -16965,10 +16472,7 @@
         "n_videos_with_valid_municipal": 0,
         "contagem": "estimada_historico_live",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 10,
-      "n_comments_municipais": 0
+      }
     },
     {
       "id": "cemaden_sp_2716",
@@ -18228,6 +17732,9 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "n_videos_municipais": 1,
+      "n_videos_verificados": 6,
+      "n_comments_municipais": 229,
       "n_comments_valid_municipal": 230,
       "videos_with_valid_comments_municipal": [
         "qSmKOPIqnv8"
@@ -18243,10 +17750,7 @@
         "n_videos_with_valid_municipal": 1,
         "contagem": "estimada_historico_live",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 1,
-      "n_videos_verificados": 6,
-      "n_comments_municipais": 229
+      }
     },
     {
       "id": "cemaden_sp_2717",
@@ -19084,6 +18588,9 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "n_videos_municipais": 2,
+      "n_videos_verificados": 4,
+      "n_comments_municipais": 36,
       "n_comments_valid_municipal": 29,
       "videos_with_valid_comments_municipal": [
         "fKaHJbwMSaI",
@@ -19100,10 +18607,7 @@
         "n_videos_with_valid_municipal": 2,
         "contagem": "estimada_historico_live",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 2,
-      "n_videos_verificados": 4,
-      "n_comments_municipais": 36
+      }
     },
     {
       "id": "cemaden_sc_2768",
@@ -20156,6 +19660,9 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "n_videos_municipais": 8,
+      "n_videos_verificados": 8,
+      "n_comments_municipais": 222,
       "n_comments_valid_municipal": 202,
       "videos_with_valid_comments_municipal": [
         "APDi5fLPf_E",
@@ -20174,10 +19681,7 @@
         "n_videos_with_valid_municipal": 4,
         "contagem": "estimada_historico_live",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 8,
-      "n_videos_verificados": 8,
-      "n_comments_municipais": 222
+      }
     },
     {
       "id": "cemaden_sc_2772",
@@ -20534,6 +20038,9 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "n_videos_municipais": 5,
+      "n_videos_verificados": 5,
+      "n_comments_municipais": 22,
       "n_comments_valid_municipal": 26,
       "videos_with_valid_comments_municipal": [
         "0_BH2DBCYyw",
@@ -20553,10 +20060,7 @@
         "n_videos_with_valid_municipal": 5,
         "contagem": "estimada_historico_live",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 5,
-      "n_videos_verificados": 5,
-      "n_comments_municipais": 22
+      }
     },
     {
       "id": "cemaden_rs_2805",
@@ -21047,6 +20551,9 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "n_videos_municipais": 3,
+      "n_videos_verificados": 3,
+      "n_comments_municipais": 31,
       "n_comments_valid_municipal": 27,
       "videos_with_valid_comments_municipal": [
         "TRzqbfCz93E",
@@ -21063,10 +20570,7 @@
         "n_videos_with_valid_municipal": 2,
         "contagem": "estimada_historico_live",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 3,
-      "n_videos_verificados": 3,
-      "n_comments_municipais": 31
+      }
     },
     {
       "id": "cemaden_rs_2742",
@@ -21284,6 +20788,9 @@
       "next_collection_at": "2026-10-14T06:45:08Z",
       "window_finalized_at": "2026-10-10T16:45:01Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "n_videos_municipais": 1,
+      "n_videos_verificados": 2,
+      "n_comments_municipais": 0,
       "n_comments_valid_municipal": 0,
       "videos_with_valid_comments_municipal": [],
       "flag_reassessment": {
@@ -21297,10 +20804,7 @@
         "n_videos_with_valid_municipal": 0,
         "contagem": "estimada_historico_live",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 1,
-      "n_videos_verificados": 2,
-      "n_comments_municipais": 0
+      }
     },
     {
       "id": "cemaden_rs_2745",
@@ -21979,6 +21483,9 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "n_videos_municipais": 6,
+      "n_videos_verificados": 6,
+      "n_comments_municipais": 84,
       "n_comments_valid_municipal": 72,
       "videos_with_valid_comments_municipal": [
         "d8Jyndmq0jc",
@@ -21995,10 +21502,7 @@
         "n_videos_with_valid_municipal": 2,
         "contagem": "estimada_historico_live",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 6,
-      "n_videos_verificados": 6,
-      "n_comments_municipais": 84
+      }
     },
     {
       "id": "cemaden_rs_2834",
@@ -22181,6 +21685,9 @@
       "next_collection_at": "2026-10-14T06:45:08Z",
       "window_finalized_at": "2026-10-10T16:45:01Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "n_videos_municipais": 1,
+      "n_videos_verificados": 1,
+      "n_comments_municipais": 5,
       "n_comments_valid_municipal": 4,
       "videos_with_valid_comments_municipal": [
         "rBqMG1h8dys"
@@ -22196,10 +21703,7 @@
         "n_videos_with_valid_municipal": 1,
         "contagem": "estimada_historico_live",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 1,
-      "n_videos_verificados": 1,
-      "n_comments_municipais": 5
+      }
     },
     {
       "id": "cemaden_rs_2848",
@@ -22698,6 +22202,9 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "n_videos_municipais": 5,
+      "n_videos_verificados": 5,
+      "n_comments_municipais": 38,
       "n_comments_valid_municipal": 44,
       "videos_with_valid_comments_municipal": [
         "3lfv4UnfTpM",
@@ -22718,10 +22225,7 @@
         "n_videos_with_valid_municipal": 6,
         "contagem": "estimada_historico_live",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 5,
-      "n_videos_verificados": 5,
-      "n_comments_municipais": 38
+      }
     },
     {
       "id": "cemaden_rs_2864",
@@ -23606,6 +23110,9 @@
       "next_collection_at": "2026-10-14T00:45:08Z",
       "window_finalized_at": "2026-10-13T18:45:08Z",
       "counters_integrity": "recounted_from_live_history_v0.3",
+      "n_videos_municipais": 2,
+      "n_videos_verificados": 10,
+      "n_comments_municipais": 26,
       "n_comments_valid_municipal": 22,
       "videos_with_valid_comments_municipal": [
         "IOOjwHj7dWc"
@@ -23621,10 +23128,7 @@
         "n_videos_with_valid_municipal": 1,
         "contagem": "estimada_historico_live",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 2,
-      "n_videos_verificados": 10,
-      "n_comments_municipais": 26
+      }
     },
     {
       "id": "cemaden_rj_2914",
@@ -23745,6 +23249,9 @@
       "next_collection_at": "2026-10-14T06:45:08Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
+      "n_videos_municipais": 1,
+      "n_videos_verificados": 1,
+      "n_comments_municipais": 0,
       "n_comments_valid_municipal": 0,
       "videos_with_valid_comments_municipal": [],
       "flag_reassessment": {
@@ -23758,10 +23265,7 @@
         "n_videos_with_valid_municipal": 0,
         "contagem": "observada",
         "robusta_ao_teto": true
-      },
-      "n_videos_municipais": 1,
-      "n_videos_verificados": 1,
-      "n_comments_municipais": 0
+      }
     }
   ],
   "archived_alerts": [
@@ -23790,7 +23294,6 @@
       "archive_reason": "acompanhamento_esgotado_14d",
       "n_videos_aderentes": 5,
       "n_comments_valid": 0,
-      "last_new_comment_at": null,
       "n_videos_municipais": 4,
       "n_comments_valid_municipal": 0,
       "flag_reassessment": {
@@ -23804,7 +23307,8 @@
         "n_videos_with_valid_municipal": 0,
         "contagem": "observada",
         "robusta_ao_teto": true
-      }
+      },
+      "last_new_comment_at": null
     },
     {
       "id": "cemaden_sp_2680",
@@ -23831,7 +23335,6 @@
       "archive_reason": "acompanhamento_esgotado_14d",
       "n_videos_aderentes": 2,
       "n_comments_valid": 15,
-      "last_new_comment_at": "2026-09-16T10:37:29Z",
       "n_videos_municipais": 1,
       "n_comments_valid_municipal": 0,
       "flag_reassessment": {
@@ -23845,7 +23348,8 @@
         "n_videos_with_valid_municipal": 0,
         "contagem": "estimada_historico_live",
         "robusta_ao_teto": true
-      }
+      },
+      "last_new_comment_at": "2026-09-16T10:37:29Z"
     },
     {
       "id": "cemaden_pr_2669",
@@ -23872,7 +23376,6 @@
       "archive_reason": "acompanhamento_esgotado_14d",
       "n_videos_aderentes": 2,
       "n_comments_valid": 0,
-      "last_new_comment_at": null,
       "n_videos_municipais": 2,
       "n_comments_valid_municipal": 0,
       "flag_reassessment": {
@@ -23886,7 +23389,8 @@
         "n_videos_with_valid_municipal": 0,
         "contagem": "observada",
         "robusta_ao_teto": true
-      }
+      },
+      "last_new_comment_at": null
     },
     {
       "id": "cemaden_sp_2689",
@@ -23913,7 +23417,6 @@
       "archive_reason": "acompanhamento_esgotado_14d",
       "n_videos_aderentes": 1,
       "n_comments_valid": 0,
-      "last_new_comment_at": null,
       "n_videos_municipais": 1,
       "n_comments_valid_municipal": 0,
       "flag_reassessment": {
@@ -23927,7 +23430,8 @@
         "n_videos_with_valid_municipal": 0,
         "contagem": "observada",
         "robusta_ao_teto": true
-      }
+      },
+      "last_new_comment_at": null
     },
     {
       "id": "cemaden_rs_2480",
@@ -23954,7 +23458,6 @@
       "archive_reason": "acompanhamento_esgotado_14d",
       "n_videos_aderentes": 4,
       "n_comments_valid": 78,
-      "last_new_comment_at": "2026-09-12T09:54:32Z",
       "n_videos_municipais": 2,
       "n_comments_valid_municipal": 13,
       "flag_reassessment": {
@@ -23968,7 +23471,8 @@
         "n_videos_with_valid_municipal": 1,
         "contagem": "estimada_historico_live",
         "robusta_ao_teto": true
-      }
+      },
+      "last_new_comment_at": "2026-09-12T09:54:32Z"
     },
     {
       "id": "cemaden_sc_2516",
@@ -23995,7 +23499,6 @@
       "archive_reason": "acompanhamento_esgotado_14d",
       "n_videos_aderentes": 1,
       "n_comments_valid": 0,
-      "last_new_comment_at": null,
       "n_videos_municipais": 1,
       "n_comments_valid_municipal": 0,
       "flag_reassessment": {
@@ -24009,7 +23512,8 @@
         "n_videos_with_valid_municipal": 0,
         "contagem": "observada",
         "robusta_ao_teto": true
-      }
+      },
+      "last_new_comment_at": null
     },
     {
       "id": "cemaden_sc_2517",
@@ -24036,7 +23540,6 @@
       "archive_reason": "acompanhamento_esgotado_14d",
       "n_videos_aderentes": 1,
       "n_comments_valid": 0,
-      "last_new_comment_at": null,
       "n_videos_municipais": 1,
       "n_comments_valid_municipal": 0,
       "flag_reassessment": {
@@ -24050,7 +23553,8 @@
         "n_videos_with_valid_municipal": 0,
         "contagem": "observada",
         "robusta_ao_teto": true
-      }
+      },
+      "last_new_comment_at": null
     },
     {
       "id": "cemaden_sp_2464",
@@ -24083,7 +23587,6 @@
       "archive_reason": "acompanhamento_esgotado_14d",
       "n_videos_aderentes": 2,
       "n_comments_valid": 1,
-      "last_new_comment_at": null,
       "n_videos_municipais": 0,
       "n_comments_valid_municipal": 0,
       "flag_reassessment": {
@@ -24097,7 +23600,8 @@
         "n_videos_with_valid_municipal": 0,
         "contagem": "estimada_historico_live",
         "robusta_ao_teto": true
-      }
+      },
+      "last_new_comment_at": null
     }
   ]
 }
