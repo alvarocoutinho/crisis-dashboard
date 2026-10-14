@@ -1,0 +1,53 @@
+name: ODRD Formato dos vídeos — backfill (executar uma vez)
+
+# Formato (short | longo | ao_vivo) dos vídeos já coletados (API oficial,
+# 1 unidade a cada 50 vídeos, nenhuma busca). Grava só o rótulo no state.
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Só mostrar o resultado (não commita)'
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: odrd-pipeline
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install "requests~=2.31.0"
+      - name: Formato dos vídeos
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          if [ "$DRY_RUN" = "true" ]; then
+            python scripts/backfill_video_format.py --dry-run
+          else
+            python scripts/backfill_video_format.py
+          fi
+      - name: Commit
+        if: ${{ !inputs.dry_run }}
+        run: |
+          git config user.name "odrd-pipeline[bot]"
+          git config user.email "odrd-pipeline[bot]@users.noreply.github.com"
+          if git diff --quiet src/data/state.json; then
+            echo "Nada a gravar"; exit 0
+          fi
+          git add src/data/state.json
+          git commit -m "chore(data): formato dos vídeos já coletados (v0.3.4)"
+          git pull --rebase origin main
+          git push origin main

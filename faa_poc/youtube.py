@@ -1,6 +1,6 @@
 """YouTube retrieval with alert-anchored search windows and relational outputs."""
 from __future__ import annotations
-import getpass, os
+import getpass, os, re
 from dataclasses import dataclass, field
 from datetime import datetime
 import requests
@@ -63,21 +63,66 @@ def search(query:str, after:str, before:str, key:str, n:int) -> ApiResult:
         if video_id: out.append({"video_id":video_id,"title":snippet.get("title", ""),"channel_title":snippet.get("channelTitle", ""),"channel_id":snippet.get("channelId", ""),"published_at":snippet.get("publishedAt", ""),"description_snippet":snippet.get("description", "")[:500]})
     result.items=out; return result
 
+# v0.3.4: formato do vídeo (short | longo | ao_vivo | indeterminado).
+# A API não tem campo "Short". Aplica-se a definição do próprio YouTube:
+# vertical ou quadrado e com até 3 min (uploads desde 15/10/2024; antes, 60 s).
+# A proporção vem de player.embedWidth/embedHeight, devolvidos só quando o
+# pedido passa maxHeight e a proporção do vídeo é conhecida.
+VIDEO_PARTS = "snippet,statistics,contentDetails,player,liveStreamingDetails"
+EMBED_MAX_HEIGHT = 720
+SHORTS_3MIN_SINCE = "2024-10-15"
+_DURATION_RE = re.compile(r"^P(?:(\d+)D)?(?:T(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?)?$")
+
+def parse_duration(iso:str|None) -> int|None:
+    """ISO 8601 (``PT1M5S``, ``P0D``) → segundos; None se ausente ou inválido."""
+    m=_DURATION_RE.match(iso or "")
+    if not m or not iso or iso=="P": return None
+    d,h,mi,s=(int(x or 0) for x in m.groups())
+    return d*86400+h*3600+mi*60+s
+
+def _int_or_none(value) -> int|None:
+    try: return int(value)
+    except (TypeError, ValueError): return None
+
+def video_format(item:dict) -> dict:
+    """Formato de um item de ``videos.list``.
+
+    Ordem das regras:
+    1. ``liveStreamingDetails`` presente, ou ``liveBroadcastContent`` live/upcoming → ``ao_vivo``
+       (transmissão, mesmo depois de encerrada e disponível como gravação);
+    2. duração acima do limite de Short → ``longo``;
+    3. dentro do limite e proporção conhecida: vertical/quadrado → ``short``; horizontal → ``longo``;
+    4. dentro do limite e proporção desconhecida, ou sem duração → ``indeterminado``.
+    """
+    snip=item.get("snippet",{}) or {}; player=item.get("player",{}) or {}
+    live=snip.get("liveBroadcastContent","none") or "none"
+    if item.get("liveStreamingDetails") and live=="none": live="encerrada"
+    dur=parse_duration((item.get("contentDetails",{}) or {}).get("duration"))
+    w=_int_or_none(player.get("embedWidth")); h=_int_or_none(player.get("embedHeight"))
+    limit=180 if (snip.get("publishedAt","") or "9999")[:10]>=SHORTS_3MIN_SINCE else 60
+    if live!="none": fmt="ao_vivo"
+    elif dur is None or dur==0: fmt="indeterminado"
+    elif dur>limit: fmt="longo"
+    elif w and h: fmt="short" if h>=w else "longo"
+    else: fmt="indeterminado"
+    return {"duration_s":"" if dur is None else dur,"embed_width":w or "","embed_height":h or "","live_status":live,"formato":fmt}
+
 def stats(video_ids:list[str],key:str) -> ApiResult:
-    """Estatísticas + descrição completa e tags (v0.3.1).
+    """Estatísticas, descrição completa, tags (v0.3.1) e formato (v0.3.4).
 
     ``search.list`` devolve só um trecho curto da descrição; ``videos.list``
     com ``part=snippet`` traz a descrição inteira na MESMA chamada (custo
     de 1 unidade por chamada, até 50 vídeos), usada como evidência municipal.
+    As partes de formato vêm na mesma chamada: o custo não muda.
     """
     if not video_ids: return ApiResult(items=[])
-    result=_request("videos",{"part":"snippet,statistics","id":",".join(video_ids[:50]),"key":key})
+    result=_request("videos",{"part":VIDEO_PARTS,"id":",".join(video_ids[:50]),"maxHeight":EMBED_MAX_HEIGHT,"key":key})
     if result.status!="ok": return result
     out=[]
     for item in result.items:
         data=item.get("statistics",{}); snip=item.get("snippet",{})
         out.append({"video_id":item.get("id"),"view_count":data.get("viewCount",0),"like_count":data.get("likeCount",0),"comment_count":data.get("commentCount",0),
-                    "description":snip.get("description",""),"tags":"|".join(snip.get("tags",[]) or [])})
+                    "description":snip.get("description",""),"tags":"|".join(snip.get("tags",[]) or []),**video_format(item)})
     result.items=out; return result
 
 def _comment_row(snippet:dict,*,video_id:str,comment_id:str,parent_id:str|None,is_reply:bool) -> dict:

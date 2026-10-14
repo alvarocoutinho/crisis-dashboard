@@ -584,6 +584,7 @@ def mark_collection_complete(
     success: bool = True,
     error: str | None = None,
     video_evidence: dict[str, str] | None = None,
+    video_format: dict[str, str] | None = None,
 ) -> None:
     """Atualiza state depois de uma coleta de um alerta (v0.2; v0.3 abaixo).
 
@@ -628,6 +629,9 @@ def mark_collection_complete(
     # 0. v0.3.1: evidência municipal por vídeo (onde o vídeo nomeia o município)
     if video_evidence:
         merge_video_evidence(meta, video_evidence)
+    # v0.3.4: formato por vídeo (short | longo | ao_vivo | indeterminado)
+    if video_format:
+        merge_video_format(meta, video_format)
 
     # 1. Merge de vídeos coletados (union set, preserva idempotência)
     existing_videos = set(meta.get("videos_collected", []))
@@ -730,6 +734,26 @@ def merge_video_evidence(meta: dict, incoming: dict[str, str]) -> None:
         if _EVIDENCE_RANK.get(ev, 0) >= _EVIDENCE_RANK.get(current.get(vid), -1):
             current[vid] = ev
     recompute_municipal_counters(meta)
+
+
+VIDEO_FORMATS = ("short", "longo", "ao_vivo", "indeterminado")
+
+
+def merge_video_format(meta: dict, incoming: dict[str, str]) -> None:
+    """Grava o formato por vídeo (v0.3.4).
+
+    O formato é do arquivo enviado e não muda; a única transição esperada é
+    ``indeterminado`` → definido (proporção que passou a ser conhecida).
+    Valores vazios ou fora do vocabulário são ignorados, e um formato
+    definido nunca volta a ``indeterminado``.
+    """
+    current = meta.setdefault("video_format", {})
+    for vid, fmt in incoming.items():
+        if fmt not in VIDEO_FORMATS:
+            continue
+        if fmt == "indeterminado" and current.get(vid) not in (None, "indeterminado"):
+            continue
+        current[str(vid)] = fmt
 
 
 def recompute_municipal_counters(meta: dict) -> None:

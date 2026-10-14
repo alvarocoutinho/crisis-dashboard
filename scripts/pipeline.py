@@ -388,6 +388,7 @@ def main() -> int:
             # Vídeos coletados neste ciclo para este alerta
             videos_this_alert: list[str] = []
             evidence_this_alert: dict[str, str] = {}
+            format_this_alert: dict[str, str] = {}
             if links_df is not None and not links_df.empty:
                 try:
                     rows = links_df[links_df["cod_alerta"].astype(str) == cod]
@@ -396,6 +397,11 @@ def main() -> int:
                         evidence_this_alert = dict(zip(
                             rows["video_id"].astype(str),
                             rows["municipal_evidence"].fillna("").astype(str),
+                        ))
+                    if "formato" in rows.columns:  # v0.3.4
+                        format_this_alert = dict(zip(
+                            rows["video_id"].astype(str),
+                            rows["formato"].fillna("").astype(str),
                         ))
                 except Exception as e:
                     log(f"não foi possível ler videos coletados de {decision.alert_id}: {e}", "WARN")
@@ -419,6 +425,7 @@ def main() -> int:
                 success=ok,
                 error=err,
                 video_evidence=evidence_this_alert,
+                video_format=format_this_alert,
             )
             if not ok:
                 log(f"coleta incompleta de {decision.alert_id} ({err}) — será retentada", "WARN")

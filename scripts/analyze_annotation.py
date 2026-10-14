@@ -218,6 +218,31 @@ def main() -> int:
                              "recuperacao": round(rc, 4) if not math.isnan(rc) else "", "n": len(pares)})
     md.append("")
 
+    # 3b. v0.3.4: filtro atual por formato do vídeo (Shorts têm títulos curtos e cheios de hashtags;
+    # o filtro tende a errar de outro jeito neles). Só reportado: o desenho amostral não estratifica
+    # por formato, então os ICs por formato serão largos se houver poucos pares.
+    formatos = sorted({chave[p].get("formato") or "sem_formato" for p in gab})
+    if formatos != ["sem_formato"]:
+        md += ["## Filtro atual por formato do vídeo (ponderado)", "",
+               "| Formato | Alvo | Precisão | Recuperação | F1 | n | relevantes no gabarito |", "|---|---|---|---|---|---|---|"]
+        for fmt in formatos:
+            ids = [p for p in gab if (chave[p].get("formato") or "sem_formato") == fmt]
+            for i, alvo_nome in enumerate(("municipal_relevante", "regional_relevante")):
+                def filtro_fmt(p, i=i):
+                    k = chave[p]
+                    aceito = k.get("aceito_padrao") == "True"
+                    return int(aceito and k.get("municipal_evidence") not in ("", "nenhuma")) if i == 0 else int(aceito)
+                pares = [(filtro_fmt(p), alvo(gab[p])[i], float(chave[p]["peso"] or 1)) for p in ids]
+                pares = [x for x in pares if x[1] is not None]
+                if not pares:
+                    continue
+                pr, rc, f1 = prec_rec(pares)
+                md.append(f"| {fmt} | {alvo_nome} | {pr:.3f} | {rc:.3f} | {f1:.3f} | {len(pares)} | {sum(t for _, t, _ in pares)} |")
+                metricas.append({"metrica": "desempenho_formato", "comparacao": f"filtro atual [{fmt}]", "dimensao": alvo_nome,
+                                 "valor": round(f1, 4) if not math.isnan(f1) else "", "precisao": round(pr, 4) if not math.isnan(pr) else "",
+                                 "recuperacao": round(rc, 4) if not math.isnan(rc) else "", "n": len(pares)})
+        md.append("")
+
     # 4. erros do filtro por estrato (onde o filtro falha)
     md += ["## Gabarito por estrato (proporção de pares relevantes)", "", "| Estrato | n | municipal | regional |", "|---|---|---|---|"]
     por = defaultdict(list)

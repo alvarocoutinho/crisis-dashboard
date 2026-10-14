@@ -31,7 +31,7 @@
 Os modelos comparados na etapa 6 são três:
 1. Regras atuais.
 2. Regras com os defeitos corrigidos.
-3. Regressão logística com atributos interpretáveis: município no título ou na descrição, estado/UF, termos de perigo por família, impacto, outro estado citado, defasagem de publicação.
+3. Regressão logística com atributos interpretáveis: município no título ou na descrição, estado/UF, termos de perigo por família, impacto, outro estado citado, defasagem de publicação, formato do vídeo (v0.3.4).
 
 ### Pontos de operação (etapa 7)
 
@@ -85,7 +85,16 @@ A IA nunca entra no gabarito nem na adjudicação.
 **Análise:** `scripts/analyze_annotation.py` produz:
 - o alfa de Krippendorff por dimensão para cada comparação, com IC95% por bootstrap: H1×H2, IA×gabarito, rodada 1×rodada 2, IA-metadados×IA-transcrição e metadados×assistindo;
 - precisão e recuperação ponderadas do filtro atual e de cada IA, para os alvos municipal e regional;
-- a proporção de pares relevantes por estrato.
+- a proporção de pares relevantes por estrato;
+- precisão e recuperação do filtro atual por formato do vídeo (`short`, `longo`, `ao_vivo`).
+
+### Formato do vídeo (v0.3.4)
+
+Desde 14/10/2026, cada vídeo traz `formato`, obtido pela API oficial: duração, proporção do player e dados de transmissão. A definição de Short é a do YouTube: vertical ou quadrado com até 3 minutos.
+- **Por que importa:** Short, vídeo longo e live diferem em distribuição (feed de Shorts × busca), produção (cortes e repostagens) e dinâmica de comentários.
+- **Na H2:** o volume de comentários não é comparável entre formatos, então os indicadores são reportados também por formato.
+- **No estudo de calibração:** o formato fica na chave, não na planilha, e é reportado como variável de análise. Não é estrato de amostragem, porque o desenho já estava fixado. Se algum formato ficar com menos de 30 pares relevantes no gabarito, a estimativa dele é declarada exploratória.
+- **Para a v0.4:** é atributo candidato do modelo. Títulos de Shorts são curtos e cheios de hashtags.
 
 O cálculo do alfa foi verificado contra o exemplo canônico de Krippendorff (α nominal = 0,743).
 
