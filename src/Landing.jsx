@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Archive, Radio, ChevronRight, Beaker, Info } from "lucide-react";
+import { Archive, Radio, ChevronRight, Beaker, Info, Megaphone } from "lucide-react";
 import { getAllEvents } from "./services/eventsRepository";
 
 export default function Landing() {
@@ -92,6 +92,27 @@ export default function Landing() {
             </div>
           </Link>
         </div>
+
+        {/* Card IDAP — alertas à população */}
+        <Link
+          to="/idap"
+          className="group mt-5 bg-white rounded-lg border border-stone-300 hover:border-stone-900 hover:shadow-md transition-all p-6 flex flex-col"
+        >
+          <div className="flex items-center justify-between mb-3">
+            <div className="w-10 h-10 rounded bg-red-50 flex items-center justify-center">
+              <Megaphone size={20} className="text-red-700" />
+            </div>
+            <ChevronRight size={18} className="text-stone-400 group-hover:text-stone-900 transition-colors" />
+          </div>
+          <h2 className="text-lg font-semibold text-stone-900 mb-2">Alertas à população</h2>
+          <p className="text-sm text-stone-600 leading-relaxed flex-1">
+            O que as Defesas Civis de todo o país enviaram à população: texto, severidade, vigência e a área
+            atingida em polígono. Feed nacional da IDAP no padrão CAP 1.2, arquivado de hora em hora.
+          </p>
+          <div className="mt-4 pt-4 border-t border-stone-100 text-xs text-stone-500">
+            Cobertura nacional · coleta horária · mapa de polígonos
+          </div>
+        </Link>
 
         {/* Aviso institucional */}
         <div className="mt-10 bg-stone-50 border border-stone-200 rounded-lg p-4 text-xs text-stone-600 flex items-start gap-3 max-w-3xl">

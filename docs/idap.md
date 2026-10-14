@@ -65,6 +65,6 @@ O alerta 193711 (emitido às 04h12) aparecia numa consulta às 16h05 e já não 
 
 ## Próximos passos
 
-1. **Mapa no painel:** em construção.
+1. **Mapa no painel:** feito (`/idap`).
 2. **Cruzamento CEMADEN × IDAP:** a Defesa Civil alertou a população do município do alerta do CEMADEN? Quando, em relação à abertura? Com que severidade? O cruzamento usa geocódigo IBGE quando houver e, nos outros casos, interseção do polígono com a malha municipal do IBGE.
 3. **Histórico:** baixar os arquivos anuais dos dados abertos.
