@@ -44,9 +44,15 @@ A data de publicação ajuda, mas não decide sozinha: um vídeo publicado no di
 - **Capital paulista.** "SP" ou "São Paulo" sozinhos são ambíguos. Só marque `municipio` para alerta da capital se o vídeo tratar da cidade (bairros, zonas, "capital").
 - **Lista sem conteúdo.** Se o município aparece só numa lista de cidades em alerta, sem nada relatado sobre ele, marque `regiao_vizinho`.
 
-## 4. `usou_transcricao`
+## 4. `fonte_decisao` — o que sustentou o seu rótulo
 
-Marque `sim` se a sua decisão dependeu dos trechos da transcrição ou de assistir ao vídeo. Marque `nao` se título e descrição bastaram.
+| Valor | Quando |
+|---|---|
+| `metadados` | Título, canal, data e descrição bastaram. |
+| `transcricao` | Você precisou dos trechos da transcrição. |
+| `assistiu` | Você abriu o vídeo. |
+
+Abra o vídeo só quando metadados e trechos não permitirem decidir alguma dimensão.
 
 ## Procedimento
 
@@ -56,6 +62,8 @@ Marque `sim` se a sua decisão dependeu dos trechos da transcrição ou de assis
 4. **Ritmo:** cerca de 40 segundos por par. Abra o vídeo só quando título, descrição e trechos não bastarem.
 5. **Confiabilidade:** o alfa de Krippendorff é calculado por dimensão nos pares duplicados. A meta é ≥ 0,80; abaixo de 0,67 o livro de códigos é revisto, uma única vez.
 6. **Adjudicação:** as divergências são resolvidas pelo pesquisador e registradas. O rótulo final fica na chave.
+7. **Validação assistida:** depois de terminar a planilha principal, o codificador 1 recebe `anotacao_validacao_assistida.xlsx`, com 50 pares já rotulados. Nela, assiste a todos os vídeos e rotula de novo, sem consultar a planilha principal. A proporção de rótulos que mudam mede o erro do julgamento por metadados.
+8. **Anotadores de IA:** duas condições, `metadados` e `transcricao`, com o prompt congelado em `prompt_ia_v1.md`. A IA nunca entra no gabarito nem na adjudicação: é avaliada contra ele. Os humanos não veem os rótulos da IA.
 
 ## Proteção de dados
 

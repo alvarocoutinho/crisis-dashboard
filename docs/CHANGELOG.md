@@ -6,6 +6,24 @@ O formato segue [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) e o 
 
 ---
 
+## [Ferramentas] — 2026-10-14 — anotadores de IA e análise da calibração
+
+- `docs/calibracao/prompt_ia_v1.md`: prompt congelado dos anotadores de IA.
+  - Contém o livro de códigos na íntegra e a saída em JSON com justificativa.
+  - Duas condições: `metadados` (o mesmo material que os humanos veem) e `transcricao` (só a fala transcrita).
+- `build_annotation_sample.py`:
+  - coluna `fonte_decisao` (metadados / transcrição / assistiu) no lugar de `usou_transcricao`;
+  - planilha de validação assistida (50 pares);
+  - prompts prontos por lote em `ia/prompts/`, com manifesto e hashes.
+- `scripts/analyze_annotation.py`:
+  - alfa de Krippendorff nominal com dados faltantes e IC por bootstrap, verificado contra o exemplo canônico (α = 0,743);
+  - gabarito humano com adjudicação;
+  - precisão e recuperação ponderadas do filtro atual e das IAs;
+  - proporção de pares relevantes por estrato, incluindo o teste de elusão.
+- A IA é avaliada contra o gabarito humano, nunca entra nele. A execução é feita por subagentes do Claude, sem API paga, com rodada dupla para medir autoconsistência (`docs/calibracao/protocolo.md`).
+
+---
+
 ## [Pipeline 0.3.3] — 2026-10-14
 
 **Instrumentação para calibrar os filtros e correções sem ambiguidade. Os critérios de decisão não mudam** (as mudanças ficam para a v0.4, depois do estudo de calibração; ver `docs/calibracao/protocolo.md`).

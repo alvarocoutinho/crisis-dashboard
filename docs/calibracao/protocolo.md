@@ -22,9 +22,9 @@
 | 1 | Conjunto de candidatos: calibração (38 alertas) e amostra de silêncio (120) | Notebook de coleta retrospectiva, fase `calibracao+amostra` | cerca de 3 execuções diárias |
 | 2 | Variantes de consulta nos 38 alertas de calibração: sem UF, "chuva + Município", município entre aspas, julgadas em conjunto (*pooling*) | Notebook, fase `variantes` | cerca de 114 buscas |
 | 3 | Amostra estratificada de cerca de 700 pares em 7 estratos, com pesos | `scripts/build_annotation_sample.py` | — |
-| 4 | Anotação: perigo × episódio × lugar | `docs/calibracao/livro_de_codigos.md`; 2 codificadores, 150 pares em dupla | cerca de 8 h + 2 h |
-| 5 | Confiabilidade: alfa de Krippendorff por dimensão (meta ≥ 0,80) e adjudicação | script de análise (a fazer) | — |
-| 6 | Modelos comparados, com divisão desenvolvimento/teste **por episódio** | idem | — |
+| 4 | Anotação: perigo × episódio × lugar, com a fonte da decisão; 50 pares re-rotulados assistindo ao vídeo | `docs/calibracao/livro_de_codigos.md`; 2 codificadores, 150 pares em dupla; 2 anotadores de IA | cerca de 8 h + 2 h + 1 h |
+| 5 | Confiabilidade: alfa de Krippendorff por dimensão (meta ≥ 0,80) e adjudicação | `scripts/analyze_annotation.py` | — |
+| 6 | Modelos comparados, com divisão desenvolvimento/teste **por episódio** | script de modelagem (a fazer) | — |
 | 7 | Pontos de operação e ablação de cada regra | idem | — |
 | 8 | Congelamento das regras e limiares no protocolo (v0.4) e reprocessamento do histórico | pipeline v0.4 | — |
 
@@ -44,6 +44,45 @@ Os modelos comparados na etapa 6 são três:
 ### Estimativa com pesos
 
 Precisão e recuperação são estimadas na população de candidatos com os pesos dos estratos. O estrato E6 (rejeitados sem menção e sem termo de perigo) funciona como teste de elusão: estima os falsos negativos que sobram.
+
+## Anotadores de IA (sem API paga: subagentes nesta conversa do Claude)
+
+O desenho tem quatro anotadores:
+- **Humano 1:** forma o gabarito.
+- **Humano 2:** codifica os 150 pares em dupla, mede a confiabilidade e entra na adjudicação.
+- **IA-metadados:** vê o mesmo material que os humanos. É a candidata a substituir o humano 2 no monitoramento mensal.
+- **IA-transcrição:** vê só a fala transcrita. Aproxima o "assistir ao vídeo" nos pares que têm legenda.
+
+A IA nunca entra no gabarito nem na adjudicação.
+
+**Procedimento:**
+1. `build_annotation_sample.py` grava em `ia/prompts/` um arquivo por lote (60 pares na condição de metadados, 8 na de transcrição, porque as transcrições são longas), com o prompt congelado (`prompt_ia_v1.md`) e o livro de códigos na íntegra. `ia/manifesto.json` guarda os hashes SHA-256 de ambos.
+2. **Isolamento.** Antes das rodadas de IA, a chave (`anotacao_chave.csv`) e as planilhas humanas saem do ambiente de trabalho e ficam só no Drive. Só a pasta `ia/prompts/` fica disponível.
+3. **Execução.** Cada lote vai para um subagente novo, com o texto do lote embutido no pedido e a instrução de não usar ferramentas. A resposta bruta é gravada em `ia/resultados/rodada1/<lote>.jsonl`.
+4. **Ajuste do prompt.** Só nos lotes `treino_*`, e antes de qualquer lote `amostra_*`. Depois disso o prompt fica congelado; qualquer mudança vira uma v2, com a medição refeita.
+5. **Rodada 2 (autoconsistência).** Os mesmos lotes vão para subagentes novos e as respostas são gravadas em `ia/resultados/rodada2/`.
+6. **Registro.** `ia/execucao.json` guarda, por lote, a data, o modelo configurado na sessão e o identificador do subagente.
+
+**Piloto de 14/10/2026** (30 pares de treino do lote 1, condição metadados, um subagente):
+- **Formato:** 30 de 30 respostas em JSON válido, com justificativa citando o título.
+- **Custo:** cerca de 85 mil tokens, quase todo fixo por subagente; daí os lotes de 60.
+- **Lugar inferido pelo canal.** A IA marcou como municipais dois vídeos de Juquitiba que só citam o bairro (Favela do Justino), deduzindo o município pelo nome do canal ("JUQUITIBA A CIDADE QUE DEU CERTO"). O filtro atual não usa o canal. É um atributo candidato para a v0.4.
+- **Falsos negativos do filtro atual que a IA marca como municipais:** São Bernardo do Campo ("Chuva forte provoca deslizamento de terra em São Bernardo do Campo"), Registro, Iporanga e Blumenau, todos sem a UF no título.
+- **Três ambiguidades do livro, a resolver no treino antes da v1.1, valendo para humanos e IA:**
+  1. desabamento de prédio durante o episódio de chuva sem causa declarada no título (os desabamentos da Penha): `nao` ou `incerto`?
+  2. rio com o nome da cidade ("Rio Jaguarão acima da cota"): a IA marcou `regiao_vizinho` pela regra dos rios;
+  3. "Chuvas em SP" para um alerta da capital: a IA marcou `indeterminado`.
+
+  Esses pares são de treino. Ajustar o livro a partir deles é permitido; ajustar a partir da amostra, não.
+
+**Limitação a declarar:** pela interface de conversa não se controla a temperatura, e a versão do modelo que atende pode mudar. Isso compromete a reprodutibilidade exata. Por isso a autoconsistência entre a rodada 1 e a rodada 2 é obrigatória, e as respostas brutas são guardadas. Se a IA for usada depois em produção (monitoramento), o caminho reprodutível é a API, com o modelo fixado.
+
+**Análise:** `scripts/analyze_annotation.py` produz:
+- o alfa de Krippendorff por dimensão para cada comparação, com IC95% por bootstrap: H1×H2, IA×gabarito, rodada 1×rodada 2, IA-metadados×IA-transcrição e metadados×assistindo;
+- precisão e recuperação ponderadas do filtro atual e de cada IA, para os alvos municipal e regional;
+- a proporção de pares relevantes por estrato.
+
+O cálculo do alfa foi verificado contra o exemplo canônico de Krippendorff (α nominal = 0,743).
 
 ## Trilhas paralelas
 
