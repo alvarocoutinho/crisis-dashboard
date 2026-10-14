@@ -30,7 +30,7 @@ export default function Landing() {
               <Beaker size={12} /> Prova de conceito · v0.1 · TRL 3–4
             </span>
             <span className="text-stone-500 text-right">
-              NEPAM/Unicamp · CEPID CLIMARES · parceria CEMADEN
+              Projeto de pesquisa independente
             </span>
           </div>
         </div>
@@ -129,8 +129,7 @@ export default function Landing() {
       {/* Footer */}
       <footer className="border-t border-stone-300 bg-stone-50">
         <div className="max-w-6xl mx-auto px-6 py-4 text-xs text-stone-500">
-          Coordenação: Álvaro Luz Alves Coutinho (NEPAM/PPGA&amp;S/Unicamp), sob supervisão da
-          Profa. Leila da Costa Ferreira, no âmbito do CEPID CLIMARES (Eixo 7).
+          Responsável: Álvaro Luz Alves Coutinho.
         </div>
       </footer>
     </div>
