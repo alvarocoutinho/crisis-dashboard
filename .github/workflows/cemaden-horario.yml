@@ -1,0 +1,57 @@
+name: ODRD CEMADEN — observação de hora em hora
+
+# Consulta o painel de alertas do CEMADEN (wsAlertas2) a cada hora, sem filtro,
+# e mantém o catálogo data/cemaden/alertas_observados.csv. Só observa: não
+# altera o state nem dispara coleta no YouTube. Serve para medir quantos alertas
+# abrem e fecham entre as consultas de 6 em 6 h do pipeline principal.
+on:
+  schedule:
+    - cron: '41 * * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Só mostrar (não commita)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: odrd-cemaden-observacao
+  cancel-in-progress: false
+
+jobs:
+  observar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install "requests~=2.31.0"
+
+      - name: Observar o painel do CEMADEN
+        run: |
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            python scripts/observe_cemaden.py --dry-run
+          else
+            python scripts/observe_cemaden.py
+          fi
+
+      - name: Commit
+        if: ${{ !inputs.dry_run }}
+        run: |
+          git config user.name "odrd-pipeline[bot]"
+          git config user.email "odrd-pipeline[bot]@users.noreply.github.com"
+          git add data/cemaden
+          if git diff --cached --quiet; then echo "nada a commitar"; exit 0; fi
+          git commit -q -m "chore(cemaden): observação $(date -u +%FT%H:%MZ)"
+          for i in 1 2 3; do
+            git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0
+            sleep $((i * 15))
+          done
+          echo "::error::push falhou depois de 3 tentativas"; exit 1
