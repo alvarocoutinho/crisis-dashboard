@@ -29,9 +29,10 @@ from pathlib import Path
 
 REPO = Path(__file__).parent.parent.resolve()
 STATE_REL = "src/data/state.json"
+LIVE_REL = "src/data/live.json"
 OUT = REPO / "data" / "retro" / "universo_alertas.csv"
 BUCKETS = ("active_alerts", "extended_window_alerts", "archived_alerts")
-FIELDS = ["ordem", "alert_id", "cod_alerta", "municipio", "uf", "codibge", "evento", "nivel",
+FIELDS = ["ordem", "alert_id", "cod_alerta", "municipio", "uf", "codibge", "evento", "evento_fonte", "nivel",
           "opened_at", "closed_at", "mes", "grupo", "amostra", "visto_no_state_de", "visto_no_state_ate",
           "videos_conhecidos", "videos_municipais_conhecidos"]
 
@@ -63,6 +64,20 @@ def main() -> int:
                 # metadados não-nulos mais recentes (o schema v0.1 não tinha evento)
                 rec["meta"].update({k: v for k, v in m.items() if v not in (None, "", [])})
 
+    # v0.3.3: o schema v0.1 do state não guardava o tipo de evento; o live.json
+    # guardava ("tipo"). Sem o tipo, a busca usava "desastre"/"emergência" e
+    # trouxe, em Petrópolis, um acidente de ônibus.
+    tipo_live: dict[str, str] = {}
+    for sha in _git("log", "--format=%H", "--", LIVE_REL).split():
+        try:
+            live = json.loads(_git("show", f"{sha}:{LIVE_REL}"))
+        except (subprocess.CalledProcessError, json.JSONDecodeError):
+            continue
+        for a in live.get("alerts", []) + live.get("archived_alerts", []):
+            t = a.get("tipo") or a.get("evento")
+            if t and a.get("id") not in tipo_live:
+                tipo_live[a["id"]] = str(t).split(" - ")[0].strip()
+
     current = json.loads((REPO / STATE_REL).read_text(encoding="utf-8"))
     present = {aid: m for b in BUCKETS for aid, m in current.get(b, {}).items()}
 
@@ -75,7 +90,9 @@ def main() -> int:
             continue  # alerta vivo sem vídeo: a coleta ao vivo (v0.3+) já cobre
         rows.append({
             "alert_id": aid, "cod_alerta": aid.rsplit("_", 1)[-1], "municipio": m.get("municipio", ""),
-            "uf": m.get("uf", ""), "codibge": m.get("codibge", ""), "evento": m.get("evento") or "",
+            "uf": m.get("uf", ""), "codibge": m.get("codibge", ""),
+            "evento": m.get("evento") or tipo_live.get(aid, ""),
+            "evento_fonte": "state" if m.get("evento") else ("live.json" if tipo_live.get(aid) else ""),
             "nivel": m.get("nivel_atual", ""), "opened_at": m.get("opened_at", ""),
             "closed_at": m.get("closed_at") or "", "mes": (m.get("opened_at") or "")[:7],
             "grupo": "calibracao" if aid in present else "silencio", "amostra": 0,

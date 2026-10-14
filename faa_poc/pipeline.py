@@ -65,7 +65,7 @@ def _collect_for_alert(alert:dict,key:str,quota:youtube.QuotaTracker,config:dict
     """
     after,before,source=youtube.search_window(alert,config)
     high=cemaden.is_high_priority(alert.get("nivel")); now_iso=storage.utcnow_iso()
-    result={"canonical":[],"links":[],"comments":[],"comment_links":[],"rejected":[],"candidates":0,"skipped":0,"outcome":"ok","comment_outcome":"ok","after":after,"before":before,"source":source}
+    result={"canonical":[],"links":[],"comments":[],"comment_links":[],"rejected":[],"candidate_rows":[],"candidates":0,"skipped":0,"outcome":"ok","comment_outcome":"ok","after":after,"before":before,"source":source}
     seen_videos={}
     for query in youtube.build_queries(alert):
         if not quota.can_search(high):
@@ -92,9 +92,9 @@ def _collect_for_alert(alert:dict,key:str,quota:youtube.QuotaTracker,config:dict
         return result
     stats={row["video_id"]:row for row in stats_response.items}
 
-    accepted=[]
+    accepted=[]; scores={}
     for video in candidates:
-        score=score_video(video,alert,config); vid=video["video_id"]
+        score=score_video(video,alert,config); vid=video["video_id"]; scores[vid]=score
         base={"video_id":vid,"cod_alerta":alert["cod_alerta"],"alert_municipio":alert.get("municipio",""),"alert_uf":alert.get("uf",""),"alert_codibge":alert.get("codibge",""),"alert_evento":alert.get("evento",""),"alert_nivel":alert.get("nivel",""),"alert_opened_at":alert.get("datahoracriacao",""),"search_query":video["search_query"],"search_published_after":after,"search_published_before":before,"search_window_source":source,"relevance_score":score["relevance_score"],"geo_score":score["geo_score"],"event_score":score["event_score"],"geo_match_type":score["geo_match_type"],"link_scope":score["link_scope"],"is_municipal_evidence":score["is_municipal_evidence"],"relevance_reasons":score["relevance_reasons"],"collected_at":now_iso}
         if not score["is_relevant"]:
             result["rejected"].append({**base,"title":video.get("title",""),"channel_title":video.get("channel_title",""),"rejection_reason":score["rejection_reason"]})
@@ -111,6 +111,26 @@ def _collect_for_alert(alert:dict,key:str,quota:youtube.QuotaTracker,config:dict
     # estadual/regional. Ordenar só pelo score deixava cobertura estadual
     # ocupar as vagas de MAX_VIDEOS_PER_ALERT (auditoria de 13/10/2026).
     accepted.sort(key=lambda pair:(is_municipal(pair[0]["municipal_evidence"]),pair[0]["geo_match_type"]=="municipality_direct",float(pair[0]["relevance_score"]),int(stats.get(pair[0]["video_id"],{}).get("comment_count",0) or 0),int(stats.get(pair[0]["video_id"],{}).get("view_count",0) or 0)),reverse=True)
+
+    # v0.3.3: todos os candidatos (aceitos, excedentes e rejeitados) com os
+    # atributos usados na decisão, para recalibrar os filtros depois sem
+    # refazer buscas (separa recuperação de decisão).
+    rank={pair[0]["video_id"]:i for i,pair in enumerate(accepted,1)}
+    for video in candidates:
+        vid=video["video_id"]; sc=scores[vid]; st=stats.get(vid,{})
+        pos=rank.get(vid)
+        result["candidate_rows"].append({
+            "video_id":vid,"cod_alerta":alert["cod_alerta"],"alert_municipio":alert.get("municipio",""),"alert_uf":alert.get("uf",""),
+            "alert_codibge":alert.get("codibge",""),"alert_evento":alert.get("evento",""),"alert_opened_at":alert.get("datahoracriacao",""),
+            "search_query":video.get("search_query",""),"search_published_after":after,"search_published_before":before,
+            "published_at":video.get("published_at",""),"channel_id":video.get("channel_id",""),"channel_title":video.get("channel_title",""),
+            "title":video.get("title",""),"description_snippet":video.get("description_snippet",""),"description":st.get("description",""),
+            "tags":st.get("tags",""),"view_count":st.get("view_count",""),"comment_count":st.get("comment_count",""),
+            **{k:sc[k] for k in ("relevance_score","geo_score","event_score","geo_match_type","relevance_reasons","rejection_reason")},
+            "municipal_evidence":municipal_evidence(alert.get("municipio",""),alert.get("uf",""),title=video.get("title",""),
+                                                     description=st.get("description","") or video.get("description_snippet","")),
+            "decision":("rejeitado" if pos is None else "selecionado" if pos<=config["MAX_VIDEOS_PER_ALERT"] else "aceito_excedente"),
+            "rank":pos or "","filter_version":FILTER_VERSION,"collected_at":now_iso})
 
     for base,video in accepted[:config["MAX_VIDEOS_PER_ALERT"]]:
         vid=base["video_id"]
@@ -239,6 +259,7 @@ def run(overrides:dict[str,Any]|None=None)->dict:
                 storage.append_csv(config,"youtube_comments_canonical.csv",result["comments"],COMMENT_CANONICAL_FIELDS)
                 storage.append_csv(config,"youtube_alert_comment_links.csv",result["comment_links"],COMMENT_LINK_FIELDS)
                 storage.append_csv(config,"rejected_videos.csv",result["rejected"],REJECTED_FIELDS)
+                storage.append_csv(config,"youtube_candidates.csv",result["candidate_rows"],CANDIDATE_FIELDS)
                 _register_video_links(alert,result["links"],active_videos)
                 state["youtube_status"]=result["outcome"]
                 state["comment_status"]=("not_applicable" if not result["links"] else ("success" if result["comment_outcome"]=="ok" else result["comment_outcome"]))

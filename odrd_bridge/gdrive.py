@@ -349,6 +349,25 @@ class GDriveUploader:
             except Exception as e:
                 print(f"[gdrive] falha videos {alert_id}: {e}")
 
+        # 2b. v0.3.3: candidates.jsonl — todos os candidatos da busca (aceitos e
+        # rejeitados) com os atributos da decisão. Permite recalibrar os
+        # filtros depois; o artifact do Actions expira em 90 dias, o Drive não.
+        cand_csv = faa_output_dir / "youtube_candidates.csv"
+        if cand_csv.exists() and cand_csv.stat().st_size > 0:
+            try:
+                df = pd.read_csv(cand_csv, dtype=str, keep_default_na=False)
+                mine = df[df["cod_alerta"].astype(str) == str(cod_alerta)]
+                if not mine.empty:
+                    lines = [
+                        json.dumps({**row.to_dict(), "_ingested_at": now.isoformat()},
+                                   ensure_ascii=False, default=str)
+                        for _, row in mine.iterrows()
+                    ]
+                    fid = self._append_jsonl(folder_id, "candidates.jsonl", lines)
+                    uploaded["candidates.jsonl"] = fid
+            except Exception as e:
+                print(f"[gdrive] falha candidates {alert_id}: {e}")
+
         # 3. comments_raw.jsonl — append
         comments_csv = faa_output_dir / "youtube_comments_canonical.csv"
         if comments_csv.exists() and comments_csv.stat().st_size > 0:
