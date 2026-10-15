@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T16:06:09Z",
+  "generated_at": "2026-10-15T20:50:14Z",
   "pipeline_version": "0.3.3",
   "pilot_mode": true,
   "dry_run": false,
@@ -1639,27 +1639,30 @@
           "criterio": "municipal_v0.3.2"
         }
       ],
-      "n_comments_valid": 210,
+      "n_comments_valid": 256,
       "videos_with_valid_comments": [
+        "1XJxTnReDAc",
         "E3-SPgp0UGU",
         "FzagdmaLM3k",
         "JB6avj2ia5M",
         "NWXVTpY82nA",
+        "RJ-ObcM8QM0",
         "Y2RbH9dNwU8",
         "bjHVXTCYbZQ",
         "cdGJH6N-XL0",
         "gy_Stt2Vlck",
         "meWTHDujLq4",
-        "sicfS7WfTZc"
+        "sicfS7WfTZc",
+        "uVF-su8gvT4"
       ],
       "alert_opened_at": "2026-10-14T17:08:36Z",
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "ok",
+        "status": "error",
         "silence_type": null,
-        "last_error": null,
-        "consecutive_failures": 0
+        "last_error": "youtube=ok;comments=api_error",
+        "consecutive_failures": 1
       },
       "last_collection_at": "2026-10-15T10:39:40Z",
       "next_collection_at": "2026-10-15T16:39:40Z",
@@ -1673,8 +1676,9 @@
       "n_videos_municipais": 8,
       "n_videos_verificados": 10,
       "n_comments_municipais": 116,
-      "n_comments_valid_municipal": 110,
+      "n_comments_valid_municipal": 131,
       "videos_with_valid_comments_municipal": [
+        "1XJxTnReDAc",
         "E3-SPgp0UGU",
         "FzagdmaLM3k",
         "JB6avj2ia5M",
@@ -1682,7 +1686,8 @@
         "Y2RbH9dNwU8",
         "gy_Stt2Vlck",
         "meWTHDujLq4",
-        "sicfS7WfTZc"
+        "sicfS7WfTZc",
+        "uVF-su8gvT4"
       ],
       "flag_reassessment": null
     },
