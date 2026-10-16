@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T20:50:14Z",
+  "generated_at": "2026-10-16T02:35:23Z",
   "pipeline_version": "0.3.3",
   "pilot_mode": true,
   "dry_run": false,
@@ -390,1306 +390,6 @@
         "contagem": "observada",
         "robusta_ao_teto": true
       }
-    },
-    {
-      "id": "cemaden_sp_2976",
-      "municipio": "São Paulo",
-      "uf": "SP",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "14/10/2026",
-      "codibge": "3550308",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 240,
-      "n_videos": 10,
-      "unlabeled": 44,
-      "unlabeled_pct": 18.3,
-      "date_range": [
-        "2026-10-14",
-        "2026-10-15"
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 42,
-          "pct": 17.5
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 24,
-          "pct": 10.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 94,
-          "pct": 39.2
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 26,
-          "pct": 10.8
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 43,
-          "pct": 17.9
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 7,
-          "pct": 2.9
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 7,
-          "pct": 2.9
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 24,
-          "pct": 10.0
-        }
-      ],
-      "timeline": [
-        {
-          "date": "14/10/26",
-          "count": 54
-        },
-        {
-          "date": "15/10/26",
-          "count": 186
-        }
-      ],
-      "videos": [
-        {
-          "video_id": "bjHVXTCYbZQ",
-          "n_comments": 70,
-          "total_likes": 90,
-          "first_comment": "14/10/2026",
-          "top_categories": [
-            {
-              "label": "Responsabilização",
-              "count": 30
-            },
-            {
-              "label": "Solidariedade",
-              "count": 11
-            },
-            {
-              "label": "Crítica mídia",
-              "count": 11
-            }
-          ],
-          "municipal_evidence": "nenhuma",
-          "formato": "ao_vivo"
-        },
-        {
-          "video_id": "cdGJH6N-XL0",
-          "n_comments": 54,
-          "total_likes": 118,
-          "first_comment": "15/10/2026",
-          "top_categories": [
-            {
-              "label": "Responsabilização",
-              "count": 22
-            },
-            {
-              "label": "Clima/chuva",
-              "count": 15
-            },
-            {
-              "label": "Solidariedade",
-              "count": 10
-            }
-          ],
-          "municipal_evidence": "nenhuma",
-          "formato": "longo"
-        },
-        {
-          "video_id": "E3-SPgp0UGU",
-          "n_comments": 36,
-          "total_likes": 98,
-          "first_comment": "14/10/2026",
-          "top_categories": [
-            {
-              "label": "Responsabilização",
-              "count": 13
-            },
-            {
-              "label": "Clima/chuva",
-              "count": 12
-            },
-            {
-              "label": "Ajuda",
-              "count": 6
-            }
-          ],
-          "municipal_evidence": "descricao",
-          "formato": "longo"
-        },
-        {
-          "video_id": "Y2RbH9dNwU8",
-          "n_comments": 32,
-          "total_likes": 76,
-          "first_comment": "14/10/2026",
-          "top_categories": [
-            {
-              "label": "Responsabilização",
-              "count": 12
-            },
-            {
-              "label": "Solidariedade",
-              "count": 7
-            },
-            {
-              "label": "Clima/chuva",
-              "count": 6
-            }
-          ],
-          "municipal_evidence": "descricao",
-          "formato": "longo"
-        },
-        {
-          "video_id": "NWXVTpY82nA",
-          "n_comments": 28,
-          "total_likes": 116,
-          "first_comment": "15/10/2026",
-          "top_categories": [
-            {
-              "label": "Responsabilização",
-              "count": 13
-            },
-            {
-              "label": "Solidariedade",
-              "count": 5
-            },
-            {
-              "label": "Clima/chuva",
-              "count": 4
-            }
-          ],
-          "municipal_evidence": "descricao",
-          "formato": "short"
-        },
-        {
-          "video_id": "FzagdmaLM3k",
-          "n_comments": 9,
-          "total_likes": 8,
-          "first_comment": "14/10/2026",
-          "top_categories": [
-            {
-              "label": "Crítica mídia",
-              "count": 3
-            },
-            {
-              "label": "Solidariedade",
-              "count": 2
-            },
-            {
-              "label": "Infraestrutura",
-              "count": 2
-            }
-          ],
-          "municipal_evidence": "descricao",
-          "formato": "short"
-        },
-        {
-          "video_id": "JB6avj2ia5M",
-          "n_comments": 9,
-          "total_likes": 7,
-          "first_comment": "14/10/2026",
-          "top_categories": [
-            {
-              "label": "Solidariedade",
-              "count": 2
-            },
-            {
-              "label": "Ajuda",
-              "count": 2
-            },
-            {
-              "label": "Responsabilização",
-              "count": 2
-            }
-          ],
-          "municipal_evidence": "descricao",
-          "formato": "longo"
-        },
-        {
-          "video_id": "gy_Stt2Vlck",
-          "n_comments": 1,
-          "total_likes": 0,
-          "first_comment": "15/10/2026",
-          "top_categories": [
-            {
-              "label": "Responsabilização",
-              "count": 1
-            }
-          ],
-          "municipal_evidence": "descricao",
-          "formato": "short"
-        },
-        {
-          "video_id": "sicfS7WfTZc",
-          "n_comments": 1,
-          "total_likes": 0,
-          "first_comment": "14/10/2026",
-          "top_categories": [
-            {
-              "label": "Solidariedade",
-              "count": 1
-            }
-          ],
-          "municipal_evidence": "descricao",
-          "formato": "longo"
-        },
-        {
-          "video_id": "uVF-su8gvT4",
-          "n_comments": 0,
-          "total_likes": 0,
-          "first_comment": "",
-          "top_categories": [],
-          "municipal_evidence": "descricao",
-          "formato": "longo"
-        }
-      ],
-      "all_samples": {
-        "solidariedade_oracao_luto": [
-          {
-            "text": "Vorcaro é o novo financista como Jeffrey Epstein, teria bancado \"encontro\" de R$ 10 mil para Nunes Marques. E como sócio oculto de rede de prostituição que recrutava refugiadas Russa e Ucraniana também conhecida como creche de prostituição. A Band tem que fazer o mesmo que fez com o outro Juiz que tentou pegar a força uma mulher. O Ex. Juiz Marco Buzzi.",
-            "likes": 0,
-            "score": 0.998,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "Deus é renegado pelo mundo, o enganador, o Judas e a falsa besta estão neste mundo e querem roubar o lugar de Deus, e todos eles estão na cidade de Sorocaba, Deus precisa só de uma coisa, mas todos eles estão impedindo, mas ninguém vai acreditar nisso",
-            "likes": 0,
-            "score": 0.997,
-            "date": "2026-10-15",
-            "video_id": "JB6avj2ia5M"
-          },
-          {
-            "text": "Pelo menos tem agua pra beber deus sabe o que faz já que o Tarcisio.....",
-            "likes": 1,
-            "score": 0.996,
-            "date": "2026-10-14",
-            "video_id": "E3-SPgp0UGU"
-          },
-          {
-            "text": "meu Deus sera que ele não percebeu que era ia essa voz está em todos os comerciais ( homens) 😂",
-            "likes": 0,
-            "score": 0.996,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "É triste mas ela fez uma escolha ruim pagou caro com a vida 😢",
-            "likes": 1,
-            "score": 0.996,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "Que bom que o Criador promete acabar com a doença, dor , tristeza e morte. Apoc 21:4. Pra TODOS!!! Como se beneficiar dessas bençãos? Jworg responde..",
-            "likes": 0,
-            "score": 0.996,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "Meu senhor me desculpe mais Schuller é um ótimo profissional",
-            "likes": 0,
-            "score": 0.996,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "Por DEUS qui esse povo não morreram afogados .",
-            "likes": 0,
-            "score": 0.995,
-            "date": "2026-10-15",
-            "video_id": "cdGJH6N-XL0"
-          },
-          {
-            "text": "Misericórdia. Como o sr. acreditou nisso gente?????? Que loucura! A voz da IA é inconfundível!!!!",
-            "likes": 4,
-            "score": 0.995,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "tristeza",
-            "likes": 1,
-            "score": 0.994,
-            "date": "2026-10-14",
-            "video_id": "FzagdmaLM3k"
-          },
-          {
-            "text": "Cenas tristes",
-            "likes": 3,
-            "score": 0.994,
-            "date": "2026-10-15",
-            "video_id": "NWXVTpY82nA"
-          },
-          {
-            "text": "Esse desgoverno., misericórdia.",
-            "likes": 0,
-            "score": 0.994,
-            "date": "2026-10-15",
-            "video_id": "E3-SPgp0UGU"
-          },
-          {
-            "text": "@usuario isso mesmo. Eu estava na cidade nesse dia. Manchetes de carros revirados pela força das águas. Muitos que estavam no centro da cidade desistiram de voltar pra casa e dormiram num hotel.",
-            "likes": 1,
-            "score": 0.989,
-            "date": "2026-10-15",
-            "video_id": "E3-SPgp0UGU"
-          },
-          {
-            "text": "MATEUS,ELE MATA MESMO ,NÉ.",
-            "likes": 0,
-            "score": 0.989,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "Obrigado T 🎉❤",
-            "likes": 2,
-            "score": 0.982,
-            "date": "2026-10-14",
-            "video_id": "Y2RbH9dNwU8"
-          },
-          {
-            "text": "Confia 😅😢😢",
-            "likes": 2,
-            "score": 0.981,
-            "date": "2026-10-15",
-            "video_id": "cdGJH6N-XL0"
-          },
-          {
-            "text": "Basta o Nunes trocar o asfalto de algumas ruas que ele ganha voto! Meu Deus como pode ser tão bem avaliado!? É um prefeito terrível!! Nem pra síndico de prédio leva meu voto!!!",
-            "likes": 1,
-            "score": 0.981,
-            "date": "2026-10-15",
-            "video_id": "Y2RbH9dNwU8"
-          },
-          {
-            "text": "Entra gestão, sai gestão e ninguém resolve isso. Fica pior. Meus sentimentos à família da pessoa que faleceu. Misericórdia.",
-            "likes": 0,
-            "score": 0.978,
-            "date": "2026-10-15",
-            "video_id": "cdGJH6N-XL0"
-          },
-          {
-            "text": "Tá gostoso demais, mas achei pouco e quero mais... Meu coração ❤ pulsa de alegria e muita felicidade Façam o T e o N paulistada ❤😊😊😊👉",
-            "likes": 1,
-            "score": 0.976,
-            "date": "2026-10-15",
-            "video_id": "JB6avj2ia5M"
-          },
-          {
-            "text": "😂😂😂😂😂",
-            "likes": 0,
-            "score": 0.974,
-            "date": "2026-10-14",
-            "video_id": "Y2RbH9dNwU8"
-          }
-        ],
-        "ajuda_resgate_doacoes": [
-          {
-            "text": "Ele rapaz merece um emprego de bombeiro salva vida",
-            "likes": 0,
-            "score": 0.997,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "Faz o T para privatizar mais So faltou o Cury com os drones salva vidas",
-            "likes": 1,
-            "score": 0.996,
-            "date": "2026-10-14",
-            "video_id": "JB6avj2ia5M"
-          },
-          {
-            "text": "O Nunes, Tarcisio e Flávio vão ai salvar vcs, confia.",
-            "likes": 0,
-            "score": 0.995,
-            "date": "2026-10-15",
-            "video_id": "cdGJH6N-XL0"
-          },
-          {
-            "text": "Há servidores públicos, evangélicos, políticos e ímpios, ladrões em ANGRA dos REIS.RJ.,INFORMA ISSO AS POLICIAIS FEDERAIS EVANGÉLICAS AMERICANAS E BRASILEIRAS. ELAS SABERÃO COMO AJUDAR. ELSON WALERIANO AND JULITA VIEIRA WALERIANO FROM ANGRA DOS REIS.RJ.BRAZIL.",
-            "likes": 0,
-            "score": 0.991,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "E quem irá ressarcir os proprietários de todos esses carros perdidos, hein?",
-            "likes": 0,
-            "score": 0.987,
-            "date": "2026-10-15",
-            "video_id": "E3-SPgp0UGU"
-          },
-          {
-            "text": "sempre chovia forte. o dobro do triplo só quando eu chega de passeio das ruas pra casa . sempre segurava a chuva com ajuda de Deus pra que só cai se se eu chegasse em casa sem me molhar 🤣🤣🤣🤣",
-            "likes": 0,
-            "score": 0.987,
-            "date": "2026-10-14",
-            "video_id": "Y2RbH9dNwU8"
-          },
-          {
-            "text": "Vota no Tarcísio e no Flávio Bolsonaro que tudo se resolve para vocês do sul afinal Bolsonaro cortou o imposto do jet ski 👌🏻 Nem a natureza nem o céu suporta tanta HIPOCRISIA de vocês do sul !! Tudo que n presta vocês apoia e defende e quem ajuda vocês são a favor de vocês do pobre do trabalhador vocês são contra. Antes eu tinha pena mas agora eu não tenha pena alguma mais de vocês !!!!",
-            "likes": 6,
-            "score": 0.984,
-            "date": "2026-10-15",
-            "video_id": "cdGJH6N-XL0"
-          },
-          {
-            "text": "Por que a CET não interditou conforme o protocolo? Em 1990 e 1996 aconteceu a mesma coisa no mesmo lugar. Mas em 1999 foi uma tragédia histórica. O desastre de 1º de março de 1999: No final da década, ocorreu um dos episódios mais caóticos visualmente. Uma tempestade despejou volumes históricos de chuva (com a saturação do Rio Tamanduateí e bueiros entupidos), fazendo o túnel encher em menos de ci",
-            "likes": 8,
-            "score": 0.967,
-            "date": "2026-10-14",
-            "video_id": "E3-SPgp0UGU"
-          },
-          {
-            "text": "Deve estar perto do seu Jet ski",
-            "likes": 0,
-            "score": 0.944,
-            "date": "2026-10-15",
-            "video_id": "cdGJH6N-XL0"
-          },
-          {
-            "text": "Toda Solidariedade pra quem não votou no miliciano, mas pra quem votou… FAZ o T",
-            "likes": 0,
-            "score": 0.94,
-            "date": "2026-10-15",
-            "video_id": "Y2RbH9dNwU8"
-          },
-          {
-            "text": "Solidariedade pra quem não votou no miliciano, mas pra quem votou… FAZ O T",
-            "likes": 0,
-            "score": 0.932,
-            "date": "2026-10-15",
-            "video_id": "E3-SPgp0UGU"
-          },
-          {
-            "text": "Solidariedade pra quem não votou no miliciano, mas pra quem votou… FAZ O T",
-            "likes": 0,
-            "score": 0.932,
-            "date": "2026-10-15",
-            "video_id": "E3-SPgp0UGU"
-          },
-          {
-            "text": "Se você votou no Tarcísio, coloque o seu boné do MAGA, faz o T e nao reclama🤡",
-            "likes": 0,
-            "score": 0.922,
-            "date": "2026-10-15",
-            "video_id": "E3-SPgp0UGU"
-          },
-          {
-            "text": "Gente essa moça Ana Clara Soares ficou 6 anos com um cara desse violento, que já tinha sido preso, inúmeras passagens na polícia... parece que ela tbém não tinha juízo pra estar com um cara assim que já tinha até matado um homem. Pais e mães, ensinem suas filhas a não terem dedo podre, só escolher vagabundo maloqueiro ou plaboyzinhos viciados sem futuro.",
-            "likes": 1,
-            "score": 0.918,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "Defesa civil envio os 2 alertas atrasado",
-            "likes": 3,
-            "score": 0.855,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "Esse Alcolumbre não vale o que come. Colocou a votação hoje para ferrar o Flávio.",
-            "likes": 4,
-            "score": 0.762,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "Chamem o Tarcísio e o Nunes.....Eles vão resolver....",
-            "likes": 7,
-            "score": 0.76,
-            "date": "2026-10-14",
-            "video_id": "Y2RbH9dNwU8"
-          },
-          {
-            "text": "Seguradora vai ter prejuízo",
-            "likes": 1,
-            "score": 0.689,
-            "date": "2026-10-14",
-            "video_id": "E3-SPgp0UGU"
-          },
-          {
-            "text": "Eu não iria no debate da Band fala com o cara que tramitou para prender meu Pai.",
-            "likes": 5,
-            "score": 0.67,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "O Flávio, Tarcisio, Nunes e bilionários da faria Lima almoçaram do bom e melhor nos melhores restaurantes em SP. Eles vão aparecer rebocar, mandar suporte para estes paulistas que votaram neles.",
-            "likes": 1,
-            "score": 0.639,
-            "date": "2026-10-14",
-            "video_id": "JB6avj2ia5M"
-          }
-        ],
-        "responsabilizacao_governanca": [
-          {
-            "text": "Pior do que está, não fica! O brasileiro já está pagando a conta, com tantos impostos para bancar os gastos do atual governo, marcado por escândalos e corrupção, além das viagens luxuosas do presidente e da Janja. A cada momento, surge um imposto diferente, e quem sofre é a população! O governo Lula vem batendo recordes de arrecadação, ( governo que mais arrecadou e mais gastou), mas os gastos con",
-            "likes": 3,
-            "score": 1.0,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "Pior do que está, não fica! O brasileiro já está pagando a conta, com tantos impostos para bancar os gastos do atual governo, marcado por escândalos e corrupção, além das viagens luxuosas do presidente e da Janja. A cada momento, surge um imposto diferente, e quem sofre é a população! O governo Lula vem batendo recordes de arrecadação, mas os gastos continuam elevados. Em 2025, a arrecadação feder",
-            "likes": 2,
-            "score": 1.0,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "LULA. ARRUMOU ALAGANDO ASVRUAS PRA CULPAR. PL. TARCISIO 😅 PT jOGA SUJA SENPRECISA MATAR VIDAS",
-            "likes": 0,
-            "score": 0.999,
-            "date": "2026-10-15",
-            "video_id": "cdGJH6N-XL0"
-          },
-          {
-            "text": "OLHA. O. MOURÃO. TRAIRÃO. ....QUE. UM. VOCÊ. QUE. TRAIU. ..O. PR😮OPRIO. PARCEIRO. ..DO. GOVERNO ...O. QUE. UM. COVARDE. DESTE ..TEM VOZ. ...V@G@BUNDO .....",
-            "likes": 0,
-            "score": 0.998,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "ENQUANTO ISSO LUCAS PAVANATO, TARCÍSIO E O PREFEITO DA CIDADE FAZENDO DANCINHA E PIADINHA PRA POSTAR NO INSTAGRAM!!!!!!!!!!!!!!!!!!",
-            "likes": 3,
-            "score": 0.998,
-            "date": "2026-10-15",
-            "video_id": "E3-SPgp0UGU"
-          },
-          {
-            "text": "Há servidores públicos, evangélicos, políticos e ímpios, ladrões em ANGRA dos REIS.RJ.,INFORMA ISSO AS POLICIAIS FEDERAIS EVANGÉLICAS AMERICANAS E BRASILEIRAS. ELAS SABERÃO COMO AJUDAR. ELSON WALERIANO AND JULITA VIEIRA WALERIANO FROM ANGRA DOS REIS.RJ.BRAZIL.",
-            "likes": 0,
-            "score": 0.998,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "minha mãe disse que a culpa foi do ruivo erig 🤣🤣🤣🤣",
-            "likes": 0,
-            "score": 0.998,
-            "date": "2026-10-14",
-            "video_id": "Y2RbH9dNwU8"
-          },
-          {
-            "text": "É isso ai mano.😅 A culpa foi O TAL RITUAL A SATANÁS ESSA SEMAMNA",
-            "likes": 0,
-            "score": 0.998,
-            "date": "2026-10-15",
-            "video_id": "cdGJH6N-XL0"
-          },
-          {
-            "text": "SP NAO TEM GOVERNADOR E NEM PREFEITO??????????????????",
-            "likes": 3,
-            "score": 0.998,
-            "date": "2026-10-15",
-            "video_id": "E3-SPgp0UGU"
-          },
-          {
-            "text": "Parabéns a cet e prefeitura li xo sob cordenação do barba incompetente e parceiro do desgovernador milicia. SP aproveitando suas escolhas com sucesso.",
-            "likes": 2,
-            "score": 0.997,
-            "date": "2026-10-14",
-            "video_id": "E3-SPgp0UGU"
-          },
-          {
-            "text": "1977, 1985, 1992, 2004 (a pior, Anhangabaú ficou 2 dias cheio de água e matou 2 pessoas), 2013, 2021... Vários anos acontecendo desastres nos mesmos locais. Culpa do crescimento desordenado, falta de planejamento...",
-            "likes": 12,
-            "score": 0.997,
-            "date": "2026-10-15",
-            "video_id": "cdGJH6N-XL0"
-          },
-          {
-            "text": "Culpa do prefeito",
-            "likes": 5,
-            "score": 0.997,
-            "date": "2026-10-15",
-            "video_id": "cdGJH6N-XL0"
-          },
-          {
-            "text": "A culpa e do Bolsonaro...😂😂😂 Cadê as picanhas???",
-            "likes": 1,
-            "score": 0.997,
-            "date": "2026-10-15",
-            "video_id": "cdGJH6N-XL0"
-          },
-          {
-            "text": "Prefeitura fez uma reforma muito boa mesmo, obrigada por nada",
-            "likes": 3,
-            "score": 0.997,
-            "date": "2026-10-15",
-            "video_id": "NWXVTpY82nA"
-          },
-          {
-            "text": "O filho do Bossonario, tem que falar que o pais dele conseguiu fazer a reforma da previdência da CLT S dos peões e não aumentou o salário dos clts , e os outros três poderes inclusive da justiça , política e não fez essa tal reforma isso que ele tem que falar e o Lula lembrar isso no debate já que o povo esqueceu e os mais novos nem sabem disso ❤😂🎉",
-            "likes": 0,
-            "score": 0.997,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "Não se trata de político e sim da natureza, mas se for tratar de política quem limita a alturas dos prédios de São Paulo que são culpados disso, pois a maioria das pessoas pobres tem que morar nessas areas de riscos",
-            "likes": 2,
-            "score": 0.997,
-            "date": "2026-10-15",
-            "video_id": "FzagdmaLM3k"
-          },
-          {
-            "text": "Isso realmente é uma vergonha 😮",
-            "likes": 5,
-            "score": 0.997,
-            "date": "2026-10-14",
-            "video_id": "E3-SPgp0UGU"
-          },
-          {
-            "text": "Calma pessoal. O importante é aue vocês votaram em quem o \"mito\" mandou. Isso aí não foi nada. É coisa do LULA, do Petê! 🤪",
-            "likes": 9,
-            "score": 0.997,
-            "date": "2026-10-15",
-            "video_id": "NWXVTpY82nA"
-          },
-          {
-            "text": "Quem é mesmo o ladrão do INSS e Banco Master a imprensa calou. Cadê os ladrões dos velhinhos. O dinheiro já tem dono Eduardo Bolsonaro e Tramp.",
-            "likes": 1,
-            "score": 0.997,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "O Ladrão de velhinhos, continua roubando os velhinhos e agora aumentando para mais 5 anos como o seu pai fez de 60 anos para 65 anos. O Ladrão quê que você vá para 70 anos ou mais. Cadê a Band o ladrão quem virar presidente. A brand só os jogos de azar.",
-            "likes": 0,
-            "score": 0.997,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          }
-        ],
-        "infraestrutura_ocupacao_risco": [
-          {
-            "text": "De love casa do Richarlyson Flavio Barbosa",
-            "likes": 0,
-            "score": 0.998,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "@usuario isso mesmo. Eu estava na cidade nesse dia. Manchetes de carros revirados pela força das águas. Muitos que estavam no centro da cidade desistiram de voltar pra casa e dormiram num hotel.",
-            "likes": 1,
-            "score": 0.997,
-            "date": "2026-10-15",
-            "video_id": "E3-SPgp0UGU"
-          },
-          {
-            "text": "O problema é a falta de educação do povo em geral que joga , descarta lixos nas ruas. Sempre vejo lixos..latas vazias de refrigerantes sendo jogados pelas janelas de automóveis ou de ônibus. Desde criança todos fomos educados..educamos nossos filhos..e os netos tb.são",
-            "likes": 1,
-            "score": 0.997,
-            "date": "2026-10-14",
-            "video_id": "Y2RbH9dNwU8"
-          },
-          {
-            "text": "Isso não é só em São Paulo Paraná santa Catarina rio Grande do Sul. Isso é em todo o planeta terra O primeiro mundo foi destruido pela água",
-            "likes": 0,
-            "score": 0.996,
-            "date": "2026-10-15",
-            "video_id": "E3-SPgp0UGU"
-          },
-          {
-            "text": "@usuario kk se fosse no Sul já era um Rio kkkkkkkkkkkkkkkkkkkkkkkkkk",
-            "likes": 1,
-            "score": 0.996,
-            "date": "2026-10-14",
-            "video_id": "Y2RbH9dNwU8"
-          },
-          {
-            "text": "Nem tem como comparar essa tempestade com aquela desgraceira das enchentes do Rio Grande do Sul 😁",
-            "likes": 2,
-            "score": 0.996,
-            "date": "2026-10-14",
-            "video_id": "Y2RbH9dNwU8"
-          },
-          {
-            "text": "Vendam a cidade para as construtoras Maravilha",
-            "likes": 2,
-            "score": 0.996,
-            "date": "2026-10-14",
-            "video_id": "E3-SPgp0UGU"
-          },
-          {
-            "text": "@usuario foi na Beira Rio, não é uma rua.",
-            "likes": 0,
-            "score": 0.995,
-            "date": "2026-10-15",
-            "video_id": "FzagdmaLM3k"
-          },
-          {
-            "text": "isso deve ser os esgotos entopidos",
-            "likes": 0,
-            "score": 0.995,
-            "date": "2026-10-15",
-            "video_id": "cdGJH6N-XL0"
-          },
-          {
-            "text": "QUE SACO!!!...A BAND N SE CANSA DE SE GABAR DO SEU DEBATE E TODA VEZ VEM A VELHA RESTROPCTIVA, OPINIOES FAVORAVEIS DE COMPRADOS, JORNALISTA DA CASA...UMA VANCLORIZACAO CHATA E CONSTANTE COMO FOSSE A MELHOR COISA DO MUNDO...TODO ISSO VEM A BAIXO SE OS CANDIDATOS RESOLVEREM N PARTICIPAR AI A BAND QUEBRA A CARA E VEM FALAR EM \"NOME\" \"ELEITOR\" PRA ATACAR OS FALTANTES. SE O TARIFLAVIO FOR HOMEM DE IR A",
-            "likes": 7,
-            "score": 0.994,
-            "date": "2026-10-14",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "Esse povo é doido?!?!!! Tarcísio construiu isso?! Há quantos anos essa região tem o mesmo problema?! Esse senhor idoso, dizer que circula pela região há 30 anos e nunca viu isso?! De que planeta ele veio?!?!!!...",
-            "likes": 0,
-            "score": 0.989,
-            "date": "2026-10-15",
-            "video_id": "cdGJH6N-XL0"
-          },
-          {
-            "text": "Esses alagamentos que acontece em áreas urbana nas capitais dos estados e regiões metropolitanas é devido a falta de saneamento básico, em muitas cidades do nosso país não tem sistema de tratamento de esgoto. Por causa disso todo ano quando chove acontece esses alagamentos e quem mais sofre com isso é população dessas regiões do país.",
-            "likes": 3,
-            "score": 0.988,
-            "date": "2026-10-15",
-            "video_id": "cdGJH6N-XL0"
-          },
-          {
-            "text": "sempre chovia forte. o dobro do triplo só quando eu chega de passeio das ruas pra casa . sempre segurava a chuva com ajuda de Deus pra que só cai se se eu chegasse em casa sem me molhar 🤣🤣🤣🤣",
-            "likes": 0,
-            "score": 0.988,
-            "date": "2026-10-14",
-            "video_id": "Y2RbH9dNwU8"
-          },
-          {
-            "text": "Ah, é verdade, Tarcísio e Flávio construiram essa obra porca, que dá problema desde o final da década de 70, né? Agora, estão dando ordens para a chuva!!!... kkk",
-            "likes": 0,
-            "score": 0.988,
-            "date": "2026-10-15",
-            "video_id": "cdGJH6N-XL0"
-          },
-          {
-            "text": "Nós evangélicos não precisamos da tua autorização seu Lula,para está na casa de Deus,nada nos impede,nem mesmo o trabalho, nós temos escolhas.",
-            "likes": 1,
-            "score": 0.986,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "Por que a CET não interditou conforme o protocolo? Em 1990 e 1996 aconteceu a mesma coisa no mesmo lugar. Mas em 1999 foi uma tragédia histórica. O desastre de 1º de março de 1999: No final da década, ocorreu um dos episódios mais caóticos visualmente. Uma tempestade despejou volumes históricos de chuva (com a saturação do Rio Tamanduateí e bueiros entupidos), fazendo o túnel encher em menos de ci",
-            "likes": 8,
-            "score": 0.983,
-            "date": "2026-10-14",
-            "video_id": "E3-SPgp0UGU"
-          },
-          {
-            "text": "O prefeito Ricardo Nunes não tem tempo pra cuidar disso, ele tá ocupado fazendo campanha pro Flávio Vorcaro. Faz o F.",
-            "likes": 0,
-            "score": 0.982,
-            "date": "2026-10-15",
-            "video_id": "Y2RbH9dNwU8"
-          },
-          {
-            "text": "Dele não pois ele não é prefeito e nem governador de SP, mas do Tarcísio é. Ele cortou custos de drenagem pra cidade de SP, ele é o maior responsavel por esse desastre, um criminoso.",
-            "likes": 4,
-            "score": 0.975,
-            "date": "2026-10-15",
-            "video_id": "cdGJH6N-XL0"
-          },
-          {
-            "text": "Se vc tem filho em escola pública, lembra quem quis destruir as universidades,quem quis destruir o sistema de vacinação do país,quem não se importou com quase um milhão de mortos,pois não era coveiro,quem incentivou o desmatamento na Amazônia,arcando com cortes de verbas internacionais,quem acabou com minha casa minha vida ,pra quem faz metáfora do programa então continua com a direita,e vc pagand",
-            "likes": 5,
-            "score": 0.972,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "@usuario de drenagem. De onde tirou isso? Manutenção é da prefeitura e não do estado",
-            "likes": 2,
-            "score": 0.971,
-            "date": "2026-10-15",
-            "video_id": "cdGJH6N-XL0"
-          }
-        ],
-        "clima_chuva_meio_ambiente": [
-          {
-            "text": "Uma lepeaspirose , é um perigoso o centro de SP cheio de ratos 🐀 nos prédios abandonados na parte de baixo dos jds da se inclusive no jardins na estação da praça da SE eu já vi com meus próprio olhos aí tinha um murinho longo onde as pessoas sentavam faziam hora depois nesse marinho longo dentro da praça da Se , na estação bem antes da catraca muitas plantas os ratos 🐀 ficavam passeando escondido ",
-            "likes": 0,
-            "score": 0.999,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "Não existe nada pior do que a PMSP. Quanto mais dinheiro arranca do bolso dos contribuintes, menos realiza, mais exibe sua absoluta incompetência. É uma lástima. O alagamento no Anhangabaú fica exatamente embaixo da antiga praça arborizada, que foi transformada no vergonhoso estacionamento gigante, que não serve para nenhuma finalidade pública. A área foi apropriada, modificada, ambiental e urbani",
-            "likes": 1,
-            "score": 0.998,
-            "date": "2026-10-14",
-            "video_id": "E3-SPgp0UGU"
-          },
-          {
-            "text": "Sim, falta de planejamento urbano, sem dúvida. Mas os anos que você mesmo citou não refutam a mudança climática. Pelo contrário. O problema não é saber se São Paulo sempre teve enchentes, mas se eventos extremos estão se tornando mais frequentes e intensos. E os dados mostram que estão. Mudança climática não criou as enchentes de São Paulo; está agravando um problema que décadas de urbanização des",
-            "likes": 2,
-            "score": 0.997,
-            "date": "2026-10-15",
-            "video_id": "cdGJH6N-XL0"
-          },
-          {
-            "text": "Que fiquem ligados com os seguros de veículos, incluir perdas por enchentes.caso ccntrario e perda parcial ou total do automóvel .",
-            "likes": 1,
-            "score": 0.997,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "Que tragédia",
-            "likes": 2,
-            "score": 0.997,
-            "date": "2026-10-15",
-            "video_id": "NWXVTpY82nA"
-          },
-          {
-            "text": "Kkkk em todos os países há enchentes quando há fortes chuvas, nenhuma cidade resolveu esse problema até hoje.",
-            "likes": 0,
-            "score": 0.997,
-            "date": "2026-10-15",
-            "video_id": "Y2RbH9dNwU8"
-          },
-          {
-            "text": "Tragédia de Freitas + Nunes bananinha = Desastre",
-            "likes": 2,
-            "score": 0.996,
-            "date": "2026-10-15",
-            "video_id": "NWXVTpY82nA"
-          },
-          {
-            "text": "O cágado aproveitando a chuva foi ótimo...",
-            "likes": 0,
-            "score": 0.996,
-            "date": "2026-10-15",
-            "video_id": "E3-SPgp0UGU"
-          },
-          {
-            "text": "É.... a chuva... A chuva que arrecada imposto e investe em infraestrutura urbana...",
-            "likes": 0,
-            "score": 0.996,
-            "date": "2026-10-15",
-            "video_id": "cdGJH6N-XL0"
-          },
-          {
-            "text": "Por que a CET não interditou conforme o protocolo? Em 1990 e 1996 aconteceu a mesma coisa no mesmo lugar. Mas em 1999 foi uma tragédia histórica. O desastre de 1º de março de 1999: No final da década, ocorreu um dos episódios mais caóticos visualmente. Uma tempestade despejou volumes históricos de chuva (com a saturação do Rio Tamanduateí e bueiros entupidos), fazendo o túnel encher em menos de ci",
-            "likes": 8,
-            "score": 0.996,
-            "date": "2026-10-14",
-            "video_id": "E3-SPgp0UGU"
-          },
-          {
-            "text": "Imagina só, quando chegar as chuvas do verão ?",
-            "likes": 5,
-            "score": 0.996,
-            "date": "2026-10-14",
-            "video_id": "E3-SPgp0UGU"
-          },
-          {
-            "text": "Isso que é zona norte categoria de engenharia dez adequada a natureza cobra ...",
-            "likes": 3,
-            "score": 0.996,
-            "date": "2026-10-14",
-            "video_id": "E3-SPgp0UGU"
-          },
-          {
-            "text": "A natureza retomando o que é dela. Saiam dessas cidades!! A tendência é piorar.",
-            "likes": 6,
-            "score": 0.996,
-            "date": "2026-10-15",
-            "video_id": "cdGJH6N-XL0"
-          },
-          {
-            "text": "Teve em 96 ou 97 tb não lembro exatamente Meu pai tinha um comércio aí na prestes maia e eu lembro que o túnel tava alagado tbm",
-            "likes": 1,
-            "score": 0.995,
-            "date": "2026-10-15",
-            "video_id": "cdGJH6N-XL0"
-          },
-          {
-            "text": "Esse povo é doente mesmo, sempre teve enchente em sp..kkkk desde a dcada de 80, uma veia dessa não lembrar disso, é fingir muita demencia...kkk",
-            "likes": 0,
-            "score": 0.995,
-            "date": "2026-10-15",
-            "video_id": "cdGJH6N-XL0"
-          },
-          {
-            "text": "O governo só coloca uma plaquinha, área de alagamento, se afogue aí, tô nem aí",
-            "likes": 13,
-            "score": 0.995,
-            "date": "2026-10-14",
-            "video_id": "E3-SPgp0UGU"
-          },
-          {
-            "text": "Chuva de verão veio adiantado e de surpresa ninguém esperava nunca aconteceu isso mas Nunes e Tarcísio já estão resolvendo Isso",
-            "likes": 1,
-            "score": 0.995,
-            "date": "2026-10-15",
-            "video_id": "Y2RbH9dNwU8"
-          },
-          {
-            "text": "Quem mira nesta selva de pedra que não tem mais para onde crescer. O que esperar que a natureza seja generosa chover pouquinho só para agradar as pessoas que destroem tudo. Nao tem onde escoar tanta água 😢",
-            "likes": 1,
-            "score": 0.995,
-            "date": "2026-10-15",
-            "video_id": "E3-SPgp0UGU"
-          },
-          {
-            "text": "Até o metrô de NY alaga, já aconteceu outras vezes, ocorre devido aos rios canalizados no subsolo.",
-            "likes": 0,
-            "score": 0.995,
-            "date": "2026-10-15",
-            "video_id": "E3-SPgp0UGU"
-          },
-          {
-            "text": "Oa 70% de macacos que votaram nele vão atribuir isso tudo a chuva...por isso eu fico e feliz quando isso acontece!",
-            "likes": 0,
-            "score": 0.995,
-            "date": "2026-10-15",
-            "video_id": "cdGJH6N-XL0"
-          }
-        ],
-        "experiencia_pessoal_local": [
-          {
-            "text": "ANDRESSA, DIRETORA DA BAND SÓ NAO DEIXA ESSE FERNANDO SCHULLER, PARTICIPAR, SE NAO NOIS AQUI EM SERGIPE NAO VAMOS ASSISTIR A BAND. Ô MITRE !?",
-            "likes": 1,
-            "score": 0.998,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "Se vc tem filho em escola pública, lembra quem quis destruir as universidades,quem quis destruir o sistema de vacinação do país,quem não se importou com quase um milhão de mortos,pois não era coveiro,quem incentivou o desmatamento na Amazônia,arcando com cortes de verbas internacionais,quem acabou com minha casa minha vida ,pra quem faz metáfora do programa então continua com a direita,e vc pagand",
-            "likes": 5,
-            "score": 0.998,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "É pouco . Olha a MARRETADA do tarcisio aí GENTEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE ..A não é o governo . O tarcisio e o nunes , os 2 é uma pessoa só . Ou coisa BOA . O trem pra São Miguel , caindo os pedaços . O metrô um lixão . Fiquei horrorizada.. O Parque dão Pedro , misericórdia. E pôr aí vai . . . O mercadão , Brás . A Sé só por DEUS . Secaram as fontes .",
-            "likes": 1,
-            "score": 0.998,
-            "date": "2026-10-15",
-            "video_id": "cdGJH6N-XL0"
-          },
-          {
-            "text": "Graças a Deus hoje fiquei em HOME OFFICE",
-            "likes": 1,
-            "score": 0.997,
-            "date": "2026-10-14",
-            "video_id": "Y2RbH9dNwU8"
-          },
-          {
-            "text": "O GOVERNANTES DE SP É UMA NEGAÇÃO NA GESTÃO DO ESTADO ... É igual aqui no Paraná em outro estados do Sul como SC e RS , não vejo solução definitiva somente sabem pedir votos em época de eleição ambos são todos da DIREITA !",
-            "likes": 9,
-            "score": 0.995,
-            "date": "2026-10-14",
-            "video_id": "Y2RbH9dNwU8"
-          },
-          {
-            "text": "Gente... isso aconteceu uns 20 anos atrás. Chove forte na Paulista e 13 de Maio e no Anhangabaú nem tanto. Então a água desce de todas as ruas e vai se juntando na 9 de julho e vem como um Tsunami, uma verdadeira onda que enche o tunel quase que imediatamente. Sem novidades aqui. Acontece a cada par de décadas.",
-            "likes": 7,
-            "score": 0.994,
-            "date": "2026-10-15",
-            "video_id": "cdGJH6N-XL0"
-          },
-          {
-            "text": "Enquanto isso o Flávio Bolsonaro aqui no RGS fazendo média para ganhar vótos com o governador fazendo mil e umas promessas para se prevenir das enchentes! Chama o Flávio Bolsonaro ! Agora.",
-            "likes": 3,
-            "score": 0.992,
-            "date": "2026-10-15",
-            "video_id": "NWXVTpY82nA"
-          }
-        ],
-        "alerta_prevencao_cobranca": [
-          {
-            "text": "ALGUÉM. . AVISA. FLÁVIO BOLSONARO ....SR. PREPARA. PARA. O. DEBATE .....PORQUE. ...LULA. APARECERÁ. VOM. PROVAS. FALSA. COMTRA. ELE .... PORQUÊ. EU. FALO. PROVAS. FALSA. ... NÃO. ESQUECE. QUE. ELE. TEM. TODO. JUDICIÁRIO. DO. SEU. LADO .....DEBATE. DESIGUAL. .....",
-            "likes": 0,
-            "score": 0.999,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "Defesa civil envio os 2 alertas atrasado",
-            "likes": 3,
-            "score": 0.999,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "Como o meu prefeito deixa isso acontecer? Diversos alertas emitidos há meses sobre as questões climáticas, NADA FOI FEITO. Repito, alertas feitos há meses.",
-            "likes": 2,
-            "score": 0.998,
-            "date": "2026-10-15",
-            "video_id": "cdGJH6N-XL0"
-          },
-          {
-            "text": "Por que a CET não interditou conforme o protocolo? Em 1990 e 1996 aconteceu a mesma coisa no mesmo lugar. Mas em 1999 foi uma tragédia histórica. O desastre de 1º de março de 1999: No final da década, ocorreu um dos episódios mais caóticos visualmente. Uma tempestade despejou volumes históricos de chuva (com a saturação do Rio Tamanduateí e bueiros entupidos), fazendo o túnel encher em menos de ci",
-            "likes": 8,
-            "score": 0.998,
-            "date": "2026-10-14",
-            "video_id": "E3-SPgp0UGU"
-          },
-          {
-            "text": "Não se trata de político e sim da natureza, mas se for tratar de política quem limita a alturas dos prédios de São Paulo que são culpados disso, pois a maioria das pessoas pobres tem que morar nessas areas de riscos",
-            "likes": 2,
-            "score": 0.997,
-            "date": "2026-10-15",
-            "video_id": "FzagdmaLM3k"
-          },
-          {
-            "text": "Enquanto isso o Flávio Bolsonaro aqui no RGS fazendo média para ganhar vótos com o governador fazendo mil e umas promessas para se prevenir das enchentes! Chama o Flávio Bolsonaro ! Agora.",
-            "likes": 3,
-            "score": 0.997,
-            "date": "2026-10-15",
-            "video_id": "NWXVTpY82nA"
-          },
-          {
-            "text": "QUE SACO!!!...A BAND N SE CANSA DE SE GABAR DO SEU DEBATE E TODA VEZ VEM A VELHA RESTROPCTIVA, OPINIOES FAVORAVEIS DE COMPRADOS, JORNALISTA DA CASA...UMA VANCLORIZACAO CHATA E CONSTANTE COMO FOSSE A MELHOR COISA DO MUNDO...TODO ISSO VEM A BAIXO SE OS CANDIDATOS RESOLVEREM N PARTICIPAR AI A BAND QUEBRA A CARA E VEM FALAR EM \"NOME\" \"ELEITOR\" PRA ATACAR OS FALTANTES. SE O TARIFLAVIO FOR HOMEM DE IR A",
-            "likes": 7,
-            "score": 0.527,
-            "date": "2026-10-14",
-            "video_id": "bjHVXTCYbZQ"
-          }
-        ],
-        "critica_midia_informacao": [
-          {
-            "text": "QUE SACO!!!...A BAND N SE CANSA DE SE GABAR DO SEU DEBATE E TODA VEZ VEM A VELHA RESTROPCTIVA, OPINIOES FAVORAVEIS DE COMPRADOS, JORNALISTA DA CASA...UMA VANCLORIZACAO CHATA E CONSTANTE COMO FOSSE A MELHOR COISA DO MUNDO...TODO ISSO VEM A BAIXO SE OS CANDIDATOS RESOLVEREM N PARTICIPAR AI A BAND QUEBRA A CARA E VEM FALAR EM \"NOME\" \"ELEITOR\" PRA ATACAR OS FALTANTES. SE O TARIFLAVIO FOR HOMEM DE IR A",
-            "likes": 7,
-            "score": 0.999,
-            "date": "2026-10-14",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "Olá! Não acredito que até hoje ainda não deram um jeito neste túnel do centro da cidade, que aliás antigamente era chamado de \"o buraco do Ademar\"...rsrsrs...por que na verdade ninguém a época entedeu o por que daquele \"túnel\" que só dava problema nas chuvas...é rir prá não chorar, tenho quase 70, estou longe da minha querida Sampa, onde nasci, cresci e onde fazia ballet na Escola Municipal de Bai",
-            "likes": 0,
-            "score": 0.999,
-            "date": "2026-10-15",
-            "video_id": "E3-SPgp0UGU"
-          },
-          {
-            "text": "Ah, é verdade, Tarcísio construiu essa obra porca, que dá problema desde o final da década de 70, né? E fez chover tbm... 😏",
-            "likes": 0,
-            "score": 0.998,
-            "date": "2026-10-15",
-            "video_id": "cdGJH6N-XL0"
-          },
-          {
-            "text": "Ah, é verdade, Tarcísio construiu essa obra porca, que dá problema desde o final da década de 70, né? Ele até faz chover!!! kkk",
-            "likes": 0,
-            "score": 0.998,
-            "date": "2026-10-15",
-            "video_id": "cdGJH6N-XL0"
-          },
-          {
-            "text": "POQ VOCÊS DA MÍDIA NÃO MOSTRARM O VANDALISMO NA AV PAULISTA?????????",
-            "likes": 1,
-            "score": 0.998,
-            "date": "2026-10-14",
-            "video_id": "FzagdmaLM3k"
-          },
-          {
-            "text": "Lívia Nepomuceno é excelente falando do futebol no jornal da Band.",
-            "likes": 1,
-            "score": 0.996,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "Tarcísioooo! Nunees! VÃO continuar a negar o aquecimento global? Não tomarão as medidas para evitar o caos?",
-            "likes": 4,
-            "score": 0.996,
-            "date": "2026-10-15",
-            "video_id": "cdGJH6N-XL0"
-          },
-          {
-            "text": "Ah, é verdade, Tarcísio e Flávio construiram essa obra porca, que dá problema desde o final da década de 70, né? Agora, estão dando ordens para a chuva!!!... kkk",
-            "likes": 0,
-            "score": 0.995,
-            "date": "2026-10-15",
-            "video_id": "cdGJH6N-XL0"
-          },
-          {
-            "text": "VERDADE, NA GESTAO PETISTA NAO TEVE NENHUMA ENCHENTE kkkkkkkkkkkkkk esses analfabetos politicos sao MUITO ENGRACADOS que mundo vcs vivem ? serio, VCS BOSTEJAM DEMAIS KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK",
-            "likes": 0,
-            "score": 0.995,
-            "date": "2026-10-15",
-            "video_id": "cdGJH6N-XL0"
-          },
-          {
-            "text": "Fala mal do prefeito a mídia não fala nada se fosse prefeito do PT a mídia ficava toda hora falando que vergonha Ricardo nunes",
-            "likes": 3,
-            "score": 0.993,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "Debate na Band é excelente em qualidade",
-            "likes": 8,
-            "score": 0.993,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "Gente... isso aconteceu uns 20 anos atrás. Chove forte na Paulista e 13 de Maio e no Anhangabaú nem tanto. Então a água desce de todas as ruas e vai se juntando na 9 de julho e vem como um Tsunami, uma verdadeira onda que enche o tunel quase que imediatamente. Sem novidades aqui. Acontece a cada par de décadas.",
-            "likes": 7,
-            "score": 0.992,
-            "date": "2026-10-15",
-            "video_id": "cdGJH6N-XL0"
-          },
-          {
-            "text": "São Paulo e Nunes são excelentes gestores! Foram reeleitos e o povo aprova a gestão. Esses vídeos são fake news e a chuva com certeza é obra do PT.",
-            "likes": 14,
-            "score": 0.983,
-            "date": "2026-10-14",
-            "video_id": "E3-SPgp0UGU"
-          },
-          {
-            "text": "É disso que o povo gosta. Afinal, reelegeram Nunes e mentiroso do Tarcisio. Amanhã tem mais. \"a semeadura é livre, mas a colheita é obrigatória\"",
-            "likes": 22,
-            "score": 0.981,
-            "date": "2026-10-15",
-            "video_id": "NWXVTpY82nA"
-          },
-          {
-            "text": "GLOBO: Flávio Bolsonaro era 'usuário master' de conta de offshore sócia do jato usado por Vorcaro. Se o Brasil fosse um país sério, Flávio Bolsonaro era para tá na cadeia e não candidato a presidente.",
-            "likes": 1,
-            "score": 0.971,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "Eu não iria no debate da Band fala com o cara que tramitou para prender meu Pai.",
-            "likes": 5,
-            "score": 0.969,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "@usuario",
-            "likes": 0,
-            "score": 0.948,
-            "date": "2026-10-15",
-            "video_id": "FzagdmaLM3k"
-          },
-          {
-            "text": "Acontece mesmo",
-            "likes": 0,
-            "score": 0.9,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "Seu Mourão trabalha em que escala mesmo? Ah sim melhor nem comentar né.",
-            "likes": 0,
-            "score": 0.835,
-            "date": "2026-10-15",
-            "video_id": "bjHVXTCYbZQ"
-          },
-          {
-            "text": "@usuario sei 😂😂😂",
-            "likes": 0,
-            "score": 0.789,
-            "date": "2026-10-15",
-            "video_id": "FzagdmaLM3k"
-          }
-        ]
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "prioritario",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-14T17:08:36Z"
-        },
-        {
-          "flag": "acompanhamento",
-          "at": "2026-10-14T21:10:46Z",
-          "criterio": "municipal_v0.3.2"
-        },
-        {
-          "flag": "prioritario",
-          "at": "2026-10-15T10:39:40Z",
-          "criterio": "municipal_v0.3.2"
-        }
-      ],
-      "n_comments_valid": 256,
-      "videos_with_valid_comments": [
-        "1XJxTnReDAc",
-        "E3-SPgp0UGU",
-        "FzagdmaLM3k",
-        "JB6avj2ia5M",
-        "NWXVTpY82nA",
-        "RJ-ObcM8QM0",
-        "Y2RbH9dNwU8",
-        "bjHVXTCYbZQ",
-        "cdGJH6N-XL0",
-        "gy_Stt2Vlck",
-        "meWTHDujLq4",
-        "sicfS7WfTZc",
-        "uVF-su8gvT4"
-      ],
-      "alert_opened_at": "2026-10-14T17:08:36Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=ok;comments=api_error",
-        "consecutive_failures": 1
-      },
-      "last_collection_at": "2026-10-15T10:39:40Z",
-      "next_collection_at": "2026-10-15T16:39:40Z",
-      "window_finalized_at": null,
-      "counters_integrity": "inflated_pre_v0.3",
-      "videos_por_formato": {
-        "ao_vivo": 1,
-        "longo": 6,
-        "short": 3
-      },
-      "n_videos_municipais": 8,
-      "n_videos_verificados": 10,
-      "n_comments_municipais": 116,
-      "n_comments_valid_municipal": 131,
-      "videos_with_valid_comments_municipal": [
-        "1XJxTnReDAc",
-        "E3-SPgp0UGU",
-        "FzagdmaLM3k",
-        "JB6avj2ia5M",
-        "NWXVTpY82nA",
-        "Y2RbH9dNwU8",
-        "gy_Stt2Vlck",
-        "meWTHDujLq4",
-        "sicfS7WfTZc",
-        "uVF-su8gvT4"
-      ],
-      "flag_reassessment": null
     },
     {
       "id": "cemaden_rs_2475",
@@ -24722,7 +23422,7 @@
           "criterio": "municipal_v0.3.2"
         }
       ],
-      "n_comments_valid": 870,
+      "n_comments_valid": 980,
       "videos_with_valid_comments": [
         "1vGCCXXMnWg",
         "KAsCkf0mkWk",
@@ -24732,6 +23432,7 @@
         "Y2RbH9dNwU8",
         "ZagZ9VsihTQ",
         "bsIl6NbQwOE",
+        "cdGJH6N-XL0",
         "d_xzD9od8b4",
         "fj7X51DmHVU",
         "gU4JsBlKlzs",
@@ -24746,7 +23447,7 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=ok;comments=api_error",
-        "consecutive_failures": 1
+        "consecutive_failures": 2
       },
       "last_collection_at": "2026-10-14T21:10:46Z",
       "next_collection_at": "2026-10-15T22:04:38Z",
@@ -24759,7 +23460,7 @@
       "n_videos_municipais": 5,
       "n_videos_verificados": 8,
       "n_comments_municipais": 4,
-      "n_comments_valid_municipal": 412,
+      "n_comments_valid_municipal": 417,
       "videos_with_valid_comments_municipal": [
         "1vGCCXXMnWg",
         "KAsCkf0mkWk",
@@ -24769,6 +23470,1306 @@
         "gU4JsBlKlzs",
         "kKRB_vH5-co",
         "xuWytLVv_4g"
+      ],
+      "flag_reassessment": null
+    },
+    {
+      "id": "cemaden_sp_2976",
+      "municipio": "São Paulo",
+      "uf": "SP",
+      "tipo": "Movimentos de Massa",
+      "nivel": "Moderado",
+      "data_alerta": "14/10/2026",
+      "codibge": "3550308",
+      "lat": null,
+      "lon": null,
+      "regime": "prospective_live",
+      "n_comments": 240,
+      "n_videos": 10,
+      "unlabeled": 44,
+      "unlabeled_pct": 18.3,
+      "date_range": [
+        "2026-10-14",
+        "2026-10-15"
+      ],
+      "distribution": [
+        {
+          "key": "solidariedade_oracao_luto",
+          "label": "Solidariedade / oração / luto",
+          "count": 42,
+          "pct": 17.5
+        },
+        {
+          "key": "ajuda_resgate_doacoes",
+          "label": "Ajuda / resgate / doações",
+          "count": 24,
+          "pct": 10.0
+        },
+        {
+          "key": "responsabilizacao_governanca",
+          "label": "Responsabilização / governança",
+          "count": 94,
+          "pct": 39.2
+        },
+        {
+          "key": "infraestrutura_ocupacao_risco",
+          "label": "Infraestrutura / ocupação de risco",
+          "count": 26,
+          "pct": 10.8
+        },
+        {
+          "key": "clima_chuva_meio_ambiente",
+          "label": "Clima / chuva / meio ambiente",
+          "count": 43,
+          "pct": 17.9
+        },
+        {
+          "key": "experiencia_pessoal_local",
+          "label": "Experiência pessoal / local",
+          "count": 7,
+          "pct": 2.9
+        },
+        {
+          "key": "alerta_prevencao_cobranca",
+          "label": "Alerta / prevenção / cobrança",
+          "count": 7,
+          "pct": 2.9
+        },
+        {
+          "key": "critica_midia_informacao",
+          "label": "Crítica à mídia / informação",
+          "count": 24,
+          "pct": 10.0
+        }
+      ],
+      "timeline": [
+        {
+          "date": "14/10/26",
+          "count": 54
+        },
+        {
+          "date": "15/10/26",
+          "count": 186
+        }
+      ],
+      "videos": [
+        {
+          "video_id": "bjHVXTCYbZQ",
+          "n_comments": 70,
+          "total_likes": 90,
+          "first_comment": "14/10/2026",
+          "top_categories": [
+            {
+              "label": "Responsabilização",
+              "count": 30
+            },
+            {
+              "label": "Solidariedade",
+              "count": 11
+            },
+            {
+              "label": "Crítica mídia",
+              "count": 11
+            }
+          ],
+          "municipal_evidence": "nenhuma",
+          "formato": "ao_vivo"
+        },
+        {
+          "video_id": "cdGJH6N-XL0",
+          "n_comments": 54,
+          "total_likes": 118,
+          "first_comment": "15/10/2026",
+          "top_categories": [
+            {
+              "label": "Responsabilização",
+              "count": 22
+            },
+            {
+              "label": "Clima/chuva",
+              "count": 15
+            },
+            {
+              "label": "Solidariedade",
+              "count": 10
+            }
+          ],
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
+        },
+        {
+          "video_id": "E3-SPgp0UGU",
+          "n_comments": 36,
+          "total_likes": 98,
+          "first_comment": "14/10/2026",
+          "top_categories": [
+            {
+              "label": "Responsabilização",
+              "count": 13
+            },
+            {
+              "label": "Clima/chuva",
+              "count": 12
+            },
+            {
+              "label": "Ajuda",
+              "count": 6
+            }
+          ],
+          "municipal_evidence": "descricao",
+          "formato": "longo"
+        },
+        {
+          "video_id": "Y2RbH9dNwU8",
+          "n_comments": 32,
+          "total_likes": 76,
+          "first_comment": "14/10/2026",
+          "top_categories": [
+            {
+              "label": "Responsabilização",
+              "count": 12
+            },
+            {
+              "label": "Solidariedade",
+              "count": 7
+            },
+            {
+              "label": "Clima/chuva",
+              "count": 6
+            }
+          ],
+          "municipal_evidence": "descricao",
+          "formato": "longo"
+        },
+        {
+          "video_id": "NWXVTpY82nA",
+          "n_comments": 28,
+          "total_likes": 116,
+          "first_comment": "15/10/2026",
+          "top_categories": [
+            {
+              "label": "Responsabilização",
+              "count": 13
+            },
+            {
+              "label": "Solidariedade",
+              "count": 5
+            },
+            {
+              "label": "Clima/chuva",
+              "count": 4
+            }
+          ],
+          "municipal_evidence": "descricao",
+          "formato": "short"
+        },
+        {
+          "video_id": "FzagdmaLM3k",
+          "n_comments": 9,
+          "total_likes": 8,
+          "first_comment": "14/10/2026",
+          "top_categories": [
+            {
+              "label": "Crítica mídia",
+              "count": 3
+            },
+            {
+              "label": "Solidariedade",
+              "count": 2
+            },
+            {
+              "label": "Infraestrutura",
+              "count": 2
+            }
+          ],
+          "municipal_evidence": "descricao",
+          "formato": "short"
+        },
+        {
+          "video_id": "JB6avj2ia5M",
+          "n_comments": 9,
+          "total_likes": 7,
+          "first_comment": "14/10/2026",
+          "top_categories": [
+            {
+              "label": "Solidariedade",
+              "count": 2
+            },
+            {
+              "label": "Ajuda",
+              "count": 2
+            },
+            {
+              "label": "Responsabilização",
+              "count": 2
+            }
+          ],
+          "municipal_evidence": "descricao",
+          "formato": "longo"
+        },
+        {
+          "video_id": "gy_Stt2Vlck",
+          "n_comments": 1,
+          "total_likes": 0,
+          "first_comment": "15/10/2026",
+          "top_categories": [
+            {
+              "label": "Responsabilização",
+              "count": 1
+            }
+          ],
+          "municipal_evidence": "descricao",
+          "formato": "short"
+        },
+        {
+          "video_id": "sicfS7WfTZc",
+          "n_comments": 1,
+          "total_likes": 0,
+          "first_comment": "14/10/2026",
+          "top_categories": [
+            {
+              "label": "Solidariedade",
+              "count": 1
+            }
+          ],
+          "municipal_evidence": "descricao",
+          "formato": "longo"
+        },
+        {
+          "video_id": "uVF-su8gvT4",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": [],
+          "municipal_evidence": "descricao",
+          "formato": "longo"
+        }
+      ],
+      "all_samples": {
+        "solidariedade_oracao_luto": [
+          {
+            "text": "Vorcaro é o novo financista como Jeffrey Epstein, teria bancado \"encontro\" de R$ 10 mil para Nunes Marques. E como sócio oculto de rede de prostituição que recrutava refugiadas Russa e Ucraniana também conhecida como creche de prostituição. A Band tem que fazer o mesmo que fez com o outro Juiz que tentou pegar a força uma mulher. O Ex. Juiz Marco Buzzi.",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "Deus é renegado pelo mundo, o enganador, o Judas e a falsa besta estão neste mundo e querem roubar o lugar de Deus, e todos eles estão na cidade de Sorocaba, Deus precisa só de uma coisa, mas todos eles estão impedindo, mas ninguém vai acreditar nisso",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-10-15",
+            "video_id": "JB6avj2ia5M"
+          },
+          {
+            "text": "Pelo menos tem agua pra beber deus sabe o que faz já que o Tarcisio.....",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-10-14",
+            "video_id": "E3-SPgp0UGU"
+          },
+          {
+            "text": "meu Deus sera que ele não percebeu que era ia essa voz está em todos os comerciais ( homens) 😂",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "É triste mas ela fez uma escolha ruim pagou caro com a vida 😢",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "Que bom que o Criador promete acabar com a doença, dor , tristeza e morte. Apoc 21:4. Pra TODOS!!! Como se beneficiar dessas bençãos? Jworg responde..",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "Meu senhor me desculpe mais Schuller é um ótimo profissional",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "Por DEUS qui esse povo não morreram afogados .",
+            "likes": 0,
+            "score": 0.995,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "Misericórdia. Como o sr. acreditou nisso gente?????? Que loucura! A voz da IA é inconfundível!!!!",
+            "likes": 4,
+            "score": 0.995,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "tristeza",
+            "likes": 1,
+            "score": 0.994,
+            "date": "2026-10-14",
+            "video_id": "FzagdmaLM3k"
+          },
+          {
+            "text": "Cenas tristes",
+            "likes": 3,
+            "score": 0.994,
+            "date": "2026-10-15",
+            "video_id": "NWXVTpY82nA"
+          },
+          {
+            "text": "Esse desgoverno., misericórdia.",
+            "likes": 0,
+            "score": 0.994,
+            "date": "2026-10-15",
+            "video_id": "E3-SPgp0UGU"
+          },
+          {
+            "text": "@usuario isso mesmo. Eu estava na cidade nesse dia. Manchetes de carros revirados pela força das águas. Muitos que estavam no centro da cidade desistiram de voltar pra casa e dormiram num hotel.",
+            "likes": 1,
+            "score": 0.989,
+            "date": "2026-10-15",
+            "video_id": "E3-SPgp0UGU"
+          },
+          {
+            "text": "MATEUS,ELE MATA MESMO ,NÉ.",
+            "likes": 0,
+            "score": 0.989,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "Obrigado T 🎉❤",
+            "likes": 2,
+            "score": 0.982,
+            "date": "2026-10-14",
+            "video_id": "Y2RbH9dNwU8"
+          },
+          {
+            "text": "Confia 😅😢😢",
+            "likes": 2,
+            "score": 0.981,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "Basta o Nunes trocar o asfalto de algumas ruas que ele ganha voto! Meu Deus como pode ser tão bem avaliado!? É um prefeito terrível!! Nem pra síndico de prédio leva meu voto!!!",
+            "likes": 1,
+            "score": 0.981,
+            "date": "2026-10-15",
+            "video_id": "Y2RbH9dNwU8"
+          },
+          {
+            "text": "Entra gestão, sai gestão e ninguém resolve isso. Fica pior. Meus sentimentos à família da pessoa que faleceu. Misericórdia.",
+            "likes": 0,
+            "score": 0.978,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "Tá gostoso demais, mas achei pouco e quero mais... Meu coração ❤ pulsa de alegria e muita felicidade Façam o T e o N paulistada ❤😊😊😊👉",
+            "likes": 1,
+            "score": 0.976,
+            "date": "2026-10-15",
+            "video_id": "JB6avj2ia5M"
+          },
+          {
+            "text": "😂😂😂😂😂",
+            "likes": 0,
+            "score": 0.974,
+            "date": "2026-10-14",
+            "video_id": "Y2RbH9dNwU8"
+          }
+        ],
+        "ajuda_resgate_doacoes": [
+          {
+            "text": "Ele rapaz merece um emprego de bombeiro salva vida",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "Faz o T para privatizar mais So faltou o Cury com os drones salva vidas",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-10-14",
+            "video_id": "JB6avj2ia5M"
+          },
+          {
+            "text": "O Nunes, Tarcisio e Flávio vão ai salvar vcs, confia.",
+            "likes": 0,
+            "score": 0.995,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "Há servidores públicos, evangélicos, políticos e ímpios, ladrões em ANGRA dos REIS.RJ.,INFORMA ISSO AS POLICIAIS FEDERAIS EVANGÉLICAS AMERICANAS E BRASILEIRAS. ELAS SABERÃO COMO AJUDAR. ELSON WALERIANO AND JULITA VIEIRA WALERIANO FROM ANGRA DOS REIS.RJ.BRAZIL.",
+            "likes": 0,
+            "score": 0.991,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "E quem irá ressarcir os proprietários de todos esses carros perdidos, hein?",
+            "likes": 0,
+            "score": 0.987,
+            "date": "2026-10-15",
+            "video_id": "E3-SPgp0UGU"
+          },
+          {
+            "text": "sempre chovia forte. o dobro do triplo só quando eu chega de passeio das ruas pra casa . sempre segurava a chuva com ajuda de Deus pra que só cai se se eu chegasse em casa sem me molhar 🤣🤣🤣🤣",
+            "likes": 0,
+            "score": 0.987,
+            "date": "2026-10-14",
+            "video_id": "Y2RbH9dNwU8"
+          },
+          {
+            "text": "Vota no Tarcísio e no Flávio Bolsonaro que tudo se resolve para vocês do sul afinal Bolsonaro cortou o imposto do jet ski 👌🏻 Nem a natureza nem o céu suporta tanta HIPOCRISIA de vocês do sul !! Tudo que n presta vocês apoia e defende e quem ajuda vocês são a favor de vocês do pobre do trabalhador vocês são contra. Antes eu tinha pena mas agora eu não tenha pena alguma mais de vocês !!!!",
+            "likes": 6,
+            "score": 0.984,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "Por que a CET não interditou conforme o protocolo? Em 1990 e 1996 aconteceu a mesma coisa no mesmo lugar. Mas em 1999 foi uma tragédia histórica. O desastre de 1º de março de 1999: No final da década, ocorreu um dos episódios mais caóticos visualmente. Uma tempestade despejou volumes históricos de chuva (com a saturação do Rio Tamanduateí e bueiros entupidos), fazendo o túnel encher em menos de ci",
+            "likes": 8,
+            "score": 0.967,
+            "date": "2026-10-14",
+            "video_id": "E3-SPgp0UGU"
+          },
+          {
+            "text": "Deve estar perto do seu Jet ski",
+            "likes": 0,
+            "score": 0.944,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "Toda Solidariedade pra quem não votou no miliciano, mas pra quem votou… FAZ o T",
+            "likes": 0,
+            "score": 0.94,
+            "date": "2026-10-15",
+            "video_id": "Y2RbH9dNwU8"
+          },
+          {
+            "text": "Solidariedade pra quem não votou no miliciano, mas pra quem votou… FAZ O T",
+            "likes": 0,
+            "score": 0.932,
+            "date": "2026-10-15",
+            "video_id": "E3-SPgp0UGU"
+          },
+          {
+            "text": "Solidariedade pra quem não votou no miliciano, mas pra quem votou… FAZ O T",
+            "likes": 0,
+            "score": 0.932,
+            "date": "2026-10-15",
+            "video_id": "E3-SPgp0UGU"
+          },
+          {
+            "text": "Se você votou no Tarcísio, coloque o seu boné do MAGA, faz o T e nao reclama🤡",
+            "likes": 0,
+            "score": 0.922,
+            "date": "2026-10-15",
+            "video_id": "E3-SPgp0UGU"
+          },
+          {
+            "text": "Gente essa moça Ana Clara Soares ficou 6 anos com um cara desse violento, que já tinha sido preso, inúmeras passagens na polícia... parece que ela tbém não tinha juízo pra estar com um cara assim que já tinha até matado um homem. Pais e mães, ensinem suas filhas a não terem dedo podre, só escolher vagabundo maloqueiro ou plaboyzinhos viciados sem futuro.",
+            "likes": 1,
+            "score": 0.918,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "Defesa civil envio os 2 alertas atrasado",
+            "likes": 3,
+            "score": 0.855,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "Esse Alcolumbre não vale o que come. Colocou a votação hoje para ferrar o Flávio.",
+            "likes": 4,
+            "score": 0.762,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "Chamem o Tarcísio e o Nunes.....Eles vão resolver....",
+            "likes": 7,
+            "score": 0.76,
+            "date": "2026-10-14",
+            "video_id": "Y2RbH9dNwU8"
+          },
+          {
+            "text": "Seguradora vai ter prejuízo",
+            "likes": 1,
+            "score": 0.689,
+            "date": "2026-10-14",
+            "video_id": "E3-SPgp0UGU"
+          },
+          {
+            "text": "Eu não iria no debate da Band fala com o cara que tramitou para prender meu Pai.",
+            "likes": 5,
+            "score": 0.67,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "O Flávio, Tarcisio, Nunes e bilionários da faria Lima almoçaram do bom e melhor nos melhores restaurantes em SP. Eles vão aparecer rebocar, mandar suporte para estes paulistas que votaram neles.",
+            "likes": 1,
+            "score": 0.639,
+            "date": "2026-10-14",
+            "video_id": "JB6avj2ia5M"
+          }
+        ],
+        "responsabilizacao_governanca": [
+          {
+            "text": "Pior do que está, não fica! O brasileiro já está pagando a conta, com tantos impostos para bancar os gastos do atual governo, marcado por escândalos e corrupção, além das viagens luxuosas do presidente e da Janja. A cada momento, surge um imposto diferente, e quem sofre é a população! O governo Lula vem batendo recordes de arrecadação, ( governo que mais arrecadou e mais gastou), mas os gastos con",
+            "likes": 3,
+            "score": 1.0,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "Pior do que está, não fica! O brasileiro já está pagando a conta, com tantos impostos para bancar os gastos do atual governo, marcado por escândalos e corrupção, além das viagens luxuosas do presidente e da Janja. A cada momento, surge um imposto diferente, e quem sofre é a população! O governo Lula vem batendo recordes de arrecadação, mas os gastos continuam elevados. Em 2025, a arrecadação feder",
+            "likes": 2,
+            "score": 1.0,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "LULA. ARRUMOU ALAGANDO ASVRUAS PRA CULPAR. PL. TARCISIO 😅 PT jOGA SUJA SENPRECISA MATAR VIDAS",
+            "likes": 0,
+            "score": 0.999,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "OLHA. O. MOURÃO. TRAIRÃO. ....QUE. UM. VOCÊ. QUE. TRAIU. ..O. PR😮OPRIO. PARCEIRO. ..DO. GOVERNO ...O. QUE. UM. COVARDE. DESTE ..TEM VOZ. ...V@G@BUNDO .....",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "ENQUANTO ISSO LUCAS PAVANATO, TARCÍSIO E O PREFEITO DA CIDADE FAZENDO DANCINHA E PIADINHA PRA POSTAR NO INSTAGRAM!!!!!!!!!!!!!!!!!!",
+            "likes": 3,
+            "score": 0.998,
+            "date": "2026-10-15",
+            "video_id": "E3-SPgp0UGU"
+          },
+          {
+            "text": "Há servidores públicos, evangélicos, políticos e ímpios, ladrões em ANGRA dos REIS.RJ.,INFORMA ISSO AS POLICIAIS FEDERAIS EVANGÉLICAS AMERICANAS E BRASILEIRAS. ELAS SABERÃO COMO AJUDAR. ELSON WALERIANO AND JULITA VIEIRA WALERIANO FROM ANGRA DOS REIS.RJ.BRAZIL.",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "minha mãe disse que a culpa foi do ruivo erig 🤣🤣🤣🤣",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-10-14",
+            "video_id": "Y2RbH9dNwU8"
+          },
+          {
+            "text": "É isso ai mano.😅 A culpa foi O TAL RITUAL A SATANÁS ESSA SEMAMNA",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "SP NAO TEM GOVERNADOR E NEM PREFEITO??????????????????",
+            "likes": 3,
+            "score": 0.998,
+            "date": "2026-10-15",
+            "video_id": "E3-SPgp0UGU"
+          },
+          {
+            "text": "Parabéns a cet e prefeitura li xo sob cordenação do barba incompetente e parceiro do desgovernador milicia. SP aproveitando suas escolhas com sucesso.",
+            "likes": 2,
+            "score": 0.997,
+            "date": "2026-10-14",
+            "video_id": "E3-SPgp0UGU"
+          },
+          {
+            "text": "1977, 1985, 1992, 2004 (a pior, Anhangabaú ficou 2 dias cheio de água e matou 2 pessoas), 2013, 2021... Vários anos acontecendo desastres nos mesmos locais. Culpa do crescimento desordenado, falta de planejamento...",
+            "likes": 12,
+            "score": 0.997,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "Culpa do prefeito",
+            "likes": 5,
+            "score": 0.997,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "A culpa e do Bolsonaro...😂😂😂 Cadê as picanhas???",
+            "likes": 1,
+            "score": 0.997,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "Prefeitura fez uma reforma muito boa mesmo, obrigada por nada",
+            "likes": 3,
+            "score": 0.997,
+            "date": "2026-10-15",
+            "video_id": "NWXVTpY82nA"
+          },
+          {
+            "text": "O filho do Bossonario, tem que falar que o pais dele conseguiu fazer a reforma da previdência da CLT S dos peões e não aumentou o salário dos clts , e os outros três poderes inclusive da justiça , política e não fez essa tal reforma isso que ele tem que falar e o Lula lembrar isso no debate já que o povo esqueceu e os mais novos nem sabem disso ❤😂🎉",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "Não se trata de político e sim da natureza, mas se for tratar de política quem limita a alturas dos prédios de São Paulo que são culpados disso, pois a maioria das pessoas pobres tem que morar nessas areas de riscos",
+            "likes": 2,
+            "score": 0.997,
+            "date": "2026-10-15",
+            "video_id": "FzagdmaLM3k"
+          },
+          {
+            "text": "Isso realmente é uma vergonha 😮",
+            "likes": 5,
+            "score": 0.997,
+            "date": "2026-10-14",
+            "video_id": "E3-SPgp0UGU"
+          },
+          {
+            "text": "Calma pessoal. O importante é aue vocês votaram em quem o \"mito\" mandou. Isso aí não foi nada. É coisa do LULA, do Petê! 🤪",
+            "likes": 9,
+            "score": 0.997,
+            "date": "2026-10-15",
+            "video_id": "NWXVTpY82nA"
+          },
+          {
+            "text": "Quem é mesmo o ladrão do INSS e Banco Master a imprensa calou. Cadê os ladrões dos velhinhos. O dinheiro já tem dono Eduardo Bolsonaro e Tramp.",
+            "likes": 1,
+            "score": 0.997,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "O Ladrão de velhinhos, continua roubando os velhinhos e agora aumentando para mais 5 anos como o seu pai fez de 60 anos para 65 anos. O Ladrão quê que você vá para 70 anos ou mais. Cadê a Band o ladrão quem virar presidente. A brand só os jogos de azar.",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          }
+        ],
+        "infraestrutura_ocupacao_risco": [
+          {
+            "text": "De love casa do Richarlyson Flavio Barbosa",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "@usuario isso mesmo. Eu estava na cidade nesse dia. Manchetes de carros revirados pela força das águas. Muitos que estavam no centro da cidade desistiram de voltar pra casa e dormiram num hotel.",
+            "likes": 1,
+            "score": 0.997,
+            "date": "2026-10-15",
+            "video_id": "E3-SPgp0UGU"
+          },
+          {
+            "text": "O problema é a falta de educação do povo em geral que joga , descarta lixos nas ruas. Sempre vejo lixos..latas vazias de refrigerantes sendo jogados pelas janelas de automóveis ou de ônibus. Desde criança todos fomos educados..educamos nossos filhos..e os netos tb.são",
+            "likes": 1,
+            "score": 0.997,
+            "date": "2026-10-14",
+            "video_id": "Y2RbH9dNwU8"
+          },
+          {
+            "text": "Isso não é só em São Paulo Paraná santa Catarina rio Grande do Sul. Isso é em todo o planeta terra O primeiro mundo foi destruido pela água",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-10-15",
+            "video_id": "E3-SPgp0UGU"
+          },
+          {
+            "text": "@usuario kk se fosse no Sul já era um Rio kkkkkkkkkkkkkkkkkkkkkkkkkk",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-10-14",
+            "video_id": "Y2RbH9dNwU8"
+          },
+          {
+            "text": "Nem tem como comparar essa tempestade com aquela desgraceira das enchentes do Rio Grande do Sul 😁",
+            "likes": 2,
+            "score": 0.996,
+            "date": "2026-10-14",
+            "video_id": "Y2RbH9dNwU8"
+          },
+          {
+            "text": "Vendam a cidade para as construtoras Maravilha",
+            "likes": 2,
+            "score": 0.996,
+            "date": "2026-10-14",
+            "video_id": "E3-SPgp0UGU"
+          },
+          {
+            "text": "@usuario foi na Beira Rio, não é uma rua.",
+            "likes": 0,
+            "score": 0.995,
+            "date": "2026-10-15",
+            "video_id": "FzagdmaLM3k"
+          },
+          {
+            "text": "isso deve ser os esgotos entopidos",
+            "likes": 0,
+            "score": 0.995,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "QUE SACO!!!...A BAND N SE CANSA DE SE GABAR DO SEU DEBATE E TODA VEZ VEM A VELHA RESTROPCTIVA, OPINIOES FAVORAVEIS DE COMPRADOS, JORNALISTA DA CASA...UMA VANCLORIZACAO CHATA E CONSTANTE COMO FOSSE A MELHOR COISA DO MUNDO...TODO ISSO VEM A BAIXO SE OS CANDIDATOS RESOLVEREM N PARTICIPAR AI A BAND QUEBRA A CARA E VEM FALAR EM \"NOME\" \"ELEITOR\" PRA ATACAR OS FALTANTES. SE O TARIFLAVIO FOR HOMEM DE IR A",
+            "likes": 7,
+            "score": 0.994,
+            "date": "2026-10-14",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "Esse povo é doido?!?!!! Tarcísio construiu isso?! Há quantos anos essa região tem o mesmo problema?! Esse senhor idoso, dizer que circula pela região há 30 anos e nunca viu isso?! De que planeta ele veio?!?!!!...",
+            "likes": 0,
+            "score": 0.989,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "Esses alagamentos que acontece em áreas urbana nas capitais dos estados e regiões metropolitanas é devido a falta de saneamento básico, em muitas cidades do nosso país não tem sistema de tratamento de esgoto. Por causa disso todo ano quando chove acontece esses alagamentos e quem mais sofre com isso é população dessas regiões do país.",
+            "likes": 3,
+            "score": 0.988,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "sempre chovia forte. o dobro do triplo só quando eu chega de passeio das ruas pra casa . sempre segurava a chuva com ajuda de Deus pra que só cai se se eu chegasse em casa sem me molhar 🤣🤣🤣🤣",
+            "likes": 0,
+            "score": 0.988,
+            "date": "2026-10-14",
+            "video_id": "Y2RbH9dNwU8"
+          },
+          {
+            "text": "Ah, é verdade, Tarcísio e Flávio construiram essa obra porca, que dá problema desde o final da década de 70, né? Agora, estão dando ordens para a chuva!!!... kkk",
+            "likes": 0,
+            "score": 0.988,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "Nós evangélicos não precisamos da tua autorização seu Lula,para está na casa de Deus,nada nos impede,nem mesmo o trabalho, nós temos escolhas.",
+            "likes": 1,
+            "score": 0.986,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "Por que a CET não interditou conforme o protocolo? Em 1990 e 1996 aconteceu a mesma coisa no mesmo lugar. Mas em 1999 foi uma tragédia histórica. O desastre de 1º de março de 1999: No final da década, ocorreu um dos episódios mais caóticos visualmente. Uma tempestade despejou volumes históricos de chuva (com a saturação do Rio Tamanduateí e bueiros entupidos), fazendo o túnel encher em menos de ci",
+            "likes": 8,
+            "score": 0.983,
+            "date": "2026-10-14",
+            "video_id": "E3-SPgp0UGU"
+          },
+          {
+            "text": "O prefeito Ricardo Nunes não tem tempo pra cuidar disso, ele tá ocupado fazendo campanha pro Flávio Vorcaro. Faz o F.",
+            "likes": 0,
+            "score": 0.982,
+            "date": "2026-10-15",
+            "video_id": "Y2RbH9dNwU8"
+          },
+          {
+            "text": "Dele não pois ele não é prefeito e nem governador de SP, mas do Tarcísio é. Ele cortou custos de drenagem pra cidade de SP, ele é o maior responsavel por esse desastre, um criminoso.",
+            "likes": 4,
+            "score": 0.975,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "Se vc tem filho em escola pública, lembra quem quis destruir as universidades,quem quis destruir o sistema de vacinação do país,quem não se importou com quase um milhão de mortos,pois não era coveiro,quem incentivou o desmatamento na Amazônia,arcando com cortes de verbas internacionais,quem acabou com minha casa minha vida ,pra quem faz metáfora do programa então continua com a direita,e vc pagand",
+            "likes": 5,
+            "score": 0.972,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "@usuario de drenagem. De onde tirou isso? Manutenção é da prefeitura e não do estado",
+            "likes": 2,
+            "score": 0.971,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          }
+        ],
+        "clima_chuva_meio_ambiente": [
+          {
+            "text": "Uma lepeaspirose , é um perigoso o centro de SP cheio de ratos 🐀 nos prédios abandonados na parte de baixo dos jds da se inclusive no jardins na estação da praça da SE eu já vi com meus próprio olhos aí tinha um murinho longo onde as pessoas sentavam faziam hora depois nesse marinho longo dentro da praça da Se , na estação bem antes da catraca muitas plantas os ratos 🐀 ficavam passeando escondido ",
+            "likes": 0,
+            "score": 0.999,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "Não existe nada pior do que a PMSP. Quanto mais dinheiro arranca do bolso dos contribuintes, menos realiza, mais exibe sua absoluta incompetência. É uma lástima. O alagamento no Anhangabaú fica exatamente embaixo da antiga praça arborizada, que foi transformada no vergonhoso estacionamento gigante, que não serve para nenhuma finalidade pública. A área foi apropriada, modificada, ambiental e urbani",
+            "likes": 1,
+            "score": 0.998,
+            "date": "2026-10-14",
+            "video_id": "E3-SPgp0UGU"
+          },
+          {
+            "text": "Sim, falta de planejamento urbano, sem dúvida. Mas os anos que você mesmo citou não refutam a mudança climática. Pelo contrário. O problema não é saber se São Paulo sempre teve enchentes, mas se eventos extremos estão se tornando mais frequentes e intensos. E os dados mostram que estão. Mudança climática não criou as enchentes de São Paulo; está agravando um problema que décadas de urbanização des",
+            "likes": 2,
+            "score": 0.997,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "Que fiquem ligados com os seguros de veículos, incluir perdas por enchentes.caso ccntrario e perda parcial ou total do automóvel .",
+            "likes": 1,
+            "score": 0.997,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "Que tragédia",
+            "likes": 2,
+            "score": 0.997,
+            "date": "2026-10-15",
+            "video_id": "NWXVTpY82nA"
+          },
+          {
+            "text": "Kkkk em todos os países há enchentes quando há fortes chuvas, nenhuma cidade resolveu esse problema até hoje.",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-10-15",
+            "video_id": "Y2RbH9dNwU8"
+          },
+          {
+            "text": "Tragédia de Freitas + Nunes bananinha = Desastre",
+            "likes": 2,
+            "score": 0.996,
+            "date": "2026-10-15",
+            "video_id": "NWXVTpY82nA"
+          },
+          {
+            "text": "O cágado aproveitando a chuva foi ótimo...",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-10-15",
+            "video_id": "E3-SPgp0UGU"
+          },
+          {
+            "text": "É.... a chuva... A chuva que arrecada imposto e investe em infraestrutura urbana...",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "Por que a CET não interditou conforme o protocolo? Em 1990 e 1996 aconteceu a mesma coisa no mesmo lugar. Mas em 1999 foi uma tragédia histórica. O desastre de 1º de março de 1999: No final da década, ocorreu um dos episódios mais caóticos visualmente. Uma tempestade despejou volumes históricos de chuva (com a saturação do Rio Tamanduateí e bueiros entupidos), fazendo o túnel encher em menos de ci",
+            "likes": 8,
+            "score": 0.996,
+            "date": "2026-10-14",
+            "video_id": "E3-SPgp0UGU"
+          },
+          {
+            "text": "Imagina só, quando chegar as chuvas do verão ?",
+            "likes": 5,
+            "score": 0.996,
+            "date": "2026-10-14",
+            "video_id": "E3-SPgp0UGU"
+          },
+          {
+            "text": "Isso que é zona norte categoria de engenharia dez adequada a natureza cobra ...",
+            "likes": 3,
+            "score": 0.996,
+            "date": "2026-10-14",
+            "video_id": "E3-SPgp0UGU"
+          },
+          {
+            "text": "A natureza retomando o que é dela. Saiam dessas cidades!! A tendência é piorar.",
+            "likes": 6,
+            "score": 0.996,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "Teve em 96 ou 97 tb não lembro exatamente Meu pai tinha um comércio aí na prestes maia e eu lembro que o túnel tava alagado tbm",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "Esse povo é doente mesmo, sempre teve enchente em sp..kkkk desde a dcada de 80, uma veia dessa não lembrar disso, é fingir muita demencia...kkk",
+            "likes": 0,
+            "score": 0.995,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "O governo só coloca uma plaquinha, área de alagamento, se afogue aí, tô nem aí",
+            "likes": 13,
+            "score": 0.995,
+            "date": "2026-10-14",
+            "video_id": "E3-SPgp0UGU"
+          },
+          {
+            "text": "Chuva de verão veio adiantado e de surpresa ninguém esperava nunca aconteceu isso mas Nunes e Tarcísio já estão resolvendo Isso",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-10-15",
+            "video_id": "Y2RbH9dNwU8"
+          },
+          {
+            "text": "Quem mira nesta selva de pedra que não tem mais para onde crescer. O que esperar que a natureza seja generosa chover pouquinho só para agradar as pessoas que destroem tudo. Nao tem onde escoar tanta água 😢",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-10-15",
+            "video_id": "E3-SPgp0UGU"
+          },
+          {
+            "text": "Até o metrô de NY alaga, já aconteceu outras vezes, ocorre devido aos rios canalizados no subsolo.",
+            "likes": 0,
+            "score": 0.995,
+            "date": "2026-10-15",
+            "video_id": "E3-SPgp0UGU"
+          },
+          {
+            "text": "Oa 70% de macacos que votaram nele vão atribuir isso tudo a chuva...por isso eu fico e feliz quando isso acontece!",
+            "likes": 0,
+            "score": 0.995,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          }
+        ],
+        "experiencia_pessoal_local": [
+          {
+            "text": "ANDRESSA, DIRETORA DA BAND SÓ NAO DEIXA ESSE FERNANDO SCHULLER, PARTICIPAR, SE NAO NOIS AQUI EM SERGIPE NAO VAMOS ASSISTIR A BAND. Ô MITRE !?",
+            "likes": 1,
+            "score": 0.998,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "Se vc tem filho em escola pública, lembra quem quis destruir as universidades,quem quis destruir o sistema de vacinação do país,quem não se importou com quase um milhão de mortos,pois não era coveiro,quem incentivou o desmatamento na Amazônia,arcando com cortes de verbas internacionais,quem acabou com minha casa minha vida ,pra quem faz metáfora do programa então continua com a direita,e vc pagand",
+            "likes": 5,
+            "score": 0.998,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "É pouco . Olha a MARRETADA do tarcisio aí GENTEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE ..A não é o governo . O tarcisio e o nunes , os 2 é uma pessoa só . Ou coisa BOA . O trem pra São Miguel , caindo os pedaços . O metrô um lixão . Fiquei horrorizada.. O Parque dão Pedro , misericórdia. E pôr aí vai . . . O mercadão , Brás . A Sé só por DEUS . Secaram as fontes .",
+            "likes": 1,
+            "score": 0.998,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "Graças a Deus hoje fiquei em HOME OFFICE",
+            "likes": 1,
+            "score": 0.997,
+            "date": "2026-10-14",
+            "video_id": "Y2RbH9dNwU8"
+          },
+          {
+            "text": "O GOVERNANTES DE SP É UMA NEGAÇÃO NA GESTÃO DO ESTADO ... É igual aqui no Paraná em outro estados do Sul como SC e RS , não vejo solução definitiva somente sabem pedir votos em época de eleição ambos são todos da DIREITA !",
+            "likes": 9,
+            "score": 0.995,
+            "date": "2026-10-14",
+            "video_id": "Y2RbH9dNwU8"
+          },
+          {
+            "text": "Gente... isso aconteceu uns 20 anos atrás. Chove forte na Paulista e 13 de Maio e no Anhangabaú nem tanto. Então a água desce de todas as ruas e vai se juntando na 9 de julho e vem como um Tsunami, uma verdadeira onda que enche o tunel quase que imediatamente. Sem novidades aqui. Acontece a cada par de décadas.",
+            "likes": 7,
+            "score": 0.994,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "Enquanto isso o Flávio Bolsonaro aqui no RGS fazendo média para ganhar vótos com o governador fazendo mil e umas promessas para se prevenir das enchentes! Chama o Flávio Bolsonaro ! Agora.",
+            "likes": 3,
+            "score": 0.992,
+            "date": "2026-10-15",
+            "video_id": "NWXVTpY82nA"
+          }
+        ],
+        "alerta_prevencao_cobranca": [
+          {
+            "text": "ALGUÉM. . AVISA. FLÁVIO BOLSONARO ....SR. PREPARA. PARA. O. DEBATE .....PORQUE. ...LULA. APARECERÁ. VOM. PROVAS. FALSA. COMTRA. ELE .... PORQUÊ. EU. FALO. PROVAS. FALSA. ... NÃO. ESQUECE. QUE. ELE. TEM. TODO. JUDICIÁRIO. DO. SEU. LADO .....DEBATE. DESIGUAL. .....",
+            "likes": 0,
+            "score": 0.999,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "Defesa civil envio os 2 alertas atrasado",
+            "likes": 3,
+            "score": 0.999,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "Como o meu prefeito deixa isso acontecer? Diversos alertas emitidos há meses sobre as questões climáticas, NADA FOI FEITO. Repito, alertas feitos há meses.",
+            "likes": 2,
+            "score": 0.998,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "Por que a CET não interditou conforme o protocolo? Em 1990 e 1996 aconteceu a mesma coisa no mesmo lugar. Mas em 1999 foi uma tragédia histórica. O desastre de 1º de março de 1999: No final da década, ocorreu um dos episódios mais caóticos visualmente. Uma tempestade despejou volumes históricos de chuva (com a saturação do Rio Tamanduateí e bueiros entupidos), fazendo o túnel encher em menos de ci",
+            "likes": 8,
+            "score": 0.998,
+            "date": "2026-10-14",
+            "video_id": "E3-SPgp0UGU"
+          },
+          {
+            "text": "Não se trata de político e sim da natureza, mas se for tratar de política quem limita a alturas dos prédios de São Paulo que são culpados disso, pois a maioria das pessoas pobres tem que morar nessas areas de riscos",
+            "likes": 2,
+            "score": 0.997,
+            "date": "2026-10-15",
+            "video_id": "FzagdmaLM3k"
+          },
+          {
+            "text": "Enquanto isso o Flávio Bolsonaro aqui no RGS fazendo média para ganhar vótos com o governador fazendo mil e umas promessas para se prevenir das enchentes! Chama o Flávio Bolsonaro ! Agora.",
+            "likes": 3,
+            "score": 0.997,
+            "date": "2026-10-15",
+            "video_id": "NWXVTpY82nA"
+          },
+          {
+            "text": "QUE SACO!!!...A BAND N SE CANSA DE SE GABAR DO SEU DEBATE E TODA VEZ VEM A VELHA RESTROPCTIVA, OPINIOES FAVORAVEIS DE COMPRADOS, JORNALISTA DA CASA...UMA VANCLORIZACAO CHATA E CONSTANTE COMO FOSSE A MELHOR COISA DO MUNDO...TODO ISSO VEM A BAIXO SE OS CANDIDATOS RESOLVEREM N PARTICIPAR AI A BAND QUEBRA A CARA E VEM FALAR EM \"NOME\" \"ELEITOR\" PRA ATACAR OS FALTANTES. SE O TARIFLAVIO FOR HOMEM DE IR A",
+            "likes": 7,
+            "score": 0.527,
+            "date": "2026-10-14",
+            "video_id": "bjHVXTCYbZQ"
+          }
+        ],
+        "critica_midia_informacao": [
+          {
+            "text": "QUE SACO!!!...A BAND N SE CANSA DE SE GABAR DO SEU DEBATE E TODA VEZ VEM A VELHA RESTROPCTIVA, OPINIOES FAVORAVEIS DE COMPRADOS, JORNALISTA DA CASA...UMA VANCLORIZACAO CHATA E CONSTANTE COMO FOSSE A MELHOR COISA DO MUNDO...TODO ISSO VEM A BAIXO SE OS CANDIDATOS RESOLVEREM N PARTICIPAR AI A BAND QUEBRA A CARA E VEM FALAR EM \"NOME\" \"ELEITOR\" PRA ATACAR OS FALTANTES. SE O TARIFLAVIO FOR HOMEM DE IR A",
+            "likes": 7,
+            "score": 0.999,
+            "date": "2026-10-14",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "Olá! Não acredito que até hoje ainda não deram um jeito neste túnel do centro da cidade, que aliás antigamente era chamado de \"o buraco do Ademar\"...rsrsrs...por que na verdade ninguém a época entedeu o por que daquele \"túnel\" que só dava problema nas chuvas...é rir prá não chorar, tenho quase 70, estou longe da minha querida Sampa, onde nasci, cresci e onde fazia ballet na Escola Municipal de Bai",
+            "likes": 0,
+            "score": 0.999,
+            "date": "2026-10-15",
+            "video_id": "E3-SPgp0UGU"
+          },
+          {
+            "text": "Ah, é verdade, Tarcísio construiu essa obra porca, que dá problema desde o final da década de 70, né? E fez chover tbm... 😏",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "Ah, é verdade, Tarcísio construiu essa obra porca, que dá problema desde o final da década de 70, né? Ele até faz chover!!! kkk",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "POQ VOCÊS DA MÍDIA NÃO MOSTRARM O VANDALISMO NA AV PAULISTA?????????",
+            "likes": 1,
+            "score": 0.998,
+            "date": "2026-10-14",
+            "video_id": "FzagdmaLM3k"
+          },
+          {
+            "text": "Lívia Nepomuceno é excelente falando do futebol no jornal da Band.",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "Tarcísioooo! Nunees! VÃO continuar a negar o aquecimento global? Não tomarão as medidas para evitar o caos?",
+            "likes": 4,
+            "score": 0.996,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "Ah, é verdade, Tarcísio e Flávio construiram essa obra porca, que dá problema desde o final da década de 70, né? Agora, estão dando ordens para a chuva!!!... kkk",
+            "likes": 0,
+            "score": 0.995,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "VERDADE, NA GESTAO PETISTA NAO TEVE NENHUMA ENCHENTE kkkkkkkkkkkkkk esses analfabetos politicos sao MUITO ENGRACADOS que mundo vcs vivem ? serio, VCS BOSTEJAM DEMAIS KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK",
+            "likes": 0,
+            "score": 0.995,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "Fala mal do prefeito a mídia não fala nada se fosse prefeito do PT a mídia ficava toda hora falando que vergonha Ricardo nunes",
+            "likes": 3,
+            "score": 0.993,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "Debate na Band é excelente em qualidade",
+            "likes": 8,
+            "score": 0.993,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "Gente... isso aconteceu uns 20 anos atrás. Chove forte na Paulista e 13 de Maio e no Anhangabaú nem tanto. Então a água desce de todas as ruas e vai se juntando na 9 de julho e vem como um Tsunami, uma verdadeira onda que enche o tunel quase que imediatamente. Sem novidades aqui. Acontece a cada par de décadas.",
+            "likes": 7,
+            "score": 0.992,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "São Paulo e Nunes são excelentes gestores! Foram reeleitos e o povo aprova a gestão. Esses vídeos são fake news e a chuva com certeza é obra do PT.",
+            "likes": 14,
+            "score": 0.983,
+            "date": "2026-10-14",
+            "video_id": "E3-SPgp0UGU"
+          },
+          {
+            "text": "É disso que o povo gosta. Afinal, reelegeram Nunes e mentiroso do Tarcisio. Amanhã tem mais. \"a semeadura é livre, mas a colheita é obrigatória\"",
+            "likes": 22,
+            "score": 0.981,
+            "date": "2026-10-15",
+            "video_id": "NWXVTpY82nA"
+          },
+          {
+            "text": "GLOBO: Flávio Bolsonaro era 'usuário master' de conta de offshore sócia do jato usado por Vorcaro. Se o Brasil fosse um país sério, Flávio Bolsonaro era para tá na cadeia e não candidato a presidente.",
+            "likes": 1,
+            "score": 0.971,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "Eu não iria no debate da Band fala com o cara que tramitou para prender meu Pai.",
+            "likes": 5,
+            "score": 0.969,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "@usuario",
+            "likes": 0,
+            "score": 0.948,
+            "date": "2026-10-15",
+            "video_id": "FzagdmaLM3k"
+          },
+          {
+            "text": "Acontece mesmo",
+            "likes": 0,
+            "score": 0.9,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "Seu Mourão trabalha em que escala mesmo? Ah sim melhor nem comentar né.",
+            "likes": 0,
+            "score": 0.835,
+            "date": "2026-10-15",
+            "video_id": "bjHVXTCYbZQ"
+          },
+          {
+            "text": "@usuario sei 😂😂😂",
+            "likes": 0,
+            "score": 0.789,
+            "date": "2026-10-15",
+            "video_id": "FzagdmaLM3k"
+          }
+        ]
+      },
+      "academic_studies": [],
+      "observation_status": "extended",
+      "priority_tier": "moderado",
+      "flag": "prioritario",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-10-14T17:08:36Z"
+        },
+        {
+          "flag": "acompanhamento",
+          "at": "2026-10-14T21:10:46Z",
+          "criterio": "municipal_v0.3.2"
+        },
+        {
+          "flag": "prioritario",
+          "at": "2026-10-15T10:39:40Z",
+          "criterio": "municipal_v0.3.2"
+        }
+      ],
+      "n_comments_valid": 256,
+      "videos_with_valid_comments": [
+        "1XJxTnReDAc",
+        "E3-SPgp0UGU",
+        "FzagdmaLM3k",
+        "JB6avj2ia5M",
+        "NWXVTpY82nA",
+        "RJ-ObcM8QM0",
+        "Y2RbH9dNwU8",
+        "bjHVXTCYbZQ",
+        "cdGJH6N-XL0",
+        "gy_Stt2Vlck",
+        "meWTHDujLq4",
+        "sicfS7WfTZc",
+        "uVF-su8gvT4"
+      ],
+      "alert_opened_at": "2026-10-14T17:08:36Z",
+      "alert_closed_at": "2026-10-16T02:32:47Z",
+      "alert_transitions": [],
+      "collection_health": {
+        "status": "error",
+        "silence_type": null,
+        "last_error": "youtube=ok;comments=api_error",
+        "consecutive_failures": 1
+      },
+      "last_collection_at": "2026-10-15T10:39:40Z",
+      "next_collection_at": "2026-10-16T08:32:47Z",
+      "window_finalized_at": null,
+      "counters_integrity": "inflated_pre_v0.3",
+      "videos_por_formato": {
+        "ao_vivo": 1,
+        "longo": 6,
+        "short": 3
+      },
+      "n_videos_municipais": 8,
+      "n_videos_verificados": 10,
+      "n_comments_municipais": 116,
+      "n_comments_valid_municipal": 131,
+      "videos_with_valid_comments_municipal": [
+        "1XJxTnReDAc",
+        "E3-SPgp0UGU",
+        "FzagdmaLM3k",
+        "JB6avj2ia5M",
+        "NWXVTpY82nA",
+        "Y2RbH9dNwU8",
+        "gy_Stt2Vlck",
+        "meWTHDujLq4",
+        "sicfS7WfTZc",
+        "uVF-su8gvT4"
       ],
       "flag_reassessment": null
     }
