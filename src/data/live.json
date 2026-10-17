@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T20:25:09Z",
+  "generated_at": "2026-10-17T02:28:09Z",
   "pipeline_version": "0.3.3",
   "pilot_mode": true,
   "dry_run": false,
@@ -744,88 +744,92 @@
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
-      "n_comments": 19,
-      "n_videos": 2,
-      "unlabeled": 5,
-      "unlabeled_pct": 26.3,
+      "n_comments": 32,
+      "n_videos": 5,
+      "unlabeled": 8,
+      "unlabeled_pct": 25.0,
       "date_range": [
         "2026-10-16",
-        "2026-10-16"
+        "2026-10-17"
       ],
       "distribution": [
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
-          "count": 1,
-          "pct": 5.3
+          "count": 2,
+          "pct": 6.2
         },
         {
           "key": "ajuda_resgate_doacoes",
           "label": "Ajuda / resgate / doações",
-          "count": 2,
-          "pct": 10.5
+          "count": 3,
+          "pct": 9.4
         },
         {
           "key": "responsabilizacao_governanca",
           "label": "Responsabilização / governança",
-          "count": 6,
-          "pct": 31.6
+          "count": 8,
+          "pct": 25.0
         },
         {
           "key": "infraestrutura_ocupacao_risco",
           "label": "Infraestrutura / ocupação de risco",
-          "count": 1,
-          "pct": 5.3
+          "count": 5,
+          "pct": 15.6
         },
         {
           "key": "clima_chuva_meio_ambiente",
           "label": "Clima / chuva / meio ambiente",
-          "count": 3,
-          "pct": 15.8
+          "count": 5,
+          "pct": 15.6
         },
         {
           "key": "experiencia_pessoal_local",
           "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
+          "count": 2,
+          "pct": 6.2
         },
         {
           "key": "alerta_prevencao_cobranca",
           "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
+          "count": 1,
+          "pct": 3.1
         },
         {
           "key": "critica_midia_informacao",
           "label": "Crítica à mídia / informação",
           "count": 4,
-          "pct": 21.1
+          "pct": 12.5
         }
       ],
       "timeline": [
         {
           "date": "16/10/26",
-          "count": 19
+          "count": 31
+        },
+        {
+          "date": "17/10/26",
+          "count": 1
         }
       ],
       "videos": [
         {
           "video_id": "e9dw5BvToCU",
-          "n_comments": 19,
-          "total_likes": 19,
+          "n_comments": 27,
+          "total_likes": 38,
           "first_comment": "16/10/2026",
           "top_categories": [
             {
               "label": "Responsabilização",
-              "count": 6
+              "count": 7
+            },
+            {
+              "label": "Clima/chuva",
+              "count": 5
             },
             {
               "label": "Crítica mídia",
               "count": 4
-            },
-            {
-              "label": "Clima/chuva",
-              "count": 3
             }
           ],
           "municipal_evidence": "descricao",
@@ -833,19 +837,71 @@
         },
         {
           "video_id": "VtRHeFHK-Oo",
+          "n_comments": 4,
+          "total_likes": 5,
+          "first_comment": "16/10/2026",
+          "top_categories": [
+            {
+              "label": "Infraestrutura",
+              "count": 2
+            },
+            {
+              "label": "Experiência",
+              "count": 2
+            },
+            {
+              "label": "Ajuda",
+              "count": 1
+            }
+          ],
+          "municipal_evidence": "descricao",
+          "formato": "longo"
+        },
+        {
+          "video_id": "svUiRVBtjLI",
+          "n_comments": 1,
+          "total_likes": 0,
+          "first_comment": "16/10/2026",
+          "top_categories": [
+            {
+              "label": "Infraestrutura",
+              "count": 1
+            }
+          ],
+          "municipal_evidence": "titulo",
+          "formato": "longo"
+        },
+        {
+          "video_id": "DQUFnPtf5Jk",
           "n_comments": 0,
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
           "municipal_evidence": "descricao",
           "formato": "longo"
+        },
+        {
+          "video_id": "Bw6VQJu7JqQ",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": [],
+          "municipal_evidence": "descricao",
+          "formato": "short"
         }
       ],
       "all_samples": {
         "solidariedade_oracao_luto": [
           {
+            "text": "Desde que os 10 mandamentos eram 09 😮",
+            "likes": 0,
+            "score": 0.964,
+            "date": "2026-10-16",
+            "video_id": "e9dw5BvToCU"
+          },
+          {
             "text": "O povo quis Tarcísio e são Paulo.nso muda",
-            "likes": 5,
+            "likes": 8,
             "score": 0.674,
             "date": "2026-10-16",
             "video_id": "e9dw5BvToCU"
@@ -854,14 +910,21 @@
         "ajuda_resgate_doacoes": [
           {
             "text": "Tarcisio e Nunes vão ajudar a população afetada nesse desastre mas espere sentados tá.",
-            "likes": 0,
+            "likes": 2,
             "score": 0.995,
             "date": "2026-10-16",
             "video_id": "e9dw5BvToCU"
           },
           {
-            "text": "Tirando o Nunes",
+            "text": "Nunca aconteceu isso em São Paulo o prefeito Ricardo Nunes está preocupado como ajudar essas pessoas o governo já está ajudando como pode prefeito e governo trabalhando junto pelo povo",
             "likes": 0,
+            "score": 0.995,
+            "date": "2026-10-17",
+            "video_id": "VtRHeFHK-Oo"
+          },
+          {
+            "text": "Tirando o Nunes",
+            "likes": 2,
             "score": 0.702,
             "date": "2026-10-16",
             "video_id": "e9dw5BvToCU"
@@ -870,28 +933,35 @@
         "responsabilizacao_governanca": [
           {
             "text": "Vao colocar a culpa no governador ou no prefeito. Ah!! Vao culpar o Sao Pedro e os tolos vao acreditar.",
-            "likes": 1,
+            "likes": 3,
             "score": 0.998,
             "date": "2026-10-16",
             "video_id": "e9dw5BvToCU"
           },
           {
             "text": "Uma vergonha! A maior cidade da América Latina é não ter saneamento básico modernizado, mas o que não pode é trans usar banheiro!!",
-            "likes": 0,
+            "likes": 1,
             "score": 0.997,
             "date": "2026-10-16",
             "video_id": "e9dw5BvToCU"
           },
           {
             "text": "Prefeito é o Nunes que já sumiu kkkk",
-            "likes": 1,
+            "likes": 2,
+            "score": 0.996,
+            "date": "2026-10-16",
+            "video_id": "e9dw5BvToCU"
+          },
+          {
+            "text": "Nem na esquerda e nem na do meio, político nenhum vai resolver essa situação,esperem q vai piorar",
+            "likes": 0,
             "score": 0.996,
             "date": "2026-10-16",
             "video_id": "e9dw5BvToCU"
           },
           {
             "text": "Ué...o governador não é bom? Não foi eleito no primeiro turno? 171",
-            "likes": 1,
+            "likes": 3,
             "score": 0.995,
             "date": "2026-10-16",
             "video_id": "e9dw5BvToCU"
@@ -904,6 +974,13 @@
             "video_id": "e9dw5BvToCU"
           },
           {
+            "text": "Nunca aconteceu isso em São Paulo o prefeito Ricardo Nunes está preocupado como ajudar essas pessoas o governo já está ajudando como pode prefeito e governo trabalhando junto pelo povo",
+            "likes": 0,
+            "score": 0.992,
+            "date": "2026-10-17",
+            "video_id": "VtRHeFHK-Oo"
+          },
+          {
             "text": "São Paulo é a cidade do #concreto . Não há como o solo absorver a chuva. Calçadas cimentadas para maior comodidade (não precisa varrer folhas diariamente). Prefeitos alheios às chuvas torrenciais com o agravante de galerias pluviais entupidas e velhas. E para piorar tudo, o ecocida BOIADA PASSAR ainda vai ser o Ministro do Meio Ambiente no governo Trump / '01' Bozo Master... quer mais ?",
             "likes": 0,
             "score": 0.99,
@@ -913,9 +990,37 @@
         ],
         "infraestrutura_ocupacao_risco": [
           {
+            "text": "Estas coisas só acontecem com a pobreza,e as casas dos ricos não acontecem nada.😘🤔🇧🇷🇬🇧",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-10-16",
+            "video_id": "svUiRVBtjLI"
+          },
+          {
             "text": "Fácil de resolver , se já ocorreu uma vez quando começar a chover forte desvia o trânsito, cansei de encostar o carro em ruas mais afastadas em local alto e esperar a chuva passar , se você está na Av.do Estado começou chover forte , sai fora, em 15 minutos dependendo a chuva alaga tudo , eu já vi acontecer.",
             "likes": 0,
             "score": 0.985,
+            "date": "2026-10-16",
+            "video_id": "e9dw5BvToCU"
+          },
+          {
+            "text": "O que não faz muito sentido é que, em Manaus-AM e aqui em Porto Velho-RO os rios tão tudo secando. Aqui na Região Norte é uma seca extrema! O Rio madeira aqui em Porto Velho tá seco! Vejam no YouTube. ....Só que, em contrapartida, tem bastante árvores (florestas) o que ameniza os impactos! Aqui tem muitas áreas verdes.",
+            "likes": 1,
+            "score": 0.978,
+            "date": "2026-10-16",
+            "video_id": "VtRHeFHK-Oo"
+          },
+          {
+            "text": "\"São Paulo é a cidade do Concreto\" Não tem áreas verdes Espera-se o quê ?",
+            "likes": 1,
+            "score": 0.956,
+            "date": "2026-10-16",
+            "video_id": "VtRHeFHK-Oo"
+          },
+          {
+            "text": "Só existe uma forma... Captar a água e tratar...",
+            "likes": 0,
+            "score": 0.907,
             "date": "2026-10-16",
             "video_id": "e9dw5BvToCU"
           }
@@ -941,14 +1046,51 @@
             "score": 0.992,
             "date": "2026-10-16",
             "video_id": "e9dw5BvToCU"
+          },
+          {
+            "text": "A chuva e os riscos são alertados com antecedência, por que diabos não fecham a porra do túnel pqp...",
+            "likes": 0,
+            "score": 0.98,
+            "date": "2026-10-16",
+            "video_id": "e9dw5BvToCU"
+          },
+          {
+            "text": "Imagine no verão com o maior el.ninho da história",
+            "likes": 0,
+            "score": 0.601,
+            "date": "2026-10-16",
+            "video_id": "e9dw5BvToCU"
           }
         ],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
+        "experiencia_pessoal_local": [
+          {
+            "text": "O que não faz muito sentido é que, em Manaus-AM e aqui em Porto Velho-RO os rios tão tudo secando. Aqui na Região Norte é uma seca extrema! O Rio madeira aqui em Porto Velho tá seco! Vejam no YouTube. ....Só que, em contrapartida, tem bastante árvores (florestas) o que ameniza os impactos! Aqui tem muitas áreas verdes.",
+            "likes": 1,
+            "score": 0.997,
+            "date": "2026-10-16",
+            "video_id": "VtRHeFHK-Oo"
+          },
+          {
+            "text": "Aqui na região norte também tava tendo muitas queimadas.: É tudo fatores humanos! 🤷🤷‍♂️😶‍🌫️",
+            "likes": 3,
+            "score": 0.997,
+            "date": "2026-10-16",
+            "video_id": "VtRHeFHK-Oo"
+          }
+        ],
+        "alerta_prevencao_cobranca": [
+          {
+            "text": "A chuva e os riscos são alertados com antecedência, por que diabos não fecham a porra do túnel pqp...",
+            "likes": 0,
+            "score": 0.999,
+            "date": "2026-10-16",
+            "video_id": "e9dw5BvToCU"
+          }
+        ],
         "critica_midia_informacao": [
           {
             "text": "Mas o grande e verdadeiro problema do trabalhador,são os banheiros trans! Todos os bolsonaristas concordam TMB! Vamos erradicar os banheiros trans,e dar uma olhada no saneamento básico TMB,pq isso sim,cuida das mudanças climáticas! Resolvido! Vote 22!",
-            "likes": 1,
+            "likes": 3,
             "score": 0.998,
             "date": "2026-10-16",
             "video_id": "e9dw5BvToCU"
@@ -962,7 +1104,7 @@
           },
           {
             "text": "Temos que perguntar para os negacionistas.",
-            "likes": 1,
+            "likes": 3,
             "score": 0.771,
             "date": "2026-10-16",
             "video_id": "e9dw5BvToCU"
@@ -991,9 +1133,11 @@
           "criterio": "municipal_v0.3.2"
         }
       ],
-      "n_comments_valid": 14,
+      "n_comments_valid": 24,
       "videos_with_valid_comments": [
-        "e9dw5BvToCU"
+        "VtRHeFHK-Oo",
+        "e9dw5BvToCU",
+        "svUiRVBtjLI"
       ],
       "alert_opened_at": "2026-10-16T03:39:49Z",
       "alert_closed_at": null,
@@ -1004,19 +1148,22 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-10-16T10:26:22Z",
-      "next_collection_at": "2026-10-16T22:26:22Z",
+      "last_collection_at": "2026-10-17T02:25:30Z",
+      "next_collection_at": "2026-10-17T14:25:30Z",
       "window_finalized_at": null,
       "counters_integrity": "inflated_pre_v0.3",
       "videos_por_formato": {
-        "longo": 2
+        "longo": 4,
+        "short": 1
       },
-      "n_videos_municipais": 2,
-      "n_videos_verificados": 2,
-      "n_comments_municipais": 19,
-      "n_comments_valid_municipal": 14,
+      "n_videos_municipais": 5,
+      "n_videos_verificados": 5,
+      "n_comments_municipais": 32,
+      "n_comments_valid_municipal": 24,
       "videos_with_valid_comments_municipal": [
-        "e9dw5BvToCU"
+        "VtRHeFHK-Oo",
+        "e9dw5BvToCU",
+        "svUiRVBtjLI"
       ],
       "flag_reassessment": null
     },
@@ -1580,6 +1727,1923 @@
       },
       "last_collection_at": "2026-10-16T20:22:03Z",
       "next_collection_at": "2026-10-17T20:22:03Z",
+      "window_finalized_at": null,
+      "counters_integrity": "ok",
+      "videos_por_formato": {},
+      "n_videos_municipais": 0,
+      "n_videos_verificados": 0,
+      "n_comments_municipais": 0,
+      "n_comments_valid_municipal": 0,
+      "videos_with_valid_comments_municipal": [],
+      "flag_reassessment": null
+    },
+    {
+      "id": "cemaden_sp_2987",
+      "municipio": "São Paulo",
+      "uf": "SP",
+      "tipo": "Risco Hidrológico",
+      "nivel": "Moderado",
+      "data_alerta": "16/10/2026",
+      "codibge": "3550308",
+      "lat": null,
+      "lon": null,
+      "regime": "prospective_live",
+      "n_comments": 638,
+      "n_videos": 10,
+      "unlabeled": 127,
+      "unlabeled_pct": 19.9,
+      "date_range": [
+        "2026-10-14",
+        "2026-10-17"
+      ],
+      "distribution": [
+        {
+          "key": "solidariedade_oracao_luto",
+          "label": "Solidariedade / oração / luto",
+          "count": 66,
+          "pct": 10.3
+        },
+        {
+          "key": "ajuda_resgate_doacoes",
+          "label": "Ajuda / resgate / doações",
+          "count": 60,
+          "pct": 9.4
+        },
+        {
+          "key": "responsabilizacao_governanca",
+          "label": "Responsabilização / governança",
+          "count": 272,
+          "pct": 42.6
+        },
+        {
+          "key": "infraestrutura_ocupacao_risco",
+          "label": "Infraestrutura / ocupação de risco",
+          "count": 58,
+          "pct": 9.1
+        },
+        {
+          "key": "clima_chuva_meio_ambiente",
+          "label": "Clima / chuva / meio ambiente",
+          "count": 119,
+          "pct": 18.7
+        },
+        {
+          "key": "experiencia_pessoal_local",
+          "label": "Experiência pessoal / local",
+          "count": 20,
+          "pct": 3.1
+        },
+        {
+          "key": "alerta_prevencao_cobranca",
+          "label": "Alerta / prevenção / cobrança",
+          "count": 16,
+          "pct": 2.5
+        },
+        {
+          "key": "critica_midia_informacao",
+          "label": "Crítica à mídia / informação",
+          "count": 52,
+          "pct": 8.2
+        }
+      ],
+      "timeline": [
+        {
+          "date": "14/10/26",
+          "count": 189
+        },
+        {
+          "date": "15/10/26",
+          "count": 266
+        },
+        {
+          "date": "16/10/26",
+          "count": 179
+        },
+        {
+          "date": "17/10/26",
+          "count": 4
+        }
+      ],
+      "videos": [
+        {
+          "video_id": "d_xzD9od8b4",
+          "n_comments": 290,
+          "total_likes": 767,
+          "first_comment": "14/10/2026",
+          "top_categories": [
+            {
+              "label": "Responsabilização",
+              "count": 124
+            },
+            {
+              "label": "Clima/chuva",
+              "count": 44
+            },
+            {
+              "label": "Solidariedade",
+              "count": 32
+            }
+          ],
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
+        },
+        {
+          "video_id": "oYJI8wFPSKE",
+          "n_comments": 106,
+          "total_likes": 161,
+          "first_comment": "15/10/2026",
+          "top_categories": [
+            {
+              "label": "Responsabilização",
+              "count": 42
+            },
+            {
+              "label": "Clima/chuva",
+              "count": 26
+            },
+            {
+              "label": "Infraestrutura",
+              "count": 18
+            }
+          ],
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
+        },
+        {
+          "video_id": "cdGJH6N-XL0",
+          "n_comments": 92,
+          "total_likes": 213,
+          "first_comment": "15/10/2026",
+          "top_categories": [
+            {
+              "label": "Responsabilização",
+              "count": 39
+            },
+            {
+              "label": "Clima/chuva",
+              "count": 22
+            },
+            {
+              "label": "Solidariedade",
+              "count": 15
+            }
+          ],
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
+        },
+        {
+          "video_id": "LqJKIZ9oHvE",
+          "n_comments": 72,
+          "total_likes": 367,
+          "first_comment": "16/10/2026",
+          "top_categories": [
+            {
+              "label": "Responsabilização",
+              "count": 30
+            },
+            {
+              "label": "Clima/chuva",
+              "count": 16
+            },
+            {
+              "label": "Ajuda",
+              "count": 8
+            }
+          ],
+          "municipal_evidence": "titulo+descricao",
+          "formato": "longo"
+        },
+        {
+          "video_id": "60MtcBjr6hI",
+          "n_comments": 53,
+          "total_likes": 175,
+          "first_comment": "16/10/2026",
+          "top_categories": [
+            {
+              "label": "Responsabilização",
+              "count": 29
+            },
+            {
+              "label": "Clima/chuva",
+              "count": 10
+            },
+            {
+              "label": "Ajuda",
+              "count": 7
+            }
+          ],
+          "municipal_evidence": "descricao",
+          "formato": "short"
+        },
+        {
+          "video_id": "8fFWfBl5U0E",
+          "n_comments": 7,
+          "total_likes": 8,
+          "first_comment": "16/10/2026",
+          "top_categories": [
+            {
+              "label": "Responsabilização",
+              "count": 2
+            },
+            {
+              "label": "Crítica mídia",
+              "count": 1
+            }
+          ],
+          "municipal_evidence": "descricao",
+          "formato": "longo"
+        },
+        {
+          "video_id": "UTWHPXcJn68",
+          "n_comments": 7,
+          "total_likes": 10,
+          "first_comment": "16/10/2026",
+          "top_categories": [
+            {
+              "label": "Solidariedade",
+              "count": 2
+            },
+            {
+              "label": "Crítica mídia",
+              "count": 2
+            },
+            {
+              "label": "Responsabilização",
+              "count": 1
+            }
+          ],
+          "municipal_evidence": "descricao",
+          "formato": "short"
+        },
+        {
+          "video_id": "YJWUIx1Ds-I",
+          "n_comments": 6,
+          "total_likes": 4,
+          "first_comment": "16/10/2026",
+          "top_categories": [
+            {
+              "label": "Responsabilização",
+              "count": 3
+            },
+            {
+              "label": "Solidariedade",
+              "count": 2
+            },
+            {
+              "label": "Ajuda",
+              "count": 1
+            }
+          ],
+          "municipal_evidence": "descricao",
+          "formato": "longo"
+        },
+        {
+          "video_id": "yObp8XUvvjw",
+          "n_comments": 5,
+          "total_likes": 6,
+          "first_comment": "16/10/2026",
+          "top_categories": [
+            {
+              "label": "Responsabilização",
+              "count": 2
+            },
+            {
+              "label": "Solidariedade",
+              "count": 1
+            }
+          ],
+          "municipal_evidence": "titulo+descricao",
+          "formato": "short"
+        },
+        {
+          "video_id": "Bw6VQJu7JqQ",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": [],
+          "municipal_evidence": "descricao",
+          "formato": "short"
+        }
+      ],
+      "all_samples": {
+        "solidariedade_oracao_luto": [
+          {
+            "text": "Reportagem RUIM! Ao invés de filmar os carros no decorrer no túnel.. ficou na CARA do rapaz.... ruim!....'só faltou perguntar o RG do rapaz!!!\" Só por Deus!...Os problemas urbanos e agora as matérias mal feitas!",
+            "likes": 1,
+            "score": 0.998,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "Assim como foi nos dias de Noe assim será também na segunda vinda de Jesus colocaram aparecida como pai e mãe do Brazil batizam bebê com batismo dos homens crescem sem temor a Deus as mulheres catolicas cantoras dançarinas rebolando seminuas nos palcos fanatismo idolatria futebol musica secular estatuas",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "Graças a Deus, não votei no Tarcísio e Nunes! DOIS IMCOMPETENTES, parabéns 👏 👏 👏 👏",
+            "likes": 3,
+            "score": 0.997,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "O paulista é tão patético que ainda fica buzinando kkkkkkkkk eu adorei e quero ver mais. Obrigado, Deus. Como o Senhor é bom e justo.",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "Tem que agradecer a Deus por não ter morrido... Correr pra Jesus enqto há tempo! O Arrebatamento está próximo!",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "Isso porque Deus tá junto com seu Tarcisio, imagina se não tivesse",
+            "likes": 6,
+            "score": 0.997,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "Que tristeza, por que reelegeram os mesmos governantes? Vejam o resultado. E tem mais el nin̈o, até o ano que vem.😢",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-10-15",
+            "video_id": "oYJI8wFPSKE"
+          },
+          {
+            "text": "deus e BóSTAs são as mesmas MéRDAS. ACORDA dessas ilusões relinchiosas, Joaquim!",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "Liga para Deus e pess perdão dos pecados do mundo",
+            "likes": 3,
+            "score": 0.996,
+            "date": "2026-10-16",
+            "video_id": "60MtcBjr6hI"
+          },
+          {
+            "text": "Que triste... Isso nunca vai acabar porque foi provocado pela própria política de urbanização. Asfaltaram os rios e as várzeas",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-10-15",
+            "video_id": "oYJI8wFPSKE"
+          },
+          {
+            "text": "Deus: quem tem pena de jumento é proteção aos animais 😂😂😂😂😂e",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-10-15",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "Deus tá preocupado com os pilares do universo não com o povo que vota que nem uma desgraça toda eleição.",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-10-15",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "Misericórdia Deus abençoe os Paulistas,esse País dentro de outro País 🎉",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "Por DEUS qui esse povo não morreram afogados .",
+            "likes": 0,
+            "score": 0.995,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "Que tristeza e irresponsabilidade da CET",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "Deus está morto.",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "Que tristeza!",
+            "likes": 0,
+            "score": 0.994,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "Deus tenha misericórdia do Brasil!",
+            "likes": 4,
+            "score": 0.994,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "Meu Deus tem piedade do teu povo Senhor",
+            "likes": 0,
+            "score": 0.994,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "Meu Deus misericórdia 🙏",
+            "likes": 0,
+            "score": 0.994,
+            "date": "2026-10-15",
+            "video_id": "oYJI8wFPSKE"
+          }
+        ],
+        "ajuda_resgate_doacoes": [
+          {
+            "text": "@usuario descobrimos que não são, assim como os bolsonaros, são centrão fingidos. Tarcísio faz muito mas tudo demora, leva tempo, burocracias e muita dificuldade, não sou fã dele mas reconheço a boa gestao e compactuo Ele pegou o barco parando, afundando e cheio de buchas pra resolver... Seguimos",
+            "likes": 0,
+            "score": 0.999,
+            "date": "2026-10-15",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "@usuario é o carinha que disse que ia resolver tudo com a ajuda de Deus, acha que alguém não quiz ajudar",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-10-16",
+            "video_id": "LqJKIZ9oHvE"
+          },
+          {
+            "text": "😢 Peço ajuda socorro 😢ESSE É UM PEDIDO DE SOCORO DE UM PAI DE 5 FILHOS 😢 PERDI MEU BRAÇO DESEPADO EM TRABALHO Gravei toda situação provando tudo, a fome nossa eu só imploro uma cesta basica, eu tabalho por comida se precisar, é um pedido de socorro de um pai de 5 filhos desempregado imploro sua ajuda estamos na pior situasão",
+            "likes": 14,
+            "score": 0.996,
+            "date": "2026-10-16",
+            "video_id": "LqJKIZ9oHvE"
+          },
+          {
+            "text": "Ao menos nao tem banheiro trans la , ja salvou a cidade🎉",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-10-15",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "Lembro quando este túnel encheu completamente, no passado e as pessoas saíram nadando ou com o bombeiro. Nada mudou neste país da corrupção.",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-10-15",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "Ricardo Nunes estava ajudando os amigos, acorda povo",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-10-16",
+            "video_id": "YJWUIx1Ds-I"
+          },
+          {
+            "text": "O Nunes, Tarcisio e Flávio vão ai salvar vcs, confia.",
+            "likes": 2,
+            "score": 0.995,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "O tarciso e Nunes logo vem socorrer os afetados, só que esperem sentados tá.",
+            "likes": 0,
+            "score": 0.995,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "Parabéns ao prefeito e ao governador. E olha que estamos falando do estado mais rico do país....Salvador esta bem obrigado!",
+            "likes": 2,
+            "score": 0.993,
+            "date": "2026-10-16",
+            "video_id": "LqJKIZ9oHvE"
+          },
+          {
+            "text": "Governador é o seuu Tarcísio não Lula socorre nóis seu Tarcísio 😂😂😂",
+            "likes": 5,
+            "score": 0.992,
+            "date": "2026-10-16",
+            "video_id": "60MtcBjr6hI"
+          },
+          {
+            "text": "C E T cm sempre irresponsáveis . Não e culpa da.prefeitura são esses cetes q cm sempre não ajudam só atrapalham o trânsito . Não e a primeira vez",
+            "likes": 1,
+            "score": 0.992,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "@usuario cortou verbas de obras contra enchentes e a da Defesa Civil, bozolóide.",
+            "likes": 5,
+            "score": 0.991,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "@usuario cortou verbas de obras contra enchentes e a da Defesa Civil, bozolóide.",
+            "likes": 2,
+            "score": 0.991,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "Então, para que serve a defesa civil? E aquela empresa intitulada CET?",
+            "likes": 0,
+            "score": 0.989,
+            "date": "2026-10-15",
+            "video_id": "oYJI8wFPSKE"
+          },
+          {
+            "text": "e vão ainda dizer faz o L duvidam que vão falar isso aqui ? agora que vcs votaram numa lacradora de 23 anos, e num boca de veludo de rádio pedem pra eles ajudar agora? mas eles vão dizer que enchente não existe e que vcs que foram culpados por passar aí kkkkkkk",
+            "likes": 0,
+            "score": 0.988,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "@usuario não teriam cortado a verba da Defesa Civil e de obras contra enchentes.",
+            "likes": 1,
+            "score": 0.988,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "ENQUANTO SÃO PAULO PEDINDO.SOCORRO, TARCISIO DE FREITAS GOVERNADOR.REELEITO PELO POVO, ESTAVA FAZENDO COMICIO.NO RIO GRANDE DO SUL.COM.FLAVIO.BOLSONARO, QUE TAMBEM.NAO FOI.VOTAR ESCALA 6 X 1, E.FORAM.VISITAR A CONSTRUÇÃO DAS COMPOTAS EM SARANDI RS PARABÉNS SÃO PAULO,.VOTOU PARA O GOVERNADOR DO RIO GRANDE DO SUL !!!",
+            "likes": 0,
+            "score": 0.987,
+            "date": "2026-10-15",
+            "video_id": "oYJI8wFPSKE"
+          },
+          {
+            "text": "Vota no Tarcísio e no Flávio Bolsonaro que tudo se resolve para vocês do sul afinal Bolsonaro cortou o imposto do jet ski 👌🏻 Nem a natureza nem o céu suporta tanta HIPOCRISIA de vocês do sul !! Tudo que n presta vocês apoia e defende e quem ajuda vocês são a favor de vocês do pobre do trabalhador vocês são contra. Antes eu tinha pena mas agora eu não tenha pena alguma mais de vocês !!!!",
+            "likes": 8,
+            "score": 0.984,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "MAS E O BANHEIRO TRANS HEIN!? E O BANHEIRO!?",
+            "likes": 2,
+            "score": 0.981,
+            "date": "2026-10-16",
+            "video_id": "LqJKIZ9oHvE"
+          },
+          {
+            "text": "*Apertem os coletes 😂😂",
+            "likes": 0,
+            "score": 0.972,
+            "date": "2026-10-15",
+            "video_id": "oYJI8wFPSKE"
+          }
+        ],
+        "responsabilizacao_governanca": [
+          {
+            "text": "Tudo acontece por causa dos veículos, caminhões, aviões, navios, motores estacionários, tratores, usinas termelétricas ... Cada automóvel com motor de combustão interna e em funcionamento produz CO2 em quantidade que equivale a 75 adultos respirando. E um caminhão de 30 toneladas produz bem mais que isso ... E quanto de CO2 um avião produz? Uma simples roçadeira de grama com motor a gasolina entra",
+            "likes": 1,
+            "score": 0.999,
+            "date": "2026-10-15",
+            "video_id": "oYJI8wFPSKE"
+          },
+          {
+            "text": "LULA. ARRUMOU ALAGANDO ASVRUAS PRA CULPAR. PL. TARCISIO 😅 PT jOGA SUJA SENPRECISA MATAR VIDAS",
+            "likes": 0,
+            "score": 0.999,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "Uma vergonha o anhangabau, centro de São paulo, estar nessas condições, causando prejuízos aos trabalhadores, enquanto o Sr. ditador Tarcísio de freitas reformando, quebrando calçadas e ruas do centro de São Paulo, para mostrar serviço e claro, obra da dinheiro, não é mesmo? Essa obra não tinha nenhuma prioridade, mas, rende um bom dinheiro para essa cambada de miliciano que estão no poder de mãos",
+            "likes": 0,
+            "score": 0.999,
+            "date": "2026-10-15",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "Cade o prefeito Ricardo nunes? Deve estar instalando os pontos de Internet com a Karina da gama. A CIDADE DE SAO PAULO ESTA O CAOS, RUAS IMUNDAS, BUEIROS ENTUPIDOS, O ASFALYO CEDENDO E NINGUÉM TOMA NENHUMA PROVIDÊNCIA . EU MORO NA VILA MARIANA , EU IMAGINO COMO DEVE SOFRER O POVO QUE. MORA NA PERIFERIA COM O DESCASO DA PREFEITURA E DO GOVERNO MILICIANO DO ESTADO DE SÃO PAULO.",
+            "likes": 0,
+            "score": 0.999,
+            "date": "2026-10-15",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "Obra da direita. Lista dos 10 últimos governadores: Tarcísio de Freitas -> Direita Rodrigo Garcia -> Direita João Doria -> Direita Márcio França -> Direita Geraldo Alckmin -> Direita Alberto Goldman -> Direita José Serra -> Direita Cláudio Lembo -> Direita Geraldo Alckmin -> Direita Mário Covas -> Direita",
+            "likes": 4,
+            "score": 0.999,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "@usuario Fala pro Nunes e o Tarcísio cagarem na sua boca logo 😂 Cadê os R$ 200 milhões que a prefeitura de SP deu pra produtora do filme do Bolsonaro pra instalar Wi-Fi fantasma?🤣 Gado de corruptos",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "@usuario Fala pro Nunes e o Tarcísio cagarem na sua boca logo 😂 Cadê os R$ 200 milhões que a prefeitura de SP deu pra produtora do filme do Bolsonaro pra instalar Wi-Fi fantasma?🤣 Gado de corruptos",
+            "likes": 1,
+            "score": 0.998,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "@usuario Fala pro Nunes e o Tarcísio cagarem na sua boca logo 😂 Cadê os R$ 200 milhões que a prefeitura de SP deu pra produtora do filme do Bolsonaro pra instalar Wi-Fi fantasma?🤣 Gado de corruptos",
+            "likes": 1,
+            "score": 0.998,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "Essa obra é de responsabilidade da prefeitura e não do estado.",
+            "likes": 1,
+            "score": 0.998,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "@usuario Engraçado que a imprensa mal fez a cobertura das manifestações, mas fizeram imagens das pessoas pichando e colando coisas ? Duvido. Mesmo porque, essa prefeitura o que ela não faz é trabalhar. No máximo, ele foram limpar sujeira que já estava lá e filmaram para gerar narrativas. Agora, quem gosta de depredar patrimônio público, o 08 de janeiro, mostrou muito bem quem é.",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-10-15",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "O LULA NÃO É GOVERNADOR DE S. PAULO E NEM PREFEITO. POVO QUE SÓ REPETE ,O LULA O PT. NÃO PENSAM.",
+            "likes": 3,
+            "score": 0.998,
+            "date": "2026-10-16",
+            "video_id": "60MtcBjr6hI"
+          },
+          {
+            "text": "Engenheiro de obras feitas. Os dois. O Tarcínico estava numa festinha no RS com Rachadinha e o Marreco de Maringá",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-10-16",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "@usuario se informar melhor cidadão e, não fale besteiras. O primeiro túnel do anhangabau, é um projeto de 1930, foi construído em 1949/50, pelo Ademar de Barros, que ficou conhecido por anos como buraco do Ademar. Depois nos anos 80, o prefeito Janio Quadros o remodelou e iniciou essa obra, sendo ela concluída na gestão da Erundina, que iniciou a sua gestão paralisando esta parcialmente com \"toda",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "fiquem tranquilos, extrema direita não fez as obras mas o dinheiro foi bem gasto no filme do mito, poderemos assistir embaixo dagua, faz o F",
+            "likes": 6,
+            "score": 0.998,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "@usuario desinformada é você, moça. A culpa é de quem? Minha que não kkkk",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-10-17",
+            "video_id": "oYJI8wFPSKE"
+          },
+          {
+            "text": "Essa culpa eu não carrego …fora Tarcinico 😈",
+            "likes": 16,
+            "score": 0.998,
+            "date": "2026-10-16",
+            "video_id": "LqJKIZ9oHvE"
+          },
+          {
+            "text": "@usuario .... Ser Gado do Tarcísio é humilhante 😂 Cadê os R$ 5 milhões que o prefeito e o governador de SP deram pra Igreja da Lagoinha no final de 2025? Daria pra fazer essa obra aí.",
+            "likes": 4,
+            "score": 0.998,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "É disso que o povo gosta. Afinal, reelegeram Nunes e mentiroso do Tarcisio. Tarcisio disse que a culpa é do povo que não colabora. \"a semeadura é livre, mas a colheita é obrigatória\" Que venha mais.",
+            "likes": 21,
+            "score": 0.998,
+            "date": "2026-10-16",
+            "video_id": "LqJKIZ9oHvE"
+          },
+          {
+            "text": "Provavelmente alguém deixou de pagar seus impostos em dia. Deve ser esse o motivo. Faltou dinheiro para pagar engenheiros e obras necessárias para evitar isso tudo?",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "@usuario Cadê os R$ 5 milhões que o prefeito e o governador de SP deram pa Igreja da Lagoinha no final de 2025? Daria pra fazer essa obra aí.",
+            "likes": 3,
+            "score": 0.998,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          }
+        ],
+        "infraestrutura_ocupacao_risco": [
+          {
+            "text": "ENQUANTO SÃO PAULO PEDINDO.SOCORRO, TARCISIO DE FREITAS GOVERNADOR.REELEITO PELO POVO, ESTAVA FAZENDO COMICIO.NO RIO GRANDE DO SUL.COM.FLAVIO.BOLSONARO, QUE TAMBEM.NAO FOI.VOTAR ESCALA 6 X 1, E.FORAM.VISITAR A CONSTRUÇÃO DAS COMPOTAS EM SARANDI RS PARABÉNS SÃO PAULO,.VOTOU PARA O GOVERNADOR DO RIO GRANDE DO SUL !!!",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-10-15",
+            "video_id": "oYJI8wFPSKE"
+          },
+          {
+            "text": "@usuario😂😂😂😂PARABÉNS TARCÍSIO KKKKKK VOLTA DE BARCO PRA CASA KKKKK",
+            "likes": 3,
+            "score": 0.998,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "Medo de quando isso chegar no Rio de Janeiro 😢😢😢",
+            "likes": 4,
+            "score": 0.997,
+            "date": "2026-10-16",
+            "video_id": "LqJKIZ9oHvE"
+          },
+          {
+            "text": "Falta de drenagem nos solos, bueiros entupidos de lixo, Rios também excesso de terra e lixos. Tudo tem retorno das atitudes.",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-10-15",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "ISTO JÁ VIROU ROTINA A DÉCADAS! CONSTRUIRAM UMA VIA DE PASSSGEM EM UM CANAL FLUVIAL DE UM RIO E AGORA A ÁGUA SEMPRE RETORNARÁ AO SEU LEITO ORIGINAL!",
+            "likes": 1,
+            "score": 0.997,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "Quando eu trabalhava de boy, no ano de 1999, o túnel ficou até o teto de água😮a nove de julho parecia um Rio bravo, deslocando os carros que estavam estacionados como se fossem de brinquedos. Fiquei dentro de um bar de esquina e assisti aquela cena triste😢tanto que nem consegui concluir o meu trabalho😅o meu chefe achou que eu estava mentindo,até ver a notícia no JN.",
+            "likes": 8,
+            "score": 0.997,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "e jogaram lixo onde deveria passar a água",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-10-15",
+            "video_id": "oYJI8wFPSKE"
+          },
+          {
+            "text": "Vamos construir muuuuuitos predios, pois o Haddad era um ditado4, limitou as construções de condomínios com mais de 3 blocos de 15, 20 a dares (sendo irônica)",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-10-16",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "São pessoas que entulham as ruas de lixo colega também.",
+            "likes": 1,
+            "score": 0.997,
+            "date": "2026-10-15",
+            "video_id": "oYJI8wFPSKE"
+          },
+          {
+            "text": "O cuidado com a limpeza da cidade e lastimável! A cidade tem lixo por todo lado 😢😢😢",
+            "likes": 7,
+            "score": 0.997,
+            "date": "2026-10-16",
+            "video_id": "LqJKIZ9oHvE"
+          },
+          {
+            "text": "Isso não tem nada a ver com os governantes, a população mal-educada joga todos os lixos na rua",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-10-16",
+            "video_id": "60MtcBjr6hI"
+          },
+          {
+            "text": "engraçado que se fala de prédios mas não se fala dos lixos que entopem as vias.",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-10-15",
+            "video_id": "oYJI8wFPSKE"
+          },
+          {
+            "text": "Relaxa . O mais importante é q o PT foi derrotado tanto na prefeitura, qto para o governo de estado . O mais importante é o Ricardo Nunes e o tarcinico cara de areia mijada lacrar na rede social . Foda se a enchente. Só falar lula ladrão, Cuba, comunismo, Venezuela q a população vivendo com o esgoto e os ratos das enchente dentro de casa apóia os influencer tarcinico e Ricardo pcc Nunes. Parabéns ",
+            "likes": 0,
+            "score": 0.995,
+            "date": "2026-10-15",
+            "video_id": "oYJI8wFPSKE"
+          },
+          {
+            "text": "Você nem sabe o que é saneamento básico. Isso é drenagem.",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "isso deve ser os esgotos entopidos",
+            "likes": 0,
+            "score": 0.995,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "Gente um conselho ,em tempo de tempestade,procure um lugar seguro,lugares que não tem alagamentos , você que está a pé, você que está de carro,cheguei em casa tarde ,cheguei no serviço tarde ,mas cheguem,se seu patrão no serviço reclamar , lembre-se ,que quem vai chorar pelo restante da vida e sua família ,por sua perda ,se chegar em casa tarde ,chegou tarde mas está com vida ,Pare, pense, reflita",
+            "likes": 0,
+            "score": 0.994,
+            "date": "2026-10-16",
+            "video_id": "oYJI8wFPSKE"
+          },
+          {
+            "text": "@usuario anos vc tem, bebê???? Faz 40 anos que esses túneis já alagava,( construção???) Acho que nem é do Maluf, Mas ser corrigido um assunto tão complexo, Já passou da hora!!!",
+            "likes": 1,
+            "score": 0.994,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "O que você semear , é o que colherá. O descuido com nossa casa ( O PLANETA TERRA ) . Para além do período político pelo qual estamos passando , pense bem antes de decidir um posicionamento , seja ele qual for.",
+            "likes": 1,
+            "score": 0.994,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "@usuario Errado você nao está, mas é que ali nãoi tem jeito. É a água que cai no asfalto mesmo que sobrecarrega qualquer sistema. Veja, se fosse tentar canalizar toda a chuva que caiu nesse dia, a rua inteira teria que ser feita de bocas de lobo, uma ou duas a cada esquina, não daria conta porque a água corre por cima da calçada e do pavimento da via, sem nem correr para o canto da calçada. É o me",
+            "likes": 0,
+            "score": 0.994,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "A culpa é da população, que não tem a educação mínima de jogar o lixo no lixo e não pelas ruas.",
+            "likes": 0,
+            "score": 0.992,
+            "date": "2026-10-16",
+            "video_id": "LqJKIZ9oHvE"
+          }
+        ],
+        "clima_chuva_meio_ambiente": [
+          {
+            "text": "NORMAL TUDO NORMAL QUEM MANDA ESSES DOIDOS A PASSEANDO NA MADRUGADA NA CHUVA QUE SE FODA😅",
+            "likes": 1,
+            "score": 0.998,
+            "date": "2026-10-16",
+            "video_id": "LqJKIZ9oHvE"
+          },
+          {
+            "text": "CHUVAS NÃO PROVOCAM ISSO!!!! SÃO PROJETOS MAL ELABORADOS !!!",
+            "likes": 4,
+            "score": 0.998,
+            "date": "2026-10-15",
+            "video_id": "oYJI8wFPSKE"
+          },
+          {
+            "text": "Fomos nós que inventamos enchentes em áreas urbanas. A urbanização de muitas cidades (no mundo) ocupou os lugares dos rios e lagos, então enchentes nas cidades são produtos da urbanização. \"...Quando a chuva cai, é pra lá que ela vai, e se não tiver espaço, ela toma o que for necessário...\"",
+            "likes": 7,
+            "score": 0.998,
+            "date": "2026-10-15",
+            "video_id": "oYJI8wFPSKE"
+          },
+          {
+            "text": "É essa cidade que vocês chamam de top, mega cidade, etc. Deixa eu tranquilo no meu nordeste, clima o mesmo o ano todo, custo de vida baixo, natureza na minha porta, etc!!!",
+            "likes": 1,
+            "score": 0.997,
+            "date": "2026-10-15",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "Sim, falta de planejamento urbano, sem dúvida. Mas os anos que você mesmo citou não refutam a mudança climática. Pelo contrário. O problema não é saber se São Paulo sempre teve enchentes, mas se eventos extremos estão se tornando mais frequentes e intensos. E os dados mostram que estão. Mudança climática não criou as enchentes de São Paulo; está agravando um problema que décadas de urbanização des",
+            "likes": 3,
+            "score": 0.997,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "Essa enchente no Vale do Anhangabaú é bem antiga o cavalo do Dom Pedro saiu nadando na época do Império",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-10-15",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "O túnel do Anhangabaú, ou o famoso Buraco do Ademar, sempre alagou, me lembro desses episódios desde os anos 1980, e é claro, a coisa só piora",
+            "likes": 1,
+            "score": 0.997,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "Contra força da natureza não tem pra ninguém..nem a nem b .. o povo é reflexo da sujeira que entope bueiros e boca de lobo",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "A natureza não perdoa",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-10-17",
+            "video_id": "LqJKIZ9oHvE"
+          },
+          {
+            "text": "Sempre teve alagamento",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-10-16",
+            "video_id": "60MtcBjr6hI"
+          },
+          {
+            "text": "E a esquerda só taxando e destruindo. Marta Suplicy -> esquerda, inaugurou o túnel Rebouças alagado.",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-10-15",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "Tenho as minhas ressalvas com o Tarcísio, mas queria que ele fizesse o que??? Puxasse a água com o rodo??? Sério que você acha que o Haddad que já provou a incompetência em tudo que coloca a mão teria resolvido o problema do volume de chuva???? Taxa da chuva volumosa 😂😂😂😂😂",
+            "likes": 4,
+            "score": 0.996,
+            "date": "2026-10-15",
+            "video_id": "oYJI8wFPSKE"
+          },
+          {
+            "text": "Este túnel sempre teve problemas com chuvas fortes",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "Precipitação pluviométrica como nunca se viu... ciclone extra tropical... el niño até dezembro...😮😮",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-10-16",
+            "video_id": "LqJKIZ9oHvE"
+          },
+          {
+            "text": "@usuario não,sou paulista desde que nasci,temos sim enchentes,mas depende do quanto o governador/prefeito está usando a verba necessária ou não. Em 2024,o governo liberou 2 bilhões para cuidar das enchentes, Tarcísio resolveu usar apenas 870 mil dessa verba. O resto!? Nós paulistas não sabemos onde foi. E o pior de tudo,não somos nós da capital que votamos na extrema direita...pq já sabemos o que ",
+            "likes": 2,
+            "score": 0.996,
+            "date": "2026-10-16",
+            "video_id": "LqJKIZ9oHvE"
+          },
+          {
+            "text": "E motorista que conhece a região sempre evita este trecho quando tem chuva forte",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "Isso é muito sério.olha o bichinho fugindo da enchente, mas ele não vai morrer porque é da água só se algum imbecil machucar ou tirar ele do meio ambiente e levar pra casa né",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-10-16",
+            "video_id": "oYJI8wFPSKE"
+          },
+          {
+            "text": "Elegeram Nunes com uma proposta de diminuição de investimento em infraestrutura para combate a enchente. Ele cumpriu! Parabéns São Paulo",
+            "likes": 34,
+            "score": 0.996,
+            "date": "2026-10-16",
+            "video_id": "LqJKIZ9oHvE"
+          },
+          {
+            "text": "@usuario totalmente irracional seu raciocínio. as enchentes de SP não começaram em 2022. Deixa de ser um militante e aceite que nem Tarcísio nem Covas nem Alkmin nem Serra resolveram esse problema de enchentes que sempre teve aqui. pra seu governo o Nunes e o Tarcísio tem várias iniciativas para acabar com as enchentes mas falta conscientização do povo em jogar lixo nas ruas. quando chove vão toda",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-10-15",
+            "video_id": "oYJI8wFPSKE"
+          },
+          {
+            "text": "Nem um e nem outro. A natureza é assim mesmo. Foi a primeira vez que aconteceu?",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-10-16",
+            "video_id": "60MtcBjr6hI"
+          }
+        ],
+        "experiencia_pessoal_local": [
+          {
+            "text": "@usuario Errado você nao está, mas é que ali nãoi tem jeito. É a água que cai no asfalto mesmo que sobrecarrega qualquer sistema. Veja, se fosse tentar canalizar toda a chuva que caiu nesse dia, a rua inteira teria que ser feita de bocas de lobo, uma ou duas a cada esquina, não daria conta porque a água corre por cima da calçada e do pavimento da via, sem nem correr para o canto da calçada. É o me",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "É pouco . Olha a MARRETADA do tarcisio aí GENTEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE ..A não é o governo . O tarcisio e o nunes , os 2 é uma pessoa só . Ou coisa BOA . O trem pra São Miguel , caindo os pedaços . O metrô um lixão . Fiquei horrorizada.. O Parque dão Pedro , misericórdia. E pôr aí vai . . . O mercadão , Brás . A Sé só por DEUS . Secaram as fontes .",
+            "likes": 4,
+            "score": 0.998,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "@usuario totalmente irracional seu raciocínio. as enchentes de SP não começaram em 2022. Deixa de ser um militante e aceite que nem Tarcísio nem Covas nem Alkmin nem Serra resolveram esse problema de enchentes que sempre teve aqui. pra seu governo o Nunes e o Tarcísio tem várias iniciativas para acabar com as enchentes mas falta conscientização do povo em jogar lixo nas ruas. quando chove vão toda",
+            "likes": 1,
+            "score": 0.997,
+            "date": "2026-10-15",
+            "video_id": "oYJI8wFPSKE"
+          },
+          {
+            "text": "@usuario tirando Tarcísio e Mario Covas, eram CENTRÃO! NADA DIREITA e lembrem, isso é no centro de SP, competência municipal, vejam quantos foram de esquerda e direita. SP SEMPRE FOI E SEMPRE SERÀ ASSIM, INDEPENDENTE DE AMBOS, SO VAI MELHORAR MESMO, QUANDO A PORCENTAGEM DO DINHEIRO QUE SAI E VAI PRA BRASILIA E PROS ESTADOS DEFICITARIOS, FICAREM EM SAO PAULO PARA USARMOS AQUI!",
+            "likes": 1,
+            "score": 0.997,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "Cade o prefeito Ricardo nunes? Deve estar instalando os pontos de Internet com a Karina da gama. A CIDADE DE SAO PAULO ESTA O CAOS, RUAS IMUNDAS, BUEIROS ENTUPIDOS, O ASFALYO CEDENDO E NINGUÉM TOMA NENHUMA PROVIDÊNCIA . EU MORO NA VILA MARIANA , EU IMAGINO COMO DEVE SOFRER O POVO QUE. MORA NA PERIFERIA COM O DESCASO DA PREFEITURA E DO GOVERNO MILICIANO DO ESTADO DE SÃO PAULO.",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-10-15",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "E se preparem para mais . Só aqui na região de Sorocaba choveu 90 milímetros em 19 horas.",
+            "likes": 1,
+            "score": 0.997,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "Tão grave quanto estes alagamentos é a falta de conhecimento \"politico\" da grande maioria de nós. Por mais que odiemos tarcisio, flavio ou lula... aqui não podemos culpa-los.... esta gestão não é da responsabilidade deles. Como alguem já citou aqui, isto é recorrente e ocorreu sobre gestão de vários partidos politicos. Infelizmente, construimos coisas baseados na media, e rezamos para que eventos ",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "Eu aqui pensando a maioria é tudo roda presa e quando chove os mesmos viram roda solta 😂😂😂😂😂😂",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-10-15",
+            "video_id": "oYJI8wFPSKE"
+          },
+          {
+            "text": "Não amigo, a culpa é do POVO mesmo, que vem aqui culpar o governo mas não faz o básico, que é JOGAR LIXO NO LIXO e não no chão!",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-10-16",
+            "video_id": "LqJKIZ9oHvE"
+          },
+          {
+            "text": "Enquanto isso Tarcísio faz \"dancinha\" com os traidores da PÁTRIA, Flávio e Moro, no Rio Grande do Sul, prometendo entregar nosso país e nossas riquezas aos EUA em troca de benefícios pessoais e familiares.",
+            "likes": 5,
+            "score": 0.996,
+            "date": "2026-10-16",
+            "video_id": "UTWHPXcJn68"
+          },
+          {
+            "text": "😡😡😡😡😡😡😡Tarcísio fazendo dancinha com Sergio moro no Paraná, ontem.",
+            "likes": 5,
+            "score": 0.996,
+            "date": "2026-10-16",
+            "video_id": "60MtcBjr6hI"
+          },
+          {
+            "text": "Quando eu trabalhava de boy, no ano de 1999, o túnel ficou até o teto de água😮a nove de julho parecia um Rio bravo, deslocando os carros que estavam estacionados como se fossem de brinquedos. Fiquei dentro de um bar de esquina e assisti aquela cena triste😢tanto que nem consegui concluir o meu trabalho😅o meu chefe achou que eu estava mentindo,até ver a notícia no JN.",
+            "likes": 8,
+            "score": 0.996,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "Hoje aqui na minha cidade do Paraná, lá pelas 18 horas deu um estrondo de trovoada tão grande que assustou os moradores, chegou tremer o telhado da casa",
+            "likes": 5,
+            "score": 0.996,
+            "date": "2026-10-15",
+            "video_id": "oYJI8wFPSKE"
+          },
+          {
+            "text": "Gente... isso aconteceu uns 20 anos atrás. Chove forte na Paulista e 13 de Maio e no Anhangabaú nem tanto. Então a água desce de todas as ruas e vai se juntando na 9 de julho e vem como um Tsunami, uma verdadeira onda que enche o tunel quase que imediatamente. Sem novidades aqui. Acontece a cada par de décadas.",
+            "likes": 8,
+            "score": 0.994,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "Vou pedir o Lula pra mandar chuva pro Norte de Minas, aqui estamos precisando de chuva. Já que Lula agora manda até chuva kkkkkk.",
+            "likes": 6,
+            "score": 0.992,
+            "date": "2026-10-16",
+            "video_id": "60MtcBjr6hI"
+          },
+          {
+            "text": "o unico governador que fez obras de infra em SP foi o Maluf. VC acha mesmo que em menos de 4 anos ele ia acabar com um problema que vem de anos atrás? porque vc que é tão inteligente não vai trabalhar na prefeitura como engenheiro para solucionar os problemas de enchente na cidade? Talvez porque só queira militar e chorar quando perdem? ou porque acha que é só fazer uma obra aqui e outra ali e vai",
+            "likes": 0,
+            "score": 0.992,
+            "date": "2026-10-15",
+            "video_id": "oYJI8wFPSKE"
+          },
+          {
+            "text": "😢 Peço ajuda socorro 😢ESSE É UM PEDIDO DE SOCORO DE UM PAI DE 5 FILHOS 😢 PERDI MEU BRAÇO DESEPADO EM TRABALHO Gravei toda situação provando tudo, a fome nossa eu só imploro uma cesta basica, eu tabalho por comida se precisar, é um pedido de socorro de um pai de 5 filhos desempregado imploro sua ajuda estamos na pior situasão",
+            "likes": 14,
+            "score": 0.99,
+            "date": "2026-10-16",
+            "video_id": "LqJKIZ9oHvE"
+          },
+          {
+            "text": "e vão ainda dizer faz o L duvidam que vão falar isso aqui ? agora que vcs votaram numa lacradora de 23 anos, e num boca de veludo de rádio pedem pra eles ajudar agora? mas eles vão dizer que enchente não existe e que vcs que foram culpados por passar aí kkkkkkk",
+            "likes": 0,
+            "score": 0.99,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "Chuva ninguém controla e tem gente aqui culpando Lula, Tarcísio e Nunes! Gente sem noção!🤦🏻‍♀️",
+            "likes": 2,
+            "score": 0.987,
+            "date": "2026-10-16",
+            "video_id": "60MtcBjr6hI"
+          },
+          {
+            "text": "Eu acabei de falar com minha esposa que até o final dos anos 90, era comum o túnel do Anhangabaú encher, eu me lembro de passar e ver a marca d'água quase no teto, depois esse problema foi solucionado. No entanto, o rapaz que deu entrevista, ele nunca tinha visto ou vivido essa experiência.",
+            "likes": 0,
+            "score": 0.925,
+            "date": "2026-10-15",
+            "video_id": "d_xzD9od8b4"
+          }
+        ],
+        "alerta_prevencao_cobranca": [
+          {
+            "text": "Sou paulistana, não votei no Tarcisio e muito menos no Ricardo Nunes e, sinceramente lamento por quem não votou neles e estejam passando por isso e, me divertindo HORRORES por aqueles que votaram neles e estão somente colhendo o que plantaram na urna. Quero mais é que essa turminha que vota a favor do bolsonarismo se lasquem cada vez mais, pois a gente avisa e mesmo assim preferem ir contra. Justi",
+            "likes": 1,
+            "score": 0.999,
+            "date": "2026-10-16",
+            "video_id": "LqJKIZ9oHvE"
+          },
+          {
+            "text": "Há pelo menos 50 anos este local tem este tipo de problema. Será que em SP não tem ninguém habilitado para resolver este problema? Não é colocar bombas, é resolver o problema, com piscinões ou outra alternativa. Se não há o que fazer, então tem que avisar ao povo idiota que politiza tudo que não há jeito! Mas tem um montão de entendidos de internet que aproveitam da situação para culpar o governad",
+            "likes": 1,
+            "score": 0.999,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "Como o meu prefeito deixa isso acontecer? Diversos alertas emitidos há meses sobre as questões climáticas, NADA FOI FEITO. Repito, alertas feitos há meses.",
+            "likes": 3,
+            "score": 0.998,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "E por isso nao podem ter planos preventivos, mane?",
+            "likes": 1,
+            "score": 0.998,
+            "date": "2026-10-15",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "Infelizmente a Companhia de Engenharia de Tráfego Hoje Não Tem Um Plano de Contingência Para Cidade de São Paulo. A CET São Paulo Tem Um Efetivo Muito Pífio Em Relação Das Necessidades da Capital Paulistana.",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-10-15",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "@usuario , os alertas do super El niño foram acionados faz um ano ! E esse problema não é de agora !",
+            "likes": 1,
+            "score": 0.998,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "@usuario não é por que foi avisado um temporal que os patrões de todo mundo vai mandar todo mundo embora ou tirar um dia de trabalho",
+            "likes": 3,
+            "score": 0.997,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "Foi avisado o temporal. Mas mesmo assim no Brasil todo mundo paga para ver!!!! Essa e a verdade 😮",
+            "likes": 3,
+            "score": 0.997,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "Tatá PCC cortou a verba para prevenção a enchentes e segurança hídrica! Essa é a diferença.",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-10-16",
+            "video_id": "60MtcBjr6hI"
+          },
+          {
+            "text": "QUE TAL MUDAR A PREVISÃO ????????😂😂😂😂++ O P T MUDA TODO DIA. 😅😅😅😅",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-10-16",
+            "video_id": "LqJKIZ9oHvE"
+          },
+          {
+            "text": "Então, para que serve a defesa civil? E aquela empresa intitulada CET?",
+            "likes": 0,
+            "score": 0.994,
+            "date": "2026-10-15",
+            "video_id": "oYJI8wFPSKE"
+          },
+          {
+            "text": "@usuario não teriam cortado a verba da Defesa Civil e de obras contra enchentes.",
+            "likes": 1,
+            "score": 0.993,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "@usuario cortou verbas de obras contra enchentes e a da Defesa Civil, bozolóide.",
+            "likes": 2,
+            "score": 0.992,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "@usuario cortou verbas de obras contra enchentes e a da Defesa Civil, bozolóide.",
+            "likes": 5,
+            "score": 0.992,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "TARCÍSIO DE FREITAS, PRESENTEANDO O CIDADÃO PAULISTA COM ENXURRADAS E PREJUÍZO",
+            "likes": 6,
+            "score": 0.973,
+            "date": "2026-10-16",
+            "video_id": "60MtcBjr6hI"
+          },
+          {
+            "text": "Não adianta 4x4, blindado, elétrico. Água sempre vence",
+            "likes": 0,
+            "score": 0.596,
+            "date": "2026-10-15",
+            "video_id": "oYJI8wFPSKE"
+          }
+        ],
+        "critica_midia_informacao": [
+          {
+            "text": "Ha 76 anos esse túnel do Anhangabaú dá problema, na verdade já no ano de inauguração deu inundação. Parece um caso crônico e sem solução, nunca conseguiram resolver!!!\"",
+            "likes": 10,
+            "score": 0.998,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "Fake ! Isso é de ontem! Mentira não tem previsão de temporal para sexta feira, Eita fake news, clique está tão difícil assim?",
+            "likes": 1,
+            "score": 0.998,
+            "date": "2026-10-16",
+            "video_id": "LqJKIZ9oHvE"
+          },
+          {
+            "text": "Ah, é verdade, Tarcísio construiu essa obra porca, que dá problema desde o final da década de 70, né? E fez chover tbm... 😏",
+            "likes": 1,
+            "score": 0.998,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "Ah, é verdade, Tarcísio construiu essa obra porca, que dá problema desde o final da década de 70, né? Ele até faz chover!!! kkk",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "@usuario é verdade! Porém com a tal da reforma tributária vai piorar.",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-10-15",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "@usuario MENTIRA não nada de vandalismo.",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "IMAGINA QUANDO ROLAR UMA CHUVA DE VERDADE!!!!!",
+            "likes": 5,
+            "score": 0.996,
+            "date": "2026-10-15",
+            "video_id": "oYJI8wFPSKE"
+          },
+          {
+            "text": "Tarcísioooo! Nunees! VÃO continuar a negar o aquecimento global? Não tomarão as medidas para evitar o caos?",
+            "likes": 5,
+            "score": 0.996,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "e os bilionários. Além da falta de infraestrutura nas cidades, estamos falando de aquecimento global causado por decisões humanas de depredação ambiental",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-10-16",
+            "video_id": "LqJKIZ9oHvE"
+          },
+          {
+            "text": "Ah, é verdade, Tarcísio e Flávio construiram essa obra porca, que dá problema desde o final da década de 70, né? Agora, estão dando ordens para a chuva!!!... kkk",
+            "likes": 0,
+            "score": 0.995,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "VERDADE, NA GESTAO PETISTA NAO TEVE NENHUMA ENCHENTE kkkkkkkkkkkkkk esses analfabetos politicos sao MUITO ENGRACADOS que mundo vcs vivem ? serio, VCS BOSTEJAM DEMAIS KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK",
+            "likes": 0,
+            "score": 0.995,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "Vota no Tarcísio seu wag bundo",
+            "likes": 0,
+            "score": 0.994,
+            "date": "2026-10-16",
+            "video_id": "60MtcBjr6hI"
+          },
+          {
+            "text": "Cadê o prefeito? Os jornalistas deveriam verificar quais são os programas de governo para a contenção de enchentes e outros programas afins, quais os recursos destinados para essas ações e quanto foi efetivamente realizado para pelo menos amenizar esse tipo de situação. Acredito que a constatação vai surpreender.",
+            "likes": 2,
+            "score": 0.993,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "Gente... isso aconteceu uns 20 anos atrás. Chove forte na Paulista e 13 de Maio e no Anhangabaú nem tanto. Então a água desce de todas as ruas e vai se juntando na 9 de julho e vem como um Tsunami, uma verdadeira onda que enche o tunel quase que imediatamente. Sem novidades aqui. Acontece a cada par de décadas.",
+            "likes": 8,
+            "score": 0.992,
+            "date": "2026-10-15",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "Cadê o Ricardo Nunes e o Tarcísio? Tão namorando escondidos?",
+            "likes": 1,
+            "score": 0.989,
+            "date": "2026-10-15",
+            "video_id": "oYJI8wFPSKE"
+          },
+          {
+            "text": "Quando eu trabalhava de boy, no ano de 1999, o túnel ficou até o teto de água😮a nove de julho parecia um Rio bravo, deslocando os carros que estavam estacionados como se fossem de brinquedos. Fiquei dentro de um bar de esquina e assisti aquela cena triste😢tanto que nem consegui concluir o meu trabalho😅o meu chefe achou que eu estava mentindo,até ver a notícia no JN.",
+            "likes": 8,
+            "score": 0.989,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "O cara de areia mijada reduziu em 55% a verba orçamentária direta para obras de drenagem e combate a enchentes em 2026 e esses jornalecos nem comentam",
+            "likes": 0,
+            "score": 0.988,
+            "date": "2026-10-16",
+            "video_id": "cdGJH6N-XL0"
+          },
+          {
+            "text": "É disso que o povo gosta. Afinal, reelegeram Nunes e mentiroso do Tarcisio. \"a semeadura é livre, mas a colheita é obrigatória\" Que venha mais.",
+            "likes": 6,
+            "score": 0.987,
+            "date": "2026-10-16",
+            "video_id": "8fFWfBl5U0E"
+          },
+          {
+            "text": "Foi avisado o temporal. Mas mesmo assim no Brasil todo mundo paga para ver!!!! Essa e a verdade 😮",
+            "likes": 3,
+            "score": 0.982,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          },
+          {
+            "text": "caraca, aonde acharam essa apresentadora? Ta cada dia pior esse canal.",
+            "likes": 0,
+            "score": 0.977,
+            "date": "2026-10-14",
+            "video_id": "d_xzD9od8b4"
+          }
+        ]
+      },
+      "academic_studies": [],
+      "observation_status": "active",
+      "priority_tier": "moderado",
+      "flag": "prioritario",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-10-16T18:57:21Z"
+        },
+        {
+          "flag": "acompanhamento",
+          "at": "2026-10-17T02:25:30Z",
+          "criterio": "municipal_v0.3.2"
+        },
+        {
+          "flag": "prioritario",
+          "at": "2026-10-17T02:25:30Z",
+          "criterio": "municipal_v0.3.2"
+        }
+      ],
+      "n_comments_valid": 511,
+      "videos_with_valid_comments": [
+        "60MtcBjr6hI",
+        "8fFWfBl5U0E",
+        "LqJKIZ9oHvE",
+        "UTWHPXcJn68",
+        "YJWUIx1Ds-I",
+        "cdGJH6N-XL0",
+        "d_xzD9od8b4",
+        "oYJI8wFPSKE",
+        "yObp8XUvvjw"
+      ],
+      "alert_opened_at": "2026-10-16T18:57:21Z",
+      "alert_closed_at": null,
+      "alert_transitions": [],
+      "collection_health": {
+        "status": "ok",
+        "silence_type": null,
+        "last_error": null,
+        "consecutive_failures": 0
+      },
+      "last_collection_at": "2026-10-17T02:25:30Z",
+      "next_collection_at": "2026-10-17T08:25:30Z",
+      "window_finalized_at": null,
+      "counters_integrity": "ok",
+      "videos_por_formato": {
+        "longo": 6,
+        "short": 4
+      },
+      "n_videos_municipais": 7,
+      "n_videos_verificados": 10,
+      "n_comments_municipais": 150,
+      "n_comments_valid_municipal": 115,
+      "videos_with_valid_comments_municipal": [
+        "60MtcBjr6hI",
+        "8fFWfBl5U0E",
+        "LqJKIZ9oHvE",
+        "UTWHPXcJn68",
+        "YJWUIx1Ds-I",
+        "yObp8XUvvjw"
+      ],
+      "flag_reassessment": null
+    },
+    {
+      "id": "cemaden_rj_2988",
+      "municipio": "Sapucaia",
+      "uf": "RJ",
+      "tipo": "Movimentos de Massa",
+      "nivel": "Moderado",
+      "data_alerta": "16/10/2026",
+      "codibge": "3305406",
+      "lat": null,
+      "lon": null,
+      "regime": "prospective_live",
+      "n_comments": 0,
+      "n_videos": 0,
+      "unlabeled": 0,
+      "unlabeled_pct": 0.0,
+      "date_range": [
+        "",
+        ""
+      ],
+      "distribution": [
+        {
+          "key": "solidariedade_oracao_luto",
+          "label": "Solidariedade / oração / luto",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "ajuda_resgate_doacoes",
+          "label": "Ajuda / resgate / doações",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "responsabilizacao_governanca",
+          "label": "Responsabilização / governança",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "infraestrutura_ocupacao_risco",
+          "label": "Infraestrutura / ocupação de risco",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "clima_chuva_meio_ambiente",
+          "label": "Clima / chuva / meio ambiente",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "experiencia_pessoal_local",
+          "label": "Experiência pessoal / local",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "alerta_prevencao_cobranca",
+          "label": "Alerta / prevenção / cobrança",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "critica_midia_informacao",
+          "label": "Crítica à mídia / informação",
+          "count": 0,
+          "pct": 0.0
+        }
+      ],
+      "timeline": [],
+      "videos": [],
+      "all_samples": {
+        "solidariedade_oracao_luto": [],
+        "ajuda_resgate_doacoes": [],
+        "responsabilizacao_governanca": [],
+        "infraestrutura_ocupacao_risco": [],
+        "clima_chuva_meio_ambiente": [],
+        "experiencia_pessoal_local": [],
+        "alerta_prevencao_cobranca": [],
+        "critica_midia_informacao": []
+      },
+      "academic_studies": [],
+      "observation_status": "active",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-10-16T19:39:03Z"
+        }
+      ],
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "alert_opened_at": "2026-10-16T19:39:03Z",
+      "alert_closed_at": null,
+      "alert_transitions": [],
+      "collection_health": {
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
+      },
+      "last_collection_at": "2026-10-17T02:25:30Z",
+      "next_collection_at": "2026-10-18T02:25:30Z",
+      "window_finalized_at": null,
+      "counters_integrity": "ok",
+      "videos_por_formato": {},
+      "n_videos_municipais": 0,
+      "n_videos_verificados": 0,
+      "n_comments_municipais": 0,
+      "n_comments_valid_municipal": 0,
+      "videos_with_valid_comments_municipal": [],
+      "flag_reassessment": null
+    },
+    {
+      "id": "cemaden_sp_2989",
+      "municipio": "São Sebastião",
+      "uf": "SP",
+      "tipo": "Risco Hidrológico",
+      "nivel": "Moderado",
+      "data_alerta": "16/10/2026",
+      "codibge": "3550704",
+      "lat": null,
+      "lon": null,
+      "regime": "prospective_live",
+      "n_comments": 0,
+      "n_videos": 0,
+      "unlabeled": 0,
+      "unlabeled_pct": 0.0,
+      "date_range": [
+        "",
+        ""
+      ],
+      "distribution": [
+        {
+          "key": "solidariedade_oracao_luto",
+          "label": "Solidariedade / oração / luto",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "ajuda_resgate_doacoes",
+          "label": "Ajuda / resgate / doações",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "responsabilizacao_governanca",
+          "label": "Responsabilização / governança",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "infraestrutura_ocupacao_risco",
+          "label": "Infraestrutura / ocupação de risco",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "clima_chuva_meio_ambiente",
+          "label": "Clima / chuva / meio ambiente",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "experiencia_pessoal_local",
+          "label": "Experiência pessoal / local",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "alerta_prevencao_cobranca",
+          "label": "Alerta / prevenção / cobrança",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "critica_midia_informacao",
+          "label": "Crítica à mídia / informação",
+          "count": 0,
+          "pct": 0.0
+        }
+      ],
+      "timeline": [],
+      "videos": [],
+      "all_samples": {
+        "solidariedade_oracao_luto": [],
+        "ajuda_resgate_doacoes": [],
+        "responsabilizacao_governanca": [],
+        "infraestrutura_ocupacao_risco": [],
+        "clima_chuva_meio_ambiente": [],
+        "experiencia_pessoal_local": [],
+        "alerta_prevencao_cobranca": [],
+        "critica_midia_informacao": []
+      },
+      "academic_studies": [],
+      "observation_status": "active",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-10-16T21:19:14Z"
+        }
+      ],
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "alert_opened_at": "2026-10-16T21:19:14Z",
+      "alert_closed_at": null,
+      "alert_transitions": [],
+      "collection_health": {
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
+      },
+      "last_collection_at": "2026-10-17T02:25:30Z",
+      "next_collection_at": "2026-10-18T02:25:30Z",
+      "window_finalized_at": null,
+      "counters_integrity": "ok",
+      "videos_por_formato": {},
+      "n_videos_municipais": 0,
+      "n_videos_verificados": 0,
+      "n_comments_municipais": 0,
+      "n_comments_valid_municipal": 0,
+      "videos_with_valid_comments_municipal": [],
+      "flag_reassessment": null
+    },
+    {
+      "id": "cemaden_sp_2990",
+      "municipio": "Atibaia",
+      "uf": "SP",
+      "tipo": "Risco Hidrológico",
+      "nivel": "Moderado",
+      "data_alerta": "16/10/2026",
+      "codibge": "3504107",
+      "lat": null,
+      "lon": null,
+      "regime": "prospective_live",
+      "n_comments": 0,
+      "n_videos": 0,
+      "unlabeled": 0,
+      "unlabeled_pct": 0.0,
+      "date_range": [
+        "",
+        ""
+      ],
+      "distribution": [
+        {
+          "key": "solidariedade_oracao_luto",
+          "label": "Solidariedade / oração / luto",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "ajuda_resgate_doacoes",
+          "label": "Ajuda / resgate / doações",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "responsabilizacao_governanca",
+          "label": "Responsabilização / governança",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "infraestrutura_ocupacao_risco",
+          "label": "Infraestrutura / ocupação de risco",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "clima_chuva_meio_ambiente",
+          "label": "Clima / chuva / meio ambiente",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "experiencia_pessoal_local",
+          "label": "Experiência pessoal / local",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "alerta_prevencao_cobranca",
+          "label": "Alerta / prevenção / cobrança",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "critica_midia_informacao",
+          "label": "Crítica à mídia / informação",
+          "count": 0,
+          "pct": 0.0
+        }
+      ],
+      "timeline": [],
+      "videos": [],
+      "all_samples": {
+        "solidariedade_oracao_luto": [],
+        "ajuda_resgate_doacoes": [],
+        "responsabilizacao_governanca": [],
+        "infraestrutura_ocupacao_risco": [],
+        "clima_chuva_meio_ambiente": [],
+        "experiencia_pessoal_local": [],
+        "alerta_prevencao_cobranca": [],
+        "critica_midia_informacao": []
+      },
+      "academic_studies": [],
+      "observation_status": "active",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-10-16T22:30:49Z"
+        }
+      ],
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "alert_opened_at": "2026-10-16T22:30:49Z",
+      "alert_closed_at": null,
+      "alert_transitions": [],
+      "collection_health": {
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
+      },
+      "last_collection_at": "2026-10-17T02:25:30Z",
+      "next_collection_at": "2026-10-18T02:25:30Z",
+      "window_finalized_at": null,
+      "counters_integrity": "ok",
+      "videos_por_formato": {},
+      "n_videos_municipais": 0,
+      "n_videos_verificados": 0,
+      "n_comments_municipais": 0,
+      "n_comments_valid_municipal": 0,
+      "videos_with_valid_comments_municipal": [],
+      "flag_reassessment": null
+    },
+    {
+      "id": "cemaden_sp_2991",
+      "municipio": "São José dos Campos",
+      "uf": "SP",
+      "tipo": "Risco Hidrológico",
+      "nivel": "Moderado",
+      "data_alerta": "16/10/2026",
+      "codibge": "3549904",
+      "lat": null,
+      "lon": null,
+      "regime": "prospective_live",
+      "n_comments": 0,
+      "n_videos": 0,
+      "unlabeled": 0,
+      "unlabeled_pct": 0.0,
+      "date_range": [
+        "",
+        ""
+      ],
+      "distribution": [
+        {
+          "key": "solidariedade_oracao_luto",
+          "label": "Solidariedade / oração / luto",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "ajuda_resgate_doacoes",
+          "label": "Ajuda / resgate / doações",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "responsabilizacao_governanca",
+          "label": "Responsabilização / governança",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "infraestrutura_ocupacao_risco",
+          "label": "Infraestrutura / ocupação de risco",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "clima_chuva_meio_ambiente",
+          "label": "Clima / chuva / meio ambiente",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "experiencia_pessoal_local",
+          "label": "Experiência pessoal / local",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "alerta_prevencao_cobranca",
+          "label": "Alerta / prevenção / cobrança",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "critica_midia_informacao",
+          "label": "Crítica à mídia / informação",
+          "count": 0,
+          "pct": 0.0
+        }
+      ],
+      "timeline": [],
+      "videos": [],
+      "all_samples": {
+        "solidariedade_oracao_luto": [],
+        "ajuda_resgate_doacoes": [],
+        "responsabilizacao_governanca": [],
+        "infraestrutura_ocupacao_risco": [],
+        "clima_chuva_meio_ambiente": [],
+        "experiencia_pessoal_local": [],
+        "alerta_prevencao_cobranca": [],
+        "critica_midia_informacao": []
+      },
+      "academic_studies": [],
+      "observation_status": "active",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-10-16T22:32:05Z"
+        }
+      ],
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "alert_opened_at": "2026-10-16T22:32:05Z",
+      "alert_closed_at": null,
+      "alert_transitions": [],
+      "collection_health": {
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
+      },
+      "last_collection_at": "2026-10-17T02:25:30Z",
+      "next_collection_at": "2026-10-18T02:25:30Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -24621,7 +26685,7 @@
           "criterio": "municipal_v0.3.2"
         }
       ],
-      "n_comments_valid": 1213,
+      "n_comments_valid": 1220,
       "videos_with_valid_comments": [
         "1vGCCXXMnWg",
         "E3-SPgp0UGU",
@@ -24649,7 +26713,7 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=ok;comments=api_error",
-        "consecutive_failures": 5
+        "consecutive_failures": 6
       },
       "last_collection_at": "2026-10-14T21:10:46Z",
       "next_collection_at": "2026-10-15T22:04:38Z",
@@ -24662,7 +26726,7 @@
       "n_videos_municipais": 5,
       "n_videos_verificados": 8,
       "n_comments_municipais": 4,
-      "n_comments_valid_municipal": 487,
+      "n_comments_valid_municipal": 488,
       "videos_with_valid_comments_municipal": [
         "1vGCCXXMnWg",
         "E3-SPgp0UGU",
@@ -25960,7 +28024,7 @@
           "criterio": "municipal_v0.3.2"
         }
       ],
-      "n_comments_valid": 284,
+      "n_comments_valid": 294,
       "videos_with_valid_comments": [
         "1XJxTnReDAc",
         "E3-SPgp0UGU",
@@ -25980,10 +28044,10 @@
       "alert_closed_at": "2026-10-16T02:32:47Z",
       "alert_transitions": [],
       "collection_health": {
-        "status": "ok",
+        "status": "error",
         "silence_type": null,
-        "last_error": null,
-        "consecutive_failures": 0
+        "last_error": "youtube=ok;comments=api_error",
+        "consecutive_failures": 1
       },
       "last_collection_at": "2026-10-16T15:52:57Z",
       "next_collection_at": "2026-10-16T21:52:57Z",
