@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T02:53:03Z",
+  "generated_at": "2026-10-20T10:45:55Z",
   "pipeline_version": "0.3.3",
   "pilot_mode": true,
   "dry_run": false,
@@ -271,20 +271,20 @@
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
-      "n_comments": 4,
+      "n_comments": 10,
       "n_videos": 1,
       "unlabeled": 0,
       "unlabeled_pct": 0.0,
       "date_range": [
         "2026-10-19",
-        "2026-10-19"
+        "2026-10-20"
       ],
       "distribution": [
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
-          "count": 3,
-          "pct": 75.0
+          "count": 8,
+          "pct": 80.0
         },
         {
           "key": "ajuda_resgate_doacoes",
@@ -295,8 +295,8 @@
         {
           "key": "responsabilizacao_governanca",
           "label": "Responsabilização / governança",
-          "count": 1,
-          "pct": 25.0
+          "count": 2,
+          "pct": 20.0
         },
         {
           "key": "infraestrutura_ocupacao_risco",
@@ -320,7 +320,7 @@
           "key": "alerta_prevencao_cobranca",
           "label": "Alerta / prevenção / cobrança",
           "count": 1,
-          "pct": 25.0
+          "pct": 10.0
         },
         {
           "key": "critica_midia_informacao",
@@ -332,23 +332,27 @@
       "timeline": [
         {
           "date": "19/10/26",
-          "count": 4
+          "count": 7
+        },
+        {
+          "date": "20/10/26",
+          "count": 3
         }
       ],
       "videos": [
         {
           "video_id": "xMo_APjhbGY",
-          "n_comments": 4,
-          "total_likes": 5,
+          "n_comments": 10,
+          "total_likes": 21,
           "first_comment": "19/10/2026",
           "top_categories": [
             {
               "label": "Solidariedade",
-              "count": 3
+              "count": 8
             },
             {
               "label": "Responsabilização",
-              "count": 1
+              "count": 2
             },
             {
               "label": "Alerta",
@@ -362,22 +366,57 @@
       "all_samples": {
         "solidariedade_oracao_luto": [
           {
+            "text": "Que Deus proteja a cidade e o povo de Ilha",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-10-19",
+            "video_id": "xMo_APjhbGY"
+          },
+          {
+            "text": "Deus proteja essas famílias Boa noite que a paz de Jesus esteja com você",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-10-20",
+            "video_id": "xMo_APjhbGY"
+          },
+          {
+            "text": "Que Deus proteja estas famílias.",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-10-20",
+            "video_id": "xMo_APjhbGY"
+          },
+          {
             "text": "Misericórdia 😮",
-            "likes": 2,
+            "likes": 5,
             "score": 0.994,
             "date": "2026-10-19",
             "video_id": "xMo_APjhbGY"
           },
           {
             "text": "Misericórdia Senhor",
-            "likes": 2,
+            "likes": 3,
             "score": 0.993,
             "date": "2026-10-19",
             "video_id": "xMo_APjhbGY"
           },
           {
+            "text": "😮😢",
+            "likes": 1,
+            "score": 0.974,
+            "date": "2026-10-20",
+            "video_id": "xMo_APjhbGY"
+          },
+          {
+            "text": "😭😭😭😭😭😭😭",
+            "likes": 1,
+            "score": 0.974,
+            "date": "2026-10-19",
+            "video_id": "xMo_APjhbGY"
+          },
+          {
             "text": "Deus avisando e o povo brincando!!",
-            "likes": 0,
+            "likes": 2,
             "score": 0.934,
             "date": "2026-10-19",
             "video_id": "xMo_APjhbGY"
@@ -386,8 +425,15 @@
         "ajuda_resgate_doacoes": [],
         "responsabilizacao_governanca": [
           {
-            "text": "Não seria culpa do Bolsonaro?",
+            "text": "OS PREFEITOS DE ILHÉUS SÓ CUIDAM DA ZONA SUL 😢😢😢😢",
             "likes": 1,
+            "score": 0.998,
+            "date": "2026-10-19",
+            "video_id": "xMo_APjhbGY"
+          },
+          {
+            "text": "Não seria culpa do Bolsonaro?",
+            "likes": 5,
             "score": 0.997,
             "date": "2026-10-19",
             "video_id": "xMo_APjhbGY"
@@ -399,7 +445,7 @@
         "alerta_prevencao_cobranca": [
           {
             "text": "Deus avisando e o povo brincando!!",
-            "likes": 0,
+            "likes": 2,
             "score": 0.997,
             "date": "2026-10-19",
             "video_id": "xMo_APjhbGY"
@@ -422,7 +468,7 @@
           "criterio": "municipal_v0.3.2"
         }
       ],
-      "n_comments_valid": 4,
+      "n_comments_valid": 10,
       "videos_with_valid_comments": [
         "xMo_APjhbGY"
       ],
@@ -435,8 +481,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-10-19T18:05:23Z",
-      "next_collection_at": "2026-10-20T06:05:23Z",
+      "last_collection_at": "2026-10-20T10:45:45Z",
+      "next_collection_at": "2026-10-20T22:45:45Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {
@@ -444,8 +490,8 @@
       },
       "n_videos_municipais": 1,
       "n_videos_verificados": 1,
-      "n_comments_municipais": 4,
-      "n_comments_valid_municipal": 4,
+      "n_comments_municipais": 10,
+      "n_comments_valid_municipal": 10,
       "videos_with_valid_comments_municipal": [
         "xMo_APjhbGY"
       ],
