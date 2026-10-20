@@ -1,10 +1,10 @@
 {
   "schema_version": "0.2",
   "pipeline_version": "0.3.3",
-  "last_run_at": "2026-10-20T10:45:45Z",
+  "last_run_at": "2026-10-20T16:08:40Z",
   "last_run_status": "success",
-  "last_run_duration_seconds": 10,
-  "last_cemaden_check_at": "2026-10-20T10:45:45Z",
+  "last_run_duration_seconds": 1,
+  "last_cemaden_check_at": "2026-10-20T16:08:40Z",
   "youtube_quota": {
     "used_today": 4,
     "reset_at": "2026-10-21T07:00:00Z",
@@ -27,7 +27,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-10-03T08:16:49Z",
-      "last_seen_open_at": "2026-10-20T10:45:45Z",
+      "last_seen_open_at": "2026-10-20T16:08:40Z",
       "closed_at": null,
       "transitions": [
         {
@@ -83,7 +83,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-10-03T21:48:44Z",
-      "last_seen_open_at": "2026-10-20T10:45:45Z",
+      "last_seen_open_at": "2026-10-20T16:08:40Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -138,7 +138,7 @@
       ],
       "evento": "Movimentos de Massa",
       "opened_at": "2026-10-18T09:05:44Z",
-      "last_seen_open_at": "2026-10-20T10:45:45Z",
+      "last_seen_open_at": "2026-10-20T16:08:40Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [
@@ -184,152 +184,6 @@
       "valid_comments_by_video": {
         "xMo_APjhbGY": 10
       }
-    },
-    "cemaden_mg_3016": {
-      "codibge": "3113701",
-      "municipio": "Carlos Chagas",
-      "uf": "MG",
-      "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-18T19:12:48Z"
-        }
-      ],
-      "evento": "Movimentos de Massa",
-      "opened_at": "2026-10-18T19:12:48Z",
-      "last_seen_open_at": "2026-10-20T10:45:45Z",
-      "closed_at": null,
-      "transitions": [
-        {
-          "from": "Alto",
-          "to": "Moderado",
-          "at": "2026-10-19T18:05:23Z"
-        }
-      ],
-      "videos_collected": [],
-      "n_videos_aderentes": 0,
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "last_new_data_at": null,
-      "last_new_comment_at": null,
-      "last_collection_at": "2026-10-20T02:52:14Z",
-      "next_collection_at": "2026-10-21T02:52:14Z",
-      "n_videos_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "last_attempt_at": "2026-10-20T02:52:14Z",
-      "consecutive_failures": 0,
-      "last_error": null,
-      "legacy_unverified": false,
-      "counters_integrity": "ok"
-    },
-    "cemaden_mg_3018": {
-      "codibge": "3124203",
-      "municipio": "Espera Feliz",
-      "uf": "MG",
-      "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-19T01:35:14Z"
-        }
-      ],
-      "evento": "Movimentos de Massa",
-      "opened_at": "2026-10-19T01:35:14Z",
-      "last_seen_open_at": "2026-10-20T10:45:45Z",
-      "closed_at": null,
-      "transitions": [],
-      "videos_collected": [],
-      "n_videos_aderentes": 0,
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "last_new_data_at": null,
-      "last_new_comment_at": null,
-      "last_collection_at": "2026-10-19T11:44:38Z",
-      "next_collection_at": "2026-10-20T11:44:38Z",
-      "n_videos_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "last_attempt_at": "2026-10-19T11:44:38Z",
-      "consecutive_failures": 0,
-      "last_error": null,
-      "legacy_unverified": false,
-      "counters_integrity": "ok"
-    },
-    "cemaden_es_3019": {
-      "codibge": "3203700",
-      "municipio": "Muniz Freire",
-      "uf": "ES",
-      "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-19T05:12:33Z"
-        }
-      ],
-      "evento": "Movimentos de Massa",
-      "opened_at": "2026-10-19T05:12:33Z",
-      "last_seen_open_at": "2026-10-20T10:45:45Z",
-      "closed_at": null,
-      "transitions": [],
-      "videos_collected": [],
-      "n_videos_aderentes": 0,
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "last_new_data_at": null,
-      "last_new_comment_at": null,
-      "last_collection_at": "2026-10-19T11:44:38Z",
-      "next_collection_at": "2026-10-20T11:44:38Z",
-      "n_videos_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "last_attempt_at": "2026-10-19T11:44:38Z",
-      "consecutive_failures": 0,
-      "last_error": null,
-      "legacy_unverified": false,
-      "counters_integrity": "ok"
-    },
-    "cemaden_es_3020": {
-      "codibge": "3201803",
-      "municipio": "Divino de São Lourenço",
-      "uf": "ES",
-      "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-19T05:13:45Z"
-        }
-      ],
-      "evento": "Movimentos de Massa",
-      "opened_at": "2026-10-19T05:13:45Z",
-      "last_seen_open_at": "2026-10-20T10:45:45Z",
-      "closed_at": null,
-      "transitions": [],
-      "videos_collected": [],
-      "n_videos_aderentes": 0,
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "last_new_data_at": null,
-      "last_new_comment_at": null,
-      "last_collection_at": "2026-10-19T11:44:38Z",
-      "next_collection_at": "2026-10-20T11:44:38Z",
-      "n_videos_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "last_attempt_at": "2026-10-19T11:44:38Z",
-      "consecutive_failures": 0,
-      "last_error": null,
-      "legacy_unverified": false,
-      "counters_integrity": "ok"
     }
   },
   "extended_window_alerts": {
