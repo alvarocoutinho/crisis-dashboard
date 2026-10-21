@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T10:57:15Z",
+  "generated_at": "2026-10-21T16:24:38Z",
   "pipeline_version": "0.3.3",
   "pilot_mode": true,
   "dry_run": false,
@@ -128,243 +128,6 @@
         "contagem": "observada",
         "robusta_ao_teto": true
       }
-    },
-    {
-      "id": "cemaden_ba_3009",
-      "municipio": "Ilhéus",
-      "uf": "BA",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "18/10/2026",
-      "codibge": "2913606",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 10,
-      "n_videos": 1,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "2026-10-19",
-        "2026-10-20"
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 8,
-          "pct": 80.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 2,
-          "pct": 20.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 1,
-          "pct": 10.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [
-        {
-          "date": "19/10/26",
-          "count": 7
-        },
-        {
-          "date": "20/10/26",
-          "count": 3
-        }
-      ],
-      "videos": [
-        {
-          "video_id": "xMo_APjhbGY",
-          "n_comments": 10,
-          "total_likes": 28,
-          "first_comment": "19/10/2026",
-          "top_categories": [
-            {
-              "label": "Solidariedade",
-              "count": 8
-            },
-            {
-              "label": "Responsabilização",
-              "count": 2
-            },
-            {
-              "label": "Alerta",
-              "count": 1
-            }
-          ],
-          "municipal_evidence": "titulo+descricao",
-          "formato": "longo"
-        }
-      ],
-      "all_samples": {
-        "solidariedade_oracao_luto": [
-          {
-            "text": "Que Deus proteja a cidade e o povo de Ilha",
-            "likes": 2,
-            "score": 0.996,
-            "date": "2026-10-19",
-            "video_id": "xMo_APjhbGY"
-          },
-          {
-            "text": "Deus proteja essas famílias Boa noite que a paz de Jesus esteja com você",
-            "likes": 2,
-            "score": 0.995,
-            "date": "2026-10-20",
-            "video_id": "xMo_APjhbGY"
-          },
-          {
-            "text": "Que Deus proteja estas famílias.",
-            "likes": 2,
-            "score": 0.995,
-            "date": "2026-10-20",
-            "video_id": "xMo_APjhbGY"
-          },
-          {
-            "text": "Misericórdia 😮",
-            "likes": 5,
-            "score": 0.994,
-            "date": "2026-10-19",
-            "video_id": "xMo_APjhbGY"
-          },
-          {
-            "text": "Misericórdia Senhor",
-            "likes": 3,
-            "score": 0.993,
-            "date": "2026-10-19",
-            "video_id": "xMo_APjhbGY"
-          },
-          {
-            "text": "😮😢",
-            "likes": 2,
-            "score": 0.974,
-            "date": "2026-10-20",
-            "video_id": "xMo_APjhbGY"
-          },
-          {
-            "text": "😭😭😭😭😭😭😭",
-            "likes": 2,
-            "score": 0.974,
-            "date": "2026-10-19",
-            "video_id": "xMo_APjhbGY"
-          },
-          {
-            "text": "Deus avisando e o povo brincando!!",
-            "likes": 3,
-            "score": 0.934,
-            "date": "2026-10-19",
-            "video_id": "xMo_APjhbGY"
-          }
-        ],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [
-          {
-            "text": "OS PREFEITOS DE ILHÉUS SÓ CUIDAM DA ZONA SUL 😢😢😢😢",
-            "likes": 2,
-            "score": 0.998,
-            "date": "2026-10-19",
-            "video_id": "xMo_APjhbGY"
-          },
-          {
-            "text": "Não seria culpa do Bolsonaro?",
-            "likes": 5,
-            "score": 0.997,
-            "date": "2026-10-19",
-            "video_id": "xMo_APjhbGY"
-          }
-        ],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [
-          {
-            "text": "Deus avisando e o povo brincando!!",
-            "likes": 3,
-            "score": 0.997,
-            "date": "2026-10-19",
-            "video_id": "xMo_APjhbGY"
-          }
-        ],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "acompanhamento",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-18T09:05:44Z"
-        },
-        {
-          "flag": "acompanhamento",
-          "at": "2026-10-19T18:05:23Z",
-          "criterio": "municipal_v0.3.2"
-        }
-      ],
-      "n_comments_valid": 10,
-      "videos_with_valid_comments": [
-        "xMo_APjhbGY"
-      ],
-      "alert_opened_at": "2026-10-18T09:05:44Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "ok",
-        "silence_type": null,
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-10-21T02:46:22Z",
-      "next_collection_at": "2026-10-21T14:46:22Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {
-        "longo": 1
-      },
-      "n_videos_municipais": 1,
-      "n_videos_verificados": 1,
-      "n_comments_municipais": 10,
-      "n_comments_valid_municipal": 10,
-      "videos_with_valid_comments_municipal": [
-        "xMo_APjhbGY"
-      ],
-      "flag_reassessment": null
     },
     {
       "id": "cemaden_am_3021",
@@ -26590,6 +26353,243 @@
         "VtRHeFHK-Oo",
         "e9dw5BvToCU",
         "svUiRVBtjLI"
+      ],
+      "flag_reassessment": null
+    },
+    {
+      "id": "cemaden_ba_3009",
+      "municipio": "Ilhéus",
+      "uf": "BA",
+      "tipo": "Movimentos de Massa",
+      "nivel": "Moderado",
+      "data_alerta": "18/10/2026",
+      "codibge": "2913606",
+      "lat": null,
+      "lon": null,
+      "regime": "prospective_live",
+      "n_comments": 10,
+      "n_videos": 1,
+      "unlabeled": 0,
+      "unlabeled_pct": 0.0,
+      "date_range": [
+        "2026-10-19",
+        "2026-10-20"
+      ],
+      "distribution": [
+        {
+          "key": "solidariedade_oracao_luto",
+          "label": "Solidariedade / oração / luto",
+          "count": 8,
+          "pct": 80.0
+        },
+        {
+          "key": "ajuda_resgate_doacoes",
+          "label": "Ajuda / resgate / doações",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "responsabilizacao_governanca",
+          "label": "Responsabilização / governança",
+          "count": 2,
+          "pct": 20.0
+        },
+        {
+          "key": "infraestrutura_ocupacao_risco",
+          "label": "Infraestrutura / ocupação de risco",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "clima_chuva_meio_ambiente",
+          "label": "Clima / chuva / meio ambiente",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "experiencia_pessoal_local",
+          "label": "Experiência pessoal / local",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "alerta_prevencao_cobranca",
+          "label": "Alerta / prevenção / cobrança",
+          "count": 1,
+          "pct": 10.0
+        },
+        {
+          "key": "critica_midia_informacao",
+          "label": "Crítica à mídia / informação",
+          "count": 0,
+          "pct": 0.0
+        }
+      ],
+      "timeline": [
+        {
+          "date": "19/10/26",
+          "count": 7
+        },
+        {
+          "date": "20/10/26",
+          "count": 3
+        }
+      ],
+      "videos": [
+        {
+          "video_id": "xMo_APjhbGY",
+          "n_comments": 10,
+          "total_likes": 28,
+          "first_comment": "19/10/2026",
+          "top_categories": [
+            {
+              "label": "Solidariedade",
+              "count": 8
+            },
+            {
+              "label": "Responsabilização",
+              "count": 2
+            },
+            {
+              "label": "Alerta",
+              "count": 1
+            }
+          ],
+          "municipal_evidence": "titulo+descricao",
+          "formato": "longo"
+        }
+      ],
+      "all_samples": {
+        "solidariedade_oracao_luto": [
+          {
+            "text": "Que Deus proteja a cidade e o povo de Ilha",
+            "likes": 2,
+            "score": 0.996,
+            "date": "2026-10-19",
+            "video_id": "xMo_APjhbGY"
+          },
+          {
+            "text": "Deus proteja essas famílias Boa noite que a paz de Jesus esteja com você",
+            "likes": 2,
+            "score": 0.995,
+            "date": "2026-10-20",
+            "video_id": "xMo_APjhbGY"
+          },
+          {
+            "text": "Que Deus proteja estas famílias.",
+            "likes": 2,
+            "score": 0.995,
+            "date": "2026-10-20",
+            "video_id": "xMo_APjhbGY"
+          },
+          {
+            "text": "Misericórdia 😮",
+            "likes": 5,
+            "score": 0.994,
+            "date": "2026-10-19",
+            "video_id": "xMo_APjhbGY"
+          },
+          {
+            "text": "Misericórdia Senhor",
+            "likes": 3,
+            "score": 0.993,
+            "date": "2026-10-19",
+            "video_id": "xMo_APjhbGY"
+          },
+          {
+            "text": "😮😢",
+            "likes": 2,
+            "score": 0.974,
+            "date": "2026-10-20",
+            "video_id": "xMo_APjhbGY"
+          },
+          {
+            "text": "😭😭😭😭😭😭😭",
+            "likes": 2,
+            "score": 0.974,
+            "date": "2026-10-19",
+            "video_id": "xMo_APjhbGY"
+          },
+          {
+            "text": "Deus avisando e o povo brincando!!",
+            "likes": 3,
+            "score": 0.934,
+            "date": "2026-10-19",
+            "video_id": "xMo_APjhbGY"
+          }
+        ],
+        "ajuda_resgate_doacoes": [],
+        "responsabilizacao_governanca": [
+          {
+            "text": "OS PREFEITOS DE ILHÉUS SÓ CUIDAM DA ZONA SUL 😢😢😢😢",
+            "likes": 2,
+            "score": 0.998,
+            "date": "2026-10-19",
+            "video_id": "xMo_APjhbGY"
+          },
+          {
+            "text": "Não seria culpa do Bolsonaro?",
+            "likes": 5,
+            "score": 0.997,
+            "date": "2026-10-19",
+            "video_id": "xMo_APjhbGY"
+          }
+        ],
+        "infraestrutura_ocupacao_risco": [],
+        "clima_chuva_meio_ambiente": [],
+        "experiencia_pessoal_local": [],
+        "alerta_prevencao_cobranca": [
+          {
+            "text": "Deus avisando e o povo brincando!!",
+            "likes": 3,
+            "score": 0.997,
+            "date": "2026-10-19",
+            "video_id": "xMo_APjhbGY"
+          }
+        ],
+        "critica_midia_informacao": []
+      },
+      "academic_studies": [],
+      "observation_status": "extended",
+      "priority_tier": "moderado",
+      "flag": "acompanhamento",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-10-18T09:05:44Z"
+        },
+        {
+          "flag": "acompanhamento",
+          "at": "2026-10-19T18:05:23Z",
+          "criterio": "municipal_v0.3.2"
+        }
+      ],
+      "n_comments_valid": 10,
+      "videos_with_valid_comments": [
+        "xMo_APjhbGY"
+      ],
+      "alert_opened_at": "2026-10-18T09:05:44Z",
+      "alert_closed_at": "2026-10-21T16:24:36Z",
+      "alert_transitions": [],
+      "collection_health": {
+        "status": "ok",
+        "silence_type": null,
+        "last_error": null,
+        "consecutive_failures": 0
+      },
+      "last_collection_at": "2026-10-21T02:46:22Z",
+      "next_collection_at": "2026-10-22T04:24:36Z",
+      "window_finalized_at": null,
+      "counters_integrity": "ok",
+      "videos_por_formato": {
+        "longo": 1
+      },
+      "n_videos_municipais": 1,
+      "n_videos_verificados": 1,
+      "n_comments_municipais": 10,
+      "n_comments_valid_municipal": 10,
+      "videos_with_valid_comments_municipal": [
+        "xMo_APjhbGY"
       ],
       "flag_reassessment": null
     }
