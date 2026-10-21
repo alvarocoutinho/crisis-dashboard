@@ -1,15 +1,15 @@
 {
   "schema_version": "0.2",
   "pipeline_version": "0.3.3",
-  "last_run_at": "2026-10-20T21:05:51Z",
+  "last_run_at": "2026-10-21T02:46:22Z",
   "last_run_status": "success",
-  "last_run_duration_seconds": 1,
-  "last_cemaden_check_at": "2026-10-20T21:05:51Z",
+  "last_run_duration_seconds": 15,
+  "last_cemaden_check_at": "2026-10-21T02:46:22Z",
   "youtube_quota": {
-    "used_today": 4,
+    "used_today": 11,
     "reset_at": "2026-10-21T07:00:00Z",
     "day": "2026-10-20",
-    "searches_today": 2
+    "searches_today": 6
   },
   "active_alerts": {
     "cemaden_rs_2884": {
@@ -27,7 +27,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-10-03T08:16:49Z",
-      "last_seen_open_at": "2026-10-20T21:05:51Z",
+      "last_seen_open_at": "2026-10-21T02:46:22Z",
       "closed_at": null,
       "transitions": [
         {
@@ -83,7 +83,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-10-03T21:48:44Z",
-      "last_seen_open_at": "2026-10-20T21:05:51Z",
+      "last_seen_open_at": "2026-10-21T02:46:22Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -138,7 +138,7 @@
       ],
       "evento": "Movimentos de Massa",
       "opened_at": "2026-10-18T09:05:44Z",
-      "last_seen_open_at": "2026-10-20T21:05:51Z",
+      "last_seen_open_at": "2026-10-21T02:46:22Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [
@@ -151,14 +151,14 @@
       ],
       "last_new_data_at": "2026-10-20T10:45:45Z",
       "last_new_comment_at": "2026-10-20T10:45:45Z",
-      "last_collection_at": "2026-10-20T10:45:45Z",
-      "next_collection_at": "2026-10-20T22:45:45Z",
+      "last_collection_at": "2026-10-21T02:46:22Z",
+      "next_collection_at": "2026-10-21T14:46:22Z",
       "n_videos_municipais": 1,
       "n_comments_valid_municipal": 10,
       "videos_with_valid_comments_municipal": [
         "xMo_APjhbGY"
       ],
-      "last_attempt_at": "2026-10-20T10:45:45Z",
+      "last_attempt_at": "2026-10-21T02:46:22Z",
       "consecutive_failures": 0,
       "last_error": null,
       "legacy_unverified": false,
@@ -184,6 +184,40 @@
       "valid_comments_by_video": {
         "xMo_APjhbGY": 10
       }
+    },
+    "cemaden_am_3021": {
+      "codibge": "1301605",
+      "municipio": "Fonte Boa",
+      "uf": "AM",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-10-20T19:59:39Z"
+        }
+      ],
+      "evento": "Movimentos de Massa",
+      "opened_at": "2026-10-20T19:59:39Z",
+      "last_seen_open_at": "2026-10-21T02:46:22Z",
+      "closed_at": null,
+      "transitions": [],
+      "videos_collected": [],
+      "n_videos_aderentes": 0,
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "last_new_data_at": null,
+      "last_new_comment_at": null,
+      "last_collection_at": "2026-10-21T02:46:22Z",
+      "next_collection_at": "2026-10-22T02:46:22Z",
+      "n_videos_municipais": 0,
+      "n_comments_valid_municipal": 0,
+      "videos_with_valid_comments_municipal": [],
+      "last_attempt_at": "2026-10-21T02:46:22Z",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "legacy_unverified": false
     }
   },
   "extended_window_alerts": {
