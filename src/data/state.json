@@ -1,73 +1,17 @@
 {
   "schema_version": "0.2",
   "pipeline_version": "0.3.3",
-  "last_run_at": "2026-10-21T02:46:22Z",
+  "last_run_at": "2026-10-21T10:57:13Z",
   "last_run_status": "success",
-  "last_run_duration_seconds": 15,
-  "last_cemaden_check_at": "2026-10-21T02:46:22Z",
+  "last_run_duration_seconds": 1,
+  "last_cemaden_check_at": "2026-10-21T10:57:13Z",
   "youtube_quota": {
-    "used_today": 11,
-    "reset_at": "2026-10-21T07:00:00Z",
-    "day": "2026-10-20",
-    "searches_today": 6
+    "used_today": 0,
+    "reset_at": "2026-10-22T07:00:00Z",
+    "day": "2026-10-21",
+    "searches_today": 0
   },
   "active_alerts": {
-    "cemaden_rs_2884": {
-      "codibge": "4310603",
-      "municipio": "Itaqui",
-      "uf": "RS",
-      "nivel_atual": "Alto",
-      "priority_tier": "alto",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-03T08:16:49Z"
-        }
-      ],
-      "evento": "Risco Hidrológico",
-      "opened_at": "2026-10-03T08:16:49Z",
-      "last_seen_open_at": "2026-10-21T02:46:22Z",
-      "closed_at": null,
-      "transitions": [
-        {
-          "from": "Moderado",
-          "to": "Alto",
-          "at": "2026-10-04T03:39:41Z"
-        }
-      ],
-      "videos_collected": [],
-      "n_videos_aderentes": 0,
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "last_new_data_at": null,
-      "last_new_comment_at": null,
-      "last_collection_at": "2026-10-13T20:07:30Z",
-      "next_collection_at": "2026-10-14T20:07:30Z",
-      "counters_integrity": "ok",
-      "legacy_unverified": false,
-      "last_attempt_at": "2026-10-13T20:07:30Z",
-      "consecutive_failures": 0,
-      "last_error": null,
-      "window_finalized_at": "2026-10-13T20:07:30Z",
-      "window_finalized_reason": "final_sweep",
-      "n_videos_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": {
-        "at": "2026-10-13T23:46:37Z",
-        "from": "alerta",
-        "to": "alerta",
-        "criterio": "municipal_v0.3.2",
-        "n_videos": 0,
-        "n_videos_municipais": 0,
-        "n_comments_valid_municipal": 0,
-        "n_videos_with_valid_municipal": 0,
-        "contagem": "observada",
-        "robusta_ao_teto": true
-      },
-      "video_format": {}
-    },
     "cemaden_rs_2897": {
       "codibge": "4322400",
       "municipio": "Uruguaiana",
@@ -83,7 +27,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-10-03T21:48:44Z",
-      "last_seen_open_at": "2026-10-21T02:46:22Z",
+      "last_seen_open_at": "2026-10-21T10:57:13Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -138,7 +82,7 @@
       ],
       "evento": "Movimentos de Massa",
       "opened_at": "2026-10-18T09:05:44Z",
-      "last_seen_open_at": "2026-10-21T02:46:22Z",
+      "last_seen_open_at": "2026-10-21T10:57:13Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [
@@ -200,7 +144,7 @@
       ],
       "evento": "Movimentos de Massa",
       "opened_at": "2026-10-20T19:59:39Z",
-      "last_seen_open_at": "2026-10-21T02:46:22Z",
+      "last_seen_open_at": "2026-10-21T10:57:13Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -217,7 +161,8 @@
       "last_attempt_at": "2026-10-21T02:46:22Z",
       "consecutive_failures": 0,
       "last_error": null,
-      "legacy_unverified": false
+      "legacy_unverified": false,
+      "counters_integrity": "ok"
     }
   },
   "extended_window_alerts": {
@@ -3238,67 +3183,6 @@
         "sXgehEdLoxY": "longo"
       }
     },
-    "cemaden_rj_2914": {
-      "codibge": "3302304",
-      "municipio": "Laje do Muriaé",
-      "uf": "RJ",
-      "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
-      "flag": "acompanhamento",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-05T19:37:02Z"
-        },
-        {
-          "flag": "acompanhamento",
-          "at": "2026-10-07T03:37:56Z"
-        }
-      ],
-      "evento": "Movimentos de Massa",
-      "opened_at": "2026-10-05T19:37:02Z",
-      "last_seen_open_at": "2026-10-07T03:37:56Z",
-      "closed_at": "2026-10-07T12:26:07Z",
-      "transitions": [],
-      "videos_collected": [
-        "2IdrfL2QPlc"
-      ],
-      "n_videos_aderentes": 1,
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "last_new_data_at": "2026-10-07T03:37:56Z",
-      "last_new_comment_at": null,
-      "last_collection_at": "2026-10-14T10:58:00Z",
-      "next_collection_at": "2026-10-14T22:58:00Z",
-      "counters_integrity": "ok",
-      "video_evidence": {
-        "2IdrfL2QPlc": "titulo+descricao"
-      },
-      "n_videos_municipais": 1,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": {
-        "at": "2026-10-13T23:46:37Z",
-        "from": "acompanhamento",
-        "to": "acompanhamento",
-        "criterio": "municipal_v0.3.2",
-        "n_videos": 1,
-        "n_videos_municipais": 1,
-        "n_comments_valid_municipal": 0,
-        "n_videos_with_valid_municipal": 0,
-        "contagem": "observada",
-        "robusta_ao_teto": true
-      },
-      "last_attempt_at": "2026-10-14T10:58:00Z",
-      "consecutive_failures": 0,
-      "last_error": null,
-      "legacy_unverified": false,
-      "window_finalized_at": "2026-10-14T10:58:00Z",
-      "window_finalized_reason": "final_sweep",
-      "video_format": {
-        "2IdrfL2QPlc": "short"
-      }
-    },
     "cemaden_sp_2974": {
       "codibge": "3550308",
       "municipio": "São Paulo",
@@ -4367,6 +4251,69 @@
         "c-VVYG14cic": "ao_vivo",
         "lxyI8MQMEqw": "short"
       }
+    },
+    "cemaden_rj_2914": {
+      "codibge": "3302304",
+      "municipio": "Laje do Muriaé",
+      "uf": "RJ",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "acompanhamento",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-10-05T19:37:02Z"
+        },
+        {
+          "flag": "acompanhamento",
+          "at": "2026-10-07T03:37:56Z"
+        }
+      ],
+      "evento": "Movimentos de Massa",
+      "opened_at": "2026-10-05T19:37:02Z",
+      "last_seen_open_at": "2026-10-07T03:37:56Z",
+      "closed_at": "2026-10-07T12:26:07Z",
+      "transitions": [],
+      "videos_collected": [
+        "2IdrfL2QPlc"
+      ],
+      "n_videos_aderentes": 1,
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "last_new_data_at": "2026-10-07T03:37:56Z",
+      "last_new_comment_at": null,
+      "last_collection_at": "2026-10-14T10:58:00Z",
+      "next_collection_at": "2026-10-14T22:58:00Z",
+      "counters_integrity": "ok",
+      "video_evidence": {
+        "2IdrfL2QPlc": "titulo+descricao"
+      },
+      "n_videos_municipais": 1,
+      "n_comments_valid_municipal": 0,
+      "videos_with_valid_comments_municipal": [],
+      "flag_reassessment": {
+        "at": "2026-10-13T23:46:37Z",
+        "from": "acompanhamento",
+        "to": "acompanhamento",
+        "criterio": "municipal_v0.3.2",
+        "n_videos": 1,
+        "n_videos_municipais": 1,
+        "n_comments_valid_municipal": 0,
+        "n_videos_with_valid_municipal": 0,
+        "contagem": "observada",
+        "robusta_ao_teto": true
+      },
+      "last_attempt_at": "2026-10-14T10:58:00Z",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "legacy_unverified": false,
+      "window_finalized_at": "2026-10-14T10:58:00Z",
+      "window_finalized_reason": "final_sweep",
+      "video_format": {
+        "2IdrfL2QPlc": "short"
+      },
+      "archived_at": "2026-10-21T10:57:13Z",
+      "archive_reason": "acompanhamento_esgotado_14d"
     }
   }
 }
