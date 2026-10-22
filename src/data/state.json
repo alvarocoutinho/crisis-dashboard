@@ -1,15 +1,15 @@
 {
   "schema_version": "0.2",
   "pipeline_version": "0.3.3",
-  "last_run_at": "2026-10-22T02:44:36Z",
+  "last_run_at": "2026-10-22T10:57:07Z",
   "last_run_status": "success",
-  "last_run_duration_seconds": 1,
-  "last_cemaden_check_at": "2026-10-22T02:44:36Z",
+  "last_run_duration_seconds": 9,
+  "last_cemaden_check_at": "2026-10-22T10:57:07Z",
   "youtube_quota": {
-    "used_today": 0,
-    "reset_at": "2026-10-22T07:00:00Z",
-    "day": "2026-10-21",
-    "searches_today": 0
+    "used_today": 7,
+    "reset_at": "2026-10-23T07:00:00Z",
+    "day": "2026-10-22",
+    "searches_today": 4
   },
   "active_alerts": {
     "cemaden_am_3021": {
@@ -27,7 +27,7 @@
       ],
       "evento": "Movimentos de Massa",
       "opened_at": "2026-10-20T19:59:39Z",
-      "last_seen_open_at": "2026-10-22T02:44:36Z",
+      "last_seen_open_at": "2026-10-22T10:57:07Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -36,12 +36,12 @@
       "videos_with_valid_comments": [],
       "last_new_data_at": null,
       "last_new_comment_at": null,
-      "last_collection_at": "2026-10-21T02:46:22Z",
-      "next_collection_at": "2026-10-22T02:46:22Z",
+      "last_collection_at": "2026-10-22T10:57:07Z",
+      "next_collection_at": "2026-10-23T10:57:07Z",
       "n_videos_municipais": 0,
       "n_comments_valid_municipal": 0,
       "videos_with_valid_comments_municipal": [],
-      "last_attempt_at": "2026-10-21T02:46:22Z",
+      "last_attempt_at": "2026-10-22T10:57:07Z",
       "consecutive_failures": 0,
       "last_error": null,
       "legacy_unverified": false,
@@ -3651,14 +3651,14 @@
       ],
       "last_new_data_at": "2026-10-20T10:45:45Z",
       "last_new_comment_at": "2026-10-20T10:45:45Z",
-      "last_collection_at": "2026-10-21T02:46:22Z",
-      "next_collection_at": "2026-10-22T04:24:36Z",
+      "last_collection_at": "2026-10-22T10:57:07Z",
+      "next_collection_at": "2026-10-22T22:57:07Z",
       "n_videos_municipais": 1,
       "n_comments_valid_municipal": 10,
       "videos_with_valid_comments_municipal": [
         "xMo_APjhbGY"
       ],
-      "last_attempt_at": "2026-10-21T02:46:22Z",
+      "last_attempt_at": "2026-10-22T10:57:07Z",
       "consecutive_failures": 0,
       "last_error": null,
       "legacy_unverified": false,
@@ -3669,21 +3669,11 @@
       "video_format": {
         "xMo_APjhbGY": "longo"
       },
-      "seen_comment_hashes": [
-        "0033377f6616",
-        "03f390fa144d",
-        "108fb1e9b112",
-        "3564deabdd0d",
-        "40057d510686",
-        "7c63616f6159",
-        "9fdae9faeab7",
-        "b61f463845e4",
-        "b7358875f07f",
-        "fcaf3fde70b2"
-      ],
       "valid_comments_by_video": {
         "xMo_APjhbGY": 10
-      }
+      },
+      "window_finalized_at": "2026-10-22T10:57:07Z",
+      "window_finalized_reason": "final_sweep"
     }
   },
   "archived_alerts": {
