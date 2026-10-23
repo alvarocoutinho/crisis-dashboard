@@ -1,17 +1,52 @@
 {
   "schema_version": "0.2",
   "pipeline_version": "0.3.3",
-  "last_run_at": "2026-10-23T16:14:09Z",
+  "last_run_at": "2026-10-23T20:51:51Z",
   "last_run_status": "success",
-  "last_run_duration_seconds": 0,
-  "last_cemaden_check_at": "2026-10-23T16:14:09Z",
+  "last_run_duration_seconds": 4,
+  "last_cemaden_check_at": "2026-10-23T20:51:51Z",
   "youtube_quota": {
-    "used_today": 0,
+    "used_today": 2,
     "reset_at": "2026-10-24T07:00:00Z",
     "day": "2026-10-23",
-    "searches_today": 0
+    "searches_today": 2
   },
-  "active_alerts": {},
+  "active_alerts": {
+    "cemaden_mg_3022": {
+      "codibge": "3143708",
+      "municipio": "Morro do Pilar",
+      "uf": "MG",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-10-23T17:02:58Z"
+        }
+      ],
+      "evento": "Risco Hidrológico",
+      "opened_at": "2026-10-23T17:02:58Z",
+      "last_seen_open_at": "2026-10-23T20:51:51Z",
+      "closed_at": null,
+      "transitions": [],
+      "videos_collected": [],
+      "n_videos_aderentes": 0,
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "last_new_data_at": null,
+      "last_new_comment_at": null,
+      "last_collection_at": "2026-10-23T20:51:51Z",
+      "next_collection_at": "2026-10-24T20:51:51Z",
+      "n_videos_municipais": 0,
+      "n_comments_valid_municipal": 0,
+      "videos_with_valid_comments_municipal": [],
+      "last_attempt_at": "2026-10-23T20:51:51Z",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "legacy_unverified": false
+    }
+  },
   "extended_window_alerts": {
     "cemaden_rs_2475": {
       "codibge": "4314407",
