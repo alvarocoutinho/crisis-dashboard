@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T12:01:31Z",
+  "generated_at": "2026-10-26T18:31:40Z",
   "pipeline_version": "0.3.3",
   "pilot_mode": true,
   "dry_run": false,
@@ -1366,8 +1366,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-10-25T15:22:22Z",
-      "next_collection_at": "2026-10-26T15:22:22Z",
+      "last_collection_at": "2026-10-26T18:31:11Z",
+      "next_collection_at": "2026-10-27T18:31:11Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -1480,8 +1480,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-10-25T15:22:22Z",
-      "next_collection_at": "2026-10-26T15:22:22Z",
+      "last_collection_at": "2026-10-26T18:31:11Z",
+      "next_collection_at": "2026-10-27T18:31:11Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -26158,10 +26158,10 @@
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
-      "n_comments": 17,
-      "n_videos": 2,
-      "unlabeled": 2,
-      "unlabeled_pct": 11.8,
+      "n_comments": 22,
+      "n_videos": 3,
+      "unlabeled": 3,
+      "unlabeled_pct": 13.6,
       "date_range": [
         "2026-10-24",
         "2026-10-25"
@@ -26170,8 +26170,8 @@
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
-          "count": 4,
-          "pct": 23.5
+          "count": 5,
+          "pct": 22.7
         },
         {
           "key": "ajuda_resgate_doacoes",
@@ -26182,38 +26182,38 @@
         {
           "key": "responsabilizacao_governanca",
           "label": "Responsabilização / governança",
-          "count": 6,
-          "pct": 35.3
+          "count": 7,
+          "pct": 31.8
         },
         {
           "key": "infraestrutura_ocupacao_risco",
           "label": "Infraestrutura / ocupação de risco",
-          "count": 3,
-          "pct": 17.6
+          "count": 4,
+          "pct": 18.2
         },
         {
           "key": "clima_chuva_meio_ambiente",
           "label": "Clima / chuva / meio ambiente",
           "count": 3,
-          "pct": 17.6
+          "pct": 13.6
         },
         {
           "key": "experiencia_pessoal_local",
           "label": "Experiência pessoal / local",
-          "count": 5,
-          "pct": 29.4
+          "count": 6,
+          "pct": 27.3
         },
         {
           "key": "alerta_prevencao_cobranca",
           "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
+          "count": 1,
+          "pct": 4.5
         },
         {
           "key": "critica_midia_informacao",
           "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
+          "count": 1,
+          "pct": 4.5
         }
       ],
       "timeline": [
@@ -26223,27 +26223,27 @@
         },
         {
           "date": "25/10/26",
-          "count": 16
+          "count": 21
         }
       ],
       "videos": [
         {
           "video_id": "KGVDzaVC6Xs",
-          "n_comments": 16,
-          "total_likes": 7,
+          "n_comments": 21,
+          "total_likes": 14,
           "first_comment": "25/10/2026",
           "top_categories": [
             {
               "label": "Responsabilização",
-              "count": 6
+              "count": 7
             },
             {
               "label": "Experiência",
-              "count": 5
+              "count": 6
             },
             {
               "label": "Solidariedade",
-              "count": 4
+              "count": 5
             }
           ],
           "municipal_evidence": "nenhuma",
@@ -26252,7 +26252,7 @@
         {
           "video_id": "vKVrPOEn-XI",
           "n_comments": 1,
-          "total_likes": 0,
+          "total_likes": 1,
           "first_comment": "24/10/2026",
           "top_categories": [
             {
@@ -26262,13 +26262,22 @@
           ],
           "municipal_evidence": "titulo",
           "formato": "short"
+        },
+        {
+          "video_id": "rEkoM9Gcroo",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": [],
+          "municipal_evidence": "descricao",
+          "formato": "longo"
         }
       ],
       "all_samples": {
         "solidariedade_oracao_luto": [
           {
             "text": "Deus abençoe a todos nós Amém Jesus 🙏🙌",
-            "likes": 0,
+            "likes": 1,
             "score": 0.995,
             "date": "2026-10-25",
             "video_id": "KGVDzaVC6Xs"
@@ -26293,13 +26302,20 @@
             "score": 0.995,
             "date": "2026-10-25",
             "video_id": "KGVDzaVC6Xs"
+          },
+          {
+            "text": "Se Deus quiser a água não entrará em minha casa. Deus seletivo esse, não?",
+            "likes": 1,
+            "score": 0.944,
+            "date": "2026-10-25",
+            "video_id": "KGVDzaVC6Xs"
           }
         ],
         "ajuda_resgate_doacoes": [],
         "responsabilizacao_governanca": [
           {
             "text": "Não, mas o prefeito pode e deve fazer obras e medidas de contenção de água da chuva para evitar enchentes e alagamentos no município. Na minha cidade foi feito em alguns bairros onde tinham muitas enchentes. Deve ser isso que o prefeito prometeu e não fez.",
-            "likes": 0,
+            "likes": 1,
             "score": 0.997,
             "date": "2026-10-25",
             "video_id": "KGVDzaVC6Xs"
@@ -26333,6 +26349,13 @@
             "video_id": "KGVDzaVC6Xs"
           },
           {
+            "text": "@usuario que vc deseja para os outros volta para vc. Pessoas sofrendo, perdendo tudo e alguns 🥴😖 desejando mal e colocando a 💩 da política no meio. 😡",
+            "likes": 1,
+            "score": 0.837,
+            "date": "2026-10-25",
+            "video_id": "KGVDzaVC6Xs"
+          },
+          {
             "text": "Denilson Baitala do PL.... vai vendo...",
             "likes": 0,
             "score": 0.809,
@@ -26343,7 +26366,7 @@
         "infraestrutura_ocupacao_risco": [
           {
             "text": "Continuem jogando lixo e moveis nas vias públicas",
-            "likes": 0,
+            "likes": 1,
             "score": 0.997,
             "date": "2026-10-24",
             "video_id": "vKVrPOEn-XI"
@@ -26357,8 +26380,15 @@
           },
           {
             "text": "Aqui em taquari rio azul Paraná também alagou tudo moramos na área rural e não tem saída pra lugar algum 😢",
-            "likes": 0,
+            "likes": 1,
             "score": 0.99,
+            "date": "2026-10-25",
+            "video_id": "KGVDzaVC6Xs"
+          },
+          {
+            "text": "Se Deus quiser a água não entrará em minha casa. Deus seletivo esse, não?",
+            "likes": 1,
+            "score": 0.987,
             "date": "2026-10-25",
             "video_id": "KGVDzaVC6Xs"
           }
@@ -26373,14 +26403,14 @@
           },
           {
             "text": "Aqui em taquari rio azul Paraná também alagou tudo moramos na área rural e não tem saída pra lugar algum 😢",
-            "likes": 0,
+            "likes": 1,
             "score": 0.979,
             "date": "2026-10-25",
             "video_id": "KGVDzaVC6Xs"
           },
           {
             "text": "Não, mas o prefeito pode e deve fazer obras e medidas de contenção de água da chuva para evitar enchentes e alagamentos no município. Na minha cidade foi feito em alguns bairros onde tinham muitas enchentes. Deve ser isso que o prefeito prometeu e não fez.",
-            "likes": 0,
+            "likes": 1,
             "score": 0.974,
             "date": "2026-10-25",
             "video_id": "KGVDzaVC6Xs"
@@ -26389,14 +26419,14 @@
         "experiencia_pessoal_local": [
           {
             "text": "Aqui em taquari rio azul Paraná também alagou tudo moramos na área rural e não tem saída pra lugar algum 😢",
-            "likes": 0,
+            "likes": 1,
             "score": 0.997,
             "date": "2026-10-25",
             "video_id": "KGVDzaVC6Xs"
           },
           {
             "text": "Aqui em Sao Paulo, capital, tambem esta chovendo muito.",
-            "likes": 0,
+            "likes": 1,
             "score": 0.997,
             "date": "2026-10-25",
             "video_id": "KGVDzaVC6Xs"
@@ -26416,15 +26446,38 @@
             "video_id": "KGVDzaVC6Xs"
           },
           {
+            "text": "Se Deus quiser a água não entrará em minha casa. Deus seletivo esse, não?",
+            "likes": 1,
+            "score": 0.993,
+            "date": "2026-10-25",
+            "video_id": "KGVDzaVC6Xs"
+          },
+          {
             "text": "Não, mas o prefeito pode e deve fazer obras e medidas de contenção de água da chuva para evitar enchentes e alagamentos no município. Na minha cidade foi feito em alguns bairros onde tinham muitas enchentes. Deve ser isso que o prefeito prometeu e não fez.",
-            "likes": 0,
+            "likes": 1,
             "score": 0.982,
             "date": "2026-10-25",
             "video_id": "KGVDzaVC6Xs"
           }
         ],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
+        "alerta_prevencao_cobranca": [
+          {
+            "text": "Areas de riscos E sabemos que Rios estao enchendo rapido",
+            "likes": 1,
+            "score": 0.999,
+            "date": "2026-10-25",
+            "video_id": "KGVDzaVC6Xs"
+          }
+        ],
+        "critica_midia_informacao": [
+          {
+            "text": "Bom dia, obrigado pela informação…",
+            "likes": 0,
+            "score": 0.989,
+            "date": "2026-10-25",
+            "video_id": "KGVDzaVC6Xs"
+          }
+        ]
       },
       "academic_studies": [],
       "observation_status": "extended",
@@ -26441,7 +26494,7 @@
           "criterio": "municipal_v0.3.2"
         }
       ],
-      "n_comments_valid": 15,
+      "n_comments_valid": 19,
       "videos_with_valid_comments": [
         "KGVDzaVC6Xs",
         "vKVrPOEn-XI"
@@ -26455,16 +26508,16 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-10-25T10:30:10Z",
-      "next_collection_at": "2026-10-26T14:34:42Z",
+      "last_collection_at": "2026-10-26T18:31:11Z",
+      "next_collection_at": "2026-10-27T06:31:11Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {
-        "longo": 1,
+        "longo": 2,
         "short": 1
       },
-      "n_videos_municipais": 1,
-      "n_videos_verificados": 2,
+      "n_videos_municipais": 2,
+      "n_videos_verificados": 3,
       "n_comments_municipais": 1,
       "n_comments_valid_municipal": 1,
       "videos_with_valid_comments_municipal": [
@@ -26483,75 +26536,79 @@
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
-      "n_comments": 27,
+      "n_comments": 30,
       "n_videos": 1,
-      "unlabeled": 3,
-      "unlabeled_pct": 11.1,
+      "unlabeled": 4,
+      "unlabeled_pct": 13.3,
       "date_range": [
         "2026-10-25",
-        "2026-10-25"
+        "2026-10-26"
       ],
       "distribution": [
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
-          "count": 5,
-          "pct": 18.5
+          "count": 6,
+          "pct": 20.0
         },
         {
           "key": "ajuda_resgate_doacoes",
           "label": "Ajuda / resgate / doações",
-          "count": 4,
-          "pct": 14.8
+          "count": 5,
+          "pct": 16.7
         },
         {
           "key": "responsabilizacao_governanca",
           "label": "Responsabilização / governança",
           "count": 2,
-          "pct": 7.4
+          "pct": 6.7
         },
         {
           "key": "infraestrutura_ocupacao_risco",
           "label": "Infraestrutura / ocupação de risco",
           "count": 3,
-          "pct": 11.1
+          "pct": 10.0
         },
         {
           "key": "clima_chuva_meio_ambiente",
           "label": "Clima / chuva / meio ambiente",
           "count": 12,
-          "pct": 44.4
+          "pct": 40.0
         },
         {
           "key": "experiencia_pessoal_local",
           "label": "Experiência pessoal / local",
-          "count": 7,
-          "pct": 25.9
+          "count": 6,
+          "pct": 20.0
         },
         {
           "key": "alerta_prevencao_cobranca",
           "label": "Alerta / prevenção / cobrança",
           "count": 1,
-          "pct": 3.7
+          "pct": 3.3
         },
         {
           "key": "critica_midia_informacao",
           "label": "Crítica à mídia / informação",
-          "count": 4,
-          "pct": 14.8
+          "count": 6,
+          "pct": 20.0
         }
       ],
       "timeline": [
         {
           "date": "25/10/26",
-          "count": 27
+          "count": 29
+        },
+        {
+          "date": "26/10/26",
+          "count": 1
         }
       ],
       "videos": [
         {
           "video_id": "y3dd-w6ogTY",
-          "n_comments": 27,
-          "total_likes": 20,
+          "n_comments": 30,
+          "total_likes": 40,
           "first_comment": "25/10/2026",
           "top_categories": [
             {
@@ -26559,12 +26616,12 @@
               "count": 12
             },
             {
-              "label": "Experiência",
-              "count": 7
+              "label": "Solidariedade",
+              "count": 6
             },
             {
-              "label": "Solidariedade",
-              "count": 5
+              "label": "Experiência",
+              "count": 6
             }
           ],
           "municipal_evidence": "descricao",
@@ -26589,21 +26646,28 @@
           },
           {
             "text": "👁️☠️☂️",
-            "likes": 0,
+            "likes": 1,
             "score": 0.974,
             "date": "2026-10-25",
             "video_id": "y3dd-w6ogTY"
           },
           {
             "text": "Infelizmente a conta chegou!!! Tô com 63 anos e a muito tempo escuto falar sobre o aquecimento global e as desordens devastadoras que teria... Agora todos nós estamos sobre a misericórdia de Deus... Não há muito mais o que fazer... Fogo em alguns lugares e inundações em outros!!! Não temos pra onde correr... A ganância está acabando com tudo... Muito triste 😢",
-            "likes": 1,
+            "likes": 2,
             "score": 0.948,
             "date": "2026-10-25",
             "video_id": "y3dd-w6ogTY"
           },
           {
+            "text": "O planeta está morrendo, daqui pra frente é só desgraça e sofrimento 😮",
+            "likes": 1,
+            "score": 0.866,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          },
+          {
             "text": "PARABENS",
-            "likes": 0,
+            "likes": 1,
             "score": 0.546,
             "date": "2026-10-25",
             "video_id": "y3dd-w6ogTY"
@@ -26619,21 +26683,28 @@
           },
           {
             "text": "Proteções bom trabalho",
-            "likes": 0,
+            "likes": 1,
             "score": 0.899,
             "date": "2026-10-25",
             "video_id": "y3dd-w6ogTY"
           },
           {
             "text": "PARABENS",
-            "likes": 0,
+            "likes": 1,
             "score": 0.653,
             "date": "2026-10-25",
             "video_id": "y3dd-w6ogTY"
           },
           {
-            "text": "Esses Nucleos instaveis estavem no RS e passando pelo PR , seg ao Sudest . JBN vem do AM .",
+            "text": "@usuario",
             "likes": 0,
+            "score": 0.611,
+            "date": "2026-10-26",
+            "video_id": "y3dd-w6ogTY"
+          },
+          {
+            "text": "Esses Nucleos instaveis estavem no RS e passando pelo PR , seg ao Sudest . JBN vem do AM .",
+            "likes": 1,
             "score": 0.527,
             "date": "2026-10-25",
             "video_id": "y3dd-w6ogTY"
@@ -26649,7 +26720,7 @@
           },
           {
             "text": "Com tanta chuva As cataratas lotada de água com certeza o governo tem que reduzir A nossa conta de não tem como falarem que está faltando água para girar as torbinas😊",
-            "likes": 2,
+            "likes": 3,
             "score": 0.989,
             "date": "2026-10-25",
             "video_id": "y3dd-w6ogTY"
@@ -26658,7 +26729,7 @@
         "infraestrutura_ocupacao_risco": [
           {
             "text": "🚨 ATUALIZAÇÃO IMPORTANTE — BR-277 LIBERADA! A Polícia Rodoviária Federal (PRF) confirmou que a BR-277, na Serra da Esperança, em Guarapuava, foi totalmente liberada às 19h45 deste sábado (24), nos dois sentidos. A rodovia estava interditada desde as 17h10, após um deslizamento de terra no km 312, entre os viadutos da serra. O tráfego foi restabelecido, mas o trecho permanece sinalizado e monitorad",
-            "likes": 6,
+            "likes": 7,
             "score": 0.995,
             "date": "2026-10-25",
             "video_id": "y3dd-w6ogTY"
@@ -26672,7 +26743,7 @@
           },
           {
             "text": "HAAARPPPAA TOCANDO A MIL POR HORA NO PARANÁ DESTA VEZ.... PARA DEVASTAR TODA. A GENTE PERCEBE SIM...",
-            "likes": 0,
+            "likes": 1,
             "score": 0.728,
             "date": "2026-10-25",
             "video_id": "y3dd-w6ogTY"
@@ -26681,14 +26752,14 @@
         "clima_chuva_meio_ambiente": [
           {
             "text": "ACHO QUE OS TURISTAS DEVERIAM CUIDAR E NÃO IR NAS CATARATAS DO IGUAÇU, PORQUE COM TANTOS VOLUMES DE ÁGUA TUDO É POSSÍVEL. DEVERIAM EVITAR EM MOMENTOS QUE CHOVE MAIS DE 100 MM EM MENOS DE 24 HORAS NO PARANÁ.. E ALÉM DAS CATARATAS JÁ ESTAREM MUITO CHEIA, ALTAS POR CHUVAS ANTERIORES.",
-            "likes": 0,
+            "likes": 1,
             "score": 0.999,
             "date": "2026-10-25",
             "video_id": "y3dd-w6ogTY"
           },
           {
             "text": "🚨 ATUALIZAÇÃO IMPORTANTE — BR-277 LIBERADA! A Polícia Rodoviária Federal (PRF) confirmou que a BR-277, na Serra da Esperança, em Guarapuava, foi totalmente liberada às 19h45 deste sábado (24), nos dois sentidos. A rodovia estava interditada desde as 17h10, após um deslizamento de terra no km 312, entre os viadutos da serra. O tráfego foi restabelecido, mas o trecho permanece sinalizado e monitorad",
-            "likes": 6,
+            "likes": 7,
             "score": 0.999,
             "date": "2026-10-25",
             "video_id": "y3dd-w6ogTY"
@@ -26709,28 +26780,28 @@
           },
           {
             "text": "Infelizmente a conta chegou!!! Tô com 63 anos e a muito tempo escuto falar sobre o aquecimento global e as desordens devastadoras que teria... Agora todos nós estamos sobre a misericórdia de Deus... Não há muito mais o que fazer... Fogo em alguns lugares e inundações em outros!!! Não temos pra onde correr... A ganância está acabando com tudo... Muito triste 😢",
-            "likes": 1,
+            "likes": 2,
             "score": 0.99,
             "date": "2026-10-25",
             "video_id": "y3dd-w6ogTY"
           },
           {
             "text": "Já estamis no domingo... assustadoras as suas imagens. Aqui, Curitiba psrece normal, c chuva (garôa) agora 10:40 h, 251926. OBRIGADA. BOM TRABALHO AÍ...",
-            "likes": 0,
+            "likes": 1,
             "score": 0.988,
             "date": "2026-10-25",
             "video_id": "y3dd-w6ogTY"
           },
           {
             "text": "Com tanta chuva As cataratas lotada de água com certeza o governo tem que reduzir A nossa conta de não tem como falarem que está faltando água para girar as torbinas😊",
-            "likes": 2,
+            "likes": 3,
             "score": 0.987,
             "date": "2026-10-25",
             "video_id": "y3dd-w6ogTY"
           },
           {
             "text": "William, valeu pelo vídeo! Seria interessante um vídeo sobre as grandes enchentes e inundações verificadas aqui no PR, a de 1983 foi muito intensa, para efeito de comparação.",
-            "likes": 1,
+            "likes": 2,
             "score": 0.987,
             "date": "2026-10-25",
             "video_id": "y3dd-w6ogTY"
@@ -26744,21 +26815,21 @@
           },
           {
             "text": "Muito chuva aqui em Botucatu São Paulo, imprecionant mesmo",
-            "likes": 0,
+            "likes": 1,
             "score": 0.98,
             "date": "2026-10-25",
             "video_id": "y3dd-w6ogTY"
           },
           {
             "text": "Parabéns pelo vídeo, obrigada pelas informações, seus vídeos são muito bom, saudações de Terra Boa Paraná, e aqui muita chuva ☂️",
-            "likes": 0,
+            "likes": 1,
             "score": 0.98,
             "date": "2026-10-25",
             "video_id": "y3dd-w6ogTY"
           },
           {
             "text": "HAAARPPPAA TOCANDO A MIL POR HORA NO PARANÁ DESTA VEZ.... PARA DEVASTAR TODA. A GENTE PERCEBE SIM...",
-            "likes": 0,
+            "likes": 1,
             "score": 0.813,
             "date": "2026-10-25",
             "video_id": "y3dd-w6ogTY"
@@ -26773,43 +26844,36 @@
             "video_id": "y3dd-w6ogTY"
           },
           {
-            "text": "Vi numa reportagem que a sessão eleitoral é transferida. Fiquei atento, saia antes e confira para onde foi sua sessão. 🌧️ Penso que o TRE deve ter plantão em regiões com casos mais extremos .",
-            "likes": 0,
-            "score": 0.996,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          },
-          {
             "text": "Cára tá chovendo demais da conta aqui no sul,desse jeito vamos desenvolver uma nova raça humana por aqui,ou seja raça humana aquática,pois as crianças já estão nascendo com escamas.",
-            "likes": 0,
+            "likes": 1,
             "score": 0.996,
             "date": "2026-10-25",
             "video_id": "y3dd-w6ogTY"
           },
           {
             "text": "Muito chuva aqui em Botucatu São Paulo, imprecionant mesmo",
-            "likes": 0,
+            "likes": 1,
             "score": 0.995,
             "date": "2026-10-25",
             "video_id": "y3dd-w6ogTY"
           },
           {
             "text": "William, valeu pelo vídeo! Seria interessante um vídeo sobre as grandes enchentes e inundações verificadas aqui no PR, a de 1983 foi muito intensa, para efeito de comparação.",
-            "likes": 1,
+            "likes": 2,
             "score": 0.993,
             "date": "2026-10-25",
             "video_id": "y3dd-w6ogTY"
           },
           {
             "text": "Parabéns pelo vídeo, obrigada pelas informações, seus vídeos são muito bom, saudações de Terra Boa Paraná, e aqui muita chuva ☂️",
-            "likes": 0,
+            "likes": 1,
             "score": 0.993,
             "date": "2026-10-25",
             "video_id": "y3dd-w6ogTY"
           },
           {
             "text": "Já estamis no domingo... assustadoras as suas imagens. Aqui, Curitiba psrece normal, c chuva (garôa) agora 10:40 h, 251926. OBRIGADA. BOM TRABALHO AÍ...",
-            "likes": 0,
+            "likes": 1,
             "score": 0.992,
             "date": "2026-10-25",
             "video_id": "y3dd-w6ogTY"
@@ -26818,7 +26882,7 @@
         "alerta_prevencao_cobranca": [
           {
             "text": "🚨 ATUALIZAÇÃO IMPORTANTE — BR-277 LIBERADA! A Polícia Rodoviária Federal (PRF) confirmou que a BR-277, na Serra da Esperança, em Guarapuava, foi totalmente liberada às 19h45 deste sábado (24), nos dois sentidos. A rodovia estava interditada desde as 17h10, após um deslizamento de terra no km 312, entre os viadutos da serra. O tráfego foi restabelecido, mas o trecho permanece sinalizado e monitorad",
-            "likes": 6,
+            "likes": 7,
             "score": 0.944,
             "date": "2026-10-25",
             "video_id": "y3dd-w6ogTY"
@@ -26827,22 +26891,36 @@
         "critica_midia_informacao": [
           {
             "text": "Infelizmente a conta chegou!!! Tô com 63 anos e a muito tempo escuto falar sobre o aquecimento global e as desordens devastadoras que teria... Agora todos nós estamos sobre a misericórdia de Deus... Não há muito mais o que fazer... Fogo em alguns lugares e inundações em outros!!! Não temos pra onde correr... A ganância está acabando com tudo... Muito triste 😢",
-            "likes": 1,
+            "likes": 2,
             "score": 0.996,
             "date": "2026-10-25",
             "video_id": "y3dd-w6ogTY"
           },
           {
             "text": "Ótimo Repórter, Parabéns, Muito Joia, Grande Talento...",
-            "likes": 1,
+            "likes": 2,
             "score": 0.983,
             "date": "2026-10-25",
             "video_id": "y3dd-w6ogTY"
           },
           {
-            "text": "Compartilhado 😊",
+            "text": "@usuario",
             "likes": 0,
+            "score": 0.948,
+            "date": "2026-10-26",
+            "video_id": "y3dd-w6ogTY"
+          },
+          {
+            "text": "Compartilhado 😊",
+            "likes": 1,
             "score": 0.931,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          },
+          {
+            "text": "@usuario!!! Não é ser pessimista, é ser realista!!!",
+            "likes": 0,
+            "score": 0.868,
             "date": "2026-10-25",
             "video_id": "y3dd-w6ogTY"
           },
@@ -26870,7 +26948,7 @@
           "criterio": "municipal_v0.3.2"
         }
       ],
-      "n_comments_valid": 24,
+      "n_comments_valid": 27,
       "videos_with_valid_comments": [
         "y3dd-w6ogTY"
       ],
@@ -26883,8 +26961,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-10-25T20:14:30Z",
-      "next_collection_at": "2026-10-26T14:34:42Z",
+      "last_collection_at": "2026-10-26T18:31:11Z",
+      "next_collection_at": "2026-10-27T06:31:11Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {
@@ -26892,8 +26970,8 @@
       },
       "n_videos_municipais": 1,
       "n_videos_verificados": 1,
-      "n_comments_municipais": 27,
-      "n_comments_valid_municipal": 24,
+      "n_comments_municipais": 30,
+      "n_comments_valid_municipal": 27,
       "videos_with_valid_comments_municipal": [
         "y3dd-w6ogTY"
       ],
@@ -27005,7 +27083,7 @@
           "criterio": "municipal_v0.3.2"
         }
       ],
-      "n_comments_valid": 37,
+      "n_comments_valid": 40,
       "videos_with_valid_comments": [
         "UKns0h2VEmE",
         "bj6hGaO0kos"
@@ -27017,7 +27095,7 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=ok;comments=api_error",
-        "consecutive_failures": 3
+        "consecutive_failures": 4
       },
       "last_collection_at": "2026-10-24T20:02:41Z",
       "next_collection_at": "2026-10-26T14:34:42Z",
@@ -27029,7 +27107,7 @@
       "n_videos_municipais": 1,
       "n_videos_verificados": 1,
       "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 37,
+      "n_comments_valid_municipal": 40,
       "videos_with_valid_comments_municipal": [
         "UKns0h2VEmE",
         "bj6hGaO0kos"
