@@ -1,2702 +1,9 @@
 {
-  "generated_at": "2026-10-26T02:34:58Z",
+  "generated_at": "2026-10-26T12:01:31Z",
   "pipeline_version": "0.3.3",
   "pilot_mode": true,
   "dry_run": false,
   "alerts": [
-    {
-      "id": "cemaden_sc_3032",
-      "municipio": "Dionísio Cerqueira",
-      "uf": "SC",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "24/10/2026",
-      "codibge": "4205001",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-24T06:06:03Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-24T06:06:03Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-10-25T10:30:10Z",
-      "next_collection_at": "2026-10-26T10:30:10Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_pr_3033",
-      "municipio": "Francisco Beltrão",
-      "uf": "PR",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "24/10/2026",
-      "codibge": "4108403",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-24T06:17:20Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-24T06:17:20Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-10-25T10:30:10Z",
-      "next_collection_at": "2026-10-26T10:30:10Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_pr_3034",
-      "municipio": "Pato Branco",
-      "uf": "PR",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "24/10/2026",
-      "codibge": "4118501",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 25,
-      "n_videos": 1,
-      "unlabeled": 3,
-      "unlabeled_pct": 12.0,
-      "date_range": [
-        "2026-10-25",
-        "2026-10-25"
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 5,
-          "pct": 20.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 4,
-          "pct": 16.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 2,
-          "pct": 8.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 3,
-          "pct": 12.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 12,
-          "pct": 48.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 6,
-          "pct": 24.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 1,
-          "pct": 4.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 3,
-          "pct": 12.0
-        }
-      ],
-      "timeline": [
-        {
-          "date": "25/10/26",
-          "count": 25
-        }
-      ],
-      "videos": [
-        {
-          "video_id": "y3dd-w6ogTY",
-          "n_comments": 25,
-          "total_likes": 20,
-          "first_comment": "25/10/2026",
-          "top_categories": [
-            {
-              "label": "Clima/chuva",
-              "count": 12
-            },
-            {
-              "label": "Experiência",
-              "count": 6
-            },
-            {
-              "label": "Solidariedade",
-              "count": 5
-            }
-          ],
-          "municipal_evidence": "descricao",
-          "formato": "longo"
-        }
-      ],
-      "all_samples": {
-        "solidariedade_oracao_luto": [
-          {
-            "text": "@usuario EU DISSE EXATAMENTE ISSO NO MEU COMENTÁRIO QUANDO DIGO QUE ESTAMOS SOBRE A MISERICÓRDIA DE DEUS!!!",
-            "likes": 0,
-            "score": 0.998,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          },
-          {
-            "text": "A força dessa água com certeza mexerá na estrutura desta passarela,de forma silenciosa a água vai deteriorando a estrutura,no futuro?Quem pode garantir a segurança deste lugar?",
-            "likes": 4,
-            "score": 0.997,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          },
-          {
-            "text": "👁️☠️☂️",
-            "likes": 0,
-            "score": 0.974,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          },
-          {
-            "text": "Infelizmente a conta chegou!!! Tô com 63 anos e a muito tempo escuto falar sobre o aquecimento global e as desordens devastadoras que teria... Agora todos nós estamos sobre a misericórdia de Deus... Não há muito mais o que fazer... Fogo em alguns lugares e inundações em outros!!! Não temos pra onde correr... A ganância está acabando com tudo... Muito triste 😢",
-            "likes": 1,
-            "score": 0.948,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          },
-          {
-            "text": "PARABENS",
-            "likes": 0,
-            "score": 0.546,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          }
-        ],
-        "ajuda_resgate_doacoes": [
-          {
-            "text": "TOP, PARANÁ É ISSO, CHOVE CHOVE E CHOVE MAS A SANEPAR SEMPRE PARA DE MANDAR AGUA... SEMPRE FALTA MESMO COM CHUVA.... FALTA DE EXISTIR OUTRAS EMPRESAS... ESSES MONOPOLIOS SO FODEM",
-            "likes": 1,
-            "score": 0.987,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          },
-          {
-            "text": "Proteções bom trabalho",
-            "likes": 0,
-            "score": 0.899,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          },
-          {
-            "text": "PARABENS",
-            "likes": 0,
-            "score": 0.653,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          },
-          {
-            "text": "Esses Nucleos instaveis estavem no RS e passando pelo PR , seg ao Sudest . JBN vem do AM .",
-            "likes": 0,
-            "score": 0.527,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          }
-        ],
-        "responsabilizacao_governanca": [
-          {
-            "text": "Quem cuida disso é a empresa que responde pela energia elétrica do estado ,privatizar barateia os custos",
-            "likes": 0,
-            "score": 0.997,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          },
-          {
-            "text": "Com tanta chuva As cataratas lotada de água com certeza o governo tem que reduzir A nossa conta de não tem como falarem que está faltando água para girar as torbinas😊",
-            "likes": 2,
-            "score": 0.989,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          }
-        ],
-        "infraestrutura_ocupacao_risco": [
-          {
-            "text": "🚨 ATUALIZAÇÃO IMPORTANTE — BR-277 LIBERADA! A Polícia Rodoviária Federal (PRF) confirmou que a BR-277, na Serra da Esperança, em Guarapuava, foi totalmente liberada às 19h45 deste sábado (24), nos dois sentidos. A rodovia estava interditada desde as 17h10, após um deslizamento de terra no km 312, entre os viadutos da serra. O tráfego foi restabelecido, mas o trecho permanece sinalizado e monitorad",
-            "likes": 6,
-            "score": 0.995,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          },
-          {
-            "text": "Realmente muita chuva aqui no Santa cândida o riozinho q divide o município de Curitiba e Colombo no roça grande falta pouco para chegar a passar na ponte 😢😢😢",
-            "likes": 2,
-            "score": 0.991,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          },
-          {
-            "text": "HAAARPPPAA TOCANDO A MIL POR HORA NO PARANÁ DESTA VEZ.... PARA DEVASTAR TODA. A GENTE PERCEBE SIM...",
-            "likes": 0,
-            "score": 0.728,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          }
-        ],
-        "clima_chuva_meio_ambiente": [
-          {
-            "text": "ACHO QUE OS TURISTAS DEVERIAM CUIDAR E NÃO IR NAS CATARATAS DO IGUAÇU, PORQUE COM TANTOS VOLUMES DE ÁGUA TUDO É POSSÍVEL. DEVERIAM EVITAR EM MOMENTOS QUE CHOVE MAIS DE 100 MM EM MENOS DE 24 HORAS NO PARANÁ.. E ALÉM DAS CATARATAS JÁ ESTAREM MUITO CHEIA, ALTAS POR CHUVAS ANTERIORES.",
-            "likes": 0,
-            "score": 0.999,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          },
-          {
-            "text": "🚨 ATUALIZAÇÃO IMPORTANTE — BR-277 LIBERADA! A Polícia Rodoviária Federal (PRF) confirmou que a BR-277, na Serra da Esperança, em Guarapuava, foi totalmente liberada às 19h45 deste sábado (24), nos dois sentidos. A rodovia estava interditada desde as 17h10, após um deslizamento de terra no km 312, entre os viadutos da serra. O tráfego foi restabelecido, mas o trecho permanece sinalizado e monitorad",
-            "likes": 6,
-            "score": 0.999,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          },
-          {
-            "text": "TOP, PARANÁ É ISSO, CHOVE CHOVE E CHOVE MAS A SANEPAR SEMPRE PARA DE MANDAR AGUA... SEMPRE FALTA MESMO COM CHUVA.... FALTA DE EXISTIR OUTRAS EMPRESAS... ESSES MONOPOLIOS SO FODEM",
-            "likes": 1,
-            "score": 0.997,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          },
-          {
-            "text": "Santa Bárbara e São Geromimo acalmai essas chuvas! Santa Bárbara e São Geromimo acalmai essas chuvas! Santa Bárbara e São Geromimo acalmai essas chuvas! Gratidão 🙏 🙏 🙏 🙏 🙏",
-            "likes": 0,
-            "score": 0.996,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          },
-          {
-            "text": "Infelizmente a conta chegou!!! Tô com 63 anos e a muito tempo escuto falar sobre o aquecimento global e as desordens devastadoras que teria... Agora todos nós estamos sobre a misericórdia de Deus... Não há muito mais o que fazer... Fogo em alguns lugares e inundações em outros!!! Não temos pra onde correr... A ganância está acabando com tudo... Muito triste 😢",
-            "likes": 1,
-            "score": 0.99,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          },
-          {
-            "text": "Já estamis no domingo... assustadoras as suas imagens. Aqui, Curitiba psrece normal, c chuva (garôa) agora 10:40 h, 251926. OBRIGADA. BOM TRABALHO AÍ...",
-            "likes": 0,
-            "score": 0.988,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          },
-          {
-            "text": "Com tanta chuva As cataratas lotada de água com certeza o governo tem que reduzir A nossa conta de não tem como falarem que está faltando água para girar as torbinas😊",
-            "likes": 2,
-            "score": 0.987,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          },
-          {
-            "text": "William, valeu pelo vídeo! Seria interessante um vídeo sobre as grandes enchentes e inundações verificadas aqui no PR, a de 1983 foi muito intensa, para efeito de comparação.",
-            "likes": 1,
-            "score": 0.987,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          },
-          {
-            "text": "Realmente muita chuva aqui no Santa cândida o riozinho q divide o município de Curitiba e Colombo no roça grande falta pouco para chegar a passar na ponte 😢😢😢",
-            "likes": 2,
-            "score": 0.985,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          },
-          {
-            "text": "Muito chuva aqui em Botucatu São Paulo, imprecionant mesmo",
-            "likes": 0,
-            "score": 0.98,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          },
-          {
-            "text": "Parabéns pelo vídeo, obrigada pelas informações, seus vídeos são muito bom, saudações de Terra Boa Paraná, e aqui muita chuva ☂️",
-            "likes": 0,
-            "score": 0.98,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          },
-          {
-            "text": "HAAARPPPAA TOCANDO A MIL POR HORA NO PARANÁ DESTA VEZ.... PARA DEVASTAR TODA. A GENTE PERCEBE SIM...",
-            "likes": 0,
-            "score": 0.813,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          }
-        ],
-        "experiencia_pessoal_local": [
-          {
-            "text": "Realmente muita chuva aqui no Santa cândida o riozinho q divide o município de Curitiba e Colombo no roça grande falta pouco para chegar a passar na ponte 😢😢😢",
-            "likes": 2,
-            "score": 0.997,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          },
-          {
-            "text": "Vi numa reportagem que a sessão eleitoral é transferida. Fiquei atento, saia antes e confira para onde foi sua sessão. 🌧️ Penso que o TRE deve ter plantão em regiões com casos mais extremos .",
-            "likes": 0,
-            "score": 0.996,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          },
-          {
-            "text": "Muito chuva aqui em Botucatu São Paulo, imprecionant mesmo",
-            "likes": 0,
-            "score": 0.995,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          },
-          {
-            "text": "William, valeu pelo vídeo! Seria interessante um vídeo sobre as grandes enchentes e inundações verificadas aqui no PR, a de 1983 foi muito intensa, para efeito de comparação.",
-            "likes": 1,
-            "score": 0.993,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          },
-          {
-            "text": "Parabéns pelo vídeo, obrigada pelas informações, seus vídeos são muito bom, saudações de Terra Boa Paraná, e aqui muita chuva ☂️",
-            "likes": 0,
-            "score": 0.993,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          },
-          {
-            "text": "Já estamis no domingo... assustadoras as suas imagens. Aqui, Curitiba psrece normal, c chuva (garôa) agora 10:40 h, 251926. OBRIGADA. BOM TRABALHO AÍ...",
-            "likes": 0,
-            "score": 0.992,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          }
-        ],
-        "alerta_prevencao_cobranca": [
-          {
-            "text": "🚨 ATUALIZAÇÃO IMPORTANTE — BR-277 LIBERADA! A Polícia Rodoviária Federal (PRF) confirmou que a BR-277, na Serra da Esperança, em Guarapuava, foi totalmente liberada às 19h45 deste sábado (24), nos dois sentidos. A rodovia estava interditada desde as 17h10, após um deslizamento de terra no km 312, entre os viadutos da serra. O tráfego foi restabelecido, mas o trecho permanece sinalizado e monitorad",
-            "likes": 6,
-            "score": 0.944,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          }
-        ],
-        "critica_midia_informacao": [
-          {
-            "text": "Infelizmente a conta chegou!!! Tô com 63 anos e a muito tempo escuto falar sobre o aquecimento global e as desordens devastadoras que teria... Agora todos nós estamos sobre a misericórdia de Deus... Não há muito mais o que fazer... Fogo em alguns lugares e inundações em outros!!! Não temos pra onde correr... A ganância está acabando com tudo... Muito triste 😢",
-            "likes": 1,
-            "score": 0.996,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          },
-          {
-            "text": "Ótimo Repórter, Parabéns, Muito Joia, Grande Talento...",
-            "likes": 1,
-            "score": 0.983,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          },
-          {
-            "text": "Compartilhado 😊",
-            "likes": 0,
-            "score": 0.931,
-            "date": "2026-10-25",
-            "video_id": "y3dd-w6ogTY"
-          }
-        ]
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "acompanhamento",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-24T08:40:00Z"
-        },
-        {
-          "flag": "acompanhamento",
-          "at": "2026-10-25T15:22:22Z",
-          "criterio": "municipal_v0.3.2"
-        }
-      ],
-      "n_comments_valid": 22,
-      "videos_with_valid_comments": [
-        "y3dd-w6ogTY"
-      ],
-      "alert_opened_at": "2026-10-24T08:40:00Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "ok",
-        "silence_type": null,
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-10-25T15:22:22Z",
-      "next_collection_at": "2026-10-26T03:22:22Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {
-        "longo": 1
-      },
-      "n_videos_municipais": 1,
-      "n_videos_verificados": 1,
-      "n_comments_municipais": 25,
-      "n_comments_valid_municipal": 22,
-      "videos_with_valid_comments_municipal": [
-        "y3dd-w6ogTY"
-      ],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_sc_3035",
-      "municipio": "Águas de Chapecó",
-      "uf": "SC",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "24/10/2026",
-      "codibge": "4200507",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-24T09:22:31Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-24T09:22:31Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-10-25T15:22:22Z",
-      "next_collection_at": "2026-10-26T15:22:22Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_sc_3036",
-      "municipio": "São Carlos",
-      "uf": "SC",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "24/10/2026",
-      "codibge": "4216008",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-24T09:24:46Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-24T09:24:46Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-10-25T15:22:22Z",
-      "next_collection_at": "2026-10-26T15:22:22Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_sc_3037",
-      "municipio": "Faxinal dos Guedes",
-      "uf": "SC",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "24/10/2026",
-      "codibge": "4205308",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-24T10:10:03Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-24T10:10:03Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-10-25T15:22:22Z",
-      "next_collection_at": "2026-10-26T15:22:22Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_sc_3038",
-      "municipio": "Xanxerê",
-      "uf": "SC",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "24/10/2026",
-      "codibge": "4219507",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-24T10:14:12Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-24T10:14:12Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-10-25T15:22:22Z",
-      "next_collection_at": "2026-10-26T15:22:22Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_sc_3039",
-      "municipio": "Coronel Freitas",
-      "uf": "SC",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "24/10/2026",
-      "codibge": "4204400",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-24T10:14:38Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-24T10:14:38Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-10-25T15:22:22Z",
-      "next_collection_at": "2026-10-26T15:22:22Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_pr_3040",
-      "municipio": "União da Vitória",
-      "uf": "PR",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "24/10/2026",
-      "codibge": "4128203",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-24T11:49:19Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-24T11:49:19Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-10-25T15:22:22Z",
-      "next_collection_at": "2026-10-26T15:22:22Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_sc_3041",
-      "municipio": "Porto União",
-      "uf": "SC",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "24/10/2026",
-      "codibge": "4213609",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-24T11:53:08Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-24T11:53:08Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-10-25T15:22:22Z",
-      "next_collection_at": "2026-10-26T15:22:22Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_pr_3049",
-      "municipio": "Campo Largo",
-      "uf": "PR",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "24/10/2026",
-      "codibge": "4104204",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-24T14:35:56Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-24T14:35:56Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-10-26T02:34:42Z",
-      "next_collection_at": "2026-10-27T02:34:42Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_pr_3050",
-      "municipio": "Curitiba",
-      "uf": "PR",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "24/10/2026",
-      "codibge": "4106902",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-24T14:39:41Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-24T14:39:41Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 2
-      },
-      "last_collection_at": "2026-10-24T20:02:41Z",
-      "next_collection_at": "2026-10-25T20:02:41Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_pr_3051",
-      "municipio": "Fazenda Rio Grande",
-      "uf": "PR",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "24/10/2026",
-      "codibge": "4107652",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-24T14:49:18Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-24T14:49:18Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 2
-      },
-      "last_collection_at": "2026-10-24T20:02:41Z",
-      "next_collection_at": "2026-10-25T20:02:41Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_pr_3052",
-      "municipio": "Morretes",
-      "uf": "PR",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "24/10/2026",
-      "codibge": "4116208",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-24T15:41:24Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-24T15:41:24Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 2
-      },
-      "last_collection_at": "2026-10-24T20:02:41Z",
-      "next_collection_at": "2026-10-25T20:02:41Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_pr_3053",
-      "municipio": "Almirante Tamandaré",
-      "uf": "PR",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "24/10/2026",
-      "codibge": "4100400",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-24T15:43:50Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-24T15:43:50Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 2
-      },
-      "last_collection_at": "2026-10-24T20:02:41Z",
-      "next_collection_at": "2026-10-25T20:02:41Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_pr_3054",
-      "municipio": "Campo Magro",
-      "uf": "PR",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "24/10/2026",
-      "codibge": "4104253",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-24T15:54:38Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-24T15:54:38Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 2
-      },
-      "last_collection_at": "2026-10-24T20:02:41Z",
-      "next_collection_at": "2026-10-25T20:02:41Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_pr_3055",
-      "municipio": "Campina Grande do Sul",
-      "uf": "PR",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "24/10/2026",
-      "codibge": "4104006",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-24T16:00:50Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-24T16:00:50Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 2
-      },
-      "last_collection_at": "2026-10-24T20:02:41Z",
-      "next_collection_at": "2026-10-25T20:02:41Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_pr_3056",
-      "municipio": "Antonina",
-      "uf": "PR",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "24/10/2026",
-      "codibge": "4101200",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-24T16:44:41Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-24T16:44:41Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 2
-      },
-      "last_collection_at": "2026-10-24T20:02:41Z",
-      "next_collection_at": "2026-10-25T20:02:41Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_pr_3057",
-      "municipio": "Rio Branco do Sul",
-      "uf": "PR",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "24/10/2026",
-      "codibge": "4122206",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-24T17:03:30Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-24T17:03:30Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-10-25T02:35:47Z",
-      "next_collection_at": "2026-10-26T02:35:47Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_pr_3058",
-      "municipio": "Jaguariaíva",
-      "uf": "PR",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "24/10/2026",
-      "codibge": "4112009",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-24T18:38:04Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-24T18:38:04Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-10-25T02:35:47Z",
-      "next_collection_at": "2026-10-26T02:35:47Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_sp_3061",
-      "municipio": "Itararé",
-      "uf": "SP",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "24/10/2026",
-      "codibge": "3523206",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-24T18:50:49Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-24T18:50:49Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-10-25T02:35:47Z",
-      "next_collection_at": "2026-10-26T02:35:47Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
     {
       "id": "cemaden_sp_3120",
       "municipio": "Ribeira",
@@ -2799,464 +106,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-10-25T10:30:10Z",
-      "next_collection_at": "2026-10-26T10:30:10Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_pr_3092",
-      "municipio": "Apucarana",
-      "uf": "PR",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "25/10/2026",
-      "codibge": "4101408",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-25T00:02:39Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-25T00:02:39Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 4
-      },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-25T15:22:22Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_sp_3093",
-      "municipio": "Sumaré",
-      "uf": "SP",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "25/10/2026",
-      "codibge": "3552403",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-25T00:04:40Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-25T00:04:40Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 4
-      },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-25T15:22:22Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_sp_3105",
-      "municipio": "Avaré",
-      "uf": "SP",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "25/10/2026",
-      "codibge": "3504503",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-25T02:03:00Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-25T02:03:00Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 4
-      },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-25T15:22:22Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_sp_3106",
-      "municipio": "Sorocaba",
-      "uf": "SP",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "25/10/2026",
-      "codibge": "3552205",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-25T02:36:28Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-25T02:36:28Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 4
-      },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-25T15:22:22Z",
+      "last_collection_at": "2026-10-26T12:01:05Z",
+      "next_collection_at": "2026-10-27T12:01:05Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -3364,469 +215,13 @@
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 4
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-25T15:22:22Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_sp_3108",
-      "municipio": "Capivari",
-      "uf": "SP",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "25/10/2026",
-      "codibge": "3510401",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-25T02:57:11Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-25T02:57:11Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 4
-      },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-25T15:22:22Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_sp_3109",
-      "municipio": "Iperó",
-      "uf": "SP",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "25/10/2026",
-      "codibge": "3521002",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-25T02:59:45Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-25T02:59:45Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 4
-      },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-25T15:22:22Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_sp_3110",
-      "municipio": "Mairinque",
-      "uf": "SP",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "25/10/2026",
-      "codibge": "3528403",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-25T03:01:47Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-25T03:01:47Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 4
-      },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-25T15:22:22Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_sp_3111",
-      "municipio": "Cabreúva",
-      "uf": "SP",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "25/10/2026",
-      "codibge": "3508405",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-25T03:21:56Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-25T03:21:56Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 4
-      },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-25T15:22:22Z",
+      "last_collection_at": "2026-10-26T12:01:05Z",
+      "next_collection_at": "2026-10-27T12:01:05Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -3934,127 +329,13 @@
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 4
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-25T15:22:22Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_sp_3114",
-      "municipio": "Rio das Pedras",
-      "uf": "SP",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "25/10/2026",
-      "codibge": "3544004",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-25T03:59:19Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-25T03:59:19Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 4
-      },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-25T15:22:22Z",
+      "last_collection_at": "2026-10-26T12:01:05Z",
+      "next_collection_at": "2026-10-27T12:01:05Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -4162,13 +443,13 @@
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 4
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-25T15:22:22Z",
+      "last_collection_at": "2026-10-26T12:01:05Z",
+      "next_collection_at": "2026-10-27T12:01:05Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -4276,13 +557,13 @@
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 4
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-25T15:22:22Z",
+      "last_collection_at": "2026-10-26T12:01:05Z",
+      "next_collection_at": "2026-10-27T12:01:05Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -4390,13 +671,13 @@
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 4
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-25T15:22:22Z",
+      "last_collection_at": "2026-10-26T12:01:05Z",
+      "next_collection_at": "2026-10-27T12:01:05Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -4504,13 +785,13 @@
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 4
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-25T15:22:22Z",
+      "last_collection_at": "2026-10-26T12:01:05Z",
+      "next_collection_at": "2026-10-27T12:01:05Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -4618,13 +899,13 @@
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 4
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-25T15:22:22Z",
+      "last_collection_at": "2026-10-26T12:01:05Z",
+      "next_collection_at": "2026-10-27T12:01:05Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -4732,13 +1013,13 @@
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 4
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-25T15:22:22Z",
+      "last_collection_at": "2026-10-26T12:01:05Z",
+      "next_collection_at": "2026-10-27T12:01:05Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -4846,925 +1127,13 @@
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 4
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-25T15:22:22Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_sp_3129",
-      "municipio": "Campinas",
-      "uf": "SP",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "25/10/2026",
-      "codibge": "3509502",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-25T04:29:13Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-25T04:29:13Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 4
-      },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-25T15:22:22Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_sp_3130",
-      "municipio": "Limeira",
-      "uf": "SP",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "25/10/2026",
-      "codibge": "3526902",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-25T04:30:37Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-25T04:30:37Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 4
-      },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-25T15:22:22Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_sp_3131",
-      "municipio": "Morungaba",
-      "uf": "SP",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "25/10/2026",
-      "codibge": "3532009",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-25T04:32:18Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-25T04:32:18Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 4
-      },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-25T15:22:22Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_sp_3132",
-      "municipio": "Amparo",
-      "uf": "SP",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "25/10/2026",
-      "codibge": "3501905",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-25T04:39:14Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-25T04:39:14Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 4
-      },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-25T15:22:22Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_sp_3133",
-      "municipio": "Pedreira",
-      "uf": "SP",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "25/10/2026",
-      "codibge": "3537107",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-25T04:40:53Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-25T04:40:53Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 4
-      },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-25T15:22:22Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_sp_3135",
-      "municipio": "Águas de Lindóia",
-      "uf": "SP",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "25/10/2026",
-      "codibge": "3500501",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-25T05:17:44Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-25T05:17:44Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 4
-      },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-25T15:22:22Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_sp_3136",
-      "municipio": "Marília",
-      "uf": "SP",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "25/10/2026",
-      "codibge": "3529005",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-25T05:43:03Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-25T05:43:03Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 4
-      },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-25T15:22:22Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_sp_3137",
-      "municipio": "Espírito Santo do Pinhal",
-      "uf": "SP",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "25/10/2026",
-      "codibge": "3515186",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-25T05:44:04Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-25T05:44:04Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 4
-      },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-25T15:22:22Z",
+      "last_collection_at": "2026-10-26T12:01:05Z",
+      "next_collection_at": "2026-10-27T12:01:05Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -5872,13 +1241,13 @@
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 4
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-25T15:22:22Z",
+      "last_collection_at": "2026-10-26T12:01:05Z",
+      "next_collection_at": "2026-10-27T12:01:05Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -6220,697 +1589,13 @@
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 3
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-25T20:14:30Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_mg_3147",
-      "municipio": "Conceição do Mato Dentro",
-      "uf": "MG",
-      "tipo": "Risco Hidrológico",
-      "nivel": "Moderado",
-      "data_alerta": "25/10/2026",
-      "codibge": "3117504",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-25T14:24:14Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-25T14:24:14Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 2
-      },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-26T02:34:42Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_mg_3148",
-      "municipio": "Morro do Pilar",
-      "uf": "MG",
-      "tipo": "Risco Hidrológico",
-      "nivel": "Moderado",
-      "data_alerta": "25/10/2026",
-      "codibge": "3143708",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-25T14:27:36Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-25T14:27:36Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 2
-      },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-26T02:34:42Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_mg_3149",
-      "municipio": "Caratinga",
-      "uf": "MG",
-      "tipo": "Risco Hidrológico",
-      "nivel": "Moderado",
-      "data_alerta": "25/10/2026",
-      "codibge": "3113404",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-25T15:48:38Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-25T15:48:38Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 2
-      },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-26T02:34:42Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_mg_3150",
-      "municipio": "Teófilo Otoni",
-      "uf": "MG",
-      "tipo": "Risco Hidrológico",
-      "nivel": "Moderado",
-      "data_alerta": "25/10/2026",
-      "codibge": "3168606",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-25T15:49:44Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-25T15:49:44Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 2
-      },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-26T02:34:42Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_mg_3151",
-      "municipio": "Belo Oriente",
-      "uf": "MG",
-      "tipo": "Risco Hidrológico",
-      "nivel": "Moderado",
-      "data_alerta": "25/10/2026",
-      "codibge": "3106309",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-25T15:59:02Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-25T15:59:02Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 2
-      },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-26T02:34:42Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_mg_3152",
-      "municipio": "Iapu",
-      "uf": "MG",
-      "tipo": "Risco Hidrológico",
-      "nivel": "Moderado",
-      "data_alerta": "25/10/2026",
-      "codibge": "3129301",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-25T15:59:06Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-25T15:59:06Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 2
-      },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-26T02:34:42Z",
+      "last_collection_at": "2026-10-26T12:01:05Z",
+      "next_collection_at": "2026-10-27T12:01:05Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -7018,13 +1703,13 @@
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 1
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-26T02:34:42Z",
+      "last_collection_at": "2026-10-26T12:01:05Z",
+      "next_collection_at": "2026-10-27T12:01:05Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -7132,13 +1817,13 @@
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 1
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-26T02:34:42Z",
+      "last_collection_at": "2026-10-26T12:01:05Z",
+      "next_collection_at": "2026-10-27T12:01:05Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -7246,13 +1931,13 @@
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 1
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-26T02:34:42Z",
+      "last_collection_at": "2026-10-26T12:01:05Z",
+      "next_collection_at": "2026-10-27T12:01:05Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -7264,13 +1949,13 @@
       "flag_reassessment": null
     },
     {
-      "id": "cemaden_mg_3156",
-      "municipio": "Carlos Chagas",
-      "uf": "MG",
-      "tipo": "Movimentos de Massa",
+      "id": "cemaden_sp_3157",
+      "municipio": "Pariquera-açu",
+      "uf": "SP",
+      "tipo": "Risco Hidrológico",
       "nivel": "Moderado",
-      "data_alerta": "25/10/2026",
-      "codibge": "3113701",
+      "data_alerta": "26/10/2026",
+      "codibge": "3536208",
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
@@ -7351,22 +2036,136 @@
       "flag_history": [
         {
           "flag": "alerta",
-          "at": "2026-10-25T18:27:19Z"
+          "at": "2026-10-26T00:57:32Z"
         }
       ],
       "n_comments_valid": 0,
       "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-25T18:27:19Z",
+      "alert_opened_at": "2026-10-26T00:57:32Z",
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 1
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": null,
-      "next_collection_at": "2026-10-26T02:34:42Z",
+      "last_collection_at": "2026-10-26T12:01:05Z",
+      "next_collection_at": "2026-10-27T12:01:05Z",
+      "window_finalized_at": null,
+      "counters_integrity": "ok",
+      "videos_por_formato": {},
+      "n_videos_municipais": 0,
+      "n_videos_verificados": 0,
+      "n_comments_municipais": 0,
+      "n_comments_valid_municipal": 0,
+      "videos_with_valid_comments_municipal": [],
+      "flag_reassessment": null
+    },
+    {
+      "id": "cemaden_sp_3158",
+      "municipio": "São Sebastião",
+      "uf": "SP",
+      "tipo": "Movimentos de Massa",
+      "nivel": "Moderado",
+      "data_alerta": "26/10/2026",
+      "codibge": "3550704",
+      "lat": null,
+      "lon": null,
+      "regime": "prospective_live",
+      "n_comments": 0,
+      "n_videos": 0,
+      "unlabeled": 0,
+      "unlabeled_pct": 0.0,
+      "date_range": [
+        "",
+        ""
+      ],
+      "distribution": [
+        {
+          "key": "solidariedade_oracao_luto",
+          "label": "Solidariedade / oração / luto",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "ajuda_resgate_doacoes",
+          "label": "Ajuda / resgate / doações",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "responsabilizacao_governanca",
+          "label": "Responsabilização / governança",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "infraestrutura_ocupacao_risco",
+          "label": "Infraestrutura / ocupação de risco",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "clima_chuva_meio_ambiente",
+          "label": "Clima / chuva / meio ambiente",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "experiencia_pessoal_local",
+          "label": "Experiência pessoal / local",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "alerta_prevencao_cobranca",
+          "label": "Alerta / prevenção / cobrança",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "critica_midia_informacao",
+          "label": "Crítica à mídia / informação",
+          "count": 0,
+          "pct": 0.0
+        }
+      ],
+      "timeline": [],
+      "videos": [],
+      "all_samples": {
+        "solidariedade_oracao_luto": [],
+        "ajuda_resgate_doacoes": [],
+        "responsabilizacao_governanca": [],
+        "infraestrutura_ocupacao_risco": [],
+        "clima_chuva_meio_ambiente": [],
+        "experiencia_pessoal_local": [],
+        "alerta_prevencao_cobranca": [],
+        "critica_midia_informacao": []
+      },
+      "academic_studies": [],
+      "observation_status": "active",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-10-26T02:15:24Z"
+        }
+      ],
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "alert_opened_at": "2026-10-26T02:15:24Z",
+      "alert_closed_at": null,
+      "alert_transitions": [],
+      "collection_health": {
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
+      },
+      "last_collection_at": "2026-10-26T12:01:05Z",
+      "next_collection_at": "2026-10-27T12:01:05Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -32361,6 +27160,419 @@
       "n_comments_municipais": 0,
       "n_comments_valid_municipal": 0,
       "videos_with_valid_comments_municipal": [],
+      "flag_reassessment": null
+    },
+    {
+      "id": "cemaden_pr_3034",
+      "municipio": "Pato Branco",
+      "uf": "PR",
+      "tipo": "Movimentos de Massa",
+      "nivel": "Moderado",
+      "data_alerta": "24/10/2026",
+      "codibge": "4118501",
+      "lat": null,
+      "lon": null,
+      "regime": "prospective_live",
+      "n_comments": 25,
+      "n_videos": 1,
+      "unlabeled": 3,
+      "unlabeled_pct": 12.0,
+      "date_range": [
+        "2026-10-25",
+        "2026-10-25"
+      ],
+      "distribution": [
+        {
+          "key": "solidariedade_oracao_luto",
+          "label": "Solidariedade / oração / luto",
+          "count": 5,
+          "pct": 20.0
+        },
+        {
+          "key": "ajuda_resgate_doacoes",
+          "label": "Ajuda / resgate / doações",
+          "count": 4,
+          "pct": 16.0
+        },
+        {
+          "key": "responsabilizacao_governanca",
+          "label": "Responsabilização / governança",
+          "count": 2,
+          "pct": 8.0
+        },
+        {
+          "key": "infraestrutura_ocupacao_risco",
+          "label": "Infraestrutura / ocupação de risco",
+          "count": 3,
+          "pct": 12.0
+        },
+        {
+          "key": "clima_chuva_meio_ambiente",
+          "label": "Clima / chuva / meio ambiente",
+          "count": 12,
+          "pct": 48.0
+        },
+        {
+          "key": "experiencia_pessoal_local",
+          "label": "Experiência pessoal / local",
+          "count": 6,
+          "pct": 24.0
+        },
+        {
+          "key": "alerta_prevencao_cobranca",
+          "label": "Alerta / prevenção / cobrança",
+          "count": 1,
+          "pct": 4.0
+        },
+        {
+          "key": "critica_midia_informacao",
+          "label": "Crítica à mídia / informação",
+          "count": 3,
+          "pct": 12.0
+        }
+      ],
+      "timeline": [
+        {
+          "date": "25/10/26",
+          "count": 25
+        }
+      ],
+      "videos": [
+        {
+          "video_id": "y3dd-w6ogTY",
+          "n_comments": 25,
+          "total_likes": 20,
+          "first_comment": "25/10/2026",
+          "top_categories": [
+            {
+              "label": "Clima/chuva",
+              "count": 12
+            },
+            {
+              "label": "Experiência",
+              "count": 6
+            },
+            {
+              "label": "Solidariedade",
+              "count": 5
+            }
+          ],
+          "municipal_evidence": "descricao",
+          "formato": "longo"
+        }
+      ],
+      "all_samples": {
+        "solidariedade_oracao_luto": [
+          {
+            "text": "@usuario EU DISSE EXATAMENTE ISSO NO MEU COMENTÁRIO QUANDO DIGO QUE ESTAMOS SOBRE A MISERICÓRDIA DE DEUS!!!",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          },
+          {
+            "text": "A força dessa água com certeza mexerá na estrutura desta passarela,de forma silenciosa a água vai deteriorando a estrutura,no futuro?Quem pode garantir a segurança deste lugar?",
+            "likes": 4,
+            "score": 0.997,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          },
+          {
+            "text": "👁️☠️☂️",
+            "likes": 0,
+            "score": 0.974,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          },
+          {
+            "text": "Infelizmente a conta chegou!!! Tô com 63 anos e a muito tempo escuto falar sobre o aquecimento global e as desordens devastadoras que teria... Agora todos nós estamos sobre a misericórdia de Deus... Não há muito mais o que fazer... Fogo em alguns lugares e inundações em outros!!! Não temos pra onde correr... A ganância está acabando com tudo... Muito triste 😢",
+            "likes": 1,
+            "score": 0.948,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          },
+          {
+            "text": "PARABENS",
+            "likes": 0,
+            "score": 0.546,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          }
+        ],
+        "ajuda_resgate_doacoes": [
+          {
+            "text": "TOP, PARANÁ É ISSO, CHOVE CHOVE E CHOVE MAS A SANEPAR SEMPRE PARA DE MANDAR AGUA... SEMPRE FALTA MESMO COM CHUVA.... FALTA DE EXISTIR OUTRAS EMPRESAS... ESSES MONOPOLIOS SO FODEM",
+            "likes": 1,
+            "score": 0.987,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          },
+          {
+            "text": "Proteções bom trabalho",
+            "likes": 0,
+            "score": 0.899,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          },
+          {
+            "text": "PARABENS",
+            "likes": 0,
+            "score": 0.653,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          },
+          {
+            "text": "Esses Nucleos instaveis estavem no RS e passando pelo PR , seg ao Sudest . JBN vem do AM .",
+            "likes": 0,
+            "score": 0.527,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          }
+        ],
+        "responsabilizacao_governanca": [
+          {
+            "text": "Quem cuida disso é a empresa que responde pela energia elétrica do estado ,privatizar barateia os custos",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          },
+          {
+            "text": "Com tanta chuva As cataratas lotada de água com certeza o governo tem que reduzir A nossa conta de não tem como falarem que está faltando água para girar as torbinas😊",
+            "likes": 2,
+            "score": 0.989,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          }
+        ],
+        "infraestrutura_ocupacao_risco": [
+          {
+            "text": "🚨 ATUALIZAÇÃO IMPORTANTE — BR-277 LIBERADA! A Polícia Rodoviária Federal (PRF) confirmou que a BR-277, na Serra da Esperança, em Guarapuava, foi totalmente liberada às 19h45 deste sábado (24), nos dois sentidos. A rodovia estava interditada desde as 17h10, após um deslizamento de terra no km 312, entre os viadutos da serra. O tráfego foi restabelecido, mas o trecho permanece sinalizado e monitorad",
+            "likes": 6,
+            "score": 0.995,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          },
+          {
+            "text": "Realmente muita chuva aqui no Santa cândida o riozinho q divide o município de Curitiba e Colombo no roça grande falta pouco para chegar a passar na ponte 😢😢😢",
+            "likes": 2,
+            "score": 0.991,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          },
+          {
+            "text": "HAAARPPPAA TOCANDO A MIL POR HORA NO PARANÁ DESTA VEZ.... PARA DEVASTAR TODA. A GENTE PERCEBE SIM...",
+            "likes": 0,
+            "score": 0.728,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          }
+        ],
+        "clima_chuva_meio_ambiente": [
+          {
+            "text": "ACHO QUE OS TURISTAS DEVERIAM CUIDAR E NÃO IR NAS CATARATAS DO IGUAÇU, PORQUE COM TANTOS VOLUMES DE ÁGUA TUDO É POSSÍVEL. DEVERIAM EVITAR EM MOMENTOS QUE CHOVE MAIS DE 100 MM EM MENOS DE 24 HORAS NO PARANÁ.. E ALÉM DAS CATARATAS JÁ ESTAREM MUITO CHEIA, ALTAS POR CHUVAS ANTERIORES.",
+            "likes": 0,
+            "score": 0.999,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          },
+          {
+            "text": "🚨 ATUALIZAÇÃO IMPORTANTE — BR-277 LIBERADA! A Polícia Rodoviária Federal (PRF) confirmou que a BR-277, na Serra da Esperança, em Guarapuava, foi totalmente liberada às 19h45 deste sábado (24), nos dois sentidos. A rodovia estava interditada desde as 17h10, após um deslizamento de terra no km 312, entre os viadutos da serra. O tráfego foi restabelecido, mas o trecho permanece sinalizado e monitorad",
+            "likes": 6,
+            "score": 0.999,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          },
+          {
+            "text": "TOP, PARANÁ É ISSO, CHOVE CHOVE E CHOVE MAS A SANEPAR SEMPRE PARA DE MANDAR AGUA... SEMPRE FALTA MESMO COM CHUVA.... FALTA DE EXISTIR OUTRAS EMPRESAS... ESSES MONOPOLIOS SO FODEM",
+            "likes": 1,
+            "score": 0.997,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          },
+          {
+            "text": "Santa Bárbara e São Geromimo acalmai essas chuvas! Santa Bárbara e São Geromimo acalmai essas chuvas! Santa Bárbara e São Geromimo acalmai essas chuvas! Gratidão 🙏 🙏 🙏 🙏 🙏",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          },
+          {
+            "text": "Infelizmente a conta chegou!!! Tô com 63 anos e a muito tempo escuto falar sobre o aquecimento global e as desordens devastadoras que teria... Agora todos nós estamos sobre a misericórdia de Deus... Não há muito mais o que fazer... Fogo em alguns lugares e inundações em outros!!! Não temos pra onde correr... A ganância está acabando com tudo... Muito triste 😢",
+            "likes": 1,
+            "score": 0.99,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          },
+          {
+            "text": "Já estamis no domingo... assustadoras as suas imagens. Aqui, Curitiba psrece normal, c chuva (garôa) agora 10:40 h, 251926. OBRIGADA. BOM TRABALHO AÍ...",
+            "likes": 0,
+            "score": 0.988,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          },
+          {
+            "text": "Com tanta chuva As cataratas lotada de água com certeza o governo tem que reduzir A nossa conta de não tem como falarem que está faltando água para girar as torbinas😊",
+            "likes": 2,
+            "score": 0.987,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          },
+          {
+            "text": "William, valeu pelo vídeo! Seria interessante um vídeo sobre as grandes enchentes e inundações verificadas aqui no PR, a de 1983 foi muito intensa, para efeito de comparação.",
+            "likes": 1,
+            "score": 0.987,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          },
+          {
+            "text": "Realmente muita chuva aqui no Santa cândida o riozinho q divide o município de Curitiba e Colombo no roça grande falta pouco para chegar a passar na ponte 😢😢😢",
+            "likes": 2,
+            "score": 0.985,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          },
+          {
+            "text": "Muito chuva aqui em Botucatu São Paulo, imprecionant mesmo",
+            "likes": 0,
+            "score": 0.98,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          },
+          {
+            "text": "Parabéns pelo vídeo, obrigada pelas informações, seus vídeos são muito bom, saudações de Terra Boa Paraná, e aqui muita chuva ☂️",
+            "likes": 0,
+            "score": 0.98,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          },
+          {
+            "text": "HAAARPPPAA TOCANDO A MIL POR HORA NO PARANÁ DESTA VEZ.... PARA DEVASTAR TODA. A GENTE PERCEBE SIM...",
+            "likes": 0,
+            "score": 0.813,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          }
+        ],
+        "experiencia_pessoal_local": [
+          {
+            "text": "Realmente muita chuva aqui no Santa cândida o riozinho q divide o município de Curitiba e Colombo no roça grande falta pouco para chegar a passar na ponte 😢😢😢",
+            "likes": 2,
+            "score": 0.997,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          },
+          {
+            "text": "Vi numa reportagem que a sessão eleitoral é transferida. Fiquei atento, saia antes e confira para onde foi sua sessão. 🌧️ Penso que o TRE deve ter plantão em regiões com casos mais extremos .",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          },
+          {
+            "text": "Muito chuva aqui em Botucatu São Paulo, imprecionant mesmo",
+            "likes": 0,
+            "score": 0.995,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          },
+          {
+            "text": "William, valeu pelo vídeo! Seria interessante um vídeo sobre as grandes enchentes e inundações verificadas aqui no PR, a de 1983 foi muito intensa, para efeito de comparação.",
+            "likes": 1,
+            "score": 0.993,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          },
+          {
+            "text": "Parabéns pelo vídeo, obrigada pelas informações, seus vídeos são muito bom, saudações de Terra Boa Paraná, e aqui muita chuva ☂️",
+            "likes": 0,
+            "score": 0.993,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          },
+          {
+            "text": "Já estamis no domingo... assustadoras as suas imagens. Aqui, Curitiba psrece normal, c chuva (garôa) agora 10:40 h, 251926. OBRIGADA. BOM TRABALHO AÍ...",
+            "likes": 0,
+            "score": 0.992,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          }
+        ],
+        "alerta_prevencao_cobranca": [
+          {
+            "text": "🚨 ATUALIZAÇÃO IMPORTANTE — BR-277 LIBERADA! A Polícia Rodoviária Federal (PRF) confirmou que a BR-277, na Serra da Esperança, em Guarapuava, foi totalmente liberada às 19h45 deste sábado (24), nos dois sentidos. A rodovia estava interditada desde as 17h10, após um deslizamento de terra no km 312, entre os viadutos da serra. O tráfego foi restabelecido, mas o trecho permanece sinalizado e monitorad",
+            "likes": 6,
+            "score": 0.944,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          }
+        ],
+        "critica_midia_informacao": [
+          {
+            "text": "Infelizmente a conta chegou!!! Tô com 63 anos e a muito tempo escuto falar sobre o aquecimento global e as desordens devastadoras que teria... Agora todos nós estamos sobre a misericórdia de Deus... Não há muito mais o que fazer... Fogo em alguns lugares e inundações em outros!!! Não temos pra onde correr... A ganância está acabando com tudo... Muito triste 😢",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          },
+          {
+            "text": "Ótimo Repórter, Parabéns, Muito Joia, Grande Talento...",
+            "likes": 1,
+            "score": 0.983,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          },
+          {
+            "text": "Compartilhado 😊",
+            "likes": 0,
+            "score": 0.931,
+            "date": "2026-10-25",
+            "video_id": "y3dd-w6ogTY"
+          }
+        ]
+      },
+      "academic_studies": [],
+      "observation_status": "extended",
+      "priority_tier": "moderado",
+      "flag": "acompanhamento",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-10-24T08:40:00Z"
+        },
+        {
+          "flag": "acompanhamento",
+          "at": "2026-10-25T15:22:22Z",
+          "criterio": "municipal_v0.3.2"
+        }
+      ],
+      "n_comments_valid": 22,
+      "videos_with_valid_comments": [
+        "y3dd-w6ogTY"
+      ],
+      "alert_opened_at": "2026-10-24T08:40:00Z",
+      "alert_closed_at": "2026-10-26T12:01:05Z",
+      "alert_transitions": [],
+      "collection_health": {
+        "status": "ok",
+        "silence_type": null,
+        "last_error": null,
+        "consecutive_failures": 0
+      },
+      "last_collection_at": "2026-10-25T15:22:22Z",
+      "next_collection_at": "2026-10-27T00:01:05Z",
+      "window_finalized_at": null,
+      "counters_integrity": "ok",
+      "videos_por_formato": {
+        "longo": 1
+      },
+      "n_videos_municipais": 1,
+      "n_videos_verificados": 1,
+      "n_comments_municipais": 25,
+      "n_comments_valid_municipal": 22,
+      "videos_with_valid_comments_municipal": [
+        "y3dd-w6ogTY"
+      ],
       "flag_reassessment": null
     }
   ],
