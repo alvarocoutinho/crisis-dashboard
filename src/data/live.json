@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T21:40:57Z",
+  "generated_at": "2026-10-28T03:23:16Z",
   "pipeline_version": "0.3.3",
   "pilot_mode": true,
   "dry_run": false,
@@ -108,120 +108,6 @@
       },
       "last_collection_at": "2026-10-27T21:40:40Z",
       "next_collection_at": "2026-10-28T21:40:40Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_sp_3153",
-      "municipio": "Sete Barras",
-      "uf": "SP",
-      "tipo": "Risco Hidrológico",
-      "nivel": "Alto",
-      "data_alerta": "25/10/2026",
-      "codibge": "3551801",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "alto",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-25T17:41:53Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-25T17:41:53Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-10-27T17:09:50Z",
-      "next_collection_at": "2026-10-28T17:09:50Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -347,234 +233,6 @@
       "flag_reassessment": null
     },
     {
-      "id": "cemaden_sp_3155",
-      "municipio": "Registro",
-      "uf": "SP",
-      "tipo": "Risco Hidrológico",
-      "nivel": "Moderado",
-      "data_alerta": "25/10/2026",
-      "codibge": "3542602",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-25T17:42:07Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-25T17:42:07Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-10-27T17:09:50Z",
-      "next_collection_at": "2026-10-28T17:09:50Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_sp_3157",
-      "municipio": "Pariquera-açu",
-      "uf": "SP",
-      "tipo": "Risco Hidrológico",
-      "nivel": "Moderado",
-      "data_alerta": "26/10/2026",
-      "codibge": "3536208",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-26T00:57:32Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-10-26T00:57:32Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-10-27T17:09:50Z",
-      "next_collection_at": "2026-10-28T17:09:50Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
       "id": "cemaden_rs_3159",
       "municipio": "Itaqui",
       "uf": "RS",
@@ -676,8 +334,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-10-27T03:09:45Z",
-      "next_collection_at": "2026-10-28T03:09:45Z",
+      "last_collection_at": "2026-10-28T03:22:50Z",
+      "next_collection_at": "2026-10-29T03:22:50Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -10809,68 +10467,72 @@
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
-      "n_comments": 30,
-      "n_videos": 1,
-      "unlabeled": 4,
-      "unlabeled_pct": 13.3,
+      "n_comments": 43,
+      "n_videos": 2,
+      "unlabeled": 5,
+      "unlabeled_pct": 11.6,
       "date_range": [
-        "2026-10-25",
+        "2026-10-24",
         "2026-10-26"
       ],
       "distribution": [
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
-          "count": 6,
-          "pct": 20.0
+          "count": 16,
+          "pct": 37.2
         },
         {
           "key": "ajuda_resgate_doacoes",
           "label": "Ajuda / resgate / doações",
           "count": 5,
-          "pct": 16.7
+          "pct": 11.6
         },
         {
           "key": "responsabilizacao_governanca",
           "label": "Responsabilização / governança",
-          "count": 2,
-          "pct": 6.7
+          "count": 3,
+          "pct": 7.0
         },
         {
           "key": "infraestrutura_ocupacao_risco",
           "label": "Infraestrutura / ocupação de risco",
-          "count": 3,
-          "pct": 10.0
+          "count": 4,
+          "pct": 9.3
         },
         {
           "key": "clima_chuva_meio_ambiente",
           "label": "Clima / chuva / meio ambiente",
           "count": 12,
-          "pct": 40.0
+          "pct": 27.9
         },
         {
           "key": "experiencia_pessoal_local",
           "label": "Experiência pessoal / local",
-          "count": 6,
-          "pct": 20.0
+          "count": 7,
+          "pct": 16.3
         },
         {
           "key": "alerta_prevencao_cobranca",
           "label": "Alerta / prevenção / cobrança",
           "count": 1,
-          "pct": 3.3
+          "pct": 2.3
         },
         {
           "key": "critica_midia_informacao",
           "label": "Crítica à mídia / informação",
           "count": 6,
-          "pct": 20.0
+          "pct": 14.0
         }
       ],
       "timeline": [
         {
+          "date": "24/10/26",
+          "count": 3
+        },
+        {
           "date": "25/10/26",
-          "count": 29
+          "count": 39
         },
         {
           "date": "26/10/26",
@@ -10899,6 +10561,28 @@
           ],
           "municipal_evidence": "descricao",
           "formato": "longo"
+        },
+        {
+          "video_id": "tBNBL_i4VnU",
+          "n_comments": 13,
+          "total_likes": 4,
+          "first_comment": "24/10/2026",
+          "top_categories": [
+            {
+              "label": "Solidariedade",
+              "count": 10
+            },
+            {
+              "label": "Responsabilização",
+              "count": 1
+            },
+            {
+              "label": "Infraestrutura",
+              "count": 1
+            }
+          ],
+          "municipal_evidence": "nenhuma",
+          "formato": "short"
         }
       ],
       "all_samples": {
@@ -10918,6 +10602,55 @@
             "video_id": "y3dd-w6ogTY"
           },
           {
+            "text": "A caterva golpista roubando no nordeste e Deus equilibrando a balança no sul",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-10-25",
+            "video_id": "tBNBL_i4VnU"
+          },
+          {
+            "text": "A caterva golpista roubando no nordeste e Deus equilibrando a balança no sul",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-10-25",
+            "video_id": "tBNBL_i4VnU"
+          },
+          {
+            "text": "Misericórdia Deus Pai do meu SENHOR JESUS CRISTO. pelo povo do Paraná. .Misericórdia",
+            "likes": 0,
+            "score": 0.995,
+            "date": "2026-10-25",
+            "video_id": "tBNBL_i4VnU"
+          },
+          {
+            "text": "Meu Deus ate quando tem misericordia do povo",
+            "likes": 0,
+            "score": 0.995,
+            "date": "2026-10-25",
+            "video_id": "tBNBL_i4VnU"
+          },
+          {
+            "text": "Misericórdia Deus 😮😮😮",
+            "likes": 1,
+            "score": 0.994,
+            "date": "2026-10-24",
+            "video_id": "tBNBL_i4VnU"
+          },
+          {
+            "text": "Deus tenha misericórdia",
+            "likes": 1,
+            "score": 0.994,
+            "date": "2026-10-24",
+            "video_id": "tBNBL_i4VnU"
+          },
+          {
+            "text": "Misericórdia meu pai eterno.",
+            "likes": 0,
+            "score": 0.994,
+            "date": "2026-10-25",
+            "video_id": "tBNBL_i4VnU"
+          },
+          {
             "text": "👁️☠️☂️",
             "likes": 1,
             "score": 0.974,
@@ -10925,11 +10658,32 @@
             "video_id": "y3dd-w6ogTY"
           },
           {
+            "text": "🥱👏",
+            "likes": 1,
+            "score": 0.974,
+            "date": "2026-10-25",
+            "video_id": "tBNBL_i4VnU"
+          },
+          {
+            "text": "👁️⏳🪽",
+            "likes": 0,
+            "score": 0.974,
+            "date": "2026-10-25",
+            "video_id": "tBNBL_i4VnU"
+          },
+          {
             "text": "Infelizmente a conta chegou!!! Tô com 63 anos e a muito tempo escuto falar sobre o aquecimento global e as desordens devastadoras que teria... Agora todos nós estamos sobre a misericórdia de Deus... Não há muito mais o que fazer... Fogo em alguns lugares e inundações em outros!!! Não temos pra onde correr... A ganância está acabando com tudo... Muito triste 😢",
             "likes": 2,
             "score": 0.948,
             "date": "2026-10-25",
             "video_id": "y3dd-w6ogTY"
+          },
+          {
+            "text": "Aqui no interior de SP está caindo o mundo nesse domingo misericórdia",
+            "likes": 0,
+            "score": 0.903,
+            "date": "2026-10-25",
+            "video_id": "tBNBL_i4VnU"
           },
           {
             "text": "O planeta está morrendo, daqui pra frente é só desgraça e sofrimento 😮",
@@ -10992,6 +10746,13 @@
             "video_id": "y3dd-w6ogTY"
           },
           {
+            "text": "Tem que busca ese povo pra vota lula",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-10-24",
+            "video_id": "tBNBL_i4VnU"
+          },
+          {
             "text": "Com tanta chuva As cataratas lotada de água com certeza o governo tem que reduzir A nossa conta de não tem como falarem que está faltando água para girar as torbinas😊",
             "likes": 3,
             "score": 0.989,
@@ -11000,6 +10761,13 @@
           }
         ],
         "infraestrutura_ocupacao_risco": [
+          {
+            "text": "Margem de rios casa tem que ser altas. Amigo meu morava no RS Casa foi construída em cima porão de 2m acima do chao, mesmo assim entrou meio metro se água dentro da casa",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-10-25",
+            "video_id": "tBNBL_i4VnU"
+          },
           {
             "text": "🚨 ATUALIZAÇÃO IMPORTANTE — BR-277 LIBERADA! A Polícia Rodoviária Federal (PRF) confirmou que a BR-277, na Serra da Esperança, em Guarapuava, foi totalmente liberada às 19h45 deste sábado (24), nos dois sentidos. A rodovia estava interditada desde as 17h10, após um deslizamento de terra no km 312, entre os viadutos da serra. O tráfego foi restabelecido, mas o trecho permanece sinalizado e monitorad",
             "likes": 7,
@@ -11124,6 +10892,13 @@
             "video_id": "y3dd-w6ogTY"
           },
           {
+            "text": "Aqui no interior de SP está caindo o mundo nesse domingo misericórdia",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-10-25",
+            "video_id": "tBNBL_i4VnU"
+          },
+          {
             "text": "Muito chuva aqui em Botucatu São Paulo, imprecionant mesmo",
             "likes": 1,
             "score": 0.995,
@@ -11221,8 +10996,9 @@
           "criterio": "municipal_v0.3.2"
         }
       ],
-      "n_comments_valid": 27,
+      "n_comments_valid": 39,
       "videos_with_valid_comments": [
+        "tBNBL_i4VnU",
         "y3dd-w6ogTY"
       ],
       "alert_opened_at": "2026-10-24T12:40:40Z",
@@ -11234,15 +11010,16 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-10-27T11:21:58Z",
-      "next_collection_at": "2026-10-27T23:21:58Z",
-      "window_finalized_at": null,
+      "last_collection_at": "2026-10-28T03:22:50Z",
+      "next_collection_at": "2026-10-28T15:22:50Z",
+      "window_finalized_at": "2026-10-28T03:22:50Z",
       "counters_integrity": "ok",
       "videos_por_formato": {
-        "longo": 1
+        "longo": 1,
+        "short": 1
       },
       "n_videos_municipais": 1,
-      "n_videos_verificados": 1,
+      "n_videos_verificados": 2,
       "n_comments_municipais": 30,
       "n_comments_valid_municipal": 27,
       "videos_with_valid_comments_municipal": [
@@ -11356,10 +11133,11 @@
           "criterio": "municipal_v0.3.2"
         }
       ],
-      "n_comments_valid": 40,
+      "n_comments_valid": 52,
       "videos_with_valid_comments": [
         "UKns0h2VEmE",
-        "bj6hGaO0kos"
+        "bj6hGaO0kos",
+        "tBNBL_i4VnU"
       ],
       "alert_opened_at": "2026-10-24T14:34:19Z",
       "alert_closed_at": "2026-10-26T02:34:42Z",
@@ -11368,7 +11146,7 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=ok;comments=api_error",
-        "consecutive_failures": 8
+        "consecutive_failures": 9
       },
       "last_collection_at": "2026-10-24T20:02:41Z",
       "next_collection_at": "2026-10-26T14:34:42Z",
@@ -11398,10 +11176,10 @@
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
-      "n_comments": 18,
-      "n_videos": 6,
+      "n_comments": 17,
+      "n_videos": 5,
       "unlabeled": 4,
-      "unlabeled_pct": 22.2,
+      "unlabeled_pct": 23.5,
       "date_range": [
         "2026-10-25",
         "2026-10-27"
@@ -11410,56 +11188,56 @@
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
-          "count": 4,
-          "pct": 22.2
+          "count": 3,
+          "pct": 17.6
         },
         {
           "key": "ajuda_resgate_doacoes",
           "label": "Ajuda / resgate / doações",
           "count": 2,
-          "pct": 11.1
+          "pct": 11.8
         },
         {
           "key": "responsabilizacao_governanca",
           "label": "Responsabilização / governança",
           "count": 8,
-          "pct": 44.4
+          "pct": 47.1
         },
         {
           "key": "infraestrutura_ocupacao_risco",
           "label": "Infraestrutura / ocupação de risco",
           "count": 5,
-          "pct": 27.8
+          "pct": 29.4
         },
         {
           "key": "clima_chuva_meio_ambiente",
           "label": "Clima / chuva / meio ambiente",
-          "count": 2,
-          "pct": 11.1
+          "count": 1,
+          "pct": 5.9
         },
         {
           "key": "experiencia_pessoal_local",
           "label": "Experiência pessoal / local",
           "count": 3,
-          "pct": 16.7
+          "pct": 17.6
         },
         {
           "key": "alerta_prevencao_cobranca",
           "label": "Alerta / prevenção / cobrança",
           "count": 1,
-          "pct": 5.6
+          "pct": 5.9
         },
         {
           "key": "critica_midia_informacao",
           "label": "Crítica à mídia / informação",
           "count": 1,
-          "pct": 5.6
+          "pct": 5.9
         }
       ],
       "timeline": [
         {
           "date": "25/10/26",
-          "count": 3
+          "count": 2
         },
         {
           "date": "26/10/26",
@@ -11474,7 +11252,7 @@
         {
           "video_id": "A__gKUwgTeA",
           "n_comments": 15,
-          "total_likes": 17,
+          "total_likes": 18,
           "first_comment": "26/10/2026",
           "top_categories": [
             {
@@ -11503,24 +11281,6 @@
           "formato": "short"
         },
         {
-          "video_id": "LmSltD8Ytd8",
-          "n_comments": 1,
-          "total_likes": 0,
-          "first_comment": "25/10/2026",
-          "top_categories": [
-            {
-              "label": "Solidariedade",
-              "count": 1
-            },
-            {
-              "label": "Clima/chuva",
-              "count": 1
-            }
-          ],
-          "municipal_evidence": "nenhuma",
-          "formato": "longo"
-        },
-        {
           "video_id": "y3Uok1keqtQ",
           "n_comments": 1,
           "total_likes": 0,
@@ -11535,7 +11295,7 @@
           "formato": "longo"
         },
         {
-          "video_id": "jC9W55SPyH0",
+          "video_id": "KQkA8EK7CUk",
           "n_comments": 0,
           "total_likes": 0,
           "first_comment": "",
@@ -11544,7 +11304,7 @@
           "formato": "short"
         },
         {
-          "video_id": "KQkA8EK7CUk",
+          "video_id": "jC9W55SPyH0",
           "n_comments": 0,
           "total_likes": 0,
           "first_comment": "",
@@ -11561,13 +11321,6 @@
             "score": 0.994,
             "date": "2026-10-26",
             "video_id": "A__gKUwgTeA"
-          },
-          {
-            "text": "🌧 Uma tragédia que deixou duas famílias de luto em Jundiaí, São Paulo. 🙏 Nossa solidariedade aos familiares e amigos das vítimas. ⚠ A força de uma enxurrada pode surpreender em poucos segundos. Nunca tente atravessar uma correnteza! 💬 Na sua cidade também acontecem alagamentos durante temporais? 🎬 Este vídeo apresenta uma reconstrução ilustrativa em 3D, não imagens reais. 🔔 Inscreva-se no ÚLTIMOS ",
-            "likes": 0,
-            "score": 0.971,
-            "date": "2026-10-25",
-            "video_id": "LmSltD8Ytd8"
           },
           {
             "text": "Oi",
@@ -11594,7 +11347,7 @@
           },
           {
             "text": "Do lado da minha casa começou uma obra e estão passando máquinas e tirando terra. Com isso, quebrou a coluna da casa que fica atrás da minha casa, que so não caiu porque minha casa esta segurando. Estamos em situação de risco, pois pode cair a qualquer momento. Nós ligamos para a defesa civil, e eles disseram que temos que ligar para a polícia primeiro. A polícia diz que é a defesa civil que resol",
-            "likes": 0,
+            "likes": 1,
             "score": 0.991,
             "date": "2026-10-26",
             "video_id": "A__gKUwgTeA"
@@ -11652,7 +11405,7 @@
           },
           {
             "text": "Do lado da minha casa começou uma obra e estão passando máquinas e tirando terra. Com isso, quebrou a coluna da casa que fica atrás da minha casa, que so não caiu porque minha casa esta segurando. Estamos em situação de risco, pois pode cair a qualquer momento. Nós ligamos para a defesa civil, e eles disseram que temos que ligar para a polícia primeiro. A polícia diz que é a defesa civil que resol",
-            "likes": 0,
+            "likes": 1,
             "score": 0.856,
             "date": "2026-10-26",
             "video_id": "A__gKUwgTeA"
@@ -11682,7 +11435,7 @@
           },
           {
             "text": "Do lado da minha casa começou uma obra e estão passando máquinas e tirando terra. Com isso, quebrou a coluna da casa que fica atrás da minha casa, que so não caiu porque minha casa esta segurando. Estamos em situação de risco, pois pode cair a qualquer momento. Nós ligamos para a defesa civil, e eles disseram que temos que ligar para a polícia primeiro. A polícia diz que é a defesa civil que resol",
-            "likes": 0,
+            "likes": 1,
             "score": 0.991,
             "date": "2026-10-26",
             "video_id": "A__gKUwgTeA"
@@ -11697,15 +11450,8 @@
         ],
         "clima_chuva_meio_ambiente": [
           {
-            "text": "🌧 Uma tragédia que deixou duas famílias de luto em Jundiaí, São Paulo. 🙏 Nossa solidariedade aos familiares e amigos das vítimas. ⚠ A força de uma enxurrada pode surpreender em poucos segundos. Nunca tente atravessar uma correnteza! 💬 Na sua cidade também acontecem alagamentos durante temporais? 🎬 Este vídeo apresenta uma reconstrução ilustrativa em 3D, não imagens reais. 🔔 Inscreva-se no ÚLTIMOS ",
-            "likes": 0,
-            "score": 0.999,
-            "date": "2026-10-25",
-            "video_id": "LmSltD8Ytd8"
-          },
-          {
             "text": "Do lado da minha casa começou uma obra e estão passando máquinas e tirando terra. Com isso, quebrou a coluna da casa que fica atrás da minha casa, que so não caiu porque minha casa esta segurando. Estamos em situação de risco, pois pode cair a qualquer momento. Nós ligamos para a defesa civil, e eles disseram que temos que ligar para a polícia primeiro. A polícia diz que é a defesa civil que resol",
-            "likes": 0,
+            "likes": 1,
             "score": 0.701,
             "date": "2026-10-26",
             "video_id": "A__gKUwgTeA"
@@ -11714,7 +11460,7 @@
         "experiencia_pessoal_local": [
           {
             "text": "Do lado da minha casa começou uma obra e estão passando máquinas e tirando terra. Com isso, quebrou a coluna da casa que fica atrás da minha casa, que so não caiu porque minha casa esta segurando. Estamos em situação de risco, pois pode cair a qualquer momento. Nós ligamos para a defesa civil, e eles disseram que temos que ligar para a polícia primeiro. A polícia diz que é a defesa civil que resol",
-            "likes": 0,
+            "likes": 1,
             "score": 0.999,
             "date": "2026-10-26",
             "video_id": "A__gKUwgTeA"
@@ -11737,7 +11483,7 @@
         "alerta_prevencao_cobranca": [
           {
             "text": "Do lado da minha casa começou uma obra e estão passando máquinas e tirando terra. Com isso, quebrou a coluna da casa que fica atrás da minha casa, que so não caiu porque minha casa esta segurando. Estamos em situação de risco, pois pode cair a qualquer momento. Nós ligamos para a defesa civil, e eles disseram que temos que ligar para a polícia primeiro. A polícia diz que é a defesa civil que resol",
-            "likes": 0,
+            "likes": 1,
             "score": 0.998,
             "date": "2026-10-26",
             "video_id": "A__gKUwgTeA"
@@ -11746,7 +11492,7 @@
         "critica_midia_informacao": [
           {
             "text": "Do lado da minha casa começou uma obra e estão passando máquinas e tirando terra. Com isso, quebrou a coluna da casa que fica atrás da minha casa, que so não caiu porque minha casa esta segurando. Estamos em situação de risco, pois pode cair a qualquer momento. Nós ligamos para a defesa civil, e eles disseram que temos que ligar para a polícia primeiro. A polícia diz que é a defesa civil que resol",
-            "likes": 0,
+            "likes": 1,
             "score": 0.951,
             "date": "2026-10-26",
             "video_id": "A__gKUwgTeA"
@@ -11778,16 +11524,16 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-10-27T03:09:45Z",
-      "next_collection_at": "2026-10-28T03:09:45Z",
+      "last_collection_at": "2026-10-28T03:22:50Z",
+      "next_collection_at": "2026-10-29T03:22:50Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {
-        "longo": 3,
+        "longo": 2,
         "short": 3
       },
       "n_videos_municipais": 0,
-      "n_videos_verificados": 6,
+      "n_videos_verificados": 5,
       "n_comments_municipais": 0,
       "n_comments_valid_municipal": 0,
       "videos_with_valid_comments_municipal": [],
