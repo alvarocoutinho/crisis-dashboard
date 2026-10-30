@@ -1,15 +1,15 @@
 {
   "schema_version": "0.2",
   "pipeline_version": "0.3.3",
-  "last_run_at": "2026-10-30T11:57:29Z",
+  "last_run_at": "2026-10-30T17:38:39Z",
   "last_run_status": "success",
-  "last_run_duration_seconds": 1,
-  "last_cemaden_check_at": "2026-10-30T11:57:29Z",
+  "last_run_duration_seconds": 7,
+  "last_cemaden_check_at": "2026-10-30T17:38:39Z",
   "youtube_quota": {
-    "used_today": 0,
+    "used_today": 7,
     "reset_at": "2026-10-31T07:00:00Z",
     "day": "2026-10-30",
-    "searches_today": 0
+    "searches_today": 6
   },
   "active_alerts": {
     "cemaden_sp_3154": {
@@ -27,7 +27,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-10-25T17:42:03Z",
-      "last_seen_open_at": "2026-10-30T11:57:29Z",
+      "last_seen_open_at": "2026-10-30T17:38:39Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -64,7 +64,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-10-27T00:40:54Z",
-      "last_seen_open_at": "2026-10-30T11:57:29Z",
+      "last_seen_open_at": "2026-10-30T17:38:39Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -73,16 +73,86 @@
       "videos_with_valid_comments": [],
       "last_new_data_at": null,
       "last_new_comment_at": null,
-      "last_collection_at": "2026-10-29T12:03:52Z",
-      "next_collection_at": "2026-10-30T12:03:52Z",
+      "last_collection_at": "2026-10-30T17:38:39Z",
+      "next_collection_at": "2026-10-31T17:38:39Z",
       "n_videos_municipais": 0,
       "n_comments_valid_municipal": 0,
       "videos_with_valid_comments_municipal": [],
-      "last_attempt_at": "2026-10-29T12:03:52Z",
+      "last_attempt_at": "2026-10-30T17:38:39Z",
       "consecutive_failures": 0,
       "last_error": null,
       "legacy_unverified": false,
-      "counters_integrity": "ok"
+      "counters_integrity": "ok",
+      "window_finalized_at": "2026-10-30T17:38:39Z",
+      "window_finalized_reason": "final_sweep"
+    },
+    "cemaden_rj_3173": {
+      "codibge": "3305802",
+      "municipio": "Teresópolis",
+      "uf": "RJ",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-10-30T10:43:24Z"
+        }
+      ],
+      "evento": "Movimentos de Massa",
+      "opened_at": "2026-10-30T10:43:24Z",
+      "last_seen_open_at": "2026-10-30T17:38:39Z",
+      "closed_at": null,
+      "transitions": [],
+      "videos_collected": [],
+      "n_videos_aderentes": 0,
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "last_new_data_at": null,
+      "last_new_comment_at": null,
+      "last_collection_at": "2026-10-30T17:38:39Z",
+      "next_collection_at": "2026-10-31T17:38:39Z",
+      "n_videos_municipais": 0,
+      "n_comments_valid_municipal": 0,
+      "videos_with_valid_comments_municipal": [],
+      "last_attempt_at": "2026-10-30T17:38:39Z",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "legacy_unverified": false
+    },
+    "cemaden_am_3174": {
+      "codibge": "1302603",
+      "municipio": "Manaus",
+      "uf": "AM",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-10-30T12:55:37Z"
+        }
+      ],
+      "evento": "Movimentos de Massa",
+      "opened_at": "2026-10-30T12:55:37Z",
+      "last_seen_open_at": "2026-10-30T17:38:39Z",
+      "closed_at": null,
+      "transitions": [],
+      "videos_collected": [],
+      "n_videos_aderentes": 0,
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "last_new_data_at": null,
+      "last_new_comment_at": null,
+      "last_collection_at": "2026-10-30T17:38:39Z",
+      "next_collection_at": "2026-10-31T17:38:39Z",
+      "n_videos_municipais": 0,
+      "n_comments_valid_municipal": 0,
+      "videos_with_valid_comments_municipal": [],
+      "last_attempt_at": "2026-10-30T17:38:39Z",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "legacy_unverified": false
     }
   },
   "extended_window_alerts": {
