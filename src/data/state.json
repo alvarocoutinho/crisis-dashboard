@@ -1,52 +1,17 @@
 {
   "schema_version": "0.2",
   "pipeline_version": "0.3.3",
-  "last_run_at": "2026-11-01T03:38:58Z",
-  "last_run_status": "success",
-  "last_run_duration_seconds": 5,
-  "last_cemaden_check_at": "2026-11-01T03:38:58Z",
+  "last_run_at": "2026-11-01T12:27:51Z",
+  "last_run_status": "partial",
+  "last_run_duration_seconds": 163,
+  "last_cemaden_check_at": "2026-11-01T12:27:51Z",
   "youtube_quota": {
-    "used_today": 11,
-    "reset_at": "2026-11-01T07:00:00Z",
-    "day": "2026-10-31",
+    "used_today": 10,
+    "reset_at": "2026-11-02T08:00:00Z",
+    "day": "2026-11-01",
     "searches_today": 8
   },
   "active_alerts": {
-    "cemaden_am_3174": {
-      "codibge": "1302603",
-      "municipio": "Manaus",
-      "uf": "AM",
-      "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-30T12:55:37Z"
-        }
-      ],
-      "evento": "Movimentos de Massa",
-      "opened_at": "2026-10-30T12:55:37Z",
-      "last_seen_open_at": "2026-11-01T03:38:58Z",
-      "closed_at": null,
-      "transitions": [],
-      "videos_collected": [],
-      "n_videos_aderentes": 0,
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "last_new_data_at": null,
-      "last_new_comment_at": null,
-      "last_collection_at": "2026-10-31T20:51:38Z",
-      "next_collection_at": "2026-11-01T20:51:38Z",
-      "n_videos_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "last_attempt_at": "2026-10-31T20:51:38Z",
-      "consecutive_failures": 0,
-      "last_error": null,
-      "legacy_unverified": false,
-      "counters_integrity": "ok"
-    },
     "cemaden_mg_3180": {
       "codibge": "3146305",
       "municipio": "Padre Paraíso",
@@ -62,7 +27,7 @@
       ],
       "evento": "Movimentos de Massa",
       "opened_at": "2026-10-31T19:58:22Z",
-      "last_seen_open_at": "2026-11-01T03:38:58Z",
+      "last_seen_open_at": "2026-11-01T12:27:51Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -79,7 +44,8 @@
       "last_attempt_at": "2026-11-01T03:38:58Z",
       "consecutive_failures": 0,
       "last_error": null,
-      "legacy_unverified": false
+      "legacy_unverified": false,
+      "counters_integrity": "ok"
     },
     "cemaden_mg_3181": {
       "codibge": "3143906",
@@ -96,7 +62,7 @@
       ],
       "evento": "Movimentos de Massa",
       "opened_at": "2026-10-31T20:02:02Z",
-      "last_seen_open_at": "2026-11-01T03:38:58Z",
+      "last_seen_open_at": "2026-11-01T12:27:51Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -111,6 +77,109 @@
       "n_comments_valid_municipal": 0,
       "videos_with_valid_comments_municipal": [],
       "last_attempt_at": "2026-11-01T03:38:58Z",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "legacy_unverified": false,
+      "counters_integrity": "ok"
+    },
+    "cemaden_mg_3182": {
+      "codibge": "3158953",
+      "municipio": "Santana do Paraíso",
+      "uf": "MG",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-11-01T06:49:04Z"
+        }
+      ],
+      "evento": "Risco Hidrológico",
+      "opened_at": "2026-11-01T06:49:04Z",
+      "last_seen_open_at": "2026-11-01T12:27:51Z",
+      "closed_at": null,
+      "transitions": [],
+      "videos_collected": [],
+      "n_videos_aderentes": 0,
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "last_new_data_at": null,
+      "last_new_comment_at": null,
+      "last_collection_at": "2026-11-01T12:27:51Z",
+      "next_collection_at": "2026-11-02T12:27:51Z",
+      "n_videos_municipais": 0,
+      "n_comments_valid_municipal": 0,
+      "videos_with_valid_comments_municipal": [],
+      "last_attempt_at": "2026-11-01T12:27:51Z",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "legacy_unverified": false
+    },
+    "cemaden_mg_3183": {
+      "codibge": "3158953",
+      "municipio": "Santana do Paraíso",
+      "uf": "MG",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-11-01T06:49:55Z"
+        }
+      ],
+      "evento": "Movimentos de Massa",
+      "opened_at": "2026-11-01T06:49:55Z",
+      "last_seen_open_at": "2026-11-01T12:27:51Z",
+      "closed_at": null,
+      "transitions": [],
+      "videos_collected": [],
+      "n_videos_aderentes": 0,
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "last_new_data_at": null,
+      "last_new_comment_at": null,
+      "last_collection_at": "2026-11-01T12:27:51Z",
+      "next_collection_at": "2026-11-02T12:27:51Z",
+      "n_videos_municipais": 0,
+      "n_comments_valid_municipal": 0,
+      "videos_with_valid_comments_municipal": [],
+      "last_attempt_at": "2026-11-01T12:27:51Z",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "legacy_unverified": false
+    },
+    "cemaden_mg_3184": {
+      "codibge": "3131307",
+      "municipio": "Ipatinga",
+      "uf": "MG",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-11-01T06:57:04Z"
+        }
+      ],
+      "evento": "Risco Hidrológico",
+      "opened_at": "2026-11-01T06:57:04Z",
+      "last_seen_open_at": "2026-11-01T12:27:51Z",
+      "closed_at": null,
+      "transitions": [],
+      "videos_collected": [],
+      "n_videos_aderentes": 0,
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "last_new_data_at": null,
+      "last_new_comment_at": null,
+      "last_collection_at": "2026-11-01T12:27:51Z",
+      "next_collection_at": "2026-11-02T12:27:51Z",
+      "n_videos_municipais": 0,
+      "n_comments_valid_municipal": 0,
+      "videos_with_valid_comments_municipal": [],
+      "last_attempt_at": "2026-11-01T12:27:51Z",
       "consecutive_failures": 0,
       "last_error": null,
       "legacy_unverified": false
@@ -1094,84 +1163,6 @@
       "window_finalized_at": "2026-10-20T02:52:14Z",
       "window_finalized_reason": "final_sweep"
     },
-    "cemaden_sp_2980": {
-      "codibge": "3550308",
-      "municipio": "São Paulo",
-      "uf": "SP",
-      "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
-      "flag": "acompanhamento",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-16T03:39:49Z"
-        },
-        {
-          "flag": "acompanhamento",
-          "at": "2026-10-16T10:26:22Z",
-          "criterio": "municipal_v0.3.2"
-        }
-      ],
-      "evento": "Movimentos de Massa",
-      "opened_at": "2026-10-16T03:39:49Z",
-      "last_seen_open_at": "2026-10-18T10:11:06Z",
-      "closed_at": "2026-10-18T15:11:54Z",
-      "transitions": [],
-      "videos_collected": [
-        "Bw6VQJu7JqQ",
-        "DQUFnPtf5Jk",
-        "VtRHeFHK-Oo",
-        "e9dw5BvToCU",
-        "o0KKvV_FOpY",
-        "svUiRVBtjLI"
-      ],
-      "n_videos_aderentes": 6,
-      "n_comments_valid": 26,
-      "videos_with_valid_comments": [
-        "VtRHeFHK-Oo",
-        "e9dw5BvToCU",
-        "svUiRVBtjLI"
-      ],
-      "last_new_data_at": "2026-10-18T10:11:06Z",
-      "last_new_comment_at": "2026-10-19T11:44:38Z",
-      "last_collection_at": "2026-10-19T11:44:38Z",
-      "next_collection_at": "2026-10-19T23:44:38Z",
-      "video_evidence": {
-        "e9dw5BvToCU": "descricao",
-        "VtRHeFHK-Oo": "descricao",
-        "DQUFnPtf5Jk": "descricao",
-        "Bw6VQJu7JqQ": "descricao",
-        "svUiRVBtjLI": "titulo",
-        "o0KKvV_FOpY": "nenhuma"
-      },
-      "n_videos_municipais": 5,
-      "n_comments_valid_municipal": 26,
-      "videos_with_valid_comments_municipal": [
-        "VtRHeFHK-Oo",
-        "e9dw5BvToCU",
-        "svUiRVBtjLI"
-      ],
-      "video_format": {
-        "e9dw5BvToCU": "longo",
-        "VtRHeFHK-Oo": "longo",
-        "DQUFnPtf5Jk": "longo",
-        "Bw6VQJu7JqQ": "short",
-        "svUiRVBtjLI": "longo",
-        "o0KKvV_FOpY": "longo"
-      },
-      "valid_comments_by_video": {
-        "e9dw5BvToCU": 19,
-        "VtRHeFHK-Oo": 5,
-        "svUiRVBtjLI": 2
-      },
-      "last_attempt_at": "2026-10-19T11:44:38Z",
-      "consecutive_failures": 0,
-      "last_error": null,
-      "legacy_unverified": false,
-      "counters_integrity": "inflated_pre_v0.3",
-      "window_finalized_at": "2026-10-19T11:44:38Z",
-      "window_finalized_reason": "final_sweep"
-    },
     "cemaden_ba_3009": {
       "codibge": "2913606",
       "municipio": "Ilhéus",
@@ -1598,14 +1589,14 @@
       ],
       "last_new_data_at": "2026-10-31T03:32:44Z",
       "last_new_comment_at": "2026-10-31T16:38:40Z",
-      "last_collection_at": "2026-10-31T16:38:40Z",
-      "next_collection_at": "2026-11-01T04:38:40Z",
+      "last_collection_at": "2026-11-01T12:27:51Z",
+      "next_collection_at": "2026-11-02T00:27:51Z",
       "n_videos_municipais": 1,
       "n_comments_valid_municipal": 9,
       "videos_with_valid_comments_municipal": [
         "8lUAdX3HMaA"
       ],
-      "last_attempt_at": "2026-10-31T16:38:40Z",
+      "last_attempt_at": "2026-11-01T12:27:51Z",
       "consecutive_failures": 0,
       "last_error": null,
       "legacy_unverified": false,
@@ -1616,27 +1607,11 @@
       "video_format": {
         "8lUAdX3HMaA": "longo"
       },
-      "seen_comment_hashes": [
-        "07970519f296",
-        "1b8000b4d472",
-        "49555f72f926",
-        "4ad37511e288",
-        "4cacad170574",
-        "642322a7ccae",
-        "6e103ed90fca",
-        "7af827786f28",
-        "a1b53d6ba992",
-        "a6ffc9984cc3",
-        "b1c33f4b0cf3",
-        "b7aaa849f3ed",
-        "d5a1cc30872a",
-        "d92fbed75dd8",
-        "e12a1ca7d728",
-        "f82c186c2c45"
-      ],
       "valid_comments_by_video": {
         "8lUAdX3HMaA": 9
-      }
+      },
+      "window_finalized_at": "2026-11-01T12:27:51Z",
+      "window_finalized_reason": "final_sweep"
     }
   },
   "archived_alerts": {
@@ -4780,6 +4755,86 @@
         "sXgehEdLoxY": "longo"
       },
       "archived_at": "2026-10-27T21:40:40Z",
+      "archive_reason": "acompanhamento_esgotado_14d"
+    },
+    "cemaden_sp_2980": {
+      "codibge": "3550308",
+      "municipio": "São Paulo",
+      "uf": "SP",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "acompanhamento",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-10-16T03:39:49Z"
+        },
+        {
+          "flag": "acompanhamento",
+          "at": "2026-10-16T10:26:22Z",
+          "criterio": "municipal_v0.3.2"
+        }
+      ],
+      "evento": "Movimentos de Massa",
+      "opened_at": "2026-10-16T03:39:49Z",
+      "last_seen_open_at": "2026-10-18T10:11:06Z",
+      "closed_at": "2026-10-18T15:11:54Z",
+      "transitions": [],
+      "videos_collected": [
+        "Bw6VQJu7JqQ",
+        "DQUFnPtf5Jk",
+        "VtRHeFHK-Oo",
+        "e9dw5BvToCU",
+        "o0KKvV_FOpY",
+        "svUiRVBtjLI"
+      ],
+      "n_videos_aderentes": 6,
+      "n_comments_valid": 26,
+      "videos_with_valid_comments": [
+        "VtRHeFHK-Oo",
+        "e9dw5BvToCU",
+        "svUiRVBtjLI"
+      ],
+      "last_new_data_at": "2026-10-18T10:11:06Z",
+      "last_new_comment_at": "2026-10-19T11:44:38Z",
+      "last_collection_at": "2026-10-19T11:44:38Z",
+      "next_collection_at": "2026-10-19T23:44:38Z",
+      "video_evidence": {
+        "e9dw5BvToCU": "descricao",
+        "VtRHeFHK-Oo": "descricao",
+        "DQUFnPtf5Jk": "descricao",
+        "Bw6VQJu7JqQ": "descricao",
+        "svUiRVBtjLI": "titulo",
+        "o0KKvV_FOpY": "nenhuma"
+      },
+      "n_videos_municipais": 5,
+      "n_comments_valid_municipal": 26,
+      "videos_with_valid_comments_municipal": [
+        "VtRHeFHK-Oo",
+        "e9dw5BvToCU",
+        "svUiRVBtjLI"
+      ],
+      "video_format": {
+        "e9dw5BvToCU": "longo",
+        "VtRHeFHK-Oo": "longo",
+        "DQUFnPtf5Jk": "longo",
+        "Bw6VQJu7JqQ": "short",
+        "svUiRVBtjLI": "longo",
+        "o0KKvV_FOpY": "longo"
+      },
+      "valid_comments_by_video": {
+        "e9dw5BvToCU": 19,
+        "VtRHeFHK-Oo": 5,
+        "svUiRVBtjLI": 2
+      },
+      "last_attempt_at": "2026-10-19T11:44:38Z",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "legacy_unverified": false,
+      "counters_integrity": "inflated_pre_v0.3",
+      "window_finalized_at": "2026-10-19T11:44:38Z",
+      "window_finalized_reason": "final_sweep",
+      "archived_at": "2026-11-01T12:27:51Z",
       "archive_reason": "acompanhamento_esgotado_14d"
     }
   }
