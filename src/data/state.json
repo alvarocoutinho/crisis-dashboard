@@ -1,33 +1,33 @@
 {
   "schema_version": "0.2",
   "pipeline_version": "0.3.3",
-  "last_run_at": "2026-11-03T00:16:16Z",
-  "last_run_status": "partial",
-  "last_run_duration_seconds": 81,
-  "last_cemaden_check_at": "2026-11-03T00:16:16Z",
+  "last_run_at": "2026-11-03T13:24:08Z",
+  "last_run_status": "success",
+  "last_run_duration_seconds": 5,
+  "last_cemaden_check_at": "2026-11-03T13:24:08Z",
   "youtube_quota": {
-    "used_today": 13,
-    "reset_at": "2026-11-03T08:00:00Z",
-    "day": "2026-11-02",
-    "searches_today": 12
+    "used_today": 3,
+    "reset_at": "2026-11-04T08:00:00Z",
+    "day": "2026-11-03",
+    "searches_today": 2
   },
   "active_alerts": {
-    "cemaden_pr_3188": {
-      "codibge": "4104600",
-      "municipio": "Capitão Leônidas Marques",
-      "uf": "PR",
+    "cemaden_am_3194": {
+      "codibge": "1302603",
+      "municipio": "Manaus",
+      "uf": "AM",
       "nivel_atual": "Moderado",
       "priority_tier": "moderado",
       "flag": "alerta",
       "flag_history": [
         {
           "flag": "alerta",
-          "at": "2026-11-02T01:50:05Z"
+          "at": "2026-11-03T08:47:27Z"
         }
       ],
-      "evento": "Movimentos de Massa",
-      "opened_at": "2026-11-02T01:50:05Z",
-      "last_seen_open_at": "2026-11-03T00:16:16Z",
+      "evento": "Risco Hidrológico",
+      "opened_at": "2026-11-03T08:47:27Z",
+      "last_seen_open_at": "2026-11-03T13:24:08Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -36,47 +36,12 @@
       "videos_with_valid_comments": [],
       "last_new_data_at": null,
       "last_new_comment_at": null,
-      "last_collection_at": "2026-11-02T14:24:12Z",
-      "next_collection_at": "2026-11-03T14:24:12Z",
+      "last_collection_at": "2026-11-03T13:24:08Z",
+      "next_collection_at": "2026-11-04T13:24:08Z",
       "n_videos_municipais": 0,
       "n_comments_valid_municipal": 0,
       "videos_with_valid_comments_municipal": [],
-      "last_attempt_at": "2026-11-02T14:24:12Z",
-      "consecutive_failures": 0,
-      "last_error": null,
-      "legacy_unverified": false,
-      "counters_integrity": "ok"
-    },
-    "cemaden_rj_3192": {
-      "codibge": "3304003",
-      "municipio": "Piraí",
-      "uf": "RJ",
-      "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-11-02T16:09:58Z"
-        }
-      ],
-      "evento": "Movimentos de Massa",
-      "opened_at": "2026-11-02T16:09:58Z",
-      "last_seen_open_at": "2026-11-03T00:16:16Z",
-      "closed_at": null,
-      "transitions": [],
-      "videos_collected": [],
-      "n_videos_aderentes": 0,
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "last_new_data_at": null,
-      "last_new_comment_at": null,
-      "last_collection_at": "2026-11-03T00:16:16Z",
-      "next_collection_at": "2026-11-04T00:16:16Z",
-      "n_videos_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "last_attempt_at": "2026-11-03T00:16:16Z",
+      "last_attempt_at": "2026-11-03T13:24:08Z",
       "consecutive_failures": 0,
       "last_error": null,
       "legacy_unverified": false
@@ -1058,63 +1023,6 @@
       "legacy_unverified": false,
       "counters_integrity": "inflated_pre_v0.3",
       "window_finalized_at": "2026-10-20T02:52:14Z",
-      "window_finalized_reason": "final_sweep"
-    },
-    "cemaden_ba_3009": {
-      "codibge": "2913606",
-      "municipio": "Ilhéus",
-      "uf": "BA",
-      "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
-      "flag": "acompanhamento",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-18T09:05:44Z"
-        },
-        {
-          "flag": "acompanhamento",
-          "at": "2026-10-19T18:05:23Z",
-          "criterio": "municipal_v0.3.2"
-        }
-      ],
-      "evento": "Movimentos de Massa",
-      "opened_at": "2026-10-18T09:05:44Z",
-      "last_seen_open_at": "2026-10-21T10:57:13Z",
-      "closed_at": "2026-10-21T16:24:36Z",
-      "transitions": [],
-      "videos_collected": [
-        "xMo_APjhbGY"
-      ],
-      "n_videos_aderentes": 1,
-      "n_comments_valid": 10,
-      "videos_with_valid_comments": [
-        "xMo_APjhbGY"
-      ],
-      "last_new_data_at": "2026-10-20T10:45:45Z",
-      "last_new_comment_at": "2026-10-20T10:45:45Z",
-      "last_collection_at": "2026-10-22T10:57:07Z",
-      "next_collection_at": "2026-10-22T22:57:07Z",
-      "n_videos_municipais": 1,
-      "n_comments_valid_municipal": 10,
-      "videos_with_valid_comments_municipal": [
-        "xMo_APjhbGY"
-      ],
-      "last_attempt_at": "2026-10-22T10:57:07Z",
-      "consecutive_failures": 0,
-      "last_error": null,
-      "legacy_unverified": false,
-      "counters_integrity": "ok",
-      "video_evidence": {
-        "xMo_APjhbGY": "titulo+descricao"
-      },
-      "video_format": {
-        "xMo_APjhbGY": "longo"
-      },
-      "valid_comments_by_video": {
-        "xMo_APjhbGY": 10
-      },
-      "window_finalized_at": "2026-10-22T10:57:07Z",
       "window_finalized_reason": "final_sweep"
     },
     "cemaden_pr_3031": {
@@ -4732,6 +4640,65 @@
       "window_finalized_at": "2026-10-19T11:44:38Z",
       "window_finalized_reason": "final_sweep",
       "archived_at": "2026-11-01T12:27:51Z",
+      "archive_reason": "acompanhamento_esgotado_14d"
+    },
+    "cemaden_ba_3009": {
+      "codibge": "2913606",
+      "municipio": "Ilhéus",
+      "uf": "BA",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "acompanhamento",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-10-18T09:05:44Z"
+        },
+        {
+          "flag": "acompanhamento",
+          "at": "2026-10-19T18:05:23Z",
+          "criterio": "municipal_v0.3.2"
+        }
+      ],
+      "evento": "Movimentos de Massa",
+      "opened_at": "2026-10-18T09:05:44Z",
+      "last_seen_open_at": "2026-10-21T10:57:13Z",
+      "closed_at": "2026-10-21T16:24:36Z",
+      "transitions": [],
+      "videos_collected": [
+        "xMo_APjhbGY"
+      ],
+      "n_videos_aderentes": 1,
+      "n_comments_valid": 10,
+      "videos_with_valid_comments": [
+        "xMo_APjhbGY"
+      ],
+      "last_new_data_at": "2026-10-20T10:45:45Z",
+      "last_new_comment_at": "2026-10-20T10:45:45Z",
+      "last_collection_at": "2026-10-22T10:57:07Z",
+      "next_collection_at": "2026-10-22T22:57:07Z",
+      "n_videos_municipais": 1,
+      "n_comments_valid_municipal": 10,
+      "videos_with_valid_comments_municipal": [
+        "xMo_APjhbGY"
+      ],
+      "last_attempt_at": "2026-10-22T10:57:07Z",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "legacy_unverified": false,
+      "counters_integrity": "ok",
+      "video_evidence": {
+        "xMo_APjhbGY": "titulo+descricao"
+      },
+      "video_format": {
+        "xMo_APjhbGY": "longo"
+      },
+      "valid_comments_by_video": {
+        "xMo_APjhbGY": 10
+      },
+      "window_finalized_at": "2026-10-22T10:57:07Z",
+      "window_finalized_reason": "final_sweep",
+      "archived_at": "2026-11-03T13:24:08Z",
       "archive_reason": "acompanhamento_esgotado_14d"
     }
   }

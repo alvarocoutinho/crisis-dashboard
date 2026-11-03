@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-03T00:17:37Z",
+  "generated_at": "2026-11-03T13:24:14Z",
   "pipeline_version": "0.3.3",
   "pilot_mode": true,
   "dry_run": false,
   "alerts": [
     {
-      "id": "cemaden_pr_3188",
-      "municipio": "Capitão Leônidas Marques",
-      "uf": "PR",
-      "tipo": "Movimentos de Massa",
+      "id": "cemaden_am_3194",
+      "municipio": "Manaus",
+      "uf": "AM",
+      "tipo": "Risco Hidrológico",
       "nivel": "Moderado",
-      "data_alerta": "02/11/2026",
-      "codibge": "4104600",
+      "data_alerta": "03/11/2026",
+      "codibge": "1302603",
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
@@ -92,12 +92,12 @@
       "flag_history": [
         {
           "flag": "alerta",
-          "at": "2026-11-02T01:50:05Z"
+          "at": "2026-11-03T08:47:27Z"
         }
       ],
       "n_comments_valid": 0,
       "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-11-02T01:50:05Z",
+      "alert_opened_at": "2026-11-03T08:47:27Z",
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
@@ -106,122 +106,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-02T14:24:12Z",
-      "next_collection_at": "2026-11-03T14:24:12Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_rj_3192",
-      "municipio": "Piraí",
-      "uf": "RJ",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "02/11/2026",
-      "codibge": "3304003",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-11-02T16:09:58Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-11-02T16:09:58Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-11-03T00:16:16Z",
-      "next_collection_at": "2026-11-04T00:16:16Z",
+      "last_collection_at": "2026-11-03T13:24:08Z",
+      "next_collection_at": "2026-11-04T13:24:08Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -8219,243 +8105,6 @@
       "flag_reassessment": null
     },
     {
-      "id": "cemaden_ba_3009",
-      "municipio": "Ilhéus",
-      "uf": "BA",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "18/10/2026",
-      "codibge": "2913606",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 10,
-      "n_videos": 1,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "2026-10-19",
-        "2026-10-20"
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 8,
-          "pct": 80.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 2,
-          "pct": 20.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 1,
-          "pct": 10.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [
-        {
-          "date": "19/10/26",
-          "count": 7
-        },
-        {
-          "date": "20/10/26",
-          "count": 3
-        }
-      ],
-      "videos": [
-        {
-          "video_id": "xMo_APjhbGY",
-          "n_comments": 10,
-          "total_likes": 28,
-          "first_comment": "19/10/2026",
-          "top_categories": [
-            {
-              "label": "Solidariedade",
-              "count": 8
-            },
-            {
-              "label": "Responsabilização",
-              "count": 2
-            },
-            {
-              "label": "Alerta",
-              "count": 1
-            }
-          ],
-          "municipal_evidence": "titulo+descricao",
-          "formato": "longo"
-        }
-      ],
-      "all_samples": {
-        "solidariedade_oracao_luto": [
-          {
-            "text": "Que Deus proteja a cidade e o povo de Ilha",
-            "likes": 2,
-            "score": 0.996,
-            "date": "2026-10-19",
-            "video_id": "xMo_APjhbGY"
-          },
-          {
-            "text": "Deus proteja essas famílias Boa noite que a paz de Jesus esteja com você",
-            "likes": 2,
-            "score": 0.995,
-            "date": "2026-10-20",
-            "video_id": "xMo_APjhbGY"
-          },
-          {
-            "text": "Que Deus proteja estas famílias.",
-            "likes": 2,
-            "score": 0.995,
-            "date": "2026-10-20",
-            "video_id": "xMo_APjhbGY"
-          },
-          {
-            "text": "Misericórdia 😮",
-            "likes": 5,
-            "score": 0.994,
-            "date": "2026-10-19",
-            "video_id": "xMo_APjhbGY"
-          },
-          {
-            "text": "Misericórdia Senhor",
-            "likes": 3,
-            "score": 0.993,
-            "date": "2026-10-19",
-            "video_id": "xMo_APjhbGY"
-          },
-          {
-            "text": "😮😢",
-            "likes": 2,
-            "score": 0.974,
-            "date": "2026-10-20",
-            "video_id": "xMo_APjhbGY"
-          },
-          {
-            "text": "😭😭😭😭😭😭😭",
-            "likes": 2,
-            "score": 0.974,
-            "date": "2026-10-19",
-            "video_id": "xMo_APjhbGY"
-          },
-          {
-            "text": "Deus avisando e o povo brincando!!",
-            "likes": 3,
-            "score": 0.934,
-            "date": "2026-10-19",
-            "video_id": "xMo_APjhbGY"
-          }
-        ],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [
-          {
-            "text": "OS PREFEITOS DE ILHÉUS SÓ CUIDAM DA ZONA SUL 😢😢😢😢",
-            "likes": 2,
-            "score": 0.998,
-            "date": "2026-10-19",
-            "video_id": "xMo_APjhbGY"
-          },
-          {
-            "text": "Não seria culpa do Bolsonaro?",
-            "likes": 5,
-            "score": 0.997,
-            "date": "2026-10-19",
-            "video_id": "xMo_APjhbGY"
-          }
-        ],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [
-          {
-            "text": "Deus avisando e o povo brincando!!",
-            "likes": 3,
-            "score": 0.997,
-            "date": "2026-10-19",
-            "video_id": "xMo_APjhbGY"
-          }
-        ],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "extended",
-      "priority_tier": "moderado",
-      "flag": "acompanhamento",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-18T09:05:44Z"
-        },
-        {
-          "flag": "acompanhamento",
-          "at": "2026-10-19T18:05:23Z",
-          "criterio": "municipal_v0.3.2"
-        }
-      ],
-      "n_comments_valid": 10,
-      "videos_with_valid_comments": [
-        "xMo_APjhbGY"
-      ],
-      "alert_opened_at": "2026-10-18T09:05:44Z",
-      "alert_closed_at": "2026-10-21T16:24:36Z",
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "ok",
-        "silence_type": null,
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-10-22T10:57:07Z",
-      "next_collection_at": "2026-10-22T22:57:07Z",
-      "window_finalized_at": "2026-10-22T10:57:07Z",
-      "counters_integrity": "ok",
-      "videos_por_formato": {
-        "longo": 1
-      },
-      "n_videos_municipais": 1,
-      "n_videos_verificados": 1,
-      "n_comments_municipais": 10,
-      "n_comments_valid_municipal": 10,
-      "videos_with_valid_comments_municipal": [
-        "xMo_APjhbGY"
-      ],
-      "flag_reassessment": null
-    },
-    {
       "id": "cemaden_pr_3031",
       "municipio": "Francisco Beltrão",
       "uf": "PR",
@@ -10638,6 +10287,37 @@
     }
   ],
   "archived_alerts": [
+    {
+      "id": "cemaden_ba_3009",
+      "codibge": "2913606",
+      "municipio": "Ilhéus",
+      "uf": "BA",
+      "tipo": "Movimentos de Massa",
+      "nivel": "Moderado",
+      "priority_tier": "moderado",
+      "flag_final": "acompanhamento",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-10-18T09:05:44Z"
+        },
+        {
+          "flag": "acompanhamento",
+          "at": "2026-10-19T18:05:23Z",
+          "criterio": "municipal_v0.3.2"
+        }
+      ],
+      "opened_at": "2026-10-18T09:05:44Z",
+      "closed_at": "2026-10-21T16:24:36Z",
+      "archived_at": "2026-11-03T13:24:08Z",
+      "archive_reason": "acompanhamento_esgotado_14d",
+      "n_videos_aderentes": 1,
+      "n_comments_valid": 10,
+      "n_videos_municipais": 1,
+      "n_comments_valid_municipal": 10,
+      "flag_reassessment": null,
+      "last_new_comment_at": "2026-10-20T10:45:45Z"
+    },
     {
       "id": "cemaden_sp_2980",
       "codibge": "3550308",
