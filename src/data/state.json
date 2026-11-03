@@ -1,51 +1,17 @@
 {
   "schema_version": "0.2",
   "pipeline_version": "0.3.3",
-  "last_run_at": "2026-11-02T14:24:12Z",
+  "last_run_at": "2026-11-03T00:16:16Z",
   "last_run_status": "partial",
-  "last_run_duration_seconds": 55,
-  "last_cemaden_check_at": "2026-11-02T14:24:12Z",
+  "last_run_duration_seconds": 81,
+  "last_cemaden_check_at": "2026-11-03T00:16:16Z",
   "youtube_quota": {
-    "used_today": 11,
+    "used_today": 13,
     "reset_at": "2026-11-03T08:00:00Z",
     "day": "2026-11-02",
-    "searches_today": 10
+    "searches_today": 12
   },
   "active_alerts": {
-    "cemaden_pr_3187": {
-      "codibge": "4104600",
-      "municipio": "Capitão Leônidas Marques",
-      "uf": "PR",
-      "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-11-02T01:48:09Z"
-        }
-      ],
-      "evento": "Risco Hidrológico",
-      "opened_at": "2026-11-02T01:48:09Z",
-      "last_seen_open_at": "2026-11-02T14:24:12Z",
-      "closed_at": null,
-      "transitions": [],
-      "videos_collected": [],
-      "n_videos_aderentes": 0,
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "last_new_data_at": null,
-      "last_new_comment_at": null,
-      "last_collection_at": "2026-11-02T14:24:12Z",
-      "next_collection_at": "2026-11-03T14:24:12Z",
-      "n_videos_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "last_attempt_at": "2026-11-02T14:24:12Z",
-      "consecutive_failures": 0,
-      "last_error": null,
-      "legacy_unverified": false
-    },
     "cemaden_pr_3188": {
       "codibge": "4104600",
       "municipio": "Capitão Leônidas Marques",
@@ -61,7 +27,7 @@
       ],
       "evento": "Movimentos de Massa",
       "opened_at": "2026-11-02T01:50:05Z",
-      "last_seen_open_at": "2026-11-02T14:24:12Z",
+      "last_seen_open_at": "2026-11-03T00:16:16Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -78,24 +44,25 @@
       "last_attempt_at": "2026-11-02T14:24:12Z",
       "consecutive_failures": 0,
       "last_error": null,
-      "legacy_unverified": false
+      "legacy_unverified": false,
+      "counters_integrity": "ok"
     },
-    "cemaden_sp_3189": {
-      "codibge": "3529005",
-      "municipio": "Marília",
-      "uf": "SP",
+    "cemaden_rj_3192": {
+      "codibge": "3304003",
+      "municipio": "Piraí",
+      "uf": "RJ",
       "nivel_atual": "Moderado",
       "priority_tier": "moderado",
       "flag": "alerta",
       "flag_history": [
         {
           "flag": "alerta",
-          "at": "2026-11-02T09:04:23Z"
+          "at": "2026-11-02T16:09:58Z"
         }
       ],
-      "evento": "Risco Hidrológico",
-      "opened_at": "2026-11-02T09:04:23Z",
-      "last_seen_open_at": "2026-11-02T14:24:12Z",
+      "evento": "Movimentos de Massa",
+      "opened_at": "2026-11-02T16:09:58Z",
+      "last_seen_open_at": "2026-11-03T00:16:16Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -104,80 +71,12 @@
       "videos_with_valid_comments": [],
       "last_new_data_at": null,
       "last_new_comment_at": null,
-      "last_collection_at": "2026-11-02T14:24:12Z",
-      "next_collection_at": "2026-11-03T14:24:12Z",
+      "last_collection_at": "2026-11-03T00:16:16Z",
+      "next_collection_at": "2026-11-04T00:16:16Z",
       "n_videos_municipais": 0,
       "n_comments_valid_municipal": 0,
       "videos_with_valid_comments_municipal": [],
-      "last_attempt_at": "2026-11-02T14:24:12Z",
-      "consecutive_failures": 0,
-      "last_error": null,
-      "legacy_unverified": false
-    },
-    "cemaden_sp_3190": {
-      "codibge": "3537206",
-      "municipio": "Pedro de Toledo",
-      "uf": "SP",
-      "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-11-02T10:55:36Z"
-        }
-      ],
-      "evento": "Risco Hidrológico",
-      "opened_at": "2026-11-02T10:55:36Z",
-      "last_seen_open_at": "2026-11-02T14:24:12Z",
-      "closed_at": null,
-      "transitions": [],
-      "videos_collected": [],
-      "n_videos_aderentes": 0,
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "last_new_data_at": null,
-      "last_new_comment_at": null,
-      "last_collection_at": "2026-11-02T14:24:12Z",
-      "next_collection_at": "2026-11-03T14:24:12Z",
-      "n_videos_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "last_attempt_at": "2026-11-02T14:24:12Z",
-      "consecutive_failures": 0,
-      "last_error": null,
-      "legacy_unverified": false
-    },
-    "cemaden_sp_3191": {
-      "codibge": "3543907",
-      "municipio": "Rio Claro",
-      "uf": "SP",
-      "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-11-02T11:07:33Z"
-        }
-      ],
-      "evento": "Risco Hidrológico",
-      "opened_at": "2026-11-02T11:07:33Z",
-      "last_seen_open_at": "2026-11-02T14:24:12Z",
-      "closed_at": null,
-      "transitions": [],
-      "videos_collected": [],
-      "n_videos_aderentes": 0,
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "last_new_data_at": null,
-      "last_new_comment_at": null,
-      "last_collection_at": "2026-11-02T14:24:12Z",
-      "next_collection_at": "2026-11-03T14:24:12Z",
-      "n_videos_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "last_attempt_at": "2026-11-02T14:24:12Z",
+      "last_attempt_at": "2026-11-03T00:16:16Z",
       "consecutive_failures": 0,
       "last_error": null,
       "legacy_unverified": false
