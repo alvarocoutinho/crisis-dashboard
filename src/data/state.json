@@ -1,17 +1,86 @@
 {
   "schema_version": "0.2",
   "pipeline_version": "0.3.3",
-  "last_run_at": "2026-11-04T04:14:27Z",
+  "last_run_at": "2026-11-04T13:35:25Z",
   "last_run_status": "success",
-  "last_run_duration_seconds": 1,
-  "last_cemaden_check_at": "2026-11-04T04:14:27Z",
+  "last_run_duration_seconds": 6,
+  "last_cemaden_check_at": "2026-11-04T13:35:25Z",
   "youtube_quota": {
-    "used_today": 3,
-    "reset_at": "2026-11-04T08:00:00Z",
-    "day": "2026-11-03",
-    "searches_today": 2
+    "used_today": 4,
+    "reset_at": "2026-11-05T08:00:00Z",
+    "day": "2026-11-04",
+    "searches_today": 4
   },
-  "active_alerts": {},
+  "active_alerts": {
+    "cemaden_sc_3195": {
+      "codibge": "4209300",
+      "municipio": "Lages",
+      "uf": "SC",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-11-04T06:56:23Z"
+        }
+      ],
+      "evento": "Risco Hidrológico",
+      "opened_at": "2026-11-04T06:56:23Z",
+      "last_seen_open_at": "2026-11-04T13:35:25Z",
+      "closed_at": null,
+      "transitions": [],
+      "videos_collected": [],
+      "n_videos_aderentes": 0,
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "last_new_data_at": null,
+      "last_new_comment_at": null,
+      "last_collection_at": "2026-11-04T13:35:25Z",
+      "next_collection_at": "2026-11-05T13:35:25Z",
+      "n_videos_municipais": 0,
+      "n_comments_valid_municipal": 0,
+      "videos_with_valid_comments_municipal": [],
+      "last_attempt_at": "2026-11-04T13:35:25Z",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "legacy_unverified": false
+    },
+    "cemaden_sc_3196": {
+      "codibge": "4201000",
+      "municipio": "Anita Garibaldi",
+      "uf": "SC",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-11-04T10:15:18Z"
+        }
+      ],
+      "evento": "Risco Hidrológico",
+      "opened_at": "2026-11-04T10:15:18Z",
+      "last_seen_open_at": "2026-11-04T13:35:25Z",
+      "closed_at": null,
+      "transitions": [],
+      "videos_collected": [],
+      "n_videos_aderentes": 0,
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "last_new_data_at": null,
+      "last_new_comment_at": null,
+      "last_collection_at": "2026-11-04T13:35:25Z",
+      "next_collection_at": "2026-11-05T13:35:25Z",
+      "n_videos_municipais": 0,
+      "n_comments_valid_municipal": 0,
+      "videos_with_valid_comments_municipal": [],
+      "last_attempt_at": "2026-11-04T13:35:25Z",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "legacy_unverified": false
+    }
+  },
   "extended_window_alerts": {
     "cemaden_sp_2609": {
       "codibge": "3550308",
