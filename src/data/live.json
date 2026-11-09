@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T21:33:07Z",
+  "generated_at": "2026-11-09T03:56:06Z",
   "pipeline_version": "0.3.3",
   "pilot_mode": true,
   "dry_run": false,
@@ -101,10 +101,10 @@
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
+        "status": "error",
+        "silence_type": null,
+        "last_error": "youtube=quota_exhausted;comments=not_applicable",
+        "consecutive_failures": 1
       },
       "last_collection_at": "2026-11-08T03:43:12Z",
       "next_collection_at": "2026-11-09T03:43:12Z",
@@ -1454,10 +1454,10 @@
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "ok",
+        "status": "error",
         "silence_type": null,
-        "last_error": null,
-        "consecutive_failures": 0
+        "last_error": "youtube=quota_exhausted;comments=not_applicable",
+        "consecutive_failures": 1
       },
       "last_collection_at": "2026-11-08T12:33:37Z",
       "next_collection_at": "2026-11-09T00:33:37Z",
@@ -1714,13 +1714,13 @@
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
-      "n_comments": 1,
-      "n_videos": 1,
+      "n_comments": 2,
+      "n_videos": 3,
       "unlabeled": 0,
       "unlabeled_pct": 0.0,
       "date_range": [
         "2026-11-08",
-        "2026-11-08"
+        "2026-11-09"
       ],
       "distribution": [
         {
@@ -1739,7 +1739,7 @@
           "key": "responsabilizacao_governanca",
           "label": "Responsabilização / governança",
           "count": 1,
-          "pct": 100.0
+          "pct": 50.0
         },
         {
           "key": "infraestrutura_ocupacao_risco",
@@ -1750,7 +1750,7 @@
         {
           "key": "clima_chuva_meio_ambiente",
           "label": "Clima / chuva / meio ambiente",
-          "count": 1,
+          "count": 2,
           "pct": 100.0
         },
         {
@@ -1776,9 +1776,27 @@
         {
           "date": "08/11/26",
           "count": 1
+        },
+        {
+          "date": "09/11/26",
+          "count": 1
         }
       ],
       "videos": [
+        {
+          "video_id": "8HPUEMFWouQ",
+          "n_comments": 1,
+          "total_likes": 1,
+          "first_comment": "09/11/2026",
+          "top_categories": [
+            {
+              "label": "Clima/chuva",
+              "count": 1
+            }
+          ],
+          "municipal_evidence": "titulo+descricao",
+          "formato": "short"
+        },
         {
           "video_id": "oi1MT28GLOg",
           "n_comments": 1,
@@ -1796,6 +1814,15 @@
           ],
           "municipal_evidence": "titulo+descricao",
           "formato": "short"
+        },
+        {
+          "video_id": "3Es0acHZ5Wo",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": [],
+          "municipal_evidence": "descricao",
+          "formato": "short"
         }
       ],
       "all_samples": {
@@ -1812,6 +1839,13 @@
         ],
         "infraestrutura_ocupacao_risco": [],
         "clima_chuva_meio_ambiente": [
+          {
+            "text": "Vai ter enchente en blumenau",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-11-09",
+            "video_id": "8HPUEMFWouQ"
+          },
           {
             "text": "Se a população tiver vergonha na cara, não é para doar nenhum copo d'água para essa raça em caso de catástrofe.",
             "likes": 0,
@@ -1839,8 +1873,9 @@
           "criterio": "municipal_v0.3.2"
         }
       ],
-      "n_comments_valid": 1,
+      "n_comments_valid": 2,
       "videos_with_valid_comments": [
+        "8HPUEMFWouQ",
         "oi1MT28GLOg"
       ],
       "alert_opened_at": "2026-11-07T06:20:15Z",
@@ -1852,18 +1887,19 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-08T12:33:37Z",
-      "next_collection_at": "2026-11-09T00:33:37Z",
+      "last_collection_at": "2026-11-09T03:55:38Z",
+      "next_collection_at": "2026-11-09T15:55:38Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {
-        "short": 1
+        "short": 3
       },
-      "n_videos_municipais": 1,
-      "n_videos_verificados": 1,
-      "n_comments_municipais": 1,
-      "n_comments_valid_municipal": 1,
+      "n_videos_municipais": 3,
+      "n_videos_verificados": 3,
+      "n_comments_municipais": 2,
+      "n_comments_valid_municipal": 2,
       "videos_with_valid_comments_municipal": [
+        "8HPUEMFWouQ",
         "oi1MT28GLOg"
       ],
       "flag_reassessment": null
@@ -3888,8 +3924,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-08T03:43:12Z",
-      "next_collection_at": "2026-11-09T03:43:12Z",
+      "last_collection_at": "2026-11-09T03:55:38Z",
+      "next_collection_at": "2026-11-10T03:55:38Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -4727,13 +4763,13 @@
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 4
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": null,
-      "next_collection_at": "2026-11-08T03:43:12Z",
+      "last_collection_at": "2026-11-09T03:55:38Z",
+      "next_collection_at": "2026-11-10T03:55:38Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -4841,13 +4877,13 @@
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 3
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": null,
-      "next_collection_at": "2026-11-08T12:33:37Z",
+      "last_collection_at": "2026-11-09T03:55:38Z",
+      "next_collection_at": "2026-11-10T03:55:38Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -4955,13 +4991,13 @@
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 3
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": null,
-      "next_collection_at": "2026-11-08T12:33:37Z",
+      "last_collection_at": "2026-11-09T03:55:38Z",
+      "next_collection_at": "2026-11-10T03:55:38Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -5069,13 +5105,13 @@
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 3
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": null,
-      "next_collection_at": "2026-11-08T12:33:37Z",
+      "last_collection_at": "2026-11-09T03:55:38Z",
+      "next_collection_at": "2026-11-10T03:55:38Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -5183,13 +5219,13 @@
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 3
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": null,
-      "next_collection_at": "2026-11-08T12:33:37Z",
+      "last_collection_at": "2026-11-09T03:55:38Z",
+      "next_collection_at": "2026-11-10T03:55:38Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -5300,7 +5336,7 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 3
+        "consecutive_failures": 4
       },
       "last_collection_at": null,
       "next_collection_at": "2026-11-08T12:33:37Z",
@@ -5414,7 +5450,7 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 3
+        "consecutive_failures": 4
       },
       "last_collection_at": null,
       "next_collection_at": "2026-11-08T12:33:37Z",
@@ -5528,7 +5564,7 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 3
+        "consecutive_failures": 4
       },
       "last_collection_at": null,
       "next_collection_at": "2026-11-08T12:33:37Z",
@@ -5642,7 +5678,7 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 3
+        "consecutive_failures": 4
       },
       "last_collection_at": null,
       "next_collection_at": "2026-11-08T12:33:37Z",
@@ -5756,7 +5792,7 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 3
+        "consecutive_failures": 4
       },
       "last_collection_at": null,
       "next_collection_at": "2026-11-08T12:33:37Z",
@@ -5870,7 +5906,7 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 3
+        "consecutive_failures": 4
       },
       "last_collection_at": null,
       "next_collection_at": "2026-11-08T12:33:37Z",
@@ -5984,7 +6020,7 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 3
+        "consecutive_failures": 4
       },
       "last_collection_at": null,
       "next_collection_at": "2026-11-08T12:33:37Z",
@@ -6098,7 +6134,7 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 3
+        "consecutive_failures": 4
       },
       "last_collection_at": null,
       "next_collection_at": "2026-11-08T12:33:37Z",
@@ -6212,7 +6248,7 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 3
+        "consecutive_failures": 4
       },
       "last_collection_at": null,
       "next_collection_at": "2026-11-08T12:33:37Z",
@@ -6326,7 +6362,7 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 3
+        "consecutive_failures": 4
       },
       "last_collection_at": null,
       "next_collection_at": "2026-11-08T12:33:37Z",
@@ -6440,7 +6476,7 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 3
+        "consecutive_failures": 4
       },
       "last_collection_at": null,
       "next_collection_at": "2026-11-08T12:33:37Z",
@@ -6554,7 +6590,7 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 3
+        "consecutive_failures": 4
       },
       "last_collection_at": null,
       "next_collection_at": "2026-11-08T12:33:37Z",
@@ -6668,7 +6704,7 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 3
+        "consecutive_failures": 4
       },
       "last_collection_at": null,
       "next_collection_at": "2026-11-08T12:33:37Z",
@@ -6782,7 +6818,7 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 3
+        "consecutive_failures": 4
       },
       "last_collection_at": null,
       "next_collection_at": "2026-11-08T12:33:37Z",
@@ -6896,7 +6932,7 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 3
+        "consecutive_failures": 4
       },
       "last_collection_at": null,
       "next_collection_at": "2026-11-08T12:33:37Z",
@@ -7010,7 +7046,7 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 3
+        "consecutive_failures": 4
       },
       "last_collection_at": null,
       "next_collection_at": "2026-11-08T12:33:37Z",
@@ -7124,7 +7160,7 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 3
+        "consecutive_failures": 4
       },
       "last_collection_at": null,
       "next_collection_at": "2026-11-08T12:33:37Z",
@@ -7238,7 +7274,7 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 3
+        "consecutive_failures": 4
       },
       "last_collection_at": null,
       "next_collection_at": "2026-11-08T12:33:37Z",
@@ -7352,7 +7388,7 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 2
+        "consecutive_failures": 3
       },
       "last_collection_at": null,
       "next_collection_at": "2026-11-08T21:32:23Z",
@@ -7466,7 +7502,7 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 2
+        "consecutive_failures": 3
       },
       "last_collection_at": null,
       "next_collection_at": "2026-11-08T21:32:23Z",
@@ -7580,7 +7616,7 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 2
+        "consecutive_failures": 3
       },
       "last_collection_at": null,
       "next_collection_at": "2026-11-08T21:32:23Z",
@@ -7694,7 +7730,7 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 2
+        "consecutive_failures": 3
       },
       "last_collection_at": null,
       "next_collection_at": "2026-11-08T21:32:23Z",
@@ -7808,10 +7844,10 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 1
+        "consecutive_failures": 2
       },
       "last_collection_at": null,
-      "next_collection_at": "2026-11-08T21:32:23Z",
+      "next_collection_at": "2026-11-09T03:55:38Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -7922,10 +7958,10 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 1
+        "consecutive_failures": 2
       },
       "last_collection_at": null,
-      "next_collection_at": "2026-11-08T21:32:23Z",
+      "next_collection_at": "2026-11-09T03:55:38Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -8036,10 +8072,10 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 1
+        "consecutive_failures": 2
       },
       "last_collection_at": null,
-      "next_collection_at": "2026-11-08T21:32:23Z",
+      "next_collection_at": "2026-11-09T03:55:38Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -8150,10 +8186,124 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=quota_exhausted;comments=not_applicable",
+        "consecutive_failures": 2
+      },
+      "last_collection_at": null,
+      "next_collection_at": "2026-11-09T03:55:38Z",
+      "window_finalized_at": null,
+      "counters_integrity": "ok",
+      "videos_por_formato": {},
+      "n_videos_municipais": 0,
+      "n_videos_verificados": 0,
+      "n_comments_municipais": 0,
+      "n_comments_valid_municipal": 0,
+      "videos_with_valid_comments_municipal": [],
+      "flag_reassessment": null
+    },
+    {
+      "id": "cemaden_mg_3374",
+      "municipio": "Governador Valadares",
+      "uf": "MG",
+      "tipo": "Movimentos de Massa",
+      "nivel": "Moderado",
+      "data_alerta": "08/11/2026",
+      "codibge": "3127701",
+      "lat": null,
+      "lon": null,
+      "regime": "prospective_live",
+      "n_comments": 0,
+      "n_videos": 0,
+      "unlabeled": 0,
+      "unlabeled_pct": 0.0,
+      "date_range": [
+        "",
+        ""
+      ],
+      "distribution": [
+        {
+          "key": "solidariedade_oracao_luto",
+          "label": "Solidariedade / oração / luto",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "ajuda_resgate_doacoes",
+          "label": "Ajuda / resgate / doações",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "responsabilizacao_governanca",
+          "label": "Responsabilização / governança",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "infraestrutura_ocupacao_risco",
+          "label": "Infraestrutura / ocupação de risco",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "clima_chuva_meio_ambiente",
+          "label": "Clima / chuva / meio ambiente",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "experiencia_pessoal_local",
+          "label": "Experiência pessoal / local",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "alerta_prevencao_cobranca",
+          "label": "Alerta / prevenção / cobrança",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "critica_midia_informacao",
+          "label": "Crítica à mídia / informação",
+          "count": 0,
+          "pct": 0.0
+        }
+      ],
+      "timeline": [],
+      "videos": [],
+      "all_samples": {
+        "solidariedade_oracao_luto": [],
+        "ajuda_resgate_doacoes": [],
+        "responsabilizacao_governanca": [],
+        "infraestrutura_ocupacao_risco": [],
+        "clima_chuva_meio_ambiente": [],
+        "experiencia_pessoal_local": [],
+        "alerta_prevencao_cobranca": [],
+        "critica_midia_informacao": []
+      },
+      "academic_studies": [],
+      "observation_status": "active",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-11-08T23:34:07Z"
+        }
+      ],
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "alert_opened_at": "2026-11-08T23:34:07Z",
+      "alert_closed_at": null,
+      "alert_transitions": [],
+      "collection_health": {
+        "status": "error",
+        "silence_type": null,
+        "last_error": "youtube=quota_exhausted;comments=not_applicable",
         "consecutive_failures": 1
       },
       "last_collection_at": null,
-      "next_collection_at": "2026-11-08T21:32:23Z",
+      "next_collection_at": "2026-11-09T03:55:38Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -18656,7 +18806,7 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 3
+        "consecutive_failures": 4
       },
       "last_collection_at": "2026-11-07T12:13:42Z",
       "next_collection_at": "2026-11-08T00:13:42Z",
@@ -18829,7 +18979,7 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 3
+        "consecutive_failures": 4
       },
       "last_collection_at": "2026-11-07T12:13:42Z",
       "next_collection_at": "2026-11-08T00:13:42Z",
@@ -19026,7 +19176,7 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 2
+        "consecutive_failures": 3
       },
       "last_collection_at": "2026-11-07T03:58:20Z",
       "next_collection_at": "2026-11-08T03:58:20Z",
@@ -19244,7 +19394,7 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 2
+        "consecutive_failures": 3
       },
       "last_collection_at": "2026-11-07T21:17:38Z",
       "next_collection_at": "2026-11-08T09:17:38Z",
@@ -19718,7 +19868,7 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 2
+        "consecutive_failures": 3
       },
       "last_collection_at": "2026-11-07T03:58:20Z",
       "next_collection_at": "2026-11-08T03:58:20Z",
@@ -19924,7 +20074,7 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 4
+        "consecutive_failures": 5
       },
       "last_collection_at": "2026-11-07T03:58:20Z",
       "next_collection_at": "2026-11-07T15:58:20Z",
@@ -20125,7 +20275,7 @@
         "status": "error",
         "silence_type": null,
         "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 4
+        "consecutive_failures": 5
       },
       "last_collection_at": "2026-11-07T03:58:20Z",
       "next_collection_at": "2026-11-07T15:58:20Z",
