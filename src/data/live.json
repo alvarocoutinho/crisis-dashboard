@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T14:54:19Z",
+  "generated_at": "2026-11-10T01:03:35Z",
   "pipeline_version": "0.3.3",
   "pilot_mode": true,
   "dry_run": false,
@@ -101,14 +101,14 @@
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 2
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-08T03:43:12Z",
-      "next_collection_at": "2026-11-09T03:43:12Z",
-      "window_finalized_at": null,
+      "last_collection_at": "2026-11-10T01:02:54Z",
+      "next_collection_at": "2026-11-11T01:02:54Z",
+      "window_finalized_at": "2026-11-10T01:02:54Z",
       "counters_integrity": "ok",
       "videos_por_formato": {},
       "n_videos_municipais": 0,
@@ -215,14 +215,14 @@
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 1
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-08T12:33:37Z",
-      "next_collection_at": "2026-11-09T12:33:37Z",
-      "window_finalized_at": null,
+      "last_collection_at": "2026-11-10T01:02:54Z",
+      "next_collection_at": "2026-11-11T01:02:54Z",
+      "window_finalized_at": "2026-11-10T01:02:54Z",
       "counters_integrity": "ok",
       "videos_por_formato": {},
       "n_videos_municipais": 0,
@@ -1590,552 +1590,6 @@
       "flag_reassessment": null
     },
     {
-      "id": "cemaden_rj_3311",
-      "municipio": "Tanguá",
-      "uf": "RJ",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "07/11/2026",
-      "codibge": "3305752",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 6,
-      "n_videos": 1,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "2026-11-08",
-        "2026-11-09"
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 6,
-          "pct": 100.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 1,
-          "pct": 16.7
-        }
-      ],
-      "timeline": [
-        {
-          "date": "08/11/26",
-          "count": 4
-        },
-        {
-          "date": "09/11/26",
-          "count": 2
-        }
-      ],
-      "videos": [
-        {
-          "video_id": "f84PTRVuUEA",
-          "n_comments": 6,
-          "total_likes": 4,
-          "first_comment": "08/11/2026",
-          "top_categories": [
-            {
-              "label": "Solidariedade",
-              "count": 6
-            },
-            {
-              "label": "Crítica mídia",
-              "count": 1
-            }
-          ],
-          "municipal_evidence": "descricao",
-          "formato": "longo"
-        }
-      ],
-      "all_samples": {
-        "solidariedade_oracao_luto": [
-          {
-            "text": "🟡Mortificai, pois, os vossos membros, que estão sobre a terra: a fornicação, a impureza, a afeição desordenada, a vil concupiscência, e a avareza, que é idolatria; Pelas quais coisas vem a ira de Deus sobre os filhos da desobediência; Colossenses 3:5-6",
-            "likes": 1,
-            "score": 0.996,
-            "date": "2026-11-08",
-            "video_id": "f84PTRVuUEA"
-          },
-          {
-            "text": "Tristeza 😢😢😢",
-            "likes": 1,
-            "score": 0.995,
-            "date": "2026-11-08",
-            "video_id": "f84PTRVuUEA"
-          },
-          {
-            "text": "Meu deus...que sofrimento",
-            "likes": 1,
-            "score": 0.995,
-            "date": "2026-11-09",
-            "video_id": "f84PTRVuUEA"
-          },
-          {
-            "text": "Misericórdia 😢",
-            "likes": 1,
-            "score": 0.994,
-            "date": "2026-11-08",
-            "video_id": "f84PTRVuUEA"
-          },
-          {
-            "text": "Muita Luz e Amor a todos os irmãos e irmãs que estão retornando ao Mundo Espiritual e aos Familiares e Amigos todos os nossos Sinceros Sentimentos. Abraços .❤",
-            "likes": 0,
-            "score": 0.987,
-            "date": "2026-11-09",
-            "video_id": "f84PTRVuUEA"
-          },
-          {
-            "text": "Que notícia triste 😢",
-            "likes": 0,
-            "score": 0.944,
-            "date": "2026-11-08",
-            "video_id": "f84PTRVuUEA"
-          }
-        ],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": [
-          {
-            "text": "Que notícia triste 😢",
-            "likes": 0,
-            "score": 0.994,
-            "date": "2026-11-08",
-            "video_id": "f84PTRVuUEA"
-          }
-        ]
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "acompanhamento",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-11-07T17:14:21Z"
-        },
-        {
-          "flag": "acompanhamento",
-          "at": "2026-11-08T21:32:23Z",
-          "criterio": "municipal_v0.3.2"
-        }
-      ],
-      "n_comments_valid": 6,
-      "videos_with_valid_comments": [
-        "f84PTRVuUEA"
-      ],
-      "alert_opened_at": "2026-11-07T17:14:21Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "ok",
-        "silence_type": null,
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-11-09T14:51:27Z",
-      "next_collection_at": "2026-11-10T02:51:27Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {
-        "longo": 1
-      },
-      "n_videos_municipais": 1,
-      "n_videos_verificados": 1,
-      "n_comments_municipais": 6,
-      "n_comments_valid_municipal": 6,
-      "videos_with_valid_comments_municipal": [
-        "f84PTRVuUEA"
-      ],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_mg_3312",
-      "municipio": "Santa Rita do Sapucaí",
-      "uf": "MG",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "07/11/2026",
-      "codibge": "3159605",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-11-07T18:07:55Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-11-07T18:07:55Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-11-08T21:32:23Z",
-      "next_collection_at": "2026-11-09T21:32:23Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_rj_3330",
-      "municipio": "Maricá",
-      "uf": "RJ",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "07/11/2026",
-      "codibge": "3302700",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-11-07T19:30:21Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-11-07T19:30:21Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-11-09T14:51:27Z",
-      "next_collection_at": "2026-11-10T14:51:27Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_mg_3361",
-      "municipio": "Juiz de Fora",
-      "uf": "MG",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "07/11/2026",
-      "codibge": "3136702",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-11-07T21:05:13Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-11-07T21:05:13Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-11-09T14:51:27Z",
-      "next_collection_at": "2026-11-10T14:51:27Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
       "id": "cemaden_es_3363",
       "municipio": "Bom Jesus do Norte",
       "uf": "ES",
@@ -3020,234 +2474,6 @@
       "n_comments_valid": 0,
       "videos_with_valid_comments": [],
       "alert_opened_at": "2026-11-08T12:20:15Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-11-09T14:51:27Z",
-      "next_collection_at": "2026-11-10T14:51:27Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_rj_3371",
-      "municipio": "Guapimirim",
-      "uf": "RJ",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "08/11/2026",
-      "codibge": "3301850",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-11-08T12:22:18Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-11-08T12:22:18Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-11-09T14:51:27Z",
-      "next_collection_at": "2026-11-10T14:51:27Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_rj_3372",
-      "municipio": "Saquarema",
-      "uf": "RJ",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "08/11/2026",
-      "codibge": "3305505",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-11-08T12:42:48Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-11-08T12:42:48Z",
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
@@ -11825,384 +11051,6 @@
       "flag_reassessment": null
     },
     {
-      "id": "cemaden_pr_3031",
-      "municipio": "Francisco Beltrão",
-      "uf": "PR",
-      "tipo": "Risco Hidrológico",
-      "nivel": "Moderado",
-      "data_alerta": "24/10/2026",
-      "codibge": "4108403",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 22,
-      "n_videos": 3,
-      "unlabeled": 3,
-      "unlabeled_pct": 13.6,
-      "date_range": [
-        "2026-10-24",
-        "2026-10-25"
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 5,
-          "pct": 22.7
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 7,
-          "pct": 31.8
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 4,
-          "pct": 18.2
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 3,
-          "pct": 13.6
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 6,
-          "pct": 27.3
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 1,
-          "pct": 4.5
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 1,
-          "pct": 4.5
-        }
-      ],
-      "timeline": [
-        {
-          "date": "24/10/26",
-          "count": 1
-        },
-        {
-          "date": "25/10/26",
-          "count": 21
-        }
-      ],
-      "videos": [
-        {
-          "video_id": "KGVDzaVC6Xs",
-          "n_comments": 21,
-          "total_likes": 14,
-          "first_comment": "25/10/2026",
-          "top_categories": [
-            {
-              "label": "Responsabilização",
-              "count": 7
-            },
-            {
-              "label": "Experiência",
-              "count": 6
-            },
-            {
-              "label": "Solidariedade",
-              "count": 5
-            }
-          ],
-          "municipal_evidence": "nenhuma",
-          "formato": "longo"
-        },
-        {
-          "video_id": "vKVrPOEn-XI",
-          "n_comments": 1,
-          "total_likes": 1,
-          "first_comment": "24/10/2026",
-          "top_categories": [
-            {
-              "label": "Infraestrutura",
-              "count": 1
-            }
-          ],
-          "municipal_evidence": "titulo",
-          "formato": "short"
-        },
-        {
-          "video_id": "rEkoM9Gcroo",
-          "n_comments": 0,
-          "total_likes": 0,
-          "first_comment": "",
-          "top_categories": [],
-          "municipal_evidence": "descricao",
-          "formato": "longo"
-        }
-      ],
-      "all_samples": {
-        "solidariedade_oracao_luto": [
-          {
-            "text": "Deus abençoe a todos nós Amém Jesus 🙏🙌",
-            "likes": 1,
-            "score": 0.995,
-            "date": "2026-10-25",
-            "video_id": "KGVDzaVC6Xs"
-          },
-          {
-            "text": "Meu Deus 😲😲😱😍",
-            "likes": 2,
-            "score": 0.995,
-            "date": "2026-10-25",
-            "video_id": "KGVDzaVC6Xs"
-          },
-          {
-            "text": "Meu Deus tem missiricordia desse povo Jesus amado",
-            "likes": 1,
-            "score": 0.995,
-            "date": "2026-10-25",
-            "video_id": "KGVDzaVC6Xs"
-          },
-          {
-            "text": "Meu senhor Jesus Cristo 🙏🙏 que Deus tenha piedade e misericórdia de vcs meus irmãos do Paraná 🙏🙏🙏🙏🙏🙏🙏",
-            "likes": 1,
-            "score": 0.995,
-            "date": "2026-10-25",
-            "video_id": "KGVDzaVC6Xs"
-          },
-          {
-            "text": "Se Deus quiser a água não entrará em minha casa. Deus seletivo esse, não?",
-            "likes": 1,
-            "score": 0.944,
-            "date": "2026-10-25",
-            "video_id": "KGVDzaVC6Xs"
-          }
-        ],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [
-          {
-            "text": "Não, mas o prefeito pode e deve fazer obras e medidas de contenção de água da chuva para evitar enchentes e alagamentos no município. Na minha cidade foi feito em alguns bairros onde tinham muitas enchentes. Deve ser isso que o prefeito prometeu e não fez.",
-            "likes": 1,
-            "score": 0.997,
-            "date": "2026-10-25",
-            "video_id": "KGVDzaVC6Xs"
-          },
-          {
-            "text": "O prefeito vai fazer parar de chover",
-            "likes": 2,
-            "score": 0.995,
-            "date": "2026-10-25",
-            "video_id": "KGVDzaVC6Xs"
-          },
-          {
-            "text": "Lula vai aí amanhã",
-            "likes": 0,
-            "score": 0.995,
-            "date": "2026-10-25",
-            "video_id": "KGVDzaVC6Xs"
-          },
-          {
-            "text": "O prefeito aqui é do partido do Flavio Bolsonaro e o governador também apoia Flávio",
-            "likes": 0,
-            "score": 0.982,
-            "date": "2026-10-25",
-            "video_id": "KGVDzaVC6Xs"
-          },
-          {
-            "text": "Aqui o prefeito é do partido do Flavio Bolsonaro",
-            "likes": 0,
-            "score": 0.978,
-            "date": "2026-10-25",
-            "video_id": "KGVDzaVC6Xs"
-          },
-          {
-            "text": "@usuario que vc deseja para os outros volta para vc. Pessoas sofrendo, perdendo tudo e alguns 🥴😖 desejando mal e colocando a 💩 da política no meio. 😡",
-            "likes": 1,
-            "score": 0.837,
-            "date": "2026-10-25",
-            "video_id": "KGVDzaVC6Xs"
-          },
-          {
-            "text": "Denilson Baitala do PL.... vai vendo...",
-            "likes": 0,
-            "score": 0.809,
-            "date": "2026-10-25",
-            "video_id": "KGVDzaVC6Xs"
-          }
-        ],
-        "infraestrutura_ocupacao_risco": [
-          {
-            "text": "Continuem jogando lixo e moveis nas vias públicas",
-            "likes": 1,
-            "score": 0.997,
-            "date": "2026-10-24",
-            "video_id": "vKVrPOEn-XI"
-          },
-          {
-            "text": "🚨Chuvas não dão trégua no Paraná neste sábado(24), temporais e deslizamento de terra 😮 Mais informações na descrição do vídeo.",
-            "likes": 1,
-            "score": 0.996,
-            "date": "2026-10-25",
-            "video_id": "KGVDzaVC6Xs"
-          },
-          {
-            "text": "Aqui em taquari rio azul Paraná também alagou tudo moramos na área rural e não tem saída pra lugar algum 😢",
-            "likes": 1,
-            "score": 0.99,
-            "date": "2026-10-25",
-            "video_id": "KGVDzaVC6Xs"
-          },
-          {
-            "text": "Se Deus quiser a água não entrará em minha casa. Deus seletivo esse, não?",
-            "likes": 1,
-            "score": 0.987,
-            "date": "2026-10-25",
-            "video_id": "KGVDzaVC6Xs"
-          }
-        ],
-        "clima_chuva_meio_ambiente": [
-          {
-            "text": "O carro que espero que seja levado pela enchente, tem adesivo do filhote do bozo.",
-            "likes": 0,
-            "score": 0.995,
-            "date": "2026-10-25",
-            "video_id": "KGVDzaVC6Xs"
-          },
-          {
-            "text": "Aqui em taquari rio azul Paraná também alagou tudo moramos na área rural e não tem saída pra lugar algum 😢",
-            "likes": 1,
-            "score": 0.979,
-            "date": "2026-10-25",
-            "video_id": "KGVDzaVC6Xs"
-          },
-          {
-            "text": "Não, mas o prefeito pode e deve fazer obras e medidas de contenção de água da chuva para evitar enchentes e alagamentos no município. Na minha cidade foi feito em alguns bairros onde tinham muitas enchentes. Deve ser isso que o prefeito prometeu e não fez.",
-            "likes": 1,
-            "score": 0.974,
-            "date": "2026-10-25",
-            "video_id": "KGVDzaVC6Xs"
-          }
-        ],
-        "experiencia_pessoal_local": [
-          {
-            "text": "Aqui em taquari rio azul Paraná também alagou tudo moramos na área rural e não tem saída pra lugar algum 😢",
-            "likes": 1,
-            "score": 0.997,
-            "date": "2026-10-25",
-            "video_id": "KGVDzaVC6Xs"
-          },
-          {
-            "text": "Aqui em Sao Paulo, capital, tambem esta chovendo muito.",
-            "likes": 1,
-            "score": 0.997,
-            "date": "2026-10-25",
-            "video_id": "KGVDzaVC6Xs"
-          },
-          {
-            "text": "O prefeito aqui é do partido do Flavio Bolsonaro e o governador também apoia Flávio",
-            "likes": 0,
-            "score": 0.995,
-            "date": "2026-10-25",
-            "video_id": "KGVDzaVC6Xs"
-          },
-          {
-            "text": "Aqui o prefeito é do partido do Flavio Bolsonaro",
-            "likes": 0,
-            "score": 0.995,
-            "date": "2026-10-25",
-            "video_id": "KGVDzaVC6Xs"
-          },
-          {
-            "text": "Se Deus quiser a água não entrará em minha casa. Deus seletivo esse, não?",
-            "likes": 1,
-            "score": 0.993,
-            "date": "2026-10-25",
-            "video_id": "KGVDzaVC6Xs"
-          },
-          {
-            "text": "Não, mas o prefeito pode e deve fazer obras e medidas de contenção de água da chuva para evitar enchentes e alagamentos no município. Na minha cidade foi feito em alguns bairros onde tinham muitas enchentes. Deve ser isso que o prefeito prometeu e não fez.",
-            "likes": 1,
-            "score": 0.982,
-            "date": "2026-10-25",
-            "video_id": "KGVDzaVC6Xs"
-          }
-        ],
-        "alerta_prevencao_cobranca": [
-          {
-            "text": "Areas de riscos E sabemos que Rios estao enchendo rapido",
-            "likes": 1,
-            "score": 0.999,
-            "date": "2026-10-25",
-            "video_id": "KGVDzaVC6Xs"
-          }
-        ],
-        "critica_midia_informacao": [
-          {
-            "text": "Bom dia, obrigado pela informação…",
-            "likes": 0,
-            "score": 0.989,
-            "date": "2026-10-25",
-            "video_id": "KGVDzaVC6Xs"
-          }
-        ]
-      },
-      "academic_studies": [],
-      "observation_status": "extended",
-      "priority_tier": "moderado",
-      "flag": "acompanhamento",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-10-24T05:15:45Z"
-        },
-        {
-          "flag": "acompanhamento",
-          "at": "2026-10-25T10:30:10Z",
-          "criterio": "municipal_v0.3.2"
-        }
-      ],
-      "n_comments_valid": 19,
-      "videos_with_valid_comments": [
-        "KGVDzaVC6Xs",
-        "vKVrPOEn-XI"
-      ],
-      "alert_opened_at": "2026-10-24T05:15:45Z",
-      "alert_closed_at": "2026-10-26T02:34:42Z",
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "ok",
-        "silence_type": null,
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-10-27T11:21:58Z",
-      "next_collection_at": "2026-10-27T23:21:58Z",
-      "window_finalized_at": "2026-10-27T11:21:58Z",
-      "counters_integrity": "ok",
-      "videos_por_formato": {
-        "longo": 2,
-        "short": 1
-      },
-      "n_videos_municipais": 2,
-      "n_videos_verificados": 3,
-      "n_comments_municipais": 1,
-      "n_comments_valid_municipal": 1,
-      "videos_with_valid_comments_municipal": [
-        "vKVrPOEn-XI"
-      ],
-      "flag_reassessment": null
-    },
-    {
       "id": "cemaden_pr_3042",
       "municipio": "Pato Branco",
       "uf": "PR",
@@ -14016,10 +12864,10 @@
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
-      "n_comments": 22,
-      "n_videos": 4,
-      "unlabeled": 5,
-      "unlabeled_pct": 22.7,
+      "n_comments": 45,
+      "n_videos": 7,
+      "unlabeled": 9,
+      "unlabeled_pct": 20.0,
       "date_range": [
         "2026-11-04",
         "2026-11-06"
@@ -14028,32 +12876,32 @@
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
-          "count": 3,
-          "pct": 13.6
+          "count": 9,
+          "pct": 20.0
         },
         {
           "key": "ajuda_resgate_doacoes",
           "label": "Ajuda / resgate / doações",
-          "count": 2,
-          "pct": 9.1
+          "count": 4,
+          "pct": 8.9
         },
         {
           "key": "responsabilizacao_governanca",
           "label": "Responsabilização / governança",
-          "count": 4,
-          "pct": 18.2
+          "count": 7,
+          "pct": 15.6
         },
         {
           "key": "infraestrutura_ocupacao_risco",
           "label": "Infraestrutura / ocupação de risco",
-          "count": 6,
-          "pct": 27.3
+          "count": 7,
+          "pct": 15.6
         },
         {
           "key": "clima_chuva_meio_ambiente",
           "label": "Clima / chuva / meio ambiente",
-          "count": 2,
-          "pct": 9.1
+          "count": 5,
+          "pct": 11.1
         },
         {
           "key": "experiencia_pessoal_local",
@@ -14064,24 +12912,24 @@
         {
           "key": "alerta_prevencao_cobranca",
           "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
+          "count": 2,
+          "pct": 4.4
         },
         {
           "key": "critica_midia_informacao",
           "label": "Crítica à mídia / informação",
-          "count": 2,
-          "pct": 9.1
+          "count": 5,
+          "pct": 11.1
         }
       ],
       "timeline": [
         {
           "date": "04/11/26",
-          "count": 4
+          "count": 19
         },
         {
           "date": "05/11/26",
-          "count": 16
+          "count": 24
         },
         {
           "date": "06/11/26",
@@ -14089,6 +12937,28 @@
         }
       ],
       "videos": [
+        {
+          "video_id": "0Lwww6En6AQ",
+          "n_comments": 22,
+          "total_likes": 32,
+          "first_comment": "04/11/2026",
+          "top_categories": [
+            {
+              "label": "Solidariedade",
+              "count": 6
+            },
+            {
+              "label": "Clima/chuva",
+              "count": 3
+            },
+            {
+              "label": "Crítica mídia",
+              "count": 3
+            }
+          ],
+          "municipal_evidence": "nenhuma",
+          "formato": "short"
+        },
         {
           "video_id": "8D9SmhjKHCk",
           "n_comments": 16,
@@ -14144,6 +13014,29 @@
           "formato": "short"
         },
         {
+          "video_id": "Zb-PT3ZeTYw",
+          "n_comments": 1,
+          "total_likes": 0,
+          "first_comment": "04/11/2026",
+          "top_categories": [
+            {
+              "label": "Responsabilização",
+              "count": 1
+            }
+          ],
+          "municipal_evidence": "descricao",
+          "formato": "short"
+        },
+        {
+          "video_id": "XHqYkFkVaOA",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": [],
+          "municipal_evidence": "descricao",
+          "formato": "short"
+        },
+        {
           "video_id": "PuhjGCTKVeY",
           "n_comments": 0,
           "total_likes": 0,
@@ -14155,6 +13048,27 @@
       ],
       "all_samples": {
         "solidariedade_oracao_luto": [
+          {
+            "text": "Graças a Deus eu morri na Flórida vários anos. Foi bom o aprendizado",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-11-04",
+            "video_id": "0Lwww6En6AQ"
+          },
+          {
+            "text": "Lamento por vcs, força e Benc😢",
+            "likes": 2,
+            "score": 0.996,
+            "date": "2026-11-05",
+            "video_id": "0Lwww6En6AQ"
+          },
+          {
+            "text": "Meu Deus!",
+            "likes": 2,
+            "score": 0.995,
+            "date": "2026-11-04",
+            "video_id": "0Lwww6En6AQ"
+          },
           {
             "text": "Assustador! Deus, tenha misericórdia!",
             "likes": 0,
@@ -14170,11 +13084,32 @@
             "video_id": "1aibowBV2Cg"
           },
           {
+            "text": "Bá misericórdia Senhor Jesus Cristo nos proteja",
+            "likes": 4,
+            "score": 0.994,
+            "date": "2026-11-04",
+            "video_id": "0Lwww6En6AQ"
+          },
+          {
             "text": "🥲🥲",
             "likes": 0,
             "score": 0.974,
             "date": "2026-11-06",
             "video_id": "8D9SmhjKHCk"
+          },
+          {
+            "text": "🙏😭",
+            "likes": 0,
+            "score": 0.974,
+            "date": "2026-11-04",
+            "video_id": "0Lwww6En6AQ"
+          },
+          {
+            "text": "Meu pai ,até quando vai essa situação ???? 😢😢😢😢😢😢",
+            "likes": 0,
+            "score": 0.927,
+            "date": "2026-11-04",
+            "video_id": "0Lwww6En6AQ"
           }
         ],
         "ajuda_resgate_doacoes": [
@@ -14186,6 +13121,20 @@
             "video_id": "8D9SmhjKHCk"
           },
           {
+            "text": "PEDE PRO LULA AJUDAR VCS ⭐",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-11-04",
+            "video_id": "0Lwww6En6AQ"
+          },
+          {
+            "text": "Nem precisa pedir ajuda, vai chegar na hora certa , fica certo disso, nunca negou ajuda pra nenhuma região , e não eh ajuda, e sim obrigação",
+            "likes": 2,
+            "score": 0.995,
+            "date": "2026-11-05",
+            "video_id": "0Lwww6En6AQ"
+          },
+          {
             "text": "Ué, mais aí não é o Governador dos Bolsominios???, o estado que quer se separar do Brasil.... Oxi, serviço mal feito nessa ponte. Nem vem dizer que é estado de calamidade pública, para receber ajuda do governo federal. Se virá peão.....",
             "likes": 2,
             "score": 0.987,
@@ -14194,6 +13143,13 @@
           }
         ],
         "responsabilizacao_governanca": [
+          {
+            "text": "Essa é obra do governo do estado...estrada boa. Que nem água suporta kkk",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-11-04",
+            "video_id": "Zb-PT3ZeTYw"
+          },
           {
             "text": "CADE OS VAGABUNDO DOS POLITICOS , ISSO ELES NAO VE NEH",
             "likes": 0,
@@ -14209,11 +13165,25 @@
             "video_id": "8D9SmhjKHCk"
           },
           {
+            "text": "PEDE PRO LULA AJUDAR VCS ⭐",
+            "likes": 1,
+            "score": 0.989,
+            "date": "2026-11-04",
+            "video_id": "0Lwww6En6AQ"
+          },
+          {
             "text": "O engenheiro é petista!!! Só faz cagada!!",
             "likes": 0,
             "score": 0.945,
             "date": "2026-11-05",
             "video_id": "8D9SmhjKHCk"
+          },
+          {
+            "text": "Quero ver o pessoal que falou mal dele pedir desculpas!!",
+            "likes": 1,
+            "score": 0.746,
+            "date": "2026-11-05",
+            "video_id": "0Lwww6En6AQ"
           },
           {
             "text": "Burro, Br é federal!!😊😊🎉🎉🎉",
@@ -14246,6 +13216,13 @@
             "video_id": "8D9SmhjKHCk"
           },
           {
+            "text": "Você sabe o que está acontecendo tão vendendo cidades veja no gugo cidades reziliente tão destruindo pra construir novamente",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-11-04",
+            "video_id": "0Lwww6En6AQ"
+          },
+          {
             "text": "Rotas alternativas sentido Oeste-Litoral: via BR-470 e BR-116",
             "likes": 1,
             "score": 0.988,
@@ -14276,6 +13253,27 @@
             "video_id": "8D9SmhjKHCk"
           },
           {
+            "text": "Isso foi um tornado categoria F1 na escala fujita tradicional (ou EF0 segundo a escala fujita melhorada), pelo que andei apurando a velocidade chegou a 125km/h",
+            "likes": 1,
+            "score": 0.949,
+            "date": "2026-11-04",
+            "video_id": "0Lwww6En6AQ"
+          },
+          {
+            "text": "Foi um fenômeno tornagico com característica furacãologica.",
+            "likes": 4,
+            "score": 0.817,
+            "date": "2026-11-04",
+            "video_id": "0Lwww6En6AQ"
+          },
+          {
+            "text": "E ainda tem pessoas que brincam com a previsão.",
+            "likes": 3,
+            "score": 0.765,
+            "date": "2026-11-04",
+            "video_id": "0Lwww6En6AQ"
+          },
+          {
             "text": "A colheita começou",
             "likes": 1,
             "score": 0.741,
@@ -14284,8 +13282,37 @@
           }
         ],
         "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
+        "alerta_prevencao_cobranca": [
+          {
+            "text": "Obrigada por sempre estar alertando",
+            "likes": 5,
+            "score": 0.998,
+            "date": "2026-11-04",
+            "video_id": "0Lwww6En6AQ"
+          },
+          {
+            "text": "Você tá sempre alertando",
+            "likes": 1,
+            "score": 0.998,
+            "date": "2026-11-05",
+            "video_id": "0Lwww6En6AQ"
+          }
+        ],
         "critica_midia_informacao": [
+          {
+            "text": "Seu comentário e bosta são a mesma coisa.",
+            "likes": 1,
+            "score": 0.95,
+            "date": "2026-11-05",
+            "video_id": "0Lwww6En6AQ"
+          },
+          {
+            "text": "Ok ???",
+            "likes": 0,
+            "score": 0.839,
+            "date": "2026-11-04",
+            "video_id": "0Lwww6En6AQ"
+          },
           {
             "text": "Isso não é ponte",
             "likes": 0,
@@ -14299,6 +13326,13 @@
             "score": 0.618,
             "date": "2026-11-05",
             "video_id": "8D9SmhjKHCk"
+          },
+          {
+            "text": "Super célula tornagica .....😢....rapaz....",
+            "likes": 2,
+            "score": 0.563,
+            "date": "2026-11-05",
+            "video_id": "0Lwww6En6AQ"
           }
         ]
       },
@@ -14317,36 +13351,39 @@
           "criterio": "municipal_v0.3.2"
         }
       ],
-      "n_comments_valid": 17,
+      "n_comments_valid": 36,
       "videos_with_valid_comments": [
+        "0Lwww6En6AQ",
         "1aibowBV2Cg",
         "8D9SmhjKHCk",
-        "KLHsXtnSsQc"
+        "KLHsXtnSsQc",
+        "Zb-PT3ZeTYw"
       ],
       "alert_opened_at": "2026-11-04T11:34:32Z",
       "alert_closed_at": "2026-11-05T13:49:14Z",
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
+        "status": "ok",
         "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 5
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-07T12:13:42Z",
-      "next_collection_at": "2026-11-08T00:13:42Z",
-      "window_finalized_at": null,
+      "last_collection_at": "2026-11-10T01:02:54Z",
+      "next_collection_at": "2026-11-10T13:02:54Z",
+      "window_finalized_at": "2026-11-10T01:02:54Z",
       "counters_integrity": "inflated_pre_v0.3",
       "videos_por_formato": {
-        "short": 4
+        "short": 7
       },
-      "n_videos_municipais": 4,
-      "n_videos_verificados": 4,
-      "n_comments_municipais": 22,
-      "n_comments_valid_municipal": 17,
+      "n_videos_municipais": 6,
+      "n_videos_verificados": 7,
+      "n_comments_municipais": 23,
+      "n_comments_valid_municipal": 18,
       "videos_with_valid_comments_municipal": [
         "1aibowBV2Cg",
         "8D9SmhjKHCk",
-        "KLHsXtnSsQc"
+        "KLHsXtnSsQc",
+        "Zb-PT3ZeTYw"
       ],
       "flag_reassessment": null
     },
@@ -14361,13 +13398,13 @@
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
-      "n_comments": 1,
-      "n_videos": 3,
+      "n_comments": 0,
+      "n_videos": 6,
       "unlabeled": 0,
       "unlabeled_pct": 0.0,
       "date_range": [
-        "2026-11-05",
-        "2026-11-05"
+        "",
+        ""
       ],
       "distribution": [
         {
@@ -14403,8 +13440,8 @@
         {
           "key": "experiencia_pessoal_local",
           "label": "Experiência pessoal / local",
-          "count": 1,
-          "pct": 100.0
+          "count": 0,
+          "pct": 0.0
         },
         {
           "key": "alerta_prevencao_cobranca",
@@ -14419,26 +13456,16 @@
           "pct": 0.0
         }
       ],
-      "timeline": [
-        {
-          "date": "05/11/26",
-          "count": 1
-        }
-      ],
+      "timeline": [],
       "videos": [
         {
-          "video_id": "x1I0yOJNO74",
-          "n_comments": 1,
+          "video_id": "4t1zBej4Pj8",
+          "n_comments": 0,
           "total_likes": 0,
-          "first_comment": "05/11/2026",
-          "top_categories": [
-            {
-              "label": "Experiência",
-              "count": 1
-            }
-          ],
+          "first_comment": "",
+          "top_categories": [],
           "municipal_evidence": "titulo",
-          "formato": "short"
+          "formato": "ao_vivo"
         },
         {
           "video_id": "Qi8rzmDEtYI",
@@ -14450,6 +13477,15 @@
           "formato": "short"
         },
         {
+          "video_id": "cC-F_iEG6lk",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": [],
+          "municipal_evidence": "titulo",
+          "formato": "longo"
+        },
+        {
           "video_id": "y0FfNxry9Q4",
           "n_comments": 0,
           "total_likes": 0,
@@ -14457,6 +13493,24 @@
           "top_categories": [],
           "municipal_evidence": "titulo",
           "formato": "ao_vivo"
+        },
+        {
+          "video_id": "EyjqtaE06UA",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": [],
+          "municipal_evidence": "titulo",
+          "formato": "short"
+        },
+        {
+          "video_id": "kBZtL3o8Ymg",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": [],
+          "municipal_evidence": "descricao",
+          "formato": "short"
         }
       ],
       "all_samples": {
@@ -14465,15 +13519,7 @@
         "responsabilizacao_governanca": [],
         "infraestrutura_ocupacao_risco": [],
         "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [
-          {
-            "text": "Que perigo eu moro em brusque",
-            "likes": 0,
-            "score": 0.996,
-            "date": "2026-11-05",
-            "video_id": "x1I0yOJNO74"
-          }
-        ],
+        "experiencia_pessoal_local": [],
         "alerta_prevencao_cobranca": [],
         "critica_midia_informacao": []
       },
@@ -14500,22 +13546,23 @@
       "alert_closed_at": "2026-11-05T13:49:14Z",
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 5
+        "status": "silent",
+        "silence_type": "videos_without_comments",
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-07T12:13:42Z",
-      "next_collection_at": "2026-11-08T00:13:42Z",
-      "window_finalized_at": null,
+      "last_collection_at": "2026-11-10T01:02:54Z",
+      "next_collection_at": "2026-11-10T13:02:54Z",
+      "window_finalized_at": "2026-11-10T01:02:54Z",
       "counters_integrity": "ok",
       "videos_por_formato": {
-        "short": 2,
-        "ao_vivo": 1
+        "ao_vivo": 2,
+        "short": 3,
+        "longo": 1
       },
-      "n_videos_municipais": 3,
-      "n_videos_verificados": 3,
-      "n_comments_municipais": 1,
+      "n_videos_municipais": 6,
+      "n_videos_verificados": 6,
+      "n_comments_municipais": 0,
       "n_comments_valid_municipal": 1,
       "videos_with_valid_comments_municipal": [
         "x1I0yOJNO74"
@@ -14601,7 +13648,7 @@
         {
           "video_id": "PxNPnfaJptI",
           "n_comments": 1,
-          "total_likes": 0,
+          "total_likes": 1,
           "first_comment": "06/11/2026",
           "top_categories": [
             {
@@ -14626,7 +13673,7 @@
         "ajuda_resgate_doacoes": [
           {
             "text": "A bancada de SC mandou R$ 2,76 bi em emendas em 4 anos. Só R$ 48,8 mi (1,8%) foram para Defesa Civil e prevenção de desastres. O resto foi para saúde e \"emenda pix\" nas prefeituras. Enquanto isso, 12 dos 16 deputados federais votaram a favor do PL da Devastação (flexibilização do licenciamento ambiental). Negam a crise climática de dia e rezam para a barragem aguentar de noite. O estado alaga, a p",
-            "likes": 0,
+            "likes": 1,
             "score": 0.994,
             "date": "2026-11-06",
             "video_id": "PxNPnfaJptI"
@@ -14635,7 +13682,7 @@
         "responsabilizacao_governanca": [
           {
             "text": "A bancada de SC mandou R$ 2,76 bi em emendas em 4 anos. Só R$ 48,8 mi (1,8%) foram para Defesa Civil e prevenção de desastres. O resto foi para saúde e \"emenda pix\" nas prefeituras. Enquanto isso, 12 dos 16 deputados federais votaram a favor do PL da Devastação (flexibilização do licenciamento ambiental). Negam a crise climática de dia e rezam para a barragem aguentar de noite. O estado alaga, a p",
-            "likes": 0,
+            "likes": 1,
             "score": 0.992,
             "date": "2026-11-06",
             "video_id": "PxNPnfaJptI"
@@ -14644,7 +13691,7 @@
         "infraestrutura_ocupacao_risco": [
           {
             "text": "A bancada de SC mandou R$ 2,76 bi em emendas em 4 anos. Só R$ 48,8 mi (1,8%) foram para Defesa Civil e prevenção de desastres. O resto foi para saúde e \"emenda pix\" nas prefeituras. Enquanto isso, 12 dos 16 deputados federais votaram a favor do PL da Devastação (flexibilização do licenciamento ambiental). Negam a crise climática de dia e rezam para a barragem aguentar de noite. O estado alaga, a p",
-            "likes": 0,
+            "likes": 1,
             "score": 0.986,
             "date": "2026-11-06",
             "video_id": "PxNPnfaJptI"
@@ -14653,7 +13700,7 @@
         "clima_chuva_meio_ambiente": [
           {
             "text": "A bancada de SC mandou R$ 2,76 bi em emendas em 4 anos. Só R$ 48,8 mi (1,8%) foram para Defesa Civil e prevenção de desastres. O resto foi para saúde e \"emenda pix\" nas prefeituras. Enquanto isso, 12 dos 16 deputados federais votaram a favor do PL da Devastação (flexibilização do licenciamento ambiental). Negam a crise climática de dia e rezam para a barragem aguentar de noite. O estado alaga, a p",
-            "likes": 0,
+            "likes": 1,
             "score": 0.991,
             "date": "2026-11-06",
             "video_id": "PxNPnfaJptI"
@@ -14662,7 +13709,7 @@
         "experiencia_pessoal_local": [
           {
             "text": "A bancada de SC mandou R$ 2,76 bi em emendas em 4 anos. Só R$ 48,8 mi (1,8%) foram para Defesa Civil e prevenção de desastres. O resto foi para saúde e \"emenda pix\" nas prefeituras. Enquanto isso, 12 dos 16 deputados federais votaram a favor do PL da Devastação (flexibilização do licenciamento ambiental). Negam a crise climática de dia e rezam para a barragem aguentar de noite. O estado alaga, a p",
-            "likes": 0,
+            "likes": 1,
             "score": 0.957,
             "date": "2026-11-06",
             "video_id": "PxNPnfaJptI"
@@ -14671,7 +13718,7 @@
         "alerta_prevencao_cobranca": [
           {
             "text": "A bancada de SC mandou R$ 2,76 bi em emendas em 4 anos. Só R$ 48,8 mi (1,8%) foram para Defesa Civil e prevenção de desastres. O resto foi para saúde e \"emenda pix\" nas prefeituras. Enquanto isso, 12 dos 16 deputados federais votaram a favor do PL da Devastação (flexibilização do licenciamento ambiental). Negam a crise climática de dia e rezam para a barragem aguentar de noite. O estado alaga, a p",
-            "likes": 0,
+            "likes": 1,
             "score": 0.998,
             "date": "2026-11-06",
             "video_id": "PxNPnfaJptI"
@@ -14697,14 +13744,14 @@
       "alert_closed_at": "2026-11-05T23:07:23Z",
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
+        "status": "ok",
         "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 4
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-07T03:58:20Z",
-      "next_collection_at": "2026-11-08T03:58:20Z",
-      "window_finalized_at": null,
+      "last_collection_at": "2026-11-10T01:02:54Z",
+      "next_collection_at": "2026-11-11T01:02:54Z",
+      "window_finalized_at": "2026-11-10T01:02:54Z",
       "counters_integrity": "ok",
       "videos_por_formato": {
         "longo": 1
@@ -14727,13 +13774,13 @@
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
-      "n_comments": 1,
+      "n_comments": 2,
       "n_videos": 3,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
+      "unlabeled": 1,
+      "unlabeled_pct": 50.0,
       "date_range": [
-        "2026-11-06",
-        "2026-11-06"
+        "2026-11-04",
+        "2026-11-04"
       ],
       "distribution": [
         {
@@ -14745,38 +13792,38 @@
         {
           "key": "ajuda_resgate_doacoes",
           "label": "Ajuda / resgate / doações",
-          "count": 1,
-          "pct": 100.0
+          "count": 0,
+          "pct": 0.0
         },
         {
           "key": "responsabilizacao_governanca",
           "label": "Responsabilização / governança",
           "count": 1,
-          "pct": 100.0
+          "pct": 50.0
         },
         {
           "key": "infraestrutura_ocupacao_risco",
           "label": "Infraestrutura / ocupação de risco",
           "count": 1,
-          "pct": 100.0
+          "pct": 50.0
         },
         {
           "key": "clima_chuva_meio_ambiente",
           "label": "Clima / chuva / meio ambiente",
-          "count": 1,
-          "pct": 100.0
+          "count": 0,
+          "pct": 0.0
         },
         {
           "key": "experiencia_pessoal_local",
           "label": "Experiência pessoal / local",
-          "count": 1,
-          "pct": 100.0
+          "count": 0,
+          "pct": 0.0
         },
         {
           "key": "alerta_prevencao_cobranca",
           "label": "Alerta / prevenção / cobrança",
-          "count": 1,
-          "pct": 100.0
+          "count": 0,
+          "pct": 0.0
         },
         {
           "key": "critica_midia_informacao",
@@ -14787,21 +13834,17 @@
       ],
       "timeline": [
         {
-          "date": "06/11/26",
-          "count": 1
+          "date": "04/11/26",
+          "count": 2
         }
       ],
       "videos": [
         {
-          "video_id": "5rNASoGj8uA",
-          "n_comments": 1,
+          "video_id": "npCsIdeeZo8",
+          "n_comments": 2,
           "total_likes": 0,
-          "first_comment": "06/11/2026",
+          "first_comment": "04/11/2026",
           "top_categories": [
-            {
-              "label": "Ajuda",
-              "count": 1
-            },
             {
               "label": "Responsabilização",
               "count": 1
@@ -14811,8 +13854,8 @@
               "count": 1
             }
           ],
-          "municipal_evidence": "titulo+descricao",
-          "formato": "longo"
+          "municipal_evidence": "descricao",
+          "formato": "short"
         },
         {
           "video_id": "y0FfNxry9Q4",
@@ -14835,60 +13878,28 @@
       ],
       "all_samples": {
         "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [
-          {
-            "text": "A bancada de SC mandou R$ 2,76 bi em emendas em 4 anos. Só R$ 48,8 mi (1,8%) foram para Defesa Civil e prevenção de desastres. O resto foi para saúde e \"emenda pix\" nas prefeituras. Enquanto isso, 12 dos 16 deputados federais votaram a favor do PL da Devastação (flexibilização do licenciamento ambiental). Negam a crise climática de dia e rezam para a barragem aguentar de noite. O estado alaga, a p",
-            "likes": 0,
-            "score": 0.994,
-            "date": "2026-11-06",
-            "video_id": "5rNASoGj8uA"
-          }
-        ],
+        "ajuda_resgate_doacoes": [],
         "responsabilizacao_governanca": [
           {
-            "text": "A bancada de SC mandou R$ 2,76 bi em emendas em 4 anos. Só R$ 48,8 mi (1,8%) foram para Defesa Civil e prevenção de desastres. O resto foi para saúde e \"emenda pix\" nas prefeituras. Enquanto isso, 12 dos 16 deputados federais votaram a favor do PL da Devastação (flexibilização do licenciamento ambiental). Negam a crise climática de dia e rezam para a barragem aguentar de noite. O estado alaga, a p",
+            "text": "Quem do governo vendeu o rio grande do sul pro cistema faser cidades reziliente????????",
             "likes": 0,
-            "score": 0.992,
-            "date": "2026-11-06",
-            "video_id": "5rNASoGj8uA"
+            "score": 0.987,
+            "date": "2026-11-04",
+            "video_id": "npCsIdeeZo8"
           }
         ],
         "infraestrutura_ocupacao_risco": [
           {
-            "text": "A bancada de SC mandou R$ 2,76 bi em emendas em 4 anos. Só R$ 48,8 mi (1,8%) foram para Defesa Civil e prevenção de desastres. O resto foi para saúde e \"emenda pix\" nas prefeituras. Enquanto isso, 12 dos 16 deputados federais votaram a favor do PL da Devastação (flexibilização do licenciamento ambiental). Negam a crise climática de dia e rezam para a barragem aguentar de noite. O estado alaga, a p",
-            "likes": 0,
-            "score": 0.986,
-            "date": "2026-11-06",
-            "video_id": "5rNASoGj8uA"
-          }
-        ],
-        "clima_chuva_meio_ambiente": [
-          {
-            "text": "A bancada de SC mandou R$ 2,76 bi em emendas em 4 anos. Só R$ 48,8 mi (1,8%) foram para Defesa Civil e prevenção de desastres. O resto foi para saúde e \"emenda pix\" nas prefeituras. Enquanto isso, 12 dos 16 deputados federais votaram a favor do PL da Devastação (flexibilização do licenciamento ambiental). Negam a crise climática de dia e rezam para a barragem aguentar de noite. O estado alaga, a p",
+            "text": "Quem do governo vendeu o rio grande do sul pro cistema faser cidades reziliente????????",
             "likes": 0,
             "score": 0.991,
-            "date": "2026-11-06",
-            "video_id": "5rNASoGj8uA"
+            "date": "2026-11-04",
+            "video_id": "npCsIdeeZo8"
           }
         ],
-        "experiencia_pessoal_local": [
-          {
-            "text": "A bancada de SC mandou R$ 2,76 bi em emendas em 4 anos. Só R$ 48,8 mi (1,8%) foram para Defesa Civil e prevenção de desastres. O resto foi para saúde e \"emenda pix\" nas prefeituras. Enquanto isso, 12 dos 16 deputados federais votaram a favor do PL da Devastação (flexibilização do licenciamento ambiental). Negam a crise climática de dia e rezam para a barragem aguentar de noite. O estado alaga, a p",
-            "likes": 0,
-            "score": 0.957,
-            "date": "2026-11-06",
-            "video_id": "5rNASoGj8uA"
-          }
-        ],
-        "alerta_prevencao_cobranca": [
-          {
-            "text": "A bancada de SC mandou R$ 2,76 bi em emendas em 4 anos. Só R$ 48,8 mi (1,8%) foram para Defesa Civil e prevenção de desastres. O resto foi para saúde e \"emenda pix\" nas prefeituras. Enquanto isso, 12 dos 16 deputados federais votaram a favor do PL da Devastação (flexibilização do licenciamento ambiental). Negam a crise climática de dia e rezam para a barragem aguentar de noite. O estado alaga, a p",
-            "likes": 0,
-            "score": 0.998,
-            "date": "2026-11-06",
-            "video_id": "5rNASoGj8uA"
-          }
-        ],
+        "clima_chuva_meio_ambiente": [],
+        "experiencia_pessoal_local": [],
+        "alerta_prevencao_cobranca": [],
         "critica_midia_informacao": []
       },
       "academic_studies": [],
@@ -14915,23 +13926,22 @@
       "alert_closed_at": "2026-11-05T23:07:23Z",
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
+        "status": "ok",
         "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 4
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-07T21:17:38Z",
-      "next_collection_at": "2026-11-08T09:17:38Z",
-      "window_finalized_at": null,
+      "last_collection_at": "2026-11-10T01:02:54Z",
+      "next_collection_at": "2026-11-10T13:02:54Z",
+      "window_finalized_at": "2026-11-10T01:02:54Z",
       "counters_integrity": "ok",
       "videos_por_formato": {
-        "longo": 1,
-        "ao_vivo": 1,
-        "short": 1
+        "short": 2,
+        "ao_vivo": 1
       },
       "n_videos_municipais": 3,
       "n_videos_verificados": 3,
-      "n_comments_municipais": 1,
+      "n_comments_municipais": 2,
       "n_comments_valid_municipal": 2,
       "videos_with_valid_comments_municipal": [
         "5rNASoGj8uA",
@@ -14955,15 +13965,15 @@
       "unlabeled": 0,
       "unlabeled_pct": 0.0,
       "date_range": [
-        "2026-11-05",
+        "2026-11-06",
         "2026-11-07"
       ],
       "distribution": [
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
-          "count": 22,
-          "pct": 68.8
+          "count": 23,
+          "pct": 71.9
         },
         {
           "key": "ajuda_resgate_doacoes",
@@ -14992,8 +14002,8 @@
         {
           "key": "experiencia_pessoal_local",
           "label": "Experiência pessoal / local",
-          "count": 4,
-          "pct": 12.5
+          "count": 3,
+          "pct": 9.4
         },
         {
           "key": "alerta_prevencao_cobranca",
@@ -15010,28 +14020,24 @@
       ],
       "timeline": [
         {
-          "date": "05/11/26",
-          "count": 1
-        },
-        {
           "date": "06/11/26",
           "count": 23
         },
         {
           "date": "07/11/26",
-          "count": 8
+          "count": 9
         }
       ],
       "videos": [
         {
           "video_id": "NVOw2BsW0qg",
-          "n_comments": 30,
+          "n_comments": 31,
           "total_likes": 30,
           "first_comment": "06/11/2026",
           "top_categories": [
             {
               "label": "Solidariedade",
-              "count": 22
+              "count": 23
             },
             {
               "label": "Clima/chuva",
@@ -15068,20 +14074,6 @@
           "formato": "longo"
         },
         {
-          "video_id": "x1I0yOJNO74",
-          "n_comments": 1,
-          "total_likes": 0,
-          "first_comment": "05/11/2026",
-          "top_categories": [
-            {
-              "label": "Experiência",
-              "count": 1
-            }
-          ],
-          "municipal_evidence": "nenhuma",
-          "formato": "short"
-        },
-        {
           "video_id": "Qi8rzmDEtYI",
           "n_comments": 0,
           "total_likes": 0,
@@ -15089,6 +14081,15 @@
           "top_categories": [],
           "municipal_evidence": "nenhuma",
           "formato": "short"
+        },
+        {
+          "video_id": "C_Dr0NYJwko",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": [],
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
         }
       ],
       "all_samples": {
@@ -15199,6 +14200,13 @@
             "video_id": "NVOw2BsW0qg"
           },
           {
+            "text": "Obrigada Coutinho , suas previsões, me deixa sempre mais tranquila.",
+            "likes": 0,
+            "score": 0.769,
+            "date": "2026-11-07",
+            "video_id": "NVOw2BsW0qg"
+          },
+          {
             "text": "Boa noite gratidão por nos orientar ❤de Indaiatuba SP",
             "likes": 0,
             "score": 0.747,
@@ -15223,13 +14231,6 @@
             "text": "Boa noite ótimo final de semana",
             "likes": 1,
             "score": 0.734,
-            "date": "2026-11-06",
-            "video_id": "NVOw2BsW0qg"
-          },
-          {
-            "text": "Boa noite Coutinho 😢",
-            "likes": 0,
-            "score": 0.728,
             "date": "2026-11-06",
             "video_id": "NVOw2BsW0qg"
           }
@@ -15307,13 +14308,6 @@
         ],
         "experiencia_pessoal_local": [
           {
-            "text": "Que perigo eu moro em brusque",
-            "likes": 0,
-            "score": 0.996,
-            "date": "2026-11-05",
-            "video_id": "x1I0yOJNO74"
-          },
-          {
             "text": "Boa noite bom retiro sc aqui amanheceu com garoa e depois deu sol entre nuvens",
             "likes": 1,
             "score": 0.995,
@@ -15378,7 +14372,7 @@
           "at": "2026-11-04T19:17:46Z"
         }
       ],
-      "n_comments_valid": 33,
+      "n_comments_valid": 34,
       "videos_with_valid_comments": [
         "5rNASoGj8uA",
         "NVOw2BsW0qg",
@@ -15389,18 +14383,18 @@
       "alert_closed_at": "2026-11-05T23:07:23Z",
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
+        "status": "ok",
         "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 4
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-07T03:58:20Z",
-      "next_collection_at": "2026-11-08T03:58:20Z",
-      "window_finalized_at": null,
+      "last_collection_at": "2026-11-10T01:02:54Z",
+      "next_collection_at": "2026-11-11T01:02:54Z",
+      "window_finalized_at": "2026-11-10T01:02:54Z",
       "counters_integrity": "ok",
       "videos_por_formato": {
-        "short": 3,
-        "longo": 1
+        "short": 2,
+        "longo": 2
       },
       "n_videos_municipais": 0,
       "n_videos_verificados": 4,
@@ -15488,7 +14482,7 @@
         {
           "video_id": "PxNPnfaJptI",
           "n_comments": 1,
-          "total_likes": 0,
+          "total_likes": 1,
           "first_comment": "06/11/2026",
           "top_categories": [
             {
@@ -15513,7 +14507,7 @@
         "ajuda_resgate_doacoes": [
           {
             "text": "A bancada de SC mandou R$ 2,76 bi em emendas em 4 anos. Só R$ 48,8 mi (1,8%) foram para Defesa Civil e prevenção de desastres. O resto foi para saúde e \"emenda pix\" nas prefeituras. Enquanto isso, 12 dos 16 deputados federais votaram a favor do PL da Devastação (flexibilização do licenciamento ambiental). Negam a crise climática de dia e rezam para a barragem aguentar de noite. O estado alaga, a p",
-            "likes": 0,
+            "likes": 1,
             "score": 0.994,
             "date": "2026-11-06",
             "video_id": "PxNPnfaJptI"
@@ -15522,7 +14516,7 @@
         "responsabilizacao_governanca": [
           {
             "text": "A bancada de SC mandou R$ 2,76 bi em emendas em 4 anos. Só R$ 48,8 mi (1,8%) foram para Defesa Civil e prevenção de desastres. O resto foi para saúde e \"emenda pix\" nas prefeituras. Enquanto isso, 12 dos 16 deputados federais votaram a favor do PL da Devastação (flexibilização do licenciamento ambiental). Negam a crise climática de dia e rezam para a barragem aguentar de noite. O estado alaga, a p",
-            "likes": 0,
+            "likes": 1,
             "score": 0.992,
             "date": "2026-11-06",
             "video_id": "PxNPnfaJptI"
@@ -15531,7 +14525,7 @@
         "infraestrutura_ocupacao_risco": [
           {
             "text": "A bancada de SC mandou R$ 2,76 bi em emendas em 4 anos. Só R$ 48,8 mi (1,8%) foram para Defesa Civil e prevenção de desastres. O resto foi para saúde e \"emenda pix\" nas prefeituras. Enquanto isso, 12 dos 16 deputados federais votaram a favor do PL da Devastação (flexibilização do licenciamento ambiental). Negam a crise climática de dia e rezam para a barragem aguentar de noite. O estado alaga, a p",
-            "likes": 0,
+            "likes": 1,
             "score": 0.986,
             "date": "2026-11-06",
             "video_id": "PxNPnfaJptI"
@@ -15540,7 +14534,7 @@
         "clima_chuva_meio_ambiente": [
           {
             "text": "A bancada de SC mandou R$ 2,76 bi em emendas em 4 anos. Só R$ 48,8 mi (1,8%) foram para Defesa Civil e prevenção de desastres. O resto foi para saúde e \"emenda pix\" nas prefeituras. Enquanto isso, 12 dos 16 deputados federais votaram a favor do PL da Devastação (flexibilização do licenciamento ambiental). Negam a crise climática de dia e rezam para a barragem aguentar de noite. O estado alaga, a p",
-            "likes": 0,
+            "likes": 1,
             "score": 0.991,
             "date": "2026-11-06",
             "video_id": "PxNPnfaJptI"
@@ -15549,7 +14543,7 @@
         "experiencia_pessoal_local": [
           {
             "text": "A bancada de SC mandou R$ 2,76 bi em emendas em 4 anos. Só R$ 48,8 mi (1,8%) foram para Defesa Civil e prevenção de desastres. O resto foi para saúde e \"emenda pix\" nas prefeituras. Enquanto isso, 12 dos 16 deputados federais votaram a favor do PL da Devastação (flexibilização do licenciamento ambiental). Negam a crise climática de dia e rezam para a barragem aguentar de noite. O estado alaga, a p",
-            "likes": 0,
+            "likes": 1,
             "score": 0.957,
             "date": "2026-11-06",
             "video_id": "PxNPnfaJptI"
@@ -15558,7 +14552,7 @@
         "alerta_prevencao_cobranca": [
           {
             "text": "A bancada de SC mandou R$ 2,76 bi em emendas em 4 anos. Só R$ 48,8 mi (1,8%) foram para Defesa Civil e prevenção de desastres. O resto foi para saúde e \"emenda pix\" nas prefeituras. Enquanto isso, 12 dos 16 deputados federais votaram a favor do PL da Devastação (flexibilização do licenciamento ambiental). Negam a crise climática de dia e rezam para a barragem aguentar de noite. O estado alaga, a p",
-            "likes": 0,
+            "likes": 1,
             "score": 0.998,
             "date": "2026-11-06",
             "video_id": "PxNPnfaJptI"
@@ -15595,14 +14589,14 @@
         }
       ],
       "collection_health": {
-        "status": "error",
+        "status": "ok",
         "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 6
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-07T03:58:20Z",
-      "next_collection_at": "2026-11-07T15:58:20Z",
-      "window_finalized_at": null,
+      "last_collection_at": "2026-11-10T01:02:54Z",
+      "next_collection_at": "2026-11-10T13:02:54Z",
+      "window_finalized_at": "2026-11-10T01:02:54Z",
       "counters_integrity": "ok",
       "videos_por_formato": {
         "longo": 1
@@ -15695,7 +14689,7 @@
         {
           "video_id": "PxNPnfaJptI",
           "n_comments": 1,
-          "total_likes": 0,
+          "total_likes": 1,
           "first_comment": "06/11/2026",
           "top_categories": [
             {
@@ -15720,7 +14714,7 @@
         "ajuda_resgate_doacoes": [
           {
             "text": "A bancada de SC mandou R$ 2,76 bi em emendas em 4 anos. Só R$ 48,8 mi (1,8%) foram para Defesa Civil e prevenção de desastres. O resto foi para saúde e \"emenda pix\" nas prefeituras. Enquanto isso, 12 dos 16 deputados federais votaram a favor do PL da Devastação (flexibilização do licenciamento ambiental). Negam a crise climática de dia e rezam para a barragem aguentar de noite. O estado alaga, a p",
-            "likes": 0,
+            "likes": 1,
             "score": 0.994,
             "date": "2026-11-06",
             "video_id": "PxNPnfaJptI"
@@ -15729,7 +14723,7 @@
         "responsabilizacao_governanca": [
           {
             "text": "A bancada de SC mandou R$ 2,76 bi em emendas em 4 anos. Só R$ 48,8 mi (1,8%) foram para Defesa Civil e prevenção de desastres. O resto foi para saúde e \"emenda pix\" nas prefeituras. Enquanto isso, 12 dos 16 deputados federais votaram a favor do PL da Devastação (flexibilização do licenciamento ambiental). Negam a crise climática de dia e rezam para a barragem aguentar de noite. O estado alaga, a p",
-            "likes": 0,
+            "likes": 1,
             "score": 0.992,
             "date": "2026-11-06",
             "video_id": "PxNPnfaJptI"
@@ -15738,7 +14732,7 @@
         "infraestrutura_ocupacao_risco": [
           {
             "text": "A bancada de SC mandou R$ 2,76 bi em emendas em 4 anos. Só R$ 48,8 mi (1,8%) foram para Defesa Civil e prevenção de desastres. O resto foi para saúde e \"emenda pix\" nas prefeituras. Enquanto isso, 12 dos 16 deputados federais votaram a favor do PL da Devastação (flexibilização do licenciamento ambiental). Negam a crise climática de dia e rezam para a barragem aguentar de noite. O estado alaga, a p",
-            "likes": 0,
+            "likes": 1,
             "score": 0.986,
             "date": "2026-11-06",
             "video_id": "PxNPnfaJptI"
@@ -15747,7 +14741,7 @@
         "clima_chuva_meio_ambiente": [
           {
             "text": "A bancada de SC mandou R$ 2,76 bi em emendas em 4 anos. Só R$ 48,8 mi (1,8%) foram para Defesa Civil e prevenção de desastres. O resto foi para saúde e \"emenda pix\" nas prefeituras. Enquanto isso, 12 dos 16 deputados federais votaram a favor do PL da Devastação (flexibilização do licenciamento ambiental). Negam a crise climática de dia e rezam para a barragem aguentar de noite. O estado alaga, a p",
-            "likes": 0,
+            "likes": 1,
             "score": 0.991,
             "date": "2026-11-06",
             "video_id": "PxNPnfaJptI"
@@ -15756,7 +14750,7 @@
         "experiencia_pessoal_local": [
           {
             "text": "A bancada de SC mandou R$ 2,76 bi em emendas em 4 anos. Só R$ 48,8 mi (1,8%) foram para Defesa Civil e prevenção de desastres. O resto foi para saúde e \"emenda pix\" nas prefeituras. Enquanto isso, 12 dos 16 deputados federais votaram a favor do PL da Devastação (flexibilização do licenciamento ambiental). Negam a crise climática de dia e rezam para a barragem aguentar de noite. O estado alaga, a p",
-            "likes": 0,
+            "likes": 1,
             "score": 0.957,
             "date": "2026-11-06",
             "video_id": "PxNPnfaJptI"
@@ -15765,7 +14759,7 @@
         "alerta_prevencao_cobranca": [
           {
             "text": "A bancada de SC mandou R$ 2,76 bi em emendas em 4 anos. Só R$ 48,8 mi (1,8%) foram para Defesa Civil e prevenção de desastres. O resto foi para saúde e \"emenda pix\" nas prefeituras. Enquanto isso, 12 dos 16 deputados federais votaram a favor do PL da Devastação (flexibilização do licenciamento ambiental). Negam a crise climática de dia e rezam para a barragem aguentar de noite. O estado alaga, a p",
-            "likes": 0,
+            "likes": 1,
             "score": 0.998,
             "date": "2026-11-06",
             "video_id": "PxNPnfaJptI"
@@ -15796,14 +14790,14 @@
       "alert_closed_at": "2026-11-06T13:32:46Z",
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
+        "status": "ok",
         "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 6
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-07T03:58:20Z",
-      "next_collection_at": "2026-11-07T15:58:20Z",
-      "window_finalized_at": null,
+      "last_collection_at": "2026-11-10T01:02:54Z",
+      "next_collection_at": "2026-11-10T13:02:54Z",
+      "window_finalized_at": "2026-11-10T01:02:54Z",
       "counters_integrity": "ok",
       "videos_por_formato": {
         "longo": 1
@@ -16453,9 +15447,244 @@
       "n_comments_valid_municipal": 0,
       "videos_with_valid_comments_municipal": [],
       "flag_reassessment": null
+    },
+    {
+      "id": "cemaden_rj_3311",
+      "municipio": "Tanguá",
+      "uf": "RJ",
+      "tipo": "Movimentos de Massa",
+      "nivel": "Moderado",
+      "data_alerta": "07/11/2026",
+      "codibge": "3305752",
+      "lat": null,
+      "lon": null,
+      "regime": "prospective_live",
+      "n_comments": 6,
+      "n_videos": 1,
+      "unlabeled": 0,
+      "unlabeled_pct": 0.0,
+      "date_range": [
+        "2026-11-08",
+        "2026-11-09"
+      ],
+      "distribution": [
+        {
+          "key": "solidariedade_oracao_luto",
+          "label": "Solidariedade / oração / luto",
+          "count": 6,
+          "pct": 100.0
+        },
+        {
+          "key": "ajuda_resgate_doacoes",
+          "label": "Ajuda / resgate / doações",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "responsabilizacao_governanca",
+          "label": "Responsabilização / governança",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "infraestrutura_ocupacao_risco",
+          "label": "Infraestrutura / ocupação de risco",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "clima_chuva_meio_ambiente",
+          "label": "Clima / chuva / meio ambiente",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "experiencia_pessoal_local",
+          "label": "Experiência pessoal / local",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "alerta_prevencao_cobranca",
+          "label": "Alerta / prevenção / cobrança",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "critica_midia_informacao",
+          "label": "Crítica à mídia / informação",
+          "count": 1,
+          "pct": 16.7
+        }
+      ],
+      "timeline": [
+        {
+          "date": "08/11/26",
+          "count": 4
+        },
+        {
+          "date": "09/11/26",
+          "count": 2
+        }
+      ],
+      "videos": [
+        {
+          "video_id": "f84PTRVuUEA",
+          "n_comments": 6,
+          "total_likes": 4,
+          "first_comment": "08/11/2026",
+          "top_categories": [
+            {
+              "label": "Solidariedade",
+              "count": 6
+            },
+            {
+              "label": "Crítica mídia",
+              "count": 1
+            }
+          ],
+          "municipal_evidence": "descricao",
+          "formato": "longo"
+        }
+      ],
+      "all_samples": {
+        "solidariedade_oracao_luto": [
+          {
+            "text": "🟡Mortificai, pois, os vossos membros, que estão sobre a terra: a fornicação, a impureza, a afeição desordenada, a vil concupiscência, e a avareza, que é idolatria; Pelas quais coisas vem a ira de Deus sobre os filhos da desobediência; Colossenses 3:5-6",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-11-08",
+            "video_id": "f84PTRVuUEA"
+          },
+          {
+            "text": "Tristeza 😢😢😢",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-11-08",
+            "video_id": "f84PTRVuUEA"
+          },
+          {
+            "text": "Meu deus...que sofrimento",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-11-09",
+            "video_id": "f84PTRVuUEA"
+          },
+          {
+            "text": "Misericórdia 😢",
+            "likes": 1,
+            "score": 0.994,
+            "date": "2026-11-08",
+            "video_id": "f84PTRVuUEA"
+          },
+          {
+            "text": "Muita Luz e Amor a todos os irmãos e irmãs que estão retornando ao Mundo Espiritual e aos Familiares e Amigos todos os nossos Sinceros Sentimentos. Abraços .❤",
+            "likes": 0,
+            "score": 0.987,
+            "date": "2026-11-09",
+            "video_id": "f84PTRVuUEA"
+          },
+          {
+            "text": "Que notícia triste 😢",
+            "likes": 0,
+            "score": 0.944,
+            "date": "2026-11-08",
+            "video_id": "f84PTRVuUEA"
+          }
+        ],
+        "ajuda_resgate_doacoes": [],
+        "responsabilizacao_governanca": [],
+        "infraestrutura_ocupacao_risco": [],
+        "clima_chuva_meio_ambiente": [],
+        "experiencia_pessoal_local": [],
+        "alerta_prevencao_cobranca": [],
+        "critica_midia_informacao": [
+          {
+            "text": "Que notícia triste 😢",
+            "likes": 0,
+            "score": 0.994,
+            "date": "2026-11-08",
+            "video_id": "f84PTRVuUEA"
+          }
+        ]
+      },
+      "academic_studies": [],
+      "observation_status": "extended",
+      "priority_tier": "moderado",
+      "flag": "acompanhamento",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-11-07T17:14:21Z"
+        },
+        {
+          "flag": "acompanhamento",
+          "at": "2026-11-08T21:32:23Z",
+          "criterio": "municipal_v0.3.2"
+        }
+      ],
+      "n_comments_valid": 6,
+      "videos_with_valid_comments": [
+        "f84PTRVuUEA"
+      ],
+      "alert_opened_at": "2026-11-07T17:14:21Z",
+      "alert_closed_at": "2026-11-10T01:02:54Z",
+      "alert_transitions": [],
+      "collection_health": {
+        "status": "ok",
+        "silence_type": null,
+        "last_error": null,
+        "consecutive_failures": 0
+      },
+      "last_collection_at": "2026-11-09T14:51:27Z",
+      "next_collection_at": "2026-11-10T13:02:54Z",
+      "window_finalized_at": null,
+      "counters_integrity": "ok",
+      "videos_por_formato": {
+        "longo": 1
+      },
+      "n_videos_municipais": 1,
+      "n_videos_verificados": 1,
+      "n_comments_municipais": 6,
+      "n_comments_valid_municipal": 6,
+      "videos_with_valid_comments_municipal": [
+        "f84PTRVuUEA"
+      ],
+      "flag_reassessment": null
     }
   ],
   "archived_alerts": [
+    {
+      "id": "cemaden_pr_3031",
+      "codibge": "4108403",
+      "municipio": "Francisco Beltrão",
+      "uf": "PR",
+      "tipo": "Risco Hidrológico",
+      "nivel": "Moderado",
+      "priority_tier": "moderado",
+      "flag_final": "acompanhamento",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-10-24T05:15:45Z"
+        },
+        {
+          "flag": "acompanhamento",
+          "at": "2026-10-25T10:30:10Z",
+          "criterio": "municipal_v0.3.2"
+        }
+      ],
+      "opened_at": "2026-10-24T05:15:45Z",
+      "closed_at": "2026-10-26T02:34:42Z",
+      "archived_at": "2026-11-10T01:02:54Z",
+      "archive_reason": "acompanhamento_esgotado_14d",
+      "n_videos_aderentes": 3,
+      "n_comments_valid": 19,
+      "n_videos_municipais": 2,
+      "n_comments_valid_municipal": 1,
+      "flag_reassessment": null,
+      "last_new_comment_at": "2026-10-26T18:31:11Z"
+    },
     {
       "id": "cemaden_ba_3009",
       "codibge": "2913606",
