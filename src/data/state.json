@@ -1,15 +1,15 @@
 {
   "schema_version": "0.2",
   "pipeline_version": "0.3.3",
-  "last_run_at": "2026-11-10T14:03:21Z",
-  "last_run_status": "partial",
-  "last_run_duration_seconds": 46,
-  "last_cemaden_check_at": "2026-11-10T14:03:21Z",
+  "last_run_at": "2026-11-10T22:42:50Z",
+  "last_run_status": "success",
+  "last_run_duration_seconds": 27,
+  "last_cemaden_check_at": "2026-11-10T22:42:50Z",
   "youtube_quota": {
-    "used_today": 20,
+    "used_today": 27,
     "reset_at": "2026-11-11T08:00:00Z",
     "day": "2026-11-10",
-    "searches_today": 12
+    "searches_today": 16
   },
   "active_alerts": {
     "cemaden_rs_3294": {
@@ -27,7 +27,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-11-07T08:38:24Z",
-      "last_seen_open_at": "2026-11-10T14:03:21Z",
+      "last_seen_open_at": "2026-11-10T22:42:50Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -62,7 +62,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-11-08T06:23:19Z",
-      "last_seen_open_at": "2026-11-10T14:03:21Z",
+      "last_seen_open_at": "2026-11-10T22:42:50Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -71,673 +71,19 @@
       "videos_with_valid_comments": [],
       "last_new_data_at": null,
       "last_new_comment_at": null,
-      "last_collection_at": "2026-11-09T14:51:27Z",
-      "next_collection_at": "2026-11-10T14:51:27Z",
+      "last_collection_at": "2026-11-10T22:42:50Z",
+      "next_collection_at": "2026-11-11T22:42:50Z",
       "n_videos_municipais": 0,
       "n_comments_valid_municipal": 0,
       "videos_with_valid_comments_municipal": [],
-      "last_attempt_at": "2026-11-09T14:51:27Z",
+      "last_attempt_at": "2026-11-10T22:42:50Z",
       "consecutive_failures": 0,
       "last_error": null,
       "counters_integrity": "ok",
-      "legacy_unverified": false
-    },
-    "cemaden_rj_3369": {
-      "codibge": "3303906",
-      "municipio": "Petrópolis",
-      "uf": "RJ",
-      "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
-      "flag": "acompanhamento",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-11-08T09:21:57Z"
-        },
-        {
-          "flag": "acompanhamento",
-          "at": "2026-11-09T14:51:27Z",
-          "criterio": "municipal_v0.3.2"
-        }
-      ],
-      "evento": "Movimentos de Massa",
-      "opened_at": "2026-11-08T09:21:57Z",
-      "last_seen_open_at": "2026-11-10T14:03:21Z",
-      "closed_at": null,
-      "transitions": [],
-      "videos_collected": [
-        "t1ZUqb4CBwI"
-      ],
-      "n_videos_aderentes": 1,
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "last_new_data_at": "2026-11-09T14:51:27Z",
-      "last_new_comment_at": null,
-      "last_collection_at": "2026-11-10T14:03:21Z",
-      "next_collection_at": "2026-11-11T02:03:21Z",
-      "n_videos_municipais": 1,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "last_attempt_at": "2026-11-10T14:03:21Z",
-      "consecutive_failures": 0,
-      "last_error": null,
-      "counters_integrity": "ok",
-      "legacy_unverified": false,
-      "video_evidence": {
-        "t1ZUqb4CBwI": "titulo+descricao"
-      },
-      "video_format": {
-        "t1ZUqb4CBwI": "longo"
-      }
-    },
-    "cemaden_rj_3373": {
-      "codibge": "3305802",
-      "municipio": "Teresópolis",
-      "uf": "RJ",
-      "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-11-08T13:51:05Z"
-        }
-      ],
-      "evento": "Movimentos de Massa",
-      "opened_at": "2026-11-08T13:51:05Z",
-      "last_seen_open_at": "2026-11-10T14:03:21Z",
-      "closed_at": null,
-      "transitions": [],
-      "videos_collected": [],
-      "n_videos_aderentes": 0,
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "last_new_data_at": null,
-      "last_new_comment_at": null,
-      "last_collection_at": "2026-11-09T14:51:27Z",
-      "next_collection_at": "2026-11-10T14:51:27Z",
-      "n_videos_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "last_attempt_at": "2026-11-09T14:51:27Z",
-      "consecutive_failures": 0,
-      "last_error": null,
-      "counters_integrity": "ok",
-      "legacy_unverified": false
-    },
-    "cemaden_ba_3378": {
-      "codibge": "2903904",
-      "municipio": "Bom Jesus da Lapa",
-      "uf": "BA",
-      "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-11-10T01:22:19Z"
-        }
-      ],
-      "evento": "Movimentos de Massa",
-      "opened_at": "2026-11-10T01:22:19Z",
-      "last_seen_open_at": "2026-11-10T14:03:21Z",
-      "closed_at": null,
-      "transitions": [],
-      "videos_collected": [],
-      "n_videos_aderentes": 0,
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "last_new_data_at": null,
-      "last_new_comment_at": null,
-      "last_collection_at": "2026-11-10T14:03:21Z",
-      "next_collection_at": "2026-11-11T14:03:21Z",
-      "n_videos_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "last_attempt_at": "2026-11-10T14:03:21Z",
-      "consecutive_failures": 0,
-      "last_error": null,
-      "legacy_unverified": false
-    },
-    "cemaden_ce_3379": {
-      "codibge": "2302503",
-      "municipio": "Brejo Santo",
-      "uf": "CE",
-      "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-11-10T02:29:22Z"
-        }
-      ],
-      "evento": "Movimentos de Massa",
-      "opened_at": "2026-11-10T02:29:22Z",
-      "last_seen_open_at": "2026-11-10T14:03:21Z",
-      "closed_at": null,
-      "transitions": [],
-      "videos_collected": [],
-      "n_videos_aderentes": 0,
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "last_new_data_at": null,
-      "last_new_comment_at": null,
-      "last_collection_at": "2026-11-10T14:03:21Z",
-      "next_collection_at": "2026-11-11T14:03:21Z",
-      "n_videos_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "last_attempt_at": "2026-11-10T14:03:21Z",
-      "consecutive_failures": 0,
-      "last_error": null,
       "legacy_unverified": false
     }
   },
   "extended_window_alerts": {
-    "cemaden_sp_2609": {
-      "codibge": "3550308",
-      "municipio": "São Paulo",
-      "uf": "SP",
-      "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
-      "flag": "prioritario",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-09-11T08:13:21Z"
-        },
-        {
-          "flag": "acompanhamento",
-          "at": "2026-09-11T15:39:37Z"
-        },
-        {
-          "flag": "prioritario",
-          "at": "2026-09-13T15:27:03Z"
-        }
-      ],
-      "evento": "Risco Hidrológico",
-      "opened_at": "2026-09-11T08:13:21Z",
-      "last_seen_open_at": "2026-09-13T20:05:42Z",
-      "closed_at": "2026-09-14T02:44:08Z",
-      "transitions": [],
-      "videos_collected": [
-        "CPqyzhnDUzE",
-        "Gk5l6YMmxAI",
-        "HLfTpQv78C0",
-        "Hyhg7HsXX7s",
-        "ICYc1O3eo9k",
-        "KtQVJ8_d8Aw",
-        "Mx9RsqhVzSs",
-        "OlQQqaBlMXU",
-        "Zrbb16yD_q0",
-        "cgvIRir0gB0",
-        "kEow9BJwy8Q",
-        "oSGuFgXIddw",
-        "pAw2H5RV9t0",
-        "qSmKOPIqnv8",
-        "z1OeMc28Yos"
-      ],
-      "n_videos_aderentes": 15,
-      "n_comments_valid": 692,
-      "videos_with_valid_comments": [
-        "CPqyzhnDUzE",
-        "HLfTpQv78C0",
-        "Hyhg7HsXX7s",
-        "KtQVJ8_d8Aw",
-        "Mx9RsqhVzSs",
-        "OlQQqaBlMXU",
-        "cgvIRir0gB0",
-        "kEow9BJwy8Q",
-        "qSmKOPIqnv8",
-        "z1OeMc28Yos"
-      ],
-      "last_new_data_at": "2026-10-13T18:45:08Z",
-      "last_new_comment_at": "2026-10-13T18:45:08Z",
-      "last_collection_at": "2026-10-13T18:45:08Z",
-      "next_collection_at": "2026-10-14T00:45:08Z",
-      "counters_integrity": "recounted_from_live_history_v0.3",
-      "window_finalized_at": "2026-10-13T18:45:08Z",
-      "window_finalized_reason": "legacy_inferred_v0.3",
-      "n_comments_valid_legacy": 34596,
-      "video_evidence": {
-        "CPqyzhnDUzE": "descricao",
-        "Gk5l6YMmxAI": "nenhuma",
-        "HLfTpQv78C0": "descricao",
-        "Hyhg7HsXX7s": "nenhuma",
-        "ICYc1O3eo9k": "titulo+descricao",
-        "KtQVJ8_d8Aw": "descricao",
-        "Mx9RsqhVzSs": "nenhuma",
-        "OlQQqaBlMXU": "nenhuma",
-        "Zrbb16yD_q0": "nenhuma",
-        "cgvIRir0gB0": "nenhuma",
-        "kEow9BJwy8Q": "descricao",
-        "oSGuFgXIddw": "nenhuma",
-        "pAw2H5RV9t0": "nenhuma",
-        "qSmKOPIqnv8": "nenhuma",
-        "z1OeMc28Yos": "nenhuma"
-      },
-      "n_videos_municipais": 5,
-      "valid_comments_by_video": {
-        "qSmKOPIqnv8": 226,
-        "OlQQqaBlMXU": 178,
-        "z1OeMc28Yos": 109,
-        "Mx9RsqhVzSs": 63,
-        "kEow9BJwy8Q": 25,
-        "KtQVJ8_d8Aw": 24,
-        "cgvIRir0gB0": 9,
-        "CPqyzhnDUzE": 5,
-        "Hyhg7HsXX7s": 2,
-        "HLfTpQv78C0": 51
-      },
-      "valid_comments_by_video_source": "estimado_historico_live_v0.3.2",
-      "n_comments_valid_municipal": 105,
-      "videos_with_valid_comments_municipal": [
-        "CPqyzhnDUzE",
-        "HLfTpQv78C0",
-        "KtQVJ8_d8Aw",
-        "kEow9BJwy8Q"
-      ],
-      "flag_reassessment": {
-        "at": "2026-10-13T23:46:37Z",
-        "from": "prioritario",
-        "to": "prioritario",
-        "criterio": "municipal_v0.3.2",
-        "n_videos": 15,
-        "n_videos_municipais": 5,
-        "n_comments_valid_municipal": 105,
-        "n_videos_with_valid_municipal": 4,
-        "contagem": "estimada_historico_live",
-        "robusta_ao_teto": true
-      },
-      "video_format": {
-        "CPqyzhnDUzE": "short",
-        "Gk5l6YMmxAI": "short",
-        "HLfTpQv78C0": "longo",
-        "Hyhg7HsXX7s": "longo",
-        "ICYc1O3eo9k": "short",
-        "KtQVJ8_d8Aw": "longo",
-        "Mx9RsqhVzSs": "short",
-        "OlQQqaBlMXU": "longo",
-        "Zrbb16yD_q0": "longo",
-        "cgvIRir0gB0": "longo",
-        "kEow9BJwy8Q": "short",
-        "oSGuFgXIddw": "longo",
-        "pAw2H5RV9t0": "longo",
-        "qSmKOPIqnv8": "short",
-        "z1OeMc28Yos": "longo"
-      }
-    },
-    "cemaden_sp_2577": {
-      "codibge": "3550308",
-      "municipio": "São Paulo",
-      "uf": "SP",
-      "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
-      "flag": "prioritario",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-09-10T12:45:28Z"
-        },
-        {
-          "flag": "acompanhamento",
-          "at": "2026-09-11T20:19:11Z"
-        },
-        {
-          "flag": "prioritario",
-          "at": "2026-09-12T09:54:32Z"
-        }
-      ],
-      "evento": "Movimentos de Massa",
-      "opened_at": "2026-09-10T12:45:28Z",
-      "last_seen_open_at": "2026-09-16T10:37:29Z",
-      "closed_at": "2026-09-16T15:54:04Z",
-      "transitions": [
-        {
-          "from": "Moderado",
-          "to": "Alto",
-          "at": "2026-09-12T19:59:41Z"
-        },
-        {
-          "from": "Alto",
-          "to": "Moderado",
-          "at": "2026-09-14T17:22:54Z"
-        }
-      ],
-      "videos_collected": [
-        "-O41i-QLYnA",
-        "0z0nd9loopY",
-        "HLfTpQv78C0",
-        "JaspoaOI9tQ",
-        "KtQVJ8_d8Aw",
-        "LnzPAjIyRes",
-        "OlQQqaBlMXU",
-        "PfUpdJ4Gdco",
-        "XySCFjlGNo4",
-        "bZgYWYd8acQ",
-        "cgvIRir0gB0",
-        "n-DC99OxuM8",
-        "nb6Z3IH2agk",
-        "s4l41KdW75M",
-        "zx6JBhizIs4"
-      ],
-      "n_videos_aderentes": 15,
-      "n_comments_valid": 536,
-      "videos_with_valid_comments": [
-        "-O41i-QLYnA",
-        "0z0nd9loopY",
-        "HLfTpQv78C0",
-        "JaspoaOI9tQ",
-        "KtQVJ8_d8Aw",
-        "LnzPAjIyRes",
-        "OlQQqaBlMXU",
-        "PfUpdJ4Gdco",
-        "bZgYWYd8acQ",
-        "cgvIRir0gB0",
-        "n-DC99OxuM8",
-        "nb6Z3IH2agk",
-        "s4l41KdW75M",
-        "zx6JBhizIs4"
-      ],
-      "last_new_data_at": "2026-10-13T18:45:08Z",
-      "last_new_comment_at": "2026-10-13T18:45:08Z",
-      "last_collection_at": "2026-10-13T18:45:08Z",
-      "next_collection_at": "2026-10-14T00:45:08Z",
-      "counters_integrity": "recounted_from_live_history_v0.3",
-      "window_finalized_at": "2026-10-13T18:45:08Z",
-      "window_finalized_reason": "legacy_inferred_v0.3",
-      "n_comments_valid_legacy": 12887,
-      "video_evidence": {
-        "-O41i-QLYnA": "titulo+descricao",
-        "0z0nd9loopY": "titulo+descricao",
-        "HLfTpQv78C0": "descricao",
-        "JaspoaOI9tQ": "nenhuma",
-        "KtQVJ8_d8Aw": "descricao",
-        "LnzPAjIyRes": "titulo+descricao",
-        "OlQQqaBlMXU": "nenhuma",
-        "PfUpdJ4Gdco": "titulo+descricao",
-        "XySCFjlGNo4": "nenhuma",
-        "bZgYWYd8acQ": "descricao",
-        "cgvIRir0gB0": "nenhuma",
-        "n-DC99OxuM8": "nenhuma",
-        "nb6Z3IH2agk": "titulo+descricao",
-        "s4l41KdW75M": "descricao",
-        "zx6JBhizIs4": "descricao"
-      },
-      "n_videos_municipais": 10,
-      "valid_comments_by_video": {
-        "OlQQqaBlMXU": 173,
-        "s4l41KdW75M": 112,
-        "HLfTpQv78C0": 51,
-        "0z0nd9loopY": 41,
-        "KtQVJ8_d8Aw": 24,
-        "LnzPAjIyRes": 22,
-        "-O41i-QLYnA": 13,
-        "cgvIRir0gB0": 9,
-        "n-DC99OxuM8": 6,
-        "PfUpdJ4Gdco": 25,
-        "nb6Z3IH2agk": 14,
-        "zx6JBhizIs4": 23,
-        "JaspoaOI9tQ": 15,
-        "bZgYWYd8acQ": 8
-      },
-      "valid_comments_by_video_source": "estimado_historico_live_v0.3.2",
-      "n_comments_valid_municipal": 333,
-      "videos_with_valid_comments_municipal": [
-        "-O41i-QLYnA",
-        "0z0nd9loopY",
-        "HLfTpQv78C0",
-        "KtQVJ8_d8Aw",
-        "LnzPAjIyRes",
-        "PfUpdJ4Gdco",
-        "bZgYWYd8acQ",
-        "nb6Z3IH2agk",
-        "s4l41KdW75M",
-        "zx6JBhizIs4"
-      ],
-      "flag_reassessment": {
-        "at": "2026-10-13T23:46:37Z",
-        "from": "prioritario",
-        "to": "prioritario",
-        "criterio": "municipal_v0.3.2",
-        "n_videos": 15,
-        "n_videos_municipais": 10,
-        "n_comments_valid_municipal": 333,
-        "n_videos_with_valid_municipal": 10,
-        "contagem": "estimada_historico_live",
-        "robusta_ao_teto": true
-      },
-      "video_format": {
-        "-O41i-QLYnA": "longo",
-        "0z0nd9loopY": "short",
-        "HLfTpQv78C0": "longo",
-        "JaspoaOI9tQ": "longo",
-        "KtQVJ8_d8Aw": "longo",
-        "LnzPAjIyRes": "longo",
-        "OlQQqaBlMXU": "longo",
-        "PfUpdJ4Gdco": "longo",
-        "XySCFjlGNo4": "short",
-        "bZgYWYd8acQ": "longo",
-        "cgvIRir0gB0": "longo",
-        "n-DC99OxuM8": "longo",
-        "nb6Z3IH2agk": "longo",
-        "s4l41KdW75M": "longo",
-        "zx6JBhizIs4": "longo"
-      }
-    },
-    "cemaden_sc_2768": {
-      "codibge": "4218103",
-      "municipio": "Timbé do Sul",
-      "uf": "SC",
-      "nivel_atual": "Moderado",
-      "priority_tier": "moderado",
-      "flag": "prioritario",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-09-21T09:52:05Z"
-        },
-        {
-          "flag": "acompanhamento",
-          "at": "2026-09-21T17:36:30Z"
-        },
-        {
-          "flag": "prioritario",
-          "at": "2026-09-24T16:16:40Z"
-        }
-      ],
-      "evento": "Risco Hidrológico",
-      "opened_at": "2026-09-21T09:52:05Z",
-      "last_seen_open_at": "2026-09-23T02:42:55Z",
-      "closed_at": "2026-09-23T10:36:05Z",
-      "transitions": [],
-      "videos_collected": [
-        "APDi5fLPf_E",
-        "MBTUW8XTSVM",
-        "OBzHfFeQHQ0",
-        "P5mrGZNFDkw",
-        "T4EvV0GEk9o",
-        "T9z_4JATYHM",
-        "Vfh5Uohzm4g",
-        "Vwi5PKDEm0k",
-        "avv3CZixaKE",
-        "diTGO4TyEoY",
-        "iJfCxgt_cas",
-        "q4Q3oXg8XPw"
-      ],
-      "n_videos_aderentes": 12,
-      "n_comments_valid": 202,
-      "videos_with_valid_comments": [
-        "APDi5fLPf_E",
-        "OBzHfFeQHQ0",
-        "T4EvV0GEk9o",
-        "avv3CZixaKE"
-      ],
-      "last_new_data_at": "2026-10-13T18:45:08Z",
-      "last_new_comment_at": "2026-10-13T18:45:08Z",
-      "last_collection_at": "2026-10-13T18:45:08Z",
-      "next_collection_at": "2026-10-14T00:45:08Z",
-      "counters_integrity": "recounted_from_live_history_v0.3",
-      "window_finalized_at": "2026-10-13T18:45:08Z",
-      "window_finalized_reason": "legacy_inferred_v0.3",
-      "n_comments_valid_legacy": 5139,
-      "video_evidence": {
-        "APDi5fLPf_E": "descricao",
-        "MBTUW8XTSVM": "titulo",
-        "OBzHfFeQHQ0": "titulo+descricao",
-        "P5mrGZNFDkw": "titulo+descricao",
-        "T4EvV0GEk9o": "titulo+descricao",
-        "T9z_4JATYHM": "titulo+descricao",
-        "Vfh5Uohzm4g": "descricao",
-        "Vwi5PKDEm0k": "descricao",
-        "avv3CZixaKE": "titulo+descricao",
-        "diTGO4TyEoY": "titulo",
-        "iJfCxgt_cas": "titulo",
-        "q4Q3oXg8XPw": "titulo"
-      },
-      "n_videos_municipais": 12,
-      "valid_comments_by_video": {
-        "T4EvV0GEk9o": 76,
-        "OBzHfFeQHQ0": 64,
-        "avv3CZixaKE": 59,
-        "APDi5fLPf_E": 3
-      },
-      "valid_comments_by_video_source": "estimado_historico_live_v0.3.2",
-      "n_comments_valid_municipal": 202,
-      "videos_with_valid_comments_municipal": [
-        "APDi5fLPf_E",
-        "OBzHfFeQHQ0",
-        "T4EvV0GEk9o",
-        "avv3CZixaKE"
-      ],
-      "flag_reassessment": {
-        "at": "2026-10-13T23:46:37Z",
-        "from": "prioritario",
-        "to": "prioritario",
-        "criterio": "municipal_v0.3.2",
-        "n_videos": 12,
-        "n_videos_municipais": 12,
-        "n_comments_valid_municipal": 202,
-        "n_videos_with_valid_municipal": 4,
-        "contagem": "estimada_historico_live",
-        "robusta_ao_teto": true
-      },
-      "video_format": {
-        "APDi5fLPf_E": "short",
-        "MBTUW8XTSVM": "short",
-        "OBzHfFeQHQ0": "short",
-        "P5mrGZNFDkw": "short",
-        "T4EvV0GEk9o": "short",
-        "T9z_4JATYHM": "longo",
-        "Vfh5Uohzm4g": "short",
-        "Vwi5PKDEm0k": "short",
-        "avv3CZixaKE": "longo",
-        "diTGO4TyEoY": "short",
-        "iJfCxgt_cas": "longo",
-        "q4Q3oXg8XPw": "short"
-      }
-    },
-    "cemaden_rs_2745": {
-      "codibge": "4319505",
-      "municipio": "São Sebastião do Caí",
-      "uf": "RS",
-      "nivel_atual": "Alto",
-      "priority_tier": "alto",
-      "flag": "prioritario",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-09-21T06:36:10Z"
-        },
-        {
-          "flag": "acompanhamento",
-          "at": "2026-09-22T16:04:30Z"
-        },
-        {
-          "flag": "prioritario",
-          "at": "2026-09-23T10:36:05Z"
-        }
-      ],
-      "evento": "Risco Hidrológico",
-      "opened_at": "2026-09-21T06:36:10Z",
-      "last_seen_open_at": "2026-09-24T02:31:49Z",
-      "closed_at": "2026-09-24T10:53:05Z",
-      "transitions": [
-        {
-          "from": "Moderado",
-          "to": "Alto",
-          "at": "2026-09-21T21:31:48Z"
-        }
-      ],
-      "videos_collected": [
-        "38Y5dHfts_E",
-        "GJeQSdjYINM",
-        "Qid-f9XSBt4",
-        "d8Jyndmq0jc",
-        "kAz3sngId6U",
-        "r6tsRqjGZGs",
-        "rKtuEKYS9cE",
-        "sPOkdZ6aW2k"
-      ],
-      "n_videos_aderentes": 8,
-      "n_comments_valid": 72,
-      "videos_with_valid_comments": [
-        "d8Jyndmq0jc",
-        "rKtuEKYS9cE"
-      ],
-      "last_new_data_at": "2026-10-13T18:45:08Z",
-      "last_new_comment_at": "2026-10-13T18:45:08Z",
-      "last_collection_at": "2026-10-13T18:45:08Z",
-      "next_collection_at": "2026-10-14T00:45:08Z",
-      "counters_integrity": "recounted_from_live_history_v0.3",
-      "window_finalized_at": "2026-10-13T18:45:08Z",
-      "window_finalized_reason": "legacy_inferred_v0.3",
-      "n_comments_valid_legacy": 2058,
-      "video_evidence": {
-        "38Y5dHfts_E": "titulo",
-        "GJeQSdjYINM": "titulo",
-        "Qid-f9XSBt4": "descricao",
-        "d8Jyndmq0jc": "titulo",
-        "kAz3sngId6U": "titulo",
-        "r6tsRqjGZGs": "titulo",
-        "rKtuEKYS9cE": "descricao",
-        "sPOkdZ6aW2k": "titulo"
-      },
-      "n_videos_municipais": 8,
-      "valid_comments_by_video": {
-        "rKtuEKYS9cE": 40,
-        "d8Jyndmq0jc": 32
-      },
-      "valid_comments_by_video_source": "estimado_historico_live_v0.3.2",
-      "n_comments_valid_municipal": 72,
-      "videos_with_valid_comments_municipal": [
-        "d8Jyndmq0jc",
-        "rKtuEKYS9cE"
-      ],
-      "flag_reassessment": {
-        "at": "2026-10-13T23:46:37Z",
-        "from": "prioritario",
-        "to": "prioritario",
-        "criterio": "municipal_v0.3.2",
-        "n_videos": 8,
-        "n_videos_municipais": 8,
-        "n_comments_valid_municipal": 72,
-        "n_videos_with_valid_municipal": 2,
-        "contagem": "estimada_historico_live",
-        "robusta_ao_teto": true
-      },
-      "video_format": {
-        "38Y5dHfts_E": "short",
-        "GJeQSdjYINM": "short",
-        "Qid-f9XSBt4": "longo",
-        "d8Jyndmq0jc": "longo",
-        "kAz3sngId6U": "short",
-        "r6tsRqjGZGs": "short",
-        "rKtuEKYS9cE": "longo",
-        "sPOkdZ6aW2k": "short"
-      }
-    },
     "cemaden_sp_2974": {
       "codibge": "3550308",
       "municipio": "São Paulo",
@@ -1977,13 +1323,13 @@
         "oi1MT28GLOg"
       ],
       "last_new_data_at": "2026-11-08T21:32:23Z",
-      "last_new_comment_at": "2026-11-08T21:32:23Z",
-      "last_collection_at": "2026-11-08T21:32:23Z",
-      "next_collection_at": "2026-11-10T14:51:27Z",
+      "last_new_comment_at": "2026-11-10T22:42:50Z",
+      "last_collection_at": "2026-11-10T22:42:50Z",
+      "next_collection_at": "2026-11-11T22:42:50Z",
       "n_videos_municipais": 0,
       "n_comments_valid_municipal": 0,
       "videos_with_valid_comments_municipal": [],
-      "last_attempt_at": "2026-11-08T21:32:23Z",
+      "last_attempt_at": "2026-11-10T22:42:50Z",
       "consecutive_failures": 0,
       "last_error": null,
       "counters_integrity": "ok",
@@ -1996,42 +1342,12 @@
         "cMxS7lZD02k": "longo",
         "oi1MT28GLOg": "short"
       },
-      "seen_comment_hashes": [
-        "21b1d826955a",
-        "2a7346520bf0",
-        "3ca5e6a3a0c1",
-        "40917311664d",
-        "47f99b817df6",
-        "514c7f11972c",
-        "53a2a55e5ed1",
-        "5ed5eb755c83",
-        "5fcd6977d9f9",
-        "6f6313fa39e2",
-        "79ec9c6d6d0e",
-        "83ffc4190da0",
-        "869c02ece1af",
-        "8a1559cd78ed",
-        "92b673c5e424",
-        "a34a41de99b4",
-        "a85743b71ac9",
-        "c09778c98286",
-        "caa4ddba285f",
-        "cbd2e86966ca",
-        "cbea33199465",
-        "cd77fca3691b",
-        "d219f691e941",
-        "d5f1256b766f",
-        "d720807e2054",
-        "da0cd52b7d90",
-        "e885d8196263",
-        "e8e90e0af348",
-        "f793c6e59907",
-        "fef061d79181"
-      ],
       "valid_comments_by_video": {
         "cMxS7lZD02k": 25,
         "oi1MT28GLOg": 1
-      }
+      },
+      "window_finalized_at": "2026-11-10T22:42:50Z",
+      "window_finalized_reason": "final_sweep"
     },
     "cemaden_rj_3311": {
       "codibge": "3305752",
@@ -2214,6 +1530,54 @@
       ],
       "valid_comments_by_video": {
         "f84PTRVuUEA": 6
+      }
+    },
+    "cemaden_rj_3369": {
+      "codibge": "3303906",
+      "municipio": "Petrópolis",
+      "uf": "RJ",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "acompanhamento",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-11-08T09:21:57Z"
+        },
+        {
+          "flag": "acompanhamento",
+          "at": "2026-11-09T14:51:27Z",
+          "criterio": "municipal_v0.3.2"
+        }
+      ],
+      "evento": "Movimentos de Massa",
+      "opened_at": "2026-11-08T09:21:57Z",
+      "last_seen_open_at": "2026-11-10T14:03:21Z",
+      "closed_at": "2026-11-10T22:42:50Z",
+      "transitions": [],
+      "videos_collected": [
+        "t1ZUqb4CBwI"
+      ],
+      "n_videos_aderentes": 1,
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "last_new_data_at": "2026-11-09T14:51:27Z",
+      "last_new_comment_at": null,
+      "last_collection_at": "2026-11-10T14:03:21Z",
+      "next_collection_at": "2026-11-11T10:42:50Z",
+      "n_videos_municipais": 1,
+      "n_comments_valid_municipal": 0,
+      "videos_with_valid_comments_municipal": [],
+      "last_attempt_at": "2026-11-10T14:03:21Z",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "counters_integrity": "ok",
+      "legacy_unverified": false,
+      "video_evidence": {
+        "t1ZUqb4CBwI": "titulo+descricao"
+      },
+      "video_format": {
+        "t1ZUqb4CBwI": "longo"
       }
     }
   },
@@ -5698,6 +5062,517 @@
       "window_finalized_reason": "final_sweep",
       "archived_at": "2026-11-10T14:03:21Z",
       "archive_reason": "acompanhamento_esgotado_14d"
+    },
+    "cemaden_sp_2609": {
+      "codibge": "3550308",
+      "municipio": "São Paulo",
+      "uf": "SP",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "prioritario",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-09-11T08:13:21Z"
+        },
+        {
+          "flag": "acompanhamento",
+          "at": "2026-09-11T15:39:37Z"
+        },
+        {
+          "flag": "prioritario",
+          "at": "2026-09-13T15:27:03Z"
+        }
+      ],
+      "evento": "Risco Hidrológico",
+      "opened_at": "2026-09-11T08:13:21Z",
+      "last_seen_open_at": "2026-09-13T20:05:42Z",
+      "closed_at": "2026-09-14T02:44:08Z",
+      "transitions": [],
+      "videos_collected": [
+        "CPqyzhnDUzE",
+        "Gk5l6YMmxAI",
+        "HLfTpQv78C0",
+        "Hyhg7HsXX7s",
+        "ICYc1O3eo9k",
+        "KtQVJ8_d8Aw",
+        "Mx9RsqhVzSs",
+        "OlQQqaBlMXU",
+        "Zrbb16yD_q0",
+        "cgvIRir0gB0",
+        "kEow9BJwy8Q",
+        "oSGuFgXIddw",
+        "pAw2H5RV9t0",
+        "qSmKOPIqnv8",
+        "z1OeMc28Yos"
+      ],
+      "n_videos_aderentes": 15,
+      "n_comments_valid": 692,
+      "videos_with_valid_comments": [
+        "CPqyzhnDUzE",
+        "HLfTpQv78C0",
+        "Hyhg7HsXX7s",
+        "KtQVJ8_d8Aw",
+        "Mx9RsqhVzSs",
+        "OlQQqaBlMXU",
+        "cgvIRir0gB0",
+        "kEow9BJwy8Q",
+        "qSmKOPIqnv8",
+        "z1OeMc28Yos"
+      ],
+      "last_new_data_at": "2026-10-13T18:45:08Z",
+      "last_new_comment_at": "2026-10-13T18:45:08Z",
+      "last_collection_at": "2026-10-13T18:45:08Z",
+      "next_collection_at": "2026-10-14T00:45:08Z",
+      "counters_integrity": "recounted_from_live_history_v0.3",
+      "window_finalized_at": "2026-10-13T18:45:08Z",
+      "window_finalized_reason": "legacy_inferred_v0.3",
+      "n_comments_valid_legacy": 34596,
+      "video_evidence": {
+        "CPqyzhnDUzE": "descricao",
+        "Gk5l6YMmxAI": "nenhuma",
+        "HLfTpQv78C0": "descricao",
+        "Hyhg7HsXX7s": "nenhuma",
+        "ICYc1O3eo9k": "titulo+descricao",
+        "KtQVJ8_d8Aw": "descricao",
+        "Mx9RsqhVzSs": "nenhuma",
+        "OlQQqaBlMXU": "nenhuma",
+        "Zrbb16yD_q0": "nenhuma",
+        "cgvIRir0gB0": "nenhuma",
+        "kEow9BJwy8Q": "descricao",
+        "oSGuFgXIddw": "nenhuma",
+        "pAw2H5RV9t0": "nenhuma",
+        "qSmKOPIqnv8": "nenhuma",
+        "z1OeMc28Yos": "nenhuma"
+      },
+      "n_videos_municipais": 5,
+      "valid_comments_by_video": {
+        "qSmKOPIqnv8": 226,
+        "OlQQqaBlMXU": 178,
+        "z1OeMc28Yos": 109,
+        "Mx9RsqhVzSs": 63,
+        "kEow9BJwy8Q": 25,
+        "KtQVJ8_d8Aw": 24,
+        "cgvIRir0gB0": 9,
+        "CPqyzhnDUzE": 5,
+        "Hyhg7HsXX7s": 2,
+        "HLfTpQv78C0": 51
+      },
+      "valid_comments_by_video_source": "estimado_historico_live_v0.3.2",
+      "n_comments_valid_municipal": 105,
+      "videos_with_valid_comments_municipal": [
+        "CPqyzhnDUzE",
+        "HLfTpQv78C0",
+        "KtQVJ8_d8Aw",
+        "kEow9BJwy8Q"
+      ],
+      "flag_reassessment": {
+        "at": "2026-10-13T23:46:37Z",
+        "from": "prioritario",
+        "to": "prioritario",
+        "criterio": "municipal_v0.3.2",
+        "n_videos": 15,
+        "n_videos_municipais": 5,
+        "n_comments_valid_municipal": 105,
+        "n_videos_with_valid_municipal": 4,
+        "contagem": "estimada_historico_live",
+        "robusta_ao_teto": true
+      },
+      "video_format": {
+        "CPqyzhnDUzE": "short",
+        "Gk5l6YMmxAI": "short",
+        "HLfTpQv78C0": "longo",
+        "Hyhg7HsXX7s": "longo",
+        "ICYc1O3eo9k": "short",
+        "KtQVJ8_d8Aw": "longo",
+        "Mx9RsqhVzSs": "short",
+        "OlQQqaBlMXU": "longo",
+        "Zrbb16yD_q0": "longo",
+        "cgvIRir0gB0": "longo",
+        "kEow9BJwy8Q": "short",
+        "oSGuFgXIddw": "longo",
+        "pAw2H5RV9t0": "longo",
+        "qSmKOPIqnv8": "short",
+        "z1OeMc28Yos": "longo"
+      },
+      "archived_at": "2026-11-10T22:42:50Z",
+      "archive_reason": "prioritario_esgotado_28d"
+    },
+    "cemaden_sp_2577": {
+      "codibge": "3550308",
+      "municipio": "São Paulo",
+      "uf": "SP",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "prioritario",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-09-10T12:45:28Z"
+        },
+        {
+          "flag": "acompanhamento",
+          "at": "2026-09-11T20:19:11Z"
+        },
+        {
+          "flag": "prioritario",
+          "at": "2026-09-12T09:54:32Z"
+        }
+      ],
+      "evento": "Movimentos de Massa",
+      "opened_at": "2026-09-10T12:45:28Z",
+      "last_seen_open_at": "2026-09-16T10:37:29Z",
+      "closed_at": "2026-09-16T15:54:04Z",
+      "transitions": [
+        {
+          "from": "Moderado",
+          "to": "Alto",
+          "at": "2026-09-12T19:59:41Z"
+        },
+        {
+          "from": "Alto",
+          "to": "Moderado",
+          "at": "2026-09-14T17:22:54Z"
+        }
+      ],
+      "videos_collected": [
+        "-O41i-QLYnA",
+        "0z0nd9loopY",
+        "HLfTpQv78C0",
+        "JaspoaOI9tQ",
+        "KtQVJ8_d8Aw",
+        "LnzPAjIyRes",
+        "OlQQqaBlMXU",
+        "PfUpdJ4Gdco",
+        "XySCFjlGNo4",
+        "bZgYWYd8acQ",
+        "cgvIRir0gB0",
+        "n-DC99OxuM8",
+        "nb6Z3IH2agk",
+        "s4l41KdW75M",
+        "zx6JBhizIs4"
+      ],
+      "n_videos_aderentes": 15,
+      "n_comments_valid": 536,
+      "videos_with_valid_comments": [
+        "-O41i-QLYnA",
+        "0z0nd9loopY",
+        "HLfTpQv78C0",
+        "JaspoaOI9tQ",
+        "KtQVJ8_d8Aw",
+        "LnzPAjIyRes",
+        "OlQQqaBlMXU",
+        "PfUpdJ4Gdco",
+        "bZgYWYd8acQ",
+        "cgvIRir0gB0",
+        "n-DC99OxuM8",
+        "nb6Z3IH2agk",
+        "s4l41KdW75M",
+        "zx6JBhizIs4"
+      ],
+      "last_new_data_at": "2026-10-13T18:45:08Z",
+      "last_new_comment_at": "2026-10-13T18:45:08Z",
+      "last_collection_at": "2026-10-13T18:45:08Z",
+      "next_collection_at": "2026-10-14T00:45:08Z",
+      "counters_integrity": "recounted_from_live_history_v0.3",
+      "window_finalized_at": "2026-10-13T18:45:08Z",
+      "window_finalized_reason": "legacy_inferred_v0.3",
+      "n_comments_valid_legacy": 12887,
+      "video_evidence": {
+        "-O41i-QLYnA": "titulo+descricao",
+        "0z0nd9loopY": "titulo+descricao",
+        "HLfTpQv78C0": "descricao",
+        "JaspoaOI9tQ": "nenhuma",
+        "KtQVJ8_d8Aw": "descricao",
+        "LnzPAjIyRes": "titulo+descricao",
+        "OlQQqaBlMXU": "nenhuma",
+        "PfUpdJ4Gdco": "titulo+descricao",
+        "XySCFjlGNo4": "nenhuma",
+        "bZgYWYd8acQ": "descricao",
+        "cgvIRir0gB0": "nenhuma",
+        "n-DC99OxuM8": "nenhuma",
+        "nb6Z3IH2agk": "titulo+descricao",
+        "s4l41KdW75M": "descricao",
+        "zx6JBhizIs4": "descricao"
+      },
+      "n_videos_municipais": 10,
+      "valid_comments_by_video": {
+        "OlQQqaBlMXU": 173,
+        "s4l41KdW75M": 112,
+        "HLfTpQv78C0": 51,
+        "0z0nd9loopY": 41,
+        "KtQVJ8_d8Aw": 24,
+        "LnzPAjIyRes": 22,
+        "-O41i-QLYnA": 13,
+        "cgvIRir0gB0": 9,
+        "n-DC99OxuM8": 6,
+        "PfUpdJ4Gdco": 25,
+        "nb6Z3IH2agk": 14,
+        "zx6JBhizIs4": 23,
+        "JaspoaOI9tQ": 15,
+        "bZgYWYd8acQ": 8
+      },
+      "valid_comments_by_video_source": "estimado_historico_live_v0.3.2",
+      "n_comments_valid_municipal": 333,
+      "videos_with_valid_comments_municipal": [
+        "-O41i-QLYnA",
+        "0z0nd9loopY",
+        "HLfTpQv78C0",
+        "KtQVJ8_d8Aw",
+        "LnzPAjIyRes",
+        "PfUpdJ4Gdco",
+        "bZgYWYd8acQ",
+        "nb6Z3IH2agk",
+        "s4l41KdW75M",
+        "zx6JBhizIs4"
+      ],
+      "flag_reassessment": {
+        "at": "2026-10-13T23:46:37Z",
+        "from": "prioritario",
+        "to": "prioritario",
+        "criterio": "municipal_v0.3.2",
+        "n_videos": 15,
+        "n_videos_municipais": 10,
+        "n_comments_valid_municipal": 333,
+        "n_videos_with_valid_municipal": 10,
+        "contagem": "estimada_historico_live",
+        "robusta_ao_teto": true
+      },
+      "video_format": {
+        "-O41i-QLYnA": "longo",
+        "0z0nd9loopY": "short",
+        "HLfTpQv78C0": "longo",
+        "JaspoaOI9tQ": "longo",
+        "KtQVJ8_d8Aw": "longo",
+        "LnzPAjIyRes": "longo",
+        "OlQQqaBlMXU": "longo",
+        "PfUpdJ4Gdco": "longo",
+        "XySCFjlGNo4": "short",
+        "bZgYWYd8acQ": "longo",
+        "cgvIRir0gB0": "longo",
+        "n-DC99OxuM8": "longo",
+        "nb6Z3IH2agk": "longo",
+        "s4l41KdW75M": "longo",
+        "zx6JBhizIs4": "longo"
+      },
+      "archived_at": "2026-11-10T22:42:50Z",
+      "archive_reason": "prioritario_esgotado_28d"
+    },
+    "cemaden_sc_2768": {
+      "codibge": "4218103",
+      "municipio": "Timbé do Sul",
+      "uf": "SC",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "prioritario",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-09-21T09:52:05Z"
+        },
+        {
+          "flag": "acompanhamento",
+          "at": "2026-09-21T17:36:30Z"
+        },
+        {
+          "flag": "prioritario",
+          "at": "2026-09-24T16:16:40Z"
+        }
+      ],
+      "evento": "Risco Hidrológico",
+      "opened_at": "2026-09-21T09:52:05Z",
+      "last_seen_open_at": "2026-09-23T02:42:55Z",
+      "closed_at": "2026-09-23T10:36:05Z",
+      "transitions": [],
+      "videos_collected": [
+        "APDi5fLPf_E",
+        "MBTUW8XTSVM",
+        "OBzHfFeQHQ0",
+        "P5mrGZNFDkw",
+        "T4EvV0GEk9o",
+        "T9z_4JATYHM",
+        "Vfh5Uohzm4g",
+        "Vwi5PKDEm0k",
+        "avv3CZixaKE",
+        "diTGO4TyEoY",
+        "iJfCxgt_cas",
+        "q4Q3oXg8XPw"
+      ],
+      "n_videos_aderentes": 12,
+      "n_comments_valid": 202,
+      "videos_with_valid_comments": [
+        "APDi5fLPf_E",
+        "OBzHfFeQHQ0",
+        "T4EvV0GEk9o",
+        "avv3CZixaKE"
+      ],
+      "last_new_data_at": "2026-10-13T18:45:08Z",
+      "last_new_comment_at": "2026-10-13T18:45:08Z",
+      "last_collection_at": "2026-10-13T18:45:08Z",
+      "next_collection_at": "2026-10-14T00:45:08Z",
+      "counters_integrity": "recounted_from_live_history_v0.3",
+      "window_finalized_at": "2026-10-13T18:45:08Z",
+      "window_finalized_reason": "legacy_inferred_v0.3",
+      "n_comments_valid_legacy": 5139,
+      "video_evidence": {
+        "APDi5fLPf_E": "descricao",
+        "MBTUW8XTSVM": "titulo",
+        "OBzHfFeQHQ0": "titulo+descricao",
+        "P5mrGZNFDkw": "titulo+descricao",
+        "T4EvV0GEk9o": "titulo+descricao",
+        "T9z_4JATYHM": "titulo+descricao",
+        "Vfh5Uohzm4g": "descricao",
+        "Vwi5PKDEm0k": "descricao",
+        "avv3CZixaKE": "titulo+descricao",
+        "diTGO4TyEoY": "titulo",
+        "iJfCxgt_cas": "titulo",
+        "q4Q3oXg8XPw": "titulo"
+      },
+      "n_videos_municipais": 12,
+      "valid_comments_by_video": {
+        "T4EvV0GEk9o": 76,
+        "OBzHfFeQHQ0": 64,
+        "avv3CZixaKE": 59,
+        "APDi5fLPf_E": 3
+      },
+      "valid_comments_by_video_source": "estimado_historico_live_v0.3.2",
+      "n_comments_valid_municipal": 202,
+      "videos_with_valid_comments_municipal": [
+        "APDi5fLPf_E",
+        "OBzHfFeQHQ0",
+        "T4EvV0GEk9o",
+        "avv3CZixaKE"
+      ],
+      "flag_reassessment": {
+        "at": "2026-10-13T23:46:37Z",
+        "from": "prioritario",
+        "to": "prioritario",
+        "criterio": "municipal_v0.3.2",
+        "n_videos": 12,
+        "n_videos_municipais": 12,
+        "n_comments_valid_municipal": 202,
+        "n_videos_with_valid_municipal": 4,
+        "contagem": "estimada_historico_live",
+        "robusta_ao_teto": true
+      },
+      "video_format": {
+        "APDi5fLPf_E": "short",
+        "MBTUW8XTSVM": "short",
+        "OBzHfFeQHQ0": "short",
+        "P5mrGZNFDkw": "short",
+        "T4EvV0GEk9o": "short",
+        "T9z_4JATYHM": "longo",
+        "Vfh5Uohzm4g": "short",
+        "Vwi5PKDEm0k": "short",
+        "avv3CZixaKE": "longo",
+        "diTGO4TyEoY": "short",
+        "iJfCxgt_cas": "longo",
+        "q4Q3oXg8XPw": "short"
+      },
+      "archived_at": "2026-11-10T22:42:50Z",
+      "archive_reason": "prioritario_esgotado_28d"
+    },
+    "cemaden_rs_2745": {
+      "codibge": "4319505",
+      "municipio": "São Sebastião do Caí",
+      "uf": "RS",
+      "nivel_atual": "Alto",
+      "priority_tier": "alto",
+      "flag": "prioritario",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-09-21T06:36:10Z"
+        },
+        {
+          "flag": "acompanhamento",
+          "at": "2026-09-22T16:04:30Z"
+        },
+        {
+          "flag": "prioritario",
+          "at": "2026-09-23T10:36:05Z"
+        }
+      ],
+      "evento": "Risco Hidrológico",
+      "opened_at": "2026-09-21T06:36:10Z",
+      "last_seen_open_at": "2026-09-24T02:31:49Z",
+      "closed_at": "2026-09-24T10:53:05Z",
+      "transitions": [
+        {
+          "from": "Moderado",
+          "to": "Alto",
+          "at": "2026-09-21T21:31:48Z"
+        }
+      ],
+      "videos_collected": [
+        "38Y5dHfts_E",
+        "GJeQSdjYINM",
+        "Qid-f9XSBt4",
+        "d8Jyndmq0jc",
+        "kAz3sngId6U",
+        "r6tsRqjGZGs",
+        "rKtuEKYS9cE",
+        "sPOkdZ6aW2k"
+      ],
+      "n_videos_aderentes": 8,
+      "n_comments_valid": 72,
+      "videos_with_valid_comments": [
+        "d8Jyndmq0jc",
+        "rKtuEKYS9cE"
+      ],
+      "last_new_data_at": "2026-10-13T18:45:08Z",
+      "last_new_comment_at": "2026-10-13T18:45:08Z",
+      "last_collection_at": "2026-10-13T18:45:08Z",
+      "next_collection_at": "2026-10-14T00:45:08Z",
+      "counters_integrity": "recounted_from_live_history_v0.3",
+      "window_finalized_at": "2026-10-13T18:45:08Z",
+      "window_finalized_reason": "legacy_inferred_v0.3",
+      "n_comments_valid_legacy": 2058,
+      "video_evidence": {
+        "38Y5dHfts_E": "titulo",
+        "GJeQSdjYINM": "titulo",
+        "Qid-f9XSBt4": "descricao",
+        "d8Jyndmq0jc": "titulo",
+        "kAz3sngId6U": "titulo",
+        "r6tsRqjGZGs": "titulo",
+        "rKtuEKYS9cE": "descricao",
+        "sPOkdZ6aW2k": "titulo"
+      },
+      "n_videos_municipais": 8,
+      "valid_comments_by_video": {
+        "rKtuEKYS9cE": 40,
+        "d8Jyndmq0jc": 32
+      },
+      "valid_comments_by_video_source": "estimado_historico_live_v0.3.2",
+      "n_comments_valid_municipal": 72,
+      "videos_with_valid_comments_municipal": [
+        "d8Jyndmq0jc",
+        "rKtuEKYS9cE"
+      ],
+      "flag_reassessment": {
+        "at": "2026-10-13T23:46:37Z",
+        "from": "prioritario",
+        "to": "prioritario",
+        "criterio": "municipal_v0.3.2",
+        "n_videos": 8,
+        "n_videos_municipais": 8,
+        "n_comments_valid_municipal": 72,
+        "n_videos_with_valid_municipal": 2,
+        "contagem": "estimada_historico_live",
+        "robusta_ao_teto": true
+      },
+      "video_format": {
+        "38Y5dHfts_E": "short",
+        "GJeQSdjYINM": "short",
+        "Qid-f9XSBt4": "longo",
+        "d8Jyndmq0jc": "longo",
+        "kAz3sngId6U": "short",
+        "r6tsRqjGZGs": "short",
+        "rKtuEKYS9cE": "longo",
+        "sPOkdZ6aW2k": "short"
+      },
+      "archived_at": "2026-11-10T22:42:50Z",
+      "archive_reason": "prioritario_esgotado_28d"
     }
   }
 }
