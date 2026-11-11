@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T13:20:33Z",
+  "generated_at": "2026-11-11T23:56:39Z",
   "pipeline_version": "0.3.3",
   "pilot_mode": true,
   "dry_run": false,
@@ -106,9 +106,9 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-10T14:03:21Z",
-      "next_collection_at": "2026-11-11T14:03:21Z",
-      "window_finalized_at": null,
+      "last_collection_at": "2026-11-11T23:55:41Z",
+      "next_collection_at": "2026-11-12T23:55:41Z",
+      "window_finalized_at": "2026-11-11T23:55:41Z",
       "counters_integrity": "ok",
       "videos_por_formato": {},
       "n_videos_municipais": 0,
@@ -220,9 +220,9 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-10T22:42:50Z",
-      "next_collection_at": "2026-11-11T22:42:50Z",
-      "window_finalized_at": null,
+      "last_collection_at": "2026-11-11T23:55:41Z",
+      "next_collection_at": "2026-11-12T23:55:41Z",
+      "window_finalized_at": "2026-11-11T23:55:41Z",
       "counters_integrity": "ok",
       "videos_por_formato": {},
       "n_videos_municipais": 0,
@@ -543,7 +543,7 @@
       },
       "academic_studies": [],
       "observation_status": "active",
-      "priority_tier": "moderado",
+      "priority_tier": "alto",
       "flag": "alerta",
       "flag_history": [
         {
@@ -555,7 +555,13 @@
       "videos_with_valid_comments": [],
       "alert_opened_at": "2026-11-11T07:41:31Z",
       "alert_closed_at": null,
-      "alert_transitions": [],
+      "alert_transitions": [
+        {
+          "from": "Moderado",
+          "to": "Alto",
+          "at": "2026-11-11T23:55:41Z"
+        }
+      ],
       "collection_health": {
         "status": "silent",
         "silence_type": "no_videos_found",
@@ -564,6 +570,120 @@
       },
       "last_collection_at": "2026-11-11T13:20:23Z",
       "next_collection_at": "2026-11-12T13:20:23Z",
+      "window_finalized_at": null,
+      "counters_integrity": "ok",
+      "videos_por_formato": {},
+      "n_videos_municipais": 0,
+      "n_videos_verificados": 0,
+      "n_comments_municipais": 0,
+      "n_comments_valid_municipal": 0,
+      "videos_with_valid_comments_municipal": [],
+      "flag_reassessment": null
+    },
+    {
+      "id": "cemaden_ba_3383",
+      "municipio": "Porto Seguro",
+      "uf": "BA",
+      "tipo": "Movimentos de Massa",
+      "nivel": "Alto",
+      "data_alerta": "11/11/2026",
+      "codibge": "2925303",
+      "lat": null,
+      "lon": null,
+      "regime": "prospective_live",
+      "n_comments": 0,
+      "n_videos": 0,
+      "unlabeled": 0,
+      "unlabeled_pct": 0.0,
+      "date_range": [
+        "",
+        ""
+      ],
+      "distribution": [
+        {
+          "key": "solidariedade_oracao_luto",
+          "label": "Solidariedade / oração / luto",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "ajuda_resgate_doacoes",
+          "label": "Ajuda / resgate / doações",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "responsabilizacao_governanca",
+          "label": "Responsabilização / governança",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "infraestrutura_ocupacao_risco",
+          "label": "Infraestrutura / ocupação de risco",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "clima_chuva_meio_ambiente",
+          "label": "Clima / chuva / meio ambiente",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "experiencia_pessoal_local",
+          "label": "Experiência pessoal / local",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "alerta_prevencao_cobranca",
+          "label": "Alerta / prevenção / cobrança",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "critica_midia_informacao",
+          "label": "Crítica à mídia / informação",
+          "count": 0,
+          "pct": 0.0
+        }
+      ],
+      "timeline": [],
+      "videos": [],
+      "all_samples": {
+        "solidariedade_oracao_luto": [],
+        "ajuda_resgate_doacoes": [],
+        "responsabilizacao_governanca": [],
+        "infraestrutura_ocupacao_risco": [],
+        "clima_chuva_meio_ambiente": [],
+        "experiencia_pessoal_local": [],
+        "alerta_prevencao_cobranca": [],
+        "critica_midia_informacao": []
+      },
+      "academic_studies": [],
+      "observation_status": "active",
+      "priority_tier": "alto",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-11-11T12:09:35Z"
+        }
+      ],
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "alert_opened_at": "2026-11-11T12:09:35Z",
+      "alert_closed_at": null,
+      "alert_transitions": [],
+      "collection_health": {
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
+      },
+      "last_collection_at": "2026-11-11T23:55:41Z",
+      "next_collection_at": "2026-11-12T23:55:41Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -8311,9 +8431,9 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-11T04:00:09Z",
-      "next_collection_at": "2026-11-11T16:00:09Z",
-      "window_finalized_at": null,
+      "last_collection_at": "2026-11-11T23:55:41Z",
+      "next_collection_at": "2026-11-12T11:55:41Z",
+      "window_finalized_at": "2026-11-11T23:55:41Z",
       "counters_integrity": "ok",
       "videos_por_formato": {
         "longo": 1
