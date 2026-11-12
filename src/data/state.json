@@ -1,15 +1,15 @@
 {
   "schema_version": "0.2",
   "pipeline_version": "0.3.3",
-  "last_run_at": "2026-11-12T05:11:11Z",
+  "last_run_at": "2026-11-12T14:25:10Z",
   "last_run_status": "success",
-  "last_run_duration_seconds": 5,
-  "last_cemaden_check_at": "2026-11-12T05:11:11Z",
+  "last_run_duration_seconds": 8,
+  "last_cemaden_check_at": "2026-11-12T14:25:10Z",
   "youtube_quota": {
-    "used_today": 28,
-    "reset_at": "2026-11-12T08:00:00Z",
-    "day": "2026-11-11",
-    "searches_today": 18
+    "used_today": 10,
+    "reset_at": "2026-11-13T08:00:00Z",
+    "day": "2026-11-12",
+    "searches_today": 8
   },
   "active_alerts": {
     "cemaden_rs_3294": {
@@ -27,7 +27,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-11-07T08:38:24Z",
-      "last_seen_open_at": "2026-11-12T05:11:11Z",
+      "last_seen_open_at": "2026-11-12T14:25:10Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -64,7 +64,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-11-08T06:23:19Z",
-      "last_seen_open_at": "2026-11-12T05:11:11Z",
+      "last_seen_open_at": "2026-11-12T14:25:10Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -101,7 +101,7 @@
       ],
       "evento": "Movimentos de Massa",
       "opened_at": "2026-11-11T07:41:31Z",
-      "last_seen_open_at": "2026-11-12T05:11:11Z",
+      "last_seen_open_at": "2026-11-12T14:25:10Z",
       "closed_at": null,
       "transitions": [
         {
@@ -116,12 +116,12 @@
       "videos_with_valid_comments": [],
       "last_new_data_at": null,
       "last_new_comment_at": null,
-      "last_collection_at": "2026-11-11T13:20:23Z",
-      "next_collection_at": "2026-11-12T13:20:23Z",
+      "last_collection_at": "2026-11-12T14:25:10Z",
+      "next_collection_at": "2026-11-13T14:25:10Z",
       "n_videos_municipais": 0,
       "n_comments_valid_municipal": 0,
       "videos_with_valid_comments_municipal": [],
-      "last_attempt_at": "2026-11-11T13:20:23Z",
+      "last_attempt_at": "2026-11-12T14:25:10Z",
       "consecutive_failures": 0,
       "last_error": null,
       "legacy_unverified": false,
@@ -142,7 +142,7 @@
       ],
       "evento": "Movimentos de Massa",
       "opened_at": "2026-11-11T12:09:35Z",
-      "last_seen_open_at": "2026-11-12T05:11:11Z",
+      "last_seen_open_at": "2026-11-12T14:25:10Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -161,6 +161,108 @@
       "last_error": null,
       "legacy_unverified": false,
       "counters_integrity": "ok"
+    },
+    "cemaden_rs_3385": {
+      "codibge": "4310603",
+      "municipio": "Itaqui",
+      "uf": "RS",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-11-12T06:34:43Z"
+        }
+      ],
+      "evento": "Risco Hidrológico",
+      "opened_at": "2026-11-12T06:34:43Z",
+      "last_seen_open_at": "2026-11-12T14:25:10Z",
+      "closed_at": null,
+      "transitions": [],
+      "videos_collected": [],
+      "n_videos_aderentes": 0,
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "last_new_data_at": null,
+      "last_new_comment_at": null,
+      "last_collection_at": "2026-11-12T14:25:10Z",
+      "next_collection_at": "2026-11-13T14:25:10Z",
+      "n_videos_municipais": 0,
+      "n_comments_valid_municipal": 0,
+      "videos_with_valid_comments_municipal": [],
+      "last_attempt_at": "2026-11-12T14:25:10Z",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "legacy_unverified": false
+    },
+    "cemaden_sp_3386": {
+      "codibge": "3523909",
+      "municipio": "Itu",
+      "uf": "SP",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-11-12T07:10:11Z"
+        }
+      ],
+      "evento": "Risco Hidrológico",
+      "opened_at": "2026-11-12T07:10:11Z",
+      "last_seen_open_at": "2026-11-12T14:25:10Z",
+      "closed_at": null,
+      "transitions": [],
+      "videos_collected": [],
+      "n_videos_aderentes": 0,
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "last_new_data_at": null,
+      "last_new_comment_at": null,
+      "last_collection_at": "2026-11-12T14:25:10Z",
+      "next_collection_at": "2026-11-13T14:25:10Z",
+      "n_videos_municipais": 0,
+      "n_comments_valid_municipal": 0,
+      "videos_with_valid_comments_municipal": [],
+      "last_attempt_at": "2026-11-12T14:25:10Z",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "legacy_unverified": false
+    },
+    "cemaden_rs_3387": {
+      "codibge": "4322400",
+      "municipio": "Uruguaiana",
+      "uf": "RS",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-11-12T07:53:25Z"
+        }
+      ],
+      "evento": "Risco Hidrológico",
+      "opened_at": "2026-11-12T07:53:25Z",
+      "last_seen_open_at": "2026-11-12T14:25:10Z",
+      "closed_at": null,
+      "transitions": [],
+      "videos_collected": [],
+      "n_videos_aderentes": 0,
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "last_new_data_at": null,
+      "last_new_comment_at": null,
+      "last_collection_at": "2026-11-12T14:25:10Z",
+      "next_collection_at": "2026-11-13T14:25:10Z",
+      "n_videos_municipais": 0,
+      "n_comments_valid_municipal": 0,
+      "videos_with_valid_comments_municipal": [],
+      "last_attempt_at": "2026-11-12T14:25:10Z",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "legacy_unverified": false
     }
   },
   "extended_window_alerts": {
