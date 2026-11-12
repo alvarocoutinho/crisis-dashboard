@@ -1,15 +1,15 @@
 {
   "schema_version": "0.2",
   "pipeline_version": "0.3.3",
-  "last_run_at": "2026-11-12T14:25:10Z",
-  "last_run_status": "success",
-  "last_run_duration_seconds": 8,
-  "last_cemaden_check_at": "2026-11-12T14:25:10Z",
+  "last_run_at": "2026-11-12T23:03:34Z",
+  "last_run_status": "partial",
+  "last_run_duration_seconds": 111,
+  "last_cemaden_check_at": "2026-11-12T23:03:34Z",
   "youtube_quota": {
-    "used_today": 10,
+    "used_today": 69,
     "reset_at": "2026-11-13T08:00:00Z",
     "day": "2026-11-12",
-    "searches_today": 8
+    "searches_today": 36
   },
   "active_alerts": {
     "cemaden_rs_3294": {
@@ -27,7 +27,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-11-07T08:38:24Z",
-      "last_seen_open_at": "2026-11-12T14:25:10Z",
+      "last_seen_open_at": "2026-11-12T23:03:34Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -64,7 +64,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-11-08T06:23:19Z",
-      "last_seen_open_at": "2026-11-12T14:25:10Z",
+      "last_seen_open_at": "2026-11-12T23:03:34Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -90,8 +90,8 @@
       "codibge": "2927705",
       "municipio": "Santa Cruz Cabrália",
       "uf": "BA",
-      "nivel_atual": "Alto",
-      "priority_tier": "alto",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
       "flag": "alerta",
       "flag_history": [
         {
@@ -101,13 +101,18 @@
       ],
       "evento": "Movimentos de Massa",
       "opened_at": "2026-11-11T07:41:31Z",
-      "last_seen_open_at": "2026-11-12T14:25:10Z",
+      "last_seen_open_at": "2026-11-12T23:03:34Z",
       "closed_at": null,
       "transitions": [
         {
           "from": "Moderado",
           "to": "Alto",
           "at": "2026-11-11T23:55:41Z"
+        },
+        {
+          "from": "Alto",
+          "to": "Moderado",
+          "at": "2026-11-12T23:03:34Z"
         }
       ],
       "videos_collected": [],
@@ -131,8 +136,8 @@
       "codibge": "2925303",
       "municipio": "Porto Seguro",
       "uf": "BA",
-      "nivel_atual": "Alto",
-      "priority_tier": "alto",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
       "flag": "alerta",
       "flag_history": [
         {
@@ -142,9 +147,15 @@
       ],
       "evento": "Movimentos de Massa",
       "opened_at": "2026-11-11T12:09:35Z",
-      "last_seen_open_at": "2026-11-12T14:25:10Z",
+      "last_seen_open_at": "2026-11-12T23:03:34Z",
       "closed_at": null,
-      "transitions": [],
+      "transitions": [
+        {
+          "from": "Alto",
+          "to": "Moderado",
+          "at": "2026-11-12T23:03:34Z"
+        }
+      ],
       "videos_collected": [],
       "n_videos_aderentes": 0,
       "n_comments_valid": 0,
@@ -177,7 +188,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-11-12T06:34:43Z",
-      "last_seen_open_at": "2026-11-12T14:25:10Z",
+      "last_seen_open_at": "2026-11-12T23:03:34Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -194,7 +205,8 @@
       "last_attempt_at": "2026-11-12T14:25:10Z",
       "consecutive_failures": 0,
       "last_error": null,
-      "legacy_unverified": false
+      "legacy_unverified": false,
+      "counters_integrity": "ok"
     },
     "cemaden_sp_3386": {
       "codibge": "3523909",
@@ -211,7 +223,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-11-12T07:10:11Z",
-      "last_seen_open_at": "2026-11-12T14:25:10Z",
+      "last_seen_open_at": "2026-11-12T23:03:34Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -228,7 +240,8 @@
       "last_attempt_at": "2026-11-12T14:25:10Z",
       "consecutive_failures": 0,
       "last_error": null,
-      "legacy_unverified": false
+      "legacy_unverified": false,
+      "counters_integrity": "ok"
     },
     "cemaden_rs_3387": {
       "codibge": "4322400",
@@ -245,7 +258,7 @@
       ],
       "evento": "Risco Hidrológico",
       "opened_at": "2026-11-12T07:53:25Z",
-      "last_seen_open_at": "2026-11-12T14:25:10Z",
+      "last_seen_open_at": "2026-11-12T23:03:34Z",
       "closed_at": null,
       "transitions": [],
       "videos_collected": [],
@@ -260,6 +273,751 @@
       "n_comments_valid_municipal": 0,
       "videos_with_valid_comments_municipal": [],
       "last_attempt_at": "2026-11-12T14:25:10Z",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "legacy_unverified": false,
+      "counters_integrity": "ok"
+    },
+    "cemaden_sp_3388": {
+      "codibge": "3518305",
+      "municipio": "Guararema",
+      "uf": "SP",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-11-12T15:57:04Z"
+        }
+      ],
+      "evento": "Risco Hidrológico",
+      "opened_at": "2026-11-12T15:57:04Z",
+      "last_seen_open_at": "2026-11-12T23:03:34Z",
+      "closed_at": null,
+      "transitions": [],
+      "videos_collected": [],
+      "n_videos_aderentes": 0,
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "last_new_data_at": null,
+      "last_new_comment_at": null,
+      "last_collection_at": "2026-11-12T23:03:34Z",
+      "next_collection_at": "2026-11-13T23:03:34Z",
+      "n_videos_municipais": 0,
+      "n_comments_valid_municipal": 0,
+      "videos_with_valid_comments_municipal": [],
+      "last_attempt_at": "2026-11-12T23:03:34Z",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "legacy_unverified": false
+    },
+    "cemaden_sp_3389": {
+      "codibge": "3529401",
+      "municipio": "Mauá",
+      "uf": "SP",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "acompanhamento",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-11-12T15:57:09Z"
+        },
+        {
+          "flag": "acompanhamento",
+          "at": "2026-11-12T23:03:34Z",
+          "criterio": "municipal_v0.3.2"
+        }
+      ],
+      "evento": "Risco Hidrológico",
+      "opened_at": "2026-11-12T15:57:09Z",
+      "last_seen_open_at": "2026-11-12T23:03:34Z",
+      "closed_at": null,
+      "transitions": [],
+      "videos_collected": [
+        "bPJmrQzMHcY",
+        "eUxoWrEvVTQ",
+        "kGTyh6sDNFI",
+        "wURsbNR8_pQ"
+      ],
+      "n_videos_aderentes": 4,
+      "n_comments_valid": 10,
+      "videos_with_valid_comments": [
+        "bPJmrQzMHcY",
+        "kGTyh6sDNFI",
+        "wURsbNR8_pQ"
+      ],
+      "last_new_data_at": "2026-11-12T23:03:34Z",
+      "last_new_comment_at": "2026-11-12T23:03:34Z",
+      "last_collection_at": "2026-11-12T23:03:34Z",
+      "next_collection_at": "2026-11-13T11:03:34Z",
+      "video_evidence": {
+        "eUxoWrEvVTQ": "titulo+descricao",
+        "wURsbNR8_pQ": "descricao",
+        "kGTyh6sDNFI": "nenhuma",
+        "bPJmrQzMHcY": "nenhuma"
+      },
+      "n_videos_municipais": 2,
+      "n_comments_valid_municipal": 7,
+      "videos_with_valid_comments_municipal": [
+        "wURsbNR8_pQ"
+      ],
+      "video_format": {
+        "eUxoWrEvVTQ": "longo",
+        "wURsbNR8_pQ": "short",
+        "kGTyh6sDNFI": "short",
+        "bPJmrQzMHcY": "longo"
+      },
+      "seen_comment_hashes": [
+        "01c274a1e305",
+        "0cb09954ad06",
+        "2ba93096eee1",
+        "3a77968ddadc",
+        "5ebac20763bc",
+        "6f3117485167",
+        "707757e8d0e2",
+        "7ced400cfa7a",
+        "94e72930097b",
+        "9836eb2cff25",
+        "a48e390e3dcb",
+        "a79cb81bc9bb",
+        "b0abffc770f3"
+      ],
+      "valid_comments_by_video": {
+        "wURsbNR8_pQ": 7,
+        "bPJmrQzMHcY": 2,
+        "kGTyh6sDNFI": 1
+      },
+      "last_attempt_at": "2026-11-12T23:03:34Z",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "legacy_unverified": false
+    },
+    "cemaden_sp_3390": {
+      "codibge": "3530607",
+      "municipio": "Mogi das Cruzes",
+      "uf": "SP",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "acompanhamento",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-11-12T15:57:12Z"
+        },
+        {
+          "flag": "acompanhamento",
+          "at": "2026-11-12T23:03:34Z",
+          "criterio": "municipal_v0.3.2"
+        }
+      ],
+      "evento": "Risco Hidrológico",
+      "opened_at": "2026-11-12T15:57:12Z",
+      "last_seen_open_at": "2026-11-12T23:03:34Z",
+      "closed_at": null,
+      "transitions": [],
+      "videos_collected": [
+        "HSiHnTtsGrw",
+        "bPJmrQzMHcY",
+        "wURsbNR8_pQ"
+      ],
+      "n_videos_aderentes": 3,
+      "n_comments_valid": 9,
+      "videos_with_valid_comments": [
+        "bPJmrQzMHcY",
+        "wURsbNR8_pQ"
+      ],
+      "last_new_data_at": "2026-11-12T23:03:34Z",
+      "last_new_comment_at": "2026-11-12T23:03:34Z",
+      "last_collection_at": "2026-11-12T23:03:34Z",
+      "next_collection_at": "2026-11-13T11:03:34Z",
+      "video_evidence": {
+        "HSiHnTtsGrw": "titulo+descricao",
+        "wURsbNR8_pQ": "descricao",
+        "bPJmrQzMHcY": "nenhuma"
+      },
+      "n_videos_municipais": 2,
+      "n_comments_valid_municipal": 7,
+      "videos_with_valid_comments_municipal": [
+        "wURsbNR8_pQ"
+      ],
+      "video_format": {
+        "HSiHnTtsGrw": "longo",
+        "wURsbNR8_pQ": "short",
+        "bPJmrQzMHcY": "longo"
+      },
+      "seen_comment_hashes": [
+        "01c274a1e305",
+        "2ba93096eee1",
+        "3a77968ddadc",
+        "5ebac20763bc",
+        "6f3117485167",
+        "7ced400cfa7a",
+        "94e72930097b",
+        "9836eb2cff25",
+        "a48e390e3dcb",
+        "a79cb81bc9bb",
+        "b0abffc770f3"
+      ],
+      "valid_comments_by_video": {
+        "wURsbNR8_pQ": 7,
+        "bPJmrQzMHcY": 2
+      },
+      "last_attempt_at": "2026-11-12T23:03:34Z",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "legacy_unverified": false
+    },
+    "cemaden_sp_3391": {
+      "codibge": "3543303",
+      "municipio": "Ribeirão Pires",
+      "uf": "SP",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-11-12T15:57:20Z"
+        }
+      ],
+      "evento": "Risco Hidrológico",
+      "opened_at": "2026-11-12T15:57:20Z",
+      "last_seen_open_at": "2026-11-12T23:03:34Z",
+      "closed_at": null,
+      "transitions": [],
+      "videos_collected": [],
+      "n_videos_aderentes": 0,
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "last_new_data_at": null,
+      "last_new_comment_at": null,
+      "last_collection_at": "2026-11-12T23:03:34Z",
+      "next_collection_at": "2026-11-13T23:03:34Z",
+      "n_videos_municipais": 0,
+      "n_comments_valid_municipal": 0,
+      "videos_with_valid_comments_municipal": [],
+      "last_attempt_at": "2026-11-12T23:03:34Z",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "legacy_unverified": false
+    },
+    "cemaden_sp_3392": {
+      "codibge": "3547809",
+      "municipio": "Santo André",
+      "uf": "SP",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "acompanhamento",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-11-12T15:57:26Z"
+        },
+        {
+          "flag": "acompanhamento",
+          "at": "2026-11-12T23:03:34Z",
+          "criterio": "municipal_v0.3.2"
+        }
+      ],
+      "evento": "Risco Hidrológico",
+      "opened_at": "2026-11-12T15:57:26Z",
+      "last_seen_open_at": "2026-11-12T23:03:34Z",
+      "closed_at": null,
+      "transitions": [],
+      "videos_collected": [
+        "bPJmrQzMHcY",
+        "wURsbNR8_pQ"
+      ],
+      "n_videos_aderentes": 2,
+      "n_comments_valid": 9,
+      "videos_with_valid_comments": [
+        "bPJmrQzMHcY",
+        "wURsbNR8_pQ"
+      ],
+      "last_new_data_at": "2026-11-12T23:03:34Z",
+      "last_new_comment_at": "2026-11-12T23:03:34Z",
+      "last_collection_at": "2026-11-12T23:03:34Z",
+      "next_collection_at": "2026-11-13T11:03:34Z",
+      "video_evidence": {
+        "wURsbNR8_pQ": "descricao",
+        "bPJmrQzMHcY": "nenhuma"
+      },
+      "n_videos_municipais": 1,
+      "n_comments_valid_municipal": 7,
+      "videos_with_valid_comments_municipal": [
+        "wURsbNR8_pQ"
+      ],
+      "video_format": {
+        "wURsbNR8_pQ": "short",
+        "bPJmrQzMHcY": "longo"
+      },
+      "seen_comment_hashes": [
+        "01c274a1e305",
+        "2ba93096eee1",
+        "3a77968ddadc",
+        "5ebac20763bc",
+        "6f3117485167",
+        "7ced400cfa7a",
+        "94e72930097b",
+        "9836eb2cff25",
+        "a48e390e3dcb",
+        "a79cb81bc9bb",
+        "b0abffc770f3"
+      ],
+      "valid_comments_by_video": {
+        "wURsbNR8_pQ": 7,
+        "bPJmrQzMHcY": 2
+      },
+      "last_attempt_at": "2026-11-12T23:03:34Z",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "legacy_unverified": false
+    },
+    "cemaden_sp_3393": {
+      "codibge": "3548708",
+      "municipio": "São Bernardo do Campo",
+      "uf": "SP",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-11-12T15:57:33Z"
+        }
+      ],
+      "evento": "Risco Hidrológico",
+      "opened_at": "2026-11-12T15:57:33Z",
+      "last_seen_open_at": "2026-11-12T23:03:34Z",
+      "closed_at": null,
+      "transitions": [],
+      "videos_collected": [],
+      "n_videos_aderentes": 0,
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "last_new_data_at": null,
+      "last_new_comment_at": null,
+      "last_collection_at": "2026-11-12T23:03:34Z",
+      "next_collection_at": "2026-11-13T23:03:34Z",
+      "n_videos_municipais": 0,
+      "n_comments_valid_municipal": 0,
+      "videos_with_valid_comments_municipal": [],
+      "last_attempt_at": "2026-11-12T23:03:34Z",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "legacy_unverified": false
+    },
+    "cemaden_sp_3394": {
+      "codibge": "3544103",
+      "municipio": "Rio Grande da Serra",
+      "uf": "SP",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-11-12T16:03:20Z"
+        }
+      ],
+      "evento": "Risco Hidrológico",
+      "opened_at": "2026-11-12T16:03:20Z",
+      "last_seen_open_at": "2026-11-12T23:03:34Z",
+      "closed_at": null,
+      "transitions": [],
+      "videos_collected": [],
+      "n_videos_aderentes": 0,
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "last_new_data_at": null,
+      "last_new_comment_at": null,
+      "last_collection_at": "2026-11-12T23:03:34Z",
+      "next_collection_at": "2026-11-13T23:03:34Z",
+      "n_videos_municipais": 0,
+      "n_comments_valid_municipal": 0,
+      "videos_with_valid_comments_municipal": [],
+      "last_attempt_at": "2026-11-12T23:03:34Z",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "legacy_unverified": false
+    },
+    "cemaden_sp_3395": {
+      "codibge": "3515103",
+      "municipio": "Embu-guaçu",
+      "uf": "SP",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-11-12T16:12:04Z"
+        }
+      ],
+      "evento": "Risco Hidrológico",
+      "opened_at": "2026-11-12T16:12:04Z",
+      "last_seen_open_at": "2026-11-12T23:03:34Z",
+      "closed_at": null,
+      "transitions": [],
+      "videos_collected": [],
+      "n_videos_aderentes": 0,
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "last_new_data_at": null,
+      "last_new_comment_at": null,
+      "last_collection_at": "2026-11-12T23:03:34Z",
+      "next_collection_at": "2026-11-13T23:03:34Z",
+      "n_videos_municipais": 0,
+      "n_comments_valid_municipal": 0,
+      "videos_with_valid_comments_municipal": [],
+      "last_attempt_at": "2026-11-12T23:03:34Z",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "legacy_unverified": false
+    },
+    "cemaden_sp_3396": {
+      "codibge": "3550308",
+      "municipio": "São Paulo",
+      "uf": "SP",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "acompanhamento",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-11-12T16:12:40Z"
+        },
+        {
+          "flag": "acompanhamento",
+          "at": "2026-11-12T23:03:34Z",
+          "criterio": "municipal_v0.3.2"
+        }
+      ],
+      "evento": "Risco Hidrológico",
+      "opened_at": "2026-11-12T16:12:40Z",
+      "last_seen_open_at": "2026-11-12T23:03:34Z",
+      "closed_at": null,
+      "transitions": [],
+      "videos_collected": [
+        "YcLPITcnArI",
+        "arzFtwHueZk",
+        "bPJmrQzMHcY",
+        "kGTyh6sDNFI",
+        "nCs3wu_1KUU",
+        "ntNYLzn8y0Q",
+        "wURsbNR8_pQ"
+      ],
+      "n_videos_aderentes": 7,
+      "n_comments_valid": 38,
+      "videos_with_valid_comments": [
+        "YcLPITcnArI",
+        "arzFtwHueZk",
+        "bPJmrQzMHcY",
+        "kGTyh6sDNFI",
+        "wURsbNR8_pQ"
+      ],
+      "last_new_data_at": "2026-11-12T23:03:34Z",
+      "last_new_comment_at": "2026-11-12T23:03:34Z",
+      "last_collection_at": "2026-11-12T23:03:34Z",
+      "next_collection_at": "2026-11-13T11:03:34Z",
+      "video_evidence": {
+        "wURsbNR8_pQ": "descricao",
+        "kGTyh6sDNFI": "descricao",
+        "arzFtwHueZk": "descricao",
+        "nCs3wu_1KUU": "descricao",
+        "bPJmrQzMHcY": "nenhuma",
+        "ntNYLzn8y0Q": "nenhuma",
+        "YcLPITcnArI": "nenhuma"
+      },
+      "n_videos_municipais": 4,
+      "n_comments_valid_municipal": 32,
+      "videos_with_valid_comments_municipal": [
+        "arzFtwHueZk",
+        "kGTyh6sDNFI",
+        "wURsbNR8_pQ"
+      ],
+      "video_format": {
+        "wURsbNR8_pQ": "short",
+        "kGTyh6sDNFI": "short",
+        "arzFtwHueZk": "longo",
+        "nCs3wu_1KUU": "short",
+        "bPJmrQzMHcY": "longo",
+        "ntNYLzn8y0Q": "short",
+        "YcLPITcnArI": "longo"
+      },
+      "seen_comment_hashes": [
+        "01c274a1e305",
+        "0317cd4815b2",
+        "0cb09954ad06",
+        "0e43a866b84e",
+        "0fbff633fc13",
+        "24ad19bf59b3",
+        "25ea46bd939a",
+        "29ad5450a500",
+        "2ba93096eee1",
+        "359c57b82c58",
+        "3a77968ddadc",
+        "3c0b7a085060",
+        "3cb82966757f",
+        "3e78a669576d",
+        "5ebac20763bc",
+        "62b1caaf321a",
+        "67145719b570",
+        "67b84c798a81",
+        "69ccfea69b9c",
+        "6f3117485167",
+        "7060ef3b5640",
+        "75ba05f0539c",
+        "781169a5b687",
+        "7ced400cfa7a",
+        "85d255befd11",
+        "94393daa12d5",
+        "94e72930097b",
+        "958f76b93dae",
+        "969147026be6",
+        "9836eb2cff25",
+        "a1df98083f71",
+        "a48e390e3dcb",
+        "a79cb81bc9bb",
+        "b0abffc770f3",
+        "b37766c0e242",
+        "c750f8ee63c7",
+        "c9573d6c34d9",
+        "ccdf486a61a5",
+        "ea6d9dec2370",
+        "ef3583a93449",
+        "f10cd2684a5b",
+        "f15b3012d3f3",
+        "f19317b49f51",
+        "f79e0757ac24",
+        "fb4aaee66e79",
+        "fc23a64d3095"
+      ],
+      "valid_comments_by_video": {
+        "arzFtwHueZk": 24,
+        "wURsbNR8_pQ": 7,
+        "YcLPITcnArI": 4,
+        "bPJmrQzMHcY": 2,
+        "kGTyh6sDNFI": 1
+      },
+      "last_attempt_at": "2026-11-12T23:03:34Z",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "legacy_unverified": false
+    },
+    "cemaden_sp_3397": {
+      "codibge": "3515707",
+      "municipio": "Ferraz de Vasconcelos",
+      "uf": "SP",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-11-12T16:47:04Z"
+        }
+      ],
+      "evento": "Risco Hidrológico",
+      "opened_at": "2026-11-12T16:47:04Z",
+      "last_seen_open_at": "2026-11-12T23:03:34Z",
+      "closed_at": null,
+      "transitions": [],
+      "videos_collected": [],
+      "n_videos_aderentes": 0,
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "last_new_data_at": null,
+      "last_new_comment_at": null,
+      "last_collection_at": "2026-11-12T23:03:34Z",
+      "next_collection_at": "2026-11-13T23:03:34Z",
+      "n_videos_municipais": 0,
+      "n_comments_valid_municipal": 0,
+      "videos_with_valid_comments_municipal": [],
+      "last_attempt_at": "2026-11-12T23:03:34Z",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "legacy_unverified": false
+    },
+    "cemaden_sp_3398": {
+      "codibge": "3523107",
+      "municipio": "Itaquaquecetuba",
+      "uf": "SP",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-11-12T16:47:09Z"
+        }
+      ],
+      "evento": "Risco Hidrológico",
+      "opened_at": "2026-11-12T16:47:09Z",
+      "last_seen_open_at": "2026-11-12T23:03:34Z",
+      "closed_at": null,
+      "transitions": [],
+      "videos_collected": [
+        "kGTyh6sDNFI"
+      ],
+      "n_videos_aderentes": 1,
+      "n_comments_valid": 1,
+      "videos_with_valid_comments": [
+        "kGTyh6sDNFI"
+      ],
+      "last_new_data_at": "2026-11-12T23:03:34Z",
+      "last_new_comment_at": "2026-11-12T23:03:34Z",
+      "last_collection_at": "2026-11-12T23:03:34Z",
+      "next_collection_at": "2026-11-13T23:03:34Z",
+      "video_evidence": {
+        "kGTyh6sDNFI": "nenhuma"
+      },
+      "n_videos_municipais": 0,
+      "n_comments_valid_municipal": 0,
+      "videos_with_valid_comments_municipal": [],
+      "video_format": {
+        "kGTyh6sDNFI": "short"
+      },
+      "seen_comment_hashes": [
+        "0cb09954ad06"
+      ],
+      "valid_comments_by_video": {
+        "kGTyh6sDNFI": 1
+      },
+      "last_attempt_at": "2026-11-12T23:03:34Z",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "legacy_unverified": false
+    },
+    "cemaden_sp_3399": {
+      "codibge": "3539806",
+      "municipio": "Poá",
+      "uf": "SP",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-11-12T16:47:12Z"
+        }
+      ],
+      "evento": "Risco Hidrológico",
+      "opened_at": "2026-11-12T16:47:12Z",
+      "last_seen_open_at": "2026-11-12T23:03:34Z",
+      "closed_at": null,
+      "transitions": [],
+      "videos_collected": [
+        "kGTyh6sDNFI"
+      ],
+      "n_videos_aderentes": 1,
+      "n_comments_valid": 1,
+      "videos_with_valid_comments": [
+        "kGTyh6sDNFI"
+      ],
+      "last_new_data_at": "2026-11-12T23:03:34Z",
+      "last_new_comment_at": "2026-11-12T23:03:34Z",
+      "last_collection_at": "2026-11-12T23:03:34Z",
+      "next_collection_at": "2026-11-13T23:03:34Z",
+      "video_evidence": {
+        "kGTyh6sDNFI": "nenhuma"
+      },
+      "n_videos_municipais": 0,
+      "n_comments_valid_municipal": 0,
+      "videos_with_valid_comments_municipal": [],
+      "video_format": {
+        "kGTyh6sDNFI": "short"
+      },
+      "seen_comment_hashes": [
+        "0cb09954ad06"
+      ],
+      "valid_comments_by_video": {
+        "kGTyh6sDNFI": 1
+      },
+      "last_attempt_at": "2026-11-12T23:03:34Z",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "legacy_unverified": false
+    },
+    "cemaden_ro_3400": {
+      "codibge": "1100122",
+      "municipio": "Ji-paraná",
+      "uf": "RO",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-11-12T17:02:25Z"
+        }
+      ],
+      "evento": "Risco Hidrológico",
+      "opened_at": "2026-11-12T17:02:25Z",
+      "last_seen_open_at": "2026-11-12T23:03:34Z",
+      "closed_at": null,
+      "transitions": [],
+      "videos_collected": [],
+      "n_videos_aderentes": 0,
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "last_new_data_at": null,
+      "last_new_comment_at": null,
+      "last_collection_at": "2026-11-12T23:03:34Z",
+      "next_collection_at": "2026-11-13T23:03:34Z",
+      "n_videos_municipais": 0,
+      "n_comments_valid_municipal": 0,
+      "videos_with_valid_comments_municipal": [],
+      "last_attempt_at": "2026-11-12T23:03:34Z",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "legacy_unverified": false
+    },
+    "cemaden_sp_3401": {
+      "codibge": "3549904",
+      "municipio": "São José dos Campos",
+      "uf": "SP",
+      "nivel_atual": "Moderado",
+      "priority_tier": "moderado",
+      "flag": "acompanhamento",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-11-12T17:09:52Z"
+        },
+        {
+          "flag": "acompanhamento",
+          "at": "2026-11-12T23:03:34Z",
+          "criterio": "municipal_v0.3.2"
+        }
+      ],
+      "evento": "Risco Hidrológico",
+      "opened_at": "2026-11-12T17:09:52Z",
+      "last_seen_open_at": "2026-11-12T23:03:34Z",
+      "closed_at": null,
+      "transitions": [],
+      "videos_collected": [
+        "E2l_SkJFFmU"
+      ],
+      "n_videos_aderentes": 1,
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "last_new_data_at": "2026-11-12T23:03:34Z",
+      "last_new_comment_at": null,
+      "last_collection_at": "2026-11-12T23:03:34Z",
+      "next_collection_at": "2026-11-13T11:03:34Z",
+      "video_evidence": {
+        "E2l_SkJFFmU": "descricao"
+      },
+      "n_videos_municipais": 1,
+      "n_comments_valid_municipal": 0,
+      "videos_with_valid_comments_municipal": [],
+      "video_format": {
+        "E2l_SkJFFmU": "short"
+      },
+      "last_attempt_at": "2026-11-12T23:03:34Z",
       "consecutive_failures": 0,
       "last_error": null,
       "legacy_unverified": false
