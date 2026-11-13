@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T13:44:29Z",
+  "generated_at": "2026-11-13T23:07:41Z",
   "pipeline_version": "0.3.3",
   "pilot_mode": true,
   "dry_run": false,
@@ -119,258 +119,13 @@
       "flag_reassessment": null
     },
     {
-      "id": "cemaden_ba_3382",
-      "municipio": "Santa Cruz Cabrália",
-      "uf": "BA",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Alto",
-      "data_alerta": "11/11/2026",
-      "codibge": "2927705",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-11-11T07:41:31Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-11-11T07:41:31Z",
-      "alert_closed_at": null,
-      "alert_transitions": [
-        {
-          "from": "Moderado",
-          "to": "Alto",
-          "at": "2026-11-11T23:55:41Z"
-        },
-        {
-          "from": "Alto",
-          "to": "Moderado",
-          "at": "2026-11-12T23:03:34Z"
-        }
-      ],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-11-12T14:25:10Z",
-      "next_collection_at": "2026-11-13T14:25:10Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_ba_3383",
-      "municipio": "Porto Seguro",
-      "uf": "BA",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "11/11/2026",
-      "codibge": "2925303",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-11-11T12:09:35Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-11-11T12:09:35Z",
-      "alert_closed_at": null,
-      "alert_transitions": [
-        {
-          "from": "Alto",
-          "to": "Moderado",
-          "at": "2026-11-12T23:03:34Z"
-        }
-      ],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-11-13T04:27:13Z",
-      "next_collection_at": "2026-11-14T04:27:13Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_rs_3385",
-      "municipio": "Itaqui",
-      "uf": "RS",
+      "id": "cemaden_sp_3423",
+      "municipio": "Jaú",
+      "uf": "SP",
       "tipo": "Risco Hidrológico",
       "nivel": "Moderado",
-      "data_alerta": "12/11/2026",
-      "codibge": "4310603",
+      "data_alerta": "13/11/2026",
+      "codibge": "3525300",
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
@@ -451,12 +206,12 @@
       "flag_history": [
         {
           "flag": "alerta",
-          "at": "2026-11-12T06:34:43Z"
+          "at": "2026-11-13T17:31:22Z"
         }
       ],
       "n_comments_valid": 0,
       "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-11-12T06:34:43Z",
+      "alert_opened_at": "2026-11-13T17:31:22Z",
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
@@ -465,8 +220,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-12T14:25:10Z",
-      "next_collection_at": "2026-11-13T14:25:10Z",
+      "last_collection_at": "2026-11-13T23:06:50Z",
+      "next_collection_at": "2026-11-14T23:06:50Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -478,13 +233,13 @@
       "flag_reassessment": null
     },
     {
-      "id": "cemaden_rs_3387",
-      "municipio": "Uruguaiana",
-      "uf": "RS",
+      "id": "cemaden_sp_3424",
+      "municipio": "Piracicaba",
+      "uf": "SP",
       "tipo": "Risco Hidrológico",
       "nivel": "Moderado",
-      "data_alerta": "12/11/2026",
-      "codibge": "4322400",
+      "data_alerta": "13/11/2026",
+      "codibge": "3538709",
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
@@ -565,12 +320,12 @@
       "flag_history": [
         {
           "flag": "alerta",
-          "at": "2026-11-12T07:53:25Z"
+          "at": "2026-11-13T17:36:32Z"
         }
       ],
       "n_comments_valid": 0,
       "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-11-12T07:53:25Z",
+      "alert_opened_at": "2026-11-13T17:36:32Z",
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
@@ -579,8 +334,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-12T14:25:10Z",
-      "next_collection_at": "2026-11-13T14:25:10Z",
+      "last_collection_at": "2026-11-13T23:06:50Z",
+      "next_collection_at": "2026-11-14T23:06:50Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -8486,20 +8241,20 @@
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
-      "n_comments": 13,
-      "n_videos": 4,
-      "unlabeled": 3,
-      "unlabeled_pct": 23.1,
+      "n_comments": 19,
+      "n_videos": 6,
+      "unlabeled": 4,
+      "unlabeled_pct": 21.1,
       "date_range": [
         "2026-11-12",
-        "2026-11-12"
+        "2026-11-13"
       ],
       "distribution": [
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
-          "count": 5,
-          "pct": 38.5
+          "count": 7,
+          "pct": 36.8
         },
         {
           "key": "ajuda_resgate_doacoes",
@@ -8510,26 +8265,26 @@
         {
           "key": "responsabilizacao_governanca",
           "label": "Responsabilização / governança",
-          "count": 4,
-          "pct": 30.8
+          "count": 5,
+          "pct": 26.3
         },
         {
           "key": "infraestrutura_ocupacao_risco",
           "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
+          "count": 1,
+          "pct": 5.3
         },
         {
           "key": "clima_chuva_meio_ambiente",
           "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
+          "count": 1,
+          "pct": 5.3
         },
         {
           "key": "experiencia_pessoal_local",
           "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
+          "count": 1,
+          "pct": 5.3
         },
         {
           "key": "alerta_prevencao_cobranca",
@@ -8541,29 +8296,37 @@
           "key": "critica_midia_informacao",
           "label": "Crítica à mídia / informação",
           "count": 1,
-          "pct": 7.7
+          "pct": 5.3
         }
       ],
       "timeline": [
         {
           "date": "12/11/26",
-          "count": 13
+          "count": 14
+        },
+        {
+          "date": "13/11/26",
+          "count": 5
         }
       ],
       "videos": [
         {
           "video_id": "wURsbNR8_pQ",
-          "n_comments": 9,
-          "total_likes": 8,
+          "n_comments": 14,
+          "total_likes": 23,
           "first_comment": "12/11/2026",
           "top_categories": [
             {
               "label": "Responsabilização",
-              "count": 4
+              "count": 5
             },
             {
               "label": "Solidariedade",
-              "count": 3
+              "count": 4
+            },
+            {
+              "label": "Infraestrutura",
+              "count": 1
             }
           ],
           "municipal_evidence": "descricao",
@@ -8572,7 +8335,7 @@
         {
           "video_id": "bPJmrQzMHcY",
           "n_comments": 2,
-          "total_likes": 0,
+          "total_likes": 1,
           "first_comment": "12/11/2026",
           "top_categories": [
             {
@@ -8588,6 +8351,20 @@
           "formato": "longo"
         },
         {
+          "video_id": "kGTyh6sDNFI",
+          "n_comments": 2,
+          "total_likes": 1,
+          "first_comment": "12/11/2026",
+          "top_categories": [
+            {
+              "label": "Solidariedade",
+              "count": 2
+            }
+          ],
+          "municipal_evidence": "nenhuma",
+          "formato": "short"
+        },
+        {
           "video_id": "eUxoWrEvVTQ",
           "n_comments": 1,
           "total_likes": 0,
@@ -8597,16 +8374,20 @@
           "formato": "longo"
         },
         {
-          "video_id": "kGTyh6sDNFI",
-          "n_comments": 1,
+          "video_id": "YLRNjISCigw",
+          "n_comments": 0,
           "total_likes": 0,
-          "first_comment": "12/11/2026",
-          "top_categories": [
-            {
-              "label": "Solidariedade",
-              "count": 1
-            }
-          ],
+          "first_comment": "",
+          "top_categories": [],
+          "municipal_evidence": "titulo+descricao",
+          "formato": "short"
+        },
+        {
+          "video_id": "T2Zur9_7zoc",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": [],
           "municipal_evidence": "nenhuma",
           "formato": "short"
         }
@@ -8622,7 +8403,7 @@
           },
           {
             "text": "Misericórdia coitadoS❗️",
-            "likes": 3,
+            "likes": 4,
             "score": 0.994,
             "date": "2026-11-12",
             "video_id": "wURsbNR8_pQ"
@@ -8642,47 +8423,92 @@
             "video_id": "wURsbNR8_pQ"
           },
           {
+            "text": "Eu te amo❤",
+            "likes": 1,
+            "score": 0.969,
+            "date": "2026-11-12",
+            "video_id": "kGTyh6sDNFI"
+          },
+          {
             "text": "Boa noite , pra todos vocês Joel !🎉🎉",
-            "likes": 0,
+            "likes": 1,
             "score": 0.902,
             "date": "2026-11-12",
             "video_id": "bPJmrQzMHcY"
+          },
+          {
+            "text": "Nos só colhemos o que plantamos. Os sinais visíveis para o que vivemos é o fruto do afastamento do criador. Ninguém merece passar por isso. Mas quando o criador é posto de lado i passamos a valorizar as ostentações deste mundo é isso que acontece. Quantos livramentos nos temos todos os dias i não agradecemos.",
+            "likes": 1,
+            "score": 0.85,
+            "date": "2026-11-13",
+            "video_id": "wURsbNR8_pQ"
           }
         ],
         "ajuda_resgate_doacoes": [],
         "responsabilizacao_governanca": [
           {
-            "text": "Alguem tá vendo alguma obra da prefeitura ou do governo do estado pra melhorar isso ??",
+            "text": "E lá governador tem culpa se chover ? Água vem dos céus ,se chove muito culpa de governantes se faz calor tmb kkkkk agora quanto a fome o desemprego inflação alta assassinatos feminicidios etc..aí vcs precisam chamar o lula porque aí sim ele é o culpado .",
             "likes": 1,
+            "score": 0.998,
+            "date": "2026-11-13",
+            "video_id": "wURsbNR8_pQ"
+          },
+          {
+            "text": "Alguem tá vendo alguma obra da prefeitura ou do governo do estado pra melhorar isso ??",
+            "likes": 4,
             "score": 0.998,
             "date": "2026-11-12",
             "video_id": "wURsbNR8_pQ"
           },
           {
             "text": "casinha bem HUMILDE...né ?!?! Adivinha oque ela fala do BOLSA FAMÍLIA???? Agora vamos pedir ao Estado que ele não seja MÍNIMO...né ???!!!",
-            "likes": 0,
+            "likes": 1,
             "score": 0.998,
             "date": "2026-11-12",
             "video_id": "wURsbNR8_pQ"
           },
           {
             "text": "Cobre do seu governador Tarcísio e do seu prefeito",
-            "likes": 0,
+            "likes": 3,
             "score": 0.995,
             "date": "2026-11-12",
             "video_id": "wURsbNR8_pQ"
           },
           {
             "text": "Fora PT",
-            "likes": 1,
+            "likes": 2,
             "score": 0.905,
             "date": "2026-11-12",
             "video_id": "wURsbNR8_pQ"
           }
         ],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
+        "infraestrutura_ocupacao_risco": [
+          {
+            "text": "E porque na hora de construir uma coisa não olha a altura ? Casa tem que ser construída muito acima do nível da rua ,mas aí vem a desgraça de economizar em coisas que não se deve .minha casa é muito alta nunca entrou água .",
+            "likes": 0,
+            "score": 0.991,
+            "date": "2026-11-13",
+            "video_id": "wURsbNR8_pQ"
+          }
+        ],
+        "clima_chuva_meio_ambiente": [
+          {
+            "text": "​Mais é necessário mapear os pontos que mais alagam e fazer projetos que direcionem o escoamento da água. Estude e entenda.",
+            "likes": 0,
+            "score": 0.995,
+            "date": "2026-11-13",
+            "video_id": "wURsbNR8_pQ"
+          }
+        ],
+        "experiencia_pessoal_local": [
+          {
+            "text": "E porque na hora de construir uma coisa não olha a altura ? Casa tem que ser construída muito acima do nível da rua ,mas aí vem a desgraça de economizar em coisas que não se deve .minha casa é muito alta nunca entrou água .",
+            "likes": 0,
+            "score": 0.993,
+            "date": "2026-11-13",
+            "video_id": "wURsbNR8_pQ"
+          }
+        ],
         "alerta_prevencao_cobranca": [],
         "critica_midia_informacao": [
           {
@@ -8709,7 +8535,7 @@
           "criterio": "municipal_v0.3.2"
         }
       ],
-      "n_comments_valid": 10,
+      "n_comments_valid": 15,
       "videos_with_valid_comments": [
         "bPJmrQzMHcY",
         "kGTyh6sDNFI",
@@ -8724,18 +8550,18 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-12T23:03:34Z",
-      "next_collection_at": "2026-11-13T16:27:13Z",
+      "last_collection_at": "2026-11-13T23:06:50Z",
+      "next_collection_at": "2026-11-14T11:06:50Z",
       "window_finalized_at": null,
       "counters_integrity": "inflated_pre_v0.3",
       "videos_por_formato": {
-        "short": 2,
+        "short": 4,
         "longo": 2
       },
-      "n_videos_municipais": 2,
-      "n_videos_verificados": 4,
-      "n_comments_municipais": 10,
-      "n_comments_valid_municipal": 7,
+      "n_videos_municipais": 3,
+      "n_videos_verificados": 6,
+      "n_comments_municipais": 15,
+      "n_comments_valid_municipal": 11,
       "videos_with_valid_comments_municipal": [
         "wURsbNR8_pQ"
       ],
@@ -8752,20 +8578,20 @@
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
-      "n_comments": 11,
-      "n_videos": 3,
-      "unlabeled": 2,
-      "unlabeled_pct": 18.2,
+      "n_comments": 19,
+      "n_videos": 5,
+      "unlabeled": 4,
+      "unlabeled_pct": 21.1,
       "date_range": [
         "2026-11-12",
-        "2026-11-12"
+        "2026-11-13"
       ],
       "distribution": [
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
-          "count": 4,
-          "pct": 36.4
+          "count": 6,
+          "pct": 31.6
         },
         {
           "key": "ajuda_resgate_doacoes",
@@ -8776,26 +8602,26 @@
         {
           "key": "responsabilizacao_governanca",
           "label": "Responsabilização / governança",
-          "count": 4,
-          "pct": 36.4
+          "count": 5,
+          "pct": 26.3
         },
         {
           "key": "infraestrutura_ocupacao_risco",
           "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
+          "count": 2,
+          "pct": 10.5
         },
         {
           "key": "clima_chuva_meio_ambiente",
           "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
+          "count": 3,
+          "pct": 15.8
         },
         {
           "key": "experiencia_pessoal_local",
           "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
+          "count": 1,
+          "pct": 5.3
         },
         {
           "key": "alerta_prevencao_cobranca",
@@ -8807,38 +8633,68 @@
           "key": "critica_midia_informacao",
           "label": "Crítica à mídia / informação",
           "count": 1,
-          "pct": 9.1
+          "pct": 5.3
         }
       ],
       "timeline": [
         {
           "date": "12/11/26",
           "count": 11
+        },
+        {
+          "date": "13/11/26",
+          "count": 8
         }
       ],
       "videos": [
         {
           "video_id": "wURsbNR8_pQ",
-          "n_comments": 9,
-          "total_likes": 8,
+          "n_comments": 14,
+          "total_likes": 23,
           "first_comment": "12/11/2026",
           "top_categories": [
             {
               "label": "Responsabilização",
-              "count": 4
+              "count": 5
             },
             {
               "label": "Solidariedade",
-              "count": 3
+              "count": 4
+            },
+            {
+              "label": "Infraestrutura",
+              "count": 1
             }
           ],
           "municipal_evidence": "descricao",
           "formato": "short"
         },
         {
+          "video_id": "Vn9-pX-ElEM",
+          "n_comments": 3,
+          "total_likes": 6,
+          "first_comment": "13/11/2026",
+          "top_categories": [
+            {
+              "label": "Clima/chuva",
+              "count": 2
+            },
+            {
+              "label": "Solidariedade",
+              "count": 1
+            },
+            {
+              "label": "Infraestrutura",
+              "count": 1
+            }
+          ],
+          "municipal_evidence": "nenhuma",
+          "formato": "longo"
+        },
+        {
           "video_id": "bPJmrQzMHcY",
           "n_comments": 2,
-          "total_likes": 0,
+          "total_likes": 1,
           "first_comment": "12/11/2026",
           "top_categories": [
             {
@@ -8852,6 +8708,15 @@
           ],
           "municipal_evidence": "nenhuma",
           "formato": "longo"
+        },
+        {
+          "video_id": "tfEb3KWbZdc",
+          "n_comments": 0,
+          "total_likes": 0,
+          "first_comment": "",
+          "top_categories": [],
+          "municipal_evidence": "titulo",
+          "formato": "ao_vivo"
         },
         {
           "video_id": "HSiHnTtsGrw",
@@ -8874,7 +8739,7 @@
           },
           {
             "text": "Misericórdia coitadoS❗️",
-            "likes": 3,
+            "likes": 4,
             "score": 0.994,
             "date": "2026-11-12",
             "video_id": "wURsbNR8_pQ"
@@ -8887,47 +8752,113 @@
             "video_id": "wURsbNR8_pQ"
           },
           {
+            "text": "Graças a Deus AINDA chove.... Sem chuva já era a humanidade!!",
+            "likes": 6,
+            "score": 0.969,
+            "date": "2026-11-13",
+            "video_id": "Vn9-pX-ElEM"
+          },
+          {
             "text": "Boa noite , pra todos vocês Joel !🎉🎉",
-            "likes": 0,
+            "likes": 1,
             "score": 0.902,
             "date": "2026-11-12",
             "video_id": "bPJmrQzMHcY"
+          },
+          {
+            "text": "Nos só colhemos o que plantamos. Os sinais visíveis para o que vivemos é o fruto do afastamento do criador. Ninguém merece passar por isso. Mas quando o criador é posto de lado i passamos a valorizar as ostentações deste mundo é isso que acontece. Quantos livramentos nos temos todos os dias i não agradecemos.",
+            "likes": 1,
+            "score": 0.85,
+            "date": "2026-11-13",
+            "video_id": "wURsbNR8_pQ"
           }
         ],
         "ajuda_resgate_doacoes": [],
         "responsabilizacao_governanca": [
           {
-            "text": "Alguem tá vendo alguma obra da prefeitura ou do governo do estado pra melhorar isso ??",
+            "text": "E lá governador tem culpa se chover ? Água vem dos céus ,se chove muito culpa de governantes se faz calor tmb kkkkk agora quanto a fome o desemprego inflação alta assassinatos feminicidios etc..aí vcs precisam chamar o lula porque aí sim ele é o culpado .",
             "likes": 1,
+            "score": 0.998,
+            "date": "2026-11-13",
+            "video_id": "wURsbNR8_pQ"
+          },
+          {
+            "text": "Alguem tá vendo alguma obra da prefeitura ou do governo do estado pra melhorar isso ??",
+            "likes": 4,
             "score": 0.998,
             "date": "2026-11-12",
             "video_id": "wURsbNR8_pQ"
           },
           {
             "text": "casinha bem HUMILDE...né ?!?! Adivinha oque ela fala do BOLSA FAMÍLIA???? Agora vamos pedir ao Estado que ele não seja MÍNIMO...né ???!!!",
-            "likes": 0,
+            "likes": 1,
             "score": 0.998,
             "date": "2026-11-12",
             "video_id": "wURsbNR8_pQ"
           },
           {
             "text": "Cobre do seu governador Tarcísio e do seu prefeito",
-            "likes": 0,
+            "likes": 3,
             "score": 0.995,
             "date": "2026-11-12",
             "video_id": "wURsbNR8_pQ"
           },
           {
             "text": "Fora PT",
-            "likes": 1,
+            "likes": 2,
             "score": 0.905,
             "date": "2026-11-12",
             "video_id": "wURsbNR8_pQ"
           }
         ],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
+        "infraestrutura_ocupacao_risco": [
+          {
+            "text": "Só fala isso pq a sua casa não foi invadida pela água, vc não perdeu seu carro de trabalho pra enxente. Por isso a chuva no seu caso foi uma benção",
+            "likes": 0,
+            "score": 0.991,
+            "date": "2026-11-13",
+            "video_id": "Vn9-pX-ElEM"
+          },
+          {
+            "text": "E porque na hora de construir uma coisa não olha a altura ? Casa tem que ser construída muito acima do nível da rua ,mas aí vem a desgraça de economizar em coisas que não se deve .minha casa é muito alta nunca entrou água .",
+            "likes": 0,
+            "score": 0.991,
+            "date": "2026-11-13",
+            "video_id": "wURsbNR8_pQ"
+          }
+        ],
+        "clima_chuva_meio_ambiente": [
+          {
+            "text": "Só fala isso pq a sua casa não foi invadida pela água, vc não perdeu seu carro de trabalho pra enxente. Por isso a chuva no seu caso foi uma benção",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-11-13",
+            "video_id": "Vn9-pX-ElEM"
+          },
+          {
+            "text": "​Mais é necessário mapear os pontos que mais alagam e fazer projetos que direcionem o escoamento da água. Estude e entenda.",
+            "likes": 0,
+            "score": 0.995,
+            "date": "2026-11-13",
+            "video_id": "wURsbNR8_pQ"
+          },
+          {
+            "text": "Graças a Deus AINDA chove.... Sem chuva já era a humanidade!!",
+            "likes": 6,
+            "score": 0.994,
+            "date": "2026-11-13",
+            "video_id": "Vn9-pX-ElEM"
+          }
+        ],
+        "experiencia_pessoal_local": [
+          {
+            "text": "E porque na hora de construir uma coisa não olha a altura ? Casa tem que ser construída muito acima do nível da rua ,mas aí vem a desgraça de economizar em coisas que não se deve .minha casa é muito alta nunca entrou água .",
+            "likes": 0,
+            "score": 0.993,
+            "date": "2026-11-13",
+            "video_id": "wURsbNR8_pQ"
+          }
+        ],
         "alerta_prevencao_cobranca": [],
         "critica_midia_informacao": [
           {
@@ -8954,8 +8885,9 @@
           "criterio": "municipal_v0.3.2"
         }
       ],
-      "n_comments_valid": 9,
+      "n_comments_valid": 15,
       "videos_with_valid_comments": [
+        "Vn9-pX-ElEM",
         "bPJmrQzMHcY",
         "wURsbNR8_pQ"
       ],
@@ -8968,18 +8900,19 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-12T23:03:34Z",
-      "next_collection_at": "2026-11-13T16:27:13Z",
+      "last_collection_at": "2026-11-13T23:06:50Z",
+      "next_collection_at": "2026-11-14T11:06:50Z",
       "window_finalized_at": null,
       "counters_integrity": "inflated_pre_v0.3",
       "videos_por_formato": {
         "short": 1,
-        "longo": 2
+        "longo": 3,
+        "ao_vivo": 1
       },
-      "n_videos_municipais": 2,
-      "n_videos_verificados": 3,
-      "n_comments_municipais": 9,
-      "n_comments_valid_municipal": 7,
+      "n_videos_municipais": 3,
+      "n_videos_verificados": 5,
+      "n_comments_municipais": 14,
+      "n_comments_valid_municipal": 11,
       "videos_with_valid_comments_municipal": [
         "wURsbNR8_pQ"
       ],
@@ -9189,19 +9122,23 @@
           "criterio": "municipal_v0.3.2"
         }
       ],
-      "n_comments_valid": 9,
+      "n_comments_valid": 48,
       "videos_with_valid_comments": [
+        "IURZKTJBWTw",
         "bPJmrQzMHcY",
+        "oAhoKNRzJCM",
+        "pT0u_chK9CU",
+        "t6UCXl0qPdU",
         "wURsbNR8_pQ"
       ],
       "alert_opened_at": "2026-11-12T15:57:26Z",
       "alert_closed_at": "2026-11-13T04:27:13Z",
       "alert_transitions": [],
       "collection_health": {
-        "status": "ok",
+        "status": "error",
         "silence_type": null,
-        "last_error": null,
-        "consecutive_failures": 0
+        "last_error": "youtube=ok;comments=api_error",
+        "consecutive_failures": 1
       },
       "last_collection_at": "2026-11-12T23:03:34Z",
       "next_collection_at": "2026-11-13T16:27:13Z",
@@ -9214,8 +9151,12 @@
       "n_videos_municipais": 1,
       "n_videos_verificados": 2,
       "n_comments_municipais": 9,
-      "n_comments_valid_municipal": 7,
+      "n_comments_valid_municipal": 46,
       "videos_with_valid_comments_municipal": [
+        "IURZKTJBWTw",
+        "oAhoKNRzJCM",
+        "pT0u_chK9CU",
+        "t6UCXl0qPdU",
         "wURsbNR8_pQ"
       ],
       "flag_reassessment": null
@@ -9231,137 +9172,195 @@
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
-      "n_comments": 46,
-      "n_videos": 7,
-      "unlabeled": 8,
-      "unlabeled_pct": 17.4,
+      "n_comments": 111,
+      "n_videos": 10,
+      "unlabeled": 22,
+      "unlabeled_pct": 19.8,
       "date_range": [
         "2026-11-12",
-        "2026-11-12"
+        "2026-11-13"
       ],
       "distribution": [
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
-          "count": 13,
-          "pct": 28.3
+          "count": 21,
+          "pct": 18.9
         },
         {
           "key": "ajuda_resgate_doacoes",
           "label": "Ajuda / resgate / doações",
-          "count": 4,
-          "pct": 8.7
+          "count": 8,
+          "pct": 7.2
         },
         {
           "key": "responsabilizacao_governanca",
           "label": "Responsabilização / governança",
-          "count": 16,
-          "pct": 34.8
+          "count": 37,
+          "pct": 33.3
         },
         {
           "key": "infraestrutura_ocupacao_risco",
           "label": "Infraestrutura / ocupação de risco",
-          "count": 2,
-          "pct": 4.3
+          "count": 12,
+          "pct": 10.8
         },
         {
           "key": "clima_chuva_meio_ambiente",
           "label": "Clima / chuva / meio ambiente",
-          "count": 7,
-          "pct": 15.2
+          "count": 25,
+          "pct": 22.5
         },
         {
           "key": "experiencia_pessoal_local",
           "label": "Experiência pessoal / local",
-          "count": 1,
-          "pct": 2.2
+          "count": 2,
+          "pct": 1.8
         },
         {
           "key": "alerta_prevencao_cobranca",
           "label": "Alerta / prevenção / cobrança",
-          "count": 1,
-          "pct": 2.2
+          "count": 2,
+          "pct": 1.8
         },
         {
           "key": "critica_midia_informacao",
           "label": "Crítica à mídia / informação",
-          "count": 3,
-          "pct": 6.5
+          "count": 6,
+          "pct": 5.4
         }
       ],
       "timeline": [
         {
           "date": "12/11/26",
-          "count": 46
+          "count": 48
+        },
+        {
+          "date": "13/11/26",
+          "count": 63
         }
       ],
       "videos": [
         {
           "video_id": "arzFtwHueZk",
-          "n_comments": 30,
-          "total_likes": 125,
+          "n_comments": 66,
+          "total_likes": 352,
           "first_comment": "12/11/2026",
           "top_categories": [
             {
               "label": "Responsabilização",
-              "count": 10
-            },
-            {
-              "label": "Solidariedade",
-              "count": 8
+              "count": 21
             },
             {
               "label": "Clima/chuva",
-              "count": 6
+              "count": 18
+            },
+            {
+              "label": "Solidariedade",
+              "count": 10
             }
           ],
           "municipal_evidence": "descricao",
           "formato": "longo"
         },
         {
-          "video_id": "wURsbNR8_pQ",
-          "n_comments": 9,
-          "total_likes": 8,
-          "first_comment": "12/11/2026",
+          "video_id": "e05kvv6FyQI",
+          "n_comments": 21,
+          "total_likes": 59,
+          "first_comment": "13/11/2026",
           "top_categories": [
             {
               "label": "Responsabilização",
-              "count": 4
+              "count": 13
             },
+            {
+              "label": "Clima/chuva",
+              "count": 6
+            },
+            {
+              "label": "Infraestrutura",
+              "count": 3
+            }
+          ],
+          "municipal_evidence": "descricao",
+          "formato": "longo"
+        },
+        {
+          "video_id": "P6WrQDeBufY",
+          "n_comments": 9,
+          "total_likes": 7,
+          "first_comment": "13/11/2026",
+          "top_categories": [
             {
               "label": "Solidariedade",
               "count": 3
+            },
+            {
+              "label": "Crítica mídia",
+              "count": 2
+            },
+            {
+              "label": "Ajuda",
+              "count": 1
+            }
+          ],
+          "municipal_evidence": "titulo+descricao",
+          "formato": "short"
+        },
+        {
+          "video_id": "DWMys-ujupc",
+          "n_comments": 5,
+          "total_likes": 6,
+          "first_comment": "12/11/2026",
+          "top_categories": [
+            {
+              "label": "Infraestrutura",
+              "count": 2
+            },
+            {
+              "label": "Solidariedade",
+              "count": 1
+            },
+            {
+              "label": "Clima/chuva",
+              "count": 1
+            }
+          ],
+          "municipal_evidence": "descricao",
+          "formato": "longo"
+        },
+        {
+          "video_id": "RU_m8qEgZIM",
+          "n_comments": 3,
+          "total_likes": 1,
+          "first_comment": "13/11/2026",
+          "top_categories": [
+            {
+              "label": "Responsabilização",
+              "count": 2
             }
           ],
           "municipal_evidence": "descricao",
           "formato": "short"
         },
         {
-          "video_id": "YcLPITcnArI",
-          "n_comments": 4,
-          "total_likes": 4,
-          "first_comment": "12/11/2026",
+          "video_id": "D1o7LtNuOaU",
+          "n_comments": 2,
+          "total_likes": 0,
+          "first_comment": "13/11/2026",
           "top_categories": [
             {
-              "label": "Responsabilização",
+              "label": "Solidariedade",
               "count": 2
-            },
-            {
-              "label": "Ajuda",
-              "count": 1
-            },
-            {
-              "label": "Infraestrutura",
-              "count": 1
             }
           ],
-          "municipal_evidence": "nenhuma",
-          "formato": "longo"
+          "municipal_evidence": "descricao",
+          "formato": "short"
         },
         {
           "video_id": "bPJmrQzMHcY",
           "n_comments": 2,
-          "total_likes": 0,
+          "total_likes": 1,
           "first_comment": "12/11/2026",
           "top_categories": [
             {
@@ -9378,29 +9377,29 @@
         },
         {
           "video_id": "kGTyh6sDNFI",
-          "n_comments": 1,
-          "total_likes": 0,
+          "n_comments": 2,
+          "total_likes": 1,
           "first_comment": "12/11/2026",
           "top_categories": [
             {
               "label": "Solidariedade",
-              "count": 1
+              "count": 2
             }
           ],
           "municipal_evidence": "descricao",
           "formato": "short"
         },
         {
-          "video_id": "ntNYLzn8y0Q",
-          "n_comments": 0,
+          "video_id": "nCs3wu_1KUU",
+          "n_comments": 1,
           "total_likes": 0,
-          "first_comment": "",
+          "first_comment": "13/11/2026",
           "top_categories": [],
-          "municipal_evidence": "nenhuma",
+          "municipal_evidence": "descricao",
           "formato": "short"
         },
         {
-          "video_id": "nCs3wu_1KUU",
+          "video_id": "BCO8h2Mpk8k",
           "n_comments": 0,
           "total_likes": 0,
           "first_comment": "",
@@ -9426,18 +9425,25 @@
             "video_id": "arzFtwHueZk"
           },
           {
-            "text": "O loco misericórdia 😮😮😮😮😮😮",
-            "likes": 1,
-            "score": 0.994,
-            "date": "2026-11-12",
-            "video_id": "wURsbNR8_pQ"
+            "text": "Só por Deus 🤦🏻‍♀️🤦🏻‍♀️",
+            "likes": 2,
+            "score": 0.995,
+            "date": "2026-11-13",
+            "video_id": "P6WrQDeBufY"
           },
           {
-            "text": "Misericórdia coitadoS❗️",
-            "likes": 3,
+            "text": "Só por Deus",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-11-13",
+            "video_id": "P6WrQDeBufY"
+          },
+          {
+            "text": "Deus tenha misericórdia. 😢",
+            "likes": 2,
             "score": 0.994,
-            "date": "2026-11-12",
-            "video_id": "wURsbNR8_pQ"
+            "date": "2026-11-13",
+            "video_id": "e05kvv6FyQI"
           },
           {
             "text": "misericórdia senhor Jesus",
@@ -9454,32 +9460,74 @@
             "video_id": "arzFtwHueZk"
           },
           {
-            "text": "Tadinha😢",
-            "likes": 2,
+            "text": "😢😢",
+            "likes": 0,
             "score": 0.974,
-            "date": "2026-11-12",
-            "video_id": "wURsbNR8_pQ"
+            "date": "2026-11-13",
+            "video_id": "D1o7LtNuOaU"
+          },
+          {
+            "text": "🥹",
+            "likes": 0,
+            "score": 0.974,
+            "date": "2026-11-13",
+            "video_id": "D1o7LtNuOaU"
           },
           {
             "text": "A natureza é Deus, que não possui características humanas, não possui vontade pessoal, não escuta súplicas, não faz milagres, não julga, premia ou castiga as pessoas. Rituais, orações, sacrifícios, barganhas ou súplicas não têm o poder de alterar a realidade das leis naturais. A admiração racional e o respeito profundo à ordem natural das coisas prevalecem sobre o temor religioso.",
-            "likes": 3,
+            "likes": 4,
             "score": 0.97,
             "date": "2026-11-12",
             "video_id": "arzFtwHueZk"
           },
           {
+            "text": "Eu te amo❤",
+            "likes": 1,
+            "score": 0.969,
+            "date": "2026-11-12",
+            "video_id": "kGTyh6sDNFI"
+          },
+          {
             "text": "verdade amiga.Isso é culpa dos seres humanos ,forças de segurança que não combate o desmatamento ambiental,a caça,garrimpeiros e etc...O mundo irá se acabar aos poucos na mãos do seres humanos,mas tud tem conseuqencias na vida,pois eles tem filhos,crianças e etc.....O mundo precisa da natureza e todos sos animais vivos,enfim.....Eu peço a Deus que protega todos os animais nesse mundo,natureza,anim",
-            "likes": 3,
+            "likes": 7,
             "score": 0.952,
             "date": "2026-11-12",
             "video_id": "arzFtwHueZk"
           },
           {
+            "text": "Boa noite",
+            "likes": 1,
+            "score": 0.928,
+            "date": "2026-11-12",
+            "video_id": "DWMys-ujupc"
+          },
+          {
             "text": "Boa noite , pra todos vocês Joel !🎉🎉",
-            "likes": 0,
+            "likes": 1,
             "score": 0.902,
             "date": "2026-11-12",
             "video_id": "bPJmrQzMHcY"
+          },
+          {
+            "text": "Obrigada Tarcísio",
+            "likes": 1,
+            "score": 0.867,
+            "date": "2026-11-13",
+            "video_id": "arzFtwHueZk"
+          },
+          {
+            "text": "A vida do pobre em são Paulo é bem mais difícil.",
+            "likes": 0,
+            "score": 0.866,
+            "date": "2026-11-13",
+            "video_id": "P6WrQDeBufY"
+          },
+          {
+            "text": "Ridiculo culpar governador e prefeito pela chuva. Culpe Deus que mando a chuva.",
+            "likes": 1,
+            "score": 0.823,
+            "date": "2026-11-13",
+            "video_id": "e05kvv6FyQI"
           },
           {
             "text": "Bora Tarcísio",
@@ -9490,227 +9538,444 @@
           },
           {
             "text": "É basicamente Santo André e Mauá",
-            "likes": 1,
+            "likes": 2,
             "score": 0.769,
             "date": "2026-11-12",
             "video_id": "arzFtwHueZk"
           },
           {
-            "text": "SE ARREPENDEI-VOS, DOS VOSSOS PECADOS.",
-            "likes": 0,
-            "score": 0.511,
-            "date": "2026-11-12",
+            "text": "Boa Tarcísio 😂😂😂 Boa Ricardo Nunes 😂😂😂 seus eleitores merecem 👏👏👏👏",
+            "likes": 1,
+            "score": 0.763,
+            "date": "2026-11-13",
             "video_id": "arzFtwHueZk"
           }
         ],
         "ajuda_resgate_doacoes": [
           {
             "text": "Os eleitores que moram nessa área e votaram no tarcisio precisa pedir ajuda a ele.",
-            "likes": 23,
+            "likes": 47,
             "score": 0.995,
             "date": "2026-11-12",
             "video_id": "arzFtwHueZk"
           },
           {
             "text": "A natureza está pedindo socorro 🙏🌏",
-            "likes": 2,
+            "likes": 4,
             "score": 0.987,
             "date": "2026-11-12",
             "video_id": "arzFtwHueZk"
           },
           {
-            "text": "Seguros de veículos, não param de subir😮",
+            "text": "E O BANHEIRO TRANS HEIN",
             "likes": 0,
+            "score": 0.963,
+            "date": "2026-11-13",
+            "video_id": "P6WrQDeBufY"
+          },
+          {
+            "text": "Seguros de veículos, não param de subir😮",
+            "likes": 3,
             "score": 0.907,
             "date": "2026-11-12",
             "video_id": "arzFtwHueZk"
           },
           {
-            "text": "Enquanto o povo sofre tão distribuindo iPhones em Brasília parabéns Joel",
-            "likes": 4,
-            "score": 0.505,
+            "text": "Parabéns pra quem votou em Tarcinico 😂😂😂😂",
+            "likes": 1,
+            "score": 0.841,
             "date": "2026-11-12",
-            "video_id": "YcLPITcnArI"
+            "video_id": "arzFtwHueZk"
+          },
+          {
+            "text": "Um dia os paulistas irão aprender a votar .o TARCÍSIO PASSOU QUATRO ANOS E NAO FEZ NADA EM RELACAO AOS ALAGAMENTOS E DE BRINDE OS PAULISTAS DAO MAIS 4 ANOS ...E BRINCADEIRA AGORA TOMA",
+            "likes": 0,
+            "score": 0.794,
+            "date": "2026-11-12",
+            "video_id": "arzFtwHueZk"
+          },
+          {
+            "text": "Cade os eleitores do Tarcinico",
+            "likes": 1,
+            "score": 0.753,
+            "date": "2026-11-13",
+            "video_id": "arzFtwHueZk"
+          },
+          {
+            "text": "Para o bolso deles",
+            "likes": 4,
+            "score": 0.566,
+            "date": "2026-11-12",
+            "video_id": "arzFtwHueZk"
           }
         ],
         "responsabilizacao_governanca": [
           {
-            "text": "6 MILHÕES DOS COFRES PÚBLICOS PRA COMPRAR IPHONE PROS SENADORES E SERVIDORES, ALCALUMBRE PRESENTEANDO COM OS NOSSOS IMPOSTOS, ENQUANTO MUITAS PESSOAS NÃO TEM O QUE COMER, OU É SÓ UMA SENSAÇÃO QUE TÁ ACONTECENDO ISSO, O LULALIXO JÁ VAI GASTANDO QUASE 2 MILHÕES SÓ COM 2 DIAS QUE ELE E QUADRILHA ESTÃO NA TURQUIA",
-            "likes": 0,
-            "score": 1.0,
-            "date": "2026-11-12",
-            "video_id": "YcLPITcnArI"
-          },
-          {
-            "text": "Alguem tá vendo alguma obra da prefeitura ou do governo do estado pra melhorar isso ??",
+            "text": "Cadê a manutenção da prefeitura nos bueiros de São Paulo O islogo do prefeito é São Paulo pra frente cuidado de gente Ele está cuidando e do próprio bolso",
             "likes": 1,
-            "score": 0.998,
-            "date": "2026-11-12",
-            "video_id": "wURsbNR8_pQ"
+            "score": 0.999,
+            "date": "2026-11-13",
+            "video_id": "RU_m8qEgZIM"
           },
           {
             "text": "Agora quero ver o governo tabhar com obras na cidade,ganharam disparados mas já são eles que governam ,uma vergonha....",
-            "likes": 1,
+            "likes": 3,
             "score": 0.998,
             "date": "2026-11-12",
             "video_id": "arzFtwHueZk"
           },
           {
-            "text": "Chama o prefeito lixo que cortou as verbas das obras de prevenção a enchentes 👉🏼🤯 Aprendam a votar nos que dignificam nosso povo, pobre e trabalhador‼️",
+            "text": "Tem q culpar os otários q votam em incompetentes.",
             "likes": 0,
             "score": 0.998,
-            "date": "2026-11-12",
-            "video_id": "YcLPITcnArI"
+            "date": "2026-11-13",
+            "video_id": "e05kvv6FyQI"
           },
           {
-            "text": "casinha bem HUMILDE...né ?!?! Adivinha oque ela fala do BOLSA FAMÍLIA???? Agora vamos pedir ao Estado que ele não seja MÍNIMO...né ???!!!",
+            "text": "Tudo isso e culpa do tarcinico e do Ricardo nunes",
+            "likes": 9,
+            "score": 0.997,
+            "date": "2026-11-13",
+            "video_id": "e05kvv6FyQI"
+          },
+          {
+            "text": "PARABÉNS QUEM ESCOLHEU TARCÍSIO mais 4 anos nessa situação pra pior FUTURO PRESIDENTE DO BRASIL",
             "likes": 0,
-            "score": 0.998,
-            "date": "2026-11-12",
-            "video_id": "wURsbNR8_pQ"
+            "score": 0.997,
+            "date": "2026-11-13",
+            "video_id": "RU_m8qEgZIM"
           },
           {
-            "text": "Uma das imagens é de MAUÁ, uma vergonha de cidade; há 30 anos o dinheiro sendo desviado, infraestrutura porca, rios a céu aberto em uma avenida que diz ser a principal... LAMENTÁVEL.",
-            "likes": 1,
+            "text": "Quem diria que votar em um Governador que usa o boné do MAGA, e o Prefeito que é suspeito de envolvimento em desvio de verba fariam uma gestão pífia?",
+            "likes": 3,
             "score": 0.997,
             "date": "2026-11-12",
             "video_id": "arzFtwHueZk"
           },
           {
-            "text": "Continuem votando nesse governador, mais 4 anos disso ... Parabéns",
+            "text": "Uma das imagens é de MAUÁ, uma vergonha de cidade; há 30 anos o dinheiro sendo desviado, infraestrutura porca, rios a céu aberto em uma avenida que diz ser a principal... LAMENTÁVEL.",
             "likes": 2,
+            "score": 0.997,
+            "date": "2026-11-12",
+            "video_id": "arzFtwHueZk"
+          },
+          {
+            "text": "Desde q nasci todo ano é a mesma coisa entra e sai políticos e não muda nada",
+            "likes": 1,
+            "score": 0.997,
+            "date": "2026-11-13",
+            "video_id": "e05kvv6FyQI"
+          },
+          {
+            "text": "O importante é saber escrever, antes de opinar. Vergonha alheia.",
+            "likes": 2,
+            "score": 0.997,
+            "date": "2026-11-13",
+            "video_id": "e05kvv6FyQI"
+          },
+          {
+            "text": "Cadê os políticos de SP?",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-11-13",
+            "video_id": "P6WrQDeBufY"
+          },
+          {
+            "text": "Só falta agora mandar o tarciso colocar guarda chuva no ceu pra não chover mas tão culpando o governo até porcausa da chuva 😂😂😂",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-11-13",
+            "video_id": "arzFtwHueZk"
+          },
+          {
+            "text": "Continuem votando nesse governador, mais 4 anos disso ... Parabéns",
+            "likes": 13,
             "score": 0.996,
             "date": "2026-11-12",
             "video_id": "arzFtwHueZk"
           },
           {
             "text": "Já virou rotina.....E quais são as providências do prefeito e do governador a respeito disso???.... Os eleitores deles não vão questionar??",
-            "likes": 0,
+            "likes": 3,
+            "score": 0.996,
+            "date": "2026-11-12",
+            "video_id": "arzFtwHueZk"
+          },
+          {
+            "text": "Prefeito deveria morar na periferia para passar o sufoco que todos passam Mas é mais cômodo ficar só olhando no conforto do gabinete dele.",
+            "likes": 5,
             "score": 0.996,
             "date": "2026-11-12",
             "video_id": "arzFtwHueZk"
           },
           {
             "text": "Que a propósito o Estado de SP fez o L, mas de PSL 😂😂😂",
-            "likes": 6,
+            "likes": 7,
             "score": 0.996,
             "date": "2026-11-12",
             "video_id": "arzFtwHueZk"
           },
           {
-            "text": "Cobre do seu governador Tarcísio e do seu prefeito",
-            "likes": 0,
-            "score": 0.995,
-            "date": "2026-11-12",
-            "video_id": "wURsbNR8_pQ"
-          },
-          {
             "text": "Boa governador que mais trabalha no Brasil. Vai que é sua Tarcisio.",
-            "likes": 18,
+            "likes": 41,
             "score": 0.995,
             "date": "2026-11-12",
             "video_id": "arzFtwHueZk"
           },
           {
             "text": "FAZ O T de tarcinico o Governador do Povo Paulistano.",
-            "likes": 13,
+            "likes": 14,
             "score": 0.995,
             "date": "2026-11-12",
             "video_id": "arzFtwHueZk"
           },
           {
-            "text": "Então turma de Santo André... vocês reelegeram o prefeito do Centrão. Agora não adianta reclamar. Boa enchente!",
-            "likes": 1,
-            "score": 0.99,
-            "date": "2026-11-12",
-            "video_id": "arzFtwHueZk"
-          },
-          {
-            "text": "você sabe o que cada cargo do poder executivo faz ? Aprenda a cobrar certo e, quem sabe votar certo tb",
-            "likes": 1,
-            "score": 0.982,
-            "date": "2026-11-12",
-            "video_id": "arzFtwHueZk"
-          },
-          {
-            "text": "verdade amiga.Isso é culpa dos seres humanos ,forças de segurança que não combate o desmatamento ambiental,a caça,garrimpeiros e etc...O mundo irá se acabar aos poucos na mãos do seres humanos,mas tud tem conseuqencias na vida,pois eles tem filhos,crianças e etc.....O mundo precisa da natureza e todos sos animais vivos,enfim.....Eu peço a Deus que protega todos os animais nesse mundo,natureza,anim",
-            "likes": 3,
-            "score": 0.978,
-            "date": "2026-11-12",
-            "video_id": "arzFtwHueZk"
-          },
-          {
-            "text": "Fora PT",
-            "likes": 1,
-            "score": 0.905,
-            "date": "2026-11-12",
-            "video_id": "wURsbNR8_pQ"
-          }
-        ],
-        "infraestrutura_ocupacao_risco": [
-          {
-            "text": "Ricardo Nunes anunciou 11 bilhões destinadas a esse casa da situação hídrica do país quando chove. Para onde está indo esse dinheiro?",
-            "likes": 5,
-            "score": 0.997,
-            "date": "2026-11-12",
-            "video_id": "arzFtwHueZk"
-          },
-          {
-            "text": "Chama o prefeito lixo que cortou as verbas das obras de prevenção a enchentes 👉🏼🤯 Aprendam a votar nos que dignificam nosso povo, pobre e trabalhador‼️",
-            "likes": 0,
-            "score": 0.981,
-            "date": "2026-11-12",
-            "video_id": "YcLPITcnArI"
-          }
-        ],
-        "clima_chuva_meio_ambiente": [
-          {
-            "text": "A natureza é Deus, que não possui características humanas, não possui vontade pessoal, não escuta súplicas, não faz milagres, não julga, premia ou castiga as pessoas. Rituais, orações, sacrifícios, barganhas ou súplicas não têm o poder de alterar a realidade das leis naturais. A admiração racional e o respeito profundo à ordem natural das coisas prevalecem sobre o temor religioso.",
-            "likes": 3,
-            "score": 0.997,
-            "date": "2026-11-12",
-            "video_id": "arzFtwHueZk"
-          },
-          {
-            "text": "Eu achei que eleger o Pavanato para acabar com o banheiro trans em SP resolveria todos os problemas de mobilidade urbana, enchentes, trafico de drogas, ostensividade policial, roubos, furtos entre tantos outros problemas... (contém ironia).",
-            "likes": 13,
-            "score": 0.996,
-            "date": "2026-11-12",
-            "video_id": "arzFtwHueZk"
-          },
-          {
-            "text": "A natureza está pedindo socorro 🙏🌏",
+            "text": "Gestão do TARCÍSIO DE FREITAS",
             "likes": 2,
+            "score": 0.994,
+            "date": "2026-11-12",
+            "video_id": "arzFtwHueZk"
+          },
+          {
+            "text": "Responsabilidade do Ricardo Nunes, afinal, cabe ao incompetente cuidar da capital e do Tarcísio, que deu quiser de graça a Sabesp, responsável pela manutenção e aplicação do sistema de drenagem de águas pluviais",
+            "likes": 3,
             "score": 0.993,
             "date": "2026-11-12",
             "video_id": "arzFtwHueZk"
           },
           {
-            "text": "Chama o prefeito lixo que cortou as verbas das obras de prevenção a enchentes 👉🏼🤯 Aprendam a votar nos que dignificam nosso povo, pobre e trabalhador‼️",
+            "text": "Ricardo Nunes anunciou 11 bilhões destinadas a esse casa da situação hídrica do país quando chove. Para onde está indo esse dinheiro? São ONZE bilhões. Cadê a direita para cobrar seus políticos sobre as medidas para SP? E para onde está indo tamanho investimento?",
+            "likes": 22,
+            "score": 0.992,
+            "date": "2026-11-12",
+            "video_id": "arzFtwHueZk"
+          }
+        ],
+        "infraestrutura_ocupacao_risco": [
+          {
+            "text": "CASAS MAU Construídas DA NISSO QUANDO CHOVE",
+            "likes": 2,
+            "score": 0.998,
+            "date": "2026-11-12",
+            "video_id": "DWMys-ujupc"
+          },
+          {
+            "text": "É só não construir na margem do rio como manda a lei que tudo fica de boas.",
+            "likes": 0,
+            "score": 0.998,
+            "date": "2026-11-13",
+            "video_id": "arzFtwHueZk"
+          },
+          {
+            "text": "Eu não tenho casa quero que vocês me dê um terreno de 1000 metros quadrado",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-11-13",
+            "video_id": "DWMys-ujupc"
+          },
+          {
+            "text": "O pessoal destruiu a natureza e construiu más agora todos estão pagando o parto pela construção de asfalto e más prédios e menos árvores",
+            "likes": 1,
+            "score": 0.997,
+            "date": "2026-11-13",
+            "video_id": "arzFtwHueZk"
+          },
+          {
+            "text": "O pessoal destruiu a natureza e construiu más agora todos estão pagando o parto pela construção de asfalto e más prédios e menos árvores",
+            "likes": 1,
+            "score": 0.997,
+            "date": "2026-11-13",
+            "video_id": "arzFtwHueZk"
+          },
+          {
+            "text": "Pela chuva não, pelo alagamento sim. Se houvesse boa manutenção dos bueiros e um aumento da construção de canos subterrâneos de drenagem isso não aconteceria.",
+            "likes": 4,
+            "score": 0.996,
+            "date": "2026-11-13",
+            "video_id": "e05kvv6FyQI"
+          },
+          {
+            "text": "Normal , ali tem um rio soterrado, queriam que acontecesse o que quando chovesse? Rs",
+            "likes": 3,
+            "score": 0.996,
+            "date": "2026-11-13",
+            "video_id": "e05kvv6FyQI"
+          },
+          {
+            "text": "Se fôssemos um país de primeiro mundo usaríamos a tuneladora do metrô para fazer galerias de esgotos decente.",
+            "likes": 0,
+            "score": 0.995,
+            "date": "2026-11-13",
+            "video_id": "arzFtwHueZk"
+          },
+          {
+            "text": "Faz o T de Tarcísio ou N de Nunes agora . São culpados pelo alagamento sim. Se houvesse boa manutenção dos bueiros e um aumento da construção de canos subterrâneos de drenagem isso não aconteceria.",
+            "likes": 4,
+            "score": 0.995,
+            "date": "2026-11-13",
+            "video_id": "e05kvv6FyQI"
+          },
+          {
+            "text": "O problema ae más construções asfalto e menos árvores e más e cidade más quente com más chuva ae no final ae no centro de São Paulo todos se lasca destrói a natureza e menos árvores ae depois vem as consequências",
+            "likes": 1,
+            "score": 0.993,
+            "date": "2026-11-13",
+            "video_id": "arzFtwHueZk"
+          },
+          {
+            "text": "Ricardo Nunes anunciou 11 bilhões destinadas a esse casa da situação hídrica do país quando chove. Para onde está indo esse dinheiro? São ONZE bilhões. Cadê a direita para cobrar seus políticos sobre as medidas para SP? E para onde está indo tamanho investimento?",
+            "likes": 22,
+            "score": 0.99,
+            "date": "2026-11-12",
+            "video_id": "arzFtwHueZk"
+          },
+          {
+            "text": "Responsabilidade do Ricardo Nunes, afinal, cabe ao incompetente cuidar da capital e do Tarcísio, que deu quiser de graça a Sabesp, responsável pela manutenção e aplicação do sistema de drenagem de águas pluviais",
+            "likes": 3,
+            "score": 0.974,
+            "date": "2026-11-12",
+            "video_id": "arzFtwHueZk"
+          }
+        ],
+        "clima_chuva_meio_ambiente": [
+          {
+            "text": "Muitas perdas, atrapalhos, nada agradáveis. O el niño realmente é um menino difícil...😮. E isso dizem que vai até fevereiro?, esperamos que amenize o seu ímpeto. Que possamos com sabedoria e ação, acharmos saídas para não recrudescer a violência da natureza. Uma das melhores ações é conscientização humana do problema e então, pararmos de degradar o meio ambiente enquanto ainda pode haver concerto.",
+            "likes": 2,
+            "score": 0.998,
+            "date": "2026-11-12",
+            "video_id": "DWMys-ujupc"
+          },
+          {
+            "text": "Alagamentos acontecem em todos os cantos do planeta.",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-11-13",
+            "video_id": "arzFtwHueZk"
+          },
+          {
+            "text": "A natureza é Deus, que não possui características humanas, não possui vontade pessoal, não escuta súplicas, não faz milagres, não julga, premia ou castiga as pessoas. Rituais, orações, sacrifícios, barganhas ou súplicas não têm o poder de alterar a realidade das leis naturais. A admiração racional e o respeito profundo à ordem natural das coisas prevalecem sobre o temor religioso.",
+            "likes": 4,
+            "score": 0.997,
+            "date": "2026-11-12",
+            "video_id": "arzFtwHueZk"
+          },
+          {
+            "text": "Ainda bem que é só chuva, imaginem se tivéssemos terremotos, vulcões, etc! Foi SC, agora SP e semana que vem será o Nordeste, segundo as previsões do tempo",
+            "likes": 0,
+            "score": 0.996,
+            "date": "2026-11-13",
+            "video_id": "arzFtwHueZk"
+          },
+          {
+            "text": "Eu achei que eleger o Pavanato para acabar com o banheiro trans em SP resolveria todos os problemas de mobilidade urbana, enchentes, trafico de drogas, ostensividade policial, roubos, furtos entre tantos outros problemas... (contém ironia).",
+            "likes": 39,
+            "score": 0.996,
+            "date": "2026-11-12",
+            "video_id": "arzFtwHueZk"
+          },
+          {
+            "text": "bom, pelo menos não alagou nenhum banheiro trans",
+            "likes": 7,
+            "score": 0.996,
+            "date": "2026-11-13",
+            "video_id": "e05kvv6FyQI"
+          },
+          {
+            "text": "Eo tarciso que manda chuva 😂😂😂",
+            "likes": 1,
+            "score": 0.996,
+            "date": "2026-11-13",
+            "video_id": "arzFtwHueZk"
+          },
+          {
+            "text": "Aos poucos a natureza vai ensinando o povo que vigiar banheiro não era a solução.",
+            "likes": 12,
+            "score": 0.996,
+            "date": "2026-11-12",
+            "video_id": "arzFtwHueZk"
+          },
+          {
+            "text": "O que importa é que não tá alagadê!",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-11-13",
+            "video_id": "arzFtwHueZk"
+          },
+          {
+            "text": "Ridiculo culpar governador e prefeito pela chuva. Culpe Deus que mando a chuva.",
+            "likes": 1,
+            "score": 0.994,
+            "date": "2026-11-13",
+            "video_id": "e05kvv6FyQI"
+          },
+          {
+            "text": "Só falta agora mandar o tarciso colocar guarda chuva no ceu pra não chover mas tão culpando o governo até porcausa da chuva 😂😂😂",
+            "likes": 1,
+            "score": 0.994,
+            "date": "2026-11-13",
+            "video_id": "arzFtwHueZk"
+          },
+          {
+            "text": "E ele é culpado pelos fenômenos da natureza? Tem 300 anos, que SP inunda. Larga mão de ser besta, petista",
+            "likes": 1,
+            "score": 0.993,
+            "date": "2026-11-13",
+            "video_id": "e05kvv6FyQI"
+          },
+          {
+            "text": "A natureza está pedindo socorro 🙏🌏",
+            "likes": 4,
+            "score": 0.993,
+            "date": "2026-11-12",
+            "video_id": "arzFtwHueZk"
+          },
+          {
+            "text": "O problema ae más construções asfalto e menos árvores e más e cidade más quente com más chuva ae no final ae no centro de São Paulo todos se lasca destrói a natureza e menos árvores ae depois vem as consequências",
+            "likes": 1,
+            "score": 0.992,
+            "date": "2026-11-13",
+            "video_id": "arzFtwHueZk"
+          },
+          {
+            "text": "Pela chuva não, pelo alagamento sim. Se houvesse boa manutenção dos bueiros e um aumento da construção de canos subterrâneos de drenagem isso não aconteceria.",
+            "likes": 4,
+            "score": 0.991,
+            "date": "2026-11-13",
+            "video_id": "e05kvv6FyQI"
+          },
+          {
+            "text": "Tantas obras em SP/capital e não aguenta uma chuva 👎👎👎👎",
+            "likes": 1,
+            "score": 0.99,
+            "date": "2026-11-13",
+            "video_id": "arzFtwHueZk"
+          },
+          {
+            "text": "SP não evolui mesmo, todo ano nas épocas de chuvarada é igual e nem chegou janeiro q é tecnicamente o mês das chuvas. Governo não tem plano de ação climática será?🤔🤔🤔🤔😒😏",
+            "likes": 1,
+            "score": 0.989,
+            "date": "2026-11-13",
+            "video_id": "arzFtwHueZk"
+          },
+          {
+            "text": "A chuva pode ser acaso, mas o descuido do acúmulo de água e ações para minimizar dados e culpa exclusivamente dos governantes. Mas daí vão dizer que Tarsicio não é São Pedro.",
             "likes": 0,
             "score": 0.988,
             "date": "2026-11-12",
-            "video_id": "YcLPITcnArI"
+            "video_id": "arzFtwHueZk"
           },
           {
             "text": "Então turma de Santo André... vocês reelegeram o prefeito do Centrão. Agora não adianta reclamar. Boa enchente!",
-            "likes": 1,
+            "likes": 3,
             "score": 0.985,
             "date": "2026-11-12",
             "video_id": "arzFtwHueZk"
           },
           {
-            "text": "verdade amiga.Isso é culpa dos seres humanos ,forças de segurança que não combate o desmatamento ambiental,a caça,garrimpeiros e etc...O mundo irá se acabar aos poucos na mãos do seres humanos,mas tud tem conseuqencias na vida,pois eles tem filhos,crianças e etc.....O mundo precisa da natureza e todos sos animais vivos,enfim.....Eu peço a Deus que protega todos os animais nesse mundo,natureza,anim",
-            "likes": 3,
-            "score": 0.964,
-            "date": "2026-11-12",
-            "video_id": "arzFtwHueZk"
-          },
-          {
-            "text": "São Paulo vai sucumbir diante das mudanças climáticas. Resiliência zero! Negativa até.",
-            "likes": 3,
-            "score": 0.898,
-            "date": "2026-11-12",
+            "text": "O pessoal destruiu a natureza e construiu más agora todos estão pagando o parto pela construção de asfalto e más prédios e menos árvores",
+            "likes": 1,
+            "score": 0.984,
+            "date": "2026-11-13",
             "video_id": "arzFtwHueZk"
           }
         ],
@@ -9721,31 +9986,38 @@
             "score": 0.996,
             "date": "2026-11-12",
             "video_id": "arzFtwHueZk"
+          },
+          {
+            "text": "Aqui na zona sul não choveu nada e nem muito menos alagou",
+            "likes": 0,
+            "score": 0.992,
+            "date": "2026-11-13",
+            "video_id": "e05kvv6FyQI"
           }
         ],
         "alerta_prevencao_cobranca": [
           {
-            "text": "Chama o prefeito lixo que cortou as verbas das obras de prevenção a enchentes 👉🏼🤯 Aprendam a votar nos que dignificam nosso povo, pobre e trabalhador‼️",
-            "likes": 0,
-            "score": 0.996,
-            "date": "2026-11-12",
-            "video_id": "YcLPITcnArI"
+            "text": "O importante mesmo é votar c9ntra o PT, contra o risco de banheiro unissex. O importante é ser contra o comunismo. O povo que morra afofado😢",
+            "likes": 8,
+            "score": 0.998,
+            "date": "2026-11-13",
+            "video_id": "e05kvv6FyQI"
+          },
+          {
+            "text": "SP não evolui mesmo, todo ano nas épocas de chuvarada é igual e nem chegou janeiro q é tecnicamente o mês das chuvas. Governo não tem plano de ação climática será?🤔🤔🤔🤔😒😏",
+            "likes": 1,
+            "score": 0.995,
+            "date": "2026-11-13",
+            "video_id": "arzFtwHueZk"
           }
         ],
         "critica_midia_informacao": [
           {
             "text": "verdade amiga.Isso é culpa dos seres humanos ,forças de segurança que não combate o desmatamento ambiental,a caça,garrimpeiros e etc...O mundo irá se acabar aos poucos na mãos do seres humanos,mas tud tem conseuqencias na vida,pois eles tem filhos,crianças e etc.....O mundo precisa da natureza e todos sos animais vivos,enfim.....Eu peço a Deus que protega todos os animais nesse mundo,natureza,anim",
-            "likes": 3,
+            "likes": 7,
             "score": 0.997,
             "date": "2026-11-12",
             "video_id": "arzFtwHueZk"
-          },
-          {
-            "text": "Que vocês do Brasil Urgente, continuem com o jornalismo.",
-            "likes": 0,
-            "score": 0.997,
-            "date": "2026-11-12",
-            "video_id": "YcLPITcnArI"
           },
           {
             "text": "Top",
@@ -9753,13 +10025,41 @@
             "score": 0.994,
             "date": "2026-11-12",
             "video_id": "bPJmrQzMHcY"
+          },
+          {
+            "text": "Não vi nada que já não tenha ocorrido antes...zero novidades",
+            "likes": 0,
+            "score": 0.989,
+            "date": "2026-11-13",
+            "video_id": "e05kvv6FyQI"
+          },
+          {
+            "text": "Isso não é importante o q está em foco é o banheirp trans. Pavanato, Lucas",
+            "likes": 2,
+            "score": 0.963,
+            "date": "2026-11-13",
+            "video_id": "arzFtwHueZk"
+          },
+          {
+            "text": "tavs querendo aparecer",
+            "likes": 3,
+            "score": 0.946,
+            "date": "2026-11-13",
+            "video_id": "P6WrQDeBufY"
+          },
+          {
+            "text": "a sim claro",
+            "likes": 1,
+            "score": 0.801,
+            "date": "2026-11-13",
+            "video_id": "P6WrQDeBufY"
           }
         ]
       },
       "academic_studies": [],
       "observation_status": "extended",
       "priority_tier": "moderado",
-      "flag": "acompanhamento",
+      "flag": "prioritario",
       "flag_history": [
         {
           "flag": "alerta",
@@ -9769,13 +10069,23 @@
           "flag": "acompanhamento",
           "at": "2026-11-12T23:03:34Z",
           "criterio": "municipal_v0.3.2"
+        },
+        {
+          "flag": "prioritario",
+          "at": "2026-11-13T23:06:50Z",
+          "criterio": "municipal_v0.3.2"
         }
       ],
-      "n_comments_valid": 38,
+      "n_comments_valid": 100,
       "videos_with_valid_comments": [
+        "D1o7LtNuOaU",
+        "DWMys-ujupc",
+        "P6WrQDeBufY",
+        "RU_m8qEgZIM",
         "YcLPITcnArI",
         "arzFtwHueZk",
         "bPJmrQzMHcY",
+        "e05kvv6FyQI",
         "kGTyh6sDNFI",
         "wURsbNR8_pQ"
       ],
@@ -9788,20 +10098,25 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-12T23:03:34Z",
-      "next_collection_at": "2026-11-13T16:27:13Z",
+      "last_collection_at": "2026-11-13T23:06:50Z",
+      "next_collection_at": "2026-11-14T05:06:50Z",
       "window_finalized_at": null,
       "counters_integrity": "inflated_pre_v0.3",
       "videos_por_formato": {
-        "longo": 3,
-        "short": 4
+        "longo": 4,
+        "short": 6
       },
-      "n_videos_municipais": 4,
-      "n_videos_verificados": 7,
-      "n_comments_municipais": 40,
-      "n_comments_valid_municipal": 32,
+      "n_videos_municipais": 9,
+      "n_videos_verificados": 10,
+      "n_comments_municipais": 109,
+      "n_comments_valid_municipal": 94,
       "videos_with_valid_comments_municipal": [
+        "D1o7LtNuOaU",
+        "DWMys-ujupc",
+        "P6WrQDeBufY",
+        "RU_m8qEgZIM",
         "arzFtwHueZk",
+        "e05kvv6FyQI",
         "kGTyh6sDNFI",
         "wURsbNR8_pQ"
       ],
@@ -10216,8 +10531,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-12T23:03:34Z",
-      "next_collection_at": "2026-11-13T16:27:13Z",
+      "last_collection_at": "2026-11-13T23:06:50Z",
+      "next_collection_at": "2026-11-14T11:06:50Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {
