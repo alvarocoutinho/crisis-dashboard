@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T23:47:53Z",
+  "generated_at": "2026-11-19T05:21:18Z",
   "pipeline_version": "0.3.3",
   "pilot_mode": true,
   "dry_run": false,
@@ -1132,8 +1132,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-18T00:19:11Z",
-      "next_collection_at": "2026-11-19T00:19:11Z",
+      "last_collection_at": "2026-11-19T05:20:51Z",
+      "next_collection_at": "2026-11-20T05:20:51Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -1246,8 +1246,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-18T00:19:11Z",
-      "next_collection_at": "2026-11-19T00:19:11Z",
+      "last_collection_at": "2026-11-19T05:20:51Z",
+      "next_collection_at": "2026-11-20T05:20:51Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -1360,8 +1360,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-18T00:19:11Z",
-      "next_collection_at": "2026-11-19T00:19:11Z",
+      "last_collection_at": "2026-11-19T05:20:51Z",
+      "next_collection_at": "2026-11-20T05:20:51Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -1474,8 +1474,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-18T00:19:11Z",
-      "next_collection_at": "2026-11-19T00:19:11Z",
+      "last_collection_at": "2026-11-19T05:20:51Z",
+      "next_collection_at": "2026-11-20T05:20:51Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -2181,20 +2181,20 @@
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
-      "n_comments": 0,
+      "n_comments": 1,
       "n_videos": 1,
       "unlabeled": 0,
       "unlabeled_pct": 0.0,
       "date_range": [
-        "",
-        ""
+        "2026-11-18",
+        "2026-11-18"
       ],
       "distribution": [
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
+          "count": 1,
+          "pct": 100.0
         },
         {
           "key": "ajuda_resgate_doacoes",
@@ -2239,20 +2239,38 @@
           "pct": 0.0
         }
       ],
-      "timeline": [],
+      "timeline": [
+        {
+          "date": "18/11/26",
+          "count": 1
+        }
+      ],
       "videos": [
         {
           "video_id": "TpigmigVtgo",
-          "n_comments": 0,
+          "n_comments": 1,
           "total_likes": 0,
-          "first_comment": "",
-          "top_categories": [],
+          "first_comment": "18/11/2026",
+          "top_categories": [
+            {
+              "label": "Solidariedade",
+              "count": 1
+            }
+          ],
           "municipal_evidence": "descricao",
           "formato": "short"
         }
       ],
       "all_samples": {
-        "solidariedade_oracao_luto": [],
+        "solidariedade_oracao_luto": [
+          {
+            "text": "Deus tenha misericórdia de nós",
+            "likes": 0,
+            "score": 0.994,
+            "date": "2026-11-18",
+            "video_id": "TpigmigVtgo"
+          }
+        ],
         "ajuda_resgate_doacoes": [],
         "responsabilizacao_governanca": [],
         "infraestrutura_ocupacao_risco": [],
@@ -2276,19 +2294,21 @@
           "criterio": "municipal_v0.3.2"
         }
       ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
+      "n_comments_valid": 1,
+      "videos_with_valid_comments": [
+        "TpigmigVtgo"
+      ],
       "alert_opened_at": "2026-11-18T06:25:50Z",
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "silent",
-        "silence_type": "videos_without_comments",
+        "status": "ok",
+        "silence_type": null,
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-18T14:55:00Z",
-      "next_collection_at": "2026-11-19T02:55:00Z",
+      "last_collection_at": "2026-11-19T05:20:51Z",
+      "next_collection_at": "2026-11-19T17:20:51Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {
@@ -2296,9 +2316,11 @@
       },
       "n_videos_municipais": 1,
       "n_videos_verificados": 1,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
+      "n_comments_municipais": 1,
+      "n_comments_valid_municipal": 1,
+      "videos_with_valid_comments_municipal": [
+        "TpigmigVtgo"
+      ],
       "flag_reassessment": null
     },
     {
@@ -2426,20 +2448,20 @@
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
-      "n_comments": 0,
+      "n_comments": 1,
       "n_videos": 1,
       "unlabeled": 0,
       "unlabeled_pct": 0.0,
       "date_range": [
-        "",
-        ""
+        "2026-11-18",
+        "2026-11-18"
       ],
       "distribution": [
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
+          "count": 1,
+          "pct": 100.0
         },
         {
           "key": "ajuda_resgate_doacoes",
@@ -2484,20 +2506,38 @@
           "pct": 0.0
         }
       ],
-      "timeline": [],
+      "timeline": [
+        {
+          "date": "18/11/26",
+          "count": 1
+        }
+      ],
       "videos": [
         {
           "video_id": "TpigmigVtgo",
-          "n_comments": 0,
+          "n_comments": 1,
           "total_likes": 0,
-          "first_comment": "",
-          "top_categories": [],
+          "first_comment": "18/11/2026",
+          "top_categories": [
+            {
+              "label": "Solidariedade",
+              "count": 1
+            }
+          ],
           "municipal_evidence": "titulo+descricao",
           "formato": "short"
         }
       ],
       "all_samples": {
-        "solidariedade_oracao_luto": [],
+        "solidariedade_oracao_luto": [
+          {
+            "text": "Deus tenha misericórdia de nós",
+            "likes": 0,
+            "score": 0.994,
+            "date": "2026-11-18",
+            "video_id": "TpigmigVtgo"
+          }
+        ],
         "ajuda_resgate_doacoes": [],
         "responsabilizacao_governanca": [],
         "infraestrutura_ocupacao_risco": [],
@@ -2521,19 +2561,21 @@
           "criterio": "municipal_v0.3.2"
         }
       ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
+      "n_comments_valid": 1,
+      "videos_with_valid_comments": [
+        "TpigmigVtgo"
+      ],
       "alert_opened_at": "2026-11-18T08:41:29Z",
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "silent",
-        "silence_type": "videos_without_comments",
+        "status": "ok",
+        "silence_type": null,
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-18T14:55:00Z",
-      "next_collection_at": "2026-11-19T02:55:00Z",
+      "last_collection_at": "2026-11-19T05:20:51Z",
+      "next_collection_at": "2026-11-19T17:20:51Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {
@@ -2541,9 +2583,11 @@
       },
       "n_videos_municipais": 1,
       "n_videos_verificados": 1,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
+      "n_comments_municipais": 1,
+      "n_comments_valid_municipal": 1,
+      "videos_with_valid_comments_municipal": [
+        "TpigmigVtgo"
+      ],
       "flag_reassessment": null
     },
     {
@@ -2821,7 +2865,7 @@
       "last_collection_at": "2026-11-18T23:46:28Z",
       "next_collection_at": "2026-11-19T23:46:28Z",
       "window_finalized_at": null,
-      "counters_integrity": "ok",
+      "counters_integrity": "inflated_pre_v0.3",
       "videos_por_formato": {
         "short": 1
       },
@@ -2946,7 +2990,7 @@
       "last_collection_at": null,
       "next_collection_at": "2026-11-19T11:46:28Z",
       "window_finalized_at": null,
-      "counters_integrity": "ok",
+      "counters_integrity": "inflated_pre_v0.3",
       "videos_por_formato": {},
       "n_videos_municipais": 0,
       "n_videos_verificados": 0,
@@ -3063,6 +3107,348 @@
       },
       "last_collection_at": "2026-11-18T23:46:28Z",
       "next_collection_at": "2026-11-19T23:46:28Z",
+      "window_finalized_at": null,
+      "counters_integrity": "ok",
+      "videos_por_formato": {},
+      "n_videos_municipais": 0,
+      "n_videos_verificados": 0,
+      "n_comments_municipais": 0,
+      "n_comments_valid_municipal": 0,
+      "videos_with_valid_comments_municipal": [],
+      "flag_reassessment": null
+    },
+    {
+      "id": "cemaden_mg_3486",
+      "municipio": "Chapada do Norte",
+      "uf": "MG",
+      "tipo": "Movimentos de Massa",
+      "nivel": "Moderado",
+      "data_alerta": "18/11/2026",
+      "codibge": "3116100",
+      "lat": null,
+      "lon": null,
+      "regime": "prospective_live",
+      "n_comments": 0,
+      "n_videos": 0,
+      "unlabeled": 0,
+      "unlabeled_pct": 0.0,
+      "date_range": [
+        "",
+        ""
+      ],
+      "distribution": [
+        {
+          "key": "solidariedade_oracao_luto",
+          "label": "Solidariedade / oração / luto",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "ajuda_resgate_doacoes",
+          "label": "Ajuda / resgate / doações",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "responsabilizacao_governanca",
+          "label": "Responsabilização / governança",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "infraestrutura_ocupacao_risco",
+          "label": "Infraestrutura / ocupação de risco",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "clima_chuva_meio_ambiente",
+          "label": "Clima / chuva / meio ambiente",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "experiencia_pessoal_local",
+          "label": "Experiência pessoal / local",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "alerta_prevencao_cobranca",
+          "label": "Alerta / prevenção / cobrança",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "critica_midia_informacao",
+          "label": "Crítica à mídia / informação",
+          "count": 0,
+          "pct": 0.0
+        }
+      ],
+      "timeline": [],
+      "videos": [],
+      "all_samples": {
+        "solidariedade_oracao_luto": [],
+        "ajuda_resgate_doacoes": [],
+        "responsabilizacao_governanca": [],
+        "infraestrutura_ocupacao_risco": [],
+        "clima_chuva_meio_ambiente": [],
+        "experiencia_pessoal_local": [],
+        "alerta_prevencao_cobranca": [],
+        "critica_midia_informacao": []
+      },
+      "academic_studies": [],
+      "observation_status": "active",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-11-18T21:53:32Z"
+        }
+      ],
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "alert_opened_at": "2026-11-18T21:53:32Z",
+      "alert_closed_at": null,
+      "alert_transitions": [],
+      "collection_health": {
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
+      },
+      "last_collection_at": "2026-11-19T05:20:51Z",
+      "next_collection_at": "2026-11-20T05:20:51Z",
+      "window_finalized_at": null,
+      "counters_integrity": "ok",
+      "videos_por_formato": {},
+      "n_videos_municipais": 0,
+      "n_videos_verificados": 0,
+      "n_comments_municipais": 0,
+      "n_comments_valid_municipal": 0,
+      "videos_with_valid_comments_municipal": [],
+      "flag_reassessment": null
+    },
+    {
+      "id": "cemaden_rj_3487",
+      "municipio": "Nova Friburgo",
+      "uf": "RJ",
+      "tipo": "Risco Hidrológico",
+      "nivel": "Moderado",
+      "data_alerta": "19/11/2026",
+      "codibge": "3303401",
+      "lat": null,
+      "lon": null,
+      "regime": "prospective_live",
+      "n_comments": 0,
+      "n_videos": 0,
+      "unlabeled": 0,
+      "unlabeled_pct": 0.0,
+      "date_range": [
+        "",
+        ""
+      ],
+      "distribution": [
+        {
+          "key": "solidariedade_oracao_luto",
+          "label": "Solidariedade / oração / luto",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "ajuda_resgate_doacoes",
+          "label": "Ajuda / resgate / doações",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "responsabilizacao_governanca",
+          "label": "Responsabilização / governança",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "infraestrutura_ocupacao_risco",
+          "label": "Infraestrutura / ocupação de risco",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "clima_chuva_meio_ambiente",
+          "label": "Clima / chuva / meio ambiente",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "experiencia_pessoal_local",
+          "label": "Experiência pessoal / local",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "alerta_prevencao_cobranca",
+          "label": "Alerta / prevenção / cobrança",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "critica_midia_informacao",
+          "label": "Crítica à mídia / informação",
+          "count": 0,
+          "pct": 0.0
+        }
+      ],
+      "timeline": [],
+      "videos": [],
+      "all_samples": {
+        "solidariedade_oracao_luto": [],
+        "ajuda_resgate_doacoes": [],
+        "responsabilizacao_governanca": [],
+        "infraestrutura_ocupacao_risco": [],
+        "clima_chuva_meio_ambiente": [],
+        "experiencia_pessoal_local": [],
+        "alerta_prevencao_cobranca": [],
+        "critica_midia_informacao": []
+      },
+      "academic_studies": [],
+      "observation_status": "active",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-11-19T00:13:13Z"
+        }
+      ],
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "alert_opened_at": "2026-11-19T00:13:13Z",
+      "alert_closed_at": null,
+      "alert_transitions": [],
+      "collection_health": {
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
+      },
+      "last_collection_at": "2026-11-19T05:20:51Z",
+      "next_collection_at": "2026-11-20T05:20:51Z",
+      "window_finalized_at": null,
+      "counters_integrity": "ok",
+      "videos_por_formato": {},
+      "n_videos_municipais": 0,
+      "n_videos_verificados": 0,
+      "n_comments_municipais": 0,
+      "n_comments_valid_municipal": 0,
+      "videos_with_valid_comments_municipal": [],
+      "flag_reassessment": null
+    },
+    {
+      "id": "cemaden_rj_3488",
+      "municipio": "Nova Friburgo",
+      "uf": "RJ",
+      "tipo": "Movimentos de Massa",
+      "nivel": "Moderado",
+      "data_alerta": "19/11/2026",
+      "codibge": "3303401",
+      "lat": null,
+      "lon": null,
+      "regime": "prospective_live",
+      "n_comments": 0,
+      "n_videos": 0,
+      "unlabeled": 0,
+      "unlabeled_pct": 0.0,
+      "date_range": [
+        "",
+        ""
+      ],
+      "distribution": [
+        {
+          "key": "solidariedade_oracao_luto",
+          "label": "Solidariedade / oração / luto",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "ajuda_resgate_doacoes",
+          "label": "Ajuda / resgate / doações",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "responsabilizacao_governanca",
+          "label": "Responsabilização / governança",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "infraestrutura_ocupacao_risco",
+          "label": "Infraestrutura / ocupação de risco",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "clima_chuva_meio_ambiente",
+          "label": "Clima / chuva / meio ambiente",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "experiencia_pessoal_local",
+          "label": "Experiência pessoal / local",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "alerta_prevencao_cobranca",
+          "label": "Alerta / prevenção / cobrança",
+          "count": 0,
+          "pct": 0.0
+        },
+        {
+          "key": "critica_midia_informacao",
+          "label": "Crítica à mídia / informação",
+          "count": 0,
+          "pct": 0.0
+        }
+      ],
+      "timeline": [],
+      "videos": [],
+      "all_samples": {
+        "solidariedade_oracao_luto": [],
+        "ajuda_resgate_doacoes": [],
+        "responsabilizacao_governanca": [],
+        "infraestrutura_ocupacao_risco": [],
+        "clima_chuva_meio_ambiente": [],
+        "experiencia_pessoal_local": [],
+        "alerta_prevencao_cobranca": [],
+        "critica_midia_informacao": []
+      },
+      "academic_studies": [],
+      "observation_status": "active",
+      "priority_tier": "moderado",
+      "flag": "alerta",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-11-19T00:15:28Z"
+        }
+      ],
+      "n_comments_valid": 0,
+      "videos_with_valid_comments": [],
+      "alert_opened_at": "2026-11-19T00:15:28Z",
+      "alert_closed_at": null,
+      "alert_transitions": [],
+      "collection_health": {
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
+      },
+      "last_collection_at": "2026-11-19T05:20:51Z",
+      "next_collection_at": "2026-11-20T05:20:51Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -10672,8 +11058,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-18T14:55:00Z",
-      "next_collection_at": "2026-11-19T02:55:00Z",
+      "last_collection_at": "2026-11-19T05:20:51Z",
+      "next_collection_at": "2026-11-19T17:20:51Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {
@@ -10697,38 +11083,38 @@
       "lat": null,
       "lon": null,
       "regime": "prospective_live",
-      "n_comments": 6,
-      "n_videos": 2,
+      "n_comments": 8,
+      "n_videos": 3,
       "unlabeled": 1,
-      "unlabeled_pct": 16.7,
+      "unlabeled_pct": 12.5,
       "date_range": [
         "2026-11-17",
-        "2026-11-18"
+        "2026-11-19"
       ],
       "distribution": [
         {
           "key": "solidariedade_oracao_luto",
           "label": "Solidariedade / oração / luto",
-          "count": 2,
-          "pct": 33.3
+          "count": 4,
+          "pct": 50.0
         },
         {
           "key": "ajuda_resgate_doacoes",
           "label": "Ajuda / resgate / doações",
           "count": 1,
-          "pct": 16.7
+          "pct": 12.5
         },
         {
           "key": "responsabilizacao_governanca",
           "label": "Responsabilização / governança",
           "count": 2,
-          "pct": 33.3
+          "pct": 25.0
         },
         {
           "key": "infraestrutura_ocupacao_risco",
           "label": "Infraestrutura / ocupação de risco",
           "count": 1,
-          "pct": 16.7
+          "pct": 12.5
         },
         {
           "key": "clima_chuva_meio_ambiente",
@@ -10762,19 +11148,23 @@
         },
         {
           "date": "18/11/26",
+          "count": 2
+        },
+        {
+          "date": "19/11/26",
           "count": 1
         }
       ],
       "videos": [
         {
           "video_id": "D1S72PRacPQ",
-          "n_comments": 6,
+          "n_comments": 7,
           "total_likes": 1,
           "first_comment": "17/11/2026",
           "top_categories": [
             {
               "label": "Solidariedade",
-              "count": 2
+              "count": 3
             },
             {
               "label": "Responsabilização",
@@ -10790,16 +11180,44 @@
         },
         {
           "video_id": "TpigmigVtgo",
+          "n_comments": 1,
+          "total_likes": 0,
+          "first_comment": "18/11/2026",
+          "top_categories": [
+            {
+              "label": "Solidariedade",
+              "count": 1
+            }
+          ],
+          "municipal_evidence": "descricao",
+          "formato": "short"
+        },
+        {
+          "video_id": "CutAwW4V6-E",
           "n_comments": 0,
           "total_likes": 0,
           "first_comment": "",
           "top_categories": [],
-          "municipal_evidence": "descricao",
+          "municipal_evidence": "titulo+descricao",
           "formato": "short"
         }
       ],
       "all_samples": {
         "solidariedade_oracao_luto": [
+          {
+            "text": "Deus tenha misericórdia de nós",
+            "likes": 0,
+            "score": 0.994,
+            "date": "2026-11-18",
+            "video_id": "TpigmigVtgo"
+          },
+          {
+            "text": "😮😮😟😟☹😱😲😰😭",
+            "likes": 0,
+            "score": 0.974,
+            "date": "2026-11-19",
+            "video_id": "D1S72PRacPQ"
+          },
           {
             "text": "Que Deus proteja as pessoas. E que o Governo cuide destes transtornos climáticos.",
             "likes": 0,
@@ -10869,9 +11287,10 @@
           "criterio": "municipal_v0.3.2"
         }
       ],
-      "n_comments_valid": 5,
+      "n_comments_valid": 7,
       "videos_with_valid_comments": [
-        "D1S72PRacPQ"
+        "D1S72PRacPQ",
+        "TpigmigVtgo"
       ],
       "alert_opened_at": "2026-11-16T15:50:28Z",
       "alert_closed_at": "2026-11-17T15:18:58Z",
@@ -10882,19 +11301,20 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-18T14:55:00Z",
-      "next_collection_at": "2026-11-19T02:55:00Z",
+      "last_collection_at": "2026-11-19T05:20:51Z",
+      "next_collection_at": "2026-11-19T17:20:51Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {
-        "short": 2
+        "short": 3
       },
-      "n_videos_municipais": 2,
-      "n_videos_verificados": 2,
-      "n_comments_municipais": 6,
-      "n_comments_valid_municipal": 5,
+      "n_videos_municipais": 3,
+      "n_videos_verificados": 3,
+      "n_comments_municipais": 8,
+      "n_comments_valid_municipal": 7,
       "videos_with_valid_comments_municipal": [
-        "D1S72PRacPQ"
+        "D1S72PRacPQ",
+        "TpigmigVtgo"
       ],
       "flag_reassessment": null
     },
