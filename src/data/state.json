@@ -1,15 +1,15 @@
 {
   "schema_version": "0.2",
   "pipeline_version": "0.3.3",
-  "last_run_at": "2026-11-21T13:59:28Z",
+  "last_run_at": "2026-11-21T22:40:16Z",
   "last_run_status": "partial",
-  "last_run_duration_seconds": 24,
+  "last_run_duration_seconds": 38,
   "last_cemaden_check_at": "2026-11-21T13:59:28Z",
   "youtube_quota": {
-    "used_today": 38,
+    "used_today": 62,
     "reset_at": "2026-11-22T08:00:00Z",
     "day": "2026-11-21",
-    "searches_today": 20
+    "searches_today": 28
   },
   "active_alerts": {
     "cemaden_mg_3479": {
@@ -71,12 +71,12 @@
       "videos_with_valid_comments": [],
       "last_new_data_at": null,
       "last_new_comment_at": null,
-      "last_collection_at": "2026-11-20T14:42:53Z",
-      "next_collection_at": "2026-11-21T14:42:53Z",
+      "last_collection_at": "2026-11-21T22:40:16Z",
+      "next_collection_at": "2026-11-22T22:40:16Z",
       "n_videos_municipais": 0,
       "n_comments_valid_municipal": 0,
       "videos_with_valid_comments_municipal": [],
-      "last_attempt_at": "2026-11-20T14:42:53Z",
+      "last_attempt_at": "2026-11-21T22:40:16Z",
       "consecutive_failures": 0,
       "last_error": null,
       "legacy_unverified": false,
@@ -295,7 +295,8 @@
       "last_attempt_at": "2026-11-21T13:59:28Z",
       "consecutive_failures": 0,
       "last_error": null,
-      "legacy_unverified": false
+      "legacy_unverified": false,
+      "counters_integrity": "ok"
     },
     "cemaden_pr_3568": {
       "codibge": "4128104",
@@ -329,7 +330,8 @@
       "last_attempt_at": "2026-11-21T13:59:28Z",
       "consecutive_failures": 0,
       "last_error": null,
-      "legacy_unverified": false
+      "legacy_unverified": false,
+      "counters_integrity": "ok"
     }
   },
   "extended_window_alerts": {
@@ -1676,8 +1678,8 @@
       ],
       "last_new_data_at": "2026-11-20T14:42:53Z",
       "last_new_comment_at": "2026-11-19T05:20:51Z",
-      "last_collection_at": "2026-11-21T05:01:31Z",
-      "next_collection_at": "2026-11-21T17:01:31Z",
+      "last_collection_at": "2026-11-21T22:40:16Z",
+      "next_collection_at": "2026-11-22T10:40:16Z",
       "video_evidence": {
         "TpigmigVtgo": "descricao",
         "3pStVqJanTQ": "descricao"
@@ -1691,17 +1693,16 @@
         "TpigmigVtgo": "short",
         "3pStVqJanTQ": "short"
       },
-      "last_attempt_at": "2026-11-21T05:01:31Z",
+      "last_attempt_at": "2026-11-21T22:40:16Z",
       "consecutive_failures": 0,
       "last_error": null,
       "legacy_unverified": false,
       "counters_integrity": "ok",
-      "seen_comment_hashes": [
-        "e2b8e5f6e9bb"
-      ],
       "valid_comments_by_video": {
         "TpigmigVtgo": 1
-      }
+      },
+      "window_finalized_at": "2026-11-21T22:40:16Z",
+      "window_finalized_reason": "final_sweep"
     },
     "cemaden_sp_3483": {
       "codibge": "3525904",
@@ -1907,8 +1908,8 @@
         "hw4P2EJXyPE": 1,
         "E7u-KRavLFA": 1
       },
-      "last_attempt_at": "2026-11-21T13:59:28Z",
-      "consecutive_failures": 5,
+      "last_attempt_at": "2026-11-21T22:40:16Z",
+      "consecutive_failures": 6,
       "last_error": "youtube=ok;comments=api_error",
       "counters_integrity": "inflated_pre_v0.3"
     },
@@ -1994,25 +1995,28 @@
       "closed_at": "2026-11-21T05:01:31Z",
       "transitions": [],
       "videos_collected": [
+        "4i9I9Tfvp3E",
         "YwlNCSsRI1U"
       ],
-      "n_videos_aderentes": 1,
+      "n_videos_aderentes": 2,
       "n_comments_valid": 0,
       "videos_with_valid_comments": [],
-      "last_new_data_at": "2026-11-20T14:42:53Z",
+      "last_new_data_at": "2026-11-21T22:40:16Z",
       "last_new_comment_at": null,
-      "last_collection_at": "2026-11-20T14:42:53Z",
-      "next_collection_at": "2026-11-21T17:01:31Z",
+      "last_collection_at": "2026-11-21T22:40:16Z",
+      "next_collection_at": "2026-11-22T10:40:16Z",
       "video_evidence": {
-        "YwlNCSsRI1U": "descricao"
+        "YwlNCSsRI1U": "descricao",
+        "4i9I9Tfvp3E": "descricao"
       },
-      "n_videos_municipais": 1,
+      "n_videos_municipais": 2,
       "n_comments_valid_municipal": 0,
       "videos_with_valid_comments_municipal": [],
       "video_format": {
-        "YwlNCSsRI1U": "longo"
+        "YwlNCSsRI1U": "longo",
+        "4i9I9Tfvp3E": "short"
       },
-      "last_attempt_at": "2026-11-20T14:42:53Z",
+      "last_attempt_at": "2026-11-21T22:40:16Z",
       "consecutive_failures": 0,
       "last_error": null,
       "legacy_unverified": false,
