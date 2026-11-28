@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T16:09:00Z",
+  "generated_at": "2026-11-28T00:57:15Z",
   "pipeline_version": "0.3.3",
   "pilot_mode": true,
   "dry_run": false,
@@ -595,14 +595,14 @@
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 1
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-26T01:24:56Z",
-      "next_collection_at": "2026-11-27T01:24:56Z",
-      "window_finalized_at": null,
+      "last_collection_at": "2026-11-28T00:56:42Z",
+      "next_collection_at": "2026-11-29T00:56:42Z",
+      "window_finalized_at": "2026-11-28T00:56:42Z",
       "counters_integrity": "ok",
       "videos_por_formato": {},
       "n_videos_municipais": 0,
@@ -709,14 +709,14 @@
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 1
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-26T01:24:56Z",
-      "next_collection_at": "2026-11-27T01:24:56Z",
-      "window_finalized_at": null,
+      "last_collection_at": "2026-11-28T00:56:42Z",
+      "next_collection_at": "2026-11-29T00:56:42Z",
+      "window_finalized_at": "2026-11-28T00:56:42Z",
       "counters_integrity": "ok",
       "videos_por_formato": {},
       "n_videos_municipais": 0,
@@ -809,7 +809,7 @@
       },
       "academic_studies": [],
       "observation_status": "active",
-      "priority_tier": "alto",
+      "priority_tier": "moderado",
       "flag": "alerta",
       "flag_history": [
         {
@@ -826,6 +826,11 @@
           "from": "Moderado",
           "to": "Alto",
           "at": "2026-11-26T16:08:53Z"
+        },
+        {
+          "from": "Alto",
+          "to": "Moderado",
+          "at": "2026-11-28T00:56:42Z"
         }
       ],
       "collection_health": {
@@ -943,14 +948,14 @@
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 1
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-26T01:24:56Z",
-      "next_collection_at": "2026-11-27T01:24:56Z",
-      "window_finalized_at": null,
+      "last_collection_at": "2026-11-28T00:56:42Z",
+      "next_collection_at": "2026-11-29T00:56:42Z",
+      "window_finalized_at": "2026-11-28T00:56:42Z",
       "counters_integrity": "ok",
       "videos_por_formato": {},
       "n_videos_municipais": 0,
@@ -1057,14 +1062,14 @@
       "alert_closed_at": null,
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 1
+        "status": "silent",
+        "silence_type": "no_videos_found",
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-26T01:24:56Z",
-      "next_collection_at": "2026-11-27T01:24:56Z",
-      "window_finalized_at": null,
+      "last_collection_at": "2026-11-28T00:56:42Z",
+      "next_collection_at": "2026-11-29T00:56:42Z",
+      "window_finalized_at": "2026-11-28T00:56:42Z",
       "counters_integrity": "ok",
       "videos_por_formato": {},
       "n_videos_municipais": 0,
@@ -1193,7 +1198,7 @@
       "municipio": "Angra dos Reis",
       "uf": "RJ",
       "tipo": "Movimentos de Massa",
-      "nivel": "Alto",
+      "nivel": "Moderado",
       "data_alerta": "25/11/2026",
       "codibge": "3300100",
       "lat": null,
@@ -1296,8 +1301,8 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-26T16:08:53Z",
-      "next_collection_at": "2026-11-27T16:08:53Z",
+      "last_collection_at": "2026-11-28T00:56:42Z",
+      "next_collection_at": "2026-11-29T00:56:42Z",
       "window_finalized_at": null,
       "counters_integrity": "ok",
       "videos_por_formato": {},
@@ -1468,794 +1473,6 @@
       "videos_with_valid_comments_municipal": [
         "uP-scE36HaE"
       ],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_rj_3665",
-      "municipio": "Rio de Janeiro",
-      "uf": "RJ",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "26/11/2026",
-      "codibge": "3304557",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 11,
-      "n_videos": 1,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "2026-11-25",
-        "2026-11-26"
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 4,
-          "pct": 36.4
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 1,
-          "pct": 9.1
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 2,
-          "pct": 18.2
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 5,
-          "pct": 45.5
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 4,
-          "pct": 36.4
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 6,
-          "pct": 54.5
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 2,
-          "pct": 18.2
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [
-        {
-          "date": "25/11/26",
-          "count": 7
-        },
-        {
-          "date": "26/11/26",
-          "count": 4
-        }
-      ],
-      "videos": [
-        {
-          "video_id": "iPuRUfiM4ko",
-          "n_comments": 11,
-          "total_likes": 20,
-          "first_comment": "25/11/2026",
-          "top_categories": [
-            {
-              "label": "Experiência",
-              "count": 6
-            },
-            {
-              "label": "Infraestrutura",
-              "count": 5
-            },
-            {
-              "label": "Solidariedade",
-              "count": 4
-            }
-          ],
-          "municipal_evidence": "descricao",
-          "formato": "longo"
-        }
-      ],
-      "all_samples": {
-        "solidariedade_oracao_luto": [
-          {
-            "text": "O senhor Jesus proteja a todos",
-            "likes": 8,
-            "score": 0.995,
-            "date": "2026-11-25",
-            "video_id": "iPuRUfiM4ko"
-          },
-          {
-            "text": "😮😮😮😮😮😮😮😮",
-            "likes": 0,
-            "score": 0.974,
-            "date": "2026-11-25",
-            "video_id": "iPuRUfiM4ko"
-          },
-          {
-            "text": "Aqui na região serrana do Rio, nunca tinha visto tanto vento. Deus nos proteja 🙌",
-            "likes": 2,
-            "score": 0.93,
-            "date": "2026-11-26",
-            "video_id": "iPuRUfiM4ko"
-          },
-          {
-            "text": "aqui em Vargem pequena ta tudo escuro misericórdia",
-            "likes": 2,
-            "score": 0.894,
-            "date": "2026-11-25",
-            "video_id": "iPuRUfiM4ko"
-          }
-        ],
-        "ajuda_resgate_doacoes": [
-          {
-            "text": "O Rio de Janeiro não se preocupa em avisar as pessoas sobre ventanias e temporais,da ultima vez,tinha alerta para SP minha filha e meu genro estavam com as crianças na lancha em Angra dos Reis e no rio nao tinha nenhum alerta! Eu avisei a minha filha,ela disse aqui nao tem alerta esta o maior sol ! 10 minutos depois começou o mar ficar revolto e os barcos que estavam parados batendo uns nos outros",
-            "likes": 2,
-            "score": 0.964,
-            "date": "2026-11-25",
-            "video_id": "iPuRUfiM4ko"
-          }
-        ],
-        "responsabilizacao_governanca": [
-          {
-            "text": "A corrupção que destrói, destrói dolorosamente!",
-            "likes": 0,
-            "score": 0.991,
-            "date": "2026-11-26",
-            "video_id": "iPuRUfiM4ko"
-          },
-          {
-            "text": "O Rio de Janeiro não se preocupa em avisar as pessoas sobre ventanias e temporais,da ultima vez,tinha alerta para SP minha filha e meu genro estavam com as crianças na lancha em Angra dos Reis e no rio nao tinha nenhum alerta! Eu avisei a minha filha,ela disse aqui nao tem alerta esta o maior sol ! 10 minutos depois começou o mar ficar revolto e os barcos que estavam parados batendo uns nos outros",
-            "likes": 2,
-            "score": 0.987,
-            "date": "2026-11-25",
-            "video_id": "iPuRUfiM4ko"
-          }
-        ],
-        "infraestrutura_ocupacao_risco": [
-          {
-            "text": "O Rio de Janeiro não se preocupa em avisar as pessoas sobre ventanias e temporais,da ultima vez,tinha alerta para SP minha filha e meu genro estavam com as crianças na lancha em Angra dos Reis e no rio nao tinha nenhum alerta! Eu avisei a minha filha,ela disse aqui nao tem alerta esta o maior sol ! 10 minutos depois começou o mar ficar revolto e os barcos que estavam parados batendo uns nos outros",
-            "likes": 2,
-            "score": 0.998,
-            "date": "2026-11-25",
-            "video_id": "iPuRUfiM4ko"
-          },
-          {
-            "text": "Olá a todos Débora está mim devendo quientos mil reais é uma casa 🤬🤬🤬",
-            "likes": 0,
-            "score": 0.997,
-            "date": "2026-11-25",
-            "video_id": "iPuRUfiM4ko"
-          },
-          {
-            "text": "Chuva forte no Rio de Janeiro Fiquem a tentos em area de risco",
-            "likes": 3,
-            "score": 0.996,
-            "date": "2026-11-25",
-            "video_id": "iPuRUfiM4ko"
-          },
-          {
-            "text": "Região dos lagos do Rio choveu sem parar a noite inteira são 5:29 a chuva parou aqui no centro de Saquarema, imagino como está as regiões ao derredores",
-            "likes": 0,
-            "score": 0.991,
-            "date": "2026-11-26",
-            "video_id": "iPuRUfiM4ko"
-          },
-          {
-            "text": "Aqui na região serrana do Rio, nunca tinha visto tanto vento. Deus nos proteja 🙌",
-            "likes": 2,
-            "score": 0.991,
-            "date": "2026-11-26",
-            "video_id": "iPuRUfiM4ko"
-          }
-        ],
-        "clima_chuva_meio_ambiente": [
-          {
-            "text": "Chuva forte no Rio de Janeiro Fiquem a tentos em area de risco",
-            "likes": 3,
-            "score": 0.993,
-            "date": "2026-11-25",
-            "video_id": "iPuRUfiM4ko"
-          },
-          {
-            "text": "Região dos lagos do Rio choveu sem parar a noite inteira são 5:29 a chuva parou aqui no centro de Saquarema, imagino como está as regiões ao derredores",
-            "likes": 0,
-            "score": 0.985,
-            "date": "2026-11-26",
-            "video_id": "iPuRUfiM4ko"
-          },
-          {
-            "text": "Chuva durou 3 minutos aqui em Magé",
-            "likes": 1,
-            "score": 0.977,
-            "date": "2026-11-25",
-            "video_id": "iPuRUfiM4ko"
-          },
-          {
-            "text": "O Rio de Janeiro não se preocupa em avisar as pessoas sobre ventanias e temporais,da ultima vez,tinha alerta para SP minha filha e meu genro estavam com as crianças na lancha em Angra dos Reis e no rio nao tinha nenhum alerta! Eu avisei a minha filha,ela disse aqui nao tem alerta esta o maior sol ! 10 minutos depois começou o mar ficar revolto e os barcos que estavam parados batendo uns nos outros",
-            "likes": 2,
-            "score": 0.914,
-            "date": "2026-11-25",
-            "video_id": "iPuRUfiM4ko"
-          }
-        ],
-        "experiencia_pessoal_local": [
-          {
-            "text": "aqui em Vargem pequena ta tudo escuro misericórdia",
-            "likes": 2,
-            "score": 0.998,
-            "date": "2026-11-25",
-            "video_id": "iPuRUfiM4ko"
-          },
-          {
-            "text": "Região dos lagos do Rio choveu sem parar a noite inteira são 5:29 a chuva parou aqui no centro de Saquarema, imagino como está as regiões ao derredores",
-            "likes": 0,
-            "score": 0.997,
-            "date": "2026-11-26",
-            "video_id": "iPuRUfiM4ko"
-          },
-          {
-            "text": "Aqui em Valença tudo tranquilo.. espero que não venha tão fortes..",
-            "likes": 2,
-            "score": 0.996,
-            "date": "2026-11-26",
-            "video_id": "iPuRUfiM4ko"
-          },
-          {
-            "text": "Aqui na região serrana do Rio, nunca tinha visto tanto vento. Deus nos proteja 🙌",
-            "likes": 2,
-            "score": 0.995,
-            "date": "2026-11-26",
-            "video_id": "iPuRUfiM4ko"
-          },
-          {
-            "text": "Chuva durou 3 minutos aqui em Magé",
-            "likes": 1,
-            "score": 0.994,
-            "date": "2026-11-25",
-            "video_id": "iPuRUfiM4ko"
-          },
-          {
-            "text": "O Rio de Janeiro não se preocupa em avisar as pessoas sobre ventanias e temporais,da ultima vez,tinha alerta para SP minha filha e meu genro estavam com as crianças na lancha em Angra dos Reis e no rio nao tinha nenhum alerta! Eu avisei a minha filha,ela disse aqui nao tem alerta esta o maior sol ! 10 minutos depois começou o mar ficar revolto e os barcos que estavam parados batendo uns nos outros",
-            "likes": 2,
-            "score": 0.987,
-            "date": "2026-11-25",
-            "video_id": "iPuRUfiM4ko"
-          }
-        ],
-        "alerta_prevencao_cobranca": [
-          {
-            "text": "O Rio de Janeiro não se preocupa em avisar as pessoas sobre ventanias e temporais,da ultima vez,tinha alerta para SP minha filha e meu genro estavam com as crianças na lancha em Angra dos Reis e no rio nao tinha nenhum alerta! Eu avisei a minha filha,ela disse aqui nao tem alerta esta o maior sol ! 10 minutos depois começou o mar ficar revolto e os barcos que estavam parados batendo uns nos outros",
-            "likes": 2,
-            "score": 0.999,
-            "date": "2026-11-25",
-            "video_id": "iPuRUfiM4ko"
-          },
-          {
-            "text": "Chuva forte no Rio de Janeiro Fiquem a tentos em area de risco",
-            "likes": 3,
-            "score": 0.996,
-            "date": "2026-11-25",
-            "video_id": "iPuRUfiM4ko"
-          }
-        ],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "acompanhamento",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-11-26T01:19:44Z"
-        },
-        {
-          "flag": "acompanhamento",
-          "at": "2026-11-27T01:22:29Z",
-          "criterio": "municipal_v0.3.2"
-        }
-      ],
-      "n_comments_valid": 11,
-      "videos_with_valid_comments": [
-        "iPuRUfiM4ko"
-      ],
-      "alert_opened_at": "2026-11-26T01:19:44Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "ok",
-        "silence_type": null,
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-11-27T15:56:09Z",
-      "next_collection_at": "2026-11-28T03:56:09Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {
-        "longo": 1
-      },
-      "n_videos_municipais": 1,
-      "n_videos_verificados": 1,
-      "n_comments_municipais": 11,
-      "n_comments_valid_municipal": 11,
-      "videos_with_valid_comments_municipal": [
-        "iPuRUfiM4ko"
-      ],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_rj_3669",
-      "municipio": "São João de Meriti",
-      "uf": "RJ",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "26/11/2026",
-      "codibge": "3305109",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-11-26T02:41:05Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-11-26T02:41:05Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-11-27T01:22:29Z",
-      "next_collection_at": "2026-11-28T01:22:29Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_rj_3670",
-      "municipio": "Belford Roxo",
-      "uf": "RJ",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "26/11/2026",
-      "codibge": "3300456",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-11-26T03:19:26Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-11-26T03:19:26Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-11-27T01:22:29Z",
-      "next_collection_at": "2026-11-28T01:22:29Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_rj_3676",
-      "municipio": "Magé",
-      "uf": "RJ",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "26/11/2026",
-      "codibge": "3302502",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-11-26T07:10:41Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-11-26T07:10:41Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-11-27T15:56:09Z",
-      "next_collection_at": "2026-11-28T15:56:09Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
-      "flag_reassessment": null
-    },
-    {
-      "id": "cemaden_rj_3677",
-      "municipio": "Duque de Caxias",
-      "uf": "RJ",
-      "tipo": "Movimentos de Massa",
-      "nivel": "Moderado",
-      "data_alerta": "26/11/2026",
-      "codibge": "3301702",
-      "lat": null,
-      "lon": null,
-      "regime": "prospective_live",
-      "n_comments": 0,
-      "n_videos": 0,
-      "unlabeled": 0,
-      "unlabeled_pct": 0.0,
-      "date_range": [
-        "",
-        ""
-      ],
-      "distribution": [
-        {
-          "key": "solidariedade_oracao_luto",
-          "label": "Solidariedade / oração / luto",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "ajuda_resgate_doacoes",
-          "label": "Ajuda / resgate / doações",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "responsabilizacao_governanca",
-          "label": "Responsabilização / governança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "infraestrutura_ocupacao_risco",
-          "label": "Infraestrutura / ocupação de risco",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "clima_chuva_meio_ambiente",
-          "label": "Clima / chuva / meio ambiente",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "experiencia_pessoal_local",
-          "label": "Experiência pessoal / local",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "alerta_prevencao_cobranca",
-          "label": "Alerta / prevenção / cobrança",
-          "count": 0,
-          "pct": 0.0
-        },
-        {
-          "key": "critica_midia_informacao",
-          "label": "Crítica à mídia / informação",
-          "count": 0,
-          "pct": 0.0
-        }
-      ],
-      "timeline": [],
-      "videos": [],
-      "all_samples": {
-        "solidariedade_oracao_luto": [],
-        "ajuda_resgate_doacoes": [],
-        "responsabilizacao_governanca": [],
-        "infraestrutura_ocupacao_risco": [],
-        "clima_chuva_meio_ambiente": [],
-        "experiencia_pessoal_local": [],
-        "alerta_prevencao_cobranca": [],
-        "critica_midia_informacao": []
-      },
-      "academic_studies": [],
-      "observation_status": "active",
-      "priority_tier": "moderado",
-      "flag": "alerta",
-      "flag_history": [
-        {
-          "flag": "alerta",
-          "at": "2026-11-26T07:11:57Z"
-        }
-      ],
-      "n_comments_valid": 0,
-      "videos_with_valid_comments": [],
-      "alert_opened_at": "2026-11-26T07:11:57Z",
-      "alert_closed_at": null,
-      "alert_transitions": [],
-      "collection_health": {
-        "status": "silent",
-        "silence_type": "no_videos_found",
-        "last_error": null,
-        "consecutive_failures": 0
-      },
-      "last_collection_at": "2026-11-27T15:56:09Z",
-      "next_collection_at": "2026-11-28T15:56:09Z",
-      "window_finalized_at": null,
-      "counters_integrity": "ok",
-      "videos_por_formato": {},
-      "n_videos_municipais": 0,
-      "n_videos_verificados": 0,
-      "n_comments_municipais": 0,
-      "n_comments_valid_municipal": 0,
-      "videos_with_valid_comments_municipal": [],
       "flag_reassessment": null
     },
     {
@@ -10329,14 +9546,14 @@
       "alert_closed_at": "2026-11-22T13:52:42Z",
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 5
+        "status": "silent",
+        "silence_type": "videos_without_comments",
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-24T16:49:21Z",
-      "next_collection_at": "2026-11-25T04:49:21Z",
-      "window_finalized_at": null,
+      "last_collection_at": "2026-11-28T00:56:42Z",
+      "next_collection_at": "2026-11-28T12:56:42Z",
+      "window_finalized_at": "2026-11-28T00:56:42Z",
       "counters_integrity": "ok",
       "videos_por_formato": {
         "short": 1
@@ -10460,14 +9677,14 @@
       "alert_closed_at": "2026-11-22T13:52:42Z",
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
-        "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 5
+        "status": "silent",
+        "silence_type": "videos_without_comments",
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-24T16:49:21Z",
-      "next_collection_at": "2026-11-25T04:49:21Z",
-      "window_finalized_at": null,
+      "last_collection_at": "2026-11-28T00:56:42Z",
+      "next_collection_at": "2026-11-28T12:56:42Z",
+      "window_finalized_at": "2026-11-28T00:56:42Z",
       "counters_integrity": "ok",
       "videos_por_formato": {
         "short": 1
@@ -10858,7 +10075,7 @@
       },
       "last_collection_at": "2026-11-22T23:03:22Z",
       "next_collection_at": "2026-11-24T22:49:21Z",
-      "window_finalized_at": null,
+      "window_finalized_at": "2026-11-27T15:56:09Z",
       "counters_integrity": "inflated_pre_v0.3",
       "videos_por_formato": {
         "short": 4,
@@ -11243,14 +10460,14 @@
       "alert_closed_at": "2026-11-24T16:49:21Z",
       "alert_transitions": [],
       "collection_health": {
-        "status": "error",
+        "status": "ok",
         "silence_type": null,
-        "last_error": "youtube=quota_exhausted;comments=not_applicable",
-        "consecutive_failures": 4
+        "last_error": null,
+        "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-24T03:41:54Z",
-      "next_collection_at": "2026-11-25T16:49:21Z",
-      "window_finalized_at": null,
+      "last_collection_at": "2026-11-28T00:56:42Z",
+      "next_collection_at": "2026-11-29T00:56:42Z",
+      "window_finalized_at": "2026-11-28T00:56:42Z",
       "counters_integrity": "inflated_pre_v0.3",
       "videos_por_formato": {
         "short": 2
@@ -11808,9 +11025,9 @@
         "last_error": null,
         "consecutive_failures": 0
       },
-      "last_collection_at": "2026-11-27T15:56:09Z",
-      "next_collection_at": "2026-11-27T21:56:09Z",
-      "window_finalized_at": null,
+      "last_collection_at": "2026-11-28T00:56:42Z",
+      "next_collection_at": "2026-11-28T06:56:42Z",
+      "window_finalized_at": "2026-11-28T00:56:42Z",
       "counters_integrity": "inflated_pre_v0.3",
       "videos_por_formato": {
         "short": 5,
@@ -14153,6 +13370,338 @@
       "n_comments_municipais": 0,
       "n_comments_valid_municipal": 0,
       "videos_with_valid_comments_municipal": [],
+      "flag_reassessment": null
+    },
+    {
+      "id": "cemaden_rj_3665",
+      "municipio": "Rio de Janeiro",
+      "uf": "RJ",
+      "tipo": "Movimentos de Massa",
+      "nivel": "Moderado",
+      "data_alerta": "26/11/2026",
+      "codibge": "3304557",
+      "lat": null,
+      "lon": null,
+      "regime": "prospective_live",
+      "n_comments": 11,
+      "n_videos": 1,
+      "unlabeled": 0,
+      "unlabeled_pct": 0.0,
+      "date_range": [
+        "2026-11-25",
+        "2026-11-26"
+      ],
+      "distribution": [
+        {
+          "key": "solidariedade_oracao_luto",
+          "label": "Solidariedade / oração / luto",
+          "count": 4,
+          "pct": 36.4
+        },
+        {
+          "key": "ajuda_resgate_doacoes",
+          "label": "Ajuda / resgate / doações",
+          "count": 1,
+          "pct": 9.1
+        },
+        {
+          "key": "responsabilizacao_governanca",
+          "label": "Responsabilização / governança",
+          "count": 2,
+          "pct": 18.2
+        },
+        {
+          "key": "infraestrutura_ocupacao_risco",
+          "label": "Infraestrutura / ocupação de risco",
+          "count": 5,
+          "pct": 45.5
+        },
+        {
+          "key": "clima_chuva_meio_ambiente",
+          "label": "Clima / chuva / meio ambiente",
+          "count": 4,
+          "pct": 36.4
+        },
+        {
+          "key": "experiencia_pessoal_local",
+          "label": "Experiência pessoal / local",
+          "count": 6,
+          "pct": 54.5
+        },
+        {
+          "key": "alerta_prevencao_cobranca",
+          "label": "Alerta / prevenção / cobrança",
+          "count": 2,
+          "pct": 18.2
+        },
+        {
+          "key": "critica_midia_informacao",
+          "label": "Crítica à mídia / informação",
+          "count": 0,
+          "pct": 0.0
+        }
+      ],
+      "timeline": [
+        {
+          "date": "25/11/26",
+          "count": 7
+        },
+        {
+          "date": "26/11/26",
+          "count": 4
+        }
+      ],
+      "videos": [
+        {
+          "video_id": "iPuRUfiM4ko",
+          "n_comments": 11,
+          "total_likes": 20,
+          "first_comment": "25/11/2026",
+          "top_categories": [
+            {
+              "label": "Experiência",
+              "count": 6
+            },
+            {
+              "label": "Infraestrutura",
+              "count": 5
+            },
+            {
+              "label": "Solidariedade",
+              "count": 4
+            }
+          ],
+          "municipal_evidence": "descricao",
+          "formato": "longo"
+        }
+      ],
+      "all_samples": {
+        "solidariedade_oracao_luto": [
+          {
+            "text": "O senhor Jesus proteja a todos",
+            "likes": 8,
+            "score": 0.995,
+            "date": "2026-11-25",
+            "video_id": "iPuRUfiM4ko"
+          },
+          {
+            "text": "😮😮😮😮😮😮😮😮",
+            "likes": 0,
+            "score": 0.974,
+            "date": "2026-11-25",
+            "video_id": "iPuRUfiM4ko"
+          },
+          {
+            "text": "Aqui na região serrana do Rio, nunca tinha visto tanto vento. Deus nos proteja 🙌",
+            "likes": 2,
+            "score": 0.93,
+            "date": "2026-11-26",
+            "video_id": "iPuRUfiM4ko"
+          },
+          {
+            "text": "aqui em Vargem pequena ta tudo escuro misericórdia",
+            "likes": 2,
+            "score": 0.894,
+            "date": "2026-11-25",
+            "video_id": "iPuRUfiM4ko"
+          }
+        ],
+        "ajuda_resgate_doacoes": [
+          {
+            "text": "O Rio de Janeiro não se preocupa em avisar as pessoas sobre ventanias e temporais,da ultima vez,tinha alerta para SP minha filha e meu genro estavam com as crianças na lancha em Angra dos Reis e no rio nao tinha nenhum alerta! Eu avisei a minha filha,ela disse aqui nao tem alerta esta o maior sol ! 10 minutos depois começou o mar ficar revolto e os barcos que estavam parados batendo uns nos outros",
+            "likes": 2,
+            "score": 0.964,
+            "date": "2026-11-25",
+            "video_id": "iPuRUfiM4ko"
+          }
+        ],
+        "responsabilizacao_governanca": [
+          {
+            "text": "A corrupção que destrói, destrói dolorosamente!",
+            "likes": 0,
+            "score": 0.991,
+            "date": "2026-11-26",
+            "video_id": "iPuRUfiM4ko"
+          },
+          {
+            "text": "O Rio de Janeiro não se preocupa em avisar as pessoas sobre ventanias e temporais,da ultima vez,tinha alerta para SP minha filha e meu genro estavam com as crianças na lancha em Angra dos Reis e no rio nao tinha nenhum alerta! Eu avisei a minha filha,ela disse aqui nao tem alerta esta o maior sol ! 10 minutos depois começou o mar ficar revolto e os barcos que estavam parados batendo uns nos outros",
+            "likes": 2,
+            "score": 0.987,
+            "date": "2026-11-25",
+            "video_id": "iPuRUfiM4ko"
+          }
+        ],
+        "infraestrutura_ocupacao_risco": [
+          {
+            "text": "O Rio de Janeiro não se preocupa em avisar as pessoas sobre ventanias e temporais,da ultima vez,tinha alerta para SP minha filha e meu genro estavam com as crianças na lancha em Angra dos Reis e no rio nao tinha nenhum alerta! Eu avisei a minha filha,ela disse aqui nao tem alerta esta o maior sol ! 10 minutos depois começou o mar ficar revolto e os barcos que estavam parados batendo uns nos outros",
+            "likes": 2,
+            "score": 0.998,
+            "date": "2026-11-25",
+            "video_id": "iPuRUfiM4ko"
+          },
+          {
+            "text": "Olá a todos Débora está mim devendo quientos mil reais é uma casa 🤬🤬🤬",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-11-25",
+            "video_id": "iPuRUfiM4ko"
+          },
+          {
+            "text": "Chuva forte no Rio de Janeiro Fiquem a tentos em area de risco",
+            "likes": 3,
+            "score": 0.996,
+            "date": "2026-11-25",
+            "video_id": "iPuRUfiM4ko"
+          },
+          {
+            "text": "Região dos lagos do Rio choveu sem parar a noite inteira são 5:29 a chuva parou aqui no centro de Saquarema, imagino como está as regiões ao derredores",
+            "likes": 0,
+            "score": 0.991,
+            "date": "2026-11-26",
+            "video_id": "iPuRUfiM4ko"
+          },
+          {
+            "text": "Aqui na região serrana do Rio, nunca tinha visto tanto vento. Deus nos proteja 🙌",
+            "likes": 2,
+            "score": 0.991,
+            "date": "2026-11-26",
+            "video_id": "iPuRUfiM4ko"
+          }
+        ],
+        "clima_chuva_meio_ambiente": [
+          {
+            "text": "Chuva forte no Rio de Janeiro Fiquem a tentos em area de risco",
+            "likes": 3,
+            "score": 0.993,
+            "date": "2026-11-25",
+            "video_id": "iPuRUfiM4ko"
+          },
+          {
+            "text": "Região dos lagos do Rio choveu sem parar a noite inteira são 5:29 a chuva parou aqui no centro de Saquarema, imagino como está as regiões ao derredores",
+            "likes": 0,
+            "score": 0.985,
+            "date": "2026-11-26",
+            "video_id": "iPuRUfiM4ko"
+          },
+          {
+            "text": "Chuva durou 3 minutos aqui em Magé",
+            "likes": 1,
+            "score": 0.977,
+            "date": "2026-11-25",
+            "video_id": "iPuRUfiM4ko"
+          },
+          {
+            "text": "O Rio de Janeiro não se preocupa em avisar as pessoas sobre ventanias e temporais,da ultima vez,tinha alerta para SP minha filha e meu genro estavam com as crianças na lancha em Angra dos Reis e no rio nao tinha nenhum alerta! Eu avisei a minha filha,ela disse aqui nao tem alerta esta o maior sol ! 10 minutos depois começou o mar ficar revolto e os barcos que estavam parados batendo uns nos outros",
+            "likes": 2,
+            "score": 0.914,
+            "date": "2026-11-25",
+            "video_id": "iPuRUfiM4ko"
+          }
+        ],
+        "experiencia_pessoal_local": [
+          {
+            "text": "aqui em Vargem pequena ta tudo escuro misericórdia",
+            "likes": 2,
+            "score": 0.998,
+            "date": "2026-11-25",
+            "video_id": "iPuRUfiM4ko"
+          },
+          {
+            "text": "Região dos lagos do Rio choveu sem parar a noite inteira são 5:29 a chuva parou aqui no centro de Saquarema, imagino como está as regiões ao derredores",
+            "likes": 0,
+            "score": 0.997,
+            "date": "2026-11-26",
+            "video_id": "iPuRUfiM4ko"
+          },
+          {
+            "text": "Aqui em Valença tudo tranquilo.. espero que não venha tão fortes..",
+            "likes": 2,
+            "score": 0.996,
+            "date": "2026-11-26",
+            "video_id": "iPuRUfiM4ko"
+          },
+          {
+            "text": "Aqui na região serrana do Rio, nunca tinha visto tanto vento. Deus nos proteja 🙌",
+            "likes": 2,
+            "score": 0.995,
+            "date": "2026-11-26",
+            "video_id": "iPuRUfiM4ko"
+          },
+          {
+            "text": "Chuva durou 3 minutos aqui em Magé",
+            "likes": 1,
+            "score": 0.994,
+            "date": "2026-11-25",
+            "video_id": "iPuRUfiM4ko"
+          },
+          {
+            "text": "O Rio de Janeiro não se preocupa em avisar as pessoas sobre ventanias e temporais,da ultima vez,tinha alerta para SP minha filha e meu genro estavam com as crianças na lancha em Angra dos Reis e no rio nao tinha nenhum alerta! Eu avisei a minha filha,ela disse aqui nao tem alerta esta o maior sol ! 10 minutos depois começou o mar ficar revolto e os barcos que estavam parados batendo uns nos outros",
+            "likes": 2,
+            "score": 0.987,
+            "date": "2026-11-25",
+            "video_id": "iPuRUfiM4ko"
+          }
+        ],
+        "alerta_prevencao_cobranca": [
+          {
+            "text": "O Rio de Janeiro não se preocupa em avisar as pessoas sobre ventanias e temporais,da ultima vez,tinha alerta para SP minha filha e meu genro estavam com as crianças na lancha em Angra dos Reis e no rio nao tinha nenhum alerta! Eu avisei a minha filha,ela disse aqui nao tem alerta esta o maior sol ! 10 minutos depois começou o mar ficar revolto e os barcos que estavam parados batendo uns nos outros",
+            "likes": 2,
+            "score": 0.999,
+            "date": "2026-11-25",
+            "video_id": "iPuRUfiM4ko"
+          },
+          {
+            "text": "Chuva forte no Rio de Janeiro Fiquem a tentos em area de risco",
+            "likes": 3,
+            "score": 0.996,
+            "date": "2026-11-25",
+            "video_id": "iPuRUfiM4ko"
+          }
+        ],
+        "critica_midia_informacao": []
+      },
+      "academic_studies": [],
+      "observation_status": "extended",
+      "priority_tier": "moderado",
+      "flag": "acompanhamento",
+      "flag_history": [
+        {
+          "flag": "alerta",
+          "at": "2026-11-26T01:19:44Z"
+        },
+        {
+          "flag": "acompanhamento",
+          "at": "2026-11-27T01:22:29Z",
+          "criterio": "municipal_v0.3.2"
+        }
+      ],
+      "n_comments_valid": 11,
+      "videos_with_valid_comments": [
+        "iPuRUfiM4ko"
+      ],
+      "alert_opened_at": "2026-11-26T01:19:44Z",
+      "alert_closed_at": "2026-11-28T00:56:42Z",
+      "alert_transitions": [],
+      "collection_health": {
+        "status": "ok",
+        "silence_type": null,
+        "last_error": null,
+        "consecutive_failures": 0
+      },
+      "last_collection_at": "2026-11-27T15:56:09Z",
+      "next_collection_at": "2026-11-28T12:56:42Z",
+      "window_finalized_at": null,
+      "counters_integrity": "ok",
+      "videos_por_formato": {
+        "longo": 1
+      },
+      "n_videos_municipais": 1,
+      "n_videos_verificados": 1,
+      "n_comments_municipais": 11,
+      "n_comments_valid_municipal": 11,
+      "videos_with_valid_comments_municipal": [
+        "iPuRUfiM4ko"
+      ],
       "flag_reassessment": null
     }
   ],
